@@ -8,7 +8,7 @@
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400italic,400,600' rel='stylesheet' type='text/css'>
   <!-- Use title if it's in the page YAML frontmatter -->
   <title>
-      Greenplum Database |
+      CREATE TABLE |
     Greenplum Database Docs
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
   
 </head>
 
-<body class="docs docs_index has-subnav">
+<body class="docs docs_ref_guide docs_ref_guide_sql_commands docs_ref_guide_sql_commands_CREATE_TABLE has-subnav">
 
 <div class="viewport">
   <div class='wrap'>
@@ -5466,7 +5466,7 @@
         <a id="top"></a>
         
           <h1 class="title-container" style="display: none;">
-    Greenplum Database
+    CREATE TABLE
   </h1>
 
           <div id="js-quick-links" >
@@ -5475,1068 +5475,1005 @@
         <div class="to-top" id="js-to-top">
           <a href="#top" title="back to top"></a>
         </div>
-        <ul>
-<li><a href="common/pivotal-gpdb-features.html">About this Documentation</a></li>
-<li>
-<a href="admin_guide/admin_guide.html">Administrator Guide</a><ul>
-<li>
-<a href="admin_guide/intro/partI.html">Greenplum Database Concepts</a><ul>
-<li><a href="admin_guide/intro/arch_overview.html">About the Greenplum Architecture</a></li>
-<li><a href="admin_guide/intro/about_utilities.html">About Management and Monitoring Utilities</a></li>
-<li>
-<a href="admin_guide/intro/about_mvcc.html">About Concurrency Control in Greenplum Database</a><ul><li><a href="admin_guide/intro/mvcc_example.html">Example of Managing Transaction IDs</a></li></ul>
-</li>
-<li><a href="admin_guide/intro/about_loading.html">About Parallel Data Loading</a></li>
-<li><a href="admin_guide/intro/about_ha.html">About Redundancy and Failover in Greenplum Database</a></li>
-<li><a href="admin_guide/intro/about_statistics.html">About Database Statistics in Greenplum Database</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/managing/partII.html">Managing a Greenplum System</a><ul>
-<li><a href="admin_guide/managing/startstop.html">Starting and Stopping Greenplum Database</a></li>
-<li>
-<a href="admin_guide/access_db/topics/g-accessing-the-database.html">Accessing the Database</a><ul>
-<li><a href="admin_guide/access_db/topics/g-establishing-a-database-session.html">Establishing a Database Session</a></li>
-<li><a href="admin_guide/access_db/topics/g-supported-client-applications.html">Supported Client Applications</a></li>
-<li><a href="admin_guide/access_db/topics/g-greenplum-database-client-applications.html">Greenplum Database Client Applications</a></li>
-<li><a href="admin_guide/access_db/topics/g-connecting-with-psql.html">Connecting with psql</a></li>
-<li>
-<a href="admin_guide/access_db/topics/g-pgadmin-iii-for-greenplum-database.html">pgAdmin III for Greenplum Database</a><ul>
-<li><a href="admin_guide/access_db/topics/g-installing-pgadmin-iii-for-greenplum-database.html">Installing pgAdmin III for Greenplum Database</a></li>
-<li><a href="admin_guide/access_db/topics/g-documentation-for-pgadmin-iii-for-greenplum-database.html">Documentation for pgAdmin III for Greenplum Database</a></li>
-<li>
-<a href="admin_guide/access_db/topics/g-performing-administrative-tasks-with-pgadmin-iii.html">Performing Administrative Tasks with pgAdmin III</a><ul>
-<li><a href="admin_guide/access_db/topics/g-editing-server-configuration.html">Editing the Server Configuration</a></li>
-<li><a href="admin_guide/access_db/topics/g-viewing-a-graphical-query-plan.html">Viewing a Graphical Query Plan</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="admin_guide/access_db/topics/pgbouncer.html">Using the PgBouncer Connection Pooler </a></li>
-<li><a href="admin_guide/access_db/topics/g-database-application-interfaces.html">Database Application Interfaces</a></li>
-<li><a href="admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a></li>
-<li><a href="admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/topics/g-configuring-the-greenplum-system.html">Configuring the Greenplum Database System</a><ul>
-<li><a href="admin_guide/topics/g-about-greenplum-master-and-local-parameters.html">About Greenplum Database Master and Local Parameters</a></li>
-<li>
-<a href="admin_guide/topics/g-setting-configuration-parameters.html">Setting Configuration Parameters</a><ul>
-<li><a href="admin_guide/topics/g-setting-a-local-configuration-parameter.html">Setting a Local Configuration Parameter</a></li>
-<li>
-<a href="admin_guide/topics/g-setting-a-master-configuration-parameter.html">Setting a Master Configuration Parameter</a><ul>
-<li><a href="admin_guide/topics/g-setting-parameters-at-the-system-level.html">Setting Parameters at the System Level</a></li>
-<li><a href="admin_guide/topics/g-setting-parameters-at-the-database-level.html">Setting Parameters at the Database Level</a></li>
-<li><a href="admin_guide/topics/g-setting-parameters-at-the-role-level.html">Setting Parameters at the Role Level</a></li>
-<li><a href="admin_guide/topics/g-setting-parameters-in-a-session.html">Setting Parameters in a Session</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="admin_guide/topics/g-viewing-server-configuration-parameter-settings.html">Viewing Server Configuration Parameter Settings</a></li>
-<li>
-<a href="admin_guide/topics/g-configuration-parameter-categories.html">Configuration Parameter Categories</a><ul>
-<li>
-<a href="admin_guide/topics/g-connection-and-authentication-parameters.html">Connection and Authentication Parameters</a><ul>
-<li><a href="admin_guide/topics/g-connection-parameters.html">Connection Parameters</a></li>
-<li><a href="admin_guide/topics/g-security-and-authentication-parameters.html">Security and Authentication Parameters</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/topics/g-system-resource-consumption-parameters.html">System Resource Consumption Parameters</a><ul>
-<li><a href="admin_guide/topics/g-memory-consumption-parameters.html">Memory Consumption Parameters</a></li>
-<li><a href="admin_guide/topics/g-free-space-map-parameters.html">Free Space Map Parameters</a></li>
-<li><a href="admin_guide/topics/g-os-resource-parameters.html">OS Resource Parameters</a></li>
-<li><a href="admin_guide/topics/g-cost-based-vacuum-delay-parameters.html">Cost-Based Vacuum Delay Parameters</a></li>
-<li><a href="admin_guide/topics/g-transaction-id-management-parameters.html">Transaction ID Management Parameters</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/topics/g-query-tuning-parameters.html">Query Tuning Parameters</a><ul>
-<li><a href="admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a></li>
-<li><a href="admin_guide/topics/g-query-plan-operator-control-parameters.html">Query Plan Operator Control Parameters</a></li>
-<li><a href="admin_guide/topics/g-query-planner-costing-parameters.html">Legacy Query Optimizer Costing Parameters</a></li>
-<li><a href="admin_guide/topics/g-database-statistics-sampling-parameters.html">Database Statistics Sampling Parameters</a></li>
-<li><a href="admin_guide/topics/g-sort-operator-configuration-parameters.html">Sort Operator Configuration Parameters</a></li>
-<li><a href="admin_guide/topics/g-aggregate-operator-configuration-parameters.html">Aggregate Operator Configuration Parameters</a></li>
-<li><a href="admin_guide/topics/g-join-operator-configuration-parameters.html">Join Operator Configuration Parameters</a></li>
-<li><a href="admin_guide/topics/g-other-query-planner-configuration-parameters.html">Other Legacy Query Optimizer Configuration Parameters</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/topics/g-error-reporting-and-logging-parameters.html">Error Reporting and Logging Parameters</a><ul>
-<li><a href="admin_guide/topics/g-log-rotation.html">Log Rotation</a></li>
-<li><a href="admin_guide/topics/g-when-to-log.html">When to Log</a></li>
-<li><a href="admin_guide/topics/g-what-to-log.html">What to Log</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/topics/g-system-monitoring-parameters.html">System Monitoring Parameters</a><ul>
-<li><a href="admin_guide/topics/g-snmp-alerts.html">SNMP Alerts</a></li>
-<li><a href="admin_guide/topics/g-email-alerts.html">Email Alerts</a></li>
-<li><a href="admin_guide/topics/g-greenplum-command-center-agent.html">Greenplum Command Center Agent</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/topics/g-runtime-statistics-collection-parameters.html">Runtime Statistics Collection Parameters</a></li>
-<li><a href="admin_guide/topics/g-automatic-statistics-collection-parameters.html">Automatic Statistics Collection Parameters</a></li>
-<li>
-<a href="admin_guide/topics/g-client-connection-default-parameters.html">Client Connection Default Parameters</a><ul>
-<li><a href="admin_guide/topics/g-statement-behavior-parameters.html">Statement Behavior Parameters</a></li>
-<li><a href="admin_guide/topics/g-locale-and-formatting-parameters.html">Locale and Formatting Parameters</a></li>
-<li><a href="admin_guide/topics/g-other-client-default-parameters.html">Other Client Default Parameters</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/topics/g-lock-management-parameters.html">Lock Management Parameters</a></li>
-<li><a href="admin_guide/topics/g-workload-management-parameters.html">Workload Management Parameters</a></li>
-<li><a href="admin_guide/topics/g-external-table-parameters.html">External Table Parameters</a></li>
-<li><a href="admin_guide/topics/g-append-optimized-table-parameters.html">Database Table Parameters</a></li>
-<li><a href="admin_guide/topics/g-database-and-tablespace-filespace-parameters.html">Database and Tablespace/Filespace Parameters</a></li>
-<li><a href="admin_guide/topics/g-past-postgresql-version-compatibility-parameters.html">Past PostgreSQL Version Compatibility Parameters</a></li>
-<li>
-<a href="admin_guide/topics/g-greenplum-array-configuration-parameters.html">Greenplum Array Configuration Parameters</a><ul>
-<li><a href="admin_guide/topics/g-interconnect-configuration-parameters.html">Interconnect Configuration Parameters</a></li>
-<li><a href="admin_guide/topics/g-dispatch-configuration-parameters.html">Dispatch Configuration Parameters</a></li>
-<li><a href="admin_guide/topics/g-fault-operation-parameters.html">Fault Operation Parameters</a></li>
-<li><a href="admin_guide/topics/g-distributed-transaction-management-parameters.html">Distributed Transaction Management Parameters</a></li>
-<li><a href="admin_guide/topics/g-read-only-parameters.html">Read-Only Parameters</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/topics/g-greenplum-master-mirroring-parameters.html">Greenplum Master and Segment Mirroring Parameters</a></li>
-<li><a href="admin_guide/topics/g-greenplum-extension-parameters.html">Greenplum Database Extension Parameters</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/highavail/topics/g-enabling-high-availability-features.html">Enabling High Availability Features</a><ul>
-<li>
-<a href="admin_guide/highavail/topics/g-overview-of-high-availability-in-greenplum-database.html">Overview of Greenplum Database High Availability</a><ul>
-<li><a href="admin_guide/highavail/topics/g-overview-of-segment-mirroring.html">Overview of Segment Mirroring</a></li>
-<li><a href="admin_guide/highavail/topics/g-overview-of-master-mirroring.html">Overview of Master Mirroring</a></li>
-<li><a href="admin_guide/highavail/topics/g-overview-of-fault-detection-and-recovery.html">Overview of Fault Detection and Recovery</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/highavail/topics/g-enabling-mirroring-in-greenplum-database.html">Enabling Mirroring in Greenplum Database</a><ul>
-<li><a href="admin_guide/highavail/topics/g-enabling-segment-mirroring.html">Enabling Segment Mirroring</a></li>
-<li><a href="admin_guide/highavail/topics/g-enabling-master-mirroring.html">Enabling Master Mirroring</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/highavail/topics/g-detecting-a-failed-segment.html">Detecting a Failed Segment</a><ul>
-<li><a href="admin_guide/highavail/topics/g-enabling-alerts-and-notifications.html">Enabling Alerts and Notifications</a></li>
-<li><a href="admin_guide/highavail/topics/g-checking-for-failed-segments.html">Checking for Failed Segments</a></li>
-<li><a href="admin_guide/highavail/topics/g-checking-the-log-files.html">Checking the Log Files for Failed Segments</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/highavail/topics/g-recovering-a-failed-segment.html">Recovering a Failed Segment</a><ul><li>
-<a href="admin_guide/highavail/topics/g-recovering-from-segment-failures.html">Recovering From Segment Failures</a><ul>
-<li><a href="admin_guide/highavail/topics/g-when-a-segment-host-is-not-recoverable.html">When a segment host is not recoverable</a></li>
-<li><a href="admin_guide/highavail/topics/gprecover-steps.html">About the Segment Recovery Process</a></li>
-</ul>
-</li></ul>
-</li>
-<li>
-<a href="admin_guide/highavail/topics/g-recovering-a-failed-master.html">Recovering a Failed Master</a><ul><li><a href="admin_guide/highavail/topics/g-restoring-master-mirroring-after-a-recovery.html">Restoring Master Mirroring After a Recovery</a></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/managing/backup-main.html">Backing Up and Restoring Databases</a><ul>
-<li><a href="admin_guide/managing/backup-overview.html">Backup and Restore Overview</a></li>
-<li><a href="admin_guide/managing/backup-gpcrondump.html">Backing Up with gpcrondump</a></li>
-<li><a href="admin_guide/managing/backup-sets.html">Backing Up a Set of Tables</a></li>
-<li><a href="admin_guide/managing/backup-incremental.html">Creating Incremental Backups</a></li>
-<li><a href="admin_guide/managing/backup-locks.html">Backup Process and Locks</a></li>
-<li><a href="admin_guide/managing/backup-direct-io.html">Using Direct I/O</a></li>
-<li><a href="admin_guide/managing/backup-named-pipes.html">Using Named Pipes</a></li>
-<li><a href="admin_guide/managing/backup-ddboost.html">Backing Up Databases with Data Domain Boost</a></li>
-<li><a href="admin_guide/managing/backup-veritas.html">Backing Up Databases with Veritas NetBackup</a></li>
-<li><a href="admin_guide/managing/restore-parallel.html">Restoring Greenplum Databases</a></li>
-<li><a href="admin_guide/managing/gpdbrestore.html">Restoring a Database Using gpdbrestore</a></li>
-<li><a href="admin_guide/managing/restore-diff-system.html">Restoring to a Different Greenplum System Configuration</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/expand/expand-main.html">Expanding a Greenplum System</a><ul>
-<li><a href="admin_guide/expand/expand-overview.html">System Expansion Overview</a></li>
-<li><a href="admin_guide/expand/expand-planning.html">Planning Greenplum System Expansion</a></li>
-<li><a href="admin_guide/expand/expand-nodes.html">Preparing and Adding Nodes</a></li>
-<li><a href="admin_guide/expand/expand-initialize.html">Initializing New Segments</a></li>
-<li><a href="admin_guide/expand/expand-redistribute.html">Redistributing Tables</a></li>
-<li><a href="admin_guide/expand/expand-rm-schema.html">Removing the Expansion Schema</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/managing/gptransfer.html">Migrating Data with gptransfer</a></li>
-<li><a href="admin_guide/managing/monitor.html">Monitoring a Greenplum System</a></li>
-<li><a href="admin_guide/managing/maintain.html">Routine System Maintenance Tasks</a></li>
-<li><a href="admin_guide/monitoring/monitoring.html">Recommended Monitoring and Maintenance Tasks</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/partIII.html">Managing Greenplum Database Access</a><ul>
-<li>
-<a href="admin_guide/client_auth.html">Configuring Client Authentication</a><ul>
-<li><a href="admin_guide/ldap.html">Using LDAP Authentication with TLS/SSL </a></li>
-<li><a href="admin_guide/kerberos.html">Using Kerberos Authentication</a></li>
-<li><a href="admin_guide/kerberos-win-client.html">Configuring Kerberos For Windows Clients</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/roles_privs.html">Managing Roles and Privileges</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/partIV.html">Working with Databases</a><ul>
-<li>
-<a href="admin_guide/ddl/ddl.html">Defining Database Objects</a><ul>
-<li><a href="admin_guide/ddl/ddl-database.html">Creating and Managing Databases</a></li>
-<li><a href="admin_guide/ddl/ddl-tablespace.html">Creating and Managing Tablespaces</a></li>
-<li><a href="admin_guide/ddl/ddl-schema.html">Creating and Managing Schemas</a></li>
-<li><a href="admin_guide/ddl/ddl-table.html">Creating and Managing Tables</a></li>
-<li><a href="admin_guide/ddl/ddl-storage.html">Choosing the Table Storage Model</a></li>
-<li><a href="admin_guide/ddl/ddl-partition.html">Partitioning Large Tables</a></li>
-<li><a href="admin_guide/ddl/ddl-sequence.html">Creating and Using Sequences</a></li>
-<li><a href="admin_guide/ddl/ddl-index.html">Using Indexes in Greenplum Database</a></li>
-<li><a href="admin_guide/ddl/ddl-view.html">Creating and Managing Views</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/dml.html">Managing Data</a></li>
-<li>
-<a href="admin_guide/load/topics/g-loading-and-unloading-data.html">Loading and Unloading Data</a><ul>
-<li>
-<a href="admin_guide/load/topics/g-working-with-file-based-ext-tables.html">Working with File-Based External Tables</a><ul>
-<li><a href="admin_guide/load/topics/g-external-tables.html">Accessing File-Based External Tables</a></li>
-<li><a href="admin_guide/load/topics/g-file-protocol.html">file:// Protocol</a></li>
-<li><a href="admin_guide/load/topics/g-gpfdist-protocol.html">gpfdist:// Protocol</a></li>
-<li><a href="admin_guide/load/topics/g-gpfdists-protocol.html">gpfdists:// Protocol</a></li>
-<li><a href="admin_guide/load/topics/g-gphdfs-protocol.html">gphdfs:// Protocol</a></li>
-<li><a href="admin_guide/load/topics/g-s3-protocol.html">s3:// Protocol</a></li>
-<li><a href="admin_guide/load/topics/g-accessing-ext-files-custom-protocol.html">Using a Custom Protocol</a></li>
-<li><a href="admin_guide/load/topics/g-handling-errors-ext-table-data.html">Handling Errors in External Table Data</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-using-the-greenplum-parallel-file-server--gpfdist-.html">Using the Greenplum Parallel File Server (gpfdist)</a><ul>
-<li><a href="admin_guide/load/topics/g-about-gpfdist-setup-and-performance.html">About gpfdist Setup and Performance</a></li>
-<li><a href="admin_guide/load/topics/g-controlling-segment-parallelism.html">Controlling Segment Parallelism</a></li>
-<li><a href="admin_guide/load/topics/g-installing-gpfdist.html">Installing gpfdist</a></li>
-<li><a href="admin_guide/load/topics/g-starting-and-stopping-gpfdist.html">Starting and Stopping gpfdist</a></li>
-<li><a href="admin_guide/load/topics/g-troubleshooting-gpfdist.html">Troubleshooting gpfdist</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-using-hadoop-distributed-file-system--hdfs--tables.html">Using Hadoop Distributed File System (HDFS) Tables</a><ul>
-<li>
-<a href="admin_guide/load/topics/g-one-time-hdfs-protocol-installation.html">One-time HDFS Protocol Installation</a><ul>
-<li><a href="admin_guide/load/topics/g-grant-privileges-for-the-hdfs-protocol.html">Grant Privileges for the HDFS Protocol</a></li>
-<li>
-<a href="admin_guide/load/topics/g-specify-hdfs-data-in-an-external-table-definition.html">Specify HDFS Data in an External Table Definition</a><ul><li><a href="admin_guide/load/topics/g-setting-compression-options-for-hadoop-writable-external-tables.html">Setting Compression Options for Hadoop Writable External Tables</a></li></ul>
-</li>
-<li><a href="admin_guide/load/topics/g-hdfs-readable-and-writable-external-table-examples.html">HDFS Readable and Writable External Table Examples</a></li>
-<li><a href="admin_guide/load/topics/g-reading-and-writing-custom-formatted-hdfs-data.html">Reading and Writing Custom-Formatted HDFS Data</a></li>
-<li><a href="admin_guide/load/topics/g-example-1-read-custom-formatted-data-from-hdfs.html">Example 1 - Read Custom-Formatted Data from HDFS</a></li>
-<li>
-<a href="admin_guide/load/topics/g-sample-mapreduce-code.html">Sample MapReduce Code</a><ul><li><a href="admin_guide/load/topics/g-run-create-external-table.html"> Run CREATE EXTERNAL TABLE</a></li></ul>
-</li>
-<li><a href="admin_guide/load/topics/g-example-2-write-custom-formatted-data-from-greenplum-database-to-hdfs.html">Example 2 - Write Custom-Formatted Data from Greenplum Database to HDFS</a></li>
-<li><a href="admin_guide/load/topics/g-mapreduce-sample-code.html"> MapReduce Sample Code </a></li>
-</ul>
-</li>
-<li><a href="admin_guide/load/topics/g-gphdfs-jvm.html">About gphdfs JVM Memory</a></li>
-<li><a href="admin_guide/load/topics/g-hdfs-emr-config.html">Using Amazon EMR with Greenplum Database installed on AWS </a></li>
-<li><a href="admin_guide/load/topics/g-hdfs-avro-format.html">Support for Avro Files</a></li>
-<li><a href="admin_guide/load/topics/g-hdfs-parquet-format.html">Support for Parquet Files</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-creating-and-using-web-external-tables.html">Creating and Using Web External Tables</a><ul>
-<li><a href="admin_guide/load/topics/g-command-based-web-external-tables.html">Command-based Web External Tables</a></li>
-<li><a href="admin_guide/load/topics/g-url-based-web-external-tables.html">URL-based Web External Tables</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/load/topics/g-loading-data-using-an-external-table.html">Loading Data Using an External Table</a></li>
-<li>
-<a href="admin_guide/load/topics/g-loading-and-writing-non-hdfs-custom-data.html">Loading and Writing Non-HDFS Custom Data</a><ul>
-<li>
-<a href="admin_guide/load/topics/g-using-a-custom-format.html">Using a Custom Format</a><ul>
-<li><a href="admin_guide/load/topics/g-importing-and-exporting-fixed-width-data.html">Importing and Exporting Fixed Width Data</a></li>
-<li><a href="admin_guide/load/topics/g-examples-read-fixed-width-data.html">Examples: Read Fixed-Width Data</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/load/topics/g-using-a-custom-protocol.html">Using a Custom Protocol</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-creating-external-tables---examples.html">Creating External Tables - Examples</a><ul>
-<li><a href="admin_guide/load/topics/g-example-1-single-gpfdist-instance-on-single-nic-machine.html">Example 1—Single gpfdist instance on single-NIC machine</a></li>
-<li><a href="admin_guide/load/topics/g-example-2-multiple-gpfdist-instances.html">Example 2—Multiple gpfdist instances </a></li>
-<li><a href="admin_guide/load/topics/g-example-3-multiple-gpfdists-instances.html">Example 3—Multiple gpfdists instances </a></li>
-<li><a href="admin_guide/load/topics/g-example-4-single-gpfdist-instance-with-error-logging.html">Example 4—Single gpfdist instance with error logging</a></li>
-<li><a href="admin_guide/load/topics/g-example-5-text-format-on-a-hadoop-distributed-file-server.html">Example 5—TEXT Format on a Hadoop Distributed File Server</a></li>
-<li><a href="admin_guide/load/topics/g-example-6-multiple-files-in-csv-format-with-header-rows.html">Example 6—Multiple files in CSV format with header rows</a></li>
-<li><a href="admin_guide/load/topics/g-example-7-readable-web-external-table-with-script.html">Example 7—Readable Web External Table with Script</a></li>
-<li><a href="admin_guide/load/topics/g-example-8-writable-external-table-with-gpfdist.html">Example 8—Writable External Table with gpfdist</a></li>
-<li><a href="admin_guide/load/topics/g-example-9-writable-external-web-table-with-script.html">Example 9—Writable External Web Table with Script</a></li>
-<li><a href="admin_guide/load/topics/g-example-10-readable-and-writable-external-tables-with-xml-transformations.html">Example 10—Readable and Writable External Tables with XML Transformations</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-handling-load-errors.html">Handling Load Errors</a><ul>
-<li><a href="admin_guide/load/topics/g-define-an-external-table-with-single-row-error-isolation.html">Define an External Table with Single Row Error Isolation</a></li>
-<li><a href="admin_guide/load/topics/g-create-an-error-table-and-declare-a-reject-limit.html">Capture Row Formatting Errors and Declare a Reject Limit </a></li>
-<li><a href="admin_guide/load/topics/g-viewing-bad-rows-in-the-error-table-or-error-log.html">Viewing Bad Rows in the Error Log</a></li>
-<li><a href="admin_guide/load/topics/g-identifying-invalid-csv-files-in-error-table-data.html">Identifying Invalid CSV Files in Error Table Data</a></li>
-<li><a href="admin_guide/load/topics/g-moving-data-between-tables.html">Moving Data between Tables</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/load/topics/g-loading-data-with-gpload.html">Loading Data with gpload</a></li>
-<li><a href="admin_guide/load/topics/g-loading-data-with-copy.html">Loading Data with COPY</a></li>
-<li><a href="admin_guide/load/topics/g-running-copy-in-single-row-error-isolation-mode.html">Running COPY in Single Row Error Isolation Mode</a></li>
-<li><a href="admin_guide/load/topics/g-optimizing-data-load-and-query-performance.html">Optimizing Data Load and Query Performance</a></li>
-<li>
-<a href="admin_guide/load/topics/g-unloading-data-from-greenplum-database.html">Unloading Data from Greenplum Database</a><ul>
-<li>
-<a href="admin_guide/load/topics/g-defining-a-file-based-writable-external-table.html">Defining a File-Based Writable External Table</a><ul>
-<li><a href="admin_guide/load/topics/g-example-1-greenplum-file-server-gpfdist.html">Example 1—Greenplum file server (gpfdist)</a></li>
-<li><a href="admin_guide/load/topics/g-example-2-hadoop-file-server-gphdfs.html">Example 2—Hadoop file server (gphdfs)</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-defining-a-command-based-writable-external-web-table.html">Defining a Command-Based Writable External Web Table</a><ul><li><a href="admin_guide/load/topics/g-disabling-execute-for-web-or-writable-external-tables.html">Disabling EXECUTE for Web or Writable External Tables</a></li></ul>
-</li>
-<li><a href="admin_guide/load/topics/g-unloading-data-using-a-writable-external-table.html">Unloading Data Using a Writable External Table</a></li>
-<li><a href="admin_guide/load/topics/g-unloading-data-using-copy.html">Unloading Data Using COPY</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-transforming-xml-data.html">Transforming XML Data</a><ul>
-<li><a href="admin_guide/load/topics/g-determine-the-transformation-schema.html">Determine the Transformation Schema</a></li>
-<li><a href="admin_guide/load/topics/g-write-a-transform.html">Write a Transform</a></li>
-<li><a href="admin_guide/load/topics/g-write-the-gpfdist-configuration.html">Write the gpfdist Configuration</a></li>
-<li><a href="admin_guide/load/topics/g-load-the-data.html">Load the Data</a></li>
-<li>
-<a href="admin_guide/load/topics/g-transfer-and-store-the-data.html">Transfer and Store the Data</a><ul>
-<li><a href="admin_guide/load/topics/g-transforming-with-gpload.html">Transforming with GPLOAD</a></li>
-<li><a href="admin_guide/load/topics/g-transforming-with-insert-into-select-from.html">Transforming with INSERT INTO SELECT FROM</a></li>
-<li><a href="admin_guide/load/topics/g-configuration-file-format.html">Configuration File Format</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-xml-transformation-examples.html">XML Transformation Examples</a><ul>
-<li><a href="admin_guide/load/topics/g-example-1-dblp-database-publications-in-demo-directory.html">Command-based Web External Tables</a></li>
-<li><a href="admin_guide/load/topics/g-example-2-irs-mef-xml-files-in-demo-directory.html">Example 2 - IRS MeF XML Files (In demo Directory)</a></li>
-<li><a href="admin_guide/load/topics/g-example-3-witsml-files-in-demo-directory.html">Example 3 - WITSML™ Files (In demo Directory)</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-formatting-data-files.html">Formatting Data Files</a><ul>
-<li><a href="admin_guide/load/topics/g-formatting-rows.html">Formatting Rows</a></li>
-<li><a href="admin_guide/load/topics/g-formatting-columns.html">Formatting Columns</a></li>
-<li><a href="admin_guide/load/topics/g-representing-null-values.html">Representing NULL Values</a></li>
-<li>
-<a href="admin_guide/load/topics/g-escaping.html">Escaping</a><ul>
-<li><a href="admin_guide/load/topics/g-escaping-in-text-formatted-files.html">Escaping in Text Formatted Files</a></li>
-<li><a href="admin_guide/load/topics/g-escaping-in-csv-formatted-files.html">Escaping in CSV Formatted Files</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/load/topics/g-character-encoding.html">Character Encoding</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-example-custom-data-access-protocol.html">Example Custom Data Access Protocol </a><ul><li>
-<a href="admin_guide/load/topics/g-installing-the-external-table-protocol.html">Installing the External Table Protocol</a><ul><li><a href="admin_guide/load/topics/g-gpextprotocal.c.html">gpextprotocal.c</a></li></ul>
-</li></ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/query/topics/query.html">Querying Data</a><ul>
-<li><a href="admin_guide/query/topics/parallel-proc.html">About Greenplum Query Processing</a></li>
-<li>
-<a href="admin_guide/query/topics/query-piv-optimizer.html">About GPORCA</a><ul>
-<li><a href="admin_guide/query/topics/query-piv-opt-overview.html">Overview of GPORCA</a></li>
-<li><a href="admin_guide/query/topics/query-piv-opt-enable.html">Enabling GPORCA</a></li>
-<li><a href="admin_guide/query/topics/query-piv-opt-notes.html">Considerations when Using GPORCA</a></li>
-<li><a href="admin_guide/query/topics/query-piv-opt-features.html">GPORCA Features and Enhancements</a></li>
-<li><a href="admin_guide/query/topics/query-piv-opt-changed.html">Changed Behavior with the GPORCA</a></li>
-<li><a href="admin_guide/query/topics/query-piv-opt-limitations.html">GPORCA Limitations</a></li>
-<li><a href="admin_guide/query/topics/query-piv-opt-fallback.html">Determining the Query Optimizer that is Used</a></li>
-<li><a href="admin_guide/query/topics/query-piv-uniform-part-tbl.html">About Uniform Multi-level Partitioned Tables</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/query/topics/defining-queries.html">Defining Queries</a></li>
-<li><a href="admin_guide/query/topics/functions-operators.html">Using Functions and Operators</a></li>
-<li><a href="admin_guide/query/topics/json-data.html">Working with JSON Data</a></li>
-<li><a href="admin_guide/query/topics/query-performance.html">Query Performance</a></li>
-<li><a href="admin_guide/query/topics/spill-files.html">Managing Spill Files Generated by Queries</a></li>
-<li><a href="admin_guide/query/topics/query-profiling.html">Query Profiling</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/partV.html">Managing Performance</a><ul>
-<li><a href="admin_guide/perf_intro.html">Defining Database Performance</a></li>
-<li><a href="admin_guide/perf_issues.html">Common Causes of Performance Issues</a></li>
-<li><a href="admin_guide/workload_mgmt.html">Workload Management with Resource Queues</a></li>
-<li><a href="admin_guide/perf_troubleshoot.html">Investigating a Performance Problem</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="utility_guide/utility_guide.html">Utility Guide</a><ul>
-<li>
-<a href="utility_guide/admin_utilities/util_ref.html">Management Utility Reference</a><ul>
-<li><a href="utility_guide/admin_utilities/analyzedb.html">analyzedb</a></li>
-<li><a href="utility_guide/admin_utilities/gpactivatestandby.html">gpactivatestandby</a></li>
-<li><a href="utility_guide/admin_utilities/gpaddmirrors.html">gpaddmirrors</a></li>
-<li><a href="utility_guide/admin_utilities/gpcheck.html">gpcheck</a></li>
-<li><a href="utility_guide/admin_utilities/gpcheckcat.html">gpcheckcat</a></li>
-<li><a href="utility_guide/admin_utilities/gpcheckperf.html">gpcheckperf</a></li>
-<li><a href="utility_guide/admin_utilities/gpconfig.html">gpconfig</a></li>
-<li><a href="utility_guide/admin_utilities/gpcrondump.html">gpcrondump</a></li>
-<li><a href="utility_guide/admin_utilities/gpdbrestore.html">gpdbrestore</a></li>
-<li><a href="utility_guide/admin_utilities/gpdeletesystem.html">gpdeletesystem</a></li>
-<li><a href="utility_guide/admin_utilities/gpexpand.html">gpexpand</a></li>
-<li><a href="utility_guide/admin_utilities/gpfdist.html">gpfdist</a></li>
-<li><a href="utility_guide/admin_utilities/gpfilespace.html">gpfilespace</a></li>
-<li><a href="utility_guide/admin_utilities/gpinitstandby.html">gpinitstandby</a></li>
-<li><a href="utility_guide/admin_utilities/gpinitsystem.html">gpinitsystem</a></li>
-<li><a href="utility_guide/admin_utilities/gpload.html">gpload</a></li>
-<li><a href="utility_guide/admin_utilities/gplogfilter.html">gplogfilter</a></li>
-<li><a href="utility_guide/admin_utilities/gpmapreduce.html">gpmapreduce</a></li>
-<li><a href="utility_guide/admin_utilities/gpmfr.html">gpmfr</a></li>
-<li><a href="utility_guide/admin_utilities/gpperfmon_install.html">gpperfmon_install</a></li>
-<li><a href="utility_guide/admin_utilities/gppkg.html">gppkg</a></li>
-<li><a href="utility_guide/admin_utilities/gprecoverseg.html">gprecoverseg</a></li>
-<li><a href="utility_guide/admin_utilities/gpreload.html">gpreload</a></li>
-<li><a href="utility_guide/admin_utilities/gpscp.html">gpscp</a></li>
-<li><a href="utility_guide/admin_utilities/gpseginstall.html">gpseginstall</a></li>
-<li><a href="utility_guide/admin_utilities/gpssh.html">gpssh</a></li>
-<li><a href="utility_guide/admin_utilities/gpssh-exkeys.html">gpssh-exkeys</a></li>
-<li><a href="utility_guide/admin_utilities/gpstart.html">gpstart</a></li>
-<li><a href="utility_guide/admin_utilities/gpstate.html">gpstate</a></li>
-<li><a href="utility_guide/admin_utilities/gpstop.html">gpstop</a></li>
-<li><a href="utility_guide/admin_utilities/gpsys.html">gpsys1</a></li>
-<li><a href="utility_guide/admin_utilities/gptransfer.html">gptransfer</a></li>
-<li><a href="utility_guide/admin_utilities/pgbouncer-ref.html">pgbouncer</a></li>
-</ul>
-</li>
-<li>
-<a href="utility_guide/cli_ref.html">Client Utility Reference</a><ul><li>
-<a href="utility_guide/client_utilities/ClientUtilitySummary.html">Client Utility Summary</a><ul>
-<li><a href="utility_guide/client_utilities/clusterdb.html">clusterdb</a></li>
-<li><a href="utility_guide/client_utilities/createdb.html">createdb</a></li>
-<li><a href="utility_guide/client_utilities/createuser.html">createuser</a></li>
-<li><a href="utility_guide/client_utilities/dropdb.html">dropdb</a></li>
-<li><a href="utility_guide/client_utilities/droplang.html">droplang</a></li>
-<li><a href="utility_guide/client_utilities/dropuser.html">dropuser</a></li>
-<li><a href="utility_guide/client_utilities/createlang.html">createlang</a></li>
-<li><a href="utility_guide/client_utilities/pg_config.html">pg_config</a></li>
-<li><a href="utility_guide/client_utilities/pg_dump.html">pg_dump</a></li>
-<li><a href="utility_guide/client_utilities/pg_dumpall.html">pg_dumpall</a></li>
-<li><a href="utility_guide/client_utilities/pg_restore.html">pg_restore</a></li>
-<li><a href="utility_guide/client_utilities/psql.html">psql</a></li>
-<li><a href="utility_guide/client_utilities/reindexdb.html">reindexdb</a></li>
-<li><a href="utility_guide/client_utilities/vacuumdb.html">vacuumdb</a></li>
-</ul>
-</li></ul>
-</li>
-<li><a href="utility_guide/orafce_ref.html">Oracle Compatibility Functions</a></li>
-<li><a href="utility_guide/dblink.html">dblink Functions</a></li>
-</ul>
-</li>
-<li>
-<a href="ref_guide/ref_guide.html">Reference Guide</a><ul>
-<li>
-<a href="ref_guide/sql_commands/sql_ref.html">SQL Command Reference</a><ul>
-<li><a href="ref_guide/GPReferenceSQLSummaryLOP.html">SQL Syntax Summary</a></li>
-<li><a href="ref_guide/sql_commands/ABORT.html">ABORT</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_AGGREGATE.html">ALTER AGGREGATE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_CONVERSION.html">ALTER CONVERSION</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_DATABASE.html">ALTER DATABASE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_DOMAIN.html">ALTER DOMAIN</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_FILESPACE.html">ALTER FILESPACE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_FUNCTION.html">ALTER FUNCTION</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_GROUP.html">ALTER GROUP</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_INDEX.html">ALTER INDEX</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_LANGUAGE.html">ALTER LANGUAGE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_OPERATOR.html">ALTER OPERATOR</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_OPERATOR_CLASS.html">ALTER OPERATOR CLASS</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_PROTOCOL.html">ALTER PROTOCOL</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_RESOURCE_QUEUE.html">ALTER RESOURCE QUEUE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_ROLE.html">ALTER ROLE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_SCHEMA.html">ALTER SCHEMA</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_SEQUENCE.html">ALTER SEQUENCE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_TABLE.html">ALTER TABLE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_TABLESPACE.html">ALTER TABLESPACE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_TYPE.html">ALTER TYPE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_USER.html">ALTER USER</a></li>
-<li><a href="ref_guide/sql_commands/ANALYZE.html">ANALYZE</a></li>
-<li><a href="ref_guide/sql_commands/BEGIN.html">BEGIN</a></li>
-<li><a href="ref_guide/sql_commands/CHECKPOINT.html">CHECKPOINT</a></li>
-<li><a href="ref_guide/sql_commands/CLOSE.html">CLOSE</a></li>
-<li><a href="ref_guide/sql_commands/CLUSTER.html">CLUSTER</a></li>
-<li><a href="ref_guide/sql_commands/COMMENT.html">COMMENT</a></li>
-<li><a href="ref_guide/sql_commands/COMMIT.html">COMMIT</a></li>
-<li><a href="ref_guide/sql_commands/COPY.html">COPY</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_AGGREGATE.html">CREATE AGGREGATE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_CAST.html">CREATE CAST</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_CONVERSION.html">CREATE CONVERSION</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_DATABASE.html">CREATE DATABASE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_DOMAIN.html">CREATE DOMAIN</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_FUNCTION.html">CREATE FUNCTION</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_GROUP.html">CREATE GROUP</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_INDEX.html">CREATE INDEX</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_LANGUAGE.html">CREATE LANGUAGE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_OPERATOR.html">CREATE OPERATOR</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_OPERATOR_CLASS.html">CREATE OPERATOR CLASS</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_PROTOCOL.html">CREATE PROTOCOL</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_RESOURCE_QUEUE.html">CREATE RESOURCE QUEUE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_ROLE.html">CREATE ROLE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_RULE.html">CREATE RULE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_SCHEMA.html">CREATE SCHEMA</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_SEQUENCE.html">CREATE SEQUENCE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_TABLE.html">CREATE TABLE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_TABLE_AS.html">CREATE TABLE AS</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_TABLESPACE.html">CREATE TABLESPACE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_TYPE.html">CREATE TYPE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_USER.html">CREATE USER</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_VIEW.html">CREATE VIEW</a></li>
-<li><a href="ref_guide/sql_commands/DEALLOCATE.html">DEALLOCATE</a></li>
-<li><a href="ref_guide/sql_commands/DECLARE.html">DECLARE</a></li>
-<li><a href="ref_guide/sql_commands/DELETE.html">DELETE</a></li>
-<li><a href="ref_guide/sql_commands/DO.html">DO</a></li>
-<li><a href="ref_guide/sql_commands/DROP_AGGREGATE.html">DROP AGGREGATE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_CAST.html">DROP CAST</a></li>
-<li><a href="ref_guide/sql_commands/DROP_CONVERSION.html">DROP CONVERSION</a></li>
-<li><a href="ref_guide/sql_commands/DROP_DATABASE.html">DROP DATABASE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a></li>
-<li><a href="ref_guide/sql_commands/DROP_EXTERNAL_TABLE.html">DROP EXTERNAL TABLE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_FILESPACE.html">DROP FILESPACE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_FUNCTION.html">DROP FUNCTION</a></li>
-<li><a href="ref_guide/sql_commands/DROP_GROUP.html">DROP GROUP</a></li>
-<li><a href="ref_guide/sql_commands/DROP_INDEX.html">DROP INDEX</a></li>
-<li><a href="ref_guide/sql_commands/DROP_LANGUAGE.html">DROP LANGUAGE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_OPERATOR.html">DROP OPERATOR</a></li>
-<li><a href="ref_guide/sql_commands/DROP_OPERATOR_CLASS.html">DROP OPERATOR CLASS</a></li>
-<li><a href="ref_guide/sql_commands/DROP_OWNED.html">DROP OWNED</a></li>
-<li><a href="ref_guide/sql_commands/DROP_PROTOCOL.html">DROP PROTOCOL</a></li>
-<li><a href="ref_guide/sql_commands/DROP_RESOURCE_QUEUE.html">DROP RESOURCE QUEUE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_ROLE.html">DROP ROLE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_RULE.html">DROP RULE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_SCHEMA.html">DROP SCHEMA</a></li>
-<li><a href="ref_guide/sql_commands/DROP_SEQUENCE.html">DROP SEQUENCE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_TABLE.html">DROP TABLE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_TABLESPACE.html">DROP TABLESPACE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_TYPE.html">DROP TYPE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_USER.html">DROP USER</a></li>
-<li><a href="ref_guide/sql_commands/DROP_VIEW.html">DROP VIEW</a></li>
-<li><a href="ref_guide/sql_commands/END.html">END</a></li>
-<li><a href="ref_guide/sql_commands/EXECUTE.html">EXECUTE</a></li>
-<li><a href="ref_guide/sql_commands/EXPLAIN.html">EXPLAIN</a></li>
-<li><a href="ref_guide/sql_commands/FETCH.html">FETCH</a></li>
-<li><a href="ref_guide/sql_commands/GRANT.html">GRANT</a></li>
-<li><a href="ref_guide/sql_commands/INSERT.html">INSERT</a></li>
-<li><a href="ref_guide/sql_commands/LOAD.html">LOAD</a></li>
-<li><a href="ref_guide/sql_commands/LOCK.html">LOCK</a></li>
-<li><a href="ref_guide/sql_commands/MOVE.html">MOVE</a></li>
-<li><a href="ref_guide/sql_commands/PREPARE.html">PREPARE</a></li>
-<li><a href="ref_guide/sql_commands/REASSIGN_OWNED.html">REASSIGN OWNED</a></li>
-<li><a href="ref_guide/sql_commands/REINDEX.html">REINDEX</a></li>
-<li><a href="ref_guide/sql_commands/RELEASE_SAVEPOINT.html">RELEASE SAVEPOINT</a></li>
-<li><a href="ref_guide/sql_commands/RESET.html">RESET</a></li>
-<li><a href="ref_guide/sql_commands/REVOKE.html">REVOKE</a></li>
-<li><a href="ref_guide/sql_commands/ROLLBACK.html">ROLLBACK</a></li>
-<li><a href="ref_guide/sql_commands/ROLLBACK_TO_SAVEPOINT.html">ROLLBACK TO SAVEPOINT</a></li>
-<li><a href="ref_guide/sql_commands/SAVEPOINT.html">SAVEPOINT</a></li>
-<li><a href="ref_guide/sql_commands/SELECT.html">SELECT</a></li>
-<li><a href="ref_guide/sql_commands/SELECT_INTO.html">SELECT INTO</a></li>
-<li><a href="ref_guide/sql_commands/SET.html">SET</a></li>
-<li><a href="ref_guide/sql_commands/SET_ROLE.html">SET ROLE</a></li>
-<li><a href="ref_guide/sql_commands/SET_SESSION_AUTHORIZATION.html">SET SESSION AUTHORIZATION</a></li>
-<li><a href="ref_guide/sql_commands/SET_TRANSACTION.html">SET TRANSACTION</a></li>
-<li><a href="ref_guide/sql_commands/SHOW.html">SHOW</a></li>
-<li><a href="ref_guide/sql_commands/START_TRANSACTION.html">START TRANSACTION</a></li>
-<li><a href="ref_guide/sql_commands/TRUNCATE.html">TRUNCATE</a></li>
-<li><a href="ref_guide/sql_commands/UPDATE.html">UPDATE</a></li>
-<li><a href="ref_guide/sql_commands/VACUUM.html">VACUUM</a></li>
-<li><a href="ref_guide/sql_commands/VALUES.html">VALUES</a></li>
-</ul>
-</li>
-<li><a href="ref_guide/SQL2008_support.html">SQL 2008 Optional Feature Compliance</a></li>
-<li><a href="ref_guide/env_var_ref.html">Greenplum Environment Variables</a></li>
-<li>
-<a href="ref_guide/system_catalogs/catalog_ref.html#topic1">System Catalog Reference</a><ul>
-<li><a href="ref_guide/system_catalogs/catalog_ref-tables.html#topic1">System Tables</a></li>
-<li><a href="ref_guide/system_catalogs/catalog_ref-views.html#topic1">System Views</a></li>
-<li>
-<a href="ref_guide/system_catalogs/catalog_ref-html.html#topic1">System Catalogs Definitions</a><ul>
-<li><a href="ref_guide/system_catalogs/gp_configuration_history.html">gp_configuration_history</a></li>
-<li><a href="ref_guide/system_catalogs/gp_db_interfaces.html">gp_db_interfaces</a></li>
-<li><a href="ref_guide/system_catalogs/gp_distributed_log.html">gp_distributed_log</a></li>
-<li><a href="ref_guide/system_catalogs/gp_distributed_xacts.html">gp_distributed_xacts</a></li>
-<li><a href="ref_guide/system_catalogs/gp_distribution_policy.html">gp_distribution_policy</a></li>
-<li><a href="ref_guide/system_catalogs/gpexpand_expansion_progress.html">gpexpand.expansion_progress</a></li>
-<li><a href="ref_guide/system_catalogs/gp_expansion_status.html">gpexpand.status</a></li>
-<li><a href="ref_guide/system_catalogs/gp_expansion_tables.html">gpexpand.status_detail</a></li>
-<li><a href="ref_guide/system_catalogs/gp_fastsequence.html">gp_fastsequence</a></li>
-<li><a href="ref_guide/system_catalogs/gp_fault_strategy.html">gp_fault_strategy</a></li>
-<li><a href="ref_guide/system_catalogs/gp_global_sequence.html">gp_global_sequence</a></li>
-<li><a href="ref_guide/system_catalogs/gp_id.html">gp_id</a></li>
-<li><a href="ref_guide/system_catalogs/gp_interfaces.html">gp_interfaces</a></li>
-<li><a href="ref_guide/system_catalogs/gp_persistent_database_node.html">gp_persistent_database_node</a></li>
-<li><a href="ref_guide/system_catalogs/gp_persistent_filespace_node.html">gp_persistent_filespace_node</a></li>
-<li><a href="ref_guide/system_catalogs/gp_persistent_relation_node.html">gp_persistent_relation_node</a></li>
-<li><a href="ref_guide/system_catalogs/gp_persistent_tablespace_node.html">gp_persistent_tablespace_node</a></li>
-<li><a href="ref_guide/system_catalogs/gp_pgdatabase.html">gp_pgdatabase</a></li>
-<li><a href="ref_guide/system_catalogs/gp_relation_node.html">gp_relation_node</a></li>
-<li><a href="ref_guide/system_catalogs/gp_resqueue_status.html">gp_resqueue_status</a></li>
-<li><a href="ref_guide/system_catalogs/gp_san_configuration.html">gp_san_configuration</a></li>
-<li><a href="ref_guide/system_catalogs/gp_segment_configuration.html">gp_segment_configuration</a></li>
-<li><a href="ref_guide/system_catalogs/gp_transaction_log.html">gp_transaction_log</a></li>
-<li><a href="ref_guide/system_catalogs/gp_version_at_initdb.html">gp_version_at_initdb</a></li>
-<li><a href="ref_guide/system_catalogs/pg_aggregate.html">pg_aggregate</a></li>
-<li><a href="ref_guide/system_catalogs/pg_am.html">pg_am</a></li>
-<li><a href="ref_guide/system_catalogs/pg_amop.html">pg_amop</a></li>
-<li><a href="ref_guide/system_catalogs/pg_amproc.html">pg_amproc</a></li>
-<li><a href="ref_guide/system_catalogs/pg_appendonly.html">pg_appendonly</a></li>
-<li><a href="ref_guide/system_catalogs/pg_attrdef.html">pg_attrdef</a></li>
-<li><a href="ref_guide/system_catalogs/pg_attribute.html">pg_attribute</a></li>
-<li><a href="ref_guide/system_catalogs/pg_attribute_encoding.html">pg_attribute_encoding</a></li>
-<li><a href="ref_guide/system_catalogs/pg_auth_members.html">pg_auth_members</a></li>
-<li><a href="ref_guide/system_catalogs/pg_authid.html">pg_authid</a></li>
-<li><a href="ref_guide/system_catalogs/pg_cast.html">pg_cast</a></li>
-<li><a href="ref_guide/system_catalogs/pg_class.html">pg_class</a></li>
-<li><a href="ref_guide/system_catalogs/pg_compression.html">pg_compression</a></li>
-<li><a href="ref_guide/system_catalogs/pg_constraint.html">pg_constraint</a></li>
-<li><a href="ref_guide/system_catalogs/pg_conversion.html">pg_conversion</a></li>
-<li><a href="ref_guide/system_catalogs/pg_database.html">pg_database</a></li>
-<li><a href="ref_guide/system_catalogs/pg_depend.html">pg_depend</a></li>
-<li><a href="ref_guide/system_catalogs/pg_description.html">pg_description</a></li>
-<li><a href="ref_guide/system_catalogs/pg_enum.html">pg_enum</a></li>
-<li><a href="ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a></li>
-<li><a href="ref_guide/system_catalogs/pg_filespace.html">pg_filespace</a></li>
-<li><a href="ref_guide/system_catalogs/pg_filespace_entry.html">pg_filespace_entry</a></li>
-<li><a href="ref_guide/system_catalogs/pg_index.html">pg_index</a></li>
-<li><a href="ref_guide/system_catalogs/pg_inherits.html">pg_inherits</a></li>
-<li><a href="ref_guide/system_catalogs/pg_language.html">pg_language</a></li>
-<li><a href="ref_guide/system_catalogs/pg_largeobject.html">pg_largeobject</a></li>
-<li><a href="ref_guide/system_catalogs/pg_listener.html">pg_listener</a></li>
-<li><a href="ref_guide/system_catalogs/pg_locks.html">pg_locks</a></li>
-<li><a href="ref_guide/system_catalogs/pg_namespace.html">pg_namespace</a></li>
-<li><a href="ref_guide/system_catalogs/pg_opclass.html">pg_opclass</a></li>
-<li><a href="ref_guide/system_catalogs/pg_operator.html">pg_operator</a></li>
-<li><a href="ref_guide/system_catalogs/pg_partition.html">pg_partition</a></li>
-<li><a href="ref_guide/system_catalogs/pg_partition_columns.html">pg_partition_columns</a></li>
-<li><a href="ref_guide/system_catalogs/pg_partition_encoding.html">pg_partition_encoding</a></li>
-<li><a href="ref_guide/system_catalogs/pg_partition_rule.html">pg_partition_rule</a></li>
-<li><a href="ref_guide/system_catalogs/pg_partition_templates.html">pg_partition_templates</a></li>
-<li><a href="ref_guide/system_catalogs/pg_partitions.html">pg_partitions</a></li>
-<li><a href="ref_guide/system_catalogs/pg_pltemplate.html">pg_pltemplate</a></li>
-<li><a href="ref_guide/system_catalogs/pg_proc.html">pg_proc</a></li>
-<li><a href="ref_guide/system_catalogs/pg_resourcetype.html">pg_resourcetype</a></li>
-<li><a href="ref_guide/system_catalogs/pg_resqueue.html">pg_resqueue</a></li>
-<li><a href="ref_guide/system_catalogs/pg_resqueue_attributes.html">pg_resqueue_attributes</a></li>
-<li><a href="ref_guide/system_catalogs/pg_resqueuecapability.html">pg_resqueuecapability</a></li>
-<li><a href="ref_guide/system_catalogs/pg_rewrite.html">pg_rewrite</a></li>
-<li><a href="ref_guide/system_catalogs/pg_roles.html">pg_roles</a></li>
-<li><a href="ref_guide/system_catalogs/pg_shdepend.html">pg_shdepend</a></li>
-<li><a href="ref_guide/system_catalogs/pg_shdescription.html">pg_shdescription</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stat_activity.html">pg_stat_activity</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stat_last_operation.html">pg_stat_last_operation</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stat_last_shoperation.html">pg_stat_last_shoperation</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stat_operations.html">pg_stat_operations</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stat_partition_operations.html">pg_stat_partition_operations</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stat_replication.html">pg_stat_replication</a></li>
-<li><a href="ref_guide/system_catalogs/pg_statistic.html">pg_statistic</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stats_resqueue.html">pg_stat_resqueues</a></li>
-<li><a href="ref_guide/system_catalogs/pg_tablespace.html">pg_tablespace</a></li>
-<li><a href="ref_guide/system_catalogs/pg_trigger.html">pg_trigger</a></li>
-<li><a href="ref_guide/system_catalogs/pg_type.html">pg_type</a></li>
-<li><a href="ref_guide/system_catalogs/pg_type_encoding.html">pg_type_encoding</a></li>
-<li><a href="ref_guide/system_catalogs/pg_user_mapping.html">pg_user_mapping</a></li>
-<li><a href="ref_guide/system_catalogs/pg_window.html">pg_window</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="ref_guide/gp_toolkit.html">The gp_toolkit Administrative Schema</a><ul>
-<li><a href="ref_guide/gp_toolkit.html#topic2">Checking for Tables that Need Routine Maintenance</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic5">Checking for Locks</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic8">Checking Append-Optimized Tables</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic16">Viewing Greenplum Database Server Log Files</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic21">Checking Server Configuration Files</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic24">Checking for Failed Segments</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic26">Checking Resource Queue Activity and Status</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic32">Checking Query Disk Spill Space Usage</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic36">Viewing Users and Groups (Roles)</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic38">Checking Database Object Sizes and Disk Space</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic49">Checking for Uneven Data Distribution</a></li>
-</ul>
-</li>
-<li><a href="ref_guide/data_types.html">Greenplum Database Data Types</a></li>
-<li><a href="ref_guide/character_sets.html">Character Set Support</a></li>
-<li>
-<a href="ref_guide/config_params/guc_config.html">Server Configuration Parameters</a><ul>
-<li><a href="ref_guide/config_params/guc_config.html#topic_vsn_22l_z4">Parameter Types and Values</a></li>
-<li><a href="ref_guide/config_params/guc_config.html#topic_cyz_p2l_z4">Setting Parameters</a></li>
-<li><a href="ref_guide/config_params/guc_category-list.html">Parameter Categories</a></li>
-<li>
-<a href="ref_guide/config_params/guc-list.html">Configuration Parameters</a><ul>
-<li><a href="ref_guide/config_params/guc-list.html#add_missing_from">add_missing_from</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#application_name">application_name</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#array_nulls">array_nulls</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#authentication_timeout">authentication_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#backslash_quote">backslash_quote</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#block_size">block_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#bonjour_name">bonjour_name</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#check_function_bodies">check_function_bodies</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#client_encoding">client_encoding</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#client_min_messages">client_min_messages</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#cpu_index_tuple_cost">cpu_index_tuple_cost</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#cpu_operator_cost">cpu_operator_cost</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#cpu_tuple_cost">cpu_tuple_cost</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#cursor_tuple_fraction">cursor_tuple_fraction</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#custom_variable_classes">custom_variable_classes</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#DateStyle">DateStyle</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#db_user_namespace">db_user_namespace</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#deadlock_timeout">deadlock_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_assertions">debug_assertions</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_pretty_print">debug_pretty_print</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_print_parse">debug_print_parse</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_print_plan">debug_print_plan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_print_prelim_plan">debug_print_prelim_plan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_print_rewritten">debug_print_rewritten</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_print_slice_table">debug_print_slice_table</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#default_statistics_target">default_statistics_target</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#default_tablespace">default_tablespace</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#default_transaction_isolation">default_transaction_isolation</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#default_transaction_read_only">default_transaction_read_only</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#dynamic_library_path">dynamic_library_path</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#effective_cache_size">effective_cache_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_bitmapscan">enable_bitmapscan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_groupagg">enable_groupagg</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_hashagg">enable_hashagg</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_hashjoin">enable_hashjoin</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_indexscan">enable_indexscan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_mergejoin">enable_mergejoin</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_nestloop">enable_nestloop</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_seqscan">enable_seqscan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_sort">enable_sort</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_tidscan">enable_tidscan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#escape_string_warning">escape_string_warning</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#explain_pretty_print">explain_pretty_print</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#extra_float_digits">extra_float_digits</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#filerep_mirrorvalidation_during_resync">filerep_mirrorvalidation_during_resync</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#from_collapse_limit">from_collapse_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_adjust_selectivity_for_outerjoins">gp_adjust_selectivity_for_outerjoins</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_analyze_relative_error">gp_analyze_relative_error</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_appendonly_compaction">gp_appendonly_compaction</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_appendonly_compaction_threshold">gp_appendonly_compaction_threshold</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_autostats_mode">gp_autostats_mode</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_autostats_mode_in_functions">gp_autostats_mode_in_functions</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_autostats_on_change_threshold">gp_autostats_on_change_threshold</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_backup_directIO">gp_backup_directIO</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_backup_directIO_read_chunk_mb">gp_backup_directIO_read_chunk_mb</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_cached_segworkers_threshold">gp_cached_segworkers_threshold</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_command_count">gp_command_count</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_connectemc_mode">gp_connectemc_mode</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_connection_send_timeout">gp_connection_send_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_connections_per_thread">gp_connections_per_thread</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_content">gp_content</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_create_table_random_default_distribution">gp_create_table_random_default_distribution</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_dbid">gp_dbid</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_debug_linger">gp_debug_linger</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_default_storage_options">gp_default_storage_options</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_dynamic_partition_pruning">gp_dynamic_partition_pruning</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_email_from">gp_email_from</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_email_smtp_password">gp_email_smtp_password</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_email_smtp_server">gp_email_smtp_server</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_email_smtp_userid">gp_email_smtp_userid</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_email_to">gp_email_to</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_adaptive_nestloop">gp_enable_adaptive_nestloop</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_agg_distinct">gp_enable_agg_distinct</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_agg_distinct_pruning">gp_enable_agg_distinct_pruning</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_direct_dispatch">gp_enable_direct_dispatch</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_exchange_default_partition">gp_enable_exchange_default_partition</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_fallback_plan">gp_enable_fallback_plan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_fast_sri">gp_enable_fast_sri</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_gpperfmon">gp_enable_gpperfmon</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_groupext_distinct_gather">gp_enable_groupext_distinct_gather</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_groupext_distinct_pruning">gp_enable_groupext_distinct_pruning</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_multiphase_agg">gp_enable_multiphase_agg</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_predicate_propagation">gp_enable_predicate_propagation</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_preunique">gp_enable_preunique</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_relsize_collection">gp_enable_relsize_collection</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_sequential_window_plans">gp_enable_sequential_window_plans</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_sort_distinct">gp_enable_sort_distinct</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_sort_limit">gp_enable_sort_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_external_enable_exec">gp_external_enable_exec</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_external_grant_privileges">ref_guide/config_params/guc-list.xml#gp_external_grant_privileges</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_external_max_segs">gp_external_max_segs</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_filerep_tcp_keepalives_count">gp_filerep_tcp_keepalives_count</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_filerep_tcp_keepalives_idle">gp_filerep_tcp_keepalives_idle</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_filerep_tcp_keepalives_interval">gp_filerep_tcp_keepalives_interval</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_fts_probe_interval">gp_fts_probe_interval</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_fts_probe_retries">gp_fts_probe_retries</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_fts_probe_threadcount">gp_fts_probe_threadcount</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_fts_probe_timeout">gp_fts_probe_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_gpperfmon_send_interval">gp_gpperfmon_send_interval</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gpperfmon_log_alert_level">gpperfmon_log_alert_level</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_hadoop_home">gp_hadoop_home</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_hadoop_target_version">gp_hadoop_target_version</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_hashjoin_tuples_per_bucket">gp_hashjoin_tuples_per_bucket</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_idf_deduplicate">gp_idf_deduplicate</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#topic_lvm_ttc_3p">gp_initial_bad_row_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_interconnect_fc_method">gp_interconnect_fc_method</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_interconnect_hash_multiplier">gp_interconnect_hash_multiplier</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_interconnect_queue_depth">gp_interconnect_queue_depth</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_interconnect_setup_timeout">gp_interconnect_setup_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_interconnect_snd_queue_depth">gp_interconnect_snd_queue_depth</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_interconnect_type">gp_interconnect_type</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_log_format">gp_log_format</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_log_fts">gp_log_fts</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_csv_line_length">gp_max_csv_line_length</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_databases">gp_max_databases</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_filespaces">gp_max_filespaces</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_local_distributed_cache">gp_max_local_distributed_cache</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_packet_size">gp_max_packet_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_plan_size">gp_max_plan_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_tablespaces">gp_max_tablespaces</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_motion_cost_per_row">gp_motion_cost_per_row</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_num_contents_in_cluster">gp_num_contents_in_cluster</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_reject_percent_threshold">gp_reject_percent_threshold</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_reraise_signal">gp_reraise_signal</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_resqueue_memory_policy">gp_resqueue_memory_policy</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_resqueue_priority">gp_resqueue_priority</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_resqueue_priority_cpucores_per_segment">gp_resqueue_priority_cpucores_per_segment</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_resqueue_priority_sweeper_interval">gp_resqueue_priority_sweeper_interval</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_role">gp_role</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_safefswritesize">gp_safefswritesize</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_segment_connect_timeout">gp_segment_connect_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_segments_for_planner">gp_segments_for_planner</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_server_version">gp_server_version</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_server_version_num">gp_server_version_num</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_session_id">gp_session_id</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_set_proc_affinity">gp_set_proc_affinity</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_set_read_only">gp_set_read_only</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_snmp_community">gp_snmp_community</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_snmp_monitor_address">gp_snmp_monitor_address</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_snmp_use_inform_or_trap">gp_snmp_use_inform_or_trap</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_statistics_pullup_from_child_partition">gp_statistics_pullup_from_child_partition</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_statistics_use_fkeys">gp_statistics_use_fkeys</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_vmem_idle_resource_timeout">gp_vmem_idle_resource_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_vmem_protect_limit">gp_vmem_protect_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_vmem_protect_segworker_cache_limit">gp_vmem_protect_segworker_cache_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_workfile_checksumming">gp_workfile_checksumming</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_workfile_compress_algorithm">gp_workfile_compress_algorithm</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_workfile_limit_files_per_query">gp_workfile_limit_files_per_query</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_workfile_limit_per_query">gp_workfile_limit_per_query</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_workfile_limit_per_segment">gp_workfile_limit_per_segment</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gpperfmon_port">gpperfmon_port</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#integer_datetimes">integer_datetimes</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#IntervalStyle">IntervalStyle</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#join_collapse_limit">join_collapse_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#keep_wal_segments">keep_wal_segments</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#krb_caseins_users">krb_caseins_users</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#krb_server_keyfile">krb_server_keyfile</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#krb_srvname">krb_srvname</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#lc_collate">lc_collate</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#lc_ctype">lc_ctype</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#lc_messages">lc_messages</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#lc_monetary">lc_monetary</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#lc_numeric">lc_numeric</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#lc_time">lc_time</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#listen_addresses">listen_addresses</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#local_preload_libraries">local_preload_libraries</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_autostats">log_autostats</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_connections">log_connections</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_disconnections">log_disconnections</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_dispatch_stats">log_dispatch_stats</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_duration">log_duration</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_error_verbosity">log_error_verbosity</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_executor_stats">log_executor_stats</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_hostname">log_hostname</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_min_duration_statement">log_min_duration_statement</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_min_error_statement">log_min_error_statement</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_min_messages">log_min_messages</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_parser_stats">log_parser_stats</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_planner_stats">log_planner_stats</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_rotation_age">log_rotation_age</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_rotation_size">log_rotation_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_statement">log_statement</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_statement_stats">log_statement_stats</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_timezone">log_timezone</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_truncate_on_rotation">log_truncate_on_rotation</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_appendonly_tables">max_appendonly_tables</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_connections">max_connections</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_files_per_process">max_files_per_process</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_fsm_pages">max_fsm_pages</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_fsm_relations">max_fsm_relations</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_function_args">max_function_args</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_identifier_length">max_identifier_length</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_index_keys">max_index_keys</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_locks_per_transaction">max_locks_per_transaction</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_prepared_transactions">max_prepared_transactions</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_resource_portals_per_transaction">max_resource_portals_per_transaction</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_resource_queues">max_resource_queues</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_stack_depth">max_stack_depth</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_statement_mem">max_statement_mem</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer">optimizer</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_array_expansion_threshold">optimizer_array_expansion_threshold</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_analyze_root_partition">optimizer_analyze_root_partition</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_control">optimizer_control</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_enable_master_only_queries">optimizer_enable_master_only_queries</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_join_order_threshold">optimizer_join_order_threshold</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_minidump">optimizer_minidump</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_parallel_union">optimizer_parallel_union</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_sort_factor">optimizer_sort_factor</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#password_encryption">password_encryption</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#password_hash_algorithm">password_hash_algorithm</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pgcrypto.fips">pgcrypto.fips</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pgstat_track_activity_query_size">pgstat_track_activity_query_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pljava_classpath">pljava_classpath</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pljava_classpath_insecure">pljava_classpath_insecure</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pljava_statement_cache_size">pljava_statement_cache_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pljava_release_lingering_savepoints">pljava_release_lingering_savepoints</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pljava_vmoptions">pljava_vmoptions</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#port">port</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#random_page_cost">random_page_cost</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#readable_external_table_timeout">readable_external_table_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#repl_catchup_within_range">repl_catchup_within_range</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#replication_timeout">replication_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#regex_flavor">regex_flavor</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#resource_cleanup_gangs_on_wait">resource_cleanup_gangs_on_wait</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#resource_select_only">resource_select_only</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#runaway_detector_activation_percent">runaway_detector_activation_percent</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#search_path">search_path</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#seq_page_cost">seq_page_cost</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#server_encoding">server_encoding</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#server_version">server_version</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#server_version_num">server_version_num</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#shared_buffers">shared_buffers</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#shared_preload_libraries">shared_preload_libraries</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#ssl">ssl</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#ssl_ciphers">ssl_ciphers</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#standard_conforming_strings">standard_conforming_strings</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#statement_mem">statement_mem</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#statement_timeout">statement_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#stats_queue_level">stats_queue_level</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#superuser_reserved_connections">superuser_reserved_connections</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#tcp_keepalives_count">tcp_keepalives_count</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#tcp_keepalives_idle">tcp_keepalives_idle</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#tcp_keepalives_interval">tcp_keepalives_interval</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#temp_buffers">temp_buffers</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#TimeZone">TimeZone</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#timezone_abbreviations">timezone_abbreviations</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#track_activities">track_activities</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#track_counts">track_counts</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#transaction_isolation">transaction_isolation</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#transaction_read_only">transaction_read_only</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#transform_null_equals">transform_null_equals</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#unix_socket_directory">unix_socket_directory</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#unix_socket_group">unix_socket_group</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#unix_socket_permissions">unix_socket_permissions</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#update_process_title">update_process_title</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vacuum_cost_delay">vacuum_cost_delay</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vacuum_cost_limit">vacuum_cost_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vacuum_cost_page_dirty">vacuum_cost_page_dirty</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vacuum_cost_page_hit">vacuum_cost_page_hit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vacuum_cost_page_miss">vacuum_cost_page_miss</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vacuum_freeze_min_age">vacuum_freeze_min_age</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#validate_previous_free_tid">validate_previous_free_tid</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vmem_process_interrupt">vmem_process_interrupt</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#wal_receiver_status_interval">wal_receiver_status_interval</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#writable_external_table_bufsize">writable_external_table_bufsize</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#xid_stop_limit">xid_stop_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#xid_warn_limit">xid_warn_limit</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="ref_guide/function-summary.html">Summary of Built-in Functions</a></li>
-<li><a href="ref_guide/yaml_spec.html">Greenplum MapReduce Specification</a></li>
-<li><a href="ref_guide/extensions/pl_sql.html">Greenplum PL/pgSQL Procedural Language</a></li>
-<li><a href="ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a></li>
-<li><a href="ref_guide/extensions/pl_r.html">Greenplum PL/R Language Extension</a></li>
-<li><a href="ref_guide/extensions/pl_python.html">Greenplum PL/Python Language Extension</a></li>
-<li><a href="ref_guide/extensions/pl_java.html">Greenplum PL/Java Language Extension</a></li>
-<li><a href="ref_guide/extensions/madlib.html">Greenplum MADlib Extension for Analytics</a></li>
-<li><a href="ref_guide/extensions/fuzzystrmatch.html">Greenplum Fuzzy String Match Extension</a></li>
-<li><a href="ref_guide/feature_summary.html">Summary of Greenplum Features</a></li>
-</ul>
-</li>
-<li>
-<a href="client_tool_guides/client-docs-unix.html">UNIX Client Documentation</a><ul>
-<li>
-<a href="client_tool_guides/client_tools_unix.html">Client Tools for UNIX</a><ul>
-<li><a href="client_tool_guides/client/unix/unix_client_install.html">Installing the Greenplum Client Tools</a></li>
-<li>
-<a href="client_tool_guides/client/unix/unix_client_tool_ref.html">Client Tools Reference</a><ul>
-<li><a href="client_tool_guides/client/unix/gpmapreduce.html">gpmapreduce</a></li>
-<li><a href="client_tool_guides/client/unix/psql.html">psql</a></li>
-</ul>
-</li>
-<li><a href="client_tool_guides/common/client_sql_ref.html">SQL Syntax Summary</a></li>
-</ul>
-</li>
-<li>
-<a href="client_tool_guides/load_tools_unix.html">Load Tools for UNIX</a><ul>
-<li><a href="client_tool_guides/load/unix/unix_load_install.html">Installing the Greenplum Load Tools</a></li>
-<li>
-<a href="client_tool_guides/load/unix/unix_load_tool_ref.html">Load Tools Reference</a><ul>
-<li><a href="client_tool_guides/load/unix/gpfdist.html">gpfdist</a></li>
-<li><a href="client_tool_guides/load/unix/gpload.html">gpload</a></li>
-</ul>
-</li>
-<li><a href="client_tool_guides/load/unix/load_sql_ref.html">SQL Syntax Summary</a></li>
-</ul>
-</li>
-<li>
-<a href="client_tool_guides/connectivity_tools_unix.html">Connectivity Tools for UNIX</a><ul><li><a href="client_tool_guides/drivers/unix/unix_connect.html">Greenplum Database 4.3 Connectivity Tools for UNIX</a></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="client_tool_guides/client-docs-win.html">Windows Client Documentation</a><ul>
-<li>
-<a href="client_tool_guides/client_tools_windows.html">Client Tools for Windows</a><ul>
-<li><a href="client_tool_guides/client/windows/win_client_install.html">Installing the Greenplum Client Tools</a></li>
-<li><a href="client_tool_guides/client/windows/win_client_run.html">Running the Greenplum Client Tools</a></li>
-<li>
-<a href="client_tool_guides/client/windows/win_client_tool_ref.html">Client Tools Reference</a><ul><li><a href="client_tool_guides/client/windows/psqlexe.html">psql.exe</a></li></ul>
-</li>
-<li><a href="client_tool_guides/common/client_sql_ref.html">SQL Syntax Summary</a></li>
-</ul>
-</li>
-<li>
-<a href="client_tool_guides/load_tools_windows.html">Load Tools for Windows</a><ul>
-<li><a href="client_tool_guides/load/windows/win_load_install.html">Installing Greenplum Loader</a></li>
-<li><a href="client_tool_guides/load/windows/win_load_run.html">Running Greenplum Loader</a></li>
-<li>
-<a href="client_tool_guides/load/windows/win_load_tool_ref.html">Loader Program Reference</a><ul>
-<li><a href="client_tool_guides/load/windows/gploadpy.html">gpload.py</a></li>
-<li><a href="client_tool_guides/load/windows/gpfdistexe.html">gpfdist.exe</a></li>
-</ul>
-</li>
-<li><a href="client_tool_guides/load/windows/load_sql_ref.html">SQL Syntax Summary</a></li>
-</ul>
-</li>
-<li>
-<a href="client_tool_guides/connectivity_tools_windows.html">Connectivity Tools for Windows</a><ul><li><a href="client_tool_guides/drivers/windows/win_connect.html">Greenplum Database 4.3 Connectivity Tools for Windows</a></li></ul>
-</li>
-</ul>
-</li>
-</ul>
+        
+
+  <h1 class="title topictitle1">CREATE TABLE</h1>
+
+  <div class="body">
+    <p class="p" id="topic1__sql_command_desc">Defines a new table.</p>
+
+    <div class="note note">
+<span class="notetitle">Note:</span> Referential integrity syntax (foreign key constraints) is accepted but not
+      enforced.</div>
+
+    <div class="section" id="topic1__section2">
+<h2 class="title sectiontitle">Synopsis</h2>
+      
+      <pre class="pre codeblock" id="topic1__sql_command_synopsis">CREATE [[GLOBAL | LOCAL] {TEMPORARY | TEMP}] TABLE <var class="keyword varname">table_name</var> ( 
+[ { <var class="keyword varname">column_name</var> <var class="keyword varname">data_type</var> [ DEFAULT <var class="keyword varname">default_expr</var> ] 
+   [<var class="keyword varname">column_constraint</var> [ ... ]
+[ ENCODING ( <var class="keyword varname">storage_directive</var> [,...] ) ]
+] 
+   | <var class="keyword varname">table_constraint</var>
+   | LIKE <var class="keyword varname">other_table</var> [{INCLUDING | EXCLUDING} 
+                      {DEFAULTS | CONSTRAINTS}] ...}
+   [, ... ] ]
+   )
+   [ INHERITS ( <var class="keyword varname">parent_table</var> [, ... ] ) ]
+   [ WITH ( <var class="keyword varname">storage_parameter</var>=<var class="keyword varname">value</var> [, ... ] )
+   [ ON COMMIT {PRESERVE ROWS | DELETE ROWS | DROP} ]
+   [ TABLESPACE <var class="keyword varname">tablespace</var> ]
+   [ DISTRIBUTED BY (<var class="keyword varname">column</var>, [ ... ] ) | DISTRIBUTED RANDOMLY ]
+   [ PARTITION BY <var class="keyword varname">partition_type</var> (<var class="keyword varname">column</var>)
+       [ SUBPARTITION BY <var class="keyword varname">partition_type</var> (<var class="keyword varname">column</var>) ] 
+          [ SUBPARTITION TEMPLATE ( <var class="keyword varname">template_spec </var>) ]
+       [...]
+    ( <var class="keyword varname">partition_spec</var> ) 
+        | [ SUBPARTITION BY <var class="keyword varname">partition_type</var> (<var class="keyword varname">column</var>) ]
+          [...]
+    ( <var class="keyword varname">partition_spec</var>
+      [ ( <var class="keyword varname">subpartition_spec</var>
+           [(...)] 
+         ) ] 
+    )</pre>
+
+      <p class="p">where <var class="keyword varname">column_constraint</var> is:</p>
+
+      <pre class="pre codeblock">   [CONSTRAINT <var class="keyword varname">constraint_name</var>]
+   NOT NULL | NULL 
+   | UNIQUE [USING INDEX TABLESPACE <var class="keyword varname">tablespace</var>]
+            [WITH ( FILLFACTOR = <var class="keyword varname">value</var> )]
+   | PRIMARY KEY [USING INDEX TABLESPACE <var class="keyword varname">tablespace</var>] 
+                 [WITH ( FILLFACTOR = <var class="keyword varname">value</var> )]
+   | CHECK ( <var class="keyword varname">expression</var> )
+   | REFERENCES table_name [ ( column_name [, ... ] ) ] 
+            [ key_match_type ]
+            [ key_action ]</pre>
+
+      <p class="p">where <var class="keyword varname">storage_directive</var> for a column is:</p>
+
+      <pre class="pre codeblock">   COMPRESSTYPE={ZLIB | QUICKLZ | RLE_TYPE | NONE}
+    [COMPRESSLEVEL={0-9} ]
+    [BLOCKSIZE={8192-2097152} ]</pre>
+
+      <p class="p">where <var class="keyword varname">storage_parameter</var> for the table is:</p>
+
+      <pre class="pre codeblock">   APPENDONLY={TRUE|FALSE}
+   BLOCKSIZE={8192-2097152}
+   ORIENTATION={COLUMN|ROW}
+   CHECKSUM={TRUE|FALSE}
+   COMPRESSTYPE={ZLIB|QUICKLZ|RLE_TYPE|NONE}
+   COMPRESSLEVEL={0-9}
+   FILLFACTOR={10-100}
+   OIDS[=TRUE|FALSE]</pre>
+
+      <p class="p">and <var class="keyword varname">table_constraint</var> is:</p>
+
+      <pre class="pre codeblock">   [CONSTRAINT <var class="keyword varname">constraint_name</var>]
+   UNIQUE ( <var class="keyword varname">column_name</var> [, ... ] )
+          [USING INDEX TABLESPACE <var class="keyword varname">tablespace</var>] 
+          [WITH ( FILLFACTOR=<var class="keyword varname">value</var> )] 
+   | PRIMARY KEY ( <var class="keyword varname">column_name</var> [, ... ] ) 
+                 [USING INDEX TABLESPACE <var class="keyword varname">tablespace</var>] 
+                 [WITH ( FILLFACTOR=<var class="keyword varname">value</var> )] 
+   | CHECK ( <var class="keyword varname">expression</var> )
+   | FOREIGN KEY ( <var class="keyword varname">column_name</var> [, ... ] )
+            REFERENCES table_name [ ( column_name [, ... ] ) ]
+            [ <var class="keyword varname">key_match_type</var> ]
+            [ <var class="keyword varname">key_action</var> ]
+            [ <var class="keyword varname">key_checking_mode</var> ]</pre>
+
+      <p class="p">where <var class="keyword varname">key_match_type</var> is:</p>
+
+      <pre class="pre codeblock">    MATCH FULL
+  | SIMPLE</pre>
+
+      <p class="p">where <var class="keyword varname">key_action</var> is:</p>
+
+      <pre class="pre codeblock">    ON DELETE 
+  | ON UPDATE
+  | NO ACTION
+  | RESTRICT
+  | CASCADE
+  | SET NULL
+  | SET DEFAULT</pre>
+
+      <p class="p">where <var class="keyword varname">key_checking_mode</var> is:</p>
+
+      <pre class="pre codeblock">    DEFERRABLE
+  | NOT DEFERRABLE
+  | INITIALLY DEFERRED
+  | INITIALLY IMMEDIATE</pre>
+
+      <p class="p">where <var class="keyword varname">partition_type</var> is:</p>
+
+      <pre class="pre codeblock">    LIST
+  | RANGE</pre>
+
+      <p class="p">where <var class="keyword varname">partition_specification</var> is:</p>
+
+      <pre class="pre codeblock"><var class="keyword varname">partition_element</var> [, ...]</pre>
+
+      <p class="p">and <var class="keyword varname">partition_element</var> is:</p>
+
+      <pre class="pre codeblock">   DEFAULT PARTITION <var class="keyword varname">name</var>
+  | [PARTITION <var class="keyword varname">name</var>] VALUES (<var class="keyword varname">list_value</var> [,...] )
+  | [PARTITION <var class="keyword varname">name</var>] 
+     START ([<var class="keyword varname">datatype</var>] '<var class="keyword varname">start_value</var>') [INCLUSIVE | EXCLUSIVE]
+     [ END ([<var class="keyword varname">datatype</var>] '<var class="keyword varname">end_value</var>') [INCLUSIVE | EXCLUSIVE] ]
+     [ EVERY ([<var class="keyword varname">datatype</var>] [<var class="keyword varname">number | </var>INTERVAL] '<var class="keyword varname">interval_value</var>') ]
+  | [PARTITION <var class="keyword varname">name</var>] 
+     END ([<var class="keyword varname">datatype</var>] '<var class="keyword varname">end_value</var>') [INCLUSIVE | EXCLUSIVE]
+     [ EVERY ([<var class="keyword varname">datatype</var>] [<var class="keyword varname">number | </var>INTERVAL] '<var class="keyword varname">interval_value</var>') ]
+[ WITH ( <var class="keyword varname">partition_storage_parameter</var>=<var class="keyword varname">value</var> [, ... ] ) ]
+[ TABLESPACE <var class="keyword varname">tablespace</var> ]</pre>
+
+      <p class="p">where <var class="keyword varname">subpartition_spec</var> or <var class="keyword varname">template_spec</var> is:</p>
+
+      <pre class="pre codeblock"><var class="keyword varname">subpartition_element</var> [, ...]</pre>
+
+      <p class="p">and <var class="keyword varname">subpartition_element</var> is:</p>
+
+      <pre class="pre codeblock">   DEFAULT SUBPARTITION <var class="keyword varname">name</var>
+  | [SUBPARTITION <var class="keyword varname">name</var>] VALUES (<var class="keyword varname">list_value</var> [,...] )
+  | [SUBPARTITION <var class="keyword varname">name</var>] 
+     START ([<var class="keyword varname">datatype</var>] '<var class="keyword varname">start_value</var>') [INCLUSIVE | EXCLUSIVE]
+     [ END ([<var class="keyword varname">datatype</var>] '<var class="keyword varname">end_value</var>') [INCLUSIVE | EXCLUSIVE] ]
+     [ EVERY ([<var class="keyword varname">datatype</var>] [<var class="keyword varname">number | </var>INTERVAL] '<var class="keyword varname">interval_value</var>') ]
+  | [SUBPARTITION <var class="keyword varname">name</var>] 
+     END ([<var class="keyword varname">datatype</var>] '<var class="keyword varname">end_value</var>') [INCLUSIVE | EXCLUSIVE]
+     [ EVERY ([<var class="keyword varname">datatype</var>] [<var class="keyword varname">number | </var>INTERVAL] '<var class="keyword varname">interval_value</var>') ]
+[ WITH ( <var class="keyword varname">partition_storage_parameter</var>=<var class="keyword varname">value</var> [, ... ] ) ]
+[ TABLESPACE <var class="keyword varname">tablespace</var> ]</pre>
+
+      <p class="p">where <var class="keyword varname">storage_parameter</var> for a partition is:</p>
+
+      <pre class="pre codeblock">   APPENDONLY={TRUE|FALSE}
+   BLOCKSIZE={8192-2097152}
+   ORIENTATION={COLUMN|ROW}
+   CHECKSUM={TRUE|FALSE}
+   COMPRESSTYPE={ZLIB|QUICKLZ|RLE_TYPE|NONE}
+   COMPRESSLEVEL={1-9}
+   FILLFACTOR={10-100}
+   OIDS[=TRUE|FALSE]</pre>
+
+    </div>
+
+    <div class="section" id="topic1__section3">
+<h2 class="title sectiontitle">Description</h2>
+      
+      <p class="p"><samp class="ph codeph">CREATE TABLE</samp> creates an initially empty table in the current database. The
+        user who issues the command owns the table.</p>
+
+      <p class="p">If you specify a schema name, Greenplum creates the table in the specified schema.
+        Otherwise Greenplum creates the table in the current schema. Temporary tables exist in a
+        special schema, so you cannot specify a schema name when creating a temporary table. Table
+        names must be distinct from the name of any other table, external table, sequence, index, or
+        view in the same schema.</p>
+
+      <p class="p">The optional constraint clauses specify conditions that new or updated rows must satisfy
+        for an insert or update operation to succeed. A constraint is an SQL object that helps
+        define the set of valid values in the table in various ways. Constraints apply to tables,
+        not to partitions. You cannot add a constraint to a partition or subpartition.</p>
+
+      <p class="p">Referential integrity constraints (foreign keys) are accepted but not enforced. The
+        information is kept in the system catalogs but is otherwise ignored.</p>
+
+      <p class="p">There are two ways to define constraints: table constraints and column constraints. A
+        column constraint is defined as part of a column definition. A table constraint definition
+        is not tied to a particular column, and it can encompass more than one column. Every column
+        constraint can also be written as a table constraint; a column constraint is only a
+        notational convenience for use when the constraint only affects one column. </p>
+
+      <p class="p">When creating a table, there is an additional clause to declare the Greenplum Database
+        distribution policy. If a <samp class="ph codeph">DISTRIBUTED BY</samp> or <samp class="ph codeph">DISTRIBUTED
+          RANDOMLY</samp> clause is not supplied, then Greenplum assigns a hash distribution
+        policy to the table using either the <samp class="ph codeph">PRIMARY KEY</samp> (if the table has one) or
+        the first column of the table as the distribution key. Columns of geometric or user-defined
+        data types are not eligible as Greenplum distribution key columns. If a table does not have
+        a column of an eligible data type, the rows are distributed based on a round-robin or random
+        distribution. To ensure an even distribution of data in your Greenplum Database system, you
+        want to choose a distribution key that is unique for each record, or if that is not
+        possible, then choose <samp class="ph codeph">DISTRIBUTED RANDOMLY</samp>.</p>
+
+      <p class="p">The <samp class="ph codeph">PARTITION BY</samp> clause allows you to divide the table into multiple
+        sub-tables (or parts) that, taken together, make up the parent table and share its schema.
+        Though the sub-tables exist as independent tables, the Greenplum Database restricts their
+        use in important ways. Internally, partitioning is implemented as a special form of
+        inheritance. Each child table partition is created with a distinct <samp class="ph codeph">CHECK</samp>
+        constraint which limits the data the table can contain, based on some defining criteria. The
+          <samp class="ph codeph">CHECK</samp> constraints are also used by the query optimizer to determine which
+        table partitions to scan in order to satisfy a given query predicate. These partition
+        constraints are managed automatically by the Greenplum Database.</p>
+
+    </div>
+
+    <div class="section" id="topic1__section4">
+<h2 class="title sectiontitle">Parameters</h2>
+      
+      <dl class="dl parml">
+        
+          <dt class="dt pt dlterm">GLOBAL | LOCAL</dt>
+
+          <dd class="dd pd">These keywords are present for SQL standard compatibility, but have no effect in
+            Greenplum Database. </dd>
+
+        
+        
+          <dt class="dt pt dlterm">TEMPORARY | TEMP</dt>
+
+          <dd class="dd pd">If specified, the table is created as a temporary table. Temporary tables are
+            automatically dropped at the end of a session, or optionally at the end of the current
+            transaction (see <samp class="ph codeph">ON COMMIT</samp>). Existing permanent tables with the same
+            name are not visible to the current session while the temporary table exists, unless
+            they are referenced with schema-qualified names. Any indexes created on a temporary
+            table are automatically temporary as well.</dd>
+
+        
+        
+          <dt class="dt pt dlterm">
+            <var class="keyword varname">table_name</var>
+          </dt>
+
+          <dd class="dd pd">The name (optionally schema-qualified) of the table to be created. </dd>
+
+        
+        
+          <dt class="dt pt dlterm">
+            <var class="keyword varname">column_name</var>
+          </dt>
+
+          <dd class="dd pd">The name of a column to be created in the new table. </dd>
+
+        
+        
+          <dt class="dt pt dlterm">
+            <var class="keyword varname">data_type</var>
+          </dt>
+
+          <dd class="dd pd">The data type of the column. This may include array specifiers.</dd>
+
+          <dd class="dd pd">For table columns that contain textual data, Specify the data
+            type <samp class="ph codeph">VARCHAR</samp> or <samp class="ph codeph">TEXT</samp>. Specifying the data type
+              <samp class="ph codeph">CHAR</samp> is not recommended. In Greenplum Database, the data types
+              <samp class="ph codeph">VARCHAR</samp> or <samp class="ph codeph">TEXT</samp> handles padding added to the data
+            (space characters added after the last non-space character) as significant characters,
+            the data type <samp class="ph codeph">CHAR</samp> does not. See <a class="xref" href="#topic1__section5">Notes</a>.</dd>
+
+        
+        
+          <dt class="dt pt dlterm">DEFAULT <var class="keyword varname">default_expr</var>
+</dt>
+
+          <dd class="dd pd">The <samp class="ph codeph">DEFAULT</samp> clause assigns a default data value for the column whose
+            column definition it appears within. The value is any variable-free expression
+            (subqueries and cross-references to other columns in the current table are not allowed).
+            The data type of the default expression must match the data type of the column. The
+            default expression will be used in any insert operation that does not specify a value
+            for the column. If there is no default for a column, then the default is null. </dd>
+
+        
+        
+          <dt class="dt pt dlterm"> ENCODING ( <var class="keyword varname">storage_directive</var> [, ...] ) </dt>
+
+          <dd class="dd pd">For a column, the optional <samp class="ph codeph">ENCODING</samp> clause specifies the type of
+            compression and block size for the column data. See <a class="xref" href="#topic1__with_storage">storage_options</a> for <samp class="ph codeph">COMPRESSTYPE</samp>,
+              <samp class="ph codeph">COMPRESSLEVEL</samp>, and <samp class="ph codeph">BLOCKSIZE</samp> values.</dd>
+
+          <dd class="dd pd">The clause is valid only for append-optimized, column-oriented tables.</dd>
+
+          <dd class="dd pd">Column compression settings are inherited from the table level to the partition level
+            to the subpartition level. The lowest-level settings have priority.</dd>
+
+        
+        
+          <dt class="dt pt dlterm">INHERITS</dt>
+
+          <dd class="dd pd">The optional <samp class="ph codeph">INHERITS</samp> clause specifies a list of tables from which
+            the new table automatically inherits all columns. Use of <samp class="ph codeph">INHERITS</samp>
+            creates a persistent relationship between the new child table and its parent table(s).
+            Schema modifications to the parent(s) normally propagate to children as well, and by
+            default the data of the child table is included in scans of the parent(s). </dd>
+
+          <dd class="dd pd">In Greenplum Database, the <samp class="ph codeph">INHERITS</samp> clause is not used when creating
+            partitioned tables. Although the concept of inheritance is used in partition
+            hierarchies, the inheritance structure of a partitioned table is created using the
+                <samp class="ph codeph"><a class="xref" href="#topic1__part_by">PARTITION BY</a></samp>
+            clause. </dd>
+
+          <dd class="dd pd">If the same column name exists in more than one parent table, an error is reported
+            unless the data types of the columns match in each of the parent tables. If there is no
+            conflict, then the duplicate columns are merged to form a single column in the new
+            table. If the column name list of the new table contains a column name that is also
+            inherited, the data type must likewise match the inherited column(s), and the column
+            definitions are merged into one. However, inherited and new column declarations of the
+            same name need not specify identical constraints: all constraints provided from any
+            declaration are merged together and all are applied to the new table. If the new table
+            explicitly specifies a default value for the column, this default overrides any defaults
+            from inherited declarations of the column. Otherwise, any parents that specify default
+            values for the column must all specify the same default, or an error will be reported.
+          </dd>
+
+        
+        
+          <dt class="dt pt dlterm">LIKE <var class="keyword varname">other_table</var> [{INCLUDING | EXCLUDING} {DEFAULTS |
+            CONSTRAINTS}]</dt>
+
+          <dd class="dd pd">The <samp class="ph codeph">LIKE</samp> clause specifies a table from which the new table
+            automatically copies all column names, data types, not-null constraints, and
+            distribution policy. Storage properties like append-optimized or partition structure are
+            not copied. Unlike <samp class="ph codeph">INHERITS</samp>, the new table and original table are
+            completely decoupled after creation is complete.</dd>
+
+          <dd class="dd pd">Default expressions for the copied column definitions will only be copied if
+              <samp class="ph codeph">INCLUDING DEFAULTS</samp> is specified. The default behavior is to exclude
+            default expressions, resulting in the copied columns in the new table having null
+            defaults. </dd>
+
+          <dd class="dd pd">Not-null constraints are always copied to the new table. <samp class="ph codeph">CHECK</samp>
+            constraints will only be copied if <samp class="ph codeph">INCLUDING CONSTRAINTS</samp> is specified;
+            other types of constraints will <var class="keyword varname">never</var> be copied. Also, no distinction
+            is made between column constraints and table constraints — when constraints are
+            requested, all check constraints are copied. </dd>
+
+          <dd class="dd pd">Note also that unlike <samp class="ph codeph">INHERITS</samp>, copied columns and constraints are
+            not merged with similarly named columns and constraints. If the same name is specified
+            explicitly or in another <samp class="ph codeph">LIKE</samp> clause an error is signalled. </dd>
+
+        
+        
+          <dt class="dt pt dlterm">CONSTRAINT <var class="keyword varname">constraint_name</var>
+</dt>
+
+          <dd class="dd pd">An optional name for a column or table constraint. If the constraint is violated, the
+            constraint name is present in error messages, so constraint names like <var class="keyword varname">column
+              must be positive</var> can be used to communicate helpful constraint information
+            to client applications. (Double-quotes are needed to specify constraint names that
+            contain spaces.) If a constraint name is not specified, the system generates a
+              name.<div class="note note">
+<span class="notetitle">Note:</span> The specified <var class="keyword varname">constraint_name</var> is used for
+              the constraint, but a system-generated unique name is used for the index name. In some
+              prior releases, the provided name was used for both the constraint name and the index
+              name. </div>
+</dd>
+
+        
+        
+          <dt class="dt pt dlterm">NULL | NOT NULL </dt>
+
+          <dd class="dd pd">Specifies if the column is or is not allowed to contain null values.
+              <samp class="ph codeph">NULL</samp> is the default.</dd>
+
+        
+        
+          <dt class="dt pt dlterm">UNIQUE ( <var class="keyword varname">column constraint</var> )</dt>
+
+          <dt class="dt pt dlterm">UNIQUE ( <var class="keyword varname">column_name</var> [, ... ] ) ( <var class="keyword varname">table
+              constraint</var> )</dt>
+
+          <dd class="dd pd">The <samp class="ph codeph">UNIQUE</samp> constraint specifies that a group of one or more columns
+            of a table may contain only unique values. The behavior of the unique table constraint
+            is the same as that for column constraints, with the additional capability to span
+            multiple columns. For the purpose of a unique constraint, null values are not considered
+            equal. The column(s) that are unique must contain all the columns of the Greenplum
+            distribution key. In addition, the <samp class="ph codeph">&lt;key&gt;</samp> must contain all the
+            columns in the partition key if the table is partitioned. Note that a
+              <samp class="ph codeph">&lt;key&gt;</samp> constraint in a partitioned table is not the same as a
+            simple <samp class="ph codeph">UNIQUE INDEX</samp>.</dd>
+
+          <dd class="dd pd">For information about unique constraint management and limitations, see <a class="xref" href="#topic1__section5">Notes</a>.</dd>
+
+        
+        
+          <dt class="dt pt dlterm">PRIMARY KEY ( <var class="keyword varname">column constraint</var> )</dt>
+
+          <dt class="dt pt dlterm">PRIMARY KEY ( <var class="keyword varname">column_name</var> [, ... ] ) ( <var class="keyword varname">table
+              constraint</var> )</dt>
+
+          <dd class="dd pd">The primary key constraint specifies that a column or columns of a table may contain
+            only unique (non-duplicate), non-null values. Technically, <samp class="ph codeph">PRIMARY KEY</samp>
+            is merely a combination of <samp class="ph codeph">UNIQUE</samp> and <samp class="ph codeph">NOT NULL</samp>, but
+            identifying a set of columns as primary key also provides metadata about the design of
+            the schema, as a primary key implies that other tables may rely on this set of columns
+            as a unique identifier for rows. For a table to have a primary key, it must be hash
+            distributed (not randomly distributed), and the primary key The column(s) that are
+            unique must contain all the columns of the Greenplum distribution key. In addition, the
+              <samp class="ph codeph">&lt;key&gt;</samp> must contain all the columns in the partition key if the
+            table is partitioned. Note that a <samp class="ph codeph">&lt;key&gt;</samp> constraint in a
+            partitioned table is not the same as a simple <samp class="ph codeph">UNIQUE INDEX</samp>.</dd>
+
+          <dd class="dd pd">For information about primary key management and limitations, see <a class="xref" href="#topic1__section5">Notes</a>.</dd>
+
+        
+        
+          <dt class="dt pt dlterm">CHECK ( <var class="keyword varname">expression</var> )</dt>
+
+          <dd class="dd pd">The <samp class="ph codeph">CHECK</samp> clause specifies an expression producing a Boolean result
+            which new or updated rows must satisfy for an insert or update operation to succeed.
+            Expressions evaluating to <samp class="ph codeph">TRUE</samp> or <samp class="ph codeph">UNKNOWN</samp> succeed.
+            Should any row of an insert or update operation produce a <samp class="ph codeph">FALSE</samp> result
+            an error exception is raised and the insert or update does not alter the database. A
+            check constraint specified as a column constraint should reference that column's value
+            only, while an expression appearing in a table constraint may reference multiple
+            columns. <samp class="ph codeph">CHECK</samp> expressions cannot contain subqueries nor refer to
+            variables other than columns of the current row.</dd>
+
+        
+        
+          <dt class="dt pt dlterm">REFERENCES <var class="keyword varname">table_name</var> [ ( <var class="keyword varname">column_name</var> [, ... ] )
+            ]</dt>
+
+          <dt class="dt pt dlterm">[<var class="keyword varname"> key_match_type </var>] [ <var class="keyword varname">key_action</var> ]</dt>
+
+          <dt class="dt pt dlterm">FOREIGN KEY ( <var class="keyword varname">column_name</var> [, ... ] )</dt>
+
+          <dt class="dt pt dlterm">   REFERENCES <var class="keyword varname">table_name</var> [ ( <var class="keyword varname">column_name</var> [, ...
+            ] )</dt>
+
+          <dt class="dt pt dlterm"> [<var class="keyword varname"> key_match_type </var>] [ <var class="keyword varname">key_action</var> [
+              <var class="keyword varname">key_checking_mode</var> ]</dt>
+
+          <dd class="dd pd">The <samp class="ph codeph">REFERENCES</samp> and <samp class="ph codeph">FOREIGN KEY</samp> clauses specify
+            referential integrity constraints (foreign key constraints). Greenplum accepts
+            referential integrity constraints as specified in PostgreSQL syntax but does not enforce
+            them. See the PostgreSQL documentation for information about referential integrity
+            constraints.</dd>
+
+        
+        
+          <dt class="dt pt dlterm">
+<a name="topic1__with_storage"><!-- --></a>WITH ( <var class="keyword varname">storage_option=value</var> )</dt>
+
+          <dd class="dd pd">The <samp class="ph codeph">WITH</samp> clause can be used to set storage options for the table or
+            its indexes. Note that you can also set storage parameters on a particular partition or
+            subpartition by declaring the <samp class="ph codeph">WITH</samp> clause in the partition
+            specification. The lowest-level settings have priority.</dd>
+
+          <dd class="dd pd">The defaults for some of the table storage options can be specified with the server
+            configuration parameter <samp class="ph codeph">gp_default_storage_options</samp>. For information
+            about setting default storage options, see <a class="xref" href="#topic1__section5">Notes</a>. </dd>
+
+          <dd class="dd pd">The following storage options are available:</dd>
+
+          <dd class="dd pd">
+<strong class="ph b">APPENDONLY</strong> — Set to <samp class="ph codeph">TRUE</samp> to create the table as an
+            append-optimized table. If <samp class="ph codeph">FALSE</samp> or not declared, the table will be
+            created as a regular heap-storage table.</dd>
+
+          <dd class="dd pd">
+<strong class="ph b">BLOCKSIZE</strong> — Set to the size, in bytes for each block in a table. The
+              <samp class="ph codeph">BLOCKSIZE</samp> must be between 8192 and 2097152 bytes, and be a multiple
+            of 8192. The default is 32768.</dd>
+
+          <dd class="dd pd">
+<strong class="ph b">ORIENTATION</strong> — Set to <samp class="ph codeph">column</samp> for column-oriented storage, or
+              <samp class="ph codeph">row</samp> (the default) for row-oriented storage. This option is only valid
+            if <samp class="ph codeph">APPENDONLY=TRUE</samp>. Heap-storage tables can only be row-oriented.</dd>
+
+          <dd class="dd pd">
+<strong class="ph b">CHECKSUM</strong> — This option is valid only for append-optimized tables
+              (<samp class="ph codeph">APPENDONLY=TRUE</samp>). The value <samp class="ph codeph">TRUE</samp> is the default and
+            enables CRC checksum validation for append-optimized tables. The checksum is calculated
+            during block creation and is stored on disk. Checksum validation is performed during
+            block reads. If the checksum calculated during the read does not match the stored
+            checksum, the transaction is aborted. If you set the value to <samp class="ph codeph">FALSE</samp> to
+            disable checksum validation, checking the table data for on-disk corruption will not be
+            performed.</dd>
+
+          <dd class="dd pd">
+<strong class="ph b">COMPRESSTYPE</strong> — Set to <samp class="ph codeph">ZLIB</samp> (the default),
+              <samp class="ph codeph">RLE-TYPE</samp>, or <samp class="ph codeph">QUICKLZ</samp><sup class="ph sup">1</sup> to specify the type
+            of compression used. The value <samp class="ph codeph">NONE</samp>disables compression. QuickLZ uses
+            less CPU power and compresses data faster at a lower compression ratio than zlib.
+            Conversely, zlib provides more compact compression ratios at lower speeds. This option
+            is only valid if <samp class="ph codeph">APPENDONLY=TRUE</samp>.<div class="p">
+              <div class="note note">
+<span class="notetitle">Note:</span> <sup class="ph sup">1</sup>QuickLZ compression is available only in the commercial
+                release of Pivotal Greenplum Database.</div>
+
+            </div>
+<p class="p">The value <samp class="ph codeph">RLE_TYPE</samp> is supported only if
+                <samp class="ph codeph">ORIENTATION</samp> =<samp class="ph codeph">column</samp> is specified, Greenplum
+              Database uses the run-length encoding (RLE) compression algorithm. RLE compresses data
+              better than the zlib or QuickLZ compression algorithm when the same data value occurs
+              in many consecutive rows.</p>
+<p class="p">For columns of type <samp class="ph codeph">BIGINT</samp>,
+                <samp class="ph codeph">INTEGER</samp>, <samp class="ph codeph">DATE</samp>, <samp class="ph codeph">TIME</samp>, or
+                <samp class="ph codeph">TIMESTAMP</samp>, delta compression is also applied if the
+                <samp class="ph codeph">COMPRESSTYPE</samp> option is set to <samp class="ph codeph">RLE-TYPE</samp>
+              compression. The delta compression algorithm is based on the delta between column
+              values in consecutive rows and is designed to improve compression when data is loaded
+              in sorted order or the compression is applied to column data that is in sorted
+              order.</p>
+<p class="p">For information about using table compression, see "Choosing the Table
+              Storage Model" in the <cite class="cite">Greenplum Database Administrator Guide</cite>.</p>
+</dd>
+
+          <dd class="dd pd">
+<strong class="ph b">COMPRESSLEVEL</strong> — For zlib compression of append-optimized tables, set to an
+            integer value between 1 (fastest compression) to 9 (highest compression ratio). QuickLZ
+            compression level can only be set to 1. If not declared, the default is 1. For
+              <samp class="ph codeph">RLE_TYPE</samp>, the compression level can be set an integer value between 1
+            (fastest compression) to 4 (highest compression ratio). </dd>
+
+          <dd class="dd pd">This option is valid only if <samp class="ph codeph">APPENDONLY=TRUE</samp>.</dd>
+
+          <dd class="dd pd">
+<strong class="ph b">FILLFACTOR</strong> — See <samp class="ph codeph"><a class="xref" href="CREATE_INDEX.html#topic1">CREATE INDEX</a></samp> for more information about this index storage parameter. </dd>
+
+          <dd class="dd pd">
+<strong class="ph b">OIDS</strong> — Set to <samp class="ph codeph">OIDS=FALSE</samp> (the default) so that rows do not
+            have object identifiers assigned to them. Greenplum strongly recommends that you do not
+            enable OIDS when creating a table. On large tables, such as those in a typical Greenplum
+            Database system, using OIDs for table rows can cause wrap-around of the 32-bit OID
+            counter. Once the counter wraps around, OIDs can no longer be assumed to be unique,
+            which not only makes them useless to user applications, but can also cause problems in
+            the Greenplum Database system catalog tables. In addition, excluding OIDs from a table
+            reduces the space required to store the table on disk by 4 bytes per row, slightly
+            improving performance. OIDS are not allowed on partitioned tables or append-optimized
+            column-oriented tables.</dd>
+
+        
+        
+          <dt class="dt pt dlterm">ON COMMIT</dt>
+
+          <dd class="dd pd">The behavior of temporary tables at the end of a transaction block can be controlled
+            using <samp class="ph codeph">ON COMMIT</samp>. The three options are: </dd>
+
+          <dd class="dd pd">
+<strong class="ph b">PRESERVE ROWS</strong> - No special action is taken at the ends of transactions for
+            temporary tables. This is the default behavior. </dd>
+
+          <dd class="dd pd">
+<strong class="ph b">DELETE ROWS</strong> - All rows in the temporary table will be deleted at the end of
+            each transaction block. Essentially, an automatic <samp class="ph codeph">TRUNCATE</samp> is done at
+            each commit. </dd>
+
+          <dd class="dd pd">
+<strong class="ph b">DROP</strong> - The temporary table will be dropped at the end of the current
+            transaction block. </dd>
+
+        
+        
+          <dt class="dt pt dlterm">TABLESPACE <var class="keyword varname">tablespace</var>
+</dt>
+
+          <dd class="dd pd">The name of the tablespace in which the new table is to be created. If not specified,
+            the database's default tablespace is used.</dd>
+
+        
+        
+          <dt class="dt pt dlterm">USING INDEX TABLESPACE <var class="keyword varname">tablespace</var>
+</dt>
+
+          <dd class="dd pd">This clause allows selection of the tablespace in which the index associated with a
+              <samp class="ph codeph">UNIQUE</samp> or <samp class="ph codeph">PRIMARY KEY</samp> constraint will be created. If
+            not specified, the database's default tablespace is used. </dd>
+
+        
+        
+          <dt class="dt pt dlterm">DISTRIBUTED BY (<var class="keyword varname">column</var>, [ ... ] )</dt>
+
+          <dt class="dt pt dlterm">DISTRIBUTED RANDOMLY</dt>
+
+          <dd class="dd pd">Used to declare the Greenplum Database distribution policy for the table.
+              <samp class="ph codeph">DISTIBUTED BY</samp> uses hash distribution with one or more columns
+            declared as the distribution key. For the most even data distribution, the distribution
+            key should be the primary key of the table or a unique column (or set of columns). If
+            that is not possible, then you may choose <samp class="ph codeph">DISTRIBUTED RANDOMLY</samp>, which
+            will send the data round-robin to the segment instances. </dd>
+
+          <dd class="dd pd">The Greenplum Database server configuration parameter
+              <samp class="ph codeph">gp_create_table_random_default_distribution</samp> controls the default
+            table distribution policy if the <span class="keyword cmdname">DISTRIBUTED BY</span> clause is not
+            specified when you create a table. Greenplum Database follows these rules to create a
+            table if a distribution policy is not specified.<p class="p">If the value of the parameter is
+                <samp class="ph codeph">off</samp> (the default), Greenplum Database chooses the table
+              distribution key based on the command. If the <span class="keyword cmdname">LIKE</span> or
+                <span class="keyword cmdname">INHERITS</span> clause is specified in table creation command, the
+              created table uses the same distribution key as the source or parent table. </p>
+<div class="p">If
+              the value of the parameter is set to <samp class="ph codeph">on</samp>, Greenplum Database follows
+              these rules:<ul class="ul" id="topic1__ul_tbr_5kq_kq">
+                <li class="li">If <span class="keyword cmdname">PRIMARY KEY</span> or <span class="keyword cmdname">UNIQUE</span> columns are not
+                  specified, the distribution of the table is random (<span class="keyword cmdname">DISTRIBUTED
+                    RANDOMLY</span>). Table distribution is random even if the table creation
+                  command contains the <span class="keyword cmdname">LIKE</span> or <span class="keyword cmdname">INHERITS</span>
+                  clause. </li>
+
+                <li class="li">If <span class="keyword cmdname">PRIMARY KEY</span> or <span class="keyword cmdname">UNIQUE</span> columns are
+                  specified, a <span class="keyword cmdname">DISTRIBUTED BY</span> clause must also be specified. If a
+                    <span class="keyword cmdname">DISTRIBUTED BY</span> clause is not specified as part of the table
+                  creation command, the command fails.</li>
+
+              </ul>
+</div>
+</dd>
+
+          <dd class="dd pd">For information about the parameter, see "Server Configuration Parameters."</dd>
+
+        
+        
+          <dt class="dt pt dlterm">
+<a name="topic1__part_by"><!-- --></a>PARTITION BY</dt>
+
+          <dd class="dd pd">Declares one or more columns by which to partition the table.</dd>
+
+          <dd class="dd pd">When creating a partitioned table, Greenplum Database creates the root partitioned
+            table (the root partition) with the specified table name. Greenplum Database also
+            creates a hierarchy of tables, child tables, that are the subpartitions based on the
+            partitioning options that you specify. The Greenplum Database <em class="ph i">pg_partition</em>*
+            system views contain information about the subpartition tables.</dd>
+
+          <dd class="dd pd">For each partition level (each hierarchy level of tables), a partitioned table can
+            have a maximum of 32,767 partitions. </dd>
+
+          <dd class="dd pd">
+            <div class="note note">
+<span class="notetitle">Note:</span>  Greenplum Database stores partitioned table data in the leaf child tables, the
+              lowest-level tables in the hierarchy of child tables for use by the partitioned
+              table.</div>
+
+          </dd>
+
+          <dd class="dd pd">
+            <dl class="dl parml">
+              
+                <dt class="dt pt dlterm">
+                  <var class="keyword varname">partition_type</var>
+                </dt>
+
+                <dd class="dd pd">Declares partition type: <samp class="ph codeph">LIST</samp> (list of values) or
+                    <samp class="ph codeph">RANGE</samp> (a numeric or date range). </dd>
+
+              
+              
+                <dt class="dt pt dlterm">
+                  <var class="keyword varname">partition_specification</var>
+                </dt>
+
+                <dd class="dd pd">Declares the individual partitions to create. Each partition can be defined
+                  individually or, for range partitions, you can use the <samp class="ph codeph">EVERY</samp>
+                  clause (with a <samp class="ph codeph">START</samp> and optional <samp class="ph codeph">END</samp> clause) to
+                  define an increment pattern to use to create the individual partitions.</dd>
+
+                <dd class="dd pd">
+<strong class="ph b"><samp class="ph codeph">DEFAULT PARTITION <var class="keyword varname">name</var></samp></strong> — Declares a
+                  default partition. When data does not match to an existing partition, it is
+                  inserted into the default partition. Partition designs that do not have a default
+                  partition will reject incoming rows that do not match to an existing
+                  partition.</dd>
+
+                <dd class="dd pd">
+<strong class="ph b"><samp class="ph codeph">PARTITION <var class="keyword varname">name</var></samp></strong> — Declares a name to
+                  use for the partition. Partitions are created using the following naming
+                  convention:
+                      <samp class="ph codeph"><var class="keyword varname">parentname</var>_<var class="keyword varname">level#</var>_prt_<var class="keyword varname">givenname</var></samp>.</dd>
+
+                <dd class="dd pd">
+<strong class="ph b"><samp class="ph codeph">VALUES</samp></strong> — For list partitions, defines the value(s) that
+                  the partition will contain.</dd>
+
+                <dd class="dd pd">
+<strong class="ph b"><samp class="ph codeph">START</samp></strong> — For range partitions, defines the starting range
+                  value for the partition. By default, start values are <samp class="ph codeph">INCLUSIVE</samp>.
+                  For example, if you declared a start date of '<samp class="ph codeph">2008-01-01</samp>', then
+                  the partition would contain all dates greater than or equal to
+                    '<samp class="ph codeph">2008-01-01</samp>'. Typically the data type of the
+                    <samp class="ph codeph">START</samp> expression is the same type as the partition key column.
+                  If that is not the case, then you must explicitly cast to the intended data type. </dd>
+
+                <dd class="dd pd">
+<strong class="ph b"><samp class="ph codeph">END</samp></strong> — For range partitions, defines the ending range
+                  value for the partition. By default, end values are <samp class="ph codeph">EXCLUSIVE</samp>.
+                  For example, if you declared an end date of '<samp class="ph codeph">2008-02-01</samp>', then
+                  the partition would contain all dates less than but not equal to
+                    '<samp class="ph codeph">2008-02-01</samp>'. Typically the data type of the
+                    <samp class="ph codeph">END</samp> expression is the same type as the partition key column. If
+                  that is not the case, then you must explicitly cast to the intended data
+                  type.</dd>
+
+                <dd class="dd pd">
+<strong class="ph b"><samp class="ph codeph">EVERY</samp></strong> — For range partitions, defines how to increment
+                  the values from <samp class="ph codeph">START</samp> to <samp class="ph codeph">END</samp> to create
+                  individual partitions. Typically the data type of the <samp class="ph codeph">EVERY</samp>
+                  expression is the same type as the partition key column. If that is not the case,
+                  then you must explicitly cast to the intended data type.</dd>
+
+                <dd class="dd pd">
+<strong class="ph b"><samp class="ph codeph">WITH</samp>
+                  </strong>— Sets the table storage options for a partition. For example, you may want
+                  older partitions to be append-optimized tables and newer partitions to be regular
+                  heap tables.</dd>
+
+                <dd class="dd pd">
+<strong class="ph b"><samp class="ph codeph">TABLESPACE</samp></strong> — The name of the tablespace in which the
+                  partition is to be created. </dd>
+
+              
+            </dl>
+
+          </dd>
+
+        
+        
+          <dt class="dt pt dlterm">SUBPARTITION BY</dt>
+
+          <dd class="dd pd">Declares one or more columns by which to subpartition the first-level partitions of
+            the table. The format of the subpartition specification is similar to that of a
+            partition specification described above. </dd>
+
+        
+        
+          <dt class="dt pt dlterm">SUBPARTITION TEMPLATE</dt>
+
+          <dd class="dd pd">Instead of declaring each subpartition definition individually for each partition, you
+            can optionally declare a subpartition template to be used to create the subpartitions
+            (lower level child tables). This subpartition specification would then apply to all
+            parent partitions.</dd>
+
+        
+      </dl>
+
+    </div>
+
+    <div class="section" id="topic1__section5">
+<h2 class="title sectiontitle">Notes</h2>
+      
+      <ul class="ul" id="topic1__ul_stf_sl1_tt">
+        <li class="li">In Greenplum Database (a Postgres-based system) the data types <samp class="ph codeph">VARCHAR</samp>
+          or <samp class="ph codeph">TEXT</samp> handles padding added to the textual data (space characters added
+          after the last non-space character) as significant characters, the data type
+            <samp class="ph codeph">CHAR</samp> does not.<p class="p">In Greenplum Database, values of type
+                <samp class="ph codeph">CHAR(<var class="keyword varname">n</var>)</samp> are padded with trailing spaces to the
+            specified width <var class="keyword varname">n</var>. The values are stored and displayed with the
+            spaces. However, the padding spaces are treated as semantically insignificant. When the
+            values are distributed, the trailing spaces are disregarded. The trailing spaces are
+            also treated as semantically insignificant when comparing two values of data type
+              <samp class="ph codeph">CHAR</samp>, and the trailing spaces are removed when converting a character
+            value to one of the other string types. </p>
+</li>
+
+        <li class="li">Using OIDs in new applications is not recommended: where possible, using a
+            <samp class="ph codeph">SERIAL</samp> or other sequence generator as the table's primary key is
+          preferred. However, if your application does make use of OIDs to identify specific rows of
+          a table, it is recommended to create a unique constraint on the OID column of that table,
+          to ensure that OIDs in the table will indeed uniquely identify rows even after counter
+          wrap-around. Avoid assuming that OIDs are unique across tables; if you need a
+          database-wide unique identifier, use the combination of table OID and row OID for the
+          purpose.</li>
+
+        <li class="li">Greenplum Database has some special conditions for primary key and unique constraints
+          with regards to columns that are the <em class="ph i">distribution key</em> in a Greenplum table. For a
+          unique constraint to be enforced in Greenplum Database, the table must be hash-distributed
+          (not <samp class="ph codeph">DISTRIBUTED RANDOMLY</samp>), and the constraint columns must be the same
+          as (or a superset of) the table's distribution key columns. Also, the distribution key
+          must be a left-subset of the constraint columns with the columns in the correct order. For
+          example, if the primary key is (a,b,c), the distribution key can be only one of the
+          following: (a), (a,b), or (a,b,c).<p class="p">A primary key constraint is simply a combination of a
+            unique constraint and a not-null constraint.</p>
+<p class="p">Greenplum Database automatically
+            creates a <samp class="ph codeph">UNIQUE</samp> index for each <samp class="ph codeph">UNIQUE</samp> or
+              <samp class="ph codeph">PRIMARY KEY</samp> constraint to enforce uniqueness. Thus, it is not
+            necessary to create an index explicitly for primary key columns. <samp class="ph codeph">UNIQUE</samp>
+            and <samp class="ph codeph">PRIMARY KEY</samp> constraints are not allowed on append-optimized tables
+            because the <samp class="ph codeph">UNIQUE</samp> indexes that are created by the constraints are not
+            allowed on append-optimized tables.</p>
+<p class="p">Foreign key constraints are not supported in
+            Greenplum Database. </p>
+<p class="p">For inherited tables, unique constraints, primary key
+            constraints, indexes and table privileges are <em class="ph i">not</em> inherited in the current
+            implementation.</p>
+</li>
+
+        <li class="li">For append-optimized tables, <samp class="ph codeph">UPDATE</samp> and <samp class="ph codeph">DELETE</samp> are not
+          allowed in a serializable transaction and will cause the transaction to abort.
+            <samp class="ph codeph">CLUSTER</samp>, <samp class="ph codeph">DECLARE...FOR</samp><samp class="ph codeph">UPDATE</samp>, and
+          triggers are not supported with append-optimized tables.</li>
+
+        <li class="li">To insert data into a partitioned table, you specify the root partitioned table, the
+          table created with the <samp class="ph codeph">CREATE TABLE</samp> command. You also can specify a leaf
+          child table of the partitioned table in an <samp class="ph codeph">INSERT</samp> command. An error is
+          returned if the data is not valid for the specified leaf child table. Specifying a child
+          table that is not a leaf child table in the <samp class="ph codeph">INSERT</samp> command is not
+          supported. Execution of other DML commands such as <samp class="ph codeph">UPDATE</samp> and
+            <samp class="ph codeph">DELETE</samp> on any child table of a partitioned table is not supported.
+          These commands must be executed on the root partitioned table, the table created with the
+            <samp class="ph codeph">CREATE TABLE</samp> command.</li>
+
+        <li class="li">The default values for these table storage options can be specified with the server
+          configuration parameter <samp class="ph codeph">gp_default_storage_option</samp>.<ul class="ul" id="topic1__ul_hr1_3m1_tt">
+            <li class="li">
+              <span class="keyword cmdname">APPENDONLY</span>
+            </li>
+
+            <li class="li">
+              <span class="keyword cmdname">BLOCKSIZE</span>
+            </li>
+
+            <li class="li">
+              <span class="keyword cmdname">CHECKSUM</span>
+            </li>
+
+            <li class="li">
+              <span class="keyword cmdname">COMPRESSTYPE</span>
+            </li>
+
+            <li class="li">
+              <span class="keyword cmdname">COMPRESSLEVEL</span>
+            </li>
+
+            <li class="li">
+              <span class="keyword cmdname">ORIENTATION</span>
+            </li>
+
+          </ul>
+<p class="p">The defaults can be set for a database, schema, and user. For information about
+            setting storage options, see the server configuration parameter
+              <samp class="ph codeph">gp_default_storage_options</samp>.</p>
+</li>
+
+      </ul>
+
+      <div class="note important">
+<span class="importanttitle">Important:</span> The current Greenplum Database legacy optimizer allows list partitions
+        with multi-column (composite) partition keys. GPORCA does not support
+        composite keys, so Pivotal does not recommend using composite partition keys.</div>
+
+    </div>
+
+    <div class="section" id="topic1__section6">
+<h2 class="title sectiontitle">Examples</h2>
+      
+      <p class="p">Create a table named <samp class="ph codeph">rank</samp> in the schema named <samp class="ph codeph">baby</samp> and
+        distribute the data using the columns <samp class="ph codeph">rank</samp>, <samp class="ph codeph">gender</samp>, and
+          <samp class="ph codeph">year</samp>:</p>
+
+      <pre class="pre codeblock">CREATE TABLE baby.rank (id int, rank int, year smallint, 
+gender char(1), count int ) DISTRIBUTED BY (rank, gender, 
+year);</pre>
+
+      <p class="p">Create table films and table distributors (the primary key will be used as the Greenplum
+        distribution key by default): </p>
+
+      <pre class="pre codeblock">CREATE TABLE films (
+code        char(5) CONSTRAINT firstkey PRIMARY KEY,
+title       varchar(40) NOT NULL,
+did         integer NOT NULL,
+date_prod   date,
+kind        varchar(10),
+len         interval hour to minute
+);
+
+CREATE TABLE distributors (
+did    integer PRIMARY KEY DEFAULT nextval('serial'),
+name   varchar(40) NOT NULL CHECK (name &lt;&gt; '')
+);</pre>
+
+      <p class="p">Create a gzip-compressed, append-optimized table:</p>
+
+      <pre class="pre codeblock">CREATE TABLE sales (txn_id int, qty int, date date) 
+WITH (appendonly=true, compresslevel=5) 
+DISTRIBUTED BY (txn_id);</pre>
+
+      <p class="p">Create a three level partitioned table using subpartition templates and default partitions
+        at each level:</p>
+
+      <pre class="pre codeblock">CREATE TABLE sales (id int, year int, month int, day int, 
+region text)
+DISTRIBUTED BY (id)
+PARTITION BY RANGE (year)
+
+  SUBPARTITION BY RANGE (month)
+    SUBPARTITION TEMPLATE (
+       START (1) END (13) EVERY (1), 
+       DEFAULT SUBPARTITION other_months )
+
+  SUBPARTITION BY LIST (region)
+    SUBPARTITION TEMPLATE (
+       SUBPARTITION usa VALUES ('usa'),
+       SUBPARTITION europe VALUES ('europe'),
+       SUBPARTITION asia VALUES ('asia'),
+       DEFAULT SUBPARTITION other_regions)
+
+( START (2002) END (2010) EVERY (1),
+  DEFAULT PARTITION outlying_years);</pre>
+
+    </div>
+
+    <div class="section" id="topic1__section7">
+<h2 class="title sectiontitle">Compatibility</h2>
+      
+      <p class="p"><samp class="ph codeph">CREATE TABLE</samp> command conforms to the SQL standard, with the following
+        exceptions:</p>
+
+      <ul class="ul">
+        <li class="li" id="topic1__cd150267">
+<strong class="ph b">Temporary Tables</strong> — In the SQL standard, temporary tables are
+          defined just once and automatically exist (starting with empty contents) in every session
+          that needs them. Greenplum Database instead requires each session to issue its own
+            <samp class="ph codeph">CREATE TEMPORARY TABLE</samp> command for each temporary table to be used.
+          This allows different sessions to use the same temporary table name for different
+          purposes, whereas the standard's approach constrains all instances of a given temporary
+          table name to have the same table structure. <p class="p">The standard's distinction between global
+            and local temporary tables is not in Greenplum Database. Greenplum Database will accept
+            the <samp class="ph codeph">GLOBAL</samp> and <samp class="ph codeph">LOCAL</samp> keywords in a temporary table
+            declaration, but they have no effect. </p>
+<p class="p">If the <samp class="ph codeph">ON COMMIT</samp> clause is
+            omitted, the SQL standard specifies that the default behavior as <samp class="ph codeph">ON COMMIT
+              DELETE ROWS</samp>. However, the default behavior in Greenplum Database is
+              <samp class="ph codeph">ON COMMIT PRESERVE ROWS</samp>. The <samp class="ph codeph">ON COMMIT DROP</samp> option
+            does not exist in the SQL standard. </p>
+</li>
+
+        <li class="li" id="topic1__cd150376">
+<strong class="ph b">Column Check Constraints</strong> — The SQL standard says that
+            <samp class="ph codeph">CHECK</samp> column constraints may only refer to the column they apply to;
+          only <samp class="ph codeph">CHECK</samp> table constraints may refer to multiple columns. Greenplum
+          Database does not enforce this restriction; it treats column and table check constraints
+          alike. </li>
+
+        <li class="li" id="topic1__cd150386">
+<strong class="ph b">NULL Constraint</strong> — The <samp class="ph codeph">NULL</samp> constraint is a
+          Greenplum Database extension to the SQL standard that is included for compatibility with
+          some other database systems (and for symmetry with the <samp class="ph codeph">NOT NULL</samp>
+          constraint). Since it is the default for any column, its presence is not required.</li>
+
+        <li class="li" id="topic1__cd150401">
+<strong class="ph b">Inheritance</strong> — Multiple inheritance via the
+            <samp class="ph codeph">INHERITS</samp> clause is a Greenplum Database language extension. SQL:1999
+          and later define single inheritance using a different syntax and different semantics.
+          SQL:1999-style inheritance is not yet supported by Greenplum Database. </li>
+
+        <li class="li" id="topic1__cd153512">
+<strong class="ph b">Partitioning</strong> — Table partitioning via the <samp class="ph codeph">PARTITION
+            BY</samp> clause is a Greenplum Database language extension. </li>
+
+        <li class="li" id="topic1__cd150414">
+<strong class="ph b">Zero-column tables</strong> — Greenplum Database allows a table of no
+          columns to be created (for example, <samp class="ph codeph">CREATE TABLE foo();</samp>). This is an
+          extension from the SQL standard, which does not allow zero-column tables. Zero-column
+          tables are not in themselves very useful, but disallowing them creates odd special cases
+          for <samp class="ph codeph">ALTER TABLE DROP COLUMN</samp>, so Greenplum decided to ignore this spec
+          restriction. </li>
+
+        <li class="li" id="topic1__cd150435">
+<strong class="ph b">WITH clause</strong> — The <samp class="ph codeph">WITH</samp> clause is a Greenplum
+          Database extension; neither storage parameters nor OIDs are in the standard. </li>
+
+        <li class="li" id="topic1__cd150445">
+<strong class="ph b">Tablespaces</strong> — The Greenplum Database concept of tablespaces is not
+          part of the SQL standard. The clauses <samp class="ph codeph">TABLESPACE</samp> and <samp class="ph codeph">USING INDEX
+            TABLESPACE</samp> are extensions. </li>
+
+        <li class="li" id="topic1__cd150459">
+<strong class="ph b">Data Distribution</strong> — The Greenplum Database concept of a parallel or
+          distributed database is not part of the SQL standard. The <samp class="ph codeph">DISTRIBUTED</samp>
+          clauses are extensions.</li>
+
+      </ul>
+
+    </div>
+
+    <div class="section" id="topic1__section8">
+<h2 class="title sectiontitle">See Also</h2>
+      
+      <p class="p"><samp class="ph codeph"><a class="xref" href="ALTER_TABLE.html#topic1">ALTER
+          TABLE</a></samp>, <samp class="ph codeph"><a class="xref" href="DROP_TABLE.html#topic1">DROP TABLE</a></samp>, <samp class="ph codeph"><a class="xref" href="CREATE_EXTERNAL_TABLE.html#topic1">CREATE EXTERNAL
+            TABLE</a></samp>, <samp class="ph codeph"><a class="xref" href="CREATE_TABLE_AS.html#topic1">CREATE TABLE AS</a></samp></p>
+
+    </div>
+
+  </div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink">
+<strong>Parent topic:</strong> <a class="link" href="../../ref_guide/sql_commands/sql_ref.html">SQL Command Reference</a>
+</div>
+</div>
+</div>
+
 
         
 

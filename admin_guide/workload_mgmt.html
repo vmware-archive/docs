@@ -8,7 +8,7 @@
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400italic,400,600' rel='stylesheet' type='text/css'>
   <!-- Use title if it's in the page YAML frontmatter -->
   <title>
-      Greenplum Database |
+      Workload Management with Resource Queues |
     Greenplum Database Docs
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
   
 </head>
 
-<body class="docs docs_index has-subnav">
+<body class="docs docs_admin_guide docs_admin_guide_workload_mgmt has-subnav">
 
 <div class="viewport">
   <div class='wrap'>
@@ -5466,7 +5466,7 @@
         <a id="top"></a>
         
           <h1 class="title-container" style="display: none;">
-    Greenplum Database
+    Workload Management with Resource Queues
   </h1>
 
           <div id="js-quick-links" >
@@ -5475,1068 +5475,1321 @@
         <div class="to-top" id="js-to-top">
           <a href="#top" title="back to top"></a>
         </div>
-        <ul>
-<li><a href="common/pivotal-gpdb-features.html">About this Documentation</a></li>
-<li>
-<a href="admin_guide/admin_guide.html">Administrator Guide</a><ul>
-<li>
-<a href="admin_guide/intro/partI.html">Greenplum Database Concepts</a><ul>
-<li><a href="admin_guide/intro/arch_overview.html">About the Greenplum Architecture</a></li>
-<li><a href="admin_guide/intro/about_utilities.html">About Management and Monitoring Utilities</a></li>
-<li>
-<a href="admin_guide/intro/about_mvcc.html">About Concurrency Control in Greenplum Database</a><ul><li><a href="admin_guide/intro/mvcc_example.html">Example of Managing Transaction IDs</a></li></ul>
-</li>
-<li><a href="admin_guide/intro/about_loading.html">About Parallel Data Loading</a></li>
-<li><a href="admin_guide/intro/about_ha.html">About Redundancy and Failover in Greenplum Database</a></li>
-<li><a href="admin_guide/intro/about_statistics.html">About Database Statistics in Greenplum Database</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/managing/partII.html">Managing a Greenplum System</a><ul>
-<li><a href="admin_guide/managing/startstop.html">Starting and Stopping Greenplum Database</a></li>
-<li>
-<a href="admin_guide/access_db/topics/g-accessing-the-database.html">Accessing the Database</a><ul>
-<li><a href="admin_guide/access_db/topics/g-establishing-a-database-session.html">Establishing a Database Session</a></li>
-<li><a href="admin_guide/access_db/topics/g-supported-client-applications.html">Supported Client Applications</a></li>
-<li><a href="admin_guide/access_db/topics/g-greenplum-database-client-applications.html">Greenplum Database Client Applications</a></li>
-<li><a href="admin_guide/access_db/topics/g-connecting-with-psql.html">Connecting with psql</a></li>
-<li>
-<a href="admin_guide/access_db/topics/g-pgadmin-iii-for-greenplum-database.html">pgAdmin III for Greenplum Database</a><ul>
-<li><a href="admin_guide/access_db/topics/g-installing-pgadmin-iii-for-greenplum-database.html">Installing pgAdmin III for Greenplum Database</a></li>
-<li><a href="admin_guide/access_db/topics/g-documentation-for-pgadmin-iii-for-greenplum-database.html">Documentation for pgAdmin III for Greenplum Database</a></li>
-<li>
-<a href="admin_guide/access_db/topics/g-performing-administrative-tasks-with-pgadmin-iii.html">Performing Administrative Tasks with pgAdmin III</a><ul>
-<li><a href="admin_guide/access_db/topics/g-editing-server-configuration.html">Editing the Server Configuration</a></li>
-<li><a href="admin_guide/access_db/topics/g-viewing-a-graphical-query-plan.html">Viewing a Graphical Query Plan</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="admin_guide/access_db/topics/pgbouncer.html">Using the PgBouncer Connection Pooler </a></li>
-<li><a href="admin_guide/access_db/topics/g-database-application-interfaces.html">Database Application Interfaces</a></li>
-<li><a href="admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a></li>
-<li><a href="admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/topics/g-configuring-the-greenplum-system.html">Configuring the Greenplum Database System</a><ul>
-<li><a href="admin_guide/topics/g-about-greenplum-master-and-local-parameters.html">About Greenplum Database Master and Local Parameters</a></li>
-<li>
-<a href="admin_guide/topics/g-setting-configuration-parameters.html">Setting Configuration Parameters</a><ul>
-<li><a href="admin_guide/topics/g-setting-a-local-configuration-parameter.html">Setting a Local Configuration Parameter</a></li>
-<li>
-<a href="admin_guide/topics/g-setting-a-master-configuration-parameter.html">Setting a Master Configuration Parameter</a><ul>
-<li><a href="admin_guide/topics/g-setting-parameters-at-the-system-level.html">Setting Parameters at the System Level</a></li>
-<li><a href="admin_guide/topics/g-setting-parameters-at-the-database-level.html">Setting Parameters at the Database Level</a></li>
-<li><a href="admin_guide/topics/g-setting-parameters-at-the-role-level.html">Setting Parameters at the Role Level</a></li>
-<li><a href="admin_guide/topics/g-setting-parameters-in-a-session.html">Setting Parameters in a Session</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="admin_guide/topics/g-viewing-server-configuration-parameter-settings.html">Viewing Server Configuration Parameter Settings</a></li>
-<li>
-<a href="admin_guide/topics/g-configuration-parameter-categories.html">Configuration Parameter Categories</a><ul>
-<li>
-<a href="admin_guide/topics/g-connection-and-authentication-parameters.html">Connection and Authentication Parameters</a><ul>
-<li><a href="admin_guide/topics/g-connection-parameters.html">Connection Parameters</a></li>
-<li><a href="admin_guide/topics/g-security-and-authentication-parameters.html">Security and Authentication Parameters</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/topics/g-system-resource-consumption-parameters.html">System Resource Consumption Parameters</a><ul>
-<li><a href="admin_guide/topics/g-memory-consumption-parameters.html">Memory Consumption Parameters</a></li>
-<li><a href="admin_guide/topics/g-free-space-map-parameters.html">Free Space Map Parameters</a></li>
-<li><a href="admin_guide/topics/g-os-resource-parameters.html">OS Resource Parameters</a></li>
-<li><a href="admin_guide/topics/g-cost-based-vacuum-delay-parameters.html">Cost-Based Vacuum Delay Parameters</a></li>
-<li><a href="admin_guide/topics/g-transaction-id-management-parameters.html">Transaction ID Management Parameters</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/topics/g-query-tuning-parameters.html">Query Tuning Parameters</a><ul>
-<li><a href="admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a></li>
-<li><a href="admin_guide/topics/g-query-plan-operator-control-parameters.html">Query Plan Operator Control Parameters</a></li>
-<li><a href="admin_guide/topics/g-query-planner-costing-parameters.html">Legacy Query Optimizer Costing Parameters</a></li>
-<li><a href="admin_guide/topics/g-database-statistics-sampling-parameters.html">Database Statistics Sampling Parameters</a></li>
-<li><a href="admin_guide/topics/g-sort-operator-configuration-parameters.html">Sort Operator Configuration Parameters</a></li>
-<li><a href="admin_guide/topics/g-aggregate-operator-configuration-parameters.html">Aggregate Operator Configuration Parameters</a></li>
-<li><a href="admin_guide/topics/g-join-operator-configuration-parameters.html">Join Operator Configuration Parameters</a></li>
-<li><a href="admin_guide/topics/g-other-query-planner-configuration-parameters.html">Other Legacy Query Optimizer Configuration Parameters</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/topics/g-error-reporting-and-logging-parameters.html">Error Reporting and Logging Parameters</a><ul>
-<li><a href="admin_guide/topics/g-log-rotation.html">Log Rotation</a></li>
-<li><a href="admin_guide/topics/g-when-to-log.html">When to Log</a></li>
-<li><a href="admin_guide/topics/g-what-to-log.html">What to Log</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/topics/g-system-monitoring-parameters.html">System Monitoring Parameters</a><ul>
-<li><a href="admin_guide/topics/g-snmp-alerts.html">SNMP Alerts</a></li>
-<li><a href="admin_guide/topics/g-email-alerts.html">Email Alerts</a></li>
-<li><a href="admin_guide/topics/g-greenplum-command-center-agent.html">Greenplum Command Center Agent</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/topics/g-runtime-statistics-collection-parameters.html">Runtime Statistics Collection Parameters</a></li>
-<li><a href="admin_guide/topics/g-automatic-statistics-collection-parameters.html">Automatic Statistics Collection Parameters</a></li>
-<li>
-<a href="admin_guide/topics/g-client-connection-default-parameters.html">Client Connection Default Parameters</a><ul>
-<li><a href="admin_guide/topics/g-statement-behavior-parameters.html">Statement Behavior Parameters</a></li>
-<li><a href="admin_guide/topics/g-locale-and-formatting-parameters.html">Locale and Formatting Parameters</a></li>
-<li><a href="admin_guide/topics/g-other-client-default-parameters.html">Other Client Default Parameters</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/topics/g-lock-management-parameters.html">Lock Management Parameters</a></li>
-<li><a href="admin_guide/topics/g-workload-management-parameters.html">Workload Management Parameters</a></li>
-<li><a href="admin_guide/topics/g-external-table-parameters.html">External Table Parameters</a></li>
-<li><a href="admin_guide/topics/g-append-optimized-table-parameters.html">Database Table Parameters</a></li>
-<li><a href="admin_guide/topics/g-database-and-tablespace-filespace-parameters.html">Database and Tablespace/Filespace Parameters</a></li>
-<li><a href="admin_guide/topics/g-past-postgresql-version-compatibility-parameters.html">Past PostgreSQL Version Compatibility Parameters</a></li>
-<li>
-<a href="admin_guide/topics/g-greenplum-array-configuration-parameters.html">Greenplum Array Configuration Parameters</a><ul>
-<li><a href="admin_guide/topics/g-interconnect-configuration-parameters.html">Interconnect Configuration Parameters</a></li>
-<li><a href="admin_guide/topics/g-dispatch-configuration-parameters.html">Dispatch Configuration Parameters</a></li>
-<li><a href="admin_guide/topics/g-fault-operation-parameters.html">Fault Operation Parameters</a></li>
-<li><a href="admin_guide/topics/g-distributed-transaction-management-parameters.html">Distributed Transaction Management Parameters</a></li>
-<li><a href="admin_guide/topics/g-read-only-parameters.html">Read-Only Parameters</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/topics/g-greenplum-master-mirroring-parameters.html">Greenplum Master and Segment Mirroring Parameters</a></li>
-<li><a href="admin_guide/topics/g-greenplum-extension-parameters.html">Greenplum Database Extension Parameters</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/highavail/topics/g-enabling-high-availability-features.html">Enabling High Availability Features</a><ul>
-<li>
-<a href="admin_guide/highavail/topics/g-overview-of-high-availability-in-greenplum-database.html">Overview of Greenplum Database High Availability</a><ul>
-<li><a href="admin_guide/highavail/topics/g-overview-of-segment-mirroring.html">Overview of Segment Mirroring</a></li>
-<li><a href="admin_guide/highavail/topics/g-overview-of-master-mirroring.html">Overview of Master Mirroring</a></li>
-<li><a href="admin_guide/highavail/topics/g-overview-of-fault-detection-and-recovery.html">Overview of Fault Detection and Recovery</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/highavail/topics/g-enabling-mirroring-in-greenplum-database.html">Enabling Mirroring in Greenplum Database</a><ul>
-<li><a href="admin_guide/highavail/topics/g-enabling-segment-mirroring.html">Enabling Segment Mirroring</a></li>
-<li><a href="admin_guide/highavail/topics/g-enabling-master-mirroring.html">Enabling Master Mirroring</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/highavail/topics/g-detecting-a-failed-segment.html">Detecting a Failed Segment</a><ul>
-<li><a href="admin_guide/highavail/topics/g-enabling-alerts-and-notifications.html">Enabling Alerts and Notifications</a></li>
-<li><a href="admin_guide/highavail/topics/g-checking-for-failed-segments.html">Checking for Failed Segments</a></li>
-<li><a href="admin_guide/highavail/topics/g-checking-the-log-files.html">Checking the Log Files for Failed Segments</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/highavail/topics/g-recovering-a-failed-segment.html">Recovering a Failed Segment</a><ul><li>
-<a href="admin_guide/highavail/topics/g-recovering-from-segment-failures.html">Recovering From Segment Failures</a><ul>
-<li><a href="admin_guide/highavail/topics/g-when-a-segment-host-is-not-recoverable.html">When a segment host is not recoverable</a></li>
-<li><a href="admin_guide/highavail/topics/gprecover-steps.html">About the Segment Recovery Process</a></li>
-</ul>
-</li></ul>
-</li>
-<li>
-<a href="admin_guide/highavail/topics/g-recovering-a-failed-master.html">Recovering a Failed Master</a><ul><li><a href="admin_guide/highavail/topics/g-restoring-master-mirroring-after-a-recovery.html">Restoring Master Mirroring After a Recovery</a></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/managing/backup-main.html">Backing Up and Restoring Databases</a><ul>
-<li><a href="admin_guide/managing/backup-overview.html">Backup and Restore Overview</a></li>
-<li><a href="admin_guide/managing/backup-gpcrondump.html">Backing Up with gpcrondump</a></li>
-<li><a href="admin_guide/managing/backup-sets.html">Backing Up a Set of Tables</a></li>
-<li><a href="admin_guide/managing/backup-incremental.html">Creating Incremental Backups</a></li>
-<li><a href="admin_guide/managing/backup-locks.html">Backup Process and Locks</a></li>
-<li><a href="admin_guide/managing/backup-direct-io.html">Using Direct I/O</a></li>
-<li><a href="admin_guide/managing/backup-named-pipes.html">Using Named Pipes</a></li>
-<li><a href="admin_guide/managing/backup-ddboost.html">Backing Up Databases with Data Domain Boost</a></li>
-<li><a href="admin_guide/managing/backup-veritas.html">Backing Up Databases with Veritas NetBackup</a></li>
-<li><a href="admin_guide/managing/restore-parallel.html">Restoring Greenplum Databases</a></li>
-<li><a href="admin_guide/managing/gpdbrestore.html">Restoring a Database Using gpdbrestore</a></li>
-<li><a href="admin_guide/managing/restore-diff-system.html">Restoring to a Different Greenplum System Configuration</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/expand/expand-main.html">Expanding a Greenplum System</a><ul>
-<li><a href="admin_guide/expand/expand-overview.html">System Expansion Overview</a></li>
-<li><a href="admin_guide/expand/expand-planning.html">Planning Greenplum System Expansion</a></li>
-<li><a href="admin_guide/expand/expand-nodes.html">Preparing and Adding Nodes</a></li>
-<li><a href="admin_guide/expand/expand-initialize.html">Initializing New Segments</a></li>
-<li><a href="admin_guide/expand/expand-redistribute.html">Redistributing Tables</a></li>
-<li><a href="admin_guide/expand/expand-rm-schema.html">Removing the Expansion Schema</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/managing/gptransfer.html">Migrating Data with gptransfer</a></li>
-<li><a href="admin_guide/managing/monitor.html">Monitoring a Greenplum System</a></li>
-<li><a href="admin_guide/managing/maintain.html">Routine System Maintenance Tasks</a></li>
-<li><a href="admin_guide/monitoring/monitoring.html">Recommended Monitoring and Maintenance Tasks</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/partIII.html">Managing Greenplum Database Access</a><ul>
-<li>
-<a href="admin_guide/client_auth.html">Configuring Client Authentication</a><ul>
-<li><a href="admin_guide/ldap.html">Using LDAP Authentication with TLS/SSL </a></li>
-<li><a href="admin_guide/kerberos.html">Using Kerberos Authentication</a></li>
-<li><a href="admin_guide/kerberos-win-client.html">Configuring Kerberos For Windows Clients</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/roles_privs.html">Managing Roles and Privileges</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/partIV.html">Working with Databases</a><ul>
-<li>
-<a href="admin_guide/ddl/ddl.html">Defining Database Objects</a><ul>
-<li><a href="admin_guide/ddl/ddl-database.html">Creating and Managing Databases</a></li>
-<li><a href="admin_guide/ddl/ddl-tablespace.html">Creating and Managing Tablespaces</a></li>
-<li><a href="admin_guide/ddl/ddl-schema.html">Creating and Managing Schemas</a></li>
-<li><a href="admin_guide/ddl/ddl-table.html">Creating and Managing Tables</a></li>
-<li><a href="admin_guide/ddl/ddl-storage.html">Choosing the Table Storage Model</a></li>
-<li><a href="admin_guide/ddl/ddl-partition.html">Partitioning Large Tables</a></li>
-<li><a href="admin_guide/ddl/ddl-sequence.html">Creating and Using Sequences</a></li>
-<li><a href="admin_guide/ddl/ddl-index.html">Using Indexes in Greenplum Database</a></li>
-<li><a href="admin_guide/ddl/ddl-view.html">Creating and Managing Views</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/dml.html">Managing Data</a></li>
-<li>
-<a href="admin_guide/load/topics/g-loading-and-unloading-data.html">Loading and Unloading Data</a><ul>
-<li>
-<a href="admin_guide/load/topics/g-working-with-file-based-ext-tables.html">Working with File-Based External Tables</a><ul>
-<li><a href="admin_guide/load/topics/g-external-tables.html">Accessing File-Based External Tables</a></li>
-<li><a href="admin_guide/load/topics/g-file-protocol.html">file:// Protocol</a></li>
-<li><a href="admin_guide/load/topics/g-gpfdist-protocol.html">gpfdist:// Protocol</a></li>
-<li><a href="admin_guide/load/topics/g-gpfdists-protocol.html">gpfdists:// Protocol</a></li>
-<li><a href="admin_guide/load/topics/g-gphdfs-protocol.html">gphdfs:// Protocol</a></li>
-<li><a href="admin_guide/load/topics/g-s3-protocol.html">s3:// Protocol</a></li>
-<li><a href="admin_guide/load/topics/g-accessing-ext-files-custom-protocol.html">Using a Custom Protocol</a></li>
-<li><a href="admin_guide/load/topics/g-handling-errors-ext-table-data.html">Handling Errors in External Table Data</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-using-the-greenplum-parallel-file-server--gpfdist-.html">Using the Greenplum Parallel File Server (gpfdist)</a><ul>
-<li><a href="admin_guide/load/topics/g-about-gpfdist-setup-and-performance.html">About gpfdist Setup and Performance</a></li>
-<li><a href="admin_guide/load/topics/g-controlling-segment-parallelism.html">Controlling Segment Parallelism</a></li>
-<li><a href="admin_guide/load/topics/g-installing-gpfdist.html">Installing gpfdist</a></li>
-<li><a href="admin_guide/load/topics/g-starting-and-stopping-gpfdist.html">Starting and Stopping gpfdist</a></li>
-<li><a href="admin_guide/load/topics/g-troubleshooting-gpfdist.html">Troubleshooting gpfdist</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-using-hadoop-distributed-file-system--hdfs--tables.html">Using Hadoop Distributed File System (HDFS) Tables</a><ul>
-<li>
-<a href="admin_guide/load/topics/g-one-time-hdfs-protocol-installation.html">One-time HDFS Protocol Installation</a><ul>
-<li><a href="admin_guide/load/topics/g-grant-privileges-for-the-hdfs-protocol.html">Grant Privileges for the HDFS Protocol</a></li>
-<li>
-<a href="admin_guide/load/topics/g-specify-hdfs-data-in-an-external-table-definition.html">Specify HDFS Data in an External Table Definition</a><ul><li><a href="admin_guide/load/topics/g-setting-compression-options-for-hadoop-writable-external-tables.html">Setting Compression Options for Hadoop Writable External Tables</a></li></ul>
-</li>
-<li><a href="admin_guide/load/topics/g-hdfs-readable-and-writable-external-table-examples.html">HDFS Readable and Writable External Table Examples</a></li>
-<li><a href="admin_guide/load/topics/g-reading-and-writing-custom-formatted-hdfs-data.html">Reading and Writing Custom-Formatted HDFS Data</a></li>
-<li><a href="admin_guide/load/topics/g-example-1-read-custom-formatted-data-from-hdfs.html">Example 1 - Read Custom-Formatted Data from HDFS</a></li>
-<li>
-<a href="admin_guide/load/topics/g-sample-mapreduce-code.html">Sample MapReduce Code</a><ul><li><a href="admin_guide/load/topics/g-run-create-external-table.html"> Run CREATE EXTERNAL TABLE</a></li></ul>
-</li>
-<li><a href="admin_guide/load/topics/g-example-2-write-custom-formatted-data-from-greenplum-database-to-hdfs.html">Example 2 - Write Custom-Formatted Data from Greenplum Database to HDFS</a></li>
-<li><a href="admin_guide/load/topics/g-mapreduce-sample-code.html"> MapReduce Sample Code </a></li>
-</ul>
-</li>
-<li><a href="admin_guide/load/topics/g-gphdfs-jvm.html">About gphdfs JVM Memory</a></li>
-<li><a href="admin_guide/load/topics/g-hdfs-emr-config.html">Using Amazon EMR with Greenplum Database installed on AWS </a></li>
-<li><a href="admin_guide/load/topics/g-hdfs-avro-format.html">Support for Avro Files</a></li>
-<li><a href="admin_guide/load/topics/g-hdfs-parquet-format.html">Support for Parquet Files</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-creating-and-using-web-external-tables.html">Creating and Using Web External Tables</a><ul>
-<li><a href="admin_guide/load/topics/g-command-based-web-external-tables.html">Command-based Web External Tables</a></li>
-<li><a href="admin_guide/load/topics/g-url-based-web-external-tables.html">URL-based Web External Tables</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/load/topics/g-loading-data-using-an-external-table.html">Loading Data Using an External Table</a></li>
-<li>
-<a href="admin_guide/load/topics/g-loading-and-writing-non-hdfs-custom-data.html">Loading and Writing Non-HDFS Custom Data</a><ul>
-<li>
-<a href="admin_guide/load/topics/g-using-a-custom-format.html">Using a Custom Format</a><ul>
-<li><a href="admin_guide/load/topics/g-importing-and-exporting-fixed-width-data.html">Importing and Exporting Fixed Width Data</a></li>
-<li><a href="admin_guide/load/topics/g-examples-read-fixed-width-data.html">Examples: Read Fixed-Width Data</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/load/topics/g-using-a-custom-protocol.html">Using a Custom Protocol</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-creating-external-tables---examples.html">Creating External Tables - Examples</a><ul>
-<li><a href="admin_guide/load/topics/g-example-1-single-gpfdist-instance-on-single-nic-machine.html">Example 1—Single gpfdist instance on single-NIC machine</a></li>
-<li><a href="admin_guide/load/topics/g-example-2-multiple-gpfdist-instances.html">Example 2—Multiple gpfdist instances </a></li>
-<li><a href="admin_guide/load/topics/g-example-3-multiple-gpfdists-instances.html">Example 3—Multiple gpfdists instances </a></li>
-<li><a href="admin_guide/load/topics/g-example-4-single-gpfdist-instance-with-error-logging.html">Example 4—Single gpfdist instance with error logging</a></li>
-<li><a href="admin_guide/load/topics/g-example-5-text-format-on-a-hadoop-distributed-file-server.html">Example 5—TEXT Format on a Hadoop Distributed File Server</a></li>
-<li><a href="admin_guide/load/topics/g-example-6-multiple-files-in-csv-format-with-header-rows.html">Example 6—Multiple files in CSV format with header rows</a></li>
-<li><a href="admin_guide/load/topics/g-example-7-readable-web-external-table-with-script.html">Example 7—Readable Web External Table with Script</a></li>
-<li><a href="admin_guide/load/topics/g-example-8-writable-external-table-with-gpfdist.html">Example 8—Writable External Table with gpfdist</a></li>
-<li><a href="admin_guide/load/topics/g-example-9-writable-external-web-table-with-script.html">Example 9—Writable External Web Table with Script</a></li>
-<li><a href="admin_guide/load/topics/g-example-10-readable-and-writable-external-tables-with-xml-transformations.html">Example 10—Readable and Writable External Tables with XML Transformations</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-handling-load-errors.html">Handling Load Errors</a><ul>
-<li><a href="admin_guide/load/topics/g-define-an-external-table-with-single-row-error-isolation.html">Define an External Table with Single Row Error Isolation</a></li>
-<li><a href="admin_guide/load/topics/g-create-an-error-table-and-declare-a-reject-limit.html">Capture Row Formatting Errors and Declare a Reject Limit </a></li>
-<li><a href="admin_guide/load/topics/g-viewing-bad-rows-in-the-error-table-or-error-log.html">Viewing Bad Rows in the Error Log</a></li>
-<li><a href="admin_guide/load/topics/g-identifying-invalid-csv-files-in-error-table-data.html">Identifying Invalid CSV Files in Error Table Data</a></li>
-<li><a href="admin_guide/load/topics/g-moving-data-between-tables.html">Moving Data between Tables</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/load/topics/g-loading-data-with-gpload.html">Loading Data with gpload</a></li>
-<li><a href="admin_guide/load/topics/g-loading-data-with-copy.html">Loading Data with COPY</a></li>
-<li><a href="admin_guide/load/topics/g-running-copy-in-single-row-error-isolation-mode.html">Running COPY in Single Row Error Isolation Mode</a></li>
-<li><a href="admin_guide/load/topics/g-optimizing-data-load-and-query-performance.html">Optimizing Data Load and Query Performance</a></li>
-<li>
-<a href="admin_guide/load/topics/g-unloading-data-from-greenplum-database.html">Unloading Data from Greenplum Database</a><ul>
-<li>
-<a href="admin_guide/load/topics/g-defining-a-file-based-writable-external-table.html">Defining a File-Based Writable External Table</a><ul>
-<li><a href="admin_guide/load/topics/g-example-1-greenplum-file-server-gpfdist.html">Example 1—Greenplum file server (gpfdist)</a></li>
-<li><a href="admin_guide/load/topics/g-example-2-hadoop-file-server-gphdfs.html">Example 2—Hadoop file server (gphdfs)</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-defining-a-command-based-writable-external-web-table.html">Defining a Command-Based Writable External Web Table</a><ul><li><a href="admin_guide/load/topics/g-disabling-execute-for-web-or-writable-external-tables.html">Disabling EXECUTE for Web or Writable External Tables</a></li></ul>
-</li>
-<li><a href="admin_guide/load/topics/g-unloading-data-using-a-writable-external-table.html">Unloading Data Using a Writable External Table</a></li>
-<li><a href="admin_guide/load/topics/g-unloading-data-using-copy.html">Unloading Data Using COPY</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-transforming-xml-data.html">Transforming XML Data</a><ul>
-<li><a href="admin_guide/load/topics/g-determine-the-transformation-schema.html">Determine the Transformation Schema</a></li>
-<li><a href="admin_guide/load/topics/g-write-a-transform.html">Write a Transform</a></li>
-<li><a href="admin_guide/load/topics/g-write-the-gpfdist-configuration.html">Write the gpfdist Configuration</a></li>
-<li><a href="admin_guide/load/topics/g-load-the-data.html">Load the Data</a></li>
-<li>
-<a href="admin_guide/load/topics/g-transfer-and-store-the-data.html">Transfer and Store the Data</a><ul>
-<li><a href="admin_guide/load/topics/g-transforming-with-gpload.html">Transforming with GPLOAD</a></li>
-<li><a href="admin_guide/load/topics/g-transforming-with-insert-into-select-from.html">Transforming with INSERT INTO SELECT FROM</a></li>
-<li><a href="admin_guide/load/topics/g-configuration-file-format.html">Configuration File Format</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-xml-transformation-examples.html">XML Transformation Examples</a><ul>
-<li><a href="admin_guide/load/topics/g-example-1-dblp-database-publications-in-demo-directory.html">Command-based Web External Tables</a></li>
-<li><a href="admin_guide/load/topics/g-example-2-irs-mef-xml-files-in-demo-directory.html">Example 2 - IRS MeF XML Files (In demo Directory)</a></li>
-<li><a href="admin_guide/load/topics/g-example-3-witsml-files-in-demo-directory.html">Example 3 - WITSML™ Files (In demo Directory)</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-formatting-data-files.html">Formatting Data Files</a><ul>
-<li><a href="admin_guide/load/topics/g-formatting-rows.html">Formatting Rows</a></li>
-<li><a href="admin_guide/load/topics/g-formatting-columns.html">Formatting Columns</a></li>
-<li><a href="admin_guide/load/topics/g-representing-null-values.html">Representing NULL Values</a></li>
-<li>
-<a href="admin_guide/load/topics/g-escaping.html">Escaping</a><ul>
-<li><a href="admin_guide/load/topics/g-escaping-in-text-formatted-files.html">Escaping in Text Formatted Files</a></li>
-<li><a href="admin_guide/load/topics/g-escaping-in-csv-formatted-files.html">Escaping in CSV Formatted Files</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/load/topics/g-character-encoding.html">Character Encoding</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-example-custom-data-access-protocol.html">Example Custom Data Access Protocol </a><ul><li>
-<a href="admin_guide/load/topics/g-installing-the-external-table-protocol.html">Installing the External Table Protocol</a><ul><li><a href="admin_guide/load/topics/g-gpextprotocal.c.html">gpextprotocal.c</a></li></ul>
-</li></ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/query/topics/query.html">Querying Data</a><ul>
-<li><a href="admin_guide/query/topics/parallel-proc.html">About Greenplum Query Processing</a></li>
-<li>
-<a href="admin_guide/query/topics/query-piv-optimizer.html">About GPORCA</a><ul>
-<li><a href="admin_guide/query/topics/query-piv-opt-overview.html">Overview of GPORCA</a></li>
-<li><a href="admin_guide/query/topics/query-piv-opt-enable.html">Enabling GPORCA</a></li>
-<li><a href="admin_guide/query/topics/query-piv-opt-notes.html">Considerations when Using GPORCA</a></li>
-<li><a href="admin_guide/query/topics/query-piv-opt-features.html">GPORCA Features and Enhancements</a></li>
-<li><a href="admin_guide/query/topics/query-piv-opt-changed.html">Changed Behavior with the GPORCA</a></li>
-<li><a href="admin_guide/query/topics/query-piv-opt-limitations.html">GPORCA Limitations</a></li>
-<li><a href="admin_guide/query/topics/query-piv-opt-fallback.html">Determining the Query Optimizer that is Used</a></li>
-<li><a href="admin_guide/query/topics/query-piv-uniform-part-tbl.html">About Uniform Multi-level Partitioned Tables</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/query/topics/defining-queries.html">Defining Queries</a></li>
-<li><a href="admin_guide/query/topics/functions-operators.html">Using Functions and Operators</a></li>
-<li><a href="admin_guide/query/topics/json-data.html">Working with JSON Data</a></li>
-<li><a href="admin_guide/query/topics/query-performance.html">Query Performance</a></li>
-<li><a href="admin_guide/query/topics/spill-files.html">Managing Spill Files Generated by Queries</a></li>
-<li><a href="admin_guide/query/topics/query-profiling.html">Query Profiling</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/partV.html">Managing Performance</a><ul>
-<li><a href="admin_guide/perf_intro.html">Defining Database Performance</a></li>
-<li><a href="admin_guide/perf_issues.html">Common Causes of Performance Issues</a></li>
-<li><a href="admin_guide/workload_mgmt.html">Workload Management with Resource Queues</a></li>
-<li><a href="admin_guide/perf_troubleshoot.html">Investigating a Performance Problem</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="utility_guide/utility_guide.html">Utility Guide</a><ul>
-<li>
-<a href="utility_guide/admin_utilities/util_ref.html">Management Utility Reference</a><ul>
-<li><a href="utility_guide/admin_utilities/analyzedb.html">analyzedb</a></li>
-<li><a href="utility_guide/admin_utilities/gpactivatestandby.html">gpactivatestandby</a></li>
-<li><a href="utility_guide/admin_utilities/gpaddmirrors.html">gpaddmirrors</a></li>
-<li><a href="utility_guide/admin_utilities/gpcheck.html">gpcheck</a></li>
-<li><a href="utility_guide/admin_utilities/gpcheckcat.html">gpcheckcat</a></li>
-<li><a href="utility_guide/admin_utilities/gpcheckperf.html">gpcheckperf</a></li>
-<li><a href="utility_guide/admin_utilities/gpconfig.html">gpconfig</a></li>
-<li><a href="utility_guide/admin_utilities/gpcrondump.html">gpcrondump</a></li>
-<li><a href="utility_guide/admin_utilities/gpdbrestore.html">gpdbrestore</a></li>
-<li><a href="utility_guide/admin_utilities/gpdeletesystem.html">gpdeletesystem</a></li>
-<li><a href="utility_guide/admin_utilities/gpexpand.html">gpexpand</a></li>
-<li><a href="utility_guide/admin_utilities/gpfdist.html">gpfdist</a></li>
-<li><a href="utility_guide/admin_utilities/gpfilespace.html">gpfilespace</a></li>
-<li><a href="utility_guide/admin_utilities/gpinitstandby.html">gpinitstandby</a></li>
-<li><a href="utility_guide/admin_utilities/gpinitsystem.html">gpinitsystem</a></li>
-<li><a href="utility_guide/admin_utilities/gpload.html">gpload</a></li>
-<li><a href="utility_guide/admin_utilities/gplogfilter.html">gplogfilter</a></li>
-<li><a href="utility_guide/admin_utilities/gpmapreduce.html">gpmapreduce</a></li>
-<li><a href="utility_guide/admin_utilities/gpmfr.html">gpmfr</a></li>
-<li><a href="utility_guide/admin_utilities/gpperfmon_install.html">gpperfmon_install</a></li>
-<li><a href="utility_guide/admin_utilities/gppkg.html">gppkg</a></li>
-<li><a href="utility_guide/admin_utilities/gprecoverseg.html">gprecoverseg</a></li>
-<li><a href="utility_guide/admin_utilities/gpreload.html">gpreload</a></li>
-<li><a href="utility_guide/admin_utilities/gpscp.html">gpscp</a></li>
-<li><a href="utility_guide/admin_utilities/gpseginstall.html">gpseginstall</a></li>
-<li><a href="utility_guide/admin_utilities/gpssh.html">gpssh</a></li>
-<li><a href="utility_guide/admin_utilities/gpssh-exkeys.html">gpssh-exkeys</a></li>
-<li><a href="utility_guide/admin_utilities/gpstart.html">gpstart</a></li>
-<li><a href="utility_guide/admin_utilities/gpstate.html">gpstate</a></li>
-<li><a href="utility_guide/admin_utilities/gpstop.html">gpstop</a></li>
-<li><a href="utility_guide/admin_utilities/gpsys.html">gpsys1</a></li>
-<li><a href="utility_guide/admin_utilities/gptransfer.html">gptransfer</a></li>
-<li><a href="utility_guide/admin_utilities/pgbouncer-ref.html">pgbouncer</a></li>
-</ul>
-</li>
-<li>
-<a href="utility_guide/cli_ref.html">Client Utility Reference</a><ul><li>
-<a href="utility_guide/client_utilities/ClientUtilitySummary.html">Client Utility Summary</a><ul>
-<li><a href="utility_guide/client_utilities/clusterdb.html">clusterdb</a></li>
-<li><a href="utility_guide/client_utilities/createdb.html">createdb</a></li>
-<li><a href="utility_guide/client_utilities/createuser.html">createuser</a></li>
-<li><a href="utility_guide/client_utilities/dropdb.html">dropdb</a></li>
-<li><a href="utility_guide/client_utilities/droplang.html">droplang</a></li>
-<li><a href="utility_guide/client_utilities/dropuser.html">dropuser</a></li>
-<li><a href="utility_guide/client_utilities/createlang.html">createlang</a></li>
-<li><a href="utility_guide/client_utilities/pg_config.html">pg_config</a></li>
-<li><a href="utility_guide/client_utilities/pg_dump.html">pg_dump</a></li>
-<li><a href="utility_guide/client_utilities/pg_dumpall.html">pg_dumpall</a></li>
-<li><a href="utility_guide/client_utilities/pg_restore.html">pg_restore</a></li>
-<li><a href="utility_guide/client_utilities/psql.html">psql</a></li>
-<li><a href="utility_guide/client_utilities/reindexdb.html">reindexdb</a></li>
-<li><a href="utility_guide/client_utilities/vacuumdb.html">vacuumdb</a></li>
-</ul>
-</li></ul>
-</li>
-<li><a href="utility_guide/orafce_ref.html">Oracle Compatibility Functions</a></li>
-<li><a href="utility_guide/dblink.html">dblink Functions</a></li>
-</ul>
-</li>
-<li>
-<a href="ref_guide/ref_guide.html">Reference Guide</a><ul>
-<li>
-<a href="ref_guide/sql_commands/sql_ref.html">SQL Command Reference</a><ul>
-<li><a href="ref_guide/GPReferenceSQLSummaryLOP.html">SQL Syntax Summary</a></li>
-<li><a href="ref_guide/sql_commands/ABORT.html">ABORT</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_AGGREGATE.html">ALTER AGGREGATE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_CONVERSION.html">ALTER CONVERSION</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_DATABASE.html">ALTER DATABASE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_DOMAIN.html">ALTER DOMAIN</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_FILESPACE.html">ALTER FILESPACE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_FUNCTION.html">ALTER FUNCTION</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_GROUP.html">ALTER GROUP</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_INDEX.html">ALTER INDEX</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_LANGUAGE.html">ALTER LANGUAGE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_OPERATOR.html">ALTER OPERATOR</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_OPERATOR_CLASS.html">ALTER OPERATOR CLASS</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_PROTOCOL.html">ALTER PROTOCOL</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_RESOURCE_QUEUE.html">ALTER RESOURCE QUEUE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_ROLE.html">ALTER ROLE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_SCHEMA.html">ALTER SCHEMA</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_SEQUENCE.html">ALTER SEQUENCE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_TABLE.html">ALTER TABLE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_TABLESPACE.html">ALTER TABLESPACE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_TYPE.html">ALTER TYPE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_USER.html">ALTER USER</a></li>
-<li><a href="ref_guide/sql_commands/ANALYZE.html">ANALYZE</a></li>
-<li><a href="ref_guide/sql_commands/BEGIN.html">BEGIN</a></li>
-<li><a href="ref_guide/sql_commands/CHECKPOINT.html">CHECKPOINT</a></li>
-<li><a href="ref_guide/sql_commands/CLOSE.html">CLOSE</a></li>
-<li><a href="ref_guide/sql_commands/CLUSTER.html">CLUSTER</a></li>
-<li><a href="ref_guide/sql_commands/COMMENT.html">COMMENT</a></li>
-<li><a href="ref_guide/sql_commands/COMMIT.html">COMMIT</a></li>
-<li><a href="ref_guide/sql_commands/COPY.html">COPY</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_AGGREGATE.html">CREATE AGGREGATE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_CAST.html">CREATE CAST</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_CONVERSION.html">CREATE CONVERSION</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_DATABASE.html">CREATE DATABASE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_DOMAIN.html">CREATE DOMAIN</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_FUNCTION.html">CREATE FUNCTION</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_GROUP.html">CREATE GROUP</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_INDEX.html">CREATE INDEX</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_LANGUAGE.html">CREATE LANGUAGE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_OPERATOR.html">CREATE OPERATOR</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_OPERATOR_CLASS.html">CREATE OPERATOR CLASS</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_PROTOCOL.html">CREATE PROTOCOL</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_RESOURCE_QUEUE.html">CREATE RESOURCE QUEUE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_ROLE.html">CREATE ROLE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_RULE.html">CREATE RULE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_SCHEMA.html">CREATE SCHEMA</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_SEQUENCE.html">CREATE SEQUENCE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_TABLE.html">CREATE TABLE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_TABLE_AS.html">CREATE TABLE AS</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_TABLESPACE.html">CREATE TABLESPACE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_TYPE.html">CREATE TYPE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_USER.html">CREATE USER</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_VIEW.html">CREATE VIEW</a></li>
-<li><a href="ref_guide/sql_commands/DEALLOCATE.html">DEALLOCATE</a></li>
-<li><a href="ref_guide/sql_commands/DECLARE.html">DECLARE</a></li>
-<li><a href="ref_guide/sql_commands/DELETE.html">DELETE</a></li>
-<li><a href="ref_guide/sql_commands/DO.html">DO</a></li>
-<li><a href="ref_guide/sql_commands/DROP_AGGREGATE.html">DROP AGGREGATE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_CAST.html">DROP CAST</a></li>
-<li><a href="ref_guide/sql_commands/DROP_CONVERSION.html">DROP CONVERSION</a></li>
-<li><a href="ref_guide/sql_commands/DROP_DATABASE.html">DROP DATABASE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a></li>
-<li><a href="ref_guide/sql_commands/DROP_EXTERNAL_TABLE.html">DROP EXTERNAL TABLE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_FILESPACE.html">DROP FILESPACE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_FUNCTION.html">DROP FUNCTION</a></li>
-<li><a href="ref_guide/sql_commands/DROP_GROUP.html">DROP GROUP</a></li>
-<li><a href="ref_guide/sql_commands/DROP_INDEX.html">DROP INDEX</a></li>
-<li><a href="ref_guide/sql_commands/DROP_LANGUAGE.html">DROP LANGUAGE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_OPERATOR.html">DROP OPERATOR</a></li>
-<li><a href="ref_guide/sql_commands/DROP_OPERATOR_CLASS.html">DROP OPERATOR CLASS</a></li>
-<li><a href="ref_guide/sql_commands/DROP_OWNED.html">DROP OWNED</a></li>
-<li><a href="ref_guide/sql_commands/DROP_PROTOCOL.html">DROP PROTOCOL</a></li>
-<li><a href="ref_guide/sql_commands/DROP_RESOURCE_QUEUE.html">DROP RESOURCE QUEUE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_ROLE.html">DROP ROLE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_RULE.html">DROP RULE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_SCHEMA.html">DROP SCHEMA</a></li>
-<li><a href="ref_guide/sql_commands/DROP_SEQUENCE.html">DROP SEQUENCE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_TABLE.html">DROP TABLE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_TABLESPACE.html">DROP TABLESPACE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_TYPE.html">DROP TYPE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_USER.html">DROP USER</a></li>
-<li><a href="ref_guide/sql_commands/DROP_VIEW.html">DROP VIEW</a></li>
-<li><a href="ref_guide/sql_commands/END.html">END</a></li>
-<li><a href="ref_guide/sql_commands/EXECUTE.html">EXECUTE</a></li>
-<li><a href="ref_guide/sql_commands/EXPLAIN.html">EXPLAIN</a></li>
-<li><a href="ref_guide/sql_commands/FETCH.html">FETCH</a></li>
-<li><a href="ref_guide/sql_commands/GRANT.html">GRANT</a></li>
-<li><a href="ref_guide/sql_commands/INSERT.html">INSERT</a></li>
-<li><a href="ref_guide/sql_commands/LOAD.html">LOAD</a></li>
-<li><a href="ref_guide/sql_commands/LOCK.html">LOCK</a></li>
-<li><a href="ref_guide/sql_commands/MOVE.html">MOVE</a></li>
-<li><a href="ref_guide/sql_commands/PREPARE.html">PREPARE</a></li>
-<li><a href="ref_guide/sql_commands/REASSIGN_OWNED.html">REASSIGN OWNED</a></li>
-<li><a href="ref_guide/sql_commands/REINDEX.html">REINDEX</a></li>
-<li><a href="ref_guide/sql_commands/RELEASE_SAVEPOINT.html">RELEASE SAVEPOINT</a></li>
-<li><a href="ref_guide/sql_commands/RESET.html">RESET</a></li>
-<li><a href="ref_guide/sql_commands/REVOKE.html">REVOKE</a></li>
-<li><a href="ref_guide/sql_commands/ROLLBACK.html">ROLLBACK</a></li>
-<li><a href="ref_guide/sql_commands/ROLLBACK_TO_SAVEPOINT.html">ROLLBACK TO SAVEPOINT</a></li>
-<li><a href="ref_guide/sql_commands/SAVEPOINT.html">SAVEPOINT</a></li>
-<li><a href="ref_guide/sql_commands/SELECT.html">SELECT</a></li>
-<li><a href="ref_guide/sql_commands/SELECT_INTO.html">SELECT INTO</a></li>
-<li><a href="ref_guide/sql_commands/SET.html">SET</a></li>
-<li><a href="ref_guide/sql_commands/SET_ROLE.html">SET ROLE</a></li>
-<li><a href="ref_guide/sql_commands/SET_SESSION_AUTHORIZATION.html">SET SESSION AUTHORIZATION</a></li>
-<li><a href="ref_guide/sql_commands/SET_TRANSACTION.html">SET TRANSACTION</a></li>
-<li><a href="ref_guide/sql_commands/SHOW.html">SHOW</a></li>
-<li><a href="ref_guide/sql_commands/START_TRANSACTION.html">START TRANSACTION</a></li>
-<li><a href="ref_guide/sql_commands/TRUNCATE.html">TRUNCATE</a></li>
-<li><a href="ref_guide/sql_commands/UPDATE.html">UPDATE</a></li>
-<li><a href="ref_guide/sql_commands/VACUUM.html">VACUUM</a></li>
-<li><a href="ref_guide/sql_commands/VALUES.html">VALUES</a></li>
-</ul>
-</li>
-<li><a href="ref_guide/SQL2008_support.html">SQL 2008 Optional Feature Compliance</a></li>
-<li><a href="ref_guide/env_var_ref.html">Greenplum Environment Variables</a></li>
-<li>
-<a href="ref_guide/system_catalogs/catalog_ref.html#topic1">System Catalog Reference</a><ul>
-<li><a href="ref_guide/system_catalogs/catalog_ref-tables.html#topic1">System Tables</a></li>
-<li><a href="ref_guide/system_catalogs/catalog_ref-views.html#topic1">System Views</a></li>
-<li>
-<a href="ref_guide/system_catalogs/catalog_ref-html.html#topic1">System Catalogs Definitions</a><ul>
-<li><a href="ref_guide/system_catalogs/gp_configuration_history.html">gp_configuration_history</a></li>
-<li><a href="ref_guide/system_catalogs/gp_db_interfaces.html">gp_db_interfaces</a></li>
-<li><a href="ref_guide/system_catalogs/gp_distributed_log.html">gp_distributed_log</a></li>
-<li><a href="ref_guide/system_catalogs/gp_distributed_xacts.html">gp_distributed_xacts</a></li>
-<li><a href="ref_guide/system_catalogs/gp_distribution_policy.html">gp_distribution_policy</a></li>
-<li><a href="ref_guide/system_catalogs/gpexpand_expansion_progress.html">gpexpand.expansion_progress</a></li>
-<li><a href="ref_guide/system_catalogs/gp_expansion_status.html">gpexpand.status</a></li>
-<li><a href="ref_guide/system_catalogs/gp_expansion_tables.html">gpexpand.status_detail</a></li>
-<li><a href="ref_guide/system_catalogs/gp_fastsequence.html">gp_fastsequence</a></li>
-<li><a href="ref_guide/system_catalogs/gp_fault_strategy.html">gp_fault_strategy</a></li>
-<li><a href="ref_guide/system_catalogs/gp_global_sequence.html">gp_global_sequence</a></li>
-<li><a href="ref_guide/system_catalogs/gp_id.html">gp_id</a></li>
-<li><a href="ref_guide/system_catalogs/gp_interfaces.html">gp_interfaces</a></li>
-<li><a href="ref_guide/system_catalogs/gp_persistent_database_node.html">gp_persistent_database_node</a></li>
-<li><a href="ref_guide/system_catalogs/gp_persistent_filespace_node.html">gp_persistent_filespace_node</a></li>
-<li><a href="ref_guide/system_catalogs/gp_persistent_relation_node.html">gp_persistent_relation_node</a></li>
-<li><a href="ref_guide/system_catalogs/gp_persistent_tablespace_node.html">gp_persistent_tablespace_node</a></li>
-<li><a href="ref_guide/system_catalogs/gp_pgdatabase.html">gp_pgdatabase</a></li>
-<li><a href="ref_guide/system_catalogs/gp_relation_node.html">gp_relation_node</a></li>
-<li><a href="ref_guide/system_catalogs/gp_resqueue_status.html">gp_resqueue_status</a></li>
-<li><a href="ref_guide/system_catalogs/gp_san_configuration.html">gp_san_configuration</a></li>
-<li><a href="ref_guide/system_catalogs/gp_segment_configuration.html">gp_segment_configuration</a></li>
-<li><a href="ref_guide/system_catalogs/gp_transaction_log.html">gp_transaction_log</a></li>
-<li><a href="ref_guide/system_catalogs/gp_version_at_initdb.html">gp_version_at_initdb</a></li>
-<li><a href="ref_guide/system_catalogs/pg_aggregate.html">pg_aggregate</a></li>
-<li><a href="ref_guide/system_catalogs/pg_am.html">pg_am</a></li>
-<li><a href="ref_guide/system_catalogs/pg_amop.html">pg_amop</a></li>
-<li><a href="ref_guide/system_catalogs/pg_amproc.html">pg_amproc</a></li>
-<li><a href="ref_guide/system_catalogs/pg_appendonly.html">pg_appendonly</a></li>
-<li><a href="ref_guide/system_catalogs/pg_attrdef.html">pg_attrdef</a></li>
-<li><a href="ref_guide/system_catalogs/pg_attribute.html">pg_attribute</a></li>
-<li><a href="ref_guide/system_catalogs/pg_attribute_encoding.html">pg_attribute_encoding</a></li>
-<li><a href="ref_guide/system_catalogs/pg_auth_members.html">pg_auth_members</a></li>
-<li><a href="ref_guide/system_catalogs/pg_authid.html">pg_authid</a></li>
-<li><a href="ref_guide/system_catalogs/pg_cast.html">pg_cast</a></li>
-<li><a href="ref_guide/system_catalogs/pg_class.html">pg_class</a></li>
-<li><a href="ref_guide/system_catalogs/pg_compression.html">pg_compression</a></li>
-<li><a href="ref_guide/system_catalogs/pg_constraint.html">pg_constraint</a></li>
-<li><a href="ref_guide/system_catalogs/pg_conversion.html">pg_conversion</a></li>
-<li><a href="ref_guide/system_catalogs/pg_database.html">pg_database</a></li>
-<li><a href="ref_guide/system_catalogs/pg_depend.html">pg_depend</a></li>
-<li><a href="ref_guide/system_catalogs/pg_description.html">pg_description</a></li>
-<li><a href="ref_guide/system_catalogs/pg_enum.html">pg_enum</a></li>
-<li><a href="ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a></li>
-<li><a href="ref_guide/system_catalogs/pg_filespace.html">pg_filespace</a></li>
-<li><a href="ref_guide/system_catalogs/pg_filespace_entry.html">pg_filespace_entry</a></li>
-<li><a href="ref_guide/system_catalogs/pg_index.html">pg_index</a></li>
-<li><a href="ref_guide/system_catalogs/pg_inherits.html">pg_inherits</a></li>
-<li><a href="ref_guide/system_catalogs/pg_language.html">pg_language</a></li>
-<li><a href="ref_guide/system_catalogs/pg_largeobject.html">pg_largeobject</a></li>
-<li><a href="ref_guide/system_catalogs/pg_listener.html">pg_listener</a></li>
-<li><a href="ref_guide/system_catalogs/pg_locks.html">pg_locks</a></li>
-<li><a href="ref_guide/system_catalogs/pg_namespace.html">pg_namespace</a></li>
-<li><a href="ref_guide/system_catalogs/pg_opclass.html">pg_opclass</a></li>
-<li><a href="ref_guide/system_catalogs/pg_operator.html">pg_operator</a></li>
-<li><a href="ref_guide/system_catalogs/pg_partition.html">pg_partition</a></li>
-<li><a href="ref_guide/system_catalogs/pg_partition_columns.html">pg_partition_columns</a></li>
-<li><a href="ref_guide/system_catalogs/pg_partition_encoding.html">pg_partition_encoding</a></li>
-<li><a href="ref_guide/system_catalogs/pg_partition_rule.html">pg_partition_rule</a></li>
-<li><a href="ref_guide/system_catalogs/pg_partition_templates.html">pg_partition_templates</a></li>
-<li><a href="ref_guide/system_catalogs/pg_partitions.html">pg_partitions</a></li>
-<li><a href="ref_guide/system_catalogs/pg_pltemplate.html">pg_pltemplate</a></li>
-<li><a href="ref_guide/system_catalogs/pg_proc.html">pg_proc</a></li>
-<li><a href="ref_guide/system_catalogs/pg_resourcetype.html">pg_resourcetype</a></li>
-<li><a href="ref_guide/system_catalogs/pg_resqueue.html">pg_resqueue</a></li>
-<li><a href="ref_guide/system_catalogs/pg_resqueue_attributes.html">pg_resqueue_attributes</a></li>
-<li><a href="ref_guide/system_catalogs/pg_resqueuecapability.html">pg_resqueuecapability</a></li>
-<li><a href="ref_guide/system_catalogs/pg_rewrite.html">pg_rewrite</a></li>
-<li><a href="ref_guide/system_catalogs/pg_roles.html">pg_roles</a></li>
-<li><a href="ref_guide/system_catalogs/pg_shdepend.html">pg_shdepend</a></li>
-<li><a href="ref_guide/system_catalogs/pg_shdescription.html">pg_shdescription</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stat_activity.html">pg_stat_activity</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stat_last_operation.html">pg_stat_last_operation</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stat_last_shoperation.html">pg_stat_last_shoperation</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stat_operations.html">pg_stat_operations</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stat_partition_operations.html">pg_stat_partition_operations</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stat_replication.html">pg_stat_replication</a></li>
-<li><a href="ref_guide/system_catalogs/pg_statistic.html">pg_statistic</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stats_resqueue.html">pg_stat_resqueues</a></li>
-<li><a href="ref_guide/system_catalogs/pg_tablespace.html">pg_tablespace</a></li>
-<li><a href="ref_guide/system_catalogs/pg_trigger.html">pg_trigger</a></li>
-<li><a href="ref_guide/system_catalogs/pg_type.html">pg_type</a></li>
-<li><a href="ref_guide/system_catalogs/pg_type_encoding.html">pg_type_encoding</a></li>
-<li><a href="ref_guide/system_catalogs/pg_user_mapping.html">pg_user_mapping</a></li>
-<li><a href="ref_guide/system_catalogs/pg_window.html">pg_window</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="ref_guide/gp_toolkit.html">The gp_toolkit Administrative Schema</a><ul>
-<li><a href="ref_guide/gp_toolkit.html#topic2">Checking for Tables that Need Routine Maintenance</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic5">Checking for Locks</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic8">Checking Append-Optimized Tables</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic16">Viewing Greenplum Database Server Log Files</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic21">Checking Server Configuration Files</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic24">Checking for Failed Segments</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic26">Checking Resource Queue Activity and Status</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic32">Checking Query Disk Spill Space Usage</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic36">Viewing Users and Groups (Roles)</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic38">Checking Database Object Sizes and Disk Space</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic49">Checking for Uneven Data Distribution</a></li>
-</ul>
-</li>
-<li><a href="ref_guide/data_types.html">Greenplum Database Data Types</a></li>
-<li><a href="ref_guide/character_sets.html">Character Set Support</a></li>
-<li>
-<a href="ref_guide/config_params/guc_config.html">Server Configuration Parameters</a><ul>
-<li><a href="ref_guide/config_params/guc_config.html#topic_vsn_22l_z4">Parameter Types and Values</a></li>
-<li><a href="ref_guide/config_params/guc_config.html#topic_cyz_p2l_z4">Setting Parameters</a></li>
-<li><a href="ref_guide/config_params/guc_category-list.html">Parameter Categories</a></li>
-<li>
-<a href="ref_guide/config_params/guc-list.html">Configuration Parameters</a><ul>
-<li><a href="ref_guide/config_params/guc-list.html#add_missing_from">add_missing_from</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#application_name">application_name</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#array_nulls">array_nulls</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#authentication_timeout">authentication_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#backslash_quote">backslash_quote</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#block_size">block_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#bonjour_name">bonjour_name</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#check_function_bodies">check_function_bodies</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#client_encoding">client_encoding</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#client_min_messages">client_min_messages</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#cpu_index_tuple_cost">cpu_index_tuple_cost</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#cpu_operator_cost">cpu_operator_cost</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#cpu_tuple_cost">cpu_tuple_cost</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#cursor_tuple_fraction">cursor_tuple_fraction</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#custom_variable_classes">custom_variable_classes</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#DateStyle">DateStyle</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#db_user_namespace">db_user_namespace</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#deadlock_timeout">deadlock_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_assertions">debug_assertions</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_pretty_print">debug_pretty_print</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_print_parse">debug_print_parse</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_print_plan">debug_print_plan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_print_prelim_plan">debug_print_prelim_plan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_print_rewritten">debug_print_rewritten</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_print_slice_table">debug_print_slice_table</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#default_statistics_target">default_statistics_target</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#default_tablespace">default_tablespace</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#default_transaction_isolation">default_transaction_isolation</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#default_transaction_read_only">default_transaction_read_only</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#dynamic_library_path">dynamic_library_path</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#effective_cache_size">effective_cache_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_bitmapscan">enable_bitmapscan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_groupagg">enable_groupagg</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_hashagg">enable_hashagg</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_hashjoin">enable_hashjoin</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_indexscan">enable_indexscan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_mergejoin">enable_mergejoin</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_nestloop">enable_nestloop</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_seqscan">enable_seqscan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_sort">enable_sort</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_tidscan">enable_tidscan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#escape_string_warning">escape_string_warning</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#explain_pretty_print">explain_pretty_print</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#extra_float_digits">extra_float_digits</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#filerep_mirrorvalidation_during_resync">filerep_mirrorvalidation_during_resync</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#from_collapse_limit">from_collapse_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_adjust_selectivity_for_outerjoins">gp_adjust_selectivity_for_outerjoins</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_analyze_relative_error">gp_analyze_relative_error</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_appendonly_compaction">gp_appendonly_compaction</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_appendonly_compaction_threshold">gp_appendonly_compaction_threshold</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_autostats_mode">gp_autostats_mode</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_autostats_mode_in_functions">gp_autostats_mode_in_functions</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_autostats_on_change_threshold">gp_autostats_on_change_threshold</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_backup_directIO">gp_backup_directIO</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_backup_directIO_read_chunk_mb">gp_backup_directIO_read_chunk_mb</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_cached_segworkers_threshold">gp_cached_segworkers_threshold</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_command_count">gp_command_count</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_connectemc_mode">gp_connectemc_mode</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_connection_send_timeout">gp_connection_send_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_connections_per_thread">gp_connections_per_thread</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_content">gp_content</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_create_table_random_default_distribution">gp_create_table_random_default_distribution</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_dbid">gp_dbid</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_debug_linger">gp_debug_linger</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_default_storage_options">gp_default_storage_options</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_dynamic_partition_pruning">gp_dynamic_partition_pruning</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_email_from">gp_email_from</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_email_smtp_password">gp_email_smtp_password</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_email_smtp_server">gp_email_smtp_server</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_email_smtp_userid">gp_email_smtp_userid</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_email_to">gp_email_to</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_adaptive_nestloop">gp_enable_adaptive_nestloop</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_agg_distinct">gp_enable_agg_distinct</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_agg_distinct_pruning">gp_enable_agg_distinct_pruning</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_direct_dispatch">gp_enable_direct_dispatch</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_exchange_default_partition">gp_enable_exchange_default_partition</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_fallback_plan">gp_enable_fallback_plan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_fast_sri">gp_enable_fast_sri</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_gpperfmon">gp_enable_gpperfmon</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_groupext_distinct_gather">gp_enable_groupext_distinct_gather</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_groupext_distinct_pruning">gp_enable_groupext_distinct_pruning</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_multiphase_agg">gp_enable_multiphase_agg</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_predicate_propagation">gp_enable_predicate_propagation</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_preunique">gp_enable_preunique</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_relsize_collection">gp_enable_relsize_collection</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_sequential_window_plans">gp_enable_sequential_window_plans</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_sort_distinct">gp_enable_sort_distinct</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_sort_limit">gp_enable_sort_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_external_enable_exec">gp_external_enable_exec</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_external_grant_privileges">ref_guide/config_params/guc-list.xml#gp_external_grant_privileges</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_external_max_segs">gp_external_max_segs</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_filerep_tcp_keepalives_count">gp_filerep_tcp_keepalives_count</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_filerep_tcp_keepalives_idle">gp_filerep_tcp_keepalives_idle</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_filerep_tcp_keepalives_interval">gp_filerep_tcp_keepalives_interval</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_fts_probe_interval">gp_fts_probe_interval</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_fts_probe_retries">gp_fts_probe_retries</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_fts_probe_threadcount">gp_fts_probe_threadcount</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_fts_probe_timeout">gp_fts_probe_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_gpperfmon_send_interval">gp_gpperfmon_send_interval</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gpperfmon_log_alert_level">gpperfmon_log_alert_level</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_hadoop_home">gp_hadoop_home</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_hadoop_target_version">gp_hadoop_target_version</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_hashjoin_tuples_per_bucket">gp_hashjoin_tuples_per_bucket</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_idf_deduplicate">gp_idf_deduplicate</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#topic_lvm_ttc_3p">gp_initial_bad_row_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_interconnect_fc_method">gp_interconnect_fc_method</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_interconnect_hash_multiplier">gp_interconnect_hash_multiplier</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_interconnect_queue_depth">gp_interconnect_queue_depth</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_interconnect_setup_timeout">gp_interconnect_setup_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_interconnect_snd_queue_depth">gp_interconnect_snd_queue_depth</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_interconnect_type">gp_interconnect_type</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_log_format">gp_log_format</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_log_fts">gp_log_fts</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_csv_line_length">gp_max_csv_line_length</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_databases">gp_max_databases</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_filespaces">gp_max_filespaces</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_local_distributed_cache">gp_max_local_distributed_cache</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_packet_size">gp_max_packet_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_plan_size">gp_max_plan_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_tablespaces">gp_max_tablespaces</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_motion_cost_per_row">gp_motion_cost_per_row</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_num_contents_in_cluster">gp_num_contents_in_cluster</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_reject_percent_threshold">gp_reject_percent_threshold</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_reraise_signal">gp_reraise_signal</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_resqueue_memory_policy">gp_resqueue_memory_policy</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_resqueue_priority">gp_resqueue_priority</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_resqueue_priority_cpucores_per_segment">gp_resqueue_priority_cpucores_per_segment</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_resqueue_priority_sweeper_interval">gp_resqueue_priority_sweeper_interval</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_role">gp_role</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_safefswritesize">gp_safefswritesize</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_segment_connect_timeout">gp_segment_connect_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_segments_for_planner">gp_segments_for_planner</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_server_version">gp_server_version</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_server_version_num">gp_server_version_num</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_session_id">gp_session_id</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_set_proc_affinity">gp_set_proc_affinity</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_set_read_only">gp_set_read_only</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_snmp_community">gp_snmp_community</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_snmp_monitor_address">gp_snmp_monitor_address</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_snmp_use_inform_or_trap">gp_snmp_use_inform_or_trap</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_statistics_pullup_from_child_partition">gp_statistics_pullup_from_child_partition</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_statistics_use_fkeys">gp_statistics_use_fkeys</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_vmem_idle_resource_timeout">gp_vmem_idle_resource_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_vmem_protect_limit">gp_vmem_protect_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_vmem_protect_segworker_cache_limit">gp_vmem_protect_segworker_cache_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_workfile_checksumming">gp_workfile_checksumming</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_workfile_compress_algorithm">gp_workfile_compress_algorithm</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_workfile_limit_files_per_query">gp_workfile_limit_files_per_query</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_workfile_limit_per_query">gp_workfile_limit_per_query</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_workfile_limit_per_segment">gp_workfile_limit_per_segment</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gpperfmon_port">gpperfmon_port</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#integer_datetimes">integer_datetimes</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#IntervalStyle">IntervalStyle</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#join_collapse_limit">join_collapse_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#keep_wal_segments">keep_wal_segments</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#krb_caseins_users">krb_caseins_users</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#krb_server_keyfile">krb_server_keyfile</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#krb_srvname">krb_srvname</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#lc_collate">lc_collate</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#lc_ctype">lc_ctype</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#lc_messages">lc_messages</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#lc_monetary">lc_monetary</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#lc_numeric">lc_numeric</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#lc_time">lc_time</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#listen_addresses">listen_addresses</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#local_preload_libraries">local_preload_libraries</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_autostats">log_autostats</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_connections">log_connections</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_disconnections">log_disconnections</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_dispatch_stats">log_dispatch_stats</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_duration">log_duration</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_error_verbosity">log_error_verbosity</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_executor_stats">log_executor_stats</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_hostname">log_hostname</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_min_duration_statement">log_min_duration_statement</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_min_error_statement">log_min_error_statement</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_min_messages">log_min_messages</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_parser_stats">log_parser_stats</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_planner_stats">log_planner_stats</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_rotation_age">log_rotation_age</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_rotation_size">log_rotation_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_statement">log_statement</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_statement_stats">log_statement_stats</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_timezone">log_timezone</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_truncate_on_rotation">log_truncate_on_rotation</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_appendonly_tables">max_appendonly_tables</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_connections">max_connections</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_files_per_process">max_files_per_process</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_fsm_pages">max_fsm_pages</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_fsm_relations">max_fsm_relations</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_function_args">max_function_args</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_identifier_length">max_identifier_length</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_index_keys">max_index_keys</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_locks_per_transaction">max_locks_per_transaction</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_prepared_transactions">max_prepared_transactions</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_resource_portals_per_transaction">max_resource_portals_per_transaction</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_resource_queues">max_resource_queues</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_stack_depth">max_stack_depth</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_statement_mem">max_statement_mem</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer">optimizer</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_array_expansion_threshold">optimizer_array_expansion_threshold</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_analyze_root_partition">optimizer_analyze_root_partition</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_control">optimizer_control</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_enable_master_only_queries">optimizer_enable_master_only_queries</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_join_order_threshold">optimizer_join_order_threshold</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_minidump">optimizer_minidump</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_parallel_union">optimizer_parallel_union</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_sort_factor">optimizer_sort_factor</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#password_encryption">password_encryption</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#password_hash_algorithm">password_hash_algorithm</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pgcrypto.fips">pgcrypto.fips</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pgstat_track_activity_query_size">pgstat_track_activity_query_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pljava_classpath">pljava_classpath</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pljava_classpath_insecure">pljava_classpath_insecure</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pljava_statement_cache_size">pljava_statement_cache_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pljava_release_lingering_savepoints">pljava_release_lingering_savepoints</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pljava_vmoptions">pljava_vmoptions</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#port">port</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#random_page_cost">random_page_cost</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#readable_external_table_timeout">readable_external_table_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#repl_catchup_within_range">repl_catchup_within_range</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#replication_timeout">replication_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#regex_flavor">regex_flavor</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#resource_cleanup_gangs_on_wait">resource_cleanup_gangs_on_wait</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#resource_select_only">resource_select_only</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#runaway_detector_activation_percent">runaway_detector_activation_percent</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#search_path">search_path</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#seq_page_cost">seq_page_cost</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#server_encoding">server_encoding</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#server_version">server_version</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#server_version_num">server_version_num</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#shared_buffers">shared_buffers</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#shared_preload_libraries">shared_preload_libraries</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#ssl">ssl</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#ssl_ciphers">ssl_ciphers</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#standard_conforming_strings">standard_conforming_strings</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#statement_mem">statement_mem</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#statement_timeout">statement_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#stats_queue_level">stats_queue_level</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#superuser_reserved_connections">superuser_reserved_connections</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#tcp_keepalives_count">tcp_keepalives_count</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#tcp_keepalives_idle">tcp_keepalives_idle</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#tcp_keepalives_interval">tcp_keepalives_interval</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#temp_buffers">temp_buffers</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#TimeZone">TimeZone</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#timezone_abbreviations">timezone_abbreviations</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#track_activities">track_activities</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#track_counts">track_counts</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#transaction_isolation">transaction_isolation</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#transaction_read_only">transaction_read_only</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#transform_null_equals">transform_null_equals</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#unix_socket_directory">unix_socket_directory</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#unix_socket_group">unix_socket_group</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#unix_socket_permissions">unix_socket_permissions</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#update_process_title">update_process_title</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vacuum_cost_delay">vacuum_cost_delay</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vacuum_cost_limit">vacuum_cost_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vacuum_cost_page_dirty">vacuum_cost_page_dirty</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vacuum_cost_page_hit">vacuum_cost_page_hit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vacuum_cost_page_miss">vacuum_cost_page_miss</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vacuum_freeze_min_age">vacuum_freeze_min_age</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#validate_previous_free_tid">validate_previous_free_tid</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vmem_process_interrupt">vmem_process_interrupt</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#wal_receiver_status_interval">wal_receiver_status_interval</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#writable_external_table_bufsize">writable_external_table_bufsize</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#xid_stop_limit">xid_stop_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#xid_warn_limit">xid_warn_limit</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="ref_guide/function-summary.html">Summary of Built-in Functions</a></li>
-<li><a href="ref_guide/yaml_spec.html">Greenplum MapReduce Specification</a></li>
-<li><a href="ref_guide/extensions/pl_sql.html">Greenplum PL/pgSQL Procedural Language</a></li>
-<li><a href="ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a></li>
-<li><a href="ref_guide/extensions/pl_r.html">Greenplum PL/R Language Extension</a></li>
-<li><a href="ref_guide/extensions/pl_python.html">Greenplum PL/Python Language Extension</a></li>
-<li><a href="ref_guide/extensions/pl_java.html">Greenplum PL/Java Language Extension</a></li>
-<li><a href="ref_guide/extensions/madlib.html">Greenplum MADlib Extension for Analytics</a></li>
-<li><a href="ref_guide/extensions/fuzzystrmatch.html">Greenplum Fuzzy String Match Extension</a></li>
-<li><a href="ref_guide/feature_summary.html">Summary of Greenplum Features</a></li>
-</ul>
-</li>
-<li>
-<a href="client_tool_guides/client-docs-unix.html">UNIX Client Documentation</a><ul>
-<li>
-<a href="client_tool_guides/client_tools_unix.html">Client Tools for UNIX</a><ul>
-<li><a href="client_tool_guides/client/unix/unix_client_install.html">Installing the Greenplum Client Tools</a></li>
-<li>
-<a href="client_tool_guides/client/unix/unix_client_tool_ref.html">Client Tools Reference</a><ul>
-<li><a href="client_tool_guides/client/unix/gpmapreduce.html">gpmapreduce</a></li>
-<li><a href="client_tool_guides/client/unix/psql.html">psql</a></li>
-</ul>
-</li>
-<li><a href="client_tool_guides/common/client_sql_ref.html">SQL Syntax Summary</a></li>
-</ul>
-</li>
-<li>
-<a href="client_tool_guides/load_tools_unix.html">Load Tools for UNIX</a><ul>
-<li><a href="client_tool_guides/load/unix/unix_load_install.html">Installing the Greenplum Load Tools</a></li>
-<li>
-<a href="client_tool_guides/load/unix/unix_load_tool_ref.html">Load Tools Reference</a><ul>
-<li><a href="client_tool_guides/load/unix/gpfdist.html">gpfdist</a></li>
-<li><a href="client_tool_guides/load/unix/gpload.html">gpload</a></li>
-</ul>
-</li>
-<li><a href="client_tool_guides/load/unix/load_sql_ref.html">SQL Syntax Summary</a></li>
-</ul>
-</li>
-<li>
-<a href="client_tool_guides/connectivity_tools_unix.html">Connectivity Tools for UNIX</a><ul><li><a href="client_tool_guides/drivers/unix/unix_connect.html">Greenplum Database 4.3 Connectivity Tools for UNIX</a></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="client_tool_guides/client-docs-win.html">Windows Client Documentation</a><ul>
-<li>
-<a href="client_tool_guides/client_tools_windows.html">Client Tools for Windows</a><ul>
-<li><a href="client_tool_guides/client/windows/win_client_install.html">Installing the Greenplum Client Tools</a></li>
-<li><a href="client_tool_guides/client/windows/win_client_run.html">Running the Greenplum Client Tools</a></li>
-<li>
-<a href="client_tool_guides/client/windows/win_client_tool_ref.html">Client Tools Reference</a><ul><li><a href="client_tool_guides/client/windows/psqlexe.html">psql.exe</a></li></ul>
-</li>
-<li><a href="client_tool_guides/common/client_sql_ref.html">SQL Syntax Summary</a></li>
-</ul>
-</li>
-<li>
-<a href="client_tool_guides/load_tools_windows.html">Load Tools for Windows</a><ul>
-<li><a href="client_tool_guides/load/windows/win_load_install.html">Installing Greenplum Loader</a></li>
-<li><a href="client_tool_guides/load/windows/win_load_run.html">Running Greenplum Loader</a></li>
-<li>
-<a href="client_tool_guides/load/windows/win_load_tool_ref.html">Loader Program Reference</a><ul>
-<li><a href="client_tool_guides/load/windows/gploadpy.html">gpload.py</a></li>
-<li><a href="client_tool_guides/load/windows/gpfdistexe.html">gpfdist.exe</a></li>
-</ul>
-</li>
-<li><a href="client_tool_guides/load/windows/load_sql_ref.html">SQL Syntax Summary</a></li>
-</ul>
-</li>
-<li>
-<a href="client_tool_guides/connectivity_tools_windows.html">Connectivity Tools for Windows</a><ul><li><a href="client_tool_guides/drivers/windows/win_connect.html">Greenplum Database 4.3 Connectivity Tools for Windows</a></li></ul>
-</li>
-</ul>
-</li>
-</ul>
+        
+
+  <h1 class="title topictitle1">Workload Management with Resource Queues</h1>
+
+  
+  <div class="body">
+<p class="shortdesc">Use Greenplum Database workload management to prioritize and allocate resources to
+    queries according to business requirements and to prevent queries from starting when resources
+    are unavailable.</p>
+
+    <p class="p">This section describes Greenplum Database workload management, and explains how to use
+      resource queues to manage resources. Using resource queues, the available memory and CPU
+      resources can be allocated to the different types of queries that execute on your Greenplum
+      Database system. You can limit the number of concurrent queries, the amount of memory used to
+      execute a query, and the relative amount of CPU devoted to processing a query. </p>
+
+    <p class="p">The primary resource management concerns are the number of queries that can execute
+      concurrently and the amount of memory to allocate to each query. Without limiting concurrency
+      and memory usage, it is not possible to guarantee acceptable performance. Memory is the
+      resource most likely to limit the processing capacity of the system. Therefore, we begin with
+      an overview of Greenplum Database memory usage. </p>
+
+    <p class="p">Pivotal Greenplum Workload Manager contains additional, flexible workload management features
+      that can be used to monitor and manage queries and to manage resource queues. Pivotal
+      Greenplum Workload Manager is included with Pivotal Greenplum Command Center. See <a class="xref" href="http://gpcc.docs.pivotal.io/" target="_blank">http://gpcc.docs.pivotal.io/</a> for information about Pivotal Greenplum Command Center
+      and Pivotal Greenplum Workload Manager.</p>
+
+  </div>
+
+  <div class="related-links">
+<div class="familylinks">
+<div class="parentlink">
+<strong>Parent topic:</strong> <a class="link" href="../admin_guide/partV.html" title="The topics in this section cover Greenplum Database performance management, including how to monitor performance and how to configure workloads to prioritize resource utilization.">Managing Performance</a>
+</div>
+</div>
+</div>
+<div class="topic nested1" id="topic_nm3_brl_zp">
+    <h2 class="title topictitle2">Overview of Memory Usage in Greenplum Database</h2>
+
+    
+    <div class="body" id="body_bk2_fvw_wq">
+<p class="shortdesc">Memory is a key resource for a Greenplum Database system and, when used efficiently,
+      can ensure high performance and throughput. This topic describes how segment host memory is
+      allocated between segments and the options available to administrators to configure
+      memory.</p>
+
+      <p class="p">A Greenplum Database segment host runs multiple PostgreSQL instances, all sharing the
+        host's memory. The segments have an identical configuration and they consume similar amounts
+        of memory, CPU, and disk IO simultaneously, while working on queries in parallel. </p>
+
+      <p class="p">For best query throughput, the memory configuration should be managed carefully. There are
+        memory configuration options at every level in Greenplum Database, from operating system
+        parameters, to managing workloads with resource queues, to setting the amount of memory
+        allocated to an individual query.</p>
+
+      <div class="section">
+<h3 class="title sectiontitle">Segment Host Memory</h3>
+        
+        <p class="p">On a Greenplum Database segment host, the available host memory is shared among all the
+          processes executing on the computer, including the operating system, Greenplum Database
+          segment instances, and other application processes. Administrators must determine what
+          Greenplum Database and non-Greenplum Database processes share the hosts' memory and
+          configure the system to use the memory efficiently. It is equally important to monitor
+          memory usage regularly to detect any changes in the way host memory is consumed by
+          Greenplum Database or other processes.</p>
+
+        <div class="p">The following figure illustrates how memory is consumed on a Greenplum Database segment
+            host.<div class="fig fignone" id="topic_nm3_brl_zp__fig_py5_1sl_zp">
+<span class="figcap">Figure 1. Greenplum Database Segment Host Memory</span>
+            
+            <img class="image" id="topic_nm3_brl_zp__image_iqn_dsl_zp" src="graphics/memory.png">
+          </div>
+</div>
+
+        <p class="p">Beginning at the bottom of the illustration, the line labeled <em class="ph i">A</em> represents the
+          total host memory. The line directly above line <em class="ph i">A</em> shows that the total host memory
+          comprises both physical RAM and swap space. </p>
+
+        <p class="p">The line labelled <em class="ph i">B</em> shows that the total memory available must be shared by
+          Greenplum Database and all other processes on the host. Non-Greenplum Database processes
+          include the operating system and any other applications, for example system monitoring
+          agents. Some applications may use a significant portion of memory and, as a result, you
+          may have to adjust the number of segments per Greenplum Database host or the amount of
+          memory per segment.</p>
+
+        <p class="p">The segments (<em class="ph i">C</em>) each get an equal share of the Greenplum Database Memory
+            (<em class="ph i">B</em>). </p>
+
+        <p class="p">Within a segment, <em class="ph i">resource queues</em> govern how memory is allocated to execute a SQL
+          statement. Resource queues allow you to translate business requirements into execution
+          policies in your Greenplum Database system and to guard against queries that could degrade
+          performance.</p>
+
+        <p class="p">Each statement submitted by a non-administrative user to a Greenplum Database system is
+          associated with a resource queue. The queue determines if the statement will be allowed to
+          execute and, when resources are available, allows it to execute. The statement may be
+          rejected, executed immediately, or queued to execute when resources are available.</p>
+
+        <p class="p">You can create resource queues for different types of queries and reserve a fixed portion
+          of the segment memory for each queue. Alternatively, you can set a server configuration
+          parameter to specify how much memory to allocate for each query and place no maximum
+          memory restriction on the resource queue. </p>
+
+        <p class="p">The query optimizer produces a query execution plan, consisting of a series of tasks
+          called <em class="ph i">operators</em> (labeled <em class="ph i">D</em> in the diagram). Operators perform tasks such as
+          table scans or joins, and typically produce intermediate query results by processing one
+          or more sets of input rows. Operators receive a share of the memory the resource queue
+          allocates to a query. If an operator cannot perform all of its work in the memory
+          allocated to it, it caches data on disk in <em class="ph i">spill files</em>.</p>
+
+      </div>
+
+      <div class="section">
+<h3 class="title sectiontitle">Options for Configuring Segment Host Memory</h3>
+        
+        <div class="p">Host memory is the total memory shared by all applications on the segment host. The
+          amount of host memory can be configured using any of the following methods:<ul class="ul" id="topic_nm3_brl_zp__ul_y5m_xzs_zp">
+            <li class="li">Add more RAM to the nodes to increase the physical memory.</li>
+
+            <li class="li">Allocate swap space to increase the size of virtual memory.</li>
+
+            <li class="li">Set the kernel parameters <var class="keyword varname">vm.overcommit_memory</var> and
+                <var class="keyword varname">vm.overcommit_ratio</var> to configure how the operating system handles
+              large memory allocation requests.</li>
+
+          </ul>
+</div>
+
+        <p class="p">The physical RAM and OS configuration are usually managed by the platform team and system
+          administrators. <span class="ph">See the <cite class="cite">Greenplum Database Installation
+              Guide</cite> for the recommended kernel parameter settings.</span>
+        </p>
+
+        <p class="p">The amount of memory to reserve for the operating system and other processes is workload
+          dependent. The minimum recommendation for operating system memory is 32GB, but if there is
+          much concurrency in Greenplum Database, increasing to 64GB of reserved memory may be
+          required. The largest user of operating system memory is SLAB, which increases as
+          Greenplum Database concurrency and the number of sockets used increases.</p>
+
+        <p class="p">The <samp class="ph codeph">vm.overcommit_memory</samp> kernel parameter should always be set to 2, the
+          only safe value for Greenplum Database.</p>
+
+        <p class="p">The <samp class="ph codeph">vm.overcommit_ratio</samp> kernel parameter sets the percentage of RAM that
+          is used for application processes, the remainder reserved for the operating system. The
+          default for Red Hat is 50 (50%). Setting this parameter too high may result in
+          insufficient memory reserved for the operating system, which can cause segment host
+          failure or database failure. Leaving the setting at the default of 50 is generally safe,
+          but conservative. Setting the value too low reduces the amount of concurrency and query
+          complexity that can be run at the same time by reducing the amount of memory available to
+          Greenplum Database. When increasing <samp class="ph codeph">vm.overcommit_ratio</samp> it is important
+          to remember to always reserve some memory for operating system activities.</p>
+
+        <div class="p">To calculate a safe value for <samp class="ph codeph">vm.overcommit_ratio</samp>, first determine the
+          total memory available to Greenplum Database processes, called <samp class="ph codeph">gp_vmem</samp>,
+          with this
+          formula:<pre class="pre codeblock">gp_vmem = ((SWAP + RAM) – (7.5GB + 0.05 * RAM)) / 1.7</pre>
+</div>
+
+        <p class="p">where <samp class="ph codeph">SWAP</samp> is the swap space on the host in GB, and <samp class="ph codeph">RAM</samp>
+          is the number of GB of RAM installed on the host. </p>
+
+        <div class="p">Calculate the <samp class="ph codeph">vm.overcommit_ratio</samp> value with this
+          formula:<pre class="pre codeblock">vm.overcommit_ratio = (RAM - 0.026 * gp_vmem) / RAM</pre>
+</div>
+
+      </div>
+
+      <div class="section" id="topic_nm3_brl_zp__section_nfn_q5r_bs">
+<h3 class="title sectiontitle">Configuring Greenplum Database Memory</h3>
+        
+        <p class="p">Greenplum Database Memory is the amount of memory available to all Greenplum Database
+          segment instances. </p>
+
+        <p class="p">When you set up the Greenplum Database cluster, you determine the number of primary
+          segments to run per host and the amount of memory to allocate for each segment. Depending
+          on the CPU cores, amount of physical RAM, and workload characteristics, the number of
+          segments is usually a value between 4 and 8. With segment mirroring enabled, it is
+          important to allocate memory for the maximum number of primary segments executing on a
+          host during a failure. For example, if you use the default grouping mirror configuration,
+          a segment host failure doubles the number of acting primaries on the host that has the
+          failed host's mirrors. Mirror configurations that spread each host's mirrors over multiple
+          other hosts can lower the maximum, allowing more memory to be allocated for each segment.
+          For example, if you use a block mirroring configuration with 4 hosts per block and 8
+          primary segments per host, a single host failure would cause other hosts in the block to
+          have a maximum of 11 active primaries, compared to 16 for the default grouping mirror
+          configuration.</p>
+
+        <p class="p">The <var class="keyword varname">gp_vmem_protect_limit</var> value is the amount of memory to allocate
+          each segment. It is estimated by calculating the memory available for all Greenplum
+          Database processes and dividing by the maximum number of primary segments during a
+          failure. If <var class="keyword varname">gp_vmem_protect_limit</var> is set too high, queries can fail.
+          Use the following formulas to calculate a safe value for
+            <var class="keyword varname">gp_vmem_protect_limit</var>.</p>
+
+        <div class="p">Calculate <samp class="ph codeph">gp_vmem</samp>, the memory available for all Greenplum Database
+          processes, using this
+          formula:<pre class="pre codeblock">gp_vmem = ((SWAP + RAM) – (7.5GB + 0.05 * RAM)) / 1.7</pre>
+where
+            <samp class="ph codeph">SWAP</samp> is the host's swap space in GB and <samp class="ph codeph">RAM</samp> is the RAM
+          installed on the host in GB.</div>
+
+        <div class="p">Calculate <samp class="ph codeph">gp_vmem_protect_limit</samp> using this
+          formula:<pre class="pre codeblock">gp_vmem_protect_limit = gp_vmem / max_acting_primary_segments</pre>
+</div>
+
+        <p class="p">where <samp class="ph codeph">max_acting_primary_segments</samp> is the maximum number of primary
+          segments that could be running on a host when mirror segments are activated due to a host
+          or segment failure. </p>
+
+        <div class="p">Another important Greenplum Database server configuration parameter is
+            <var class="keyword varname">statement_mem</var>. This parameter sets the maximum amount of memory to
+          allocate to execute a query. To determine a value for this parameter, divide the amount of
+          memory per segment (<var class="keyword varname">gp_vmem_protect_limit</var>), less a 10% safety margin,
+          by the maximum number of queries you expect to execute concurrently. The default Greenplum Database resource queue allows a maximum of 20 concurrent queries. Here
+          is a formula to calculate
+          <var class="keyword varname">statement_mem</var>:<pre class="pre codeblock">(<var class="keyword varname">gp_vmem_protect_limit</var> * .9 ) / <var class="keyword varname">max_expected_concurrent_queries</var></pre>
+</div>
+
+        <p class="p">Resource queues allow greater control of the amount of memory allocated for queries. See
+            <a class="xref" href="#topic9">Configuring Workload Management</a> for details.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" id="topic_rq">
+    <h2 class="title topictitle2">Overview of Managing Workloads with Resource Queues</h2>
+
+    <div class="body">
+      <p class="p">Resource queues are the main tool for managing the degree of concurrency in a Greenplum
+        Database system. Resource queues are database objects that you create with the
+          <samp class="ph codeph">CREATE RESOURCE QUEUE</samp> SQL statement. You can use them to manage the
+        number of active queries that may execute concurrently, the amount of memory each type of
+        query is allocated, and the relative priority of queries. Resource queues can also guard
+        against queries that would consume too many resources and degrade overall system
+        performance.</p>
+
+      <p class="p">Each database role is associated with a single resource queue; multiple roles can share the
+        same resource queue. Roles are assigned to resource queues using the <samp class="ph codeph">RESOURCE
+          QUEUE</samp> phrase of the <samp class="ph codeph">CREATE ROLE</samp> or <samp class="ph codeph">ALTER ROLE</samp>
+        statements. If a resource queue is not specified, the role is associated with the default
+        resource queue, <samp class="ph codeph">pg_default</samp>. </p>
+
+      <p class="p">When the user submits a query for execution, the query is evaluated against the resource
+        queue's limits. If the query does not cause the queue to exceed its resource limits, then
+        that query will run immediately. If the query causes the queue to exceed its limits (for
+        example, if the maximum number of active statement slots are currently in use), then the
+        query must wait until queue resources are free before it can run. Queries are evaluated on a
+        first in, first out basis. If query prioritization is enabled, the active workload on the
+        system is periodically assessed and processing resources are reallocated according to query
+        priority (see <a class="xref" href="#topic_rq__priorities">How Priorities Work</a>). Roles with the
+          <samp class="ph codeph">SUPERUSER</samp> attribute are exempt from resource queue limits. Superuser
+        queries always run immediately regardless of limits imposed by their assigned resource
+        queue. </p>
+
+      <div class="fig fignone" id="topic_rq__iz153477">
+<span class="figcap">Figure 2. Resource Queue Process</span>
+        
+        <br><img class="image" id="topic_rq__image_u4c_qxw_wq" src="graphics/resource_queues.jpg" width="443" height="173"><br>
+      </div>
+
+      <div class="p">Resource queues define classes of queries with similar resource requirements. Administratrors should create resource queues for the various types of workloads in
+        their organization. For example, you could create resource queues for the following classes
+        of queries, corresponding to different service level agreements: <ul class="ul" id="topic_rq__ul_h3q_5qz_zp">
+          <li class="li">ETL queries</li>
+
+          <li class="li">Reporting queries</li>
+
+          <li class="li">Executive queries</li>
+
+        </ul>
+</div>
+
+      <div class="p">A resource queue has the following characteristics:<dl class="dl parml">
+          
+            <dt class="dt pt dlterm">MEMORY_LIMIT</dt>
+
+            <dd class="dd pd">The amount of memory used by all the queries in the queue (per segment). For
+              example, setting <var class="keyword varname">MEMORY_LIMIT</var> to 2GB on the ETL queue allows ETL
+              queries to use up to 2GB of memory in each segment. </dd>
+
+          
+          
+            <dt class="dt pt dlterm">ACTIVE_STATEMENTS</dt>
+
+            <dd class="dd pd">The number of <em class="ph i">slots</em> for a queue; the maximum concurrency level for a queue.
+              When all slots are used, new queries must wait. Each query uses an equal amount of
+              memory by default. </dd>
+
+            <dd class="dd pd">For example, the <samp class="ph codeph">pg_default</samp> resource queue has
+                <var class="keyword varname">ACTIVE_STATEMENTS</var> = 20.</dd>
+
+          
+          
+            <dt class="dt pt dlterm">PRIORITY</dt>
+
+            <dd class="dd pd">The relative CPU usage for queries. This may be one of the following levels:
+                <samp class="ph codeph">LOW</samp>, <samp class="ph codeph">MEDIUM</samp>, <samp class="ph codeph">HIGH</samp>,
+                <samp class="ph codeph">MAX</samp>. The default level is <samp class="ph codeph">MEDIUM</samp>. The query
+              prioritization mechanism monitors the CPU usage of all the queries running in the
+              system, and adjusts the CPU usage for each to conform to its priority level. For
+              example, you could set <samp class="ph codeph">MAX</samp> priority to the <samp class="ph codeph">executive</samp>
+              resource queue and <samp class="ph codeph">MEDIUM</samp> to other queues to ensure that executive
+              queries receive a greater share of CPU.</dd>
+
+          
+          
+            <dt class="dt pt dlterm">MAX_COST</dt>
+
+            <dd class="dd pd">Query plan cost limit. </dd>
+
+            <dd class="dd pd">The Greenplum Database optimizer assigns a numeric cost to each query. If the cost
+              exceeds the <samp class="ph codeph">MAX_COST</samp> value set for the resource queue, the query is
+              rejected as too expensive.</dd>
+
+            <dd class="dd pd">
+              <div class="note note">
+<span class="notetitle">Note:</span> Use <samp class="ph codeph">MEMORY_LIMIT</samp> and
+                  <samp class="ph codeph">ACTIVE_STATEMENTS</samp> to set limits for resource queues rather than
+                  <samp class="ph codeph">MAX_COST</samp>. </div>
+
+            </dd>
+
+          
+        </dl>
+</div>
+
+      <p class="p">The default configuration for a Greenplum Database system has a single default resource
+        queue named <samp class="ph codeph">pg_default</samp>. The <samp class="ph codeph">pg_default</samp> resource queue has
+        an <samp class="ph codeph">ACTIVE_STATEMENTS</samp> setting of 20, no <samp class="ph codeph">MEMORY_LIMIT</samp>,
+        medium <samp class="ph codeph">PRIORITY</samp>, and no set <samp class="ph codeph">MAX_COST</samp>. This means that all
+        queries are accepted and run immediately, at the same priority and with no memory
+        limitations; however, only twenty queries may execute concurrently. </p>
+
+      <p class="p">The number of concurrent queries a resource queue allows depends on whether the
+          <samp class="ph codeph">MEMORY_LIMIT</samp> parameter is set:</p>
+
+      <ul class="ul" id="topic_rq__ul_p5p_jxp_wq">
+        <li class="li">If no <samp class="ph codeph">MEMORY_LIMIT</samp> is set for a resource queue, the amount of memory
+          allocated per query is the value of the <samp class="ph codeph">statement_mem</samp> server
+          configuration parameter. The maximum memory the resource queue can use is the product of
+            <samp class="ph codeph">statement_mem</samp> and <samp class="ph codeph">ACTIVE_STATEMENTS</samp>. </li>
+
+        <li class="li">When a <samp class="ph codeph">MEMORY_LIMIT</samp> is set on a resource queue, the number of queries
+          that the queue can execute concurrently is limited by the queue's available memory. </li>
+
+      </ul>
+
+      <p class="p">A query admitted to the system is allocated an amount of memory and a query plan tree is
+        generated for it. Each node of the tree is an operator, such as a sort or hash join. Each
+        operator is a separate execution thread and is allocated a fraction of the overall statement
+        memory, at minimum 100KB. If the plan has a large number of operators, the minimum memory
+        required for operators can exceed the available memory and the query will be rejected with
+        an insufficient memory error. Operators determine if they can complete their tasks in the
+        memory allocated, or if they must spill data to disk, in work files. The mechanism that
+        allocates and controls the amount of memory used by each operator is called <em class="ph i">memory
+          quota</em>. </p>
+
+      <p class="p">Not all SQL statements submitted through a resource queue are evaluated against the queue
+        limits. By default only <samp class="ph codeph">SELECT</samp>, <samp class="ph codeph">SELECT INTO</samp>,
+          <samp class="ph codeph">CREATE TABLE AS SELECT</samp>, and <samp class="ph codeph">DECLARE CURSOR</samp> statements
+        are evaluated. If the server configuration parameter <samp class="ph codeph">resource_select_only</samp>
+        is set to <em class="ph i">off</em>, then <samp class="ph codeph">INSERT</samp><span class="ph">,
+            <samp class="ph codeph">UPDATE</samp>, and <samp class="ph codeph">DELETE</samp></span> statements will be evaluated
+        as well.</p>
+
+      <p class="p">Also, an SQL statement that is run during the execution of an <samp class="ph codeph">EXPLAIN
+          ANALYZE</samp> command is excluded from resource queues.</p>
+
+      <div class="section">
+<h3 class="title sectiontitle">Resource Queue Example</h3>
+        
+        <p class="p">The default resource queue, <samp class="ph codeph">pg_default</samp>, allows a maximum of 20 active
+          queries and allocates the same amount of memory to each. This is generally not adequate
+          resource control for production systems. To ensure that the system meets performance
+          expectations, you can define classes of queries and assign them to resource queues
+          configured to execute them with the concurrency, memory, and CPU resources best suited for
+          that class of query.</p>
+
+        <div class="p">The following illustration shows an example resource queue configuration for a Greenplum
+          Database system with <samp class="ph codeph">gp_vmem_protect_limit</samp> set to 8GB:<div class="fig fignone" id="topic_rq__fig_p3y_mg5_1q">
+<span class="figcap">Figure 3. Resource Queue Configuration Example</span>
+            
+            <img class="image" id="topic_rq__image_wnh_wpc_dq" src="graphics/resource_queue_examp.png" width="576">
+          </div>
+</div>
+
+        <div class="p">This example has three classes of queries with different characteristics and service
+          level agreements (SLAs). Three resource queues are configured for them. A portion of the
+          segment memory is reserved as a safety margin. 
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" summary="" id="topic_rq__table_kns_wg5_1q" class="table" frame="border" border="1" rules="all">
+              
+              
+              
+              
+              <thead class="thead" align="left">
+                <tr class="row">
+                  <th class="entry" valign="top" width="25%" id="d105332e590">Resource Queue Name</th>
+
+                  <th class="entry" valign="top" width="25%" id="d105332e593">Active Statements</th>
+
+                  <th class="entry" valign="top" width="25%" id="d105332e596">Memory Limit</th>
+
+                  <th class="entry" valign="top" width="25%" id="d105332e599">Memory per Query</th>
+
+                </tr>
+
+              </thead>
+
+              <tbody class="tbody">
+                <tr class="row">
+                  <td class="entry" valign="top" width="25%" headers="d105332e590 ">ETL</td>
+
+                  <td class="entry" valign="top" width="25%" headers="d105332e593 ">3</td>
+
+                  <td class="entry" valign="top" width="25%" headers="d105332e596 ">2GB</td>
+
+                  <td class="entry" valign="top" width="25%" headers="d105332e599 ">667MB</td>
+
+                </tr>
+
+                <tr class="row">
+                  <td class="entry" valign="top" width="25%" headers="d105332e590 ">Reporting</td>
+
+                  <td class="entry" valign="top" width="25%" headers="d105332e593 ">7</td>
+
+                  <td class="entry" valign="top" width="25%" headers="d105332e596 ">3GB</td>
+
+                  <td class="entry" valign="top" width="25%" headers="d105332e599 ">429MB</td>
+
+                </tr>
+
+                <tr class="row">
+                  <td class="entry" valign="top" width="25%" headers="d105332e590 ">Executive</td>
+
+                  <td class="entry" valign="top" width="25%" headers="d105332e593 ">1</td>
+
+                  <td class="entry" valign="top" width="25%" headers="d105332e596 ">1.4GB</td>
+
+                  <td class="entry" valign="top" width="25%" headers="d105332e599 ">1.4GB</td>
+
+                </tr>
+
+              </tbody>
+
+            </table>
+</div>
+</div>
+
+        <p class="p">The total memory allocated to the queues is 6.4GB, or 80% of the total segment memory
+          defined by the <samp class="ph codeph">gp_vmem_protect_limit</samp> server configuration parameter.
+          Allowing a safety margin of 20% accommodates some operators and queries that are known to
+          use more memory than they are allocated by the resource queue. </p>
+
+        <p class="p">See the <samp class="ph codeph">CREATE RESOURCE QUEUE</samp> and <samp class="ph codeph">CREATE/ALTER
+            ROLE</samp> statements in the <cite class="cite">Greenplum Database Reference Guide</cite> for help
+          with command syntax and detailed reference information.</p>
+
+      </div>
+
+      <div class="section">
+<h3 class="title sectiontitle">How Memory Limits Work</h3>
+        
+        <p class="p">Setting <samp class="ph codeph">MEMORY_LIMIT</samp> on a resource queue sets the maximum amount of
+          memory that all active queries submitted through the queue can consume for a segment
+          instance. The amount of memory allotted to a query is the queue memory limit divided by
+          the active statement limit. (Use the memory limits in conjunction
+          with statement-based queues rather than cost-based queues.) For example, if a queue has a
+          memory limit of 2000MB and an active statement limit of 10, each query submitted through
+          the queue is allotted 200MB of memory by default. The default memory allotment can be
+          overridden on a per-query basis using the <samp class="ph codeph">statement_mem</samp> server
+          configuration parameter (up to the queue memory limit). Once a query has started
+          executing, it holds its allotted memory in the queue until it completes, even if during
+          execution it actually consumes less than its allotted amount of memory.</p>
+
+        <p class="p">You can use the <samp class="ph codeph">statement_mem</samp> server configuration parameter to override
+          memory limits set by the current resource queue. At the session level, you can increae
+            <samp class="ph codeph">statement_mem</samp> up to the resource queue's <samp class="ph codeph">MEMORY_LIMIT</samp>.
+          This will allow an individual query to use all of the memory allocated for the entire
+          queue without affecting other resource queues.</p>
+
+        <p class="p">The value of <samp class="ph codeph">statement_mem</samp> is capped using the
+            <samp class="ph codeph">max_statement_mem</samp> configuration parameter (a superuser parameter). For
+          a query in a resource queue with <samp class="ph codeph">MEMORY_LIMIT</samp> set, the maximum value for
+            <samp class="ph codeph">statement_mem</samp> is <samp class="ph codeph">min(MEMORY_LIMIT, max_statement_mem)</samp>.
+          When a query is admitted, the memory allocated to it is subtracted from
+            <samp class="ph codeph">MEMORY_LIMIT</samp>. If <samp class="ph codeph">MEMORY_LIMIT</samp> is exhausted, new
+          queries in the same resource queue must wait. This happens even if
+            <samp class="ph codeph">ACTIVE_STATEMENTS</samp> has not yet been reached. Note that this can happen
+          only when <samp class="ph codeph">statement_mem</samp> is used to override the memory allocated by the
+          resource queue.</p>
+
+        <div class="p">For example, consider a resource queue named <samp class="ph codeph">adhoc</samp> with the following
+            settings:<ul class="ul" id="topic_rq__ul_dpr_vnd_dq">
+            <li class="li">
+<samp class="ph codeph">MEMORY_LIMIT</samp> is 1.5GB </li>
+
+            <li class="li">
+<samp class="ph codeph">ACTIVE_STATEMENTS</samp> is 3</li>
+
+          </ul>
+
+        </div>
+
+        <div class="p">By default each statement submitted to the queue is allocated 500MB of memory. Now
+          consider the following series of events:<ol class="ol" id="topic_rq__ol_hjq_14d_dq">
+            <li class="li">User <samp class="ph codeph">ADHOC_1</samp> submits query <samp class="ph codeph">Q1</samp>,
+                overriding<samp class="ph codeph">STATEMENT_MEM</samp> to 800MB. The <samp class="ph codeph">Q1</samp> statement
+              is admitted into the system. </li>
+
+            <li class="li">User <samp class="ph codeph">ADHOC_2</samp> submits query <samp class="ph codeph">Q2</samp>, using the default
+              500MB.</li>
+
+            <li class="li">With <samp class="ph codeph">Q1</samp> and <samp class="ph codeph">Q2</samp> still running, user
+                <samp class="ph codeph">ADHOC3</samp> submits query <samp class="ph codeph">Q3</samp>, using the default
+              500MB.</li>
+
+          </ol>
+</div>
+
+        <p class="p">Queries <samp class="ph codeph">Q1</samp> and <samp class="ph codeph">Q2</samp> have used 1300MB of the queue's
+          1500MB. Therefore, <samp class="ph codeph">Q3</samp> must wait for <samp class="ph codeph">Q1</samp> or
+            <samp class="ph codeph">Q2</samp> to complete before it can run. </p>
+
+        <p class="p">If <samp class="ph codeph">MEMORY_LIMIT</samp> is not set on a queue, queries are admitted until all of
+          the <samp class="ph codeph">ACTIVE_STATEMENTS</samp> slots are in use, and each query can set an
+          arbitrarily high <samp class="ph codeph">statement_mem</samp>. This could lead to a resource queue using
+          unbounded amounts of memory.</p>
+
+        <p class="p">For more information on configuring memory limits on a resource queue, and other memory
+          utilization controls, see <a class="xref" href="#topic12">Creating Queues with Memory Limits</a>.</p>
+
+      </div>
+
+      <div class="section" id="topic_rq__priorities">
+<h3 class="title sectiontitle">How Priorities Work</h3>
+        
+        <p class="p">The <samp class="ph codeph">PRIORITY</samp> setting for a resource queue differs from the
+            <samp class="ph codeph">MEMORY_LIMIT</samp> and <samp class="ph codeph">ACTIVE_STATEMENTS</samp> settings, which
+          determine whether a query will be admitted to the queue and eventually executed. The
+            <samp class="ph codeph">PRIORITY</samp> setting applies to queries after they become active. Active
+          queries share available CPU resources as determined by the priority settings for its
+          resource queue. When a statement from a high-priority queue enters the group of actively
+          running statements, it may claim a greater share of the available CPU, reducing the share
+          allocated to already-running statements in queues with a lesser priority setting.</p>
+
+        <p class="p">The comparative size or complexity of the queries does not affect the allotment of CPU.
+          If a simple, low-cost query is running simultaneously with a large, complex query, and
+          their priority settings are the same, they will be allocated the same share of available
+          CPU resources. When a new query becomes active, the CPU shares will be recalculated, but
+          queries of equal priority will still have equal amounts of CPU. </p>
+
+        <div class="p">For example, an administrator creates three resource queues: <em class="ph i">adhoc</em> for ongoing
+          queries submitted by business analysts, <em class="ph i">reporting</em> for scheduled reporting jobs, and
+            <em class="ph i">executive</em> for queries submitted by executive user roles. The administrator wants
+          to ensure that scheduled reporting jobs are not heavily affected by unpredictable resource
+          demands from ad-hoc analyst queries. Also, the administrator wants to make sure that
+          queries submitted by executive roles are allotted a significant share of CPU. Accordingly,
+          the resource queue priorities are set as shown:<ul class="ul" id="topic_rq__ul_ppy_3cy_wq">
+            <li class="li" id="topic_rq__iz160250">
+<em class="ph i">adhoc</em> — Low priority</li>
+
+            <li class="li" id="topic_rq__iz161065">
+<em class="ph i">reporting</em> — High priority</li>
+
+            <li class="li" id="topic_rq__iz161070">
+<em class="ph i">executive</em> — Maximum priority</li>
+
+          </ul>
+</div>
+
+        <p class="p">At runtime, the CPU share of active statements is determined by these priority settings.
+          If queries 1 and 2 from the reporting queue are running simultaneously, they have equal
+          shares of CPU. When an ad-hoc query becomes active, it claims a smaller share of CPU. The
+          exact share used by the reporting queries is adjusted, but remains equal due to their
+          equal priority setting:</p>
+
+        <div class="fig fignone" id="topic_rq__iz173993">
+<span class="figcap">Figure 4. CPU share readjusted according to priority</span>
+          
+          <br><img class="image" id="topic_rq__image_lgv_lcy_wq" src="graphics/gp_query_priority1.png" width="432" height="298"><br>
+        </div>
+
+        <div class="note note">
+<span class="notetitle">Note:</span> 
+          <p class="p">The percentages shown in these illustrations are approximate. CPU usage between high,
+            low and maximum priority queues is not always calculated in precisely these
+            proportions.</p>
+
+        </div>
+
+        <p class="p">When an executive query enters the group of running statements, CPU usage is adjusted to
+          account for its maximum priority setting. It may be a simple query compared to the analyst
+          and reporting queries, but until it is completed, it will claim the largest share of
+          CPU.</p>
+
+        <div class="fig fignone" id="topic_rq__iz160829">
+<span class="figcap">Figure 5. CPU share readjusted for maximum priority query</span>
+          
+          <br><img class="image" id="topic_rq__image_lrr_ddy_wq" src="graphics/gp_query_priority2.png" width="194" height="305"><br>
+        </div>
+
+        <p class="p">For more information about commands to set priorities, see <a class="xref" href="#topic16">Setting Priority Levels</a>.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic8">
+    <h2 class="title topictitle2">Steps to Enable Workload Management</h2>
+
+    <div class="body">
+      <p class="p">Enabling and using workload management in Greenplum Database involves the following
+        high-level tasks:</p>
+
+      <ol class="ol" id="topic8__ol_ec5_4dy_wq">
+        <li class="li">Configure workload managment. See <a class="xref" href="#topic9">Configuring Workload Management</a>.</li>
+
+        <li class="li" id="topic8__iz153167">Create the resource queues and set limits on them. See <a class="xref" href="#topic10">Creating Resource Queues</a> and <a class="xref" href="#topic19">Modifying Resource Queues</a>.</li>
+
+        <li class="li" id="topic8__iz153172">Assign a queue to one or more user roles. See <a class="xref" href="#topic17">Assigning Roles (Users) to a Resource Queue</a>.</li>
+
+        <li class="li" id="topic8__iz153188">Use the workload management system views to monitor and manage the
+          resource queues. See <a class="xref" href="#topic22">Checking Resource Queue Status</a>.</li>
+
+      </ol>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic9">
+    <h2 class="title topictitle2">Configuring Workload Management</h2>
+
+    <div class="body">
+      <p class="p">Resource scheduling is enabled by default when you install Greenplum Database, and is
+        required for all roles. The default resource queue, <samp class="ph codeph">pg_default</samp>, has an
+        active statement limit of 20, no memory limit, and a medium priority setting. Create resource queues for the various types of workloads.</p>
+
+      <div class="section" id="topic9__iz169600">
+<h3 class="title sectiontitle">To configure workload management</h3>
+        
+        <ol class="ol">
+          <li class="li" id="topic9__iz169263">The following parameters are for the general configuration of resource
+              queues:<ul class="ul" id="topic9__ul_gln_v3c_34">
+              <li class="li" id="topic9__iz152506">
+<samp class="ph codeph">max_resource_queues</samp> - Sets the maximum number of
+                resource queues.</li>
+
+              <li class="li" id="topic9__iz153405">
+<samp class="ph codeph">max_resource_portals_per_transaction</samp> - Sets the
+                maximum number of simultaneously open cursors allowed per transaction. Note that an
+                open cursor will hold an active query slot in a resource queue.</li>
+
+              <li class="li" id="topic9__iz154513">
+<samp class="ph codeph">resource_select_only</samp> - If set to <em class="ph i">on</em>, then
+                  <samp class="ph codeph">SELECT</samp>, <samp class="ph codeph">SELECT INTO</samp>, <samp class="ph codeph">CREATE TABLE
+                  AS</samp><samp class="ph codeph">SELECT</samp>, and <samp class="ph codeph">DECLARE CURSOR</samp> commands
+                are evaluated. If set to <em class="ph i">off</em><samp class="ph codeph">INSERT</samp><span class="ph">,
+                    <samp class="ph codeph">UPDATE</samp>, and <samp class="ph codeph">DELETE</samp></span> commands will be
+                evaluated as well.</li>
+
+              <li class="li" id="topic9__iz157925">
+<samp class="ph codeph">resource_cleanup_gangs_on_wait</samp> - Cleans up idle
+                segment worker processes before taking a slot in the resource queue.</li>
+
+              <li class="li" id="topic9__iz156657">
+<samp class="ph codeph">stats_queue_level</samp> - Enables statistics collection
+                on resource queue usage, which can then be viewed by querying the pg_stat_resqueues
+                system view.</li>
+
+            </ul>
+</li>
+
+          <li class="li" id="topic9__iz169478">The following parameters are related to memory utilization:<ul class="ul" id="topic9__ul_ehc_w3c_34">
+              <li class="li" id="topic9__iz172344">
+<samp class="ph codeph">gp_resqueue_memory_policy</samp> - Enables Greenplum
+                Database memory management features. <p class="p">In Greenplum Database<span class="ph">
+                    4.2 and later</span>, the distribution algorithm <samp class="ph codeph">eager_free</samp> takes
+                  advantage of the fact that not all operators execute at the same time. The query
+                  plan is divided into stages and Greenplum Database eagerly frees memory allocated
+                  to a previous stage at the end of that stage's execution, then allocates the
+                  eagerly freed memory to the new stage.</p>
+<p class="p"><span class="ph">When set to
+                      <samp class="ph codeph">none</samp>, memory management is the same as in Greenplum Database
+                    releases prior to 4.1. </span>When set to <samp class="ph codeph">auto</samp>, query memory
+                  usage is controlled by <samp class="ph codeph">statement_mem</samp> and resource queue memory
+                  limits. </p>
+</li>
+
+              <li class="li" id="topic9__iz172366">
+<samp class="ph codeph">statement_mem</samp> and
+                  <samp class="ph codeph">max_statement_mem</samp> - Used to allocate memory to a particular query
+                at runtime (override the default allocation assigned by the resource queue).
+                  <samp class="ph codeph">max_statement_mem</samp> is set by database superusers to prevent
+                regular database users from over-allocation.</li>
+
+              <li class="li" id="topic9__iz169494">
+<samp class="ph codeph">gp_vmem_protect_limit</samp> - Sets the upper boundary
+                that all query processes can consume and should not exceed the amount of physical
+                memory of a segment host. When a segment host reaches this limit during query
+                execution, the queries that cause the limit to be exceeded will be cancelled. </li>
+
+              <li class="li" id="topic9__iz169556">
+<samp class="ph codeph">gp_vmem_idle_resource_timeout</samp> and
+                  <samp class="ph codeph">gp_vmem_protect_segworker_cache_limit</samp> - used to free memory on
+                segment hosts held by idle database processes. Administrators may want to adjust
+                these settings on systems with lots of concurrency.</li>
+
+              <li class="li">
+<samp class="ph codeph">shared_buffers</samp> - Sets the amount of memory a Greenplum server
+                instance uses for shared memory buffers. This setting must be at least 128 kilobytes
+                and at least 16 kilobytes times <samp class="ph codeph">max_connections</samp>. The value must not
+                exceed the operating system shared memory maximum allocation request size,
+                  <samp class="ph codeph">shmmax</samp> on Linux. See the <em class="ph i">Greenplum Database Installation
+                  Guide</em> for recommended OS memory settings for your platform.</li>
+
+            </ul>
+</li>
+
+          <li class="li" id="topic9__iz169487">The following parameters are related to query prioritization. Note that
+            the following parameters are all <em class="ph i">local</em> parameters, meaning they must be set in
+            the <samp class="ph codeph">postgresql.conf</samp> files of the master and all segments:<ul class="ul" id="topic9__ul_lm2_x3c_34">
+              <li class="li" id="topic9__iz158643">
+<samp class="ph codeph">gp_resqueue_priority</samp> - The query prioritization
+                feature is enabled by default.</li>
+
+              <li class="li" id="topic9__iz158644">
+<samp class="ph codeph">gp_resqueue_priority_sweeper_interval</samp> - Sets the
+                interval at which CPU usage is recalculated for all active statements. The default
+                value for this parameter should be sufficient for typical database operations. </li>
+
+              <li class="li" id="topic9__iz174445">
+<samp class="ph codeph">gp_resqueue_priority_cpucores_per_segment</samp> -
+                Specifies the number of CPU cores allocated per segment instance. The default value
+                is 4 for the master and segments. For Greenplum Data Computing Appliance Version 2,
+                the default value is 4 for segments and 25 for the master. <p class="p">Each host checks its
+                  own <samp class="ph codeph">postgresql.conf</samp> file for the value of this parameter. This
+                  parameter also affects the master node, where it should be set to a value
+                  reflecting the higher ratio of CPU cores. For example, on a cluster that has 10
+                  CPU cores per host and 4 segments per host, you would specify these values for
+                    <samp class="ph codeph">gp_resqueue_priority_cpucores_per_segment</samp>:</p>
+<p class="p">10 for the
+                  master and standby master. Typically, only the master instance is on the master
+                  host.</p>
+<p class="p">2.5 for segment instances on the segment hosts. </p>
+<p class="p">If the
+                  parameter value is not set correctly, either the CPU might not be fully utilized,
+                  or query prioritization might not work as expected. For example, if the Greenplum
+                  Database cluster has fewer than one segment instance per CPU core on your segment
+                  hosts, make sure you adjust this value accordingly. </p>
+<p class="p">Actual CPU core
+                  utilization is based on the ability of Greenplum Database to parallelize a query
+                  and the resources required to execute the query. </p>
+<p class="p">Note: Any CPU core that is
+                  available to the operating system is included in the number of CPU cores. For
+                  example, virtual CPU cores are included in the number of CPU cores.</p>
+</li>
+
+            </ul>
+</li>
+
+          <li class="li" id="topic9__iz171977">If you wish to view or change any of the workload management parameter
+            values, you can use the <samp class="ph codeph">gpconfig</samp> utility. </li>
+
+          <li class="li" id="topic9__iz169849">For example, to see the setting of a particular parameter:<div class="p">
+              <pre class="pre codeblock">$ gpconfig --show gp_vmem_protect_limit
+</pre>
+
+            </div>
+</li>
+
+          <li class="li" id="topic9__iz169838">For example, to set one value on all segment instances and a different
+            value on the master:<div class="p">
+              <pre class="pre codeblock">$ gpconfig -c gp_resqueue_priority_cpucores_per_segment -v 2 -m 8
+</pre>
+
+            </div>
+</li>
+
+          <li class="li" id="topic9__iz169522">Restart Greenplum Database to make the configuration changes effective:<div class="p">
+              <pre class="pre codeblock">$ gpstop -r
+</pre>
+
+            </div>
+</li>
+
+        </ol>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic10">
+    <h2 class="title topictitle2">Creating Resource Queues</h2>
+
+    <div class="body">
+      <p class="p">Creating a resource queue involves giving it a name, setting an active query limit, and
+        optionally a query priority on the resource queue. Use the <samp class="ph codeph">CREATE RESOURCE
+          QUEUE</samp> command to create new resource queues. </p>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic11">
+      <h3 class="title topictitle3">Creating Queues with an Active Query Limit</h3>
+
+      <div class="body">
+        <p class="p" id="topic11__iz152723">Resource queues with an <samp class="ph codeph">ACTIVE_STATEMENTS</samp> setting limit
+          the number of queries that can be executed by roles assigned to that queue. For example,
+          to create a resource queue named <em class="ph i">adhoc</em> with an active query limit of three:</p>
+
+        <div class="p">
+          <pre class="pre codeblock">=# CREATE RESOURCE QUEUE adhoc WITH (ACTIVE_STATEMENTS=3);
+</pre>
+
+        </div>
+
+        <p class="p">This means that for all roles assigned to the <em class="ph i">adhoc</em> resource queue, only three
+          active queries can be running on the system at any given time. If this queue has three
+          queries running, and a fourth query is submitted by a role in that queue, that query must
+          wait until a slot is free before it can run.</p>
+
+      </div>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic12">
+      <h3 class="title topictitle3">Creating Queues with Memory Limits</h3>
+
+      <div class="body">
+        <p class="p">Resource queues with a <samp class="ph codeph">MEMORY_LIMIT</samp><span class="ph"> setting control the amount of
+            memory for all the queries submitted through the queue. The total memory should not
+            exceed the physical memory available per-segment. Set
+            </span><samp class="ph codeph">MEMORY_LIMIT</samp> to 90% of memory available on a per-segment basis.
+          For example, if a host has 48 GB of physical memory and 6 segment instances, then the
+          memory available per segment instance is 8 GB. You can calculate the recommended
+            <samp class="ph codeph">MEMORY_LIMIT</samp> for a single queue as 0.90*8=7.2 GB. If there are multiple
+          queues created on the system, their total memory limits must also add up to 7.2 GB.</p>
+
+        <p class="p">When used in conjunction with <samp class="ph codeph">ACTIVE_STATEMENTS</samp>, the default amount of
+          memory allotted per query is: <samp class="ph codeph">MEMORY_LIMIT</samp><samp class="ph codeph"> /
+            </samp><samp class="ph codeph">ACTIVE_STATEMENTS</samp>. When used in conjunction with
+            <samp class="ph codeph">MAX_COST</samp>, the default amount of memory allotted per query is:
+            <samp class="ph codeph">MEMORY_LIMIT * (query_cost <samp class="ph codeph">/ </samp>MAX_COST)</samp>. Use <samp class="ph codeph">MEMORY_LIMIT</samp> in conjunction with
+            <samp class="ph codeph">ACTIVE_STATEMENTS</samp> rather than with <samp class="ph codeph">MAX_COST</samp>.</p>
+
+        <p class="p">For example, to create a resource queue with an active query limit of 10 and a total
+          memory limit of 2000MB (each query will be allocated 200MB of segment host memory at
+          execution time): </p>
+
+        <div class="p">
+          <pre class="pre codeblock">=# CREATE RESOURCE QUEUE myqueue WITH (ACTIVE_STATEMENTS=20, 
+MEMORY_LIMIT='2000MB');
+</pre>
+
+        </div>
+
+        <p class="p">The default memory allotment can be overridden on a per-query basis using the
+            <samp class="ph codeph">statement_mem</samp> server configuration parameter, provided that
+            <samp class="ph codeph">MEMORY_LIMIT</samp> or <samp class="ph codeph">max_statement_mem</samp> is not exceeded. For
+          example, to allocate more memory to a particular query:</p>
+
+        <pre class="pre codeblock">=&gt; SET statement_mem='2GB';
+=&gt; SELECT * FROM my_big_table WHERE column='value' ORDER BY id;
+=&gt; RESET statement_mem;
+</pre>
+
+        <p class="p">As a general guideline, <samp class="ph codeph">MEMORY_LIMIT</samp> for all of your resource queues
+          should not exceed the amount of physical memory of a segment host. If workloads are
+          staggered over multiple queues, it may be OK to oversubscribe memory allocations, keeping
+          in mind that queries may be cancelled during execution if the segment host memory limit
+            (<samp class="ph codeph">gp_vmem_protect_limit</samp>) is exceeded.</p>
+
+      </div>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic16">
+      <h3 class="title topictitle3">Setting Priority Levels</h3>
+
+      <div class="body">
+        <p class="p">To control a resource queue's consumption of available CPU resources, an administrator
+          can assign an appropriate priority level. When high concurrency causes contention for CPU
+          resources, queries and statements associated with a high-priority resource queue will
+          claim a larger share of available CPU than lower priority queries and statements. </p>
+
+        <p class="p">Priority settings are created or altered using the <samp class="ph codeph">WITH</samp> parameter of the
+          commands <samp class="ph codeph">CREATE RESOURCE QUEUE</samp> and <samp class="ph codeph">ALTER RESOURCE QUEUE</samp>.
+          For example, to specify priority settings for the <em class="ph i">adhoc</em> and <em class="ph i">reporting</em>
+          queues, an administrator would use the following commands: </p>
+
+        <pre class="pre codeblock">=# ALTER RESOURCE QUEUE adhoc WITH (PRIORITY=LOW);
+=# ALTER RESOURCE QUEUE reporting WITH (PRIORITY=HIGH);</pre>
+
+        <p class="p">To create the <em class="ph i">executive</em> queue with maximum priority, an administrator would use
+          the following command:</p>
+
+        <pre class="pre codeblock">=# CREATE RESOURCE QUEUE executive WITH (ACTIVE_STATEMENTS=3, PRIORITY=MAX);</pre>
+
+        <p class="p">When the query prioritization feature is enabled, resource queues are given a
+            <samp class="ph codeph">MEDIUM</samp> priority by default if not explicitly assigned. For more
+          information on how priority settings are evaluated at runtime, see <a class="xref" href="#topic_rq__priorities">How Priorities Work</a>.</p>
+
+        <div class="note important">
+<span class="importanttitle">Important:</span> In order for resource queue priority levels to be enforced on the
+          active query workload, you must enable the query prioritization feature by setting the
+          associated server configuration parameters. See <a class="xref" href="#topic9">Configuring Workload Management</a>.</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic17">
+    <h2 class="title topictitle2">Assigning Roles (Users) to a Resource Queue</h2>
+
+    <div class="body">
+      <p class="p" id="topic17__iz172211">Once a resource queue is created, you must assign roles (users) to their
+        appropriate resource queue. If roles are not explicitly assigned to a resource queue, they
+        will go to the default resource queue, <samp class="ph codeph">pg_default</samp>. The default resource
+        queue has an active statement limit of 20, no cost limit, and a medium priority setting.</p>
+
+      <p class="p">Use the <samp class="ph codeph">ALTER ROLE</samp> or <samp class="ph codeph">CREATE ROLE</samp> commands to assign a
+        role to a resource queue. For example:</p>
+
+      <div class="p">
+        <pre class="pre codeblock">=# ALTER ROLE <samp class="ph codeph">name</samp> RESOURCE QUEUE <samp class="ph codeph">queue_name</samp>;
+=# CREATE ROLE <samp class="ph codeph">name</samp> WITH LOGIN RESOURCE QUEUE <samp class="ph codeph">queue_name</samp>;
+</pre>
+
+      </div>
+
+      <p class="p">A role can only be assigned to one resource queue at any given time, so you can use the
+          <samp class="ph codeph">ALTER ROLE</samp> command to initially assign or change a role's resource queue. </p>
+
+      <p class="p">Resource queues must be assigned on a user-by-user basis. If you have a role hierarchy (for
+        example, a group-level role) then assigning a resource queue to the group does not propagate
+        down to the users in that group.</p>
+
+      <p class="p" id="topic17__iz153606">Superusers are always exempt from resource queue limits. Superuser queries
+        will always run regardless of the limits set on their assigned queue.</p>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic18">
+      <h3 class="title topictitle3">Removing a Role from a Resource Queue</h3>
+
+      <div class="body">
+        <p class="p">All users <em class="ph i">must</em> be assigned to a resource queue. If not explicitly assigned to a
+          particular queue, users will go into the default resource queue,
+            <samp class="ph codeph">pg_default</samp>. If you wish to remove a role from a resource queue and put
+          them in the default queue, change the role's queue assignment to <samp class="ph codeph">none</samp>.
+          For example:</p>
+
+        <div class="p">
+          <pre class="pre codeblock">=# ALTER ROLE <samp class="ph codeph">role_name</samp> RESOURCE QUEUE none;
+</pre>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic19">
+    <h2 class="title topictitle2">Modifying Resource Queues</h2>
+
+    <div class="body">
+      <p class="p">After a resource queue has been created, you can change or reset the queue limits using the
+          <samp class="ph codeph">ALTER RESOURCE QUEUE</samp> command. You can remove a resource queue using the
+          <samp class="ph codeph">DROP RESOURCE QUEUE</samp> command. To change the roles (users) assigned to a
+        resource queue, <a class="xref" href="#topic17">Assigning Roles (Users) to a Resource Queue</a>.</p>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic20">
+      <h3 class="title topictitle3">Altering a Resource Queue</h3>
+
+      <div class="body">
+        <p class="p">The <samp class="ph codeph">ALTER RESOURCE QUEUE</samp> command changes the limits of a resource queue.
+          To change the limits of a resource queue, specify the new values you want for the queue.
+          For example:</p>
+
+        <div class="p">
+          <pre class="pre codeblock">=# ALTER RESOURCE QUEUE <em class="ph i">adhoc</em> WITH (ACTIVE_STATEMENTS=5);
+=# ALTER RESOURCE QUEUE <em class="ph i">exec</em> WITH (PRIORITY=MAX);
+</pre>
+
+        </div>
+
+        <p class="p">To reset active statements or memory limit to no limit, enter a value of
+            <samp class="ph codeph">-1</samp>. To reset the maximum query cost to no limit, enter a value of
+            <samp class="ph codeph">-1.0</samp>. For example:</p>
+
+        <div class="p">
+          <pre class="pre codeblock">=# ALTER RESOURCE QUEUE <em class="ph i">adhoc</em> WITH (MAX_COST=-1.0, MEMORY_LIMIT='2GB');
+</pre>
+
+        </div>
+
+        <p class="p">You can use the <samp class="ph codeph">ALTER RESOURCE QUEUE</samp> command to change the priority of
+          queries associated with a resource queue. For example, to set a queue to the minimum
+          priority level:</p>
+
+        <div class="p">
+          <pre class="pre codeblock">ALTER RESOURCE QUEUE <em class="ph i">webuser</em> WITH (PRIORITY=MIN);
+</pre>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic21">
+      <h3 class="title topictitle3">Dropping a Resource Queue</h3>
+
+      <div class="body">
+        <p class="p">The <samp class="ph codeph">DROP RESOURCE QUEUE</samp> command drops a resource queue. To drop a
+          resource queue, the queue cannot have any roles assigned to it, nor can it have any
+          statements waiting in the queue. See <a class="xref" href="#topic18">Removing a Role from a Resource Queue</a>
+          and <a class="xref" href="#topic27">Clearing a Waiting Statement From a Resource Queue</a> for instructions on emptying a
+          resource queue. To drop a resource queue:</p>
+
+        <div class="p">
+          <pre class="pre codeblock">=# DROP RESOURCE QUEUE <em class="ph i">name</em>;
+</pre>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic22">
+    <h2 class="title topictitle2">Checking Resource Queue Status</h2>
+
+    <div class="body">
+      <p class="p">Checking resource queue status involves the following tasks:</p>
+
+      <ul class="ul">
+        <li class="li" id="topic22__iz153671">
+          <a class="xref" href="#topic23">Viewing Queued Statements and Resource Queue Status</a>
+        </li>
+
+        <li class="li" id="topic22__iz156749">
+          <a class="xref" href="#topic24">Viewing Resource Queue Statistics</a>
+        </li>
+
+        <li class="li" id="topic22__iz153679">
+          <a class="xref" href="#topic25">Viewing the Roles Assigned to a Resource Queue</a>
+        </li>
+
+        <li class="li" id="topic22__iz153684">
+          <a class="xref" href="#topic26">Viewing the Waiting Queries for a Resource Queue</a>
+        </li>
+
+        <li class="li" id="topic22__iz153700">
+          <a class="xref" href="#topic27">Clearing a Waiting Statement From a Resource Queue</a>
+        </li>
+
+        <li class="li" id="topic22__iz159212">
+          <a class="xref" href="#topic28">Viewing the Priority of Active Statements</a>
+        </li>
+
+        <li class="li" id="topic22__iz159217">
+          <a class="xref" href="#topic29">Resetting the Priority of an Active Statement</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic23">
+      <h3 class="title topictitle3">Viewing Queued Statements and Resource Queue Status</h3>
+
+      <div class="body">
+        <p class="p">The <samp class="ph codeph">gp_toolkit.gp_resqueue_status</samp> view allows administrators to see
+          status and activity for a workload management resource queue. It shows how many queries
+          are waiting to run and how many queries are currently active in the system from a
+          particular resource queue. To see the resource queues created in the system, their limit
+          attributes, and their current status:</p>
+
+        <div class="p">
+          <pre class="pre codeblock">=# SELECT * FROM gp_toolkit.gp_resqueue_status;
+</pre>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic24">
+      <h3 class="title topictitle3">Viewing Resource Queue Statistics</h3>
+
+      <div class="body">
+        <p class="p">If you want to track statistics and performance of resource queues over time, you can
+          enable statistics collecting for resource queues. This is done by setting the following
+          server configuration parameter in your master <samp class="ph codeph">postgresql.conf</samp> file:</p>
+
+        <div class="p">
+          <pre class="pre codeblock">stats_queue_level = on
+</pre>
+
+        </div>
+
+        <p class="p">Once this is enabled, you can use the <samp class="ph codeph">pg_stat_resqueues</samp> system view to
+          see the statistics collected on resource queue usage. Note that enabling this feature does
+          incur slight performance overhead, as each query submitted through a resource queue must
+          be tracked. It may be useful to enable statistics collecting on resource queues for
+          initial diagnostics and administrative planning, and then disable the feature for
+          continued use.</p>
+
+        <p class="p">See the Statistics Collector section in the PostgreSQL documentation for more information
+          about collecting statistics in Greenplum Database.</p>
+
+      </div>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic25">
+      <h3 class="title topictitle3">Viewing the Roles Assigned to a Resource Queue</h3>
+
+      <div class="body">
+        <p class="p">To see the roles assigned to a resource queue, perform the following query of the
+            <samp class="ph codeph">pg_roles</samp> and
+            <samp class="ph codeph">gp_toolkit.</samp><samp class="ph codeph">gp_resqueue_status</samp> system catalog
+          tables:</p>
+
+        <div class="p">
+          <pre class="pre codeblock">=# SELECT rolname, rsqname FROM pg_roles, 
+          gp_toolkit.gp_resqueue_status 
+   WHERE pg_roles.rolresqueue=gp_toolkit.gp_resqueue_status.queueid;
+</pre>
+
+        </div>
+
+        <p class="p">You may want to create a view of this query to simplify future inquiries. For
+          example:</p>
+
+        <div class="p">
+          <pre class="pre codeblock">=# CREATE VIEW role2queue AS
+   SELECT rolname, rsqname FROM pg_roles, pg_resqueue 
+   WHERE pg_roles.rolresqueue=gp_toolkit.gp_resqueue_status.queueid;
+</pre>
+
+        </div>
+
+        <p class="p">Then you can just query the view:</p>
+
+        <div class="p">
+          <pre class="pre codeblock">=# SELECT * FROM role2queue;
+</pre>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic26">
+      <h3 class="title topictitle3">Viewing the Waiting Queries for a Resource Queue</h3>
+
+      <div class="body">
+        <p class="p">When a slot is in use for a resource queue, it is recorded in the
+            <samp class="ph codeph">pg_locks</samp> system catalog table. This is where you can see all of the
+          currently active and waiting queries for all resource queues. To check that statements are
+          being queued (even statements that are not waiting), you can also use the
+            <samp class="ph codeph">gp_toolkit</samp>.gp_locks_on_resqueue view. For example:</p>
+
+        <div class="p">
+          <pre class="pre codeblock">=# SELECT * FROM gp_toolkit.gp_locks_on_resqueue WHERE lorwaiting='true';
+</pre>
+
+        </div>
+
+        <p class="p">If this query returns no results, then that means there are currently no statements
+          waiting in a resource queue.</p>
+
+      </div>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic27">
+      <h3 class="title topictitle3">Clearing a Waiting Statement From a Resource Queue</h3>
+
+      <div class="body">
+        <p class="p">In some cases, you may want to clear a waiting statement from a resource queue. For
+          example, you may want to remove a query that is waiting in the queue but has not been
+          executed yet. You may also want to stop a query that has been started if it is taking too
+          long to execute, or if it is sitting idle in a transaction and taking up resource queue
+          slots that are needed by other users. To do this, you must first identify the statement
+          you want to clear, determine its process id (pid), and then, use
+            <samp class="ph codeph">pg_cancel_backend</samp> with the process id to end that process, as shown
+          below. </p>
+
+        <p class="p">For example, to see process information about all statements currently active or waiting
+          in all resource queues, run the following query:</p>
+
+        <div class="p">
+          <pre class="pre codeblock">=# SELECT rolname, rsqname, pid, granted,
+          current_query, datname 
+   FROM pg_roles, gp_toolkit.gp_resqueue_status, pg_locks,
+        pg_stat_activity 
+   WHERE pg_roles.rolresqueue=pg_locks.objid 
+   AND pg_locks.objid=gp_toolkit.gp_resqueue_status.queueid
+   AND pg_stat_activity.procpid=pg_locks.pid;
+   AND pg_stat_activity.usename=pg_roles.rolname;
+</pre>
+
+        </div>
+
+        <p class="p">If this query returns no results, then that means there are currently no statements in a
+          resource queue. A sample of a resource queue with two statements in it looks something
+          like this:</p>
+
+        <pre class="pre codeblock">rolname | rsqname |  pid  | granted |     current_query      | datname 
+----------------------------------------------------------------------- 
+  sammy | webuser | 31861 | t       | &lt;IDLE&gt; in transaction  | namesdb
+  daria | webuser | 31905 | f       | SELECT * FROM topten;  | namesdb</pre>
+
+        <p class="p">Use this output to identify the process id (pid) of the statement you want to clear from
+          the resource queue. To clear the statement, you would then open a terminal window (as the
+            <samp class="ph codeph">gpadmin</samp> database superuser or as root) on the master host and cancel
+          the corresponding process. For example:</p>
+
+        <div class="p">
+          <pre class="pre codeblock">=# pg_cancel_backend(31905)
+</pre>
+
+        </div>
+
+        <div class="note note">
+<span class="notetitle">Note:</span> 
+          <p class="p">Do not use any operating system <samp class="ph codeph">KILL</samp> command.</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic28">
+      <h3 class="title topictitle3">Viewing the Priority of Active Statements</h3>
+
+      <div class="body">
+        <p class="p">The <em class="ph i">gp_toolkit</em> administrative schema has a view called
+            <em class="ph i">gp_resq_priority_statement</em>, which lists all statements currently being executed
+          and provides the priority, session ID, and other information.</p>
+
+        <p class="p">This view is only available through the <samp class="ph codeph">gp_toolkit</samp> administrative
+          schema. <span class="ph">See the <em class="ph i">Greenplum Database Reference Guide</em> for more
+            information.</span></p>
+
+      </div>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic29">
+      <h3 class="title topictitle3">Resetting the Priority of an Active Statement</h3>
+
+      <div class="body">
+        <p class="p">Superusers can adjust the priority of a statement currently being executed using the
+          built-in function <samp class="ph codeph">gp_adjust_priority(session_id, statement_count,
+            priority)</samp>. Using this function, superusers can raise or lower the priority of
+          any query. For example:</p>
+
+        <p class="p">
+          <samp class="ph codeph">=# SELECT gp_adjust_priority(752, 24905, 'HIGH')</samp>
+        </p>
+
+        <p class="p">To obtain the session ID and statement count parameters required by this function,
+          superusers can use the <samp class="ph codeph">gp_toolkit</samp> administrative schema view,
+            <em class="ph i">gp_resq_priority_statement</em>. From the view, use these values for the function
+          parameters.</p>
+
+        <ul class="ul">
+          <li class="li" id="topic29__iz174657">The value of the <samp class="ph codeph">rqpsession</samp> column for the
+              <samp class="ph codeph">session_id</samp> parameter</li>
+
+          <li class="li" id="topic29__iz174658">The value of the <samp class="ph codeph">rqpcommand</samp> column for the
+              <samp class="ph codeph">statement_count</samp> parameter</li>
+
+          <li class="li" id="topic29__iz174659">The value of <samp class="ph codeph">rqppriority</samp> column is the current
+            priority. You can specify a string value of <samp class="ph codeph">MAX</samp>, <samp class="ph codeph">HIGH</samp>,
+              <samp class="ph codeph">MEDIUM</samp>, or <samp class="ph codeph">LOW</samp> as the <samp class="ph codeph">priority</samp>.
+          </li>
+
+        </ul>
+
+        <div class="note note">
+<span class="notetitle">Note:</span> The <samp class="ph codeph">gp_adjust_priority()</samp> function affects only the
+          specified statement. Subsequent statements in the same resource queue are executed using
+          the queue's normally assigned priority.</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
 
         
 

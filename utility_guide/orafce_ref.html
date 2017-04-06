@@ -8,7 +8,7 @@
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400italic,400,600' rel='stylesheet' type='text/css'>
   <!-- Use title if it's in the page YAML frontmatter -->
   <title>
-      Greenplum Database |
+      Oracle Compatibility Functions |
     Greenplum Database Docs
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
   
 </head>
 
-<body class="docs docs_index has-subnav">
+<body class="docs docs_utility_guide docs_utility_guide_orafce_ref has-subnav">
 
 <div class="viewport">
   <div class='wrap'>
@@ -5466,7 +5466,7 @@
         <a id="top"></a>
         
           <h1 class="title-container" style="display: none;">
-    Greenplum Database
+    Oracle Compatibility Functions
   </h1>
 
           <div id="js-quick-links" >
@@ -5475,1068 +5475,2008 @@
         <div class="to-top" id="js-to-top">
           <a href="#top" title="back to top"></a>
         </div>
-        <ul>
-<li><a href="common/pivotal-gpdb-features.html">About this Documentation</a></li>
-<li>
-<a href="admin_guide/admin_guide.html">Administrator Guide</a><ul>
-<li>
-<a href="admin_guide/intro/partI.html">Greenplum Database Concepts</a><ul>
-<li><a href="admin_guide/intro/arch_overview.html">About the Greenplum Architecture</a></li>
-<li><a href="admin_guide/intro/about_utilities.html">About Management and Monitoring Utilities</a></li>
-<li>
-<a href="admin_guide/intro/about_mvcc.html">About Concurrency Control in Greenplum Database</a><ul><li><a href="admin_guide/intro/mvcc_example.html">Example of Managing Transaction IDs</a></li></ul>
-</li>
-<li><a href="admin_guide/intro/about_loading.html">About Parallel Data Loading</a></li>
-<li><a href="admin_guide/intro/about_ha.html">About Redundancy and Failover in Greenplum Database</a></li>
-<li><a href="admin_guide/intro/about_statistics.html">About Database Statistics in Greenplum Database</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/managing/partII.html">Managing a Greenplum System</a><ul>
-<li><a href="admin_guide/managing/startstop.html">Starting and Stopping Greenplum Database</a></li>
-<li>
-<a href="admin_guide/access_db/topics/g-accessing-the-database.html">Accessing the Database</a><ul>
-<li><a href="admin_guide/access_db/topics/g-establishing-a-database-session.html">Establishing a Database Session</a></li>
-<li><a href="admin_guide/access_db/topics/g-supported-client-applications.html">Supported Client Applications</a></li>
-<li><a href="admin_guide/access_db/topics/g-greenplum-database-client-applications.html">Greenplum Database Client Applications</a></li>
-<li><a href="admin_guide/access_db/topics/g-connecting-with-psql.html">Connecting with psql</a></li>
-<li>
-<a href="admin_guide/access_db/topics/g-pgadmin-iii-for-greenplum-database.html">pgAdmin III for Greenplum Database</a><ul>
-<li><a href="admin_guide/access_db/topics/g-installing-pgadmin-iii-for-greenplum-database.html">Installing pgAdmin III for Greenplum Database</a></li>
-<li><a href="admin_guide/access_db/topics/g-documentation-for-pgadmin-iii-for-greenplum-database.html">Documentation for pgAdmin III for Greenplum Database</a></li>
-<li>
-<a href="admin_guide/access_db/topics/g-performing-administrative-tasks-with-pgadmin-iii.html">Performing Administrative Tasks with pgAdmin III</a><ul>
-<li><a href="admin_guide/access_db/topics/g-editing-server-configuration.html">Editing the Server Configuration</a></li>
-<li><a href="admin_guide/access_db/topics/g-viewing-a-graphical-query-plan.html">Viewing a Graphical Query Plan</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="admin_guide/access_db/topics/pgbouncer.html">Using the PgBouncer Connection Pooler </a></li>
-<li><a href="admin_guide/access_db/topics/g-database-application-interfaces.html">Database Application Interfaces</a></li>
-<li><a href="admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a></li>
-<li><a href="admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/topics/g-configuring-the-greenplum-system.html">Configuring the Greenplum Database System</a><ul>
-<li><a href="admin_guide/topics/g-about-greenplum-master-and-local-parameters.html">About Greenplum Database Master and Local Parameters</a></li>
-<li>
-<a href="admin_guide/topics/g-setting-configuration-parameters.html">Setting Configuration Parameters</a><ul>
-<li><a href="admin_guide/topics/g-setting-a-local-configuration-parameter.html">Setting a Local Configuration Parameter</a></li>
-<li>
-<a href="admin_guide/topics/g-setting-a-master-configuration-parameter.html">Setting a Master Configuration Parameter</a><ul>
-<li><a href="admin_guide/topics/g-setting-parameters-at-the-system-level.html">Setting Parameters at the System Level</a></li>
-<li><a href="admin_guide/topics/g-setting-parameters-at-the-database-level.html">Setting Parameters at the Database Level</a></li>
-<li><a href="admin_guide/topics/g-setting-parameters-at-the-role-level.html">Setting Parameters at the Role Level</a></li>
-<li><a href="admin_guide/topics/g-setting-parameters-in-a-session.html">Setting Parameters in a Session</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="admin_guide/topics/g-viewing-server-configuration-parameter-settings.html">Viewing Server Configuration Parameter Settings</a></li>
-<li>
-<a href="admin_guide/topics/g-configuration-parameter-categories.html">Configuration Parameter Categories</a><ul>
-<li>
-<a href="admin_guide/topics/g-connection-and-authentication-parameters.html">Connection and Authentication Parameters</a><ul>
-<li><a href="admin_guide/topics/g-connection-parameters.html">Connection Parameters</a></li>
-<li><a href="admin_guide/topics/g-security-and-authentication-parameters.html">Security and Authentication Parameters</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/topics/g-system-resource-consumption-parameters.html">System Resource Consumption Parameters</a><ul>
-<li><a href="admin_guide/topics/g-memory-consumption-parameters.html">Memory Consumption Parameters</a></li>
-<li><a href="admin_guide/topics/g-free-space-map-parameters.html">Free Space Map Parameters</a></li>
-<li><a href="admin_guide/topics/g-os-resource-parameters.html">OS Resource Parameters</a></li>
-<li><a href="admin_guide/topics/g-cost-based-vacuum-delay-parameters.html">Cost-Based Vacuum Delay Parameters</a></li>
-<li><a href="admin_guide/topics/g-transaction-id-management-parameters.html">Transaction ID Management Parameters</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/topics/g-query-tuning-parameters.html">Query Tuning Parameters</a><ul>
-<li><a href="admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a></li>
-<li><a href="admin_guide/topics/g-query-plan-operator-control-parameters.html">Query Plan Operator Control Parameters</a></li>
-<li><a href="admin_guide/topics/g-query-planner-costing-parameters.html">Legacy Query Optimizer Costing Parameters</a></li>
-<li><a href="admin_guide/topics/g-database-statistics-sampling-parameters.html">Database Statistics Sampling Parameters</a></li>
-<li><a href="admin_guide/topics/g-sort-operator-configuration-parameters.html">Sort Operator Configuration Parameters</a></li>
-<li><a href="admin_guide/topics/g-aggregate-operator-configuration-parameters.html">Aggregate Operator Configuration Parameters</a></li>
-<li><a href="admin_guide/topics/g-join-operator-configuration-parameters.html">Join Operator Configuration Parameters</a></li>
-<li><a href="admin_guide/topics/g-other-query-planner-configuration-parameters.html">Other Legacy Query Optimizer Configuration Parameters</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/topics/g-error-reporting-and-logging-parameters.html">Error Reporting and Logging Parameters</a><ul>
-<li><a href="admin_guide/topics/g-log-rotation.html">Log Rotation</a></li>
-<li><a href="admin_guide/topics/g-when-to-log.html">When to Log</a></li>
-<li><a href="admin_guide/topics/g-what-to-log.html">What to Log</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/topics/g-system-monitoring-parameters.html">System Monitoring Parameters</a><ul>
-<li><a href="admin_guide/topics/g-snmp-alerts.html">SNMP Alerts</a></li>
-<li><a href="admin_guide/topics/g-email-alerts.html">Email Alerts</a></li>
-<li><a href="admin_guide/topics/g-greenplum-command-center-agent.html">Greenplum Command Center Agent</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/topics/g-runtime-statistics-collection-parameters.html">Runtime Statistics Collection Parameters</a></li>
-<li><a href="admin_guide/topics/g-automatic-statistics-collection-parameters.html">Automatic Statistics Collection Parameters</a></li>
-<li>
-<a href="admin_guide/topics/g-client-connection-default-parameters.html">Client Connection Default Parameters</a><ul>
-<li><a href="admin_guide/topics/g-statement-behavior-parameters.html">Statement Behavior Parameters</a></li>
-<li><a href="admin_guide/topics/g-locale-and-formatting-parameters.html">Locale and Formatting Parameters</a></li>
-<li><a href="admin_guide/topics/g-other-client-default-parameters.html">Other Client Default Parameters</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/topics/g-lock-management-parameters.html">Lock Management Parameters</a></li>
-<li><a href="admin_guide/topics/g-workload-management-parameters.html">Workload Management Parameters</a></li>
-<li><a href="admin_guide/topics/g-external-table-parameters.html">External Table Parameters</a></li>
-<li><a href="admin_guide/topics/g-append-optimized-table-parameters.html">Database Table Parameters</a></li>
-<li><a href="admin_guide/topics/g-database-and-tablespace-filespace-parameters.html">Database and Tablespace/Filespace Parameters</a></li>
-<li><a href="admin_guide/topics/g-past-postgresql-version-compatibility-parameters.html">Past PostgreSQL Version Compatibility Parameters</a></li>
-<li>
-<a href="admin_guide/topics/g-greenplum-array-configuration-parameters.html">Greenplum Array Configuration Parameters</a><ul>
-<li><a href="admin_guide/topics/g-interconnect-configuration-parameters.html">Interconnect Configuration Parameters</a></li>
-<li><a href="admin_guide/topics/g-dispatch-configuration-parameters.html">Dispatch Configuration Parameters</a></li>
-<li><a href="admin_guide/topics/g-fault-operation-parameters.html">Fault Operation Parameters</a></li>
-<li><a href="admin_guide/topics/g-distributed-transaction-management-parameters.html">Distributed Transaction Management Parameters</a></li>
-<li><a href="admin_guide/topics/g-read-only-parameters.html">Read-Only Parameters</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/topics/g-greenplum-master-mirroring-parameters.html">Greenplum Master and Segment Mirroring Parameters</a></li>
-<li><a href="admin_guide/topics/g-greenplum-extension-parameters.html">Greenplum Database Extension Parameters</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/highavail/topics/g-enabling-high-availability-features.html">Enabling High Availability Features</a><ul>
-<li>
-<a href="admin_guide/highavail/topics/g-overview-of-high-availability-in-greenplum-database.html">Overview of Greenplum Database High Availability</a><ul>
-<li><a href="admin_guide/highavail/topics/g-overview-of-segment-mirroring.html">Overview of Segment Mirroring</a></li>
-<li><a href="admin_guide/highavail/topics/g-overview-of-master-mirroring.html">Overview of Master Mirroring</a></li>
-<li><a href="admin_guide/highavail/topics/g-overview-of-fault-detection-and-recovery.html">Overview of Fault Detection and Recovery</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/highavail/topics/g-enabling-mirroring-in-greenplum-database.html">Enabling Mirroring in Greenplum Database</a><ul>
-<li><a href="admin_guide/highavail/topics/g-enabling-segment-mirroring.html">Enabling Segment Mirroring</a></li>
-<li><a href="admin_guide/highavail/topics/g-enabling-master-mirroring.html">Enabling Master Mirroring</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/highavail/topics/g-detecting-a-failed-segment.html">Detecting a Failed Segment</a><ul>
-<li><a href="admin_guide/highavail/topics/g-enabling-alerts-and-notifications.html">Enabling Alerts and Notifications</a></li>
-<li><a href="admin_guide/highavail/topics/g-checking-for-failed-segments.html">Checking for Failed Segments</a></li>
-<li><a href="admin_guide/highavail/topics/g-checking-the-log-files.html">Checking the Log Files for Failed Segments</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/highavail/topics/g-recovering-a-failed-segment.html">Recovering a Failed Segment</a><ul><li>
-<a href="admin_guide/highavail/topics/g-recovering-from-segment-failures.html">Recovering From Segment Failures</a><ul>
-<li><a href="admin_guide/highavail/topics/g-when-a-segment-host-is-not-recoverable.html">When a segment host is not recoverable</a></li>
-<li><a href="admin_guide/highavail/topics/gprecover-steps.html">About the Segment Recovery Process</a></li>
-</ul>
-</li></ul>
-</li>
-<li>
-<a href="admin_guide/highavail/topics/g-recovering-a-failed-master.html">Recovering a Failed Master</a><ul><li><a href="admin_guide/highavail/topics/g-restoring-master-mirroring-after-a-recovery.html">Restoring Master Mirroring After a Recovery</a></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/managing/backup-main.html">Backing Up and Restoring Databases</a><ul>
-<li><a href="admin_guide/managing/backup-overview.html">Backup and Restore Overview</a></li>
-<li><a href="admin_guide/managing/backup-gpcrondump.html">Backing Up with gpcrondump</a></li>
-<li><a href="admin_guide/managing/backup-sets.html">Backing Up a Set of Tables</a></li>
-<li><a href="admin_guide/managing/backup-incremental.html">Creating Incremental Backups</a></li>
-<li><a href="admin_guide/managing/backup-locks.html">Backup Process and Locks</a></li>
-<li><a href="admin_guide/managing/backup-direct-io.html">Using Direct I/O</a></li>
-<li><a href="admin_guide/managing/backup-named-pipes.html">Using Named Pipes</a></li>
-<li><a href="admin_guide/managing/backup-ddboost.html">Backing Up Databases with Data Domain Boost</a></li>
-<li><a href="admin_guide/managing/backup-veritas.html">Backing Up Databases with Veritas NetBackup</a></li>
-<li><a href="admin_guide/managing/restore-parallel.html">Restoring Greenplum Databases</a></li>
-<li><a href="admin_guide/managing/gpdbrestore.html">Restoring a Database Using gpdbrestore</a></li>
-<li><a href="admin_guide/managing/restore-diff-system.html">Restoring to a Different Greenplum System Configuration</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/expand/expand-main.html">Expanding a Greenplum System</a><ul>
-<li><a href="admin_guide/expand/expand-overview.html">System Expansion Overview</a></li>
-<li><a href="admin_guide/expand/expand-planning.html">Planning Greenplum System Expansion</a></li>
-<li><a href="admin_guide/expand/expand-nodes.html">Preparing and Adding Nodes</a></li>
-<li><a href="admin_guide/expand/expand-initialize.html">Initializing New Segments</a></li>
-<li><a href="admin_guide/expand/expand-redistribute.html">Redistributing Tables</a></li>
-<li><a href="admin_guide/expand/expand-rm-schema.html">Removing the Expansion Schema</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/managing/gptransfer.html">Migrating Data with gptransfer</a></li>
-<li><a href="admin_guide/managing/monitor.html">Monitoring a Greenplum System</a></li>
-<li><a href="admin_guide/managing/maintain.html">Routine System Maintenance Tasks</a></li>
-<li><a href="admin_guide/monitoring/monitoring.html">Recommended Monitoring and Maintenance Tasks</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/partIII.html">Managing Greenplum Database Access</a><ul>
-<li>
-<a href="admin_guide/client_auth.html">Configuring Client Authentication</a><ul>
-<li><a href="admin_guide/ldap.html">Using LDAP Authentication with TLS/SSL </a></li>
-<li><a href="admin_guide/kerberos.html">Using Kerberos Authentication</a></li>
-<li><a href="admin_guide/kerberos-win-client.html">Configuring Kerberos For Windows Clients</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/roles_privs.html">Managing Roles and Privileges</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/partIV.html">Working with Databases</a><ul>
-<li>
-<a href="admin_guide/ddl/ddl.html">Defining Database Objects</a><ul>
-<li><a href="admin_guide/ddl/ddl-database.html">Creating and Managing Databases</a></li>
-<li><a href="admin_guide/ddl/ddl-tablespace.html">Creating and Managing Tablespaces</a></li>
-<li><a href="admin_guide/ddl/ddl-schema.html">Creating and Managing Schemas</a></li>
-<li><a href="admin_guide/ddl/ddl-table.html">Creating and Managing Tables</a></li>
-<li><a href="admin_guide/ddl/ddl-storage.html">Choosing the Table Storage Model</a></li>
-<li><a href="admin_guide/ddl/ddl-partition.html">Partitioning Large Tables</a></li>
-<li><a href="admin_guide/ddl/ddl-sequence.html">Creating and Using Sequences</a></li>
-<li><a href="admin_guide/ddl/ddl-index.html">Using Indexes in Greenplum Database</a></li>
-<li><a href="admin_guide/ddl/ddl-view.html">Creating and Managing Views</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/dml.html">Managing Data</a></li>
-<li>
-<a href="admin_guide/load/topics/g-loading-and-unloading-data.html">Loading and Unloading Data</a><ul>
-<li>
-<a href="admin_guide/load/topics/g-working-with-file-based-ext-tables.html">Working with File-Based External Tables</a><ul>
-<li><a href="admin_guide/load/topics/g-external-tables.html">Accessing File-Based External Tables</a></li>
-<li><a href="admin_guide/load/topics/g-file-protocol.html">file:// Protocol</a></li>
-<li><a href="admin_guide/load/topics/g-gpfdist-protocol.html">gpfdist:// Protocol</a></li>
-<li><a href="admin_guide/load/topics/g-gpfdists-protocol.html">gpfdists:// Protocol</a></li>
-<li><a href="admin_guide/load/topics/g-gphdfs-protocol.html">gphdfs:// Protocol</a></li>
-<li><a href="admin_guide/load/topics/g-s3-protocol.html">s3:// Protocol</a></li>
-<li><a href="admin_guide/load/topics/g-accessing-ext-files-custom-protocol.html">Using a Custom Protocol</a></li>
-<li><a href="admin_guide/load/topics/g-handling-errors-ext-table-data.html">Handling Errors in External Table Data</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-using-the-greenplum-parallel-file-server--gpfdist-.html">Using the Greenplum Parallel File Server (gpfdist)</a><ul>
-<li><a href="admin_guide/load/topics/g-about-gpfdist-setup-and-performance.html">About gpfdist Setup and Performance</a></li>
-<li><a href="admin_guide/load/topics/g-controlling-segment-parallelism.html">Controlling Segment Parallelism</a></li>
-<li><a href="admin_guide/load/topics/g-installing-gpfdist.html">Installing gpfdist</a></li>
-<li><a href="admin_guide/load/topics/g-starting-and-stopping-gpfdist.html">Starting and Stopping gpfdist</a></li>
-<li><a href="admin_guide/load/topics/g-troubleshooting-gpfdist.html">Troubleshooting gpfdist</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-using-hadoop-distributed-file-system--hdfs--tables.html">Using Hadoop Distributed File System (HDFS) Tables</a><ul>
-<li>
-<a href="admin_guide/load/topics/g-one-time-hdfs-protocol-installation.html">One-time HDFS Protocol Installation</a><ul>
-<li><a href="admin_guide/load/topics/g-grant-privileges-for-the-hdfs-protocol.html">Grant Privileges for the HDFS Protocol</a></li>
-<li>
-<a href="admin_guide/load/topics/g-specify-hdfs-data-in-an-external-table-definition.html">Specify HDFS Data in an External Table Definition</a><ul><li><a href="admin_guide/load/topics/g-setting-compression-options-for-hadoop-writable-external-tables.html">Setting Compression Options for Hadoop Writable External Tables</a></li></ul>
-</li>
-<li><a href="admin_guide/load/topics/g-hdfs-readable-and-writable-external-table-examples.html">HDFS Readable and Writable External Table Examples</a></li>
-<li><a href="admin_guide/load/topics/g-reading-and-writing-custom-formatted-hdfs-data.html">Reading and Writing Custom-Formatted HDFS Data</a></li>
-<li><a href="admin_guide/load/topics/g-example-1-read-custom-formatted-data-from-hdfs.html">Example 1 - Read Custom-Formatted Data from HDFS</a></li>
-<li>
-<a href="admin_guide/load/topics/g-sample-mapreduce-code.html">Sample MapReduce Code</a><ul><li><a href="admin_guide/load/topics/g-run-create-external-table.html"> Run CREATE EXTERNAL TABLE</a></li></ul>
-</li>
-<li><a href="admin_guide/load/topics/g-example-2-write-custom-formatted-data-from-greenplum-database-to-hdfs.html">Example 2 - Write Custom-Formatted Data from Greenplum Database to HDFS</a></li>
-<li><a href="admin_guide/load/topics/g-mapreduce-sample-code.html"> MapReduce Sample Code </a></li>
-</ul>
-</li>
-<li><a href="admin_guide/load/topics/g-gphdfs-jvm.html">About gphdfs JVM Memory</a></li>
-<li><a href="admin_guide/load/topics/g-hdfs-emr-config.html">Using Amazon EMR with Greenplum Database installed on AWS </a></li>
-<li><a href="admin_guide/load/topics/g-hdfs-avro-format.html">Support for Avro Files</a></li>
-<li><a href="admin_guide/load/topics/g-hdfs-parquet-format.html">Support for Parquet Files</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-creating-and-using-web-external-tables.html">Creating and Using Web External Tables</a><ul>
-<li><a href="admin_guide/load/topics/g-command-based-web-external-tables.html">Command-based Web External Tables</a></li>
-<li><a href="admin_guide/load/topics/g-url-based-web-external-tables.html">URL-based Web External Tables</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/load/topics/g-loading-data-using-an-external-table.html">Loading Data Using an External Table</a></li>
-<li>
-<a href="admin_guide/load/topics/g-loading-and-writing-non-hdfs-custom-data.html">Loading and Writing Non-HDFS Custom Data</a><ul>
-<li>
-<a href="admin_guide/load/topics/g-using-a-custom-format.html">Using a Custom Format</a><ul>
-<li><a href="admin_guide/load/topics/g-importing-and-exporting-fixed-width-data.html">Importing and Exporting Fixed Width Data</a></li>
-<li><a href="admin_guide/load/topics/g-examples-read-fixed-width-data.html">Examples: Read Fixed-Width Data</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/load/topics/g-using-a-custom-protocol.html">Using a Custom Protocol</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-creating-external-tables---examples.html">Creating External Tables - Examples</a><ul>
-<li><a href="admin_guide/load/topics/g-example-1-single-gpfdist-instance-on-single-nic-machine.html">Example 1—Single gpfdist instance on single-NIC machine</a></li>
-<li><a href="admin_guide/load/topics/g-example-2-multiple-gpfdist-instances.html">Example 2—Multiple gpfdist instances </a></li>
-<li><a href="admin_guide/load/topics/g-example-3-multiple-gpfdists-instances.html">Example 3—Multiple gpfdists instances </a></li>
-<li><a href="admin_guide/load/topics/g-example-4-single-gpfdist-instance-with-error-logging.html">Example 4—Single gpfdist instance with error logging</a></li>
-<li><a href="admin_guide/load/topics/g-example-5-text-format-on-a-hadoop-distributed-file-server.html">Example 5—TEXT Format on a Hadoop Distributed File Server</a></li>
-<li><a href="admin_guide/load/topics/g-example-6-multiple-files-in-csv-format-with-header-rows.html">Example 6—Multiple files in CSV format with header rows</a></li>
-<li><a href="admin_guide/load/topics/g-example-7-readable-web-external-table-with-script.html">Example 7—Readable Web External Table with Script</a></li>
-<li><a href="admin_guide/load/topics/g-example-8-writable-external-table-with-gpfdist.html">Example 8—Writable External Table with gpfdist</a></li>
-<li><a href="admin_guide/load/topics/g-example-9-writable-external-web-table-with-script.html">Example 9—Writable External Web Table with Script</a></li>
-<li><a href="admin_guide/load/topics/g-example-10-readable-and-writable-external-tables-with-xml-transformations.html">Example 10—Readable and Writable External Tables with XML Transformations</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-handling-load-errors.html">Handling Load Errors</a><ul>
-<li><a href="admin_guide/load/topics/g-define-an-external-table-with-single-row-error-isolation.html">Define an External Table with Single Row Error Isolation</a></li>
-<li><a href="admin_guide/load/topics/g-create-an-error-table-and-declare-a-reject-limit.html">Capture Row Formatting Errors and Declare a Reject Limit </a></li>
-<li><a href="admin_guide/load/topics/g-viewing-bad-rows-in-the-error-table-or-error-log.html">Viewing Bad Rows in the Error Log</a></li>
-<li><a href="admin_guide/load/topics/g-identifying-invalid-csv-files-in-error-table-data.html">Identifying Invalid CSV Files in Error Table Data</a></li>
-<li><a href="admin_guide/load/topics/g-moving-data-between-tables.html">Moving Data between Tables</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/load/topics/g-loading-data-with-gpload.html">Loading Data with gpload</a></li>
-<li><a href="admin_guide/load/topics/g-loading-data-with-copy.html">Loading Data with COPY</a></li>
-<li><a href="admin_guide/load/topics/g-running-copy-in-single-row-error-isolation-mode.html">Running COPY in Single Row Error Isolation Mode</a></li>
-<li><a href="admin_guide/load/topics/g-optimizing-data-load-and-query-performance.html">Optimizing Data Load and Query Performance</a></li>
-<li>
-<a href="admin_guide/load/topics/g-unloading-data-from-greenplum-database.html">Unloading Data from Greenplum Database</a><ul>
-<li>
-<a href="admin_guide/load/topics/g-defining-a-file-based-writable-external-table.html">Defining a File-Based Writable External Table</a><ul>
-<li><a href="admin_guide/load/topics/g-example-1-greenplum-file-server-gpfdist.html">Example 1—Greenplum file server (gpfdist)</a></li>
-<li><a href="admin_guide/load/topics/g-example-2-hadoop-file-server-gphdfs.html">Example 2—Hadoop file server (gphdfs)</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-defining-a-command-based-writable-external-web-table.html">Defining a Command-Based Writable External Web Table</a><ul><li><a href="admin_guide/load/topics/g-disabling-execute-for-web-or-writable-external-tables.html">Disabling EXECUTE for Web or Writable External Tables</a></li></ul>
-</li>
-<li><a href="admin_guide/load/topics/g-unloading-data-using-a-writable-external-table.html">Unloading Data Using a Writable External Table</a></li>
-<li><a href="admin_guide/load/topics/g-unloading-data-using-copy.html">Unloading Data Using COPY</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-transforming-xml-data.html">Transforming XML Data</a><ul>
-<li><a href="admin_guide/load/topics/g-determine-the-transformation-schema.html">Determine the Transformation Schema</a></li>
-<li><a href="admin_guide/load/topics/g-write-a-transform.html">Write a Transform</a></li>
-<li><a href="admin_guide/load/topics/g-write-the-gpfdist-configuration.html">Write the gpfdist Configuration</a></li>
-<li><a href="admin_guide/load/topics/g-load-the-data.html">Load the Data</a></li>
-<li>
-<a href="admin_guide/load/topics/g-transfer-and-store-the-data.html">Transfer and Store the Data</a><ul>
-<li><a href="admin_guide/load/topics/g-transforming-with-gpload.html">Transforming with GPLOAD</a></li>
-<li><a href="admin_guide/load/topics/g-transforming-with-insert-into-select-from.html">Transforming with INSERT INTO SELECT FROM</a></li>
-<li><a href="admin_guide/load/topics/g-configuration-file-format.html">Configuration File Format</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-xml-transformation-examples.html">XML Transformation Examples</a><ul>
-<li><a href="admin_guide/load/topics/g-example-1-dblp-database-publications-in-demo-directory.html">Command-based Web External Tables</a></li>
-<li><a href="admin_guide/load/topics/g-example-2-irs-mef-xml-files-in-demo-directory.html">Example 2 - IRS MeF XML Files (In demo Directory)</a></li>
-<li><a href="admin_guide/load/topics/g-example-3-witsml-files-in-demo-directory.html">Example 3 - WITSML™ Files (In demo Directory)</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-formatting-data-files.html">Formatting Data Files</a><ul>
-<li><a href="admin_guide/load/topics/g-formatting-rows.html">Formatting Rows</a></li>
-<li><a href="admin_guide/load/topics/g-formatting-columns.html">Formatting Columns</a></li>
-<li><a href="admin_guide/load/topics/g-representing-null-values.html">Representing NULL Values</a></li>
-<li>
-<a href="admin_guide/load/topics/g-escaping.html">Escaping</a><ul>
-<li><a href="admin_guide/load/topics/g-escaping-in-text-formatted-files.html">Escaping in Text Formatted Files</a></li>
-<li><a href="admin_guide/load/topics/g-escaping-in-csv-formatted-files.html">Escaping in CSV Formatted Files</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/load/topics/g-character-encoding.html">Character Encoding</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-example-custom-data-access-protocol.html">Example Custom Data Access Protocol </a><ul><li>
-<a href="admin_guide/load/topics/g-installing-the-external-table-protocol.html">Installing the External Table Protocol</a><ul><li><a href="admin_guide/load/topics/g-gpextprotocal.c.html">gpextprotocal.c</a></li></ul>
-</li></ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/query/topics/query.html">Querying Data</a><ul>
-<li><a href="admin_guide/query/topics/parallel-proc.html">About Greenplum Query Processing</a></li>
-<li>
-<a href="admin_guide/query/topics/query-piv-optimizer.html">About GPORCA</a><ul>
-<li><a href="admin_guide/query/topics/query-piv-opt-overview.html">Overview of GPORCA</a></li>
-<li><a href="admin_guide/query/topics/query-piv-opt-enable.html">Enabling GPORCA</a></li>
-<li><a href="admin_guide/query/topics/query-piv-opt-notes.html">Considerations when Using GPORCA</a></li>
-<li><a href="admin_guide/query/topics/query-piv-opt-features.html">GPORCA Features and Enhancements</a></li>
-<li><a href="admin_guide/query/topics/query-piv-opt-changed.html">Changed Behavior with the GPORCA</a></li>
-<li><a href="admin_guide/query/topics/query-piv-opt-limitations.html">GPORCA Limitations</a></li>
-<li><a href="admin_guide/query/topics/query-piv-opt-fallback.html">Determining the Query Optimizer that is Used</a></li>
-<li><a href="admin_guide/query/topics/query-piv-uniform-part-tbl.html">About Uniform Multi-level Partitioned Tables</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/query/topics/defining-queries.html">Defining Queries</a></li>
-<li><a href="admin_guide/query/topics/functions-operators.html">Using Functions and Operators</a></li>
-<li><a href="admin_guide/query/topics/json-data.html">Working with JSON Data</a></li>
-<li><a href="admin_guide/query/topics/query-performance.html">Query Performance</a></li>
-<li><a href="admin_guide/query/topics/spill-files.html">Managing Spill Files Generated by Queries</a></li>
-<li><a href="admin_guide/query/topics/query-profiling.html">Query Profiling</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/partV.html">Managing Performance</a><ul>
-<li><a href="admin_guide/perf_intro.html">Defining Database Performance</a></li>
-<li><a href="admin_guide/perf_issues.html">Common Causes of Performance Issues</a></li>
-<li><a href="admin_guide/workload_mgmt.html">Workload Management with Resource Queues</a></li>
-<li><a href="admin_guide/perf_troubleshoot.html">Investigating a Performance Problem</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="utility_guide/utility_guide.html">Utility Guide</a><ul>
-<li>
-<a href="utility_guide/admin_utilities/util_ref.html">Management Utility Reference</a><ul>
-<li><a href="utility_guide/admin_utilities/analyzedb.html">analyzedb</a></li>
-<li><a href="utility_guide/admin_utilities/gpactivatestandby.html">gpactivatestandby</a></li>
-<li><a href="utility_guide/admin_utilities/gpaddmirrors.html">gpaddmirrors</a></li>
-<li><a href="utility_guide/admin_utilities/gpcheck.html">gpcheck</a></li>
-<li><a href="utility_guide/admin_utilities/gpcheckcat.html">gpcheckcat</a></li>
-<li><a href="utility_guide/admin_utilities/gpcheckperf.html">gpcheckperf</a></li>
-<li><a href="utility_guide/admin_utilities/gpconfig.html">gpconfig</a></li>
-<li><a href="utility_guide/admin_utilities/gpcrondump.html">gpcrondump</a></li>
-<li><a href="utility_guide/admin_utilities/gpdbrestore.html">gpdbrestore</a></li>
-<li><a href="utility_guide/admin_utilities/gpdeletesystem.html">gpdeletesystem</a></li>
-<li><a href="utility_guide/admin_utilities/gpexpand.html">gpexpand</a></li>
-<li><a href="utility_guide/admin_utilities/gpfdist.html">gpfdist</a></li>
-<li><a href="utility_guide/admin_utilities/gpfilespace.html">gpfilespace</a></li>
-<li><a href="utility_guide/admin_utilities/gpinitstandby.html">gpinitstandby</a></li>
-<li><a href="utility_guide/admin_utilities/gpinitsystem.html">gpinitsystem</a></li>
-<li><a href="utility_guide/admin_utilities/gpload.html">gpload</a></li>
-<li><a href="utility_guide/admin_utilities/gplogfilter.html">gplogfilter</a></li>
-<li><a href="utility_guide/admin_utilities/gpmapreduce.html">gpmapreduce</a></li>
-<li><a href="utility_guide/admin_utilities/gpmfr.html">gpmfr</a></li>
-<li><a href="utility_guide/admin_utilities/gpperfmon_install.html">gpperfmon_install</a></li>
-<li><a href="utility_guide/admin_utilities/gppkg.html">gppkg</a></li>
-<li><a href="utility_guide/admin_utilities/gprecoverseg.html">gprecoverseg</a></li>
-<li><a href="utility_guide/admin_utilities/gpreload.html">gpreload</a></li>
-<li><a href="utility_guide/admin_utilities/gpscp.html">gpscp</a></li>
-<li><a href="utility_guide/admin_utilities/gpseginstall.html">gpseginstall</a></li>
-<li><a href="utility_guide/admin_utilities/gpssh.html">gpssh</a></li>
-<li><a href="utility_guide/admin_utilities/gpssh-exkeys.html">gpssh-exkeys</a></li>
-<li><a href="utility_guide/admin_utilities/gpstart.html">gpstart</a></li>
-<li><a href="utility_guide/admin_utilities/gpstate.html">gpstate</a></li>
-<li><a href="utility_guide/admin_utilities/gpstop.html">gpstop</a></li>
-<li><a href="utility_guide/admin_utilities/gpsys.html">gpsys1</a></li>
-<li><a href="utility_guide/admin_utilities/gptransfer.html">gptransfer</a></li>
-<li><a href="utility_guide/admin_utilities/pgbouncer-ref.html">pgbouncer</a></li>
-</ul>
-</li>
-<li>
-<a href="utility_guide/cli_ref.html">Client Utility Reference</a><ul><li>
-<a href="utility_guide/client_utilities/ClientUtilitySummary.html">Client Utility Summary</a><ul>
-<li><a href="utility_guide/client_utilities/clusterdb.html">clusterdb</a></li>
-<li><a href="utility_guide/client_utilities/createdb.html">createdb</a></li>
-<li><a href="utility_guide/client_utilities/createuser.html">createuser</a></li>
-<li><a href="utility_guide/client_utilities/dropdb.html">dropdb</a></li>
-<li><a href="utility_guide/client_utilities/droplang.html">droplang</a></li>
-<li><a href="utility_guide/client_utilities/dropuser.html">dropuser</a></li>
-<li><a href="utility_guide/client_utilities/createlang.html">createlang</a></li>
-<li><a href="utility_guide/client_utilities/pg_config.html">pg_config</a></li>
-<li><a href="utility_guide/client_utilities/pg_dump.html">pg_dump</a></li>
-<li><a href="utility_guide/client_utilities/pg_dumpall.html">pg_dumpall</a></li>
-<li><a href="utility_guide/client_utilities/pg_restore.html">pg_restore</a></li>
-<li><a href="utility_guide/client_utilities/psql.html">psql</a></li>
-<li><a href="utility_guide/client_utilities/reindexdb.html">reindexdb</a></li>
-<li><a href="utility_guide/client_utilities/vacuumdb.html">vacuumdb</a></li>
-</ul>
-</li></ul>
-</li>
-<li><a href="utility_guide/orafce_ref.html">Oracle Compatibility Functions</a></li>
-<li><a href="utility_guide/dblink.html">dblink Functions</a></li>
-</ul>
-</li>
-<li>
-<a href="ref_guide/ref_guide.html">Reference Guide</a><ul>
-<li>
-<a href="ref_guide/sql_commands/sql_ref.html">SQL Command Reference</a><ul>
-<li><a href="ref_guide/GPReferenceSQLSummaryLOP.html">SQL Syntax Summary</a></li>
-<li><a href="ref_guide/sql_commands/ABORT.html">ABORT</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_AGGREGATE.html">ALTER AGGREGATE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_CONVERSION.html">ALTER CONVERSION</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_DATABASE.html">ALTER DATABASE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_DOMAIN.html">ALTER DOMAIN</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_FILESPACE.html">ALTER FILESPACE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_FUNCTION.html">ALTER FUNCTION</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_GROUP.html">ALTER GROUP</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_INDEX.html">ALTER INDEX</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_LANGUAGE.html">ALTER LANGUAGE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_OPERATOR.html">ALTER OPERATOR</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_OPERATOR_CLASS.html">ALTER OPERATOR CLASS</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_PROTOCOL.html">ALTER PROTOCOL</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_RESOURCE_QUEUE.html">ALTER RESOURCE QUEUE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_ROLE.html">ALTER ROLE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_SCHEMA.html">ALTER SCHEMA</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_SEQUENCE.html">ALTER SEQUENCE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_TABLE.html">ALTER TABLE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_TABLESPACE.html">ALTER TABLESPACE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_TYPE.html">ALTER TYPE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_USER.html">ALTER USER</a></li>
-<li><a href="ref_guide/sql_commands/ANALYZE.html">ANALYZE</a></li>
-<li><a href="ref_guide/sql_commands/BEGIN.html">BEGIN</a></li>
-<li><a href="ref_guide/sql_commands/CHECKPOINT.html">CHECKPOINT</a></li>
-<li><a href="ref_guide/sql_commands/CLOSE.html">CLOSE</a></li>
-<li><a href="ref_guide/sql_commands/CLUSTER.html">CLUSTER</a></li>
-<li><a href="ref_guide/sql_commands/COMMENT.html">COMMENT</a></li>
-<li><a href="ref_guide/sql_commands/COMMIT.html">COMMIT</a></li>
-<li><a href="ref_guide/sql_commands/COPY.html">COPY</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_AGGREGATE.html">CREATE AGGREGATE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_CAST.html">CREATE CAST</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_CONVERSION.html">CREATE CONVERSION</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_DATABASE.html">CREATE DATABASE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_DOMAIN.html">CREATE DOMAIN</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_FUNCTION.html">CREATE FUNCTION</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_GROUP.html">CREATE GROUP</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_INDEX.html">CREATE INDEX</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_LANGUAGE.html">CREATE LANGUAGE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_OPERATOR.html">CREATE OPERATOR</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_OPERATOR_CLASS.html">CREATE OPERATOR CLASS</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_PROTOCOL.html">CREATE PROTOCOL</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_RESOURCE_QUEUE.html">CREATE RESOURCE QUEUE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_ROLE.html">CREATE ROLE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_RULE.html">CREATE RULE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_SCHEMA.html">CREATE SCHEMA</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_SEQUENCE.html">CREATE SEQUENCE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_TABLE.html">CREATE TABLE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_TABLE_AS.html">CREATE TABLE AS</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_TABLESPACE.html">CREATE TABLESPACE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_TYPE.html">CREATE TYPE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_USER.html">CREATE USER</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_VIEW.html">CREATE VIEW</a></li>
-<li><a href="ref_guide/sql_commands/DEALLOCATE.html">DEALLOCATE</a></li>
-<li><a href="ref_guide/sql_commands/DECLARE.html">DECLARE</a></li>
-<li><a href="ref_guide/sql_commands/DELETE.html">DELETE</a></li>
-<li><a href="ref_guide/sql_commands/DO.html">DO</a></li>
-<li><a href="ref_guide/sql_commands/DROP_AGGREGATE.html">DROP AGGREGATE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_CAST.html">DROP CAST</a></li>
-<li><a href="ref_guide/sql_commands/DROP_CONVERSION.html">DROP CONVERSION</a></li>
-<li><a href="ref_guide/sql_commands/DROP_DATABASE.html">DROP DATABASE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a></li>
-<li><a href="ref_guide/sql_commands/DROP_EXTERNAL_TABLE.html">DROP EXTERNAL TABLE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_FILESPACE.html">DROP FILESPACE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_FUNCTION.html">DROP FUNCTION</a></li>
-<li><a href="ref_guide/sql_commands/DROP_GROUP.html">DROP GROUP</a></li>
-<li><a href="ref_guide/sql_commands/DROP_INDEX.html">DROP INDEX</a></li>
-<li><a href="ref_guide/sql_commands/DROP_LANGUAGE.html">DROP LANGUAGE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_OPERATOR.html">DROP OPERATOR</a></li>
-<li><a href="ref_guide/sql_commands/DROP_OPERATOR_CLASS.html">DROP OPERATOR CLASS</a></li>
-<li><a href="ref_guide/sql_commands/DROP_OWNED.html">DROP OWNED</a></li>
-<li><a href="ref_guide/sql_commands/DROP_PROTOCOL.html">DROP PROTOCOL</a></li>
-<li><a href="ref_guide/sql_commands/DROP_RESOURCE_QUEUE.html">DROP RESOURCE QUEUE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_ROLE.html">DROP ROLE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_RULE.html">DROP RULE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_SCHEMA.html">DROP SCHEMA</a></li>
-<li><a href="ref_guide/sql_commands/DROP_SEQUENCE.html">DROP SEQUENCE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_TABLE.html">DROP TABLE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_TABLESPACE.html">DROP TABLESPACE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_TYPE.html">DROP TYPE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_USER.html">DROP USER</a></li>
-<li><a href="ref_guide/sql_commands/DROP_VIEW.html">DROP VIEW</a></li>
-<li><a href="ref_guide/sql_commands/END.html">END</a></li>
-<li><a href="ref_guide/sql_commands/EXECUTE.html">EXECUTE</a></li>
-<li><a href="ref_guide/sql_commands/EXPLAIN.html">EXPLAIN</a></li>
-<li><a href="ref_guide/sql_commands/FETCH.html">FETCH</a></li>
-<li><a href="ref_guide/sql_commands/GRANT.html">GRANT</a></li>
-<li><a href="ref_guide/sql_commands/INSERT.html">INSERT</a></li>
-<li><a href="ref_guide/sql_commands/LOAD.html">LOAD</a></li>
-<li><a href="ref_guide/sql_commands/LOCK.html">LOCK</a></li>
-<li><a href="ref_guide/sql_commands/MOVE.html">MOVE</a></li>
-<li><a href="ref_guide/sql_commands/PREPARE.html">PREPARE</a></li>
-<li><a href="ref_guide/sql_commands/REASSIGN_OWNED.html">REASSIGN OWNED</a></li>
-<li><a href="ref_guide/sql_commands/REINDEX.html">REINDEX</a></li>
-<li><a href="ref_guide/sql_commands/RELEASE_SAVEPOINT.html">RELEASE SAVEPOINT</a></li>
-<li><a href="ref_guide/sql_commands/RESET.html">RESET</a></li>
-<li><a href="ref_guide/sql_commands/REVOKE.html">REVOKE</a></li>
-<li><a href="ref_guide/sql_commands/ROLLBACK.html">ROLLBACK</a></li>
-<li><a href="ref_guide/sql_commands/ROLLBACK_TO_SAVEPOINT.html">ROLLBACK TO SAVEPOINT</a></li>
-<li><a href="ref_guide/sql_commands/SAVEPOINT.html">SAVEPOINT</a></li>
-<li><a href="ref_guide/sql_commands/SELECT.html">SELECT</a></li>
-<li><a href="ref_guide/sql_commands/SELECT_INTO.html">SELECT INTO</a></li>
-<li><a href="ref_guide/sql_commands/SET.html">SET</a></li>
-<li><a href="ref_guide/sql_commands/SET_ROLE.html">SET ROLE</a></li>
-<li><a href="ref_guide/sql_commands/SET_SESSION_AUTHORIZATION.html">SET SESSION AUTHORIZATION</a></li>
-<li><a href="ref_guide/sql_commands/SET_TRANSACTION.html">SET TRANSACTION</a></li>
-<li><a href="ref_guide/sql_commands/SHOW.html">SHOW</a></li>
-<li><a href="ref_guide/sql_commands/START_TRANSACTION.html">START TRANSACTION</a></li>
-<li><a href="ref_guide/sql_commands/TRUNCATE.html">TRUNCATE</a></li>
-<li><a href="ref_guide/sql_commands/UPDATE.html">UPDATE</a></li>
-<li><a href="ref_guide/sql_commands/VACUUM.html">VACUUM</a></li>
-<li><a href="ref_guide/sql_commands/VALUES.html">VALUES</a></li>
-</ul>
-</li>
-<li><a href="ref_guide/SQL2008_support.html">SQL 2008 Optional Feature Compliance</a></li>
-<li><a href="ref_guide/env_var_ref.html">Greenplum Environment Variables</a></li>
-<li>
-<a href="ref_guide/system_catalogs/catalog_ref.html#topic1">System Catalog Reference</a><ul>
-<li><a href="ref_guide/system_catalogs/catalog_ref-tables.html#topic1">System Tables</a></li>
-<li><a href="ref_guide/system_catalogs/catalog_ref-views.html#topic1">System Views</a></li>
-<li>
-<a href="ref_guide/system_catalogs/catalog_ref-html.html#topic1">System Catalogs Definitions</a><ul>
-<li><a href="ref_guide/system_catalogs/gp_configuration_history.html">gp_configuration_history</a></li>
-<li><a href="ref_guide/system_catalogs/gp_db_interfaces.html">gp_db_interfaces</a></li>
-<li><a href="ref_guide/system_catalogs/gp_distributed_log.html">gp_distributed_log</a></li>
-<li><a href="ref_guide/system_catalogs/gp_distributed_xacts.html">gp_distributed_xacts</a></li>
-<li><a href="ref_guide/system_catalogs/gp_distribution_policy.html">gp_distribution_policy</a></li>
-<li><a href="ref_guide/system_catalogs/gpexpand_expansion_progress.html">gpexpand.expansion_progress</a></li>
-<li><a href="ref_guide/system_catalogs/gp_expansion_status.html">gpexpand.status</a></li>
-<li><a href="ref_guide/system_catalogs/gp_expansion_tables.html">gpexpand.status_detail</a></li>
-<li><a href="ref_guide/system_catalogs/gp_fastsequence.html">gp_fastsequence</a></li>
-<li><a href="ref_guide/system_catalogs/gp_fault_strategy.html">gp_fault_strategy</a></li>
-<li><a href="ref_guide/system_catalogs/gp_global_sequence.html">gp_global_sequence</a></li>
-<li><a href="ref_guide/system_catalogs/gp_id.html">gp_id</a></li>
-<li><a href="ref_guide/system_catalogs/gp_interfaces.html">gp_interfaces</a></li>
-<li><a href="ref_guide/system_catalogs/gp_persistent_database_node.html">gp_persistent_database_node</a></li>
-<li><a href="ref_guide/system_catalogs/gp_persistent_filespace_node.html">gp_persistent_filespace_node</a></li>
-<li><a href="ref_guide/system_catalogs/gp_persistent_relation_node.html">gp_persistent_relation_node</a></li>
-<li><a href="ref_guide/system_catalogs/gp_persistent_tablespace_node.html">gp_persistent_tablespace_node</a></li>
-<li><a href="ref_guide/system_catalogs/gp_pgdatabase.html">gp_pgdatabase</a></li>
-<li><a href="ref_guide/system_catalogs/gp_relation_node.html">gp_relation_node</a></li>
-<li><a href="ref_guide/system_catalogs/gp_resqueue_status.html">gp_resqueue_status</a></li>
-<li><a href="ref_guide/system_catalogs/gp_san_configuration.html">gp_san_configuration</a></li>
-<li><a href="ref_guide/system_catalogs/gp_segment_configuration.html">gp_segment_configuration</a></li>
-<li><a href="ref_guide/system_catalogs/gp_transaction_log.html">gp_transaction_log</a></li>
-<li><a href="ref_guide/system_catalogs/gp_version_at_initdb.html">gp_version_at_initdb</a></li>
-<li><a href="ref_guide/system_catalogs/pg_aggregate.html">pg_aggregate</a></li>
-<li><a href="ref_guide/system_catalogs/pg_am.html">pg_am</a></li>
-<li><a href="ref_guide/system_catalogs/pg_amop.html">pg_amop</a></li>
-<li><a href="ref_guide/system_catalogs/pg_amproc.html">pg_amproc</a></li>
-<li><a href="ref_guide/system_catalogs/pg_appendonly.html">pg_appendonly</a></li>
-<li><a href="ref_guide/system_catalogs/pg_attrdef.html">pg_attrdef</a></li>
-<li><a href="ref_guide/system_catalogs/pg_attribute.html">pg_attribute</a></li>
-<li><a href="ref_guide/system_catalogs/pg_attribute_encoding.html">pg_attribute_encoding</a></li>
-<li><a href="ref_guide/system_catalogs/pg_auth_members.html">pg_auth_members</a></li>
-<li><a href="ref_guide/system_catalogs/pg_authid.html">pg_authid</a></li>
-<li><a href="ref_guide/system_catalogs/pg_cast.html">pg_cast</a></li>
-<li><a href="ref_guide/system_catalogs/pg_class.html">pg_class</a></li>
-<li><a href="ref_guide/system_catalogs/pg_compression.html">pg_compression</a></li>
-<li><a href="ref_guide/system_catalogs/pg_constraint.html">pg_constraint</a></li>
-<li><a href="ref_guide/system_catalogs/pg_conversion.html">pg_conversion</a></li>
-<li><a href="ref_guide/system_catalogs/pg_database.html">pg_database</a></li>
-<li><a href="ref_guide/system_catalogs/pg_depend.html">pg_depend</a></li>
-<li><a href="ref_guide/system_catalogs/pg_description.html">pg_description</a></li>
-<li><a href="ref_guide/system_catalogs/pg_enum.html">pg_enum</a></li>
-<li><a href="ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a></li>
-<li><a href="ref_guide/system_catalogs/pg_filespace.html">pg_filespace</a></li>
-<li><a href="ref_guide/system_catalogs/pg_filespace_entry.html">pg_filespace_entry</a></li>
-<li><a href="ref_guide/system_catalogs/pg_index.html">pg_index</a></li>
-<li><a href="ref_guide/system_catalogs/pg_inherits.html">pg_inherits</a></li>
-<li><a href="ref_guide/system_catalogs/pg_language.html">pg_language</a></li>
-<li><a href="ref_guide/system_catalogs/pg_largeobject.html">pg_largeobject</a></li>
-<li><a href="ref_guide/system_catalogs/pg_listener.html">pg_listener</a></li>
-<li><a href="ref_guide/system_catalogs/pg_locks.html">pg_locks</a></li>
-<li><a href="ref_guide/system_catalogs/pg_namespace.html">pg_namespace</a></li>
-<li><a href="ref_guide/system_catalogs/pg_opclass.html">pg_opclass</a></li>
-<li><a href="ref_guide/system_catalogs/pg_operator.html">pg_operator</a></li>
-<li><a href="ref_guide/system_catalogs/pg_partition.html">pg_partition</a></li>
-<li><a href="ref_guide/system_catalogs/pg_partition_columns.html">pg_partition_columns</a></li>
-<li><a href="ref_guide/system_catalogs/pg_partition_encoding.html">pg_partition_encoding</a></li>
-<li><a href="ref_guide/system_catalogs/pg_partition_rule.html">pg_partition_rule</a></li>
-<li><a href="ref_guide/system_catalogs/pg_partition_templates.html">pg_partition_templates</a></li>
-<li><a href="ref_guide/system_catalogs/pg_partitions.html">pg_partitions</a></li>
-<li><a href="ref_guide/system_catalogs/pg_pltemplate.html">pg_pltemplate</a></li>
-<li><a href="ref_guide/system_catalogs/pg_proc.html">pg_proc</a></li>
-<li><a href="ref_guide/system_catalogs/pg_resourcetype.html">pg_resourcetype</a></li>
-<li><a href="ref_guide/system_catalogs/pg_resqueue.html">pg_resqueue</a></li>
-<li><a href="ref_guide/system_catalogs/pg_resqueue_attributes.html">pg_resqueue_attributes</a></li>
-<li><a href="ref_guide/system_catalogs/pg_resqueuecapability.html">pg_resqueuecapability</a></li>
-<li><a href="ref_guide/system_catalogs/pg_rewrite.html">pg_rewrite</a></li>
-<li><a href="ref_guide/system_catalogs/pg_roles.html">pg_roles</a></li>
-<li><a href="ref_guide/system_catalogs/pg_shdepend.html">pg_shdepend</a></li>
-<li><a href="ref_guide/system_catalogs/pg_shdescription.html">pg_shdescription</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stat_activity.html">pg_stat_activity</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stat_last_operation.html">pg_stat_last_operation</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stat_last_shoperation.html">pg_stat_last_shoperation</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stat_operations.html">pg_stat_operations</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stat_partition_operations.html">pg_stat_partition_operations</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stat_replication.html">pg_stat_replication</a></li>
-<li><a href="ref_guide/system_catalogs/pg_statistic.html">pg_statistic</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stats_resqueue.html">pg_stat_resqueues</a></li>
-<li><a href="ref_guide/system_catalogs/pg_tablespace.html">pg_tablespace</a></li>
-<li><a href="ref_guide/system_catalogs/pg_trigger.html">pg_trigger</a></li>
-<li><a href="ref_guide/system_catalogs/pg_type.html">pg_type</a></li>
-<li><a href="ref_guide/system_catalogs/pg_type_encoding.html">pg_type_encoding</a></li>
-<li><a href="ref_guide/system_catalogs/pg_user_mapping.html">pg_user_mapping</a></li>
-<li><a href="ref_guide/system_catalogs/pg_window.html">pg_window</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="ref_guide/gp_toolkit.html">The gp_toolkit Administrative Schema</a><ul>
-<li><a href="ref_guide/gp_toolkit.html#topic2">Checking for Tables that Need Routine Maintenance</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic5">Checking for Locks</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic8">Checking Append-Optimized Tables</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic16">Viewing Greenplum Database Server Log Files</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic21">Checking Server Configuration Files</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic24">Checking for Failed Segments</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic26">Checking Resource Queue Activity and Status</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic32">Checking Query Disk Spill Space Usage</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic36">Viewing Users and Groups (Roles)</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic38">Checking Database Object Sizes and Disk Space</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic49">Checking for Uneven Data Distribution</a></li>
-</ul>
-</li>
-<li><a href="ref_guide/data_types.html">Greenplum Database Data Types</a></li>
-<li><a href="ref_guide/character_sets.html">Character Set Support</a></li>
-<li>
-<a href="ref_guide/config_params/guc_config.html">Server Configuration Parameters</a><ul>
-<li><a href="ref_guide/config_params/guc_config.html#topic_vsn_22l_z4">Parameter Types and Values</a></li>
-<li><a href="ref_guide/config_params/guc_config.html#topic_cyz_p2l_z4">Setting Parameters</a></li>
-<li><a href="ref_guide/config_params/guc_category-list.html">Parameter Categories</a></li>
-<li>
-<a href="ref_guide/config_params/guc-list.html">Configuration Parameters</a><ul>
-<li><a href="ref_guide/config_params/guc-list.html#add_missing_from">add_missing_from</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#application_name">application_name</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#array_nulls">array_nulls</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#authentication_timeout">authentication_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#backslash_quote">backslash_quote</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#block_size">block_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#bonjour_name">bonjour_name</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#check_function_bodies">check_function_bodies</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#client_encoding">client_encoding</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#client_min_messages">client_min_messages</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#cpu_index_tuple_cost">cpu_index_tuple_cost</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#cpu_operator_cost">cpu_operator_cost</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#cpu_tuple_cost">cpu_tuple_cost</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#cursor_tuple_fraction">cursor_tuple_fraction</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#custom_variable_classes">custom_variable_classes</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#DateStyle">DateStyle</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#db_user_namespace">db_user_namespace</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#deadlock_timeout">deadlock_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_assertions">debug_assertions</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_pretty_print">debug_pretty_print</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_print_parse">debug_print_parse</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_print_plan">debug_print_plan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_print_prelim_plan">debug_print_prelim_plan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_print_rewritten">debug_print_rewritten</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_print_slice_table">debug_print_slice_table</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#default_statistics_target">default_statistics_target</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#default_tablespace">default_tablespace</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#default_transaction_isolation">default_transaction_isolation</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#default_transaction_read_only">default_transaction_read_only</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#dynamic_library_path">dynamic_library_path</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#effective_cache_size">effective_cache_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_bitmapscan">enable_bitmapscan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_groupagg">enable_groupagg</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_hashagg">enable_hashagg</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_hashjoin">enable_hashjoin</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_indexscan">enable_indexscan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_mergejoin">enable_mergejoin</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_nestloop">enable_nestloop</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_seqscan">enable_seqscan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_sort">enable_sort</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_tidscan">enable_tidscan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#escape_string_warning">escape_string_warning</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#explain_pretty_print">explain_pretty_print</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#extra_float_digits">extra_float_digits</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#filerep_mirrorvalidation_during_resync">filerep_mirrorvalidation_during_resync</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#from_collapse_limit">from_collapse_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_adjust_selectivity_for_outerjoins">gp_adjust_selectivity_for_outerjoins</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_analyze_relative_error">gp_analyze_relative_error</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_appendonly_compaction">gp_appendonly_compaction</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_appendonly_compaction_threshold">gp_appendonly_compaction_threshold</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_autostats_mode">gp_autostats_mode</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_autostats_mode_in_functions">gp_autostats_mode_in_functions</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_autostats_on_change_threshold">gp_autostats_on_change_threshold</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_backup_directIO">gp_backup_directIO</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_backup_directIO_read_chunk_mb">gp_backup_directIO_read_chunk_mb</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_cached_segworkers_threshold">gp_cached_segworkers_threshold</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_command_count">gp_command_count</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_connectemc_mode">gp_connectemc_mode</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_connection_send_timeout">gp_connection_send_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_connections_per_thread">gp_connections_per_thread</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_content">gp_content</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_create_table_random_default_distribution">gp_create_table_random_default_distribution</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_dbid">gp_dbid</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_debug_linger">gp_debug_linger</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_default_storage_options">gp_default_storage_options</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_dynamic_partition_pruning">gp_dynamic_partition_pruning</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_email_from">gp_email_from</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_email_smtp_password">gp_email_smtp_password</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_email_smtp_server">gp_email_smtp_server</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_email_smtp_userid">gp_email_smtp_userid</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_email_to">gp_email_to</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_adaptive_nestloop">gp_enable_adaptive_nestloop</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_agg_distinct">gp_enable_agg_distinct</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_agg_distinct_pruning">gp_enable_agg_distinct_pruning</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_direct_dispatch">gp_enable_direct_dispatch</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_exchange_default_partition">gp_enable_exchange_default_partition</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_fallback_plan">gp_enable_fallback_plan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_fast_sri">gp_enable_fast_sri</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_gpperfmon">gp_enable_gpperfmon</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_groupext_distinct_gather">gp_enable_groupext_distinct_gather</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_groupext_distinct_pruning">gp_enable_groupext_distinct_pruning</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_multiphase_agg">gp_enable_multiphase_agg</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_predicate_propagation">gp_enable_predicate_propagation</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_preunique">gp_enable_preunique</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_relsize_collection">gp_enable_relsize_collection</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_sequential_window_plans">gp_enable_sequential_window_plans</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_sort_distinct">gp_enable_sort_distinct</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_sort_limit">gp_enable_sort_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_external_enable_exec">gp_external_enable_exec</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_external_grant_privileges">ref_guide/config_params/guc-list.xml#gp_external_grant_privileges</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_external_max_segs">gp_external_max_segs</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_filerep_tcp_keepalives_count">gp_filerep_tcp_keepalives_count</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_filerep_tcp_keepalives_idle">gp_filerep_tcp_keepalives_idle</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_filerep_tcp_keepalives_interval">gp_filerep_tcp_keepalives_interval</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_fts_probe_interval">gp_fts_probe_interval</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_fts_probe_retries">gp_fts_probe_retries</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_fts_probe_threadcount">gp_fts_probe_threadcount</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_fts_probe_timeout">gp_fts_probe_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_gpperfmon_send_interval">gp_gpperfmon_send_interval</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gpperfmon_log_alert_level">gpperfmon_log_alert_level</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_hadoop_home">gp_hadoop_home</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_hadoop_target_version">gp_hadoop_target_version</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_hashjoin_tuples_per_bucket">gp_hashjoin_tuples_per_bucket</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_idf_deduplicate">gp_idf_deduplicate</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#topic_lvm_ttc_3p">gp_initial_bad_row_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_interconnect_fc_method">gp_interconnect_fc_method</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_interconnect_hash_multiplier">gp_interconnect_hash_multiplier</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_interconnect_queue_depth">gp_interconnect_queue_depth</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_interconnect_setup_timeout">gp_interconnect_setup_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_interconnect_snd_queue_depth">gp_interconnect_snd_queue_depth</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_interconnect_type">gp_interconnect_type</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_log_format">gp_log_format</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_log_fts">gp_log_fts</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_csv_line_length">gp_max_csv_line_length</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_databases">gp_max_databases</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_filespaces">gp_max_filespaces</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_local_distributed_cache">gp_max_local_distributed_cache</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_packet_size">gp_max_packet_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_plan_size">gp_max_plan_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_tablespaces">gp_max_tablespaces</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_motion_cost_per_row">gp_motion_cost_per_row</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_num_contents_in_cluster">gp_num_contents_in_cluster</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_reject_percent_threshold">gp_reject_percent_threshold</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_reraise_signal">gp_reraise_signal</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_resqueue_memory_policy">gp_resqueue_memory_policy</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_resqueue_priority">gp_resqueue_priority</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_resqueue_priority_cpucores_per_segment">gp_resqueue_priority_cpucores_per_segment</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_resqueue_priority_sweeper_interval">gp_resqueue_priority_sweeper_interval</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_role">gp_role</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_safefswritesize">gp_safefswritesize</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_segment_connect_timeout">gp_segment_connect_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_segments_for_planner">gp_segments_for_planner</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_server_version">gp_server_version</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_server_version_num">gp_server_version_num</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_session_id">gp_session_id</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_set_proc_affinity">gp_set_proc_affinity</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_set_read_only">gp_set_read_only</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_snmp_community">gp_snmp_community</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_snmp_monitor_address">gp_snmp_monitor_address</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_snmp_use_inform_or_trap">gp_snmp_use_inform_or_trap</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_statistics_pullup_from_child_partition">gp_statistics_pullup_from_child_partition</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_statistics_use_fkeys">gp_statistics_use_fkeys</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_vmem_idle_resource_timeout">gp_vmem_idle_resource_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_vmem_protect_limit">gp_vmem_protect_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_vmem_protect_segworker_cache_limit">gp_vmem_protect_segworker_cache_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_workfile_checksumming">gp_workfile_checksumming</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_workfile_compress_algorithm">gp_workfile_compress_algorithm</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_workfile_limit_files_per_query">gp_workfile_limit_files_per_query</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_workfile_limit_per_query">gp_workfile_limit_per_query</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_workfile_limit_per_segment">gp_workfile_limit_per_segment</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gpperfmon_port">gpperfmon_port</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#integer_datetimes">integer_datetimes</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#IntervalStyle">IntervalStyle</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#join_collapse_limit">join_collapse_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#keep_wal_segments">keep_wal_segments</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#krb_caseins_users">krb_caseins_users</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#krb_server_keyfile">krb_server_keyfile</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#krb_srvname">krb_srvname</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#lc_collate">lc_collate</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#lc_ctype">lc_ctype</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#lc_messages">lc_messages</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#lc_monetary">lc_monetary</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#lc_numeric">lc_numeric</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#lc_time">lc_time</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#listen_addresses">listen_addresses</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#local_preload_libraries">local_preload_libraries</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_autostats">log_autostats</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_connections">log_connections</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_disconnections">log_disconnections</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_dispatch_stats">log_dispatch_stats</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_duration">log_duration</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_error_verbosity">log_error_verbosity</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_executor_stats">log_executor_stats</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_hostname">log_hostname</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_min_duration_statement">log_min_duration_statement</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_min_error_statement">log_min_error_statement</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_min_messages">log_min_messages</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_parser_stats">log_parser_stats</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_planner_stats">log_planner_stats</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_rotation_age">log_rotation_age</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_rotation_size">log_rotation_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_statement">log_statement</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_statement_stats">log_statement_stats</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_timezone">log_timezone</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_truncate_on_rotation">log_truncate_on_rotation</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_appendonly_tables">max_appendonly_tables</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_connections">max_connections</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_files_per_process">max_files_per_process</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_fsm_pages">max_fsm_pages</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_fsm_relations">max_fsm_relations</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_function_args">max_function_args</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_identifier_length">max_identifier_length</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_index_keys">max_index_keys</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_locks_per_transaction">max_locks_per_transaction</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_prepared_transactions">max_prepared_transactions</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_resource_portals_per_transaction">max_resource_portals_per_transaction</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_resource_queues">max_resource_queues</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_stack_depth">max_stack_depth</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_statement_mem">max_statement_mem</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer">optimizer</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_array_expansion_threshold">optimizer_array_expansion_threshold</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_analyze_root_partition">optimizer_analyze_root_partition</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_control">optimizer_control</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_enable_master_only_queries">optimizer_enable_master_only_queries</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_join_order_threshold">optimizer_join_order_threshold</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_minidump">optimizer_minidump</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_parallel_union">optimizer_parallel_union</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_sort_factor">optimizer_sort_factor</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#password_encryption">password_encryption</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#password_hash_algorithm">password_hash_algorithm</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pgcrypto.fips">pgcrypto.fips</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pgstat_track_activity_query_size">pgstat_track_activity_query_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pljava_classpath">pljava_classpath</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pljava_classpath_insecure">pljava_classpath_insecure</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pljava_statement_cache_size">pljava_statement_cache_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pljava_release_lingering_savepoints">pljava_release_lingering_savepoints</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pljava_vmoptions">pljava_vmoptions</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#port">port</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#random_page_cost">random_page_cost</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#readable_external_table_timeout">readable_external_table_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#repl_catchup_within_range">repl_catchup_within_range</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#replication_timeout">replication_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#regex_flavor">regex_flavor</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#resource_cleanup_gangs_on_wait">resource_cleanup_gangs_on_wait</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#resource_select_only">resource_select_only</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#runaway_detector_activation_percent">runaway_detector_activation_percent</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#search_path">search_path</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#seq_page_cost">seq_page_cost</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#server_encoding">server_encoding</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#server_version">server_version</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#server_version_num">server_version_num</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#shared_buffers">shared_buffers</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#shared_preload_libraries">shared_preload_libraries</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#ssl">ssl</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#ssl_ciphers">ssl_ciphers</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#standard_conforming_strings">standard_conforming_strings</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#statement_mem">statement_mem</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#statement_timeout">statement_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#stats_queue_level">stats_queue_level</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#superuser_reserved_connections">superuser_reserved_connections</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#tcp_keepalives_count">tcp_keepalives_count</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#tcp_keepalives_idle">tcp_keepalives_idle</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#tcp_keepalives_interval">tcp_keepalives_interval</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#temp_buffers">temp_buffers</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#TimeZone">TimeZone</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#timezone_abbreviations">timezone_abbreviations</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#track_activities">track_activities</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#track_counts">track_counts</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#transaction_isolation">transaction_isolation</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#transaction_read_only">transaction_read_only</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#transform_null_equals">transform_null_equals</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#unix_socket_directory">unix_socket_directory</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#unix_socket_group">unix_socket_group</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#unix_socket_permissions">unix_socket_permissions</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#update_process_title">update_process_title</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vacuum_cost_delay">vacuum_cost_delay</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vacuum_cost_limit">vacuum_cost_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vacuum_cost_page_dirty">vacuum_cost_page_dirty</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vacuum_cost_page_hit">vacuum_cost_page_hit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vacuum_cost_page_miss">vacuum_cost_page_miss</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vacuum_freeze_min_age">vacuum_freeze_min_age</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#validate_previous_free_tid">validate_previous_free_tid</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vmem_process_interrupt">vmem_process_interrupt</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#wal_receiver_status_interval">wal_receiver_status_interval</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#writable_external_table_bufsize">writable_external_table_bufsize</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#xid_stop_limit">xid_stop_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#xid_warn_limit">xid_warn_limit</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="ref_guide/function-summary.html">Summary of Built-in Functions</a></li>
-<li><a href="ref_guide/yaml_spec.html">Greenplum MapReduce Specification</a></li>
-<li><a href="ref_guide/extensions/pl_sql.html">Greenplum PL/pgSQL Procedural Language</a></li>
-<li><a href="ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a></li>
-<li><a href="ref_guide/extensions/pl_r.html">Greenplum PL/R Language Extension</a></li>
-<li><a href="ref_guide/extensions/pl_python.html">Greenplum PL/Python Language Extension</a></li>
-<li><a href="ref_guide/extensions/pl_java.html">Greenplum PL/Java Language Extension</a></li>
-<li><a href="ref_guide/extensions/madlib.html">Greenplum MADlib Extension for Analytics</a></li>
-<li><a href="ref_guide/extensions/fuzzystrmatch.html">Greenplum Fuzzy String Match Extension</a></li>
-<li><a href="ref_guide/feature_summary.html">Summary of Greenplum Features</a></li>
-</ul>
-</li>
-<li>
-<a href="client_tool_guides/client-docs-unix.html">UNIX Client Documentation</a><ul>
-<li>
-<a href="client_tool_guides/client_tools_unix.html">Client Tools for UNIX</a><ul>
-<li><a href="client_tool_guides/client/unix/unix_client_install.html">Installing the Greenplum Client Tools</a></li>
-<li>
-<a href="client_tool_guides/client/unix/unix_client_tool_ref.html">Client Tools Reference</a><ul>
-<li><a href="client_tool_guides/client/unix/gpmapreduce.html">gpmapreduce</a></li>
-<li><a href="client_tool_guides/client/unix/psql.html">psql</a></li>
-</ul>
-</li>
-<li><a href="client_tool_guides/common/client_sql_ref.html">SQL Syntax Summary</a></li>
-</ul>
-</li>
-<li>
-<a href="client_tool_guides/load_tools_unix.html">Load Tools for UNIX</a><ul>
-<li><a href="client_tool_guides/load/unix/unix_load_install.html">Installing the Greenplum Load Tools</a></li>
-<li>
-<a href="client_tool_guides/load/unix/unix_load_tool_ref.html">Load Tools Reference</a><ul>
-<li><a href="client_tool_guides/load/unix/gpfdist.html">gpfdist</a></li>
-<li><a href="client_tool_guides/load/unix/gpload.html">gpload</a></li>
-</ul>
-</li>
-<li><a href="client_tool_guides/load/unix/load_sql_ref.html">SQL Syntax Summary</a></li>
-</ul>
-</li>
-<li>
-<a href="client_tool_guides/connectivity_tools_unix.html">Connectivity Tools for UNIX</a><ul><li><a href="client_tool_guides/drivers/unix/unix_connect.html">Greenplum Database 4.3 Connectivity Tools for UNIX</a></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="client_tool_guides/client-docs-win.html">Windows Client Documentation</a><ul>
-<li>
-<a href="client_tool_guides/client_tools_windows.html">Client Tools for Windows</a><ul>
-<li><a href="client_tool_guides/client/windows/win_client_install.html">Installing the Greenplum Client Tools</a></li>
-<li><a href="client_tool_guides/client/windows/win_client_run.html">Running the Greenplum Client Tools</a></li>
-<li>
-<a href="client_tool_guides/client/windows/win_client_tool_ref.html">Client Tools Reference</a><ul><li><a href="client_tool_guides/client/windows/psqlexe.html">psql.exe</a></li></ul>
-</li>
-<li><a href="client_tool_guides/common/client_sql_ref.html">SQL Syntax Summary</a></li>
-</ul>
-</li>
-<li>
-<a href="client_tool_guides/load_tools_windows.html">Load Tools for Windows</a><ul>
-<li><a href="client_tool_guides/load/windows/win_load_install.html">Installing Greenplum Loader</a></li>
-<li><a href="client_tool_guides/load/windows/win_load_run.html">Running Greenplum Loader</a></li>
-<li>
-<a href="client_tool_guides/load/windows/win_load_tool_ref.html">Loader Program Reference</a><ul>
-<li><a href="client_tool_guides/load/windows/gploadpy.html">gpload.py</a></li>
-<li><a href="client_tool_guides/load/windows/gpfdistexe.html">gpfdist.exe</a></li>
-</ul>
-</li>
-<li><a href="client_tool_guides/load/windows/load_sql_ref.html">SQL Syntax Summary</a></li>
-</ul>
-</li>
-<li>
-<a href="client_tool_guides/connectivity_tools_windows.html">Connectivity Tools for Windows</a><ul><li><a href="client_tool_guides/drivers/windows/win_connect.html">Greenplum Database 4.3 Connectivity Tools for Windows</a></li></ul>
-</li>
-</ul>
-</li>
-</ul>
+        
+
+  <h1 class="title topictitle1">Oracle Compatibility Functions</h1>
+
+  <div class="body">
+    <p class="p">This reference describes the Oracle Compatibility SQL functions in Greenplum Database. These
+      functions target PostgreSQL.</p>
+
+  </div>
+
+  <div class="related-links">
+<div class="familylinks">
+<div class="parentlink">
+<strong>Parent topic:</strong> <a class="link" href="../utility_guide/utility_guide.html" title="Reference information for command-line utilities, client programs, and Oracle compatibility functions.">Greenplum Database Utility Guide</a>
+</div>
+</div>
+</div>
+<div class="topic nested1" xml:lang="en" lang="en" id="topic2">
+    <h2 class="title topictitle2">Installing Oracle Compatibility Functions</h2>
+
+    <div class="body">
+      <p class="p">Before using any Oracle Compatibility Functions, run the installation script <samp class="ph codeph">$GPHOME/share/postgresql/contrib/orafunc.sql</samp> once
+        for each database. For example, to install the functions in database <samp class="ph codeph">testdb</samp>, use the following command:</p>
+
+      <pre class="pre codeblock">$ psql -d testdb -f $GPHOME/share/postgresql/contrib/orafunc.sql</pre>
+
+      <p class="p">To uninstall Oracle Compatibility Functions, run the <samp class="ph codeph">uinstall_orafunc.sql</samp> script:</p>
+
+      <div class="p">
+        <pre class="pre codeblock">$GPHOME/share/postgresql/contrib/uninstall_orafunc.sql</pre>
+
+      </div>
+
+      <p class="p">The following functions are available by default and do not require running the Oracle
+        Compatibility installer: </p>
+
+      <ul class="ul">
+        <li class="li" id="topic2__me155309"><samp class="ph codeph"><a class="xref" href="#topic28">sinh</a></samp></li>
+
+        <li class="li" id="topic2__me155326"><samp class="ph codeph"><a class="xref" href="#topic29">tanh</a></samp></li>
+
+        <li class="li" id="topic2__me155333"><samp class="ph codeph"><a class="xref" href="#topic8">cosh</a></samp></li>
+
+        <li class="li" id="topic2__me155319"><samp class="ph codeph"><a class="xref" href="#topic9">decode</a></samp></li>
+
+      </ul>
+
+      <div class="note note">
+<span class="notetitle">Note:</span> The Oracle Compatibility Functions reside in the
+          <samp class="ph codeph">oracompat</samp> schema. To access them, prefix
+        the schema name (<samp class="ph codeph">oracompat</samp>) or alter the
+        database search path to include the schema name. For
+          example:<pre class="pre codeblock">ALTER DATABASE <var class="keyword varname">db_name</var> SET <var class="keyword varname">search_path</var> = $<var class="keyword varname">user</var>, public, oracompat; </pre>
+<p class="p">If
+          you alter the database search path, you must restart the database.</p>
+</div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic3">
+    <h2 class="title topictitle2">Oracle and Greenplum Implementation Differences</h2>
+
+    <div class="body">
+      <p class="p">There are some differences in the implementation of these compatibility functions in the
+        Greenplum Database from the Oracle implementation. If you use validation scripts, the output
+        may not be exactly the same as in Oracle. Some of the differences are as follows:</p>
+
+      <ul class="ul">
+        <li class="li" id="topic3__me144138">Oracle performs a decimal round off, Greenplum
+          Database does not:<ul class="ul" id="topic3__ul_yt5_bz1_1p">
+            <li class="li">2.00 becomes 2 in Oracle.</li>
+
+            <li class="li">2.0.0 remains 2.00 in Greenplum Database.</li>
+
+          </ul>
+</li>
+
+        <li class="li" id="topic3__me144139">The provided Oracle Compatibility functions handle
+          implicit type conversions differently. For example, using the <samp class="ph codeph">decode</samp>
+            function:<pre class="pre codeblock">decode(<var class="keyword varname">expression</var>, <var class="keyword varname">value</var>, <var class="keyword varname">return</var> [,<var class="keyword varname">value</var>, <var class="keyword varname">return</var>]...
+            [, default])</pre>
+<p class="p">Oracle
+            automatically converts <var class="keyword varname">expression</var> and each <var class="keyword varname">value</var>
+            to the datatype of the first <var class="keyword varname">value</var> before comparing. Oracle
+            automatically converts <var class="keyword varname">return</var> to the same datatype as the first
+            result. </p>
+<p class="p">The Greenplum implementation restricts <var class="keyword varname">return</var> and
+              <samp class="ph codeph">default</samp> to be of the same data type.
+            The <var class="keyword varname">expression</var> and <var class="keyword varname">value</var> can be different types if
+            the data type of <var class="keyword varname">value</var> can be converted into the data type of the
+              <var class="keyword varname">expression</var>. This is done implicitly. Otherwise, <samp class="ph codeph">decode</samp> fails with an <samp class="ph codeph">invalid input syntax</samp> error. For
+          example:</p>
+<pre class="pre codeblock">SELECT decode('M',true,false);
+CASE
+------
+ f
+(1 row)
+SELECT decode(1,'M',true,false);
+ERROR: Invalid input syntax for integer:<em class="ph i">"M" 
+</em>LINE 1: SELECT decode(1,'M',true,false);</pre>
+</li>
+
+        <li class="li" id="topic3__me144144">Numbers in <samp class="ph codeph">bigint</samp> format are displayed in scientific notation in Oracle, but not in
+          Greenplum Database:<ul class="ul" id="topic3__ul_cld_kz1_1p">
+            <li class="li">9223372036854775 displays as 9.2234E+15 in Oracle.</li>
+
+            <li class="li">9223372036854775 remains 9223372036854775 in Greenplum Database. </li>
+
+          </ul>
+</li>
+
+        <li class="li" id="topic3__me144146">The default date and timestamp format in Oracle is
+          different than the default format in Greenplum Database. If the following code is
+            executed:<pre class="pre codeblock">CREATE TABLE TEST(date1 date, time1 timestamp, time2 
+                  timestamp with timezone);
+INSERT INTO TEST VALUES ('2001-11-11','2001-12-13 
+                 01:51:15','2001-12-13 01:51:15 -08:00');
+SELECT DECODE(date1, '2001-11-11', '2001-01-01') FROM TEST;</pre>
+<p class="p">Greenplum
+            Database returns the row, but Oracle does not return any rows.</p>
+<div class="note note">
+<span class="notetitle">Note:</span> The correct
+            syntax in Oracle to return the row
+            is:<pre class="pre codeblock">SELECT DECODE(to_char(date1, 'YYYY-MM-DD'), '2001-11-11', 
+              '2001-01-01') FROM TEST</pre>
+</div>
+</li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic4">
+    <h2 class="title topictitle2">Oracle Compatibility Functions Reference</h2>
+
+    <div class="body">
+      <p class="p">The following are the Oracle Compatibility Functions.</p>
+
+      <table cellpadding="4" cellspacing="0" summary="" id="topic4__me155958" border="1" class="simpletable">
+<tr class="strow">
+          <td valign="top" class="stentry">
+            <p class="p"><a class="xref" href="#topic5">add_months</a></p>
+
+            <p class="p"><a class="xref" href="#topic6">bitand</a></p>
+
+            <p class="p"><a class="xref" href="#topic7">concat</a></p>
+
+            <p class="p"><a class="xref" href="#topic8">cosh</a></p>
+
+            <p class="p"><a class="xref" href="#topic9">decode</a></p>
+
+            <p class="p"><a class="xref" href="#topic12">dump</a></p>
+
+            <p class="p"><a class="xref" href="#topic13">instr</a></p>
+
+            <p class="p"><a class="xref" href="#topic14">last_day</a></p>
+
+            <p class="p"><a class="xref" href="#topic15">listagg</a></p>
+
+            <p class="p"><a class="xref" href="#topic16">listagg (2)</a></p>
+
+            <p class="p"><a class="xref" href="#topic17">lnnvl</a></p>
+
+            <p class="p"><a class="xref" href="#topic18">months_between</a></p>
+
+          </td>
+
+          <td valign="top" class="stentry">
+            <p class="p"><a class="xref" href="#topic19">nanvl</a></p>
+
+            <p class="p"><a class="xref" href="#topic20">next_day</a></p>
+
+            <p class="p"><a class="xref" href="#topic21">next_day (2)</a></p>
+
+            <p class="p"><a class="xref" href="#topic22">nlssort</a></p>
+
+            <p class="p"><a class="xref" href="#topic23">nvl</a></p>
+
+            <p class="p"><a class="xref" href="#topic24">nvl2</a></p>
+
+            <p class="p"><a class="xref" href="#topic25">oracle.substr</a></p>
+
+            <p class="p"><a class="xref" href="#topic26">reverse</a></p>
+
+            <p class="p"><a class="xref" href="#topic27">round</a></p>
+
+            <p class="p"><a class="xref" href="#topic28">sinh</a></p>
+
+            <p class="p"><a class="xref" href="#topic29">tanh</a></p>
+
+            <p class="p"><a class="xref" href="#topic30">trunc</a></p>
+
+          </td>
+
+        </tr>
+</table>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic5">
+    <h2 class="title topictitle2">add_months</h2>
+
+    <div class="body">
+      <p class="p">Oracle-compliant function to add a given number of months to a given date.</p>
+
+      <div class="section" id="topic5__me146666">
+<h3 class="title sectiontitle">Synopsis</h3>
+        
+        <pre class="pre codeblock">add_months(<var class="keyword varname">date_expression</var>, <var class="keyword varname">months_to_add</var>)</pre>
+
+        
+        <p class="p">This Oracle-compatible function adds <var class="keyword varname">months_to_add</var> to a
+            <var class="keyword varname">date_expression</var> and returns a <samp class="ph codeph">DATE</samp>.</p>
+
+        <p class="p">If the <var class="keyword varname">date_expression</var> specifies the last day of the month, or if the
+          resulting month has fewer days than the <var class="keyword varname">date_expression</var>, then the
+          returned value is the last day of the resulting month. Otherwise, the returned value has
+          the same day of the month as the <var class="keyword varname">date_expression</var>.</p>
+
+        
+        <dl class="dl parml">
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">date_expression</var></dt>
+
+            <dd class="dd pd">The starting date. This can be any expression that can be implicitly converted to
+                <samp class="ph codeph">DATE</samp>.</dd>
+
+          
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">months_to_add</var></dt>
+
+            <dd class="dd pd">The number of months to add to the <var class="keyword varname">date_expression</var>. This is an
+              integer or any value that can be implicitly converted to an integer. This parameter
+              can be positive or negative.</dd>
+
+          
+        </dl>
+
+        
+        <pre class="pre codeblock">SELECT name, phone, nextcalldate FROM clientdb
+WHERE nextcalldate &gt;= add_months(CURRENT_DATE,6);</pre>
+
+        <p class="p">Returns <samp class="ph codeph">name</samp>, <samp class="ph codeph">phone</samp>, and <samp class="ph codeph">nextcalldate</samp> for all records where <samp class="ph codeph">nextcalldate</samp> is at least six months in the
+          future.</p>
+
+        
+        <p class="p">This command is compatible with Oracle syntax and is provided for convenience. </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic6">
+    <h2 class="title topictitle2">bitand</h2>
+
+    <div class="body">
+      <p class="p">Oracle-compliant function that computes a logical <samp class="ph codeph">AND</samp> operation on the bits of two non-negative values.</p>
+
+      <div class="section" id="topic6__me146711">
+<h3 class="title sectiontitle">Synopsis</h3>
+        
+        <pre class="pre codeblock">bitand(<var class="keyword varname">expr1</var>, <var class="keyword varname">expr2</var>)</pre>
+
+        
+        <p class="p">This Oracle-compatible function returns an integer representing an <samp class="ph codeph">AND</samp>
+          operation on the bits of two non-negative values (<var class="keyword varname">expr1</var> and
+            <var class="keyword varname">expr2</var>). 1 is returned when the values are the same. 0 is returned
+          when the values are different. Only significant bits are compared. For example, an <samp class="ph codeph">AND</samp> operation on the integers 5 (binary 101)
+          and 1 (binary 001 or 1) compares only the rightmost bit, and results in a value of 1
+          (binary 1).</p>
+
+        <p class="p">The types of <var class="keyword varname">expr1</var> and <var class="keyword varname">expr2</var> are <samp class="ph codeph">NUMBER</samp>, and the result is of type <samp class="ph codeph">NUMBER</samp>. If either argument is <samp class="ph codeph">NULL</samp>, the result is <samp class="ph codeph">NULL</samp>.</p>
+
+        <p class="p">The arguments must be in the range <samp class="ph codeph">-(2(n-1)) .. ((2(n-1))-1)</samp>. If an
+          argument is out of this range, the result is undefined.</p>
+
+        <div class="note note">
+<span class="notetitle">Note:</span> 
+          <ul class="ul" id="topic6__ul_sgq_jcm_44">
+            <li class="li" id="topic6__me146722">The current implementation of
+                <samp class="ph codeph">BITAND</samp> defines n = 128.</li>
+
+            <li class="li" id="topic6__me146723">PL/SQL supports an overload of
+                <samp class="ph codeph">BITAND</samp> for which the types of the inputs and of the result are all
+                <samp class="ph codeph">BINARY_INTEGER</samp> and for which n = 32.</li>
+
+          </ul>
+
+        </div>
+
+        
+        <dl class="dl parml">
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">expr1</var></dt>
+
+            <dd class="dd pd">A non-negative integer expression.</dd>
+
+          
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">expr2</var></dt>
+
+            <dd class="dd pd">A non-negative integer expression.</dd>
+
+          
+        </dl>
+
+        
+        <pre class="pre codeblock">SELECT bitand(<var class="keyword varname">expr1</var>, <var class="keyword varname">expr2</var>)
+FROM ClientDB;</pre>
+
+        
+        <p class="p">This command is compatible with Oracle syntax and is provided for convenience. </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic7">
+    <h2 class="title topictitle2">concat</h2>
+
+    <div class="body">
+      <p class="p">Oracle-compliant function to concatenate two strings together.</p>
+
+      <div class="section" id="topic7__me146874">
+<h3 class="title sectiontitle">Synopsis</h3>
+        
+        <pre class="pre codeblock">concat (<var class="keyword varname">string1</var>, <var class="keyword varname">string2</var>)</pre>
+
+        
+        <p class="p">This Oracle-compatible function concatenates two strings (<var class="keyword varname">string1</var> and
+            <var class="keyword varname">string2</var>) together.</p>
+
+        <p class="p">The string returned is in the same character set as <var class="keyword varname">string1</var>. Its
+          datatype depends on the datatypes of the arguments.</p>
+
+        <p class="p">In concatenations of two different datatypes, the datatype returned is the one that
+          results in a lossless conversion. Therefore, if one of the arguments is a <samp class="ph codeph">LOB</samp>, then the returned value is a <samp class="ph codeph">LOB</samp>. If one of the arguments is a national
+          datatype, then the returned value is a national datatype. For example:</p>
+
+        <pre class="pre codeblock">concat(CLOB, NCLOB) returns NCLOB
+concat(NCLOB, NCHAR) returns NCLOB
+concat(NCLOB, CHAR) returns NCLOB
+concat(NCHAR, CLOB) returns NCLOB</pre>
+
+        <p class="p">This function is equivalent to the concatenation operator (<samp class="ph codeph">||</samp>).</p>
+
+        
+        <dl class="dl parml">
+          
+            <dt class="dt pt dlterm">
+<var class="keyword varname">string1</var>/<var class="keyword varname">string2</var>
+</dt>
+
+            <dd class="dd pd">The two strings to concatenate together.</dd>
+
+            <dd class="dd pd">Both <var class="keyword varname">string1</var> and <var class="keyword varname">string2</var> can be any of the
+              datatypes <samp class="ph codeph">CHAR</samp>, <samp class="ph codeph">VARCHAR2</samp>, <samp class="ph codeph">NCHAR</samp>, <samp class="ph codeph">NVARCHAR2</samp>, <samp class="ph codeph">CLOB</samp>, or <samp class="ph codeph">NCLOB</samp>. </dd>
+
+          
+        </dl>
+
+        
+        <pre class="pre codeblock">SELECT concat(concat(last_name, '''s job category is '),
+     job_id)
+FROM employees </pre>
+
+        <p class="p">Returns <samp class="ph codeph">'Smith's job category is 4B'</samp></p>
+
+        
+        <p class="p">This command is compatible with Oracle syntax and is provided for convenience.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic8">
+    <h2 class="title topictitle2">cosh </h2>
+
+    <div class="body">
+      <p class="p">Oracle-compliant function to return the hyperbolic cosine of a given number.</p>
+
+      <div class="section" id="topic8__me146951">
+<h3 class="title sectiontitle">Synopsis</h3>
+        
+        <pre class="pre codeblock">cosh(<var class="keyword varname">float8</var>)</pre>
+
+        
+        <p class="p">This Oracle-compatible function returns the hyperbolic cosine of the floating 8 input
+          number (<var class="keyword varname">float8</var>).</p>
+
+        <div class="note note">
+<span class="notetitle">Note:</span> This function is available by default and can be
+          accessed without running the Oracle Compatibility installer.</div>
+
+        
+        <dl class="dl parml">
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">float8</var></dt>
+
+            <dd class="dd pd">The input number.</dd>
+
+          
+        </dl>
+
+        
+        <pre class="pre codeblock">SELECT cosh(0.2)
+FROM ClientDB;</pre>
+
+        <p class="p">Returns <samp class="ph codeph">'1.02006675561908'</samp>' (hyperbolic
+          cosine of 0.2)</p>
+
+        
+        <p class="p">This command is compatible with Oracle syntax and is provided for convenience. </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic9">
+    <h2 class="title topictitle2">decode</h2>
+
+    <div class="body">
+      <p class="p">Oracle-compliant function to transform a data value to a specified return value. This
+        function is a way to implement a set of <samp class="ph codeph">CASE</samp> statements.</p>
+
+      <div class="note note">
+<span class="notetitle">Note:</span> <samp class="ph codeph">decode</samp> is converted into a reserved word in Greenplum Database. If you want to
+        use the Postgres two-argument <samp class="ph codeph">decode</samp>
+        function that decodes binary strings previously encoded to ASCII-only representation, you
+        must invoke it by using the full schema-qualified syntax, <samp class="ph codeph">pg_catalog.decode()</samp>, or by enclosing the function
+        name in quotes <samp class="ph codeph">"decode" ()</samp>.</div>
+
+      <div class="note note">
+<span class="notetitle">Note:</span> Greenplum's implementation of this function transforms <samp class="ph codeph">decode</samp> into <samp class="ph codeph">case</samp>. <p class="p">This results in the following type of
+          output:</p>
+<pre class="pre codeblock">gptest=# select decode(a, 1, 'A', 2, 'B', 'C') from 
+decodetest;
+ case 
+------
+ C
+ A
+ C
+ B
+ C
+(5 rows)</pre>
+<p class="p">This
+          also means that if you deparse your view with <samp class="ph codeph">decode</samp>, you will see <samp class="ph codeph">case</samp>
+          expression instead.</p>
+</div>
+
+      <p class="p">You should use the <samp class="ph codeph">case</samp>
+        function instead of <samp class="ph codeph">decode</samp>.</p>
+
+      <div class="section" id="topic9__me154380">
+<h3 class="title sectiontitle">Synopsis</h3>
+        
+        <pre class="pre codeblock">decode(<var class="keyword varname">expression</var>, <var class="keyword varname">value</var>, <var class="keyword varname">return</var> [,<var class="keyword varname">value</var>, <var class="keyword varname">return</var>]...
+       [, default])</pre>
+
+        
+        <p class="p">The Oracle-compatible function decode searches for a value in an expression. If the value
+          is found, the function returns the specified value.</p>
+
+        <div class="note note">
+<span class="notetitle">Note:</span> This function is available by default and can be
+          accessed without running the Oracle Compatibility installer.</div>
+
+        
+        <dl class="dl parml">
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">expression</var></dt>
+
+            <dd class="dd pd">The expression to search.</dd>
+
+          
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">value</var></dt>
+
+            <dd class="dd pd">The value to find in the expression.</dd>
+
+          
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">return</var></dt>
+
+            <dd class="dd pd">What to return if expression matches value.</dd>
+
+          
+          
+            <dt class="dt pt dlterm">default</dt>
+
+            <dd class="dd pd">What to return if expression does not match any of the values.</dd>
+
+          
+        </dl>
+
+        <p class="p">Only one <samp class="ph codeph">expression</samp> is passed to the
+          function. Multiple <samp class="ph codeph">value</samp>/<samp class="ph codeph">return</samp> pairs can be passed. </p>
+
+        <p class="p">The <samp class="ph codeph">default</samp> parameter is optional. If
+            <samp class="ph codeph">default</samp> is not specified and if <samp class="ph codeph">expression</samp> does not match any of the passed
+            <samp class="ph codeph">value</samp> parameters, decode returns
+            <samp class="ph codeph">null</samp>. The Greenplum implementation
+          restricts <samp class="ph codeph">return</samp> and <samp class="ph codeph">default</samp> to be of the same data type. The
+            <samp class="ph codeph">expression</samp> and <samp class="ph codeph">value</samp> can be different types if the data type
+          of <samp class="ph codeph">value</samp> can be converted into the data
+          type of the <samp class="ph codeph">expression</samp>. This is done
+          implicitly. Otherwise, <samp class="ph codeph">decode</samp> fails with
+          an <samp class="ph codeph">invalid input syntax</samp> error.</p>
+
+        
+        <p class="p">In the following code, <samp class="ph codeph">decode</samp> searches
+          for a value for <samp class="ph codeph">company_id</samp> and returns a
+          specified value for that company. If <samp class="ph codeph">company_id</samp> not one of the listed values, the default value <samp class="ph codeph">Other</samp> is returned.</p>
+
+        <pre class="pre codeblock">SELECT decode(company_id, 1, 'EMC',
+                          2, 'Greenplum',
+                          'Other')
+FROM suppliers;</pre>
+
+        <p class="p">The following code using <samp class="ph codeph">CASE</samp> statements
+          to produce the same result as the example using <samp class="ph codeph">decode</samp>.</p>
+
+        <pre class="pre codeblock">SELECT CASE company_id
+WHEN IS NOT DISTINCT FROM 1 THEN 'EMC'
+WHEN IS NOT DISTINCT FROM 2 THEN 'Greenplum'
+ELSE 'Other'
+END
+FROM suppliers;</pre>
+
+        
+        <p class="p">To assign a range of values to a single return value, either pass an expression for each
+          value in the range, or pass an expression that evaluates identically for all values in the
+          range. For example, if a fiscal year begins on August 1, the quarters are shown in the
+          following table.</p>
+
+        
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" summary="" id="topic9__me144277" class="table" frame="border" border="1" rules="all">
+<caption><span class="tablecap">Table 1. Months and Quarters for Fiscal Year Beginning on August
+            1</span></caption>
+            
+            
+            
+            <thead class="thead" align="left">
+              <tr class="row">
+                <th class="entry" valign="top" width="126pt" id="d480114e1088">Range (Alpha)</th>
+
+                <th class="entry" valign="top" width="110pt" id="d480114e1091">Range (Numeric)</th>
+
+                <th class="entry" valign="top" width="126pt" id="d480114e1094">Quarter</th>
+
+              </tr>
+
+            </thead>
+
+            <tbody class="tbody">
+              <tr class="row">
+                <td class="entry" valign="top" width="126pt" headers="d480114e1088 ">August — October</td>
+
+                <td class="entry" valign="top" width="110pt" headers="d480114e1091 ">8 — 10</td>
+
+                <td class="entry" valign="top" width="126pt" headers="d480114e1094 ">Q1</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="126pt" headers="d480114e1088 ">November — January</td>
+
+                <td class="entry" valign="top" width="110pt" headers="d480114e1091 ">11 — 1</td>
+
+                <td class="entry" valign="top" width="126pt" headers="d480114e1094 ">Q2</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="126pt" headers="d480114e1088 ">February — April</td>
+
+                <td class="entry" valign="top" width="110pt" headers="d480114e1091 ">2 — 4</td>
+
+                <td class="entry" valign="top" width="126pt" headers="d480114e1094 ">Q3</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="126pt" headers="d480114e1088 ">May — July</td>
+
+                <td class="entry" valign="top" width="110pt" headers="d480114e1091 ">5 — 7</td>
+
+                <td class="entry" valign="top" width="126pt" headers="d480114e1094 ">Q4</td>
+
+              </tr>
+
+            </tbody>
+
+          </table>
+</div>
+
+        <div class="p">The table contains a numeric field <samp class="ph codeph">curr_month</samp> that holds the numeric value of a month, 1 – 12. There are two ways
+          to use <samp class="ph codeph">decode</samp> to get the quarter:<ul class="ul" id="topic9__ul_lrt_j4j_bp">
+            <li class="li">Method 1 - Include 12 values in the <samp class="ph codeph">decode</samp>
+              function:<pre class="pre codeblock">SELECT decode(curr_month, 1, 'Q2',
+                          2, 'Q3',
+                          3, 'Q3',
+                          4, 'Q3',
+                          5, 'Q4',
+                          6, 'Q4',
+                          7, 'Q4',
+                          8, 'Q1',
+                          9, 'Q1',
+                         10, 'Q1',
+                         11, 'Q2',
+                         12, 'Q2')
+FROM suppliers;</pre>
+</li>
+
+          </ul>
+<ul class="ul" id="topic9__ul_wbp_44j_bp">
+            <li class="li">Method 2 - Use an expression that defines a unique value to
+              decode:<pre class="pre codeblock">SELECT decode((1+MOD(curr_month+4,12)/3)::int, 1, 'Q1',
+                                               2, 'Q2',
+                                               3, 'Q3',
+                                               4, 'Q4',
+FROM suppliers;</pre>
+</li>
+
+          </ul>
+</div>
+
+        
+        <p class="p">This command is compatible with Oracle syntax and is provided for convenience. </p>
+
+        
+        <p class="p">PostgreSQL <samp class="ph codeph"><a class="xref" href="https://www.postgresql.org/docs/8.3/static/functions-binarystring.html" target="_blank">decode</a></samp> (not
+          compatible with Oracle)</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic12">
+    <h2 class="title topictitle2">dump</h2>
+
+    <div class="body">
+      <p class="p">Oracle-compliant function that returns a text value that includes the datatype code,the
+        length in bytes, and the internal representation of the expression.</p>
+
+      <div class="section" id="topic12__me152601">
+<h3 class="title sectiontitle">Synopsis</h3>
+        
+        <pre class="pre codeblock">dump(<var class="keyword varname">expression</var> [,<var class="keyword varname">integer</var>]) </pre>
+
+        
+        <p class="p">This Oracle-compatible function returns a text value that includes the datatype code, the
+          length in bytes, and the internal representation of the expression.</p>
+
+        
+        <dl class="dl parml">
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">expression</var></dt>
+
+            <dd class="dd pd">Any expression</dd>
+
+          
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">integer</var></dt>
+
+            <dd class="dd pd">The number of characters to return</dd>
+
+          
+        </dl>
+
+        
+        <pre class="pre codeblock">dump('Tech') returns 'Typ=96 Len=4: 84,101,99,104'
+
+dump ('tech') returns 'Typ-96 Len=4: 84,101,99,104'
+
+dump('Tech', 10) returns 'Typ=96 Len=4: 84,101,99,104'
+
+dump('Tech', 16) returns 'Typ=96 Len=4: 54,65,63,68'
+
+dump('Tech', 1016) returns 'Typ=96 Len=4 CharacterSet=US7ASCII:     54,65,63,68'
+
+dump('Tech', 1017) returns 'Typ=96 Len=4 CharacterSet=US7ASCII:     T,e,c,h'</pre>
+
+        
+        <p class="p">This command is compatible with Oracle syntax and is provided for convenience. </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic13">
+    <h2 class="title topictitle2">instr</h2>
+
+    <div class="body">
+      <p class="p">Oracle-compliant function to return the location of a substring in a string.</p>
+
+      <div class="section" id="topic13__me149267">
+<h3 class="title sectiontitle">Synopsis</h3>
+        
+        <pre class="pre codeblock">instr(<var class="keyword varname">string</var>, <var class="keyword varname">substring</var>, [<var class="keyword varname">position</var>[,<var class="keyword varname">occurrence</var>]])</pre>
+
+        
+        <p class="p">This Oracle-compatible function searches for a <var class="keyword varname">substring</var> in a
+            <var class="keyword varname">string</var>. If found, it returns an integer indicating the position of
+          the <var class="keyword varname">substring</var> in the <var class="keyword varname">string</var>, if not found, the
+          function returns 0.</p>
+
+        <p class="p">Optionally you can specify that the search starts at a given <var class="keyword varname">position</var>
+          in the string, and only return the nth <var class="keyword varname">occurrence</var> of the
+            <var class="keyword varname">substring</var> in the <var class="keyword varname">string</var>. </p>
+
+        <p class="p"><samp class="ph codeph">instr </samp>calculates strings using
+          characters as defined by the input character set.</p>
+
+        <p class="p">The value returned is of <samp class="ph codeph">NUMBER</samp>
+          datatype.</p>
+
+        
+        <dl class="dl parml">
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">string</var></dt>
+
+            <dd class="dd pd">The string to search.</dd>
+
+          
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">substring</var></dt>
+
+            <dd class="dd pd">The substring to search for in <var class="keyword varname">string</var>.</dd>
+
+            <dd class="dd pd">Both <var class="keyword varname">string</var> and <var class="keyword varname">substring</var> can be any of the
+              datatypes <samp class="ph codeph">CHAR</samp>, <samp class="ph codeph">VARCHAR2</samp>, <samp class="ph codeph">NCHAR</samp>, <samp class="ph codeph">NVARCHAR2</samp>, <samp class="ph codeph">CLOB</samp>, or <samp class="ph codeph">NCLOB</samp>. </dd>
+
+          
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">position</var></dt>
+
+            <dd class="dd pd">The position is a nonzero integer in <var class="keyword varname">string</var> where the search will
+              start. If not specified, this defaults to 1. If this value is negative, the function
+              counts backwards from the end of <var class="keyword varname">string</var> then searches towards to
+              beginning from the resulting position.</dd>
+
+          
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">occurrence</var></dt>
+
+            <dd class="dd pd">Occurrence is an integer indicating which occurrence of the
+                <var class="keyword varname">substring</var> should be searched for. The value of occurrence must be
+              positive. </dd>
+
+            <dd class="dd pd">Both <var class="keyword varname">position</var> and <var class="keyword varname">occurrence</var> must be of
+              datatype <samp class="ph codeph">NUMBER</samp>, or any datatype that
+              can be implicitly converted to <samp class="ph codeph">NUMBER</samp>, and must resolve to an integer. The default values of both
+                <var class="keyword varname">position</var> and <var class="keyword varname">occurrence</var> are 1, meaning that
+              the search begins at the first character of <var class="keyword varname">string</var> for the first
+              occurrence of <var class="keyword varname">substring</var>. The return value is relative to the
+              beginning of <var class="keyword varname">string</var>, regardless of the value of
+                <var class="keyword varname">position</var>, and is expressed in characters.</dd>
+
+          
+        </dl>
+
+        
+        <pre class="pre codeblock">SELECT instr('Greenplum', 'e') 
+FROM ClientDB;</pre>
+
+        <p class="p">Returns 3; the first occurrence of 'e'</p>
+
+        <pre class="pre codeblock">SELECT instr('Greenplum', 'e',1,2)
+FROM ClientDB;</pre>
+
+        <p class="p">Returns 4; the second occurrence of 'e'</p>
+
+        
+        <p class="p">This command is compatible with Oracle syntax and is provided for convenience. </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic14">
+    <h2 class="title topictitle2">last_day</h2>
+
+    <div class="body">
+      <p class="p">Oracle-compliant function to return the last day in a given month.</p>
+
+      <div class="section" id="topic14__me147037">
+<h3 class="title sectiontitle">Synopsis</h3>
+        
+        <pre class="pre codeblock">last_day(<var class="keyword varname">date_expression</var>) </pre>
+
+        
+        <p class="p">This Oracle-compatible function returns the last day of the month specified by a
+            <var class="keyword varname">date_expression</var>.</p>
+
+        <p class="p">The return type is always <samp class="ph codeph">DATE</samp>,
+          regardless of the datatype of <var class="keyword varname">date_expression</var>.</p>
+
+        
+        <dl class="dl parml">
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">date_expression</var></dt>
+
+            <dd class="dd pd">The date value used to calculate the last day of the month. This can be any
+              expression that can be implicitly converted to <samp class="ph codeph">DATE</samp>.</dd>
+
+          
+        </dl>
+
+        
+        <pre class="pre codeblock">SELECT name, hiredate, last_day(hiredate) "Option Date"
+FROM employees;</pre>
+
+        <p class="p">Returns the <samp class="ph codeph">name</samp>, <samp class="ph codeph">hiredate</samp>, and <samp class="ph codeph">last_day</samp> of the month of <samp class="ph codeph">hiredate</samp> labeled " <samp class="ph codeph">Option Date</samp>."</p>
+
+        
+        <p class="p">This command is compatible with Oracle syntax and is provided for convenience. </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic15">
+    <h2 class="title topictitle2">listagg</h2>
+
+    <div class="body">
+      <p class="p">Oracle-compliant function that aggregates text values into a string.</p>
+
+      <div class="note note">
+<span class="notetitle">Note:</span> This function is an overloaded function. There are two
+        Oracle-compliant <samp class="ph codeph">listagg</samp> functions, one
+        that takes one argument, the text to be aggregated (see below), and one that takes two
+        arguments, the text to be aggregated and a delimiter (see next page).</div>
+
+      <div class="section" id="topic15__me150811">
+<h3 class="title sectiontitle">Synopsis</h3>
+        
+        <pre class="pre codeblock">listagg(<var class="keyword varname">text</var>) </pre>
+
+        
+        <p class="p">This Oracle-compatible function aggregates text values into a string.</p>
+
+        
+        <dl class="dl parml">
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">text</var></dt>
+
+            <dd class="dd pd">The text value to be aggregated into a string.</dd>
+
+          
+        </dl>
+
+        
+        <pre class="pre codeblock">SELECT listagg(t) FROM (VALUES('abc'), ('def')) as l(t) </pre>
+
+        <p class="p">Returns: <samp class="ph codeph">abcdef</samp></p>
+
+        
+        <p class="p">This command is compatible with Oracle syntax and is provided for convenience. </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic16">
+    <h2 class="title topictitle2">listagg (2)</h2>
+
+    <div class="body">
+      <p class="p">Oracle-compliant function that aggregates text values into a string, separating each by the
+        separator specified in a second argument.</p>
+
+      <div class="note note">
+<span class="notetitle">Note:</span> This function is an overloaded function. There are two
+        Oracle-compliant <samp class="ph codeph">listagg</samp> functions, one
+        that takes one argument, the text to be aggregated (see previous page), and one that takes
+        two arguments, the text to be aggregated and a delimiter (see below).</div>
+
+      <div class="section" id="topic16__me151350">
+<h3 class="title sectiontitle">Synopsis</h3>
+        
+        <pre class="pre codeblock">listagg(<var class="keyword varname">text</var>, <var class="keyword varname">separator</var>) </pre>
+
+        
+        <p class="p">This Oracle-compatible function aggregates text values into a string, separating each by
+          the separator specified in a second argument (<var class="keyword varname">separator</var>).</p>
+
+        
+        <dl class="dl parml">
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">text</var></dt>
+
+            <dd class="dd pd">The text value to be aggregated into a string.</dd>
+
+          
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">separator</var></dt>
+
+            <dd class="dd pd">The separator by which to delimit the text values.</dd>
+
+          
+        </dl>
+
+        
+        <pre class="pre codeblock">SELECT oracompat.listagg(t, '.') FROM (VALUES('abc'), 
+('def')) as l(t)</pre>
+
+        <p class="p">Returns: <samp class="ph codeph">abc.def</samp></p>
+
+        
+        <p class="p">This command is compatible with Oracle syntax and is provided for convenience. </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic17">
+    <h2 class="title topictitle2">lnnvl</h2>
+
+    <div class="body">
+      <p class="p">Oracle-compliant function that returns <samp class="ph codeph">true</samp> if the argument is false or NULL, or <samp class="ph codeph">false</samp>.</p>
+
+      <div class="section" id="topic17__me151066">
+<h3 class="title sectiontitle">Synopsis</h3>
+        
+        <pre class="pre codeblock">lnnvl(<var class="keyword varname">condition</var>) </pre>
+
+        
+        <p class="p">This Oracle-compatible function takes as an argument a condition and returns <samp class="ph codeph">true</samp> if the condition is false or NULL and
+            <samp class="ph codeph">false</samp> if the condition is true.</p>
+
+        
+        <dl class="dl parml">
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">condition</var></dt>
+
+            <dd class="dd pd">Any condition that evaluates to <samp class="ph codeph">true</samp>, <samp class="ph codeph">false</samp>, or
+              NULL.</dd>
+
+          
+        </dl>
+
+        
+        <pre class="pre codeblock">SELECT lnnvl(true) </pre>
+
+        <p class="p">Returns: <samp class="ph codeph">false</samp></p>
+
+        <pre class="pre codeblock">SELECT lnnvl(NULL) </pre>
+
+        <p class="p">Returns: <samp class="ph codeph">true</samp></p>
+
+        <pre class="pre codeblock">SELECT lnnvl(false) </pre>
+
+        <p class="p">Returns: <samp class="ph codeph">true</samp></p>
+
+        <pre class="pre codeblock">SELECT (3=5)               </pre>
+
+        <p class="p">Returns: <samp class="ph codeph">true</samp></p>
+
+        
+        <p class="p">This command is compatible with Oracle syntax and is provided for convenience. </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic18">
+    <h2 class="title topictitle2">months_between </h2>
+
+    <div class="body">
+      <p class="p">Oracle-compliant function to evaluate the number of months between two given dates.</p>
+
+      <div class="section" id="topic18__me147112">
+<h3 class="title sectiontitle">Synopsis</h3>
+        
+        <pre class="pre codeblock">months_between(<var class="keyword varname">date_expression1</var>, <var class="keyword varname">date_expression2</var>)</pre>
+
+        
+        <p class="p">This Oracle-compatible function returns the number of months between
+            <var class="keyword varname">date_expression1</var> and <var class="keyword varname">date_expression2</var>. </p>
+
+        <p class="p">If <var class="keyword varname">date_expression1</var> is later than <var class="keyword varname">date_expression2</var>,
+          then the result is positive. </p>
+
+        <p class="p">If <var class="keyword varname">date_expression1</var> is earlier than
+            <var class="keyword varname">date_expression2</var>, then the result is negative. </p>
+
+        <p class="p">If <var class="keyword varname">date_expression1</var> and <var class="keyword varname">date_expression2</var> are either
+          the same days of the month or both last days of months, then the result is always an
+          integer. Otherwise the function calculates the fractional portion of the month based on a
+          31-day month.</p>
+
+        
+        <dl class="dl parml">
+          
+            <dt class="dt pt dlterm">
+<var class="keyword varname">date_expression1</var>, <var class="keyword varname">date_expression2</var>
+</dt>
+
+            <dd class="dd pd">The date values used to calculate the number of months. This can be any expression
+              that can be implicitly converted to <samp class="ph codeph">DATE</samp>.</dd>
+
+          
+        </dl>
+
+        
+        <pre class="pre codeblock">SELECT months_between
+    (to_date ('2003/07/01', 'yyyy/mm/dd'), 
+    to_date ('2003/03/14', 'yyyy/mm/dd'));</pre>
+
+        <p class="p">Returns the number of months between July 1, 2003 and March 14, 2014.</p>
+
+        <pre class="pre codeblock">SELECT * FROM employees 
+    where months_between(hire_date, leave_date) &lt;12;</pre>
+
+        <p class="p">Returns the number of months between <samp class="ph codeph">hire_date</samp> and <samp class="ph codeph">leave_date</samp>.</p>
+
+        
+        <p class="p">This command is compatible with Oracle syntax and is provided for convenience. </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic19">
+    <h2 class="title topictitle2">nanvl</h2>
+
+    <div class="body">
+      <p class="p">Oracle-compliant function to substitute a value for a floating point number when a
+        non-number value is encountered. </p>
+
+      <div class="section" id="topic19__me147257">
+<h3 class="title sectiontitle">Synopsis</h3>
+        
+        <pre class="pre codeblock">nanvl(<var class="keyword varname">float1</var>, <var class="keyword varname">float2</var>)</pre>
+
+        
+        <p class="p">This Oracle-compatible function evaluates a floating point number
+            (<var class="keyword varname">float1</var>) such as <samp class="ph codeph">BINARY_FLOAT</samp> or <samp class="ph codeph">BINARY_DOUBLE</samp>. If it is a non-number ('not a number', NaN), the function returns
+            <var class="keyword varname">float2</var>. This function is most commonly used to convert non-number
+          values into either NULL or 0.</p>
+
+        
+        <dl class="dl parml">
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">float1</var></dt>
+
+            <dd class="dd pd">The <samp class="ph codeph">BINARY_FLOAT</samp> or <samp class="ph codeph">BINARY_NUMBER</samp> to evaluate.</dd>
+
+          
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">float2</var></dt>
+
+            <dd class="dd pd">The value to return if <var class="keyword varname">float1</var> is not a number.</dd>
+
+            <dd class="dd pd">
+<var class="keyword varname">float1</var> and <var class="keyword varname">float2</var> can be any numeric datatype
+              or any nonnumeric datatype that can be implicitly converted to a numeric datatype. The
+              function determines the argument with the highest numeric precedence, implicitly
+              converts the remaining arguments to that datatype, and returns that datatype.</dd>
+
+          
+        </dl>
+
+        
+        <pre class="pre codeblock">SELECT nanvl(binary1, 0)
+FROM MyDB;</pre>
+
+        <p class="p">Returns 0 if the <samp class="ph codeph">binary1</samp> field contained
+          a non-number value. Otherwise, it would return the <samp class="ph codeph">binary1</samp> value.</p>
+
+        
+        <p class="p">This command is compatible with Oracle syntax and is provided for convenience. </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic20">
+    <h2 class="title topictitle2">next_day</h2>
+
+    <div class="body">
+      <p class="p">Oracle-compliant function to return the date of the next specified weekday after a
+        date.</p>
+
+      <p class="p">This section describes using this function with a string argument; see the following page
+        for details about using this function with an integer argument.</p>
+
+      <div class="note note">
+<span class="notetitle">Note:</span> This function is an overloaded function. There are two
+        Oracle-compliant <samp class="ph codeph">next_day</samp> functions, one
+        that takes a date and a day of the week as its arguments (see below), and one that takes a
+        date and an integer as its arguments (see next page).</div>
+
+      <div class="section" id="topic20__me147322">
+<h3 class="title sectiontitle">Synopsis</h3>
+        
+        <pre class="pre codeblock">next_day(<var class="keyword varname">date_expression</var>, <samp class="ph codeph">day_of_the_week</samp>)</pre>
+
+        
+        <p class="p">This Oracle-compatible function returns the first <samp class="ph codeph">day_of_the_week</samp> (Tuesday, Wednesday, etc.) to occur after a
+            <var class="keyword varname">date_expression</var>. </p>
+
+        <p class="p">The weekday must be specified in English.</p>
+
+        <p class="p">The case of the weekday is irrelevant.</p>
+
+        <p class="p">The return type is always <samp class="ph codeph">DATE</samp>,
+          regardless of the datatype of <var class="keyword varname">date_expression</var>.</p>
+
+        
+        <dl class="dl parml">
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">date_expression</var></dt>
+
+            <dd class="dd pd">The starting date. This can be any expression that can be implicitly converted to
+                <samp class="ph codeph">DATE</samp>.</dd>
+
+          
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">day_of_the_week</var></dt>
+
+            <dd class="dd pd">A string containing the name of a day, in English; for example 'Tuesday'.
+                <var class="keyword varname">day_of_the_week</var> is case-insensitive.</dd>
+
+          
+        </dl>
+
+        
+        <pre class="pre codeblock">SELECT name, next_day(hiredate,"MONDAY") "Second Week Start"
+FROM employees;</pre>
+
+        <p class="p">Returns the <samp class="ph codeph">name</samp> and the <samp class="ph codeph">date</samp> of the next Monday after <samp class="ph codeph">hiredate</samp> labeled "<samp class="ph codeph">Second Week Start</samp>".</p>
+
+        
+        <p class="p">This command is compatible with Oracle syntax and is provided for convenience.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic21">
+    <h2 class="title topictitle2">next_day (2)</h2>
+
+    <div class="body">
+      <p class="p">Oracle-compliant function to add a given number of days to a date and returns the date of
+        the following day.</p>
+
+      <div class="note note">
+<span class="notetitle">Note:</span> This function is an overloaded function. There are two
+        Oracle <samp class="ph codeph">next_day</samp> functions, one that takes a
+        date and a day of the week as its arguments (see previous page), and one that takes a date
+        and an integer as its arguments (see below).</div>
+
+      <div class="section" id="topic21__me147388">
+<h3 class="title sectiontitle">Synopsis</h3>
+        
+        <pre class="pre codeblock">next_day(<var class="keyword varname">date_expression</var>, <var class="keyword varname">days_to_add</var>) </pre>
+
+        
+        <p class="p">This Oracle-compatible function adds the number of <var class="keyword varname">days_to_add</var> to a
+            <var class="keyword varname">date_expression</var> and returns the date of the day after the result.</p>
+
+        <p class="p">The return type is always <samp class="ph codeph">DATE</samp>,
+          regardless of the datatype of <var class="keyword varname">date_expression</var>.</p>
+
+        
+        <dl class="dl parml">
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">date_expression</var></dt>
+
+            <dd class="dd pd">The starting date. This can be any expression that can be implicitly converted to
+                <samp class="ph codeph">DATE</samp>.</dd>
+
+          
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">days_to_add</var></dt>
+
+            <dd class="dd pd">The number of days to be add to the <var class="keyword varname">date_expression</var>. This is an
+              integer or any value that can be implicitly converted to an integer. This parameter
+              can be positive or negative.</dd>
+
+          
+        </dl>
+
+        
+        <pre class="pre codeblock">SELECT name, next_day(hiredate,90) "Benefits Eligibility 
+Date"
+FROM EMPLOYEES;</pre>
+
+        <p class="p">Returns the <samp class="ph codeph">name</samp> and the <samp class="ph codeph">date</samp> that is 90 days after <samp class="ph codeph">hiredate</samp> labeled "<samp class="ph codeph">Benefits Eligibility Date</samp>".</p>
+
+        
+        <p class="p">This command is compatible with Oracle syntax and is provided for convenience. </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic22">
+    <h2 class="title topictitle2">nlssort</h2>
+
+    <div class="body">
+      <p class="p">Oracle-compliant function that sorts data according to a specific collation.</p>
+
+      <div class="section" id="topic22__me152445">
+<h3 class="title sectiontitle">Synopsis</h3>
+        
+        <pre class="pre codeblock">nlssort (<var class="keyword varname">variable</var>, <var class="keyword varname">collation</var>)</pre>
+
+        
+        <p class="p">This Oracle-compatible function sorts data according to a specific collation.</p>
+
+        
+        <dl class="dl parml">
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">variable</var></dt>
+
+            <dd class="dd pd">The data to sort.</dd>
+
+          
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">collation</var></dt>
+
+            <dd class="dd pd">The collation type by which to sort.</dd>
+
+          
+        </dl>
+
+        
+        <pre class="pre codeblock">CREATE TABLE test (name text);
+INSERT INTO test VALUES('Anne'), ('anne'), ('Bob'), ('bob');
+SELECT * FROM test ORDER BY nlssort(name, 'en_US.UTF-8');
+ anne
+ Anne
+ bob
+ Bob
+
+SELECT * FROM test ORDER BY nlssort(name, 'C');
+ Anne
+ Bob
+ anne
+ bob </pre>
+
+        <p class="p">In the first example, the UTF-8 collation rules are specified. This groups characters
+          together regardless of case.</p>
+
+        <p class="p">In the second example, ASCII (C) collation is specified. This sorts according to ASCII
+          order. The result is that upper case characters are sorted ahead of lower case ones.</p>
+
+        
+        <p class="p">This command is compatible with Oracle syntax and is provided for convenience. </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic23">
+    <h2 class="title topictitle2">nvl</h2>
+
+    <div class="body">
+      <p class="p">Oracle-compliant function to substitute a specified value when an expression evaluates to
+          <samp class="ph codeph">null</samp>.</p>
+
+      <div class="note note">
+<span class="notetitle">Note:</span> This function is analogous to the PostgreSQL <samp class="ph codeph">coalesce</samp> function.</div>
+
+      <div class="section" id="topic23__me144331">
+<h3 class="title sectiontitle">Synopsis</h3>
+        
+        <pre class="pre codeblock">nvl(<var class="keyword varname">expression_to_evaluate</var>, <var class="keyword varname">null_replacement_value</var>)</pre>
+
+        
+        <p class="p">This Oracle-compatible function evaluates <var class="keyword varname">expression_to_evaluate</var>. If
+          it is <samp class="ph codeph">null</samp>, the function returns
+            <var class="keyword varname">null_replacement_value</var>; otherwise, it returns
+            <var class="keyword varname">expression_to_evaluate</var>.</p>
+
+        
+        <dl class="dl parml">
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">expression_to_evaluate</var></dt>
+
+            <dd class="dd pd">The expression to evaluate for a null value.</dd>
+
+          
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">null_replacement_value</var></dt>
+
+            <dd class="dd pd">The value to return if <var class="keyword varname">expression_to_evaluate</var> is <samp class="ph codeph">null</samp>.</dd>
+
+          
+        </dl>
+
+        <p class="p">Both <var class="keyword varname">expression_to_evaluate</var> and
+            <var class="keyword varname">null_replacement_value</var> must be the same data type.</p>
+
+        
+        <pre class="pre codeblock">SELECT nvl(contact_name,'None') 
+FROM clients;
+SELECT nvl(amount_past_due,0) 
+FROM txns;
+SELECT nvl(nickname, firstname) 
+FROM contacts;</pre>
+
+        
+        <p class="p">This command is compatible with Oracle syntax and is provided for convenience. </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic24">
+    <h2 class="title topictitle2">nvl2 </h2>
+
+    <div class="body">
+      <p class="p">Oracle-compliant function that returns alternate values for both null and non-null
+        values.</p>
+
+      <div class="section" id="topic24__me149341">
+<h3 class="title sectiontitle">Synopsis</h3>
+        
+        <pre class="pre codeblock">nvl2(<var class="keyword varname">expression_to_evaluate</var>, <var class="keyword varname">non_null_replacement_value</var>,
+     <var class="keyword varname">null_replacement_value</var>)</pre>
+
+        
+        <p class="p">This Oracle-compatible function evaluates <var class="keyword varname">expression_to_evaluate</var>. If
+          it is not <samp class="ph codeph">null</samp>, the function returns
+            <var class="keyword varname">non_null_replacement_value</var>; otherwise, it returns
+            <var class="keyword varname">null_replacement_value</var>.</p>
+
+        
+        <dl class="dl parml">
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">expression_to_evaluate</var></dt>
+
+            <dd class="dd pd">The expression to evaluate for a null value.</dd>
+
+          
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">non_null_replacement_value</var></dt>
+
+            <dd class="dd pd">The value to return if <var class="keyword varname">expression_to_evaluate</var> is not <samp class="ph codeph">null</samp>.</dd>
+
+          
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">null_replacement_value</var></dt>
+
+            <dd class="dd pd">The value to return if <var class="keyword varname">expression_to_evaluate</var> is <samp class="ph codeph">null</samp>.</dd>
+
+          
+        </dl>
+
+        
+        <pre class="pre codeblock">select nvl2(unit_number,'Multi Unit','Single Unit') 
+from clients;</pre>
+
+        
+        <p class="p">This command is compatible with Oracle syntax and is provided for convenience. </p>
+
+        
+        <p class="p"><samp class="ph codeph"><a class="xref" href="#topic9">decode</a></samp></p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic25">
+    <h2 class="title topictitle2">oracle.substr</h2>
+
+    <div class="body">
+      <p class="p">This Oracle-compliant function extracts a portion of a string.</p>
+
+      <div class="section" id="topic25__me147448">
+<h3 class="title sectiontitle">Synopsis</h3>
+        
+        <pre class="pre codeblock">oracle.substr(<var class="keyword varname">string</var>, [<var class="keyword varname">start</var> [,<var class="keyword varname">char_count</var>]])</pre>
+
+        
+        <p class="p">This Oracle-compatible function extract a portion of a string.</p>
+
+        <p class="p">If <var class="keyword varname">start</var> is 0, it is evaluated as 1.</p>
+
+        <p class="p">If <var class="keyword varname">start</var> is negative, the starting position is negative, the starting
+          position is <var class="keyword varname">start</var> characters moving backwards from the end of
+          string.</p>
+
+        <p class="p">If <var class="keyword varname">char_count</var> is not passed to the function, all characters from start
+          to the end of string are returned.</p>
+
+        <p class="p">If <var class="keyword varname">char_count</var> is less than 1, null is returned.</p>
+
+        <p class="p">If <var class="keyword varname">start</var> or <var class="keyword varname">char_count</var> is a number, but not an
+          integer, the values are resolved to integers.</p>
+
+        
+        <dl class="dl parml">
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">string</var></dt>
+
+            <dd class="dd pd">The string from which to extract.</dd>
+
+          
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">start</var></dt>
+
+            <dd class="dd pd">An integer specifying the starting position in the string.</dd>
+
+          
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">char_count</var></dt>
+
+            <dd class="dd pd">An integer specifying the number of characters to extract.</dd>
+
+          
+        </dl>
+
+        
+        <pre class="pre codeblock">oracle.substr(name,1,15) </pre>
+
+        <p class="p">Returns the first 15 characters of <samp class="ph codeph">name</samp>.</p>
+
+        <pre class="pre codeblock">oracle.substr("Greenplum",-4,4) </pre>
+
+        <p class="p">Returns "<samp class="ph codeph">plum</samp>".</p>
+
+        <pre class="pre codeblock">oracle.substr(name,2) </pre>
+
+        <p class="p">Returns all characters of <samp class="ph codeph">name</samp>,
+          beginning with the second character.</p>
+
+        
+        <p class="p">PostgreSQL <samp class="ph codeph"><a class="xref" href="https://www.postgresql.org/docs/8.3/static/functions-string.html" target="_blank">substr</a></samp> (not
+          compatible with Oracle)</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic26">
+    <h2 class="title topictitle2">reverse </h2>
+
+    <div class="body">
+      <p class="p">Oracle-compliant function to return the input string in reverse order.</p>
+
+      <div class="section" id="topic26__me147533">
+<h3 class="title sectiontitle">Synopsis</h3>
+        
+        <pre class="pre codeblock">reverse (<var class="keyword varname">string</var>)</pre>
+
+        
+        <p class="p">This Oracle-compatible function returns the input string (<var class="keyword varname">string</var>) in
+          reverse order.</p>
+
+        
+        <dl class="dl parml">
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">string</var></dt>
+
+            <dd class="dd pd">The input string.</dd>
+
+          
+        </dl>
+
+        
+        <pre class="pre codeblock">SELECT reverse('gnirts') 
+FROM ClientDB;</pre>
+
+        <p class="p">Returns <samp class="ph codeph">'string'</samp>'</p>
+
+        
+        <p class="p">This command is compatible with Oracle syntax and is provided for convenience. </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic27">
+    <h2 class="title topictitle2">round</h2>
+
+    <div class="body">
+      <p class="p">Oracle-compliant function to round a date to a specific unit of measure (day, week,
+        etc.).</p>
+
+      <div class="note note">
+<span class="notetitle">Note:</span> This function is an overloaded function. It shares the
+        same name with the Postgres <samp class="ph codeph">round</samp>
+        mathematical function that rounds numeric input to the nearest integer or optionally to the
+        nearest x number of decimal places.</div>
+
+      <div class="section" id="topic27__me147575">
+<h3 class="title sectiontitle">Synopsis</h3>
+        
+        <pre class="pre codeblock">round (<var class="keyword varname">date_time_expression</var>, [<var class="keyword varname">unit_of_measure</var>]) </pre>
+
+        
+        <p class="p">This Oracle-compatible function rounds a <var class="keyword varname">date_time_expression</var> to the
+          nearest <var class="keyword varname">unit_of_measure</var> (day, week, etc.). If a
+            <var class="keyword varname">unit_of_measure</var> is not specified, the
+            <var class="keyword varname">date_time_expression</var> is rounded to the nearest day. It operates
+          according to the rules of the Gregorian calendar.</p>
+
+        <p class="p">If the <var class="keyword varname">date_time_expression</var> datatype is <samp class="ph codeph">TIMESTAMP</samp>, the value returned is always of
+          datatype <samp class="ph codeph">TIMESTAMP</samp>.</p>
+
+        <p class="p">If the <var class="keyword varname">date_time_expression</var> datatype is <samp class="ph codeph">DATE</samp>, the value returned is always of datatype
+            <samp class="ph codeph">DATE</samp>.</p>
+
+        
+        <dl class="dl parml">
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">date_time_expression</var></dt>
+
+            <dd class="dd pd">The date to round. This can be any expression that can be implicitly converted to
+                <samp class="ph codeph">DATE</samp> or <samp class="ph codeph">TIMESTAMP</samp>.</dd>
+
+          
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">unit_of_measure</var></dt>
+
+            <dd class="dd pd">The unit of measure to apply for rounding. If not specified, then the
+                <var class="keyword varname">date_time_expression</var> is rounded to the nearest day. Valid
+              parameters are:</dd>
+
+          
+        </dl>
+
+        
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" summary="" id="topic27__me147585" class="table" frame="border" border="1" rules="all">
+<caption><span class="tablecap">Table 2. Valid Parameters</span></caption>
+            
+            
+            
+            <thead class="thead" align="left">
+              <tr class="row">
+                <th class="entry" valign="top" width="116pt" id="d480114e2967">Unit</th>
+
+                <th class="entry" valign="top" width="165pt" id="d480114e2970">Valid parameters</th>
+
+                <th class="entry" valign="top" width="165pt" id="d480114e2973">Rounding Rule</th>
+
+              </tr>
+
+            </thead>
+
+            <tbody class="tbody">
+              <tr class="row">
+                <td class="entry" valign="top" width="116pt" headers="d480114e2967 ">Year</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e2970 ">SYYYY, YYYY, YEAR, SYEAR, YYY, YY,
+                  Y</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e2973 ">Rounds up on July 1st</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="116pt" headers="d480114e2967 ">ISO Year</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e2970 ">IYYY, IY, I</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e2973 "> </td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="116pt" headers="d480114e2967 ">Quarter</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e2970 ">Q</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e2973 ">Rounds up on the 16th day of the second
+                  month of the quarter</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="116pt" headers="d480114e2967 ">Month</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e2970 ">MONTH, MON, MM, RM</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e2973 ">Rounds up on the 16th day of the
+                  month</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="116pt" headers="d480114e2967 ">Week</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e2970 ">WW</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e2973 ">Same day of the week as the first day
+                  of the year</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="116pt" headers="d480114e2967 ">IW</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e2970 ">IW</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e2973 ">Same day of the week as the first day
+                  of the ISO year</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="116pt" headers="d480114e2967 ">W</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e2970 ">W</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e2973 ">Same day of the week as the first day
+                  of the month</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="116pt" headers="d480114e2967 ">Day</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e2970 ">DDD, DD, J</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e2973 ">Rounds to the nearest day</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="116pt" headers="d480114e2967 ">Start day of the week</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e2970 ">DAY, DY, D</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e2973 ">Rounds to the nearest start (sunday)
+                  day of the week</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="116pt" headers="d480114e2967 ">Hour</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e2970 ">HH, HH12, HH24</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e2973 ">Rounds to the next hour</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="116pt" headers="d480114e2967 ">Minute</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e2970 ">MI</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e2973 ">Rounds to the next minute</td>
+
+              </tr>
+
+            </tbody>
+
+          </table>
+</div>
+
+        
+        <pre class="pre codeblock">SELECT round(TO_DATE('27-OCT-00','DD-MON-YY'), 'YEAR')
+FROM ClientDB;</pre>
+
+        <p class="p">Returns '01-JAN-01' (27 Oct 00 rounded to the first day of the following year (<samp class="ph codeph">YEAR</samp>))</p>
+
+        <pre class="pre codeblock">SELECT round('startdate','Q')
+FROM ClientDB;</pre>
+
+        <p class="p">Returns '01-JUL-92' (the <samp class="ph codeph">startdate</samp>
+          rounded to the first day of the quarter (<samp class="ph codeph">Q</samp>))</p>
+
+        
+        <p class="p">This command is compatible with Oracle syntax and is provided for convenience. </p>
+
+        
+        <p class="p">PostgreSQL <samp class="ph codeph"><a class="xref" href="https://www.postgresql.org/docs/8.3/static/functions-math.html" target="_blank">round</a></samp> (not compatible with
+          Oracle)</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic28">
+    <h2 class="title topictitle2">sinh</h2>
+
+    <div class="body">
+      <p class="p">Oracle-compliant function to return the hyperbolic sine of a given number.</p>
+
+      <div class="section" id="topic28__me147492">
+<h3 class="title sectiontitle">Synopsis</h3>
+        
+        <pre class="pre codeblock">sinh(<var class="keyword varname">float8</var>)</pre>
+
+        
+        <p class="p">This Oracle-compatible function returns the hyperbolic sine of the floating 8 input
+          number (<var class="keyword varname">float8</var>).</p>
+
+        <div class="note note">
+<span class="notetitle">Note:</span> This function is available by default and can be
+          accessed without running the Oracle Compatibility installer.</div>
+
+        
+        <dl class="dl parml">
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">float8</var></dt>
+
+            <dd class="dd pd">The input number.</dd>
+
+          
+        </dl>
+
+        
+        <pre class="pre codeblock">SELECT sinh(3) 
+FROM ClientDB;</pre>
+
+        <p class="p">Returns <samp class="ph codeph">'10.0178749274099'</samp>'(hyperbolic
+          sine of 3)</p>
+
+        
+        <p class="p">This command is compatible with Oracle syntax and is provided for convenience. </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic29">
+    <h2 class="title topictitle2">tanh</h2>
+
+    <div class="body">
+      <p class="p">Oracle-compliant function to return the hyperbolic tangent of a given number.</p>
+
+      <div class="section" id="topic29__me147700">
+<h3 class="title sectiontitle">Synopsis</h3>
+        
+        <pre class="pre codeblock">tanh(<var class="keyword varname">float8</var>)</pre>
+
+        
+        <p class="p">This Oracle-compatible function returns the hyperbolic tangent of the floating 8 input
+          number (<var class="keyword varname">float8</var>).</p>
+
+        <div class="note note">
+<span class="notetitle">Note:</span> 
+          <p class="p">This function is available by default and can be accessed without running the Oracle
+            Compatibility installer.</p>
+
+        </div>
+
+        
+        <dl class="dl parml">
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">float8</var></dt>
+
+            <dd class="dd pd">The input number.</dd>
+
+          
+        </dl>
+
+        
+        <pre class="pre codeblock">SELECT tanh(3)
+FROM ClientDB;</pre>
+
+        <p class="p">Returns <samp class="ph codeph">'0.99505475368673'</samp>' (hyperbolic
+          tangent of 3)</p>
+
+        
+        <p class="p">This command is compatible with Oracle syntax and is provided for convenience. </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic30">
+    <h2 class="title topictitle2">trunc</h2>
+
+    <div class="body">
+      <p class="p">Oracle-compliant function to truncate a date to a specific unit of measure (day, week,
+        hour, etc.).</p>
+
+      <div class="note note">
+<span class="notetitle">Note:</span> 
+        <p class="p">This function is an overloaded function. It shares the same name with the Postgres
+            <samp class="ph codeph">trunc</samp> and the Oracle <samp class="ph codeph">trunc</samp> mathematical functions. Both of these
+          truncate numeric input to the nearest integer or optionally to the nearest x number of
+          decimal places. </p>
+
+      </div>
+
+      <div class="section" id="topic30__me144477">
+<h3 class="title sectiontitle">Synopsis</h3>
+        
+        <pre class="pre codeblock">trunc(<var class="keyword varname">date_time_expression</var>, [<var class="keyword varname">unit_of_measure</var>]) </pre>
+
+        
+        <p class="p">This Oracle-compatible function truncates a <var class="keyword varname">date_time_expression</var> to
+          the nearest <var class="keyword varname">unit_of_measure</var> (day, week, etc.). If a
+            <var class="keyword varname">unit_of_measure</var> is not specified, the
+            <var class="keyword varname">date_time_expression</var> is truncated to the nearest day. It operates
+          according to the rules of the Gregorian calendar. </p>
+
+        <p class="p">If the <var class="keyword varname">date_time_expression</var> datatype is <samp class="ph codeph">TIMESTAMP</samp>, the value returned is always of
+          datatype <samp class="ph codeph">TIMESTAMP</samp>, truncated to the
+          hour/min level.</p>
+
+        <p class="p">If the <var class="keyword varname">date_time_expression</var> datatype is <samp class="ph codeph">DATE</samp>, the value returned is always of datatype
+            <samp class="ph codeph">DATE</samp>.</p>
+
+        
+        <dl class="dl parml">
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">date_time_expression</var></dt>
+
+            <dd class="dd pd">The date to truncate. This can be any expression that can be implicitly converted to
+                <samp class="ph codeph">DATE</samp> or <samp class="ph codeph">TIMESTAMP</samp>.</dd>
+
+          
+          
+            <dt class="dt pt dlterm"><var class="keyword varname">unit_of_measure</var></dt>
+
+            <dd class="dd pd">The unit of measure to apply for truncating. If not specified, then
+                <var class="keyword varname">date__time_expression</var> is truncated to the nearest day. Valid
+              formats are:</dd>
+
+          
+        </dl>
+
+        
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" summary="" id="topic30__me144487" class="table" frame="border" border="1" rules="all">
+<caption><span class="tablecap">Table 3. Valid Format Parameters</span></caption>
+            
+            
+            <thead class="thead" align="left">
+              <tr class="row">
+                <th class="entry" valign="top" width="128pt" id="d480114e3438">Unit</th>
+
+                <th class="entry" valign="top" width="165pt" id="d480114e3441">Valid parameters</th>
+
+              </tr>
+
+            </thead>
+
+            <tbody class="tbody">
+              <tr class="row">
+                <td class="entry" valign="top" width="128pt" headers="d480114e3438 ">Year</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e3441 ">SYYYY, YYYY, YEAR, SYEAR, YYY, YY,
+                  Y</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="128pt" headers="d480114e3438 ">ISO Year</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e3441 ">IYYY, IY, I</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="128pt" headers="d480114e3438 ">Quarter</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e3441 ">Q</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="128pt" headers="d480114e3438 ">Month</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e3441 ">MONTH, MON, MM, RM</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="128pt" headers="d480114e3438 ">Week</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e3441 ">WW</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="128pt" headers="d480114e3438 ">IW</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e3441 ">IW</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="128pt" headers="d480114e3438 ">W</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e3441 ">W</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="128pt" headers="d480114e3438 ">Day</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e3441 ">DDD, DD, J</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="128pt" headers="d480114e3438 ">Start day of the week</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e3441 ">DAY, DY, D</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="128pt" headers="d480114e3438 ">Hour</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e3441 ">HH, HH12, HH24</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="128pt" headers="d480114e3438 ">Minute</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d480114e3441 ">MI</td>
+
+              </tr>
+
+            </tbody>
+
+          </table>
+</div>
+
+        
+        <pre class="pre codeblock">SELECT TRUNC(TO_DATE('27-OCT-92','DD-MON-YY'), 'YEAR')
+FROM ClientDB;</pre>
+
+        <p class="p">Returns '01-JAN-92' (27 Oct 92 truncated to the first day of the year (<samp class="ph codeph">YEAR</samp>))</p>
+
+        <pre class="pre codeblock">SELECT TRUNC(startdate,'Q')
+FROM ClientDB;</pre>
+
+        <p class="p">Returns '1992-07-01' (the <samp class="ph codeph">startdate</samp>
+          truncated to the first day of the quarter (<samp class="ph codeph">Q</samp>), depending on the date_style setting)</p>
+
+        
+        <p class="p">This command is compatible with Oracle syntax and is provided for convenience. </p>
+
+        
+        <p class="p">PostgreSQL <samp class="ph codeph"><a class="xref" href="https://www.postgresql.org/docs/8.3/static/functions-math.html" target="_blank">trunc</a></samp> (not compatible with
+          Oracle)</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
 
         
 

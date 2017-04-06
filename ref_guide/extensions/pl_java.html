@@ -8,7 +8,7 @@
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400italic,400,600' rel='stylesheet' type='text/css'>
   <!-- Use title if it's in the page YAML frontmatter -->
   <title>
-      Greenplum Database |
+      Greenplum PL/Java Language Extension |
     Greenplum Database Docs
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
   
 </head>
 
-<body class="docs docs_index has-subnav">
+<body class="docs docs_ref_guide docs_ref_guide_extensions docs_ref_guide_extensions_pl_java has-subnav">
 
 <div class="viewport">
   <div class='wrap'>
@@ -5466,7 +5466,7 @@
         <a id="top"></a>
         
           <h1 class="title-container" style="display: none;">
-    Greenplum Database
+    Greenplum PL/Java Language Extension
   </h1>
 
           <div id="js-quick-links" >
@@ -5475,1068 +5475,1512 @@
         <div class="to-top" id="js-to-top">
           <a href="#top" title="back to top"></a>
         </div>
-        <ul>
-<li><a href="common/pivotal-gpdb-features.html">About this Documentation</a></li>
-<li>
-<a href="admin_guide/admin_guide.html">Administrator Guide</a><ul>
-<li>
-<a href="admin_guide/intro/partI.html">Greenplum Database Concepts</a><ul>
-<li><a href="admin_guide/intro/arch_overview.html">About the Greenplum Architecture</a></li>
-<li><a href="admin_guide/intro/about_utilities.html">About Management and Monitoring Utilities</a></li>
-<li>
-<a href="admin_guide/intro/about_mvcc.html">About Concurrency Control in Greenplum Database</a><ul><li><a href="admin_guide/intro/mvcc_example.html">Example of Managing Transaction IDs</a></li></ul>
-</li>
-<li><a href="admin_guide/intro/about_loading.html">About Parallel Data Loading</a></li>
-<li><a href="admin_guide/intro/about_ha.html">About Redundancy and Failover in Greenplum Database</a></li>
-<li><a href="admin_guide/intro/about_statistics.html">About Database Statistics in Greenplum Database</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/managing/partII.html">Managing a Greenplum System</a><ul>
-<li><a href="admin_guide/managing/startstop.html">Starting and Stopping Greenplum Database</a></li>
-<li>
-<a href="admin_guide/access_db/topics/g-accessing-the-database.html">Accessing the Database</a><ul>
-<li><a href="admin_guide/access_db/topics/g-establishing-a-database-session.html">Establishing a Database Session</a></li>
-<li><a href="admin_guide/access_db/topics/g-supported-client-applications.html">Supported Client Applications</a></li>
-<li><a href="admin_guide/access_db/topics/g-greenplum-database-client-applications.html">Greenplum Database Client Applications</a></li>
-<li><a href="admin_guide/access_db/topics/g-connecting-with-psql.html">Connecting with psql</a></li>
-<li>
-<a href="admin_guide/access_db/topics/g-pgadmin-iii-for-greenplum-database.html">pgAdmin III for Greenplum Database</a><ul>
-<li><a href="admin_guide/access_db/topics/g-installing-pgadmin-iii-for-greenplum-database.html">Installing pgAdmin III for Greenplum Database</a></li>
-<li><a href="admin_guide/access_db/topics/g-documentation-for-pgadmin-iii-for-greenplum-database.html">Documentation for pgAdmin III for Greenplum Database</a></li>
-<li>
-<a href="admin_guide/access_db/topics/g-performing-administrative-tasks-with-pgadmin-iii.html">Performing Administrative Tasks with pgAdmin III</a><ul>
-<li><a href="admin_guide/access_db/topics/g-editing-server-configuration.html">Editing the Server Configuration</a></li>
-<li><a href="admin_guide/access_db/topics/g-viewing-a-graphical-query-plan.html">Viewing a Graphical Query Plan</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="admin_guide/access_db/topics/pgbouncer.html">Using the PgBouncer Connection Pooler </a></li>
-<li><a href="admin_guide/access_db/topics/g-database-application-interfaces.html">Database Application Interfaces</a></li>
-<li><a href="admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a></li>
-<li><a href="admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/topics/g-configuring-the-greenplum-system.html">Configuring the Greenplum Database System</a><ul>
-<li><a href="admin_guide/topics/g-about-greenplum-master-and-local-parameters.html">About Greenplum Database Master and Local Parameters</a></li>
-<li>
-<a href="admin_guide/topics/g-setting-configuration-parameters.html">Setting Configuration Parameters</a><ul>
-<li><a href="admin_guide/topics/g-setting-a-local-configuration-parameter.html">Setting a Local Configuration Parameter</a></li>
-<li>
-<a href="admin_guide/topics/g-setting-a-master-configuration-parameter.html">Setting a Master Configuration Parameter</a><ul>
-<li><a href="admin_guide/topics/g-setting-parameters-at-the-system-level.html">Setting Parameters at the System Level</a></li>
-<li><a href="admin_guide/topics/g-setting-parameters-at-the-database-level.html">Setting Parameters at the Database Level</a></li>
-<li><a href="admin_guide/topics/g-setting-parameters-at-the-role-level.html">Setting Parameters at the Role Level</a></li>
-<li><a href="admin_guide/topics/g-setting-parameters-in-a-session.html">Setting Parameters in a Session</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="admin_guide/topics/g-viewing-server-configuration-parameter-settings.html">Viewing Server Configuration Parameter Settings</a></li>
-<li>
-<a href="admin_guide/topics/g-configuration-parameter-categories.html">Configuration Parameter Categories</a><ul>
-<li>
-<a href="admin_guide/topics/g-connection-and-authentication-parameters.html">Connection and Authentication Parameters</a><ul>
-<li><a href="admin_guide/topics/g-connection-parameters.html">Connection Parameters</a></li>
-<li><a href="admin_guide/topics/g-security-and-authentication-parameters.html">Security and Authentication Parameters</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/topics/g-system-resource-consumption-parameters.html">System Resource Consumption Parameters</a><ul>
-<li><a href="admin_guide/topics/g-memory-consumption-parameters.html">Memory Consumption Parameters</a></li>
-<li><a href="admin_guide/topics/g-free-space-map-parameters.html">Free Space Map Parameters</a></li>
-<li><a href="admin_guide/topics/g-os-resource-parameters.html">OS Resource Parameters</a></li>
-<li><a href="admin_guide/topics/g-cost-based-vacuum-delay-parameters.html">Cost-Based Vacuum Delay Parameters</a></li>
-<li><a href="admin_guide/topics/g-transaction-id-management-parameters.html">Transaction ID Management Parameters</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/topics/g-query-tuning-parameters.html">Query Tuning Parameters</a><ul>
-<li><a href="admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a></li>
-<li><a href="admin_guide/topics/g-query-plan-operator-control-parameters.html">Query Plan Operator Control Parameters</a></li>
-<li><a href="admin_guide/topics/g-query-planner-costing-parameters.html">Legacy Query Optimizer Costing Parameters</a></li>
-<li><a href="admin_guide/topics/g-database-statistics-sampling-parameters.html">Database Statistics Sampling Parameters</a></li>
-<li><a href="admin_guide/topics/g-sort-operator-configuration-parameters.html">Sort Operator Configuration Parameters</a></li>
-<li><a href="admin_guide/topics/g-aggregate-operator-configuration-parameters.html">Aggregate Operator Configuration Parameters</a></li>
-<li><a href="admin_guide/topics/g-join-operator-configuration-parameters.html">Join Operator Configuration Parameters</a></li>
-<li><a href="admin_guide/topics/g-other-query-planner-configuration-parameters.html">Other Legacy Query Optimizer Configuration Parameters</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/topics/g-error-reporting-and-logging-parameters.html">Error Reporting and Logging Parameters</a><ul>
-<li><a href="admin_guide/topics/g-log-rotation.html">Log Rotation</a></li>
-<li><a href="admin_guide/topics/g-when-to-log.html">When to Log</a></li>
-<li><a href="admin_guide/topics/g-what-to-log.html">What to Log</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/topics/g-system-monitoring-parameters.html">System Monitoring Parameters</a><ul>
-<li><a href="admin_guide/topics/g-snmp-alerts.html">SNMP Alerts</a></li>
-<li><a href="admin_guide/topics/g-email-alerts.html">Email Alerts</a></li>
-<li><a href="admin_guide/topics/g-greenplum-command-center-agent.html">Greenplum Command Center Agent</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/topics/g-runtime-statistics-collection-parameters.html">Runtime Statistics Collection Parameters</a></li>
-<li><a href="admin_guide/topics/g-automatic-statistics-collection-parameters.html">Automatic Statistics Collection Parameters</a></li>
-<li>
-<a href="admin_guide/topics/g-client-connection-default-parameters.html">Client Connection Default Parameters</a><ul>
-<li><a href="admin_guide/topics/g-statement-behavior-parameters.html">Statement Behavior Parameters</a></li>
-<li><a href="admin_guide/topics/g-locale-and-formatting-parameters.html">Locale and Formatting Parameters</a></li>
-<li><a href="admin_guide/topics/g-other-client-default-parameters.html">Other Client Default Parameters</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/topics/g-lock-management-parameters.html">Lock Management Parameters</a></li>
-<li><a href="admin_guide/topics/g-workload-management-parameters.html">Workload Management Parameters</a></li>
-<li><a href="admin_guide/topics/g-external-table-parameters.html">External Table Parameters</a></li>
-<li><a href="admin_guide/topics/g-append-optimized-table-parameters.html">Database Table Parameters</a></li>
-<li><a href="admin_guide/topics/g-database-and-tablespace-filespace-parameters.html">Database and Tablespace/Filespace Parameters</a></li>
-<li><a href="admin_guide/topics/g-past-postgresql-version-compatibility-parameters.html">Past PostgreSQL Version Compatibility Parameters</a></li>
-<li>
-<a href="admin_guide/topics/g-greenplum-array-configuration-parameters.html">Greenplum Array Configuration Parameters</a><ul>
-<li><a href="admin_guide/topics/g-interconnect-configuration-parameters.html">Interconnect Configuration Parameters</a></li>
-<li><a href="admin_guide/topics/g-dispatch-configuration-parameters.html">Dispatch Configuration Parameters</a></li>
-<li><a href="admin_guide/topics/g-fault-operation-parameters.html">Fault Operation Parameters</a></li>
-<li><a href="admin_guide/topics/g-distributed-transaction-management-parameters.html">Distributed Transaction Management Parameters</a></li>
-<li><a href="admin_guide/topics/g-read-only-parameters.html">Read-Only Parameters</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/topics/g-greenplum-master-mirroring-parameters.html">Greenplum Master and Segment Mirroring Parameters</a></li>
-<li><a href="admin_guide/topics/g-greenplum-extension-parameters.html">Greenplum Database Extension Parameters</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/highavail/topics/g-enabling-high-availability-features.html">Enabling High Availability Features</a><ul>
-<li>
-<a href="admin_guide/highavail/topics/g-overview-of-high-availability-in-greenplum-database.html">Overview of Greenplum Database High Availability</a><ul>
-<li><a href="admin_guide/highavail/topics/g-overview-of-segment-mirroring.html">Overview of Segment Mirroring</a></li>
-<li><a href="admin_guide/highavail/topics/g-overview-of-master-mirroring.html">Overview of Master Mirroring</a></li>
-<li><a href="admin_guide/highavail/topics/g-overview-of-fault-detection-and-recovery.html">Overview of Fault Detection and Recovery</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/highavail/topics/g-enabling-mirroring-in-greenplum-database.html">Enabling Mirroring in Greenplum Database</a><ul>
-<li><a href="admin_guide/highavail/topics/g-enabling-segment-mirroring.html">Enabling Segment Mirroring</a></li>
-<li><a href="admin_guide/highavail/topics/g-enabling-master-mirroring.html">Enabling Master Mirroring</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/highavail/topics/g-detecting-a-failed-segment.html">Detecting a Failed Segment</a><ul>
-<li><a href="admin_guide/highavail/topics/g-enabling-alerts-and-notifications.html">Enabling Alerts and Notifications</a></li>
-<li><a href="admin_guide/highavail/topics/g-checking-for-failed-segments.html">Checking for Failed Segments</a></li>
-<li><a href="admin_guide/highavail/topics/g-checking-the-log-files.html">Checking the Log Files for Failed Segments</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/highavail/topics/g-recovering-a-failed-segment.html">Recovering a Failed Segment</a><ul><li>
-<a href="admin_guide/highavail/topics/g-recovering-from-segment-failures.html">Recovering From Segment Failures</a><ul>
-<li><a href="admin_guide/highavail/topics/g-when-a-segment-host-is-not-recoverable.html">When a segment host is not recoverable</a></li>
-<li><a href="admin_guide/highavail/topics/gprecover-steps.html">About the Segment Recovery Process</a></li>
-</ul>
-</li></ul>
-</li>
-<li>
-<a href="admin_guide/highavail/topics/g-recovering-a-failed-master.html">Recovering a Failed Master</a><ul><li><a href="admin_guide/highavail/topics/g-restoring-master-mirroring-after-a-recovery.html">Restoring Master Mirroring After a Recovery</a></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/managing/backup-main.html">Backing Up and Restoring Databases</a><ul>
-<li><a href="admin_guide/managing/backup-overview.html">Backup and Restore Overview</a></li>
-<li><a href="admin_guide/managing/backup-gpcrondump.html">Backing Up with gpcrondump</a></li>
-<li><a href="admin_guide/managing/backup-sets.html">Backing Up a Set of Tables</a></li>
-<li><a href="admin_guide/managing/backup-incremental.html">Creating Incremental Backups</a></li>
-<li><a href="admin_guide/managing/backup-locks.html">Backup Process and Locks</a></li>
-<li><a href="admin_guide/managing/backup-direct-io.html">Using Direct I/O</a></li>
-<li><a href="admin_guide/managing/backup-named-pipes.html">Using Named Pipes</a></li>
-<li><a href="admin_guide/managing/backup-ddboost.html">Backing Up Databases with Data Domain Boost</a></li>
-<li><a href="admin_guide/managing/backup-veritas.html">Backing Up Databases with Veritas NetBackup</a></li>
-<li><a href="admin_guide/managing/restore-parallel.html">Restoring Greenplum Databases</a></li>
-<li><a href="admin_guide/managing/gpdbrestore.html">Restoring a Database Using gpdbrestore</a></li>
-<li><a href="admin_guide/managing/restore-diff-system.html">Restoring to a Different Greenplum System Configuration</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/expand/expand-main.html">Expanding a Greenplum System</a><ul>
-<li><a href="admin_guide/expand/expand-overview.html">System Expansion Overview</a></li>
-<li><a href="admin_guide/expand/expand-planning.html">Planning Greenplum System Expansion</a></li>
-<li><a href="admin_guide/expand/expand-nodes.html">Preparing and Adding Nodes</a></li>
-<li><a href="admin_guide/expand/expand-initialize.html">Initializing New Segments</a></li>
-<li><a href="admin_guide/expand/expand-redistribute.html">Redistributing Tables</a></li>
-<li><a href="admin_guide/expand/expand-rm-schema.html">Removing the Expansion Schema</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/managing/gptransfer.html">Migrating Data with gptransfer</a></li>
-<li><a href="admin_guide/managing/monitor.html">Monitoring a Greenplum System</a></li>
-<li><a href="admin_guide/managing/maintain.html">Routine System Maintenance Tasks</a></li>
-<li><a href="admin_guide/monitoring/monitoring.html">Recommended Monitoring and Maintenance Tasks</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/partIII.html">Managing Greenplum Database Access</a><ul>
-<li>
-<a href="admin_guide/client_auth.html">Configuring Client Authentication</a><ul>
-<li><a href="admin_guide/ldap.html">Using LDAP Authentication with TLS/SSL </a></li>
-<li><a href="admin_guide/kerberos.html">Using Kerberos Authentication</a></li>
-<li><a href="admin_guide/kerberos-win-client.html">Configuring Kerberos For Windows Clients</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/roles_privs.html">Managing Roles and Privileges</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/partIV.html">Working with Databases</a><ul>
-<li>
-<a href="admin_guide/ddl/ddl.html">Defining Database Objects</a><ul>
-<li><a href="admin_guide/ddl/ddl-database.html">Creating and Managing Databases</a></li>
-<li><a href="admin_guide/ddl/ddl-tablespace.html">Creating and Managing Tablespaces</a></li>
-<li><a href="admin_guide/ddl/ddl-schema.html">Creating and Managing Schemas</a></li>
-<li><a href="admin_guide/ddl/ddl-table.html">Creating and Managing Tables</a></li>
-<li><a href="admin_guide/ddl/ddl-storage.html">Choosing the Table Storage Model</a></li>
-<li><a href="admin_guide/ddl/ddl-partition.html">Partitioning Large Tables</a></li>
-<li><a href="admin_guide/ddl/ddl-sequence.html">Creating and Using Sequences</a></li>
-<li><a href="admin_guide/ddl/ddl-index.html">Using Indexes in Greenplum Database</a></li>
-<li><a href="admin_guide/ddl/ddl-view.html">Creating and Managing Views</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/dml.html">Managing Data</a></li>
-<li>
-<a href="admin_guide/load/topics/g-loading-and-unloading-data.html">Loading and Unloading Data</a><ul>
-<li>
-<a href="admin_guide/load/topics/g-working-with-file-based-ext-tables.html">Working with File-Based External Tables</a><ul>
-<li><a href="admin_guide/load/topics/g-external-tables.html">Accessing File-Based External Tables</a></li>
-<li><a href="admin_guide/load/topics/g-file-protocol.html">file:// Protocol</a></li>
-<li><a href="admin_guide/load/topics/g-gpfdist-protocol.html">gpfdist:// Protocol</a></li>
-<li><a href="admin_guide/load/topics/g-gpfdists-protocol.html">gpfdists:// Protocol</a></li>
-<li><a href="admin_guide/load/topics/g-gphdfs-protocol.html">gphdfs:// Protocol</a></li>
-<li><a href="admin_guide/load/topics/g-s3-protocol.html">s3:// Protocol</a></li>
-<li><a href="admin_guide/load/topics/g-accessing-ext-files-custom-protocol.html">Using a Custom Protocol</a></li>
-<li><a href="admin_guide/load/topics/g-handling-errors-ext-table-data.html">Handling Errors in External Table Data</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-using-the-greenplum-parallel-file-server--gpfdist-.html">Using the Greenplum Parallel File Server (gpfdist)</a><ul>
-<li><a href="admin_guide/load/topics/g-about-gpfdist-setup-and-performance.html">About gpfdist Setup and Performance</a></li>
-<li><a href="admin_guide/load/topics/g-controlling-segment-parallelism.html">Controlling Segment Parallelism</a></li>
-<li><a href="admin_guide/load/topics/g-installing-gpfdist.html">Installing gpfdist</a></li>
-<li><a href="admin_guide/load/topics/g-starting-and-stopping-gpfdist.html">Starting and Stopping gpfdist</a></li>
-<li><a href="admin_guide/load/topics/g-troubleshooting-gpfdist.html">Troubleshooting gpfdist</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-using-hadoop-distributed-file-system--hdfs--tables.html">Using Hadoop Distributed File System (HDFS) Tables</a><ul>
-<li>
-<a href="admin_guide/load/topics/g-one-time-hdfs-protocol-installation.html">One-time HDFS Protocol Installation</a><ul>
-<li><a href="admin_guide/load/topics/g-grant-privileges-for-the-hdfs-protocol.html">Grant Privileges for the HDFS Protocol</a></li>
-<li>
-<a href="admin_guide/load/topics/g-specify-hdfs-data-in-an-external-table-definition.html">Specify HDFS Data in an External Table Definition</a><ul><li><a href="admin_guide/load/topics/g-setting-compression-options-for-hadoop-writable-external-tables.html">Setting Compression Options for Hadoop Writable External Tables</a></li></ul>
-</li>
-<li><a href="admin_guide/load/topics/g-hdfs-readable-and-writable-external-table-examples.html">HDFS Readable and Writable External Table Examples</a></li>
-<li><a href="admin_guide/load/topics/g-reading-and-writing-custom-formatted-hdfs-data.html">Reading and Writing Custom-Formatted HDFS Data</a></li>
-<li><a href="admin_guide/load/topics/g-example-1-read-custom-formatted-data-from-hdfs.html">Example 1 - Read Custom-Formatted Data from HDFS</a></li>
-<li>
-<a href="admin_guide/load/topics/g-sample-mapreduce-code.html">Sample MapReduce Code</a><ul><li><a href="admin_guide/load/topics/g-run-create-external-table.html"> Run CREATE EXTERNAL TABLE</a></li></ul>
-</li>
-<li><a href="admin_guide/load/topics/g-example-2-write-custom-formatted-data-from-greenplum-database-to-hdfs.html">Example 2 - Write Custom-Formatted Data from Greenplum Database to HDFS</a></li>
-<li><a href="admin_guide/load/topics/g-mapreduce-sample-code.html"> MapReduce Sample Code </a></li>
-</ul>
-</li>
-<li><a href="admin_guide/load/topics/g-gphdfs-jvm.html">About gphdfs JVM Memory</a></li>
-<li><a href="admin_guide/load/topics/g-hdfs-emr-config.html">Using Amazon EMR with Greenplum Database installed on AWS </a></li>
-<li><a href="admin_guide/load/topics/g-hdfs-avro-format.html">Support for Avro Files</a></li>
-<li><a href="admin_guide/load/topics/g-hdfs-parquet-format.html">Support for Parquet Files</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-creating-and-using-web-external-tables.html">Creating and Using Web External Tables</a><ul>
-<li><a href="admin_guide/load/topics/g-command-based-web-external-tables.html">Command-based Web External Tables</a></li>
-<li><a href="admin_guide/load/topics/g-url-based-web-external-tables.html">URL-based Web External Tables</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/load/topics/g-loading-data-using-an-external-table.html">Loading Data Using an External Table</a></li>
-<li>
-<a href="admin_guide/load/topics/g-loading-and-writing-non-hdfs-custom-data.html">Loading and Writing Non-HDFS Custom Data</a><ul>
-<li>
-<a href="admin_guide/load/topics/g-using-a-custom-format.html">Using a Custom Format</a><ul>
-<li><a href="admin_guide/load/topics/g-importing-and-exporting-fixed-width-data.html">Importing and Exporting Fixed Width Data</a></li>
-<li><a href="admin_guide/load/topics/g-examples-read-fixed-width-data.html">Examples: Read Fixed-Width Data</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/load/topics/g-using-a-custom-protocol.html">Using a Custom Protocol</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-creating-external-tables---examples.html">Creating External Tables - Examples</a><ul>
-<li><a href="admin_guide/load/topics/g-example-1-single-gpfdist-instance-on-single-nic-machine.html">Example 1—Single gpfdist instance on single-NIC machine</a></li>
-<li><a href="admin_guide/load/topics/g-example-2-multiple-gpfdist-instances.html">Example 2—Multiple gpfdist instances </a></li>
-<li><a href="admin_guide/load/topics/g-example-3-multiple-gpfdists-instances.html">Example 3—Multiple gpfdists instances </a></li>
-<li><a href="admin_guide/load/topics/g-example-4-single-gpfdist-instance-with-error-logging.html">Example 4—Single gpfdist instance with error logging</a></li>
-<li><a href="admin_guide/load/topics/g-example-5-text-format-on-a-hadoop-distributed-file-server.html">Example 5—TEXT Format on a Hadoop Distributed File Server</a></li>
-<li><a href="admin_guide/load/topics/g-example-6-multiple-files-in-csv-format-with-header-rows.html">Example 6—Multiple files in CSV format with header rows</a></li>
-<li><a href="admin_guide/load/topics/g-example-7-readable-web-external-table-with-script.html">Example 7—Readable Web External Table with Script</a></li>
-<li><a href="admin_guide/load/topics/g-example-8-writable-external-table-with-gpfdist.html">Example 8—Writable External Table with gpfdist</a></li>
-<li><a href="admin_guide/load/topics/g-example-9-writable-external-web-table-with-script.html">Example 9—Writable External Web Table with Script</a></li>
-<li><a href="admin_guide/load/topics/g-example-10-readable-and-writable-external-tables-with-xml-transformations.html">Example 10—Readable and Writable External Tables with XML Transformations</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-handling-load-errors.html">Handling Load Errors</a><ul>
-<li><a href="admin_guide/load/topics/g-define-an-external-table-with-single-row-error-isolation.html">Define an External Table with Single Row Error Isolation</a></li>
-<li><a href="admin_guide/load/topics/g-create-an-error-table-and-declare-a-reject-limit.html">Capture Row Formatting Errors and Declare a Reject Limit </a></li>
-<li><a href="admin_guide/load/topics/g-viewing-bad-rows-in-the-error-table-or-error-log.html">Viewing Bad Rows in the Error Log</a></li>
-<li><a href="admin_guide/load/topics/g-identifying-invalid-csv-files-in-error-table-data.html">Identifying Invalid CSV Files in Error Table Data</a></li>
-<li><a href="admin_guide/load/topics/g-moving-data-between-tables.html">Moving Data between Tables</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/load/topics/g-loading-data-with-gpload.html">Loading Data with gpload</a></li>
-<li><a href="admin_guide/load/topics/g-loading-data-with-copy.html">Loading Data with COPY</a></li>
-<li><a href="admin_guide/load/topics/g-running-copy-in-single-row-error-isolation-mode.html">Running COPY in Single Row Error Isolation Mode</a></li>
-<li><a href="admin_guide/load/topics/g-optimizing-data-load-and-query-performance.html">Optimizing Data Load and Query Performance</a></li>
-<li>
-<a href="admin_guide/load/topics/g-unloading-data-from-greenplum-database.html">Unloading Data from Greenplum Database</a><ul>
-<li>
-<a href="admin_guide/load/topics/g-defining-a-file-based-writable-external-table.html">Defining a File-Based Writable External Table</a><ul>
-<li><a href="admin_guide/load/topics/g-example-1-greenplum-file-server-gpfdist.html">Example 1—Greenplum file server (gpfdist)</a></li>
-<li><a href="admin_guide/load/topics/g-example-2-hadoop-file-server-gphdfs.html">Example 2—Hadoop file server (gphdfs)</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-defining-a-command-based-writable-external-web-table.html">Defining a Command-Based Writable External Web Table</a><ul><li><a href="admin_guide/load/topics/g-disabling-execute-for-web-or-writable-external-tables.html">Disabling EXECUTE for Web or Writable External Tables</a></li></ul>
-</li>
-<li><a href="admin_guide/load/topics/g-unloading-data-using-a-writable-external-table.html">Unloading Data Using a Writable External Table</a></li>
-<li><a href="admin_guide/load/topics/g-unloading-data-using-copy.html">Unloading Data Using COPY</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-transforming-xml-data.html">Transforming XML Data</a><ul>
-<li><a href="admin_guide/load/topics/g-determine-the-transformation-schema.html">Determine the Transformation Schema</a></li>
-<li><a href="admin_guide/load/topics/g-write-a-transform.html">Write a Transform</a></li>
-<li><a href="admin_guide/load/topics/g-write-the-gpfdist-configuration.html">Write the gpfdist Configuration</a></li>
-<li><a href="admin_guide/load/topics/g-load-the-data.html">Load the Data</a></li>
-<li>
-<a href="admin_guide/load/topics/g-transfer-and-store-the-data.html">Transfer and Store the Data</a><ul>
-<li><a href="admin_guide/load/topics/g-transforming-with-gpload.html">Transforming with GPLOAD</a></li>
-<li><a href="admin_guide/load/topics/g-transforming-with-insert-into-select-from.html">Transforming with INSERT INTO SELECT FROM</a></li>
-<li><a href="admin_guide/load/topics/g-configuration-file-format.html">Configuration File Format</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-xml-transformation-examples.html">XML Transformation Examples</a><ul>
-<li><a href="admin_guide/load/topics/g-example-1-dblp-database-publications-in-demo-directory.html">Command-based Web External Tables</a></li>
-<li><a href="admin_guide/load/topics/g-example-2-irs-mef-xml-files-in-demo-directory.html">Example 2 - IRS MeF XML Files (In demo Directory)</a></li>
-<li><a href="admin_guide/load/topics/g-example-3-witsml-files-in-demo-directory.html">Example 3 - WITSML™ Files (In demo Directory)</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-formatting-data-files.html">Formatting Data Files</a><ul>
-<li><a href="admin_guide/load/topics/g-formatting-rows.html">Formatting Rows</a></li>
-<li><a href="admin_guide/load/topics/g-formatting-columns.html">Formatting Columns</a></li>
-<li><a href="admin_guide/load/topics/g-representing-null-values.html">Representing NULL Values</a></li>
-<li>
-<a href="admin_guide/load/topics/g-escaping.html">Escaping</a><ul>
-<li><a href="admin_guide/load/topics/g-escaping-in-text-formatted-files.html">Escaping in Text Formatted Files</a></li>
-<li><a href="admin_guide/load/topics/g-escaping-in-csv-formatted-files.html">Escaping in CSV Formatted Files</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/load/topics/g-character-encoding.html">Character Encoding</a></li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/load/topics/g-example-custom-data-access-protocol.html">Example Custom Data Access Protocol </a><ul><li>
-<a href="admin_guide/load/topics/g-installing-the-external-table-protocol.html">Installing the External Table Protocol</a><ul><li><a href="admin_guide/load/topics/g-gpextprotocal.c.html">gpextprotocal.c</a></li></ul>
-</li></ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/query/topics/query.html">Querying Data</a><ul>
-<li><a href="admin_guide/query/topics/parallel-proc.html">About Greenplum Query Processing</a></li>
-<li>
-<a href="admin_guide/query/topics/query-piv-optimizer.html">About GPORCA</a><ul>
-<li><a href="admin_guide/query/topics/query-piv-opt-overview.html">Overview of GPORCA</a></li>
-<li><a href="admin_guide/query/topics/query-piv-opt-enable.html">Enabling GPORCA</a></li>
-<li><a href="admin_guide/query/topics/query-piv-opt-notes.html">Considerations when Using GPORCA</a></li>
-<li><a href="admin_guide/query/topics/query-piv-opt-features.html">GPORCA Features and Enhancements</a></li>
-<li><a href="admin_guide/query/topics/query-piv-opt-changed.html">Changed Behavior with the GPORCA</a></li>
-<li><a href="admin_guide/query/topics/query-piv-opt-limitations.html">GPORCA Limitations</a></li>
-<li><a href="admin_guide/query/topics/query-piv-opt-fallback.html">Determining the Query Optimizer that is Used</a></li>
-<li><a href="admin_guide/query/topics/query-piv-uniform-part-tbl.html">About Uniform Multi-level Partitioned Tables</a></li>
-</ul>
-</li>
-<li><a href="admin_guide/query/topics/defining-queries.html">Defining Queries</a></li>
-<li><a href="admin_guide/query/topics/functions-operators.html">Using Functions and Operators</a></li>
-<li><a href="admin_guide/query/topics/json-data.html">Working with JSON Data</a></li>
-<li><a href="admin_guide/query/topics/query-performance.html">Query Performance</a></li>
-<li><a href="admin_guide/query/topics/spill-files.html">Managing Spill Files Generated by Queries</a></li>
-<li><a href="admin_guide/query/topics/query-profiling.html">Query Profiling</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="admin_guide/partV.html">Managing Performance</a><ul>
-<li><a href="admin_guide/perf_intro.html">Defining Database Performance</a></li>
-<li><a href="admin_guide/perf_issues.html">Common Causes of Performance Issues</a></li>
-<li><a href="admin_guide/workload_mgmt.html">Workload Management with Resource Queues</a></li>
-<li><a href="admin_guide/perf_troubleshoot.html">Investigating a Performance Problem</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="utility_guide/utility_guide.html">Utility Guide</a><ul>
-<li>
-<a href="utility_guide/admin_utilities/util_ref.html">Management Utility Reference</a><ul>
-<li><a href="utility_guide/admin_utilities/analyzedb.html">analyzedb</a></li>
-<li><a href="utility_guide/admin_utilities/gpactivatestandby.html">gpactivatestandby</a></li>
-<li><a href="utility_guide/admin_utilities/gpaddmirrors.html">gpaddmirrors</a></li>
-<li><a href="utility_guide/admin_utilities/gpcheck.html">gpcheck</a></li>
-<li><a href="utility_guide/admin_utilities/gpcheckcat.html">gpcheckcat</a></li>
-<li><a href="utility_guide/admin_utilities/gpcheckperf.html">gpcheckperf</a></li>
-<li><a href="utility_guide/admin_utilities/gpconfig.html">gpconfig</a></li>
-<li><a href="utility_guide/admin_utilities/gpcrondump.html">gpcrondump</a></li>
-<li><a href="utility_guide/admin_utilities/gpdbrestore.html">gpdbrestore</a></li>
-<li><a href="utility_guide/admin_utilities/gpdeletesystem.html">gpdeletesystem</a></li>
-<li><a href="utility_guide/admin_utilities/gpexpand.html">gpexpand</a></li>
-<li><a href="utility_guide/admin_utilities/gpfdist.html">gpfdist</a></li>
-<li><a href="utility_guide/admin_utilities/gpfilespace.html">gpfilespace</a></li>
-<li><a href="utility_guide/admin_utilities/gpinitstandby.html">gpinitstandby</a></li>
-<li><a href="utility_guide/admin_utilities/gpinitsystem.html">gpinitsystem</a></li>
-<li><a href="utility_guide/admin_utilities/gpload.html">gpload</a></li>
-<li><a href="utility_guide/admin_utilities/gplogfilter.html">gplogfilter</a></li>
-<li><a href="utility_guide/admin_utilities/gpmapreduce.html">gpmapreduce</a></li>
-<li><a href="utility_guide/admin_utilities/gpmfr.html">gpmfr</a></li>
-<li><a href="utility_guide/admin_utilities/gpperfmon_install.html">gpperfmon_install</a></li>
-<li><a href="utility_guide/admin_utilities/gppkg.html">gppkg</a></li>
-<li><a href="utility_guide/admin_utilities/gprecoverseg.html">gprecoverseg</a></li>
-<li><a href="utility_guide/admin_utilities/gpreload.html">gpreload</a></li>
-<li><a href="utility_guide/admin_utilities/gpscp.html">gpscp</a></li>
-<li><a href="utility_guide/admin_utilities/gpseginstall.html">gpseginstall</a></li>
-<li><a href="utility_guide/admin_utilities/gpssh.html">gpssh</a></li>
-<li><a href="utility_guide/admin_utilities/gpssh-exkeys.html">gpssh-exkeys</a></li>
-<li><a href="utility_guide/admin_utilities/gpstart.html">gpstart</a></li>
-<li><a href="utility_guide/admin_utilities/gpstate.html">gpstate</a></li>
-<li><a href="utility_guide/admin_utilities/gpstop.html">gpstop</a></li>
-<li><a href="utility_guide/admin_utilities/gpsys.html">gpsys1</a></li>
-<li><a href="utility_guide/admin_utilities/gptransfer.html">gptransfer</a></li>
-<li><a href="utility_guide/admin_utilities/pgbouncer-ref.html">pgbouncer</a></li>
-</ul>
-</li>
-<li>
-<a href="utility_guide/cli_ref.html">Client Utility Reference</a><ul><li>
-<a href="utility_guide/client_utilities/ClientUtilitySummary.html">Client Utility Summary</a><ul>
-<li><a href="utility_guide/client_utilities/clusterdb.html">clusterdb</a></li>
-<li><a href="utility_guide/client_utilities/createdb.html">createdb</a></li>
-<li><a href="utility_guide/client_utilities/createuser.html">createuser</a></li>
-<li><a href="utility_guide/client_utilities/dropdb.html">dropdb</a></li>
-<li><a href="utility_guide/client_utilities/droplang.html">droplang</a></li>
-<li><a href="utility_guide/client_utilities/dropuser.html">dropuser</a></li>
-<li><a href="utility_guide/client_utilities/createlang.html">createlang</a></li>
-<li><a href="utility_guide/client_utilities/pg_config.html">pg_config</a></li>
-<li><a href="utility_guide/client_utilities/pg_dump.html">pg_dump</a></li>
-<li><a href="utility_guide/client_utilities/pg_dumpall.html">pg_dumpall</a></li>
-<li><a href="utility_guide/client_utilities/pg_restore.html">pg_restore</a></li>
-<li><a href="utility_guide/client_utilities/psql.html">psql</a></li>
-<li><a href="utility_guide/client_utilities/reindexdb.html">reindexdb</a></li>
-<li><a href="utility_guide/client_utilities/vacuumdb.html">vacuumdb</a></li>
-</ul>
-</li></ul>
-</li>
-<li><a href="utility_guide/orafce_ref.html">Oracle Compatibility Functions</a></li>
-<li><a href="utility_guide/dblink.html">dblink Functions</a></li>
-</ul>
-</li>
-<li>
-<a href="ref_guide/ref_guide.html">Reference Guide</a><ul>
-<li>
-<a href="ref_guide/sql_commands/sql_ref.html">SQL Command Reference</a><ul>
-<li><a href="ref_guide/GPReferenceSQLSummaryLOP.html">SQL Syntax Summary</a></li>
-<li><a href="ref_guide/sql_commands/ABORT.html">ABORT</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_AGGREGATE.html">ALTER AGGREGATE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_CONVERSION.html">ALTER CONVERSION</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_DATABASE.html">ALTER DATABASE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_DOMAIN.html">ALTER DOMAIN</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_FILESPACE.html">ALTER FILESPACE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_FUNCTION.html">ALTER FUNCTION</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_GROUP.html">ALTER GROUP</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_INDEX.html">ALTER INDEX</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_LANGUAGE.html">ALTER LANGUAGE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_OPERATOR.html">ALTER OPERATOR</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_OPERATOR_CLASS.html">ALTER OPERATOR CLASS</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_PROTOCOL.html">ALTER PROTOCOL</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_RESOURCE_QUEUE.html">ALTER RESOURCE QUEUE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_ROLE.html">ALTER ROLE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_SCHEMA.html">ALTER SCHEMA</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_SEQUENCE.html">ALTER SEQUENCE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_TABLE.html">ALTER TABLE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_TABLESPACE.html">ALTER TABLESPACE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_TYPE.html">ALTER TYPE</a></li>
-<li><a href="ref_guide/sql_commands/ALTER_USER.html">ALTER USER</a></li>
-<li><a href="ref_guide/sql_commands/ANALYZE.html">ANALYZE</a></li>
-<li><a href="ref_guide/sql_commands/BEGIN.html">BEGIN</a></li>
-<li><a href="ref_guide/sql_commands/CHECKPOINT.html">CHECKPOINT</a></li>
-<li><a href="ref_guide/sql_commands/CLOSE.html">CLOSE</a></li>
-<li><a href="ref_guide/sql_commands/CLUSTER.html">CLUSTER</a></li>
-<li><a href="ref_guide/sql_commands/COMMENT.html">COMMENT</a></li>
-<li><a href="ref_guide/sql_commands/COMMIT.html">COMMIT</a></li>
-<li><a href="ref_guide/sql_commands/COPY.html">COPY</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_AGGREGATE.html">CREATE AGGREGATE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_CAST.html">CREATE CAST</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_CONVERSION.html">CREATE CONVERSION</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_DATABASE.html">CREATE DATABASE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_DOMAIN.html">CREATE DOMAIN</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_FUNCTION.html">CREATE FUNCTION</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_GROUP.html">CREATE GROUP</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_INDEX.html">CREATE INDEX</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_LANGUAGE.html">CREATE LANGUAGE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_OPERATOR.html">CREATE OPERATOR</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_OPERATOR_CLASS.html">CREATE OPERATOR CLASS</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_PROTOCOL.html">CREATE PROTOCOL</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_RESOURCE_QUEUE.html">CREATE RESOURCE QUEUE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_ROLE.html">CREATE ROLE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_RULE.html">CREATE RULE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_SCHEMA.html">CREATE SCHEMA</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_SEQUENCE.html">CREATE SEQUENCE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_TABLE.html">CREATE TABLE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_TABLE_AS.html">CREATE TABLE AS</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_TABLESPACE.html">CREATE TABLESPACE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_TYPE.html">CREATE TYPE</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_USER.html">CREATE USER</a></li>
-<li><a href="ref_guide/sql_commands/CREATE_VIEW.html">CREATE VIEW</a></li>
-<li><a href="ref_guide/sql_commands/DEALLOCATE.html">DEALLOCATE</a></li>
-<li><a href="ref_guide/sql_commands/DECLARE.html">DECLARE</a></li>
-<li><a href="ref_guide/sql_commands/DELETE.html">DELETE</a></li>
-<li><a href="ref_guide/sql_commands/DO.html">DO</a></li>
-<li><a href="ref_guide/sql_commands/DROP_AGGREGATE.html">DROP AGGREGATE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_CAST.html">DROP CAST</a></li>
-<li><a href="ref_guide/sql_commands/DROP_CONVERSION.html">DROP CONVERSION</a></li>
-<li><a href="ref_guide/sql_commands/DROP_DATABASE.html">DROP DATABASE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a></li>
-<li><a href="ref_guide/sql_commands/DROP_EXTERNAL_TABLE.html">DROP EXTERNAL TABLE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_FILESPACE.html">DROP FILESPACE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_FUNCTION.html">DROP FUNCTION</a></li>
-<li><a href="ref_guide/sql_commands/DROP_GROUP.html">DROP GROUP</a></li>
-<li><a href="ref_guide/sql_commands/DROP_INDEX.html">DROP INDEX</a></li>
-<li><a href="ref_guide/sql_commands/DROP_LANGUAGE.html">DROP LANGUAGE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_OPERATOR.html">DROP OPERATOR</a></li>
-<li><a href="ref_guide/sql_commands/DROP_OPERATOR_CLASS.html">DROP OPERATOR CLASS</a></li>
-<li><a href="ref_guide/sql_commands/DROP_OWNED.html">DROP OWNED</a></li>
-<li><a href="ref_guide/sql_commands/DROP_PROTOCOL.html">DROP PROTOCOL</a></li>
-<li><a href="ref_guide/sql_commands/DROP_RESOURCE_QUEUE.html">DROP RESOURCE QUEUE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_ROLE.html">DROP ROLE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_RULE.html">DROP RULE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_SCHEMA.html">DROP SCHEMA</a></li>
-<li><a href="ref_guide/sql_commands/DROP_SEQUENCE.html">DROP SEQUENCE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_TABLE.html">DROP TABLE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_TABLESPACE.html">DROP TABLESPACE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_TYPE.html">DROP TYPE</a></li>
-<li><a href="ref_guide/sql_commands/DROP_USER.html">DROP USER</a></li>
-<li><a href="ref_guide/sql_commands/DROP_VIEW.html">DROP VIEW</a></li>
-<li><a href="ref_guide/sql_commands/END.html">END</a></li>
-<li><a href="ref_guide/sql_commands/EXECUTE.html">EXECUTE</a></li>
-<li><a href="ref_guide/sql_commands/EXPLAIN.html">EXPLAIN</a></li>
-<li><a href="ref_guide/sql_commands/FETCH.html">FETCH</a></li>
-<li><a href="ref_guide/sql_commands/GRANT.html">GRANT</a></li>
-<li><a href="ref_guide/sql_commands/INSERT.html">INSERT</a></li>
-<li><a href="ref_guide/sql_commands/LOAD.html">LOAD</a></li>
-<li><a href="ref_guide/sql_commands/LOCK.html">LOCK</a></li>
-<li><a href="ref_guide/sql_commands/MOVE.html">MOVE</a></li>
-<li><a href="ref_guide/sql_commands/PREPARE.html">PREPARE</a></li>
-<li><a href="ref_guide/sql_commands/REASSIGN_OWNED.html">REASSIGN OWNED</a></li>
-<li><a href="ref_guide/sql_commands/REINDEX.html">REINDEX</a></li>
-<li><a href="ref_guide/sql_commands/RELEASE_SAVEPOINT.html">RELEASE SAVEPOINT</a></li>
-<li><a href="ref_guide/sql_commands/RESET.html">RESET</a></li>
-<li><a href="ref_guide/sql_commands/REVOKE.html">REVOKE</a></li>
-<li><a href="ref_guide/sql_commands/ROLLBACK.html">ROLLBACK</a></li>
-<li><a href="ref_guide/sql_commands/ROLLBACK_TO_SAVEPOINT.html">ROLLBACK TO SAVEPOINT</a></li>
-<li><a href="ref_guide/sql_commands/SAVEPOINT.html">SAVEPOINT</a></li>
-<li><a href="ref_guide/sql_commands/SELECT.html">SELECT</a></li>
-<li><a href="ref_guide/sql_commands/SELECT_INTO.html">SELECT INTO</a></li>
-<li><a href="ref_guide/sql_commands/SET.html">SET</a></li>
-<li><a href="ref_guide/sql_commands/SET_ROLE.html">SET ROLE</a></li>
-<li><a href="ref_guide/sql_commands/SET_SESSION_AUTHORIZATION.html">SET SESSION AUTHORIZATION</a></li>
-<li><a href="ref_guide/sql_commands/SET_TRANSACTION.html">SET TRANSACTION</a></li>
-<li><a href="ref_guide/sql_commands/SHOW.html">SHOW</a></li>
-<li><a href="ref_guide/sql_commands/START_TRANSACTION.html">START TRANSACTION</a></li>
-<li><a href="ref_guide/sql_commands/TRUNCATE.html">TRUNCATE</a></li>
-<li><a href="ref_guide/sql_commands/UPDATE.html">UPDATE</a></li>
-<li><a href="ref_guide/sql_commands/VACUUM.html">VACUUM</a></li>
-<li><a href="ref_guide/sql_commands/VALUES.html">VALUES</a></li>
-</ul>
-</li>
-<li><a href="ref_guide/SQL2008_support.html">SQL 2008 Optional Feature Compliance</a></li>
-<li><a href="ref_guide/env_var_ref.html">Greenplum Environment Variables</a></li>
-<li>
-<a href="ref_guide/system_catalogs/catalog_ref.html#topic1">System Catalog Reference</a><ul>
-<li><a href="ref_guide/system_catalogs/catalog_ref-tables.html#topic1">System Tables</a></li>
-<li><a href="ref_guide/system_catalogs/catalog_ref-views.html#topic1">System Views</a></li>
-<li>
-<a href="ref_guide/system_catalogs/catalog_ref-html.html#topic1">System Catalogs Definitions</a><ul>
-<li><a href="ref_guide/system_catalogs/gp_configuration_history.html">gp_configuration_history</a></li>
-<li><a href="ref_guide/system_catalogs/gp_db_interfaces.html">gp_db_interfaces</a></li>
-<li><a href="ref_guide/system_catalogs/gp_distributed_log.html">gp_distributed_log</a></li>
-<li><a href="ref_guide/system_catalogs/gp_distributed_xacts.html">gp_distributed_xacts</a></li>
-<li><a href="ref_guide/system_catalogs/gp_distribution_policy.html">gp_distribution_policy</a></li>
-<li><a href="ref_guide/system_catalogs/gpexpand_expansion_progress.html">gpexpand.expansion_progress</a></li>
-<li><a href="ref_guide/system_catalogs/gp_expansion_status.html">gpexpand.status</a></li>
-<li><a href="ref_guide/system_catalogs/gp_expansion_tables.html">gpexpand.status_detail</a></li>
-<li><a href="ref_guide/system_catalogs/gp_fastsequence.html">gp_fastsequence</a></li>
-<li><a href="ref_guide/system_catalogs/gp_fault_strategy.html">gp_fault_strategy</a></li>
-<li><a href="ref_guide/system_catalogs/gp_global_sequence.html">gp_global_sequence</a></li>
-<li><a href="ref_guide/system_catalogs/gp_id.html">gp_id</a></li>
-<li><a href="ref_guide/system_catalogs/gp_interfaces.html">gp_interfaces</a></li>
-<li><a href="ref_guide/system_catalogs/gp_persistent_database_node.html">gp_persistent_database_node</a></li>
-<li><a href="ref_guide/system_catalogs/gp_persistent_filespace_node.html">gp_persistent_filespace_node</a></li>
-<li><a href="ref_guide/system_catalogs/gp_persistent_relation_node.html">gp_persistent_relation_node</a></li>
-<li><a href="ref_guide/system_catalogs/gp_persistent_tablespace_node.html">gp_persistent_tablespace_node</a></li>
-<li><a href="ref_guide/system_catalogs/gp_pgdatabase.html">gp_pgdatabase</a></li>
-<li><a href="ref_guide/system_catalogs/gp_relation_node.html">gp_relation_node</a></li>
-<li><a href="ref_guide/system_catalogs/gp_resqueue_status.html">gp_resqueue_status</a></li>
-<li><a href="ref_guide/system_catalogs/gp_san_configuration.html">gp_san_configuration</a></li>
-<li><a href="ref_guide/system_catalogs/gp_segment_configuration.html">gp_segment_configuration</a></li>
-<li><a href="ref_guide/system_catalogs/gp_transaction_log.html">gp_transaction_log</a></li>
-<li><a href="ref_guide/system_catalogs/gp_version_at_initdb.html">gp_version_at_initdb</a></li>
-<li><a href="ref_guide/system_catalogs/pg_aggregate.html">pg_aggregate</a></li>
-<li><a href="ref_guide/system_catalogs/pg_am.html">pg_am</a></li>
-<li><a href="ref_guide/system_catalogs/pg_amop.html">pg_amop</a></li>
-<li><a href="ref_guide/system_catalogs/pg_amproc.html">pg_amproc</a></li>
-<li><a href="ref_guide/system_catalogs/pg_appendonly.html">pg_appendonly</a></li>
-<li><a href="ref_guide/system_catalogs/pg_attrdef.html">pg_attrdef</a></li>
-<li><a href="ref_guide/system_catalogs/pg_attribute.html">pg_attribute</a></li>
-<li><a href="ref_guide/system_catalogs/pg_attribute_encoding.html">pg_attribute_encoding</a></li>
-<li><a href="ref_guide/system_catalogs/pg_auth_members.html">pg_auth_members</a></li>
-<li><a href="ref_guide/system_catalogs/pg_authid.html">pg_authid</a></li>
-<li><a href="ref_guide/system_catalogs/pg_cast.html">pg_cast</a></li>
-<li><a href="ref_guide/system_catalogs/pg_class.html">pg_class</a></li>
-<li><a href="ref_guide/system_catalogs/pg_compression.html">pg_compression</a></li>
-<li><a href="ref_guide/system_catalogs/pg_constraint.html">pg_constraint</a></li>
-<li><a href="ref_guide/system_catalogs/pg_conversion.html">pg_conversion</a></li>
-<li><a href="ref_guide/system_catalogs/pg_database.html">pg_database</a></li>
-<li><a href="ref_guide/system_catalogs/pg_depend.html">pg_depend</a></li>
-<li><a href="ref_guide/system_catalogs/pg_description.html">pg_description</a></li>
-<li><a href="ref_guide/system_catalogs/pg_enum.html">pg_enum</a></li>
-<li><a href="ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a></li>
-<li><a href="ref_guide/system_catalogs/pg_filespace.html">pg_filespace</a></li>
-<li><a href="ref_guide/system_catalogs/pg_filespace_entry.html">pg_filespace_entry</a></li>
-<li><a href="ref_guide/system_catalogs/pg_index.html">pg_index</a></li>
-<li><a href="ref_guide/system_catalogs/pg_inherits.html">pg_inherits</a></li>
-<li><a href="ref_guide/system_catalogs/pg_language.html">pg_language</a></li>
-<li><a href="ref_guide/system_catalogs/pg_largeobject.html">pg_largeobject</a></li>
-<li><a href="ref_guide/system_catalogs/pg_listener.html">pg_listener</a></li>
-<li><a href="ref_guide/system_catalogs/pg_locks.html">pg_locks</a></li>
-<li><a href="ref_guide/system_catalogs/pg_namespace.html">pg_namespace</a></li>
-<li><a href="ref_guide/system_catalogs/pg_opclass.html">pg_opclass</a></li>
-<li><a href="ref_guide/system_catalogs/pg_operator.html">pg_operator</a></li>
-<li><a href="ref_guide/system_catalogs/pg_partition.html">pg_partition</a></li>
-<li><a href="ref_guide/system_catalogs/pg_partition_columns.html">pg_partition_columns</a></li>
-<li><a href="ref_guide/system_catalogs/pg_partition_encoding.html">pg_partition_encoding</a></li>
-<li><a href="ref_guide/system_catalogs/pg_partition_rule.html">pg_partition_rule</a></li>
-<li><a href="ref_guide/system_catalogs/pg_partition_templates.html">pg_partition_templates</a></li>
-<li><a href="ref_guide/system_catalogs/pg_partitions.html">pg_partitions</a></li>
-<li><a href="ref_guide/system_catalogs/pg_pltemplate.html">pg_pltemplate</a></li>
-<li><a href="ref_guide/system_catalogs/pg_proc.html">pg_proc</a></li>
-<li><a href="ref_guide/system_catalogs/pg_resourcetype.html">pg_resourcetype</a></li>
-<li><a href="ref_guide/system_catalogs/pg_resqueue.html">pg_resqueue</a></li>
-<li><a href="ref_guide/system_catalogs/pg_resqueue_attributes.html">pg_resqueue_attributes</a></li>
-<li><a href="ref_guide/system_catalogs/pg_resqueuecapability.html">pg_resqueuecapability</a></li>
-<li><a href="ref_guide/system_catalogs/pg_rewrite.html">pg_rewrite</a></li>
-<li><a href="ref_guide/system_catalogs/pg_roles.html">pg_roles</a></li>
-<li><a href="ref_guide/system_catalogs/pg_shdepend.html">pg_shdepend</a></li>
-<li><a href="ref_guide/system_catalogs/pg_shdescription.html">pg_shdescription</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stat_activity.html">pg_stat_activity</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stat_last_operation.html">pg_stat_last_operation</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stat_last_shoperation.html">pg_stat_last_shoperation</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stat_operations.html">pg_stat_operations</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stat_partition_operations.html">pg_stat_partition_operations</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stat_replication.html">pg_stat_replication</a></li>
-<li><a href="ref_guide/system_catalogs/pg_statistic.html">pg_statistic</a></li>
-<li><a href="ref_guide/system_catalogs/pg_stats_resqueue.html">pg_stat_resqueues</a></li>
-<li><a href="ref_guide/system_catalogs/pg_tablespace.html">pg_tablespace</a></li>
-<li><a href="ref_guide/system_catalogs/pg_trigger.html">pg_trigger</a></li>
-<li><a href="ref_guide/system_catalogs/pg_type.html">pg_type</a></li>
-<li><a href="ref_guide/system_catalogs/pg_type_encoding.html">pg_type_encoding</a></li>
-<li><a href="ref_guide/system_catalogs/pg_user_mapping.html">pg_user_mapping</a></li>
-<li><a href="ref_guide/system_catalogs/pg_window.html">pg_window</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="ref_guide/gp_toolkit.html">The gp_toolkit Administrative Schema</a><ul>
-<li><a href="ref_guide/gp_toolkit.html#topic2">Checking for Tables that Need Routine Maintenance</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic5">Checking for Locks</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic8">Checking Append-Optimized Tables</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic16">Viewing Greenplum Database Server Log Files</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic21">Checking Server Configuration Files</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic24">Checking for Failed Segments</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic26">Checking Resource Queue Activity and Status</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic32">Checking Query Disk Spill Space Usage</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic36">Viewing Users and Groups (Roles)</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic38">Checking Database Object Sizes and Disk Space</a></li>
-<li><a href="ref_guide/gp_toolkit.html#topic49">Checking for Uneven Data Distribution</a></li>
-</ul>
-</li>
-<li><a href="ref_guide/data_types.html">Greenplum Database Data Types</a></li>
-<li><a href="ref_guide/character_sets.html">Character Set Support</a></li>
-<li>
-<a href="ref_guide/config_params/guc_config.html">Server Configuration Parameters</a><ul>
-<li><a href="ref_guide/config_params/guc_config.html#topic_vsn_22l_z4">Parameter Types and Values</a></li>
-<li><a href="ref_guide/config_params/guc_config.html#topic_cyz_p2l_z4">Setting Parameters</a></li>
-<li><a href="ref_guide/config_params/guc_category-list.html">Parameter Categories</a></li>
-<li>
-<a href="ref_guide/config_params/guc-list.html">Configuration Parameters</a><ul>
-<li><a href="ref_guide/config_params/guc-list.html#add_missing_from">add_missing_from</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#application_name">application_name</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#array_nulls">array_nulls</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#authentication_timeout">authentication_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#backslash_quote">backslash_quote</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#block_size">block_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#bonjour_name">bonjour_name</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#check_function_bodies">check_function_bodies</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#client_encoding">client_encoding</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#client_min_messages">client_min_messages</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#cpu_index_tuple_cost">cpu_index_tuple_cost</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#cpu_operator_cost">cpu_operator_cost</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#cpu_tuple_cost">cpu_tuple_cost</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#cursor_tuple_fraction">cursor_tuple_fraction</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#custom_variable_classes">custom_variable_classes</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#DateStyle">DateStyle</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#db_user_namespace">db_user_namespace</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#deadlock_timeout">deadlock_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_assertions">debug_assertions</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_pretty_print">debug_pretty_print</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_print_parse">debug_print_parse</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_print_plan">debug_print_plan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_print_prelim_plan">debug_print_prelim_plan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_print_rewritten">debug_print_rewritten</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#debug_print_slice_table">debug_print_slice_table</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#default_statistics_target">default_statistics_target</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#default_tablespace">default_tablespace</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#default_transaction_isolation">default_transaction_isolation</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#default_transaction_read_only">default_transaction_read_only</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#dynamic_library_path">dynamic_library_path</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#effective_cache_size">effective_cache_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_bitmapscan">enable_bitmapscan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_groupagg">enable_groupagg</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_hashagg">enable_hashagg</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_hashjoin">enable_hashjoin</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_indexscan">enable_indexscan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_mergejoin">enable_mergejoin</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_nestloop">enable_nestloop</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_seqscan">enable_seqscan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_sort">enable_sort</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#enable_tidscan">enable_tidscan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#escape_string_warning">escape_string_warning</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#explain_pretty_print">explain_pretty_print</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#extra_float_digits">extra_float_digits</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#filerep_mirrorvalidation_during_resync">filerep_mirrorvalidation_during_resync</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#from_collapse_limit">from_collapse_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_adjust_selectivity_for_outerjoins">gp_adjust_selectivity_for_outerjoins</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_analyze_relative_error">gp_analyze_relative_error</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_appendonly_compaction">gp_appendonly_compaction</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_appendonly_compaction_threshold">gp_appendonly_compaction_threshold</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_autostats_mode">gp_autostats_mode</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_autostats_mode_in_functions">gp_autostats_mode_in_functions</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_autostats_on_change_threshold">gp_autostats_on_change_threshold</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_backup_directIO">gp_backup_directIO</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_backup_directIO_read_chunk_mb">gp_backup_directIO_read_chunk_mb</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_cached_segworkers_threshold">gp_cached_segworkers_threshold</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_command_count">gp_command_count</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_connectemc_mode">gp_connectemc_mode</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_connection_send_timeout">gp_connection_send_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_connections_per_thread">gp_connections_per_thread</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_content">gp_content</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_create_table_random_default_distribution">gp_create_table_random_default_distribution</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_dbid">gp_dbid</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_debug_linger">gp_debug_linger</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_default_storage_options">gp_default_storage_options</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_dynamic_partition_pruning">gp_dynamic_partition_pruning</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_email_from">gp_email_from</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_email_smtp_password">gp_email_smtp_password</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_email_smtp_server">gp_email_smtp_server</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_email_smtp_userid">gp_email_smtp_userid</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_email_to">gp_email_to</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_adaptive_nestloop">gp_enable_adaptive_nestloop</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_agg_distinct">gp_enable_agg_distinct</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_agg_distinct_pruning">gp_enable_agg_distinct_pruning</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_direct_dispatch">gp_enable_direct_dispatch</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_exchange_default_partition">gp_enable_exchange_default_partition</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_fallback_plan">gp_enable_fallback_plan</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_fast_sri">gp_enable_fast_sri</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_gpperfmon">gp_enable_gpperfmon</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_groupext_distinct_gather">gp_enable_groupext_distinct_gather</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_groupext_distinct_pruning">gp_enable_groupext_distinct_pruning</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_multiphase_agg">gp_enable_multiphase_agg</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_predicate_propagation">gp_enable_predicate_propagation</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_preunique">gp_enable_preunique</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_relsize_collection">gp_enable_relsize_collection</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_sequential_window_plans">gp_enable_sequential_window_plans</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_sort_distinct">gp_enable_sort_distinct</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_enable_sort_limit">gp_enable_sort_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_external_enable_exec">gp_external_enable_exec</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_external_grant_privileges">ref_guide/config_params/guc-list.xml#gp_external_grant_privileges</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_external_max_segs">gp_external_max_segs</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_filerep_tcp_keepalives_count">gp_filerep_tcp_keepalives_count</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_filerep_tcp_keepalives_idle">gp_filerep_tcp_keepalives_idle</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_filerep_tcp_keepalives_interval">gp_filerep_tcp_keepalives_interval</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_fts_probe_interval">gp_fts_probe_interval</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_fts_probe_retries">gp_fts_probe_retries</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_fts_probe_threadcount">gp_fts_probe_threadcount</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_fts_probe_timeout">gp_fts_probe_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_gpperfmon_send_interval">gp_gpperfmon_send_interval</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gpperfmon_log_alert_level">gpperfmon_log_alert_level</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_hadoop_home">gp_hadoop_home</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_hadoop_target_version">gp_hadoop_target_version</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_hashjoin_tuples_per_bucket">gp_hashjoin_tuples_per_bucket</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_idf_deduplicate">gp_idf_deduplicate</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#topic_lvm_ttc_3p">gp_initial_bad_row_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_interconnect_fc_method">gp_interconnect_fc_method</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_interconnect_hash_multiplier">gp_interconnect_hash_multiplier</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_interconnect_queue_depth">gp_interconnect_queue_depth</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_interconnect_setup_timeout">gp_interconnect_setup_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_interconnect_snd_queue_depth">gp_interconnect_snd_queue_depth</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_interconnect_type">gp_interconnect_type</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_log_format">gp_log_format</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_log_fts">gp_log_fts</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_csv_line_length">gp_max_csv_line_length</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_databases">gp_max_databases</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_filespaces">gp_max_filespaces</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_local_distributed_cache">gp_max_local_distributed_cache</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_packet_size">gp_max_packet_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_plan_size">gp_max_plan_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_max_tablespaces">gp_max_tablespaces</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_motion_cost_per_row">gp_motion_cost_per_row</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_num_contents_in_cluster">gp_num_contents_in_cluster</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_reject_percent_threshold">gp_reject_percent_threshold</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_reraise_signal">gp_reraise_signal</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_resqueue_memory_policy">gp_resqueue_memory_policy</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_resqueue_priority">gp_resqueue_priority</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_resqueue_priority_cpucores_per_segment">gp_resqueue_priority_cpucores_per_segment</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_resqueue_priority_sweeper_interval">gp_resqueue_priority_sweeper_interval</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_role">gp_role</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_safefswritesize">gp_safefswritesize</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_segment_connect_timeout">gp_segment_connect_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_segments_for_planner">gp_segments_for_planner</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_server_version">gp_server_version</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_server_version_num">gp_server_version_num</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_session_id">gp_session_id</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_set_proc_affinity">gp_set_proc_affinity</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_set_read_only">gp_set_read_only</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_snmp_community">gp_snmp_community</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_snmp_monitor_address">gp_snmp_monitor_address</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_snmp_use_inform_or_trap">gp_snmp_use_inform_or_trap</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_statistics_pullup_from_child_partition">gp_statistics_pullup_from_child_partition</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_statistics_use_fkeys">gp_statistics_use_fkeys</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_vmem_idle_resource_timeout">gp_vmem_idle_resource_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_vmem_protect_limit">gp_vmem_protect_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_vmem_protect_segworker_cache_limit">gp_vmem_protect_segworker_cache_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_workfile_checksumming">gp_workfile_checksumming</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_workfile_compress_algorithm">gp_workfile_compress_algorithm</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_workfile_limit_files_per_query">gp_workfile_limit_files_per_query</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_workfile_limit_per_query">gp_workfile_limit_per_query</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gp_workfile_limit_per_segment">gp_workfile_limit_per_segment</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#gpperfmon_port">gpperfmon_port</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#integer_datetimes">integer_datetimes</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#IntervalStyle">IntervalStyle</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#join_collapse_limit">join_collapse_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#keep_wal_segments">keep_wal_segments</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#krb_caseins_users">krb_caseins_users</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#krb_server_keyfile">krb_server_keyfile</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#krb_srvname">krb_srvname</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#lc_collate">lc_collate</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#lc_ctype">lc_ctype</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#lc_messages">lc_messages</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#lc_monetary">lc_monetary</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#lc_numeric">lc_numeric</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#lc_time">lc_time</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#listen_addresses">listen_addresses</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#local_preload_libraries">local_preload_libraries</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_autostats">log_autostats</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_connections">log_connections</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_disconnections">log_disconnections</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_dispatch_stats">log_dispatch_stats</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_duration">log_duration</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_error_verbosity">log_error_verbosity</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_executor_stats">log_executor_stats</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_hostname">log_hostname</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_min_duration_statement">log_min_duration_statement</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_min_error_statement">log_min_error_statement</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_min_messages">log_min_messages</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_parser_stats">log_parser_stats</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_planner_stats">log_planner_stats</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_rotation_age">log_rotation_age</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_rotation_size">log_rotation_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_statement">log_statement</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_statement_stats">log_statement_stats</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_timezone">log_timezone</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#log_truncate_on_rotation">log_truncate_on_rotation</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_appendonly_tables">max_appendonly_tables</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_connections">max_connections</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_files_per_process">max_files_per_process</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_fsm_pages">max_fsm_pages</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_fsm_relations">max_fsm_relations</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_function_args">max_function_args</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_identifier_length">max_identifier_length</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_index_keys">max_index_keys</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_locks_per_transaction">max_locks_per_transaction</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_prepared_transactions">max_prepared_transactions</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_resource_portals_per_transaction">max_resource_portals_per_transaction</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_resource_queues">max_resource_queues</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_stack_depth">max_stack_depth</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#max_statement_mem">max_statement_mem</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer">optimizer</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_array_expansion_threshold">optimizer_array_expansion_threshold</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_analyze_root_partition">optimizer_analyze_root_partition</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_control">optimizer_control</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_enable_master_only_queries">optimizer_enable_master_only_queries</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_join_order_threshold">optimizer_join_order_threshold</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_minidump">optimizer_minidump</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_parallel_union">optimizer_parallel_union</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#optimizer_sort_factor">optimizer_sort_factor</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#password_encryption">password_encryption</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#password_hash_algorithm">password_hash_algorithm</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pgcrypto.fips">pgcrypto.fips</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pgstat_track_activity_query_size">pgstat_track_activity_query_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pljava_classpath">pljava_classpath</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pljava_classpath_insecure">pljava_classpath_insecure</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pljava_statement_cache_size">pljava_statement_cache_size</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pljava_release_lingering_savepoints">pljava_release_lingering_savepoints</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#pljava_vmoptions">pljava_vmoptions</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#port">port</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#random_page_cost">random_page_cost</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#readable_external_table_timeout">readable_external_table_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#repl_catchup_within_range">repl_catchup_within_range</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#replication_timeout">replication_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#regex_flavor">regex_flavor</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#resource_cleanup_gangs_on_wait">resource_cleanup_gangs_on_wait</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#resource_select_only">resource_select_only</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#runaway_detector_activation_percent">runaway_detector_activation_percent</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#search_path">search_path</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#seq_page_cost">seq_page_cost</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#server_encoding">server_encoding</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#server_version">server_version</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#server_version_num">server_version_num</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#shared_buffers">shared_buffers</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#shared_preload_libraries">shared_preload_libraries</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#ssl">ssl</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#ssl_ciphers">ssl_ciphers</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#standard_conforming_strings">standard_conforming_strings</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#statement_mem">statement_mem</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#statement_timeout">statement_timeout</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#stats_queue_level">stats_queue_level</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#superuser_reserved_connections">superuser_reserved_connections</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#tcp_keepalives_count">tcp_keepalives_count</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#tcp_keepalives_idle">tcp_keepalives_idle</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#tcp_keepalives_interval">tcp_keepalives_interval</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#temp_buffers">temp_buffers</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#TimeZone">TimeZone</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#timezone_abbreviations">timezone_abbreviations</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#track_activities">track_activities</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#track_counts">track_counts</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#transaction_isolation">transaction_isolation</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#transaction_read_only">transaction_read_only</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#transform_null_equals">transform_null_equals</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#unix_socket_directory">unix_socket_directory</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#unix_socket_group">unix_socket_group</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#unix_socket_permissions">unix_socket_permissions</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#update_process_title">update_process_title</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vacuum_cost_delay">vacuum_cost_delay</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vacuum_cost_limit">vacuum_cost_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vacuum_cost_page_dirty">vacuum_cost_page_dirty</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vacuum_cost_page_hit">vacuum_cost_page_hit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vacuum_cost_page_miss">vacuum_cost_page_miss</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vacuum_freeze_min_age">vacuum_freeze_min_age</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#validate_previous_free_tid">validate_previous_free_tid</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#vmem_process_interrupt">vmem_process_interrupt</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#wal_receiver_status_interval">wal_receiver_status_interval</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#writable_external_table_bufsize">writable_external_table_bufsize</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#xid_stop_limit">xid_stop_limit</a></li>
-<li><a href="ref_guide/config_params/guc-list.html#xid_warn_limit">xid_warn_limit</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="ref_guide/function-summary.html">Summary of Built-in Functions</a></li>
-<li><a href="ref_guide/yaml_spec.html">Greenplum MapReduce Specification</a></li>
-<li><a href="ref_guide/extensions/pl_sql.html">Greenplum PL/pgSQL Procedural Language</a></li>
-<li><a href="ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a></li>
-<li><a href="ref_guide/extensions/pl_r.html">Greenplum PL/R Language Extension</a></li>
-<li><a href="ref_guide/extensions/pl_python.html">Greenplum PL/Python Language Extension</a></li>
-<li><a href="ref_guide/extensions/pl_java.html">Greenplum PL/Java Language Extension</a></li>
-<li><a href="ref_guide/extensions/madlib.html">Greenplum MADlib Extension for Analytics</a></li>
-<li><a href="ref_guide/extensions/fuzzystrmatch.html">Greenplum Fuzzy String Match Extension</a></li>
-<li><a href="ref_guide/feature_summary.html">Summary of Greenplum Features</a></li>
-</ul>
-</li>
-<li>
-<a href="client_tool_guides/client-docs-unix.html">UNIX Client Documentation</a><ul>
-<li>
-<a href="client_tool_guides/client_tools_unix.html">Client Tools for UNIX</a><ul>
-<li><a href="client_tool_guides/client/unix/unix_client_install.html">Installing the Greenplum Client Tools</a></li>
-<li>
-<a href="client_tool_guides/client/unix/unix_client_tool_ref.html">Client Tools Reference</a><ul>
-<li><a href="client_tool_guides/client/unix/gpmapreduce.html">gpmapreduce</a></li>
-<li><a href="client_tool_guides/client/unix/psql.html">psql</a></li>
-</ul>
-</li>
-<li><a href="client_tool_guides/common/client_sql_ref.html">SQL Syntax Summary</a></li>
-</ul>
-</li>
-<li>
-<a href="client_tool_guides/load_tools_unix.html">Load Tools for UNIX</a><ul>
-<li><a href="client_tool_guides/load/unix/unix_load_install.html">Installing the Greenplum Load Tools</a></li>
-<li>
-<a href="client_tool_guides/load/unix/unix_load_tool_ref.html">Load Tools Reference</a><ul>
-<li><a href="client_tool_guides/load/unix/gpfdist.html">gpfdist</a></li>
-<li><a href="client_tool_guides/load/unix/gpload.html">gpload</a></li>
-</ul>
-</li>
-<li><a href="client_tool_guides/load/unix/load_sql_ref.html">SQL Syntax Summary</a></li>
-</ul>
-</li>
-<li>
-<a href="client_tool_guides/connectivity_tools_unix.html">Connectivity Tools for UNIX</a><ul><li><a href="client_tool_guides/drivers/unix/unix_connect.html">Greenplum Database 4.3 Connectivity Tools for UNIX</a></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="client_tool_guides/client-docs-win.html">Windows Client Documentation</a><ul>
-<li>
-<a href="client_tool_guides/client_tools_windows.html">Client Tools for Windows</a><ul>
-<li><a href="client_tool_guides/client/windows/win_client_install.html">Installing the Greenplum Client Tools</a></li>
-<li><a href="client_tool_guides/client/windows/win_client_run.html">Running the Greenplum Client Tools</a></li>
-<li>
-<a href="client_tool_guides/client/windows/win_client_tool_ref.html">Client Tools Reference</a><ul><li><a href="client_tool_guides/client/windows/psqlexe.html">psql.exe</a></li></ul>
-</li>
-<li><a href="client_tool_guides/common/client_sql_ref.html">SQL Syntax Summary</a></li>
-</ul>
-</li>
-<li>
-<a href="client_tool_guides/load_tools_windows.html">Load Tools for Windows</a><ul>
-<li><a href="client_tool_guides/load/windows/win_load_install.html">Installing Greenplum Loader</a></li>
-<li><a href="client_tool_guides/load/windows/win_load_run.html">Running Greenplum Loader</a></li>
-<li>
-<a href="client_tool_guides/load/windows/win_load_tool_ref.html">Loader Program Reference</a><ul>
-<li><a href="client_tool_guides/load/windows/gploadpy.html">gpload.py</a></li>
-<li><a href="client_tool_guides/load/windows/gpfdistexe.html">gpfdist.exe</a></li>
-</ul>
-</li>
-<li><a href="client_tool_guides/load/windows/load_sql_ref.html">SQL Syntax Summary</a></li>
-</ul>
-</li>
-<li>
-<a href="client_tool_guides/connectivity_tools_windows.html">Connectivity Tools for Windows</a><ul><li><a href="client_tool_guides/drivers/windows/win_connect.html">Greenplum Database 4.3 Connectivity Tools for Windows</a></li></ul>
-</li>
-</ul>
-</li>
-</ul>
+        
+
+  <h1 class="title topictitle1">Greenplum PL/Java Language Extension</h1>
+
+  <div class="body">
+    <p class="p">This section contains an overview of the Greenplum Database PL/Java language.</p>
+
+    <ul class="ul">
+      <li class="li" id="topic1__pv161174">
+        <a class="xref" href="#topic2">About PL/Java</a>
+      </li>
+
+      <li class="li" id="topic1__pv161280">
+        <a class="xref" href="#topic4">Installing PL/Java</a>
+      </li>
+
+      <li class="li" id="topic1__pv161261">
+        <a class="xref" href="#topic10">About Greenplum Database PL/Java</a>
+      </li>
+
+      <li class="li" id="topic1__pv161254">
+        <a class="xref" href="#topic13">Writing PL/Java functions</a>
+      </li>
+
+      <li class="li" id="topic1__pv165944">
+        <a class="xref" href="#topic24">Using JDBC</a>
+      </li>
+
+      <li class="li" id="topic1__pv165963">
+        <a class="xref" href="#topic25">Exception Handling</a>
+      </li>
+
+      <li class="li" id="topic1__pv165978">
+        <a class="xref" href="#topic26">Savepoints</a>
+      </li>
+
+      <li class="li" id="topic1__pv165997">
+        <a class="xref" href="#topic27">Logging</a>
+      </li>
+
+      <li class="li" id="topic1__pv166027">
+        <a class="xref" href="#topic28">Security</a>
+      </li>
+
+      <li class="li" id="topic1__pv166042">
+        <a class="xref" href="#topic33">Some PL/Java Issues and Solutions</a>
+      </li>
+
+      <li class="li" id="topic1__pv161247">
+        <a class="xref" href="#topic40">Example</a>
+      </li>
+
+      <li class="li" id="topic1__pv161240">
+        <a class="xref" href="#topic41">References</a>
+      </li>
+
+    </ul>
+
+  </div>
+
+  <div class="related-links">
+<div class="familylinks">
+<div class="parentlink">
+<strong>Parent topic:</strong> <a class="link" href="../../ref_guide/ref_guide.html" title="Reference information for Greenplum Database systems including SQL commands, system catalogs, environment variables, server configuration parameters, character set support, datatypes, and Greenplum Database extensions.">Greenplum Database Reference Guide</a>
+</div>
+</div>
+</div>
+<div class="topic nested1" xml:lang="en" lang="en" id="topic2">
+    <h2 class="title topictitle2">About PL/Java </h2>
+
+    <div class="body">
+      <p class="p">With Greenplum Database PL/Java extension, you can write Java methods using your favorite
+        Java IDE and install the JAR files that contain the methods into Greenplum Database. </p>
+
+      <p class="p">Greenplum Database PL/Java package is based on the open source PL/Java 1.4.0. Greenplum
+        Database PL/Java provides the following features.</p>
+
+      <ul class="ul">
+        <li class="li" id="topic2__pv161029">Ability to execute PL/Java functions with Java 1.7 or higher.</li>
+
+        <li class="li" id="topic2__pv161030">Standardized utilities (modeled after the SQL 2003 proposal) to install
+          and maintain Java code in the database.</li>
+
+        <li class="li" id="topic2__pv161031">Standardized mappings of parameters and result. Complex types as well as
+          sets are supported.</li>
+
+        <li class="li" id="topic2__pv161032">An embedded, high performance, JDBC driver utilizing the internal
+          Greenplum Database SPI routines.</li>
+
+        <li class="li" id="topic2__pv161033">Metadata support for the JDBC driver. Both
+            <samp class="ph codeph">DatabaseMetaData</samp> and <samp class="ph codeph">ResultSetMetaData</samp> are
+          included.</li>
+
+        <li class="li" id="topic2__pv161034">The ability to return a ResultSet from a query as an alternative to
+          building a ResultSet row by row.</li>
+
+        <li class="li" id="topic2__pv161035">Full support for savepoints and exception handling.</li>
+
+        <li class="li" id="topic2__pv161036">The ability to use IN, INOUT, and OUT parameters. </li>
+
+        <li class="li" id="topic2__pv161037">Two separate Greenplum Database languages:<ul class="ul" id="topic2__ul_rl4_vc5_lv">
+            <li class="li">pljava, TRUSTED PL/Java language</li>
+
+            <li class="li">pljavau, UNTRUSTED PL/Java language</li>
+
+          </ul>
+</li>
+
+        <li class="li" id="topic2__pv161038">Transaction and Savepoint listeners enabling code execution when a
+          transaction or savepoint is committed or rolled back.</li>
+
+        <li class="li" id="topic2__pv161039">Integration with GNU GCJ on selected platforms.</li>
+
+      </ul>
+
+      <p class="p">The Greenplum Database PL/Java extension package ships with an embedded Java Runtime that
+        is installed in the <samp class="ph codeph">$GPHOME/ext/</samp> directory on each of the Greenplum
+        Database hosts.</p>
+
+      <p class="p">A function in SQL will appoint a static method in a Java class. In order for the function
+        to execute, the appointed class must available on the class path specified by the Greenplum
+        Database sever configuration parameter <samp class="ph codeph">pljava_classpath</samp>. The PL/Java
+        extension adds a set of functions that helps installing and maintaining the java classes.
+        Classes are stored in normal Java archives, JAR files. A JAR file can optionally contain a
+        deployment descriptor that in turn contains SQL commands to be executed when the JAR is
+        deployed or undeployed. The functions are modeled after the standards proposed for SQL
+        2003.</p>
+
+      <p class="p">PL/Java implements a standardized way of passing parameters and return values. Complex
+        types and sets are passed using the standard JDBC ResultSet class. </p>
+
+      <p class="p">A JDBC driver is included in PL/Java. This driver calls Greenplum Database internal SPI
+        routines. The driver is essential since it is common for functions to make calls back to the
+        database to fetch data. When PL/Java functions fetch data, they must use the same
+        transactional boundaries that are used by the main function that entered PL/Java execution
+        context.</p>
+
+      <p class="p">PL/Java is optimized for performance. The Java virtual machine executes within the same
+        process as the backend to minimize call overhead. PL/Java is designed with the objective to
+        enable the power of Java to the database itself so that database intensive business logic
+        can execute as close to the actual data as possible.</p>
+
+      <p class="p">The standard Java Native Interface (JNI) is used when bridging calls between the backend
+        and the Java VM.</p>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic4">
+    <h2 class="title topictitle2">Installing PL/Java</h2>
+
+    <div class="body">
+      <p class="p">For Greenplum Database, the PL/Java extension is available as a package. Download the
+        package from <a class="xref" href="https://network.pivotal.io" target="_blank">Pivotal Network</a> and then install it with the Greenplum
+        Package Manager (<samp class="ph codeph">gppkg</samp>). </p>
+
+      <p class="p">The <samp class="ph codeph">gppkg</samp> utility installs Greenplum Database extensions, along with any
+        dependencies, on all hosts across a cluster. It also automatically installs extensions on
+        new hosts in the case of system expansion and segment recovery.</p>
+
+      <p class="p">For information about <samp class="ph codeph">gppkg,</samp>see the <cite class="cite">Greenplum Database Utility
+          Guide</cite>.</p>
+
+      <p class="p">To install and use PL/Java:</p>
+
+      <ol class="ol">
+        <li class="li" id="topic4__pv158542">Install the Greenplum Database PL/Java extension. </li>
+
+        <li class="li">
+<em class="ph i">Optional</em>. Change the Java version used by PL/Java.</li>
+
+        <li class="li" id="topic4__pv158366">Enable the language for each database where you intend to use
+          PL/Java.</li>
+
+        <li class="li" id="topic4__pv158382">Install user-created JAR files containing Java methods into the same
+          directory on all Greenplum Database hosts.</li>
+
+        <li class="li" id="topic4__pv158391">Add the name of the JAR file to the Greenplum Database server
+          configuration parameter <samp class="ph codeph">pljava_classpath</samp>. The parameter lists the
+          installed JAR files. For information about the parameter, see the <cite class="cite">Greenplum Database
+            Reference Guide</cite>.</li>
+
+      </ol>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic5">
+      <h3 class="title topictitle3">Installing the Greenplum PL/Java Extension</h3>
+
+      <div class="body">
+        <p class="p">Before you install the PL/Java extension, make sure that your Greenplum database is
+          running, you have sourced <samp class="ph codeph">greenplum_path.sh</samp>, and that the<samp class="ph codeph">
+            $MASTER_DATA_DIRECTORY</samp> and <samp class="ph codeph">$GPHOME</samp> variables are set.</p>
+
+        <ol class="ol">
+          <li class="li" id="topic5__pv158485">Download the PL/Java extension package from <a class="xref" href="https://network.pivotal.io" target="_blank">Pivotal Network</a> then copy it to the master host. </li>
+
+          <li class="li" id="topic5__pv160918">Install the software extension package by running the
+              <samp class="ph codeph">gppkg</samp> command. This example installs the PL/Java extension package on
+            a Linux
+            system:<pre class="pre codeblock">$ gppkg -i pljava-ossv1.4.0_pv1.2_gpdb5.0orca-rhel7-x86_64.gppkg</pre>
+</li>
+
+          <li dir="ltr" class="li">Reload
+            <samp class="ph codeph">greenplum_path.sh</samp>.<pre class="pre codeblock" dir="ltr">$ source $GPHOME/greenplum_path.sh</pre>
+</li>
+
+          <li class="li" id="topic5__pv162228">Restart Greenplum Database.<pre class="pre codeblock">$ gpstop -r</pre>
+</li>
+
+        </ol>
+
+      </div>
+
+    </div>
+
+    <div class="topic nested2" id="topic_r3p_jf5_lv">
+      <h3 class="title topictitle3">Changing Java version used by PL/Java (Optional)</h3>
+
+      <div class="body">
+        <p dir="ltr" class="p">The PL/Java extension package ships with Java JRE 6u32. When the package is
+          installed, the JRE is installed on each host of your Greenplum Database cluster. To use
+          newer version of Java with PL/Java, perform these steps to specify the location of the
+          Java version. For information about supported Java versions, see the <cite class="cite">Greenplum
+            Database Release Notes</cite> for your release.</p>
+
+        <div class="p">
+          <div class="note note">
+<span class="notetitle">Note:</span> The newer Java must be installed in the same location on all Greenplum Database
+            hosts and must be accessible to the system user of the Greenplum Database administrator
+              (<samp class="ph codeph">gpadmin</samp>).</div>
+
+        </div>
+
+        <ol class="ol" id="topic_r3p_jf5_lv__ol_rf3_kf5_lv">
+          <li dir="ltr" class="li"> In the <samp class="ph codeph">$GPHOME/greenplum_path.sh</samp> file, modify the
+              <samp class="ph codeph">JAVA_HOME</samp> and <samp class="ph codeph">LD_LIBRARY_PATH</samp> environment
+              variables.<ul class="ul" id="topic_r3p_jf5_lv__ol_dy5_5f5_lv">
+              <li class="li">Set the <samp class="ph codeph">JAVA_HOME</samp> variable to the directory where your Java
+                Runtime is installed. For example, for Oracle JRE this directory would be
+                  <samp class="ph codeph">/usr/java/latest</samp>. For OpenJDK, the directory is
+                  <samp class="ph codeph">/usr/lib/jvm/jre</samp>. This example changes the environment variable
+                to use
+                <samp class="ph codeph">/usr/java/latest</samp>.<pre class="pre codeblock">JAVA_HOME=/usr/java/latest</pre>
+</li>
+
+              <li class="li">Set the <samp class="ph codeph">LD_LIBRARY_PATH</samp> to include the directory with Java server
+                runtime libraries. PL/Java depends on <samp class="ph codeph">libjvm.so</samp> and the shared
+                object should be in your <samp class="ph codeph">LD_LIBRARY_PATH</samp>. By default,
+                  <samp class="ph codeph">libjvm.so</samp> is available in
+                  <samp class="ph codeph">$JAVA_HOME/lib/amd64/server</samp>. This example adds the directory to
+                the environment
+                variable.<pre class="pre codeblock">LD_LIBRARY_PATH=$GPHOME/lib:$GPHOME/ext/python/lib:<strong class="ph b">$JAVA_HOME/lib/amd64/server</strong>:$LD_LIBRARY_PATH</pre>
+</li>
+
+            </ul>
+</li>
+
+          <li dir="ltr" class="li">Copy the uppdated <samp class="ph codeph">greenplum_path.sh</samp> file to all the
+            Greenplum Database hosts. This example <samp class="ph codeph">gpscp</samp> command copies the file to
+            all hosts specified in the file
+            <samp class="ph codeph">gphosts_file</samp>.<pre class="pre codeblock">$ gpscp -f gphosts_file $GPHOME/greenplum_path.sh 
+=:$GPHOME/greenplum_path.sh</pre>
+</li>
+
+          <li dir="ltr" class="li">Reload
+            <samp class="ph codeph">greenplum_path.sh</samp>.<pre class="pre codeblock" dir="ltr">$ source $GPHOME/greenplum_path.sh</pre>
+</li>
+
+          <li dir="ltr" class="li">Restart Greenplum Database.<pre class="pre codeblock">$ gpstop -r</pre>
+</li>
+
+        </ol>
+
+      </div>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic6">
+      <h3 class="title topictitle3">Enabling PL/Java and Installing JAR Files</h3>
+
+      <div class="body">
+        <p class="p">Perform the following steps as the Greenplum Database administrator
+            <samp class="ph codeph">gpadmin</samp>.</p>
+
+        <ol class="ol">
+          <li class="li" id="topic6__pv162268">Enable PL/Java by running the SQL script
+              <samp class="ph codeph">$GPHOME/share/postgresql/pljava/install.sql</samp> in the databases that
+            will use PL/Java. For example, this example enables PL/Java on the database
+              <samp class="ph codeph">mytestdb</samp>:<pre class="pre codeblock">$ psql -d mytestdb 
+  -f $GPHOME/share/postgresql/pljava/install.sql</pre>
+<p class="p">The
+              script <samp class="ph codeph">install.sql</samp> registers both the trusted and untrusted PL/Java
+              language.</p>
+</li>
+
+          <li class="li" id="topic6__pv160325">Copy your Java archives (JAR files) to the same directory on all
+            Greenplum Database hosts. This example uses the Greenplum Database
+              <samp class="ph codeph">gpscp</samp> utility to copy the file <samp class="ph codeph">myclasses.jar</samp> to the
+            directory
+              <samp class="ph codeph">$GPHOME/lib/postgresql/java/</samp>:<pre class="pre codeblock">$ gpscp -f gphosts_file myclasses.jar 
+=:/usr/local/greenplum-db/lib/postgresql/java/</pre>
+<p class="p">The
+              file <samp class="ph codeph">gphosts_file</samp> contains a list of the Greenplum Database
+              hosts.</p>
+</li>
+
+          <li class="li" id="topic6__pv160327">Set the <samp class="ph codeph">pljava_classpath</samp> server configuration parameter
+            in the master <samp class="ph codeph">postgresql.conf</samp> file. For this example, the parameter
+            value is a colon (:) separated list of the JAR files. For
+              example:<pre class="pre codeblock">$ gpconfig -c pljava_classpath 
+-v \'examples.jar:myclasses.jar\'</pre>
+<p class="p">The
+              file <samp class="ph codeph">examples.jar</samp> is installed when you install the PL/Java extension
+              package with the <samp class="ph codeph">gppkg</samp> utility.</p>
+<div class="note note">
+<span class="notetitle">Note:</span> If you install JAR files in
+              a directory other than <samp class="ph codeph">$GPHOME/lib/postgresql/java/</samp>, you must specify
+              the absolute path to the JAR file. Each JAR file must be in the same location on all
+              Greenplum Database hosts. For more information about specifying the location of JAR
+              files, see the information about the <samp class="ph codeph">pljava_classpath</samp> server
+              configuration parameter in the <cite class="cite">Greenplum Database Reference
+            Guide</cite>.</div>
+</li>
+
+          <li class="li" id="topic6__pv160329">Reload the <samp class="ph codeph">postgresql.conf</samp>
+            file.<pre class="pre codeblock">$ gpstop -u</pre>
+</li>
+
+          <li class="li" id="topic6__pv160335">(optional) Greenplum provides an <samp class="ph codeph">examples.sql</samp> file
+            containing sample PL/Java functions that you can use for testing. Run the commands in
+            this file to create the test functions (which use the Java classes in
+              <samp class="ph codeph">examples.jar</samp>).
+            <pre class="pre codeblock">$ psql -f $GPHOME/share/postgresql/pljava/examples.sql</pre>
+</li>
+
+        </ol>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic7">
+    <h2 class="title topictitle2">Uninstalling PL/Java</h2>
+
+    <div class="body">
+      <ul class="ul">
+        <li class="li" id="topic7__pv165655">
+          <a class="xref" href="#topic8">Remove PL/Java Support for a Database</a>
+        </li>
+
+        <li class="li" id="topic7__pv165686">
+          <a class="xref" href="#topic9">Uninstall the Java JAR files and Software Package</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic8">
+      <h3 class="title topictitle3">Remove PL/Java Support for a Database</h3>
+
+      <div class="body">
+        <p class="p">For a database that no long requires the PL/Java language, remove support for PL/Java.
+          Run the <samp class="ph codeph">uninstall.sql</samp> file as the gpadmin user. For example, this command
+          disables the PL/Java language in the specified database. </p>
+
+        <pre class="pre codeblock">$ psql -d mydatabase
+  -f $GPHOME/share/postgresql/pljava/uninstall.sql</pre>
+
+      </div>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic9">
+      <h3 class="title topictitle3">Uninstall the Java JAR files and Software Package</h3>
+
+      <div class="body">
+        <p class="p">If no databases have PL/Java as a registered language, remove the Java JAR files and
+          uninstall the Greenplum PL/Java extension with the <samp class="ph codeph">gppkg</samp> utility. </p>
+
+        <ol class="ol">
+          <li class="li" id="topic9__pv165538">Remove the <samp class="ph codeph">pljava_classpath</samp> server configuration
+            parameter from the <samp class="ph codeph">postgresql.conf</samp> file on all Greenplum Database
+            hosts. For example:<pre class="pre codeblock">$ gpconfig -r pljava_classpath</pre>
+</li>
+
+          <li class="li" id="topic9__pv165539">Remove the JAR files from the directories where they were installed on
+            all Greenplum Database hosts. For information about JAR file installation directories,
+            see <a class="xref" href="#topic6">Enabling PL/Java and Installing JAR Files</a>.</li>
+
+          <li class="li" id="topic9__pv160641">Use the Greenplum <samp class="ph codeph">gppkg</samp> utility with the
+              <samp class="ph codeph">-r</samp> option to uninstall the PL/Java extension. This example uninstalls
+            the PL/Java extension on a Linux
+              system:<pre class="pre codeblock">$ gppkg -r pljava-ossv1.4.0_pv1.3_gpdb4.3orca</pre>
+<p class="p">You can
+              run the <samp class="ph codeph">gppkg</samp> utility with the options <samp class="ph codeph">-q --all</samp> to
+              list the installed extensions and their versions.</p>
+</li>
+
+          <li dir="ltr" class="li">Reload
+            <samp class="ph codeph">greenplum_path.sh</samp>.<pre class="pre codeblock" dir="ltr">$ source $GPHOME/greenplum_path.sh</pre>
+</li>
+
+          <li class="li" id="topic9__pv158621">Restart the database.<pre class="pre codeblock">$ gpstop -r </pre>
+</li>
+
+        </ol>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic10">
+    <h2 class="title topictitle2">About Greenplum Database PL/Java</h2>
+
+    <div class="body">
+      <p class="p">There are a few key differences between the implementation of PL/Java in standard
+        PostgreSQL and Greenplum Database.</p>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic11">
+      <h3 class="title topictitle3">Functions</h3>
+
+      <div class="body">
+        <div class="p">The following functions are not supported in Greenplum Database. The classpath is handled
+          differently in a distributed Greenplum Database environment than in the PostgreSQL environment.<ul class="sl simple">
+            <li class="sli">
+<samp class="ph codeph">sqlj.install_jar</samp>
+            </li>
+
+            <li class="sli"><samp class="ph codeph">sqlj.install_jar</samp></li>
+
+            <li class="sli">
+<samp class="ph codeph">sqlj.replace_jar</samp>
+            </li>
+
+            <li class="sli"><samp class="ph codeph">sqlj.remove_jar</samp></li>
+
+            <li class="sli"><samp class="ph codeph">sqlj.get_classpath</samp></li>
+
+            <li class="sli"><samp class="ph codeph">sqlj.set_classpath</samp></li>
+
+          </ul>
+</div>
+
+        <p class="p"> Greenplum Database uses the <samp class="ph codeph">pljava_classpath</samp> server configuration
+          parameter in place of the <samp class="ph codeph">sqlj.set_classpath</samp> function. </p>
+
+      </div>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic12">
+      <h3 class="title topictitle3">Server Configuration Parameters</h3>
+
+      <div class="body">
+        <p class="p">The following server configuration parameters are used by PL/Java in Greenplum Database.
+          These parameters replace the <samp class="ph codeph">pljava.*</samp> parameters that are used in the
+          standard PostgreSQL PL/Java implementation:</p>
+
+        <ul class="ul">
+          <li class="li" id="topic12__pv159849">
+            <samp class="ph codeph">pljava_classpath</samp>
+            <p class="p">A colon (<samp class="ph codeph">:</samp>) separated list of the jar files containing the Java
+              classes used in any PL/Java functions. The jar files must be installed in the same
+              locations on all Greenplum Database hosts. With the trusted PL/Java language handler,
+              jar file paths must be relative to the <samp class="ph codeph">$GPHOME/lib/postgresql/java/</samp>
+              directory. With the untrusted language handler (javaU language tag), paths may be
+              relative to <samp class="ph codeph">$GPHOME/lib/postgresql/java/</samp> or absolute. </p>
+<p class="p">The
+              server configuration parameter <samp class="ph codeph">pljava_classpath_insecure</samp> controls
+              whether the server configuration parameter <samp class="ph codeph">pljava_classpath</samp> can be
+              set by a user without Greenplum Database superuser privileges. When
+                <samp class="ph codeph">pljava_classpath_insecure</samp> is enabled, Greenplum Database developers
+              who are working on PL/Java functions do not have to be database superusers to change
+                <samp class="ph codeph">pljava_classpath</samp>.</p>
+<div class="note warning">
+<span class="warningtitle">Warning:</span> Enabling
+                <samp class="ph codeph">pljava_classpath_insecure</samp> exposes a security risk by giving
+              non-administrator database users the ability to run unauthorized Java methods.</div>
+
+          </li>
+
+          <li class="li" id="topic12__pv159853">
+            <samp class="ph codeph">pljava_statement_cache_size</samp>
+            <p class="p">Sets the size in KB of the Most Recently Used (MRU) cache for prepared statements.
+            </p>
+
+          </li>
+
+          <li class="li" id="topic12__pv159856">
+            <samp class="ph codeph">pljava_release_lingering_savepoints</samp>
+            <p class="p">If <samp class="ph codeph">TRUE</samp>, lingering savepoints will be released on function exit. If
+                <samp class="ph codeph">FALSE</samp>, they will be rolled back. </p>
+
+          </li>
+
+          <li class="li" id="topic12__pv159859">
+            <samp class="ph codeph">pljava_vmoptions</samp>
+            <p class="p">Defines the start up options for the Greenplum Database Java VM. </p>
+</li>
+
+        </ul>
+
+        <p class="p">See the <cite class="cite">Greenplum Database Reference Guide</cite> for information about the
+          Greenplum Database server configuration parameters.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic13">
+    <h2 class="title topictitle2">Writing PL/Java functions</h2>
+
+    <div class="body">
+      <p class="p">Information about writing functions with PL/Java.</p>
+
+      <ul class="ul">
+        <li class="li" id="topic13__pv164880">
+          <a class="xref" href="#topic14">SQL Declaration</a>
+        </li>
+
+        <li class="li" id="topic13__pv164915">
+          <a class="xref" href="#topic15">Type Mapping</a>
+        </li>
+
+        <li class="li" id="topic13__pv164922">
+          <a class="xref" href="#topic16">NULL Handling</a>
+        </li>
+
+        <li class="li" id="topic13__pv164929">
+          <a class="xref" href="#topic17">Complex Types</a>
+        </li>
+
+        <li class="li" id="topic13__pv164936">
+          <a class="xref" href="#topic18">Returning Complex Types</a>
+        </li>
+
+        <li class="li" id="topic13__pv164947">
+          <a class="xref" href="#topic18">Returning Complex Types</a>
+        </li>
+
+        <li class="li" id="topic13__pv164954">
+          <a class="xref" href="#topic19">Functions That Return Sets</a>
+        </li>
+
+        <li class="li" id="topic13__pv164961">
+          <a class="xref" href="#topic20">Returning a SETOF &lt;scalar type&gt;</a>
+        </li>
+
+        <li class="li" id="topic13__pv164995">
+          <a class="xref" href="#topic21">Returning a SETOF &lt;complex type&gt;</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic14">
+      <h3 class="title topictitle3">SQL Declaration</h3>
+
+      <div class="body">
+        <p class="p">A Java function is declared with the name of a class and a static method on that class.
+          The class will be resolved using the classpath that has been defined for the schema where
+          the function is declared. If no classpath has been defined for that schema, the public
+          schema is used. If no classpath is found there either, the class is resolved using the
+          system classloader.</p>
+
+        <p class="p">The following function can be declared to access the static method
+            <samp class="ph codeph">getProperty</samp> on <samp class="ph codeph">java.lang.System</samp> class:</p>
+
+        <pre class="pre codeblock">CREATE FUNCTION getsysprop(VARCHAR)
+  RETURNS VARCHAR
+  AS 'java.lang.System.getProperty'
+  LANGUAGE java;</pre>
+
+        <p class="p">Run the following command to return the Java <samp class="ph codeph">user.home</samp> property:</p>
+
+        <pre class="pre codeblock">SELECT getsysprop('user.home');</pre>
+
+      </div>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic15">
+      <h3 class="title topictitle3">Type Mapping</h3>
+
+      <div class="body">
+        <p class="p">Scalar types are mapped in a straight forward way. This table lists the current mappings. </p>
+
+        
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" summary="" id="topic15__pv157323" class="table" frame="border" border="1" rules="all">
+<caption><span class="tablecap">Table 1. PL/Java data type mapping</span></caption>
+            
+            
+            <thead class="thead" align="left">
+              <tr class="row">
+                <th class="entry" valign="top" width="110pt" id="d255548e936">PostgreSQL</th>
+
+                <th class="entry" valign="top" width="165pt" id="d255548e939">Java</th>
+
+              </tr>
+
+            </thead>
+
+            <tbody class="tbody">
+              <tr class="row">
+                <td class="entry" valign="top" width="110pt" headers="d255548e936 ">bool</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d255548e939 ">boolean</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="110pt" headers="d255548e936 ">char</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d255548e939 ">byte</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="110pt" headers="d255548e936 ">int2</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d255548e939 ">short</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="110pt" headers="d255548e936 ">int4</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d255548e939 ">int</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="110pt" headers="d255548e936 ">int8</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d255548e939 ">long</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="110pt" headers="d255548e936 ">varchar</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d255548e939 "> java.lang.String</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="110pt" headers="d255548e936 ">text</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d255548e939 "> java.lang.String</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="110pt" headers="d255548e936 ">bytea</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d255548e939 ">byte[ ]</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="110pt" headers="d255548e936 ">date</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d255548e939 ">java.sql.Date</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="110pt" headers="d255548e936 ">time</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d255548e939 ">java.sql.Time (stored value treated as local time)</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="110pt" headers="d255548e936 ">timetz</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d255548e939 ">java.sql.Time</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="110pt" headers="d255548e936 ">timestamp</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d255548e939 ">java.sql.Timestamp (stored value treated as local
+                  time)</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="110pt" headers="d255548e936 ">timestampz</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d255548e939 ">java.sql.Timestamp</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="110pt" headers="d255548e936 ">complex</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d255548e939 ">java.sql.ResultSet</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="110pt" headers="d255548e936 ">setof complex</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d255548e939 ">java.sql.ResultSet</td>
+
+              </tr>
+
+            </tbody>
+
+          </table>
+</div>
+
+        <p class="p">All other types are mapped to java.lang.String and will utilize the standard
+            <samp class="ph codeph">textin</samp>/<samp class="ph codeph">textout</samp> routines registered for respective
+          type.</p>
+
+      </div>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic16">
+      <h3 class="title topictitle3">NULL Handling</h3>
+
+      <div class="body">
+        <p class="p">The scalar types that map to Java primitives can not be passed as <samp class="ph codeph">NULL</samp>
+          values. To pass <samp class="ph codeph">NULL</samp> values, those types can have an alternative mapping.
+          You enable this mapping by explicitly denoting it in the method reference.</p>
+
+        <pre class="pre codeblock">CREATE FUNCTION trueIfEvenOrNull(integer)
+  RETURNS bool
+  AS 'foo.fee.Fum.trueIfEvenOrNull(java.lang.Integer)'
+  LANGUAGE java;</pre>
+
+        <p class="p">The Java code would be similar to this:</p>
+
+        <pre class="pre codeblock">package foo.fee;
+public class Fum
+{
+  static boolean trueIfEvenOrNull(Integer value)
+  {
+    return (value == null)
+      ? true
+      : (value.intValue() % 1) == 0;
+  }
+}</pre>
+
+        <p class="p">The following two statements both yield true:</p>
+
+        <pre class="pre codeblock">SELECT trueIfEvenOrNull(NULL);
+SELECT trueIfEvenOrNull(4);</pre>
+
+        <p class="p">In order to return <samp class="ph codeph">NULL</samp> values from a Java method, you use the object
+          type that corresponds to the primitive (for example, you return
+            <samp class="ph codeph">java.lang.Integer</samp> instead of <samp class="ph codeph">int</samp>). The PL/Java resolve
+          mechanism finds the method regardless. Since Java cannot have different return types for
+          methods with the same name, this does not introduce any ambiguity.</p>
+
+      </div>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic17">
+      <h3 class="title topictitle3">Complex Types</h3>
+
+      <div class="body">
+        <p class="p">A complex type will always be passed as a read-only <samp class="ph codeph">java.sql.ResultSet</samp>
+          with exactly one row. The ResultSet is positioned on its row so a call to
+            <samp class="ph codeph">next()</samp> should not be made. The values of the complex type are retrieved
+          using the standard getter methods of the ResultSet.</p>
+
+        <p class="p">Example:</p>
+
+        <pre class="pre codeblock">CREATE TYPE complexTest
+  AS(base integer, incbase integer, ctime timestamptz);
+CREATE FUNCTION useComplexTest(complexTest)
+  RETURNS VARCHAR
+  AS 'foo.fee.Fum.useComplexTest'
+  IMMUTABLE LANGUAGE java;</pre>
+
+        <p class="p">In the Java class <samp class="ph codeph">Fum</samp>, we add the following static method:</p>
+
+        <pre class="pre codeblock">public static String useComplexTest(ResultSet complexTest)
+throws SQLException
+{
+  int base = complexTest.getInt(1);
+  int incbase = complexTest.getInt(2);
+  Timestamp ctime = complexTest.getTimestamp(3);
+  return "Base = \"" + base +
+    "\", incbase = \"" + incbase +
+    "\", ctime = \"" + ctime + "\"";
+}</pre>
+
+      </div>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic18">
+      <h3 class="title topictitle3">Returning Complex Types</h3>
+
+      <div class="body">
+        <p class="p">Java does not stipulate any way to create a ResultSet. Hence, returning a ResultSet is
+          not an option. The SQL-2003 draft suggests that a complex return value should be handled
+          as an IN/OUT parameter. PL/Java implements a ResultSet that way. If you declare a function
+          that returns a complex type, you will need to use a Java method with boolean return type
+          with a last parameter of type <samp class="ph codeph">java.sql.ResultSet</samp>. The parameter will be
+          initialized to an empty updateable ResultSet that contains exactly one row.</p>
+
+        <p class="p">Assume that the <samp class="ph codeph">complexTest</samp> type in previous section has been
+          created.</p>
+
+        <pre class="pre codeblock">CREATE FUNCTION createComplexTest(int, int)
+  RETURNS complexTest
+  AS 'foo.fee.Fum.createComplexTest'
+  IMMUTABLE LANGUAGE java;</pre>
+
+        <p class="p">The PL/Java method resolve will now find the following method in the <samp class="ph codeph">Fum</samp>
+          class:</p>
+
+        <pre class="pre codeblock">public static boolean complexReturn(int base, int increment, 
+  ResultSet receiver)
+throws SQLException
+{
+  receiver.updateInt(1, base);
+  receiver.updateInt(2, base + increment);
+  receiver.updateTimestamp(3, new 
+    Timestamp(System.currentTimeMillis()));
+  return true;
+}</pre>
+
+        <p class="p">The return value denotes if the receiver should be considered as a valid tuple (true) or
+          NULL (false).</p>
+
+      </div>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic19">
+      <h3 class="title topictitle3">Functions That Return Sets</h3>
+
+      <div class="body">
+        <p class="p">When returning result set, you should not build a result set before returning it, because
+          building a large result set would consume a large amount of resources. It is better to
+          produce one row at a time. Incidentally, that is what the Greenplum Database backend
+          expects a function with SETOF return to do. You can return a SETOF a scalar type such as
+          an <samp class="ph codeph">int</samp>, <samp class="ph codeph">float</samp> or <samp class="ph codeph">varchar</samp>, or you can
+          return a SETOF a complex type. </p>
+
+      </div>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic20">
+      <h3 class="title topictitle3">Returning a SETOF &lt;scalar type&gt;</h3>
+
+      <div class="body">
+        <p class="p">In order to return a set of a scalar type, you need create a Java method that returns
+          something that implements the <samp class="ph codeph">java.util.Iterator</samp> interface. Here is an
+          example of a method that returns a SETOF <samp class="ph codeph">varchar</samp>:</p>
+
+        <pre class="pre codeblock">CREATE FUNCTION javatest.getSystemProperties()
+  RETURNS SETOF varchar
+  AS 'foo.fee.Bar.getNames'
+  IMMUTABLE LANGUAGE java;</pre>
+
+        <p class="p">This simple Java method returns an iterator:</p>
+
+        <pre class="pre codeblock">package foo.fee;
+import java.util.Iterator;
+
+public class Bar
+{
+    public static Iterator getNames()
+    {
+        ArrayList names = new ArrayList();
+        names.add("Lisa");
+        names.add("Bob");
+        names.add("Bill");
+        names.add("Sally");
+        return names.iterator();
+    }
+}</pre>
+
+      </div>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic21">
+      <h3 class="title topictitle3">Returning a SETOF &lt;complex type&gt;</h3>
+
+      <div class="body">
+        <p class="p">A method returning a SETOF &lt;complex type&gt; must use either the interface
+            <samp class="ph codeph">org.postgresql.pljava.ResultSetProvider</samp> or
+            <samp class="ph codeph">org.postgresql.pljava.ResultSetHandle</samp>. The reason for having two
+          interfaces is that they cater for optimal handling of two distinct use cases. The former
+          is for cases when you want to dynamically create each row that is to be returned from the
+          SETOF function. The latter makes is in cases where you want to return the result of an
+          executed query. </p>
+
+      </div>
+
+      <div class="topic nested3" xml:lang="en" lang="en" id="topic22">
+        <h4 class="title topictitle4">Using the ResultSetProvider Interface</h4>
+
+        <div class="body">
+          <p class="p">This interface has two methods. The boolean <samp class="ph codeph">assignRowValues(java.sql.ResultSet
+              tupleBuilder, int rowNumber)</samp> and the <samp class="ph codeph">void close()</samp> method.
+            The Greenplum Database query evaluator will call the <samp class="ph codeph">assignRowValues</samp>
+            repeatedly until it returns false or until the evaluator decides that it does not need
+            any more rows. Then it calls close.</p>
+
+          <p class="p">You can use this interface the following way:</p>
+
+          <pre class="pre codeblock">CREATE FUNCTION javatest.listComplexTests(int, int)
+  RETURNS SETOF complexTest
+  AS 'foo.fee.Fum.listComplexTest'
+  IMMUTABLE LANGUAGE java;</pre>
+
+          <p class="p">The function maps to a static java method that returns an instance that implements the
+              <samp class="ph codeph">ResultSetProvider</samp> interface.</p>
+
+          <pre class="pre codeblock">public class Fum implements ResultSetProvider
+{
+  private final int m_base;
+  private final int m_increment;
+  public Fum(int base, int increment)
+  {
+    m_base = base;
+    m_increment = increment;
+  }
+  public boolean assignRowValues(ResultSet receiver, int 
+currentRow)
+  throws SQLException
+  {
+    // Stop when we reach 12 rows.
+    //
+    if(currentRow &gt;= 12)
+      return false;
+    receiver.updateInt(1, m_base);
+    receiver.updateInt(2, m_base + m_increment * currentRow);
+    receiver.updateTimestamp(3, new 
+Timestamp(System.currentTimeMillis()));
+    return true;
+  }
+  public void close()
+  {
+   // Nothing needed in this example
+  }
+  public static ResultSetProvider listComplexTests(int base, 
+int increment)
+  throws SQLException
+  {
+    return new Fum(base, increment);
+  }
+}</pre>
+
+          <p class="p">The <samp class="ph codeph">listComplextTests</samp> method is called once. It may return
+              <samp class="ph codeph">NULL</samp> if no results are available or an instance of the
+              <samp class="ph codeph">ResultSetProvider</samp>. Here the Java class <samp class="ph codeph">Fum</samp>
+            implements this interface so it returns an instance of itself. The method
+              <samp class="ph codeph">assignRowValues</samp> will then be called repeatedly until it returns
+            false. At that time, close will be called</p>
+
+        </div>
+
+      </div>
+
+      <div class="topic nested3" xml:lang="en" lang="en" id="topic23">
+        <h4 class="title topictitle4">Using the ResultSetHandle Interface</h4>
+
+        <div class="body">
+          <p class="p">This interface is similar to the <samp class="ph codeph">ResultSetProvider</samp> interface in that
+            it has a <samp class="ph codeph">close()</samp> method that will be called at the end. But instead of
+            having the evaluator call a method that builds one row at a time, this method has a
+            method that returns a ResultSet. The query evaluator will iterate over this set and
+            deliver the RestulSet contents, one tuple at a time, to the caller until a call to
+              <samp class="ph codeph">next()</samp> returns false or the evaluator decides that no more rows are
+            needed.</p>
+
+          <p class="p">Here is an example that executes a query using a statement that it obtained using the
+            default connection. The SQL suitable for the deployment descriptor looks like this:</p>
+
+          <pre class="pre codeblock">CREATE FUNCTION javatest.listSupers()
+  RETURNS SETOF pg_user
+  AS 'org.postgresql.pljava.example.Users.listSupers'
+  LANGUAGE java;
+CREATE FUNCTION javatest.listNonSupers()
+  RETURNS SETOF pg_user
+  AS 'org.postgresql.pljava.example.Users.listNonSupers'
+  LANGUAGE java;</pre>
+
+          <p class="p">And in the Java package <samp class="ph codeph">org.postgresql.pljava.example</samp> a class
+              <samp class="ph codeph">Users</samp> is added:</p>
+
+          <pre class="pre codeblock">public class Users implements ResultSetHandle
+{
+  private final String m_filter;
+  private Statement m_statement;
+  public Users(String filter)
+  {
+    m_filter = filter;
+  }
+  public ResultSet getResultSet()
+  throws SQLException
+  {
+    m_statement = 
+      DriverManager.getConnection("jdbc:default:connection").cr
+eateStatement();
+    return m_statement.executeQuery("SELECT * FROM pg_user 
+       WHERE " + m_filter);
+  }
+
+  public void close()
+  throws SQLException
+  {
+    m_statement.close();
+  }
+
+  public static ResultSetHandle listSupers()
+  {
+    return new Users("usesuper = true");
+  }
+
+  public static ResultSetHandle listNonSupers()
+  {
+    return new Users("usesuper = false");
+  }
+}</pre>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic24">
+    <h2 class="title topictitle2">Using JDBC</h2>
+
+    <div class="body">
+      <p class="p">PL/Java contains a JDBC driver that maps to the PostgreSQL SPI functions. A connection that
+        maps to the current transaction can be obtained using the following statement:</p>
+
+      <pre class="pre codeblock">Connection conn = 
+  DriverManager.getConnection("jdbc:default:connection"); </pre>
+
+      <p class="p">After obtaining a connection, you can prepare and execute statements similar to other JDBC
+        connections. These are limitations for the PL/Java JDBC driver:</p>
+
+      <ul class="ul">
+        <li class="li" id="topic24__pv157568">The transaction cannot be managed in any way. Thus, you cannot use methods
+          on the connection such as:<ul class="ul" id="topic24__ul_yxm_d3c_lp">
+            <li class="li" id="topic24__pv157569"><samp class="ph codeph">commit()</samp></li>
+
+            <li class="li" id="topic24__pv157570"><samp class="ph codeph">rollback()</samp></li>
+
+            <li class="li" id="topic24__pv157571"><samp class="ph codeph">setAutoCommit()</samp></li>
+
+            <li class="li" id="topic24__pv157572"><samp class="ph codeph">setTransactionIsolation()</samp></li>
+
+          </ul>
+</li>
+
+        <li class="li" id="topic24__pv157573">Savepoints are available with some restrictions. A savepoint cannot
+          outlive the function in which it was set and it must be rolled back or released by that
+          same function.</li>
+
+        <li class="li" id="topic24__pv157574">A ResultSet returned from <samp class="ph codeph">executeQuery()</samp> are always
+            <samp class="ph codeph">FETCH_FORWARD</samp> and <samp class="ph codeph">CONCUR_READ_ONLY</samp>.</li>
+
+        <li class="li" id="topic24__pv157575">Meta-data is only available in PL/Java 1.1 or higher.</li>
+
+        <li class="li" id="topic24__pv157576">
+<samp class="ph codeph">CallableStatement</samp> (for stored procedures) is not
+          implemented.</li>
+
+        <li class="li" id="topic24__pv157577">The types <samp class="ph codeph">Clob</samp> or <samp class="ph codeph">Blob</samp> are not
+          completely implemented, they need more work. The types <samp class="ph codeph">byte[]</samp> and
+            <samp class="ph codeph">String</samp> can be used for <samp class="ph codeph">bytea</samp> and <samp class="ph codeph">text</samp>
+          respectively.</li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic25">
+    <h2 class="title topictitle2">Exception Handling</h2>
+
+    <div class="body">
+      <p class="p">You can catch and handle an exception in the Greenplum Database backend just like any other
+        exception. The backend ErrorData structure is exposed as a property in a class called
+          <samp class="ph codeph">org.postgresql.pljava.ServerException</samp> (derived from
+          <samp class="ph codeph">java.sql.SQLException</samp>) and the Java try/catch mechanism is synchronized
+        with the backend mechanism.</p>
+
+      <div class="note important">
+<span class="importanttitle">Important:</span> You will not be able to continue executing backend functions until your
+        function has returned and the error has been propagated when the backend has generated an
+        exception unless you have used a savepoint. When a savepoint is rolled back, the exceptional
+        condition is reset and you can continue your execution.</div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic26">
+    <h2 class="title topictitle2">Savepoints</h2>
+
+    <div class="body">
+      <p class="p">Greenplum Database savepoints are exposed using the java.sql.Connection interface. Two
+        restrictions apply.</p>
+
+      <ul class="ul">
+        <li class="li" id="topic26__pv157584">A savepoint must be rolled back or released in the function where it was
+          set.</li>
+
+        <li class="li" id="topic26__pv157585">A savepoint must not outlive the function where it was set</li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic27">
+    <h2 class="title topictitle2">Logging</h2>
+
+    <div class="body">
+      <p class="p">PL/Java uses the standard Java Logger. Hence, you can write things like:</p>
+
+      <pre class="pre codeblock">Logger.getAnonymousLogger().info( "Time is " + new 
+Date(System.currentTimeMillis()));</pre>
+
+      <p class="p">At present, the logger uses a handler that maps the current state of the Greenplum Database
+        configuration setting <samp class="ph codeph">log_min_messages</samp> to a valid Logger level and that
+        outputs all messages using the Greenplum Database backend function <samp class="ph codeph">elog()</samp>. </p>
+
+      <div class="note note">
+<span class="notetitle">Note:</span> The <samp class="ph codeph">log_min_messages</samp> setting is read from the database the first time a
+        PL/Java function in a session is executed. On the Java side, the setting does not change
+        after the first PL/Java function execution in a specific session until the Greenplum
+        Database session that is working with PL/Java is restarted.</div>
+
+      <p class="p">The following mapping apply between the Logger levels and the Greenplum Database backend
+        levels.</p>
+
+      
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" summary="" id="topic27__pv157590" class="table" frame="border" border="1" rules="all">
+<caption><span class="tablecap">Table 2. PL/Java Logging Levels</span></caption>
+          
+          
+          <thead class="thead" align="left">
+            <tr class="row">
+              <th class="entry" valign="top" width="131.25pt" id="d255548e1553">java.util.logging.Level</th>
+
+              <th class="entry" valign="top" width="165pt" id="d255548e1556">Greenplum Database Level</th>
+
+            </tr>
+
+          </thead>
+
+          <tbody class="tbody">
+            <tr class="row">
+              <td class="entry" valign="top" width="131.25pt" headers="d255548e1553 ">SEVERE ERROR</td>
+
+              <td class="entry" valign="top" width="165pt" headers="d255548e1556 ">ERROR</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="131.25pt" headers="d255548e1553 ">WARNING</td>
+
+              <td class="entry" valign="top" width="165pt" headers="d255548e1556 ">WARNING</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="131.25pt" headers="d255548e1553 ">CONFIG</td>
+
+              <td class="entry" valign="top" width="165pt" headers="d255548e1556 ">LOG</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="131.25pt" headers="d255548e1553 ">INFO</td>
+
+              <td class="entry" valign="top" width="165pt" headers="d255548e1556 ">INFO</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="131.25pt" headers="d255548e1553 ">FINE</td>
+
+              <td class="entry" valign="top" width="165pt" headers="d255548e1556 ">DEBUG1</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="131.25pt" headers="d255548e1553 ">FINER</td>
+
+              <td class="entry" valign="top" width="165pt" headers="d255548e1556 ">DEBUG2</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="131.25pt" headers="d255548e1553 ">FINEST</td>
+
+              <td class="entry" valign="top" width="165pt" headers="d255548e1556 ">DEBUG3</td>
+
+            </tr>
+
+          </tbody>
+
+        </table>
+</div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic28">
+    <h2 class="title topictitle2">Security</h2>
+
+    <div class="body">
+      <ul class="ul">
+        <li class="li" id="topic28__pv165238">
+          <a class="xref" href="#topic29">Installation</a>
+        </li>
+
+        <li class="li" id="topic28__pv165263">
+          <a class="xref" href="#topic30">Trusted Language</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic29">
+      <h3 class="title topictitle3">Installation</h3>
+
+      <div class="body">
+        <p class="p">Only a database super user can install PL/Java. The PL/Java utility functions are
+          installed using SECURITY DEFINER so that they execute with the access permissions that
+          where granted to the creator of the functions.</p>
+
+      </div>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic30">
+      <h3 class="title topictitle3">Trusted Language</h3>
+
+      <div class="body">
+        <p class="p">PL/Java is a <em class="ph i">trusted</em> language. The trusted PL/Java language has no access to the
+          file system as stipulated by PostgreSQL definition of a trusted language. Any database
+          user can create and access functions in a trusted language.</p>
+
+        <p class="p">PL/Java also installs a language handler for the language <samp class="ph codeph">javau</samp>. This
+          version is <em class="ph i">not trusted</em> and only a superuser can create new functions that use it.
+          Any user can call the functions.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic33">
+    <h2 class="title topictitle2">Some PL/Java Issues and Solutions</h2>
+
+    <div class="body">
+      <p class="p">When writing the PL/Java, mapping the JVM into the same process-space as the Greenplum
+        Database backend code, some concerns have been raised regarding multiple threads, exception
+        handling, and memory management. Here are brief descriptions explaining how these issues
+        where resolved.</p>
+
+      <ul class="ul">
+        <li class="li" id="topic33__pv165334">
+          <a class="xref" href="#topic34">Multi-threading</a>
+        </li>
+
+        <li class="li" id="topic33__pv165352">
+          <a class="xref" href="#topic36">Exception Handling</a>
+        </li>
+
+        <li class="li" id="topic33__pv165359">
+          <a class="xref" href="#topic38">Java Garbage Collector Versus palloc() and Stack Allocation</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic34">
+      <h3 class="title topictitle3">Multi-threading</h3>
+
+      <div class="body">
+        <p class="p">Java is inherently multi-threaded. The Greenplum Database backend is not. There is
+          nothing stopping a developer from utilizing multiple Threads class in the Java code.
+          Finalizers that call out to the backend might have been spawned from a background Garbage
+          Collection thread. Several third party Java-packages that are likely to be used make use
+          of multiple threads. How can this model coexist with the Greenplum Database backend in the
+          same process?</p>
+
+      </div>
+
+      <div class="topic nested3" xml:lang="en" lang="en" id="topic35">
+        <h4 class="title topictitle4">Solution</h4>
+
+        <div class="body">
+          <p class="p">The solution is simple. PL/Java defines a special object called the
+              <samp class="ph codeph">Backend.THREADLOCK</samp>. When PL/Java is initialized, the backend
+            immediately grabs this objects monitor (i.e. it will synchronize on this object). When
+            the backend calls a Java function, the monitor is released and then immediately regained
+            when the call returns. All calls from Java out to backend code are synchronized on the
+            same lock. This ensures that only one thread at a time can call the backend from Java,
+            and only at a time when the backend is awaiting the return of a Java function call.</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic36">
+      <h3 class="title topictitle3">Exception Handling</h3>
+
+      <div class="body">
+        <p class="p">Java makes frequent use of try/catch/finally blocks. Greenplum Database sometimes use an
+          exception mechanism that calls <samp class="ph codeph">longjmp</samp> to transfer control to a known
+          state. Such a jump would normally effectively bypass the JVM. </p>
+
+      </div>
+
+      <div class="topic nested3" xml:lang="en" lang="en" id="topic37">
+        <h4 class="title topictitle4">Solution</h4>
+
+        <div class="body">
+          <p class="p">The backend now allows errors to be caught using the macros
+              <samp class="ph codeph">PG_TRY/PG_CATCH</samp>/<samp class="ph codeph">PG_END_TRY</samp> and in the catch block,
+            the error can be examined using the ErrorData structure. PL/Java implements a
+              <samp class="ph codeph">java.sql.SQLException</samp> subclass called
+              <samp class="ph codeph">org.postgresql.pljava.ServerException</samp>. The ErrorData can be retrieved
+            and examined from that exception. A catch handler is allowed to issue a rollback to a
+            savepoint. After a successful rollback, execution can continue.</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic38">
+      <h3 class="title topictitle3">Java Garbage Collector Versus palloc() and Stack Allocation</h3>
+
+      <div class="body">
+        <p class="p">Primitive types are always be passed by value. This includes the <samp class="ph codeph">String</samp>
+          type (this is a must since Java uses double byte characters). Complex types are often
+          wrapped in Java objects and passed by reference. For example, a Java object can contain a
+          pointer to a palloc'ed or stack allocated memory and use native JNI calls to extract and
+          manipulate data. Such data will become stale once a call has ended. Further attempts to
+          access such data will at best give very unpredictable results but more likely cause a
+          memory fault and a crash.</p>
+
+      </div>
+
+      <div class="topic nested3" xml:lang="en" lang="en" id="topic39">
+        <h4 class="title topictitle4">Solution</h4>
+
+        <div class="body">
+          <p class="p">The PL/Java contains code that ensures that stale pointers are cleared when the
+            MemoryContext or stack where they where allocated goes out of scope. The Java wrapper
+            objects might live on but any attempt to use them will result in a stale native handle
+            exception.</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic40">
+    <h2 class="title topictitle2">Example</h2>
+
+    <div class="body">
+      <p class="p">The following simple Java example creates a JAR file that contains a single method and runs
+        the method. </p>
+
+      <div class="note note">
+<span class="notetitle">Note:</span> The example requires Java SDK to compile the Java file.</div>
+
+      <p class="p">The following method returns a substring.</p>
+
+      <pre class="pre codeblock">{
+public static String substring(String text, int beginIndex,
+  int endIndex)
+    {
+    return text.substring(beginIndex, endIndex);
+    }
+}</pre>
+
+      <p class="p">Enter the java code in a text file <samp class="ph codeph">example.class</samp>. </p>
+
+      <p class="p">Contents of the file <samp class="ph codeph">manifest.txt</samp>:</p>
+
+      <pre class="pre codeblock">Manifest-Version: 1.0
+Main-Class: Example
+Specification-Title: "Example"
+Specification-Version: "1.0"
+Created-By: 1.6.0_35-b10-428-11M3811
+Build-Date: 01/20/2013 10:09 AM</pre>
+
+      <p class="p">Compile the java code:</p>
+
+      <pre class="pre codeblock">javac *.java</pre>
+
+      <p class="p">Create a JAR archive named analytics.jar that contains the class file and the manifest file
+        MANIFEST file in the JAR.</p>
+
+      <pre class="pre codeblock">jar cfm analytics.jar manifest.txt *.class</pre>
+
+      <p class="p">Upload the jar file to the Greenplum master host.</p>
+
+      <p class="p">Run the <samp class="ph codeph">gpscp</samp> utility to copy the jar file to the Greenplum Java
+        directory. Use the <samp class="ph codeph">-f</samp> option to specify the file that contains a list of
+        the master and segment hosts.</p>
+
+      <pre class="pre codeblock">gpscp -f gphosts_file analytics.jar 
+=:/usr/local/greenplum-db/lib/postgresql/java/</pre>
+
+      <p class="p">Use the <samp class="ph codeph">gpconfig</samp> utility to set the Greenplum
+          <samp class="ph codeph">pljava_classpath</samp> server configuration parameter. The parameter lists the
+        installed jar files.</p>
+
+      <pre class="pre codeblock">gpconfig -c pljava_classpath -v \'analytics.jar\'</pre>
+
+      <p class="p">Run the <samp class="ph codeph">gpstop</samp> utility with the <samp class="ph codeph">-u</samp> option to reload the
+        configuration files.</p>
+
+      <pre class="pre codeblock">gpstop -u</pre>
+
+      <p class="p">From the <samp class="ph codeph">psql</samp> command line, run the following command to show the
+        installed jar files.</p>
+
+      <pre class="pre codeblock">show pljava_classpath</pre>
+
+      <p class="p">The following SQL commands create a table and define a Java function to test the method in
+        the jar file:</p>
+
+      <pre class="pre codeblock">create table temp (a varchar) distributed randomly; 
+insert into temp values ('my string'); 
+--Example function 
+create or replace function java_substring(varchar, int, int) 
+returns varchar as 'Example.substring' language java; 
+--Example execution 
+select java_substring(a, 1, 5) from temp;</pre>
+
+      <p class="p">You can place the contents in a file, <samp class="ph codeph">mysample.sql</samp> and run the command
+        from a <samp class="ph codeph">psql</samp> command line:</p>
+
+      <pre class="pre codeblock">&gt; \i mysample.sql </pre>
+
+      <p class="p">The output is similar to this:</p>
+
+      <pre class="pre codeblock">java_substring
+----------------
+ y st
+(1 row)</pre>
+
+    </div>
+
+  </div>
+
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic41">
+    <h2 class="title topictitle2">References</h2>
+
+    <div class="body">
+      <p class="p">The PL/Java Github wiki page - <a class="xref" href="https://github.com/tada/pljava/wiki" target="_blank">https://github.com/tada/pljava/wiki</a>.</p>
+
+      <p class="p"> PL/Java 1.4.0 release - <a class="xref" href="https://github.com/tada/pljava/tree/B1_4" target="_blank">https://github.com/tada/pljava/tree/B1_4</a>.</p>
+
+    </div>
+
+  </div>
+
+
 
         
 
