@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5621,14 +5639,13 @@
         <a class="xref" href="#topic2">About PL/Java</a>
       </li>
 
-      <li class="li" id="topic1__pv161280">
-        <a class="xref" href="#topic4">Installing PL/Java</a>
-      </li>
-
       <li class="li" id="topic1__pv161261">
         <a class="xref" href="#topic10">About Greenplum Database PL/Java</a>
       </li>
 
+      
+      
+      
       <li class="li" id="topic1__pv161254">
         <a class="xref" href="#topic13">Writing PL/Java functions</a>
       </li>
@@ -5680,8 +5697,9 @@
     <h2 class="title topictitle2">About PL/Java </h2>
 
     <div class="body">
-      <p class="p">With Greenplum Database PL/Java extension, you can write Java methods using your favorite
-        Java IDE and install the JAR files that contain the methods into Greenplum Database. </p>
+      <p class="p">With the Greenplum Database PL/Java extension, you can write Java methods using your
+        favorite Java IDE and install the JAR files that contain those methods into Greenplum
+        Database. </p>
 
       <p class="p">Greenplum Database PL/Java package is based on the open source PL/Java 1.4.0. Greenplum
         Database PL/Java provides the following features.</p>
@@ -5756,249 +5774,6 @@
 
   </div>
 
-  <div class="topic nested1" xml:lang="en" lang="en" id="topic4">
-    <h2 class="title topictitle2">Installing PL/Java</h2>
-
-    <div class="body">
-      <p class="p">For Greenplum Database, the PL/Java extension is available as a package. Download the
-        package from the Greenplum Database page on <a class="xref" href="https://network.pivotal.io/products/pivotal-gpdb" target="_blank">Pivotal Network</a> and then install it with the Greenplum
-        Package Manager (<samp class="ph codeph">gppkg</samp>). </p>
-
-      <p class="p">The <samp class="ph codeph">gppkg</samp> utility installs Greenplum Database extensions, along with any
-        dependencies, on all hosts across a cluster. It also automatically installs extensions on
-        new hosts in the case of system expansion and segment recovery.</p>
-
-      <p class="p">For information about <samp class="ph codeph">gppkg,</samp>see the <cite class="cite">Greenplum Database Utility
-          Guide</cite>.</p>
-
-      <div class="note important">
-<span class="importanttitle">Important:</span> PL/Java requires a Java environment on each Greenplum Database host.
-        Ensure that the same Java environment is at the same location on all hosts: masters and
-        segments.</div>
-
-      <p class="p">To install and use PL/Java:</p>
-
-      <ol class="ol">
-        <li class="li">Specify the Java version used by PL/Java. Set the environment variables
-            <samp class="ph codeph">JAVA_HOME</samp> and <samp class="ph codeph">LD_LIBRARY_PATH</samp> in the
-            <samp class="ph codeph">greenplum_path.sh</samp>.</li>
-
-        <li class="li" id="topic4__pv158542">Install the Greenplum Database PL/Java extension. </li>
-
-        <li class="li" id="topic4__pv158366">Enable the language for each database where you intend to use
-          PL/Java.</li>
-
-        <li class="li" id="topic4__pv158382">Install user-created JAR files containing Java methods into the same
-          directory on all Greenplum Database hosts.</li>
-
-        <li class="li" id="topic4__pv158391">Add the name of the JAR file to the Greenplum Database server
-          configuration parameter <samp class="ph codeph">pljava_classpath</samp>. The parameter lists the
-          installed JAR files. For information about the parameter, see the <cite class="cite">Greenplum Database
-            Reference Guide</cite>.</li>
-
-      </ol>
-
-    </div>
-
-    <div class="topic nested2" xml:lang="en" lang="en" id="topic5">
-      <h3 class="title topictitle3">Installing the Greenplum PL/Java Extension</h3>
-
-      <div class="body">
-        <p class="p">Before you install the PL/Java extension, make sure that your Greenplum database is
-          running, you have sourced <samp class="ph codeph">greenplum_path.sh</samp>, and that the
-            <samp class="ph codeph">$MASTER_DATA_DIRECTORY</samp> and <samp class="ph codeph">$GPHOME</samp> variables are
-          set.</p>
-
-        <ol class="ol">
-          <li class="li" id="topic5__pv158485">Download the PL/Java extension package from the Greenplum Database page
-            on <a class="xref" href="https://network.pivotal.io/products/pivotal-gpdb" target="_blank">Pivotal Network</a> then copy it to the master
-            host. </li>
-
-          <li class="li" id="topic5__pv160918">Install the software extension package by running the
-              <samp class="ph codeph">gppkg</samp> command. This example installs the PL/Java extension package on
-            a Linux
-            system:<pre class="pre codeblock">$ gppkg -i pljava-ossv1.4.0_pv1.2_gpdb<var class="keyword varname">version</var>-rhel5-x86_64.gppkg</pre>
-</li>
-
-          <li class="li">Ensure the environment variables <samp class="ph codeph">JAVA_HOME</samp> and
-              <samp class="ph codeph">LD_LIBRARY_PATH</samp> are set properly in
-              <samp class="ph codeph">$GPHOME/greenplum_path.sh</samp> on all Greenplum Database hosts.<ul class="ul" id="topic5__ul_mgq_wgh_qw">
-              <li class="li">Set the <samp class="ph codeph">JAVA_HOME</samp> variable to the directory where your Java
-                Runtime is installed. For example, for Oracle JRE this directory would be
-                  <samp class="ph codeph">/usr/java/latest</samp>. For OpenJDK, the directory is
-                  <samp class="ph codeph">/usr/lib/jvm/jre</samp>. This example changes the environment variable
-                to use
-                <samp class="ph codeph">/usr/java/latest</samp>.<pre class="pre codeblock">JAVA_HOME=/usr/java/latest</pre>
-</li>
-
-              <li class="li">Set the <samp class="ph codeph">LD_LIBRARY_PATH</samp> to include the directory with Java server
-                runtime libraries. PL/Java depends on <samp class="ph codeph">libjvm.so</samp> and the shared
-                object should be in your <samp class="ph codeph">LD_LIBRARY_PATH</samp>. By default,
-                  <samp class="ph codeph">libjvm.so</samp> is available in
-                  <samp class="ph codeph">$JAVA_HOME/lib/amd64/server</samp>. This example adds the directory to
-                the environment
-                variable.<pre class="pre codeblock">LD_LIBRARY_PATH=$GPHOME/lib:$GPHOME/ext/python/lib:<strong class="ph b">$JAVA_HOME/lib/amd64/server</strong>:$LD_LIBRARY_PATH</pre>
-</li>
-
-            </ul>
-This example <samp class="ph codeph">gpscp</samp> command copies the file to all hosts specified
-            in the file
-            <samp class="ph codeph">gphosts_file</samp>.<pre class="pre codeblock">$ gpscp -f gphosts_file $GPHOME/greenplum_path.sh 
-=:$GPHOME/greenplum_path.sh</pre>
-</li>
-
-          <li dir="ltr" class="li">Reload
-            <samp class="ph codeph">greenplum_path.sh</samp>.<pre class="pre codeblock" dir="ltr">$ source $GPHOME/greenplum_path.sh</pre>
-</li>
-
-          <li class="li" id="topic5__pv162228">Restart Greenplum Database.<pre class="pre codeblock">$ gpstop -r</pre>
-</li>
-
-        </ol>
-
-      </div>
-
-    </div>
-
-    <div class="topic nested2" xml:lang="en" lang="en" id="topic6">
-      <h3 class="title topictitle3">Enabling PL/Java and Installing JAR Files</h3>
-
-      <div class="body">
-        <p class="p">Perform the following steps as the Greenplum Database administrator
-            <samp class="ph codeph">gpadmin</samp>.</p>
-
-        <ol class="ol">
-          <li class="li" id="topic6__pv162268">Enable PL/Java by running the SQL script
-              <samp class="ph codeph">$GPHOME/share/postgresql/pljava/install.sql</samp> in the databases that
-            will use PL/Java. For example, this example enables PL/Java on the database
-              <samp class="ph codeph">mytestdb</samp>:<pre class="pre codeblock">$ psql -d mytestdb \
-  -f $GPHOME/share/postgresql/pljava/install.sql</pre>
-<p class="p">The
-              script <samp class="ph codeph">install.sql</samp> registers both the trusted and untrusted PL/Java
-              language.</p>
-</li>
-
-          <li class="li" id="topic6__pv160325">Copy your Java archives (JAR files) to the same directory on all
-            Greenplum Database hosts. This example uses the Greenplum Database
-              <samp class="ph codeph">gpscp</samp> utility to copy the file <samp class="ph codeph">myclasses.jar</samp> to the
-            directory
-              <samp class="ph codeph">$GPHOME/lib/postgresql/java/</samp>:<pre class="pre codeblock">$ gpscp -f gphosts_file myclasses.jar 
-=:/usr/local/greenplum-db/lib/postgresql/java/</pre>
-<p class="p">The
-              file <samp class="ph codeph">gphosts_file</samp> contains a list of the Greenplum Database
-              hosts.</p>
-</li>
-
-          <li class="li" id="topic6__pv160327">Set the <samp class="ph codeph">pljava_classpath</samp> server configuration parameter
-            in the master <samp class="ph codeph">postgresql.conf</samp> file. For this example, the parameter
-            value is a colon (:) separated list of the JAR files. For
-              example:<pre class="pre codeblock">$ gpconfig -c pljava_classpath 
--v \'examples.jar:myclasses.jar\'</pre>
-<p class="p">The
-              file <samp class="ph codeph">examples.jar</samp> is installed when you install the PL/Java extension
-              package with the <samp class="ph codeph">gppkg</samp> utility.</p>
-<div class="note note">
-<span class="notetitle">Note:</span> If you install JAR files in
-              a directory other than <samp class="ph codeph">$GPHOME/lib/postgresql/java/</samp>, you must specify
-              the absolute path to the JAR file. Each JAR file must be in the same location on all
-              Greenplum Database hosts. For more information about specifying the location of JAR
-              files, see the information about the <samp class="ph codeph">pljava_classpath</samp> server
-              configuration parameter in the <cite class="cite">Greenplum Database Reference
-            Guide</cite>.</div>
-</li>
-
-          <li class="li" id="topic6__pv160329">Reload the <samp class="ph codeph">postgresql.conf</samp>
-            file.<pre class="pre codeblock">$ gpstop -u</pre>
-</li>
-
-          <li class="li" id="topic6__pv160335">(optional) Greenplum provides an <samp class="ph codeph">examples.sql</samp> file
-            containing sample PL/Java functions that you can use for testing. Run the commands in
-            this file to create the test functions (which use the Java classes in
-              <samp class="ph codeph">examples.jar</samp>).
-            <pre class="pre codeblock">$ psql -f $GPHOME/share/postgresql/pljava/examples.sql</pre>
-</li>
-
-        </ol>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="topic nested1" xml:lang="en" lang="en" id="topic7">
-    <h2 class="title topictitle2">Uninstalling PL/Java</h2>
-
-    <div class="body">
-      <ul class="ul">
-        <li class="li" id="topic7__pv165655">
-          <a class="xref" href="#topic8">Remove PL/Java Support for a Database</a>
-        </li>
-
-        <li class="li" id="topic7__pv165686">
-          <a class="xref" href="#topic9">Uninstall the Java JAR files and Software Package</a>
-        </li>
-
-      </ul>
-
-    </div>
-
-    <div class="topic nested2" xml:lang="en" lang="en" id="topic8">
-      <h3 class="title topictitle3">Remove PL/Java Support for a Database</h3>
-
-      <div class="body">
-        <p class="p">For a database that no long requires the PL/Java language, remove support for PL/Java.
-          Run the <samp class="ph codeph">uninstall.sql</samp> file as the gpadmin user. For example, this command
-          disables the PL/Java language in the specified database. </p>
-
-        <pre class="pre codeblock">$ psql -d mydatabase
-  -f $GPHOME/share/postgresql/pljava/uninstall.sql</pre>
-
-      </div>
-
-    </div>
-
-    <div class="topic nested2" xml:lang="en" lang="en" id="topic9">
-      <h3 class="title topictitle3">Uninstall the Java JAR files and Software Package</h3>
-
-      <div class="body">
-        <p class="p">If no databases have PL/Java as a registered language, remove the Java JAR files and
-          uninstall the Greenplum PL/Java extension with the <samp class="ph codeph">gppkg</samp> utility. </p>
-
-        <ol class="ol">
-          <li class="li" id="topic9__pv165538">Remove the <samp class="ph codeph">pljava_classpath</samp> server configuration
-            parameter from the <samp class="ph codeph">postgresql.conf</samp> file on all Greenplum Database
-            hosts. For example:<pre class="pre codeblock">$ gpconfig -r pljava_classpath</pre>
-</li>
-
-          <li class="li" id="topic9__pv165539">Remove the JAR files from the directories where they were installed on
-            all Greenplum Database hosts. For information about JAR file installation directories,
-            see <a class="xref" href="#topic6">Enabling PL/Java and Installing JAR Files</a>.</li>
-
-          <li class="li" id="topic9__pv160641">Use the Greenplum <samp class="ph codeph">gppkg</samp> utility with the
-              <samp class="ph codeph">-r</samp> option to uninstall the PL/Java extension. This example uninstalls
-            the PL/Java extension on a Linux
-              system:<pre class="pre codeblock">$ gppkg -r pljava-ossv1.4.0_pv1.3_gpdb<var class="keyword varname">version</var></pre>
-<p class="p">You
-              can run the <samp class="ph codeph">gppkg</samp> utility with the options <samp class="ph codeph">-q --all</samp>
-              to list the installed extensions and their versions.</p>
-</li>
-
-          <li dir="ltr" class="li">Reload
-            <samp class="ph codeph">greenplum_path.sh</samp>.<pre class="pre codeblock" dir="ltr">$ source $GPHOME/greenplum_path.sh</pre>
-</li>
-
-          <li class="li" id="topic9__pv158621">Restart the database.<pre class="pre codeblock">$ gpstop -r </pre>
-</li>
-
-        </ol>
-
-      </div>
-
-    </div>
-
-  </div>
-
   <div class="topic nested1" xml:lang="en" lang="en" id="topic10">
     <h2 class="title topictitle2">About Greenplum Database PL/Java</h2>
 
@@ -6017,8 +5792,6 @@ This example <samp class="ph codeph">gpscp</samp> command copies the file to all
             <li class="sli">
 <samp class="ph codeph">sqlj.install_jar</samp>
             </li>
-
-            <li class="sli"><samp class="ph codeph">sqlj.install_jar</samp></li>
 
             <li class="sli">
 <samp class="ph codeph">sqlj.replace_jar</samp>
@@ -6048,7 +5821,7 @@ This example <samp class="ph codeph">gpscp</samp> command copies the file to all
           These parameters replace the <samp class="ph codeph">pljava.*</samp> parameters that are used in the
           standard PostgreSQL PL/Java implementation:</p>
 
-        <ul class="ul">
+        <ul class="ul" id="topic12__ul_ksz_5r5_b1b">
           <li class="li" id="topic12__pv159849">
             <samp class="ph codeph">pljava_classpath</samp>
             <p class="p">A colon (<samp class="ph codeph">:</samp>) separated list of the jar files containing the Java
@@ -6097,6 +5870,71 @@ This example <samp class="ph codeph">gpscp</samp> command copies the file to all
           Greenplum Database server configuration parameters.</p>
 
       </div>
+
+    </div>
+
+  </div>
+
+  
+  
+  <div class="topic nested1" xml:lang="en" lang="en" id="topic6">
+    <h2 class="title topictitle2">Enabling PL/Java and Installing JAR Files</h2>
+
+    <div class="body">
+      <p class="p">Perform the following steps as the Greenplum Database administrator
+          <samp class="ph codeph">gpadmin</samp>.</p>
+
+      <ol class="ol" id="topic6__ol_dpn_qr5_b1b">
+        <li class="li" id="topic6__pv162268">Enable PL/Java by running the SQL script
+            <samp class="ph codeph">$GPHOME/share/postgresql/pljava/install.sql</samp> in the databases that will
+          use PL/Java. For example, this example enables PL/Java on the database
+            <samp class="ph codeph">mytestdb</samp>:<pre class="pre codeblock">$ psql -d mytestdb \
+  -f $GPHOME/share/postgresql/pljava/install.sql</pre>
+<p class="p">The
+            script <samp class="ph codeph">install.sql</samp> registers both the trusted and untrusted PL/Java
+            language.</p>
+</li>
+
+        <li class="li" id="topic6__pv160325">Copy your Java archives (JAR files) to the same directory on all Greenplum
+          Database hosts. This example uses the Greenplum Database <samp class="ph codeph">gpscp</samp> utility to
+          copy the file <samp class="ph codeph">myclasses.jar</samp> to the directory
+            <samp class="ph codeph">$GPHOME/lib/postgresql/java/</samp>:<pre class="pre codeblock">$ gpscp -f gphosts_file myclasses.jar 
+=:/usr/local/greenplum-db/lib/postgresql/java/</pre>
+<p class="p">The
+            file <samp class="ph codeph">gphosts_file</samp> contains a list of the Greenplum Database
+          hosts.</p>
+</li>
+
+        <li class="li" id="topic6__pv160327">Set the <samp class="ph codeph">pljava_classpath</samp> server configuration parameter
+          in the master <samp class="ph codeph">postgresql.conf</samp> file. For this example, the parameter value
+          is a colon (:) separated list of the JAR files. For
+            example:<pre class="pre codeblock">$ gpconfig -c pljava_classpath 
+-v \'examples.jar:myclasses.jar\'</pre>
+<p class="p">The
+            file <samp class="ph codeph">examples.jar</samp> is installed when you install the PL/Java extension
+            package with the <samp class="ph codeph">gppkg</samp> utility.</p>
+<div class="note note">
+<span class="notetitle">Note:</span> If you install JAR files in a
+            directory other than <samp class="ph codeph">$GPHOME/lib/postgresql/java/</samp>, you must specify the
+            absolute path to the JAR file. Each JAR file must be in the same location on all
+            Greenplum Database hosts. For more information about specifying the location of JAR
+            files, see the information about the <samp class="ph codeph">pljava_classpath</samp> server
+            configuration parameter in the <cite class="cite">Greenplum Database Reference
+          Guide</cite>.</div>
+</li>
+
+        <li class="li" id="topic6__pv160329">Reload the <samp class="ph codeph">postgresql.conf</samp>
+          file.<pre class="pre codeblock">$ gpstop -u</pre>
+</li>
+
+        <li class="li" id="topic6__pv160335">(optional) Greenplum provides an <samp class="ph codeph">examples.sql</samp> file
+          containing sample PL/Java functions that you can use for testing. Run the commands in this
+          file to create the test functions (which use the Java classes in
+            <samp class="ph codeph">examples.jar</samp>).
+          <pre class="pre codeblock">$ psql -f $GPHOME/share/postgresql/pljava/examples.sql</pre>
+</li>
+
+      </ol>
 
     </div>
 
@@ -6189,9 +6027,9 @@ This example <samp class="ph codeph">gpscp</samp> command copies the file to all
             
             <thead class="thead" align="left">
               <tr class="row">
-                <th class="entry" valign="top" width="110pt" id="d256705e907">PostgreSQL</th>
+                <th class="entry" valign="top" width="110pt" id="d257439e586">PostgreSQL</th>
 
-                <th class="entry" valign="top" width="165pt" id="d256705e910">Java</th>
+                <th class="entry" valign="top" width="165pt" id="d257439e589">Java</th>
 
               </tr>
 
@@ -6199,108 +6037,108 @@ This example <samp class="ph codeph">gpscp</samp> command copies the file to all
 
             <tbody class="tbody">
               <tr class="row">
-                <td class="entry" valign="top" width="110pt" headers="d256705e907 ">bool</td>
+                <td class="entry" valign="top" width="110pt" headers="d257439e586 ">bool</td>
 
-                <td class="entry" valign="top" width="165pt" headers="d256705e910 ">boolean</td>
-
-              </tr>
-
-              <tr class="row">
-                <td class="entry" valign="top" width="110pt" headers="d256705e907 ">char</td>
-
-                <td class="entry" valign="top" width="165pt" headers="d256705e910 ">byte</td>
+                <td class="entry" valign="top" width="165pt" headers="d257439e589 ">boolean</td>
 
               </tr>
 
               <tr class="row">
-                <td class="entry" valign="top" width="110pt" headers="d256705e907 ">int2</td>
+                <td class="entry" valign="top" width="110pt" headers="d257439e586 ">char</td>
 
-                <td class="entry" valign="top" width="165pt" headers="d256705e910 ">short</td>
-
-              </tr>
-
-              <tr class="row">
-                <td class="entry" valign="top" width="110pt" headers="d256705e907 ">int4</td>
-
-                <td class="entry" valign="top" width="165pt" headers="d256705e910 ">int</td>
+                <td class="entry" valign="top" width="165pt" headers="d257439e589 ">byte</td>
 
               </tr>
 
               <tr class="row">
-                <td class="entry" valign="top" width="110pt" headers="d256705e907 ">int8</td>
+                <td class="entry" valign="top" width="110pt" headers="d257439e586 ">int2</td>
 
-                <td class="entry" valign="top" width="165pt" headers="d256705e910 ">long</td>
-
-              </tr>
-
-              <tr class="row">
-                <td class="entry" valign="top" width="110pt" headers="d256705e907 ">varchar</td>
-
-                <td class="entry" valign="top" width="165pt" headers="d256705e910 "> java.lang.String</td>
+                <td class="entry" valign="top" width="165pt" headers="d257439e589 ">short</td>
 
               </tr>
 
               <tr class="row">
-                <td class="entry" valign="top" width="110pt" headers="d256705e907 ">text</td>
+                <td class="entry" valign="top" width="110pt" headers="d257439e586 ">int4</td>
 
-                <td class="entry" valign="top" width="165pt" headers="d256705e910 "> java.lang.String</td>
-
-              </tr>
-
-              <tr class="row">
-                <td class="entry" valign="top" width="110pt" headers="d256705e907 ">bytea</td>
-
-                <td class="entry" valign="top" width="165pt" headers="d256705e910 ">byte[ ]</td>
+                <td class="entry" valign="top" width="165pt" headers="d257439e589 ">int</td>
 
               </tr>
 
               <tr class="row">
-                <td class="entry" valign="top" width="110pt" headers="d256705e907 ">date</td>
+                <td class="entry" valign="top" width="110pt" headers="d257439e586 ">int8</td>
 
-                <td class="entry" valign="top" width="165pt" headers="d256705e910 ">java.sql.Date</td>
-
-              </tr>
-
-              <tr class="row">
-                <td class="entry" valign="top" width="110pt" headers="d256705e907 ">time</td>
-
-                <td class="entry" valign="top" width="165pt" headers="d256705e910 ">java.sql.Time (stored value treated as local time)</td>
+                <td class="entry" valign="top" width="165pt" headers="d257439e589 ">long</td>
 
               </tr>
 
               <tr class="row">
-                <td class="entry" valign="top" width="110pt" headers="d256705e907 ">timetz</td>
+                <td class="entry" valign="top" width="110pt" headers="d257439e586 ">varchar</td>
 
-                <td class="entry" valign="top" width="165pt" headers="d256705e910 ">java.sql.Time</td>
+                <td class="entry" valign="top" width="165pt" headers="d257439e589 "> java.lang.String</td>
 
               </tr>
 
               <tr class="row">
-                <td class="entry" valign="top" width="110pt" headers="d256705e907 ">timestamp</td>
+                <td class="entry" valign="top" width="110pt" headers="d257439e586 ">text</td>
 
-                <td class="entry" valign="top" width="165pt" headers="d256705e910 ">java.sql.Timestamp (stored value treated as local
+                <td class="entry" valign="top" width="165pt" headers="d257439e589 "> java.lang.String</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="110pt" headers="d257439e586 ">bytea</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d257439e589 ">byte[ ]</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="110pt" headers="d257439e586 ">date</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d257439e589 ">java.sql.Date</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="110pt" headers="d257439e586 ">time</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d257439e589 ">java.sql.Time (stored value treated as local time)</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="110pt" headers="d257439e586 ">timetz</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d257439e589 ">java.sql.Time</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="110pt" headers="d257439e586 ">timestamp</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d257439e589 ">java.sql.Timestamp (stored value treated as local
                   time)</td>
 
               </tr>
 
               <tr class="row">
-                <td class="entry" valign="top" width="110pt" headers="d256705e907 ">timestampz</td>
+                <td class="entry" valign="top" width="110pt" headers="d257439e586 ">timestamptz</td>
 
-                <td class="entry" valign="top" width="165pt" headers="d256705e910 ">java.sql.Timestamp</td>
-
-              </tr>
-
-              <tr class="row">
-                <td class="entry" valign="top" width="110pt" headers="d256705e907 ">complex</td>
-
-                <td class="entry" valign="top" width="165pt" headers="d256705e910 ">java.sql.ResultSet</td>
+                <td class="entry" valign="top" width="165pt" headers="d257439e589 ">java.sql.Timestamp</td>
 
               </tr>
 
               <tr class="row">
-                <td class="entry" valign="top" width="110pt" headers="d256705e907 ">setof complex</td>
+                <td class="entry" valign="top" width="110pt" headers="d257439e586 ">complex</td>
 
-                <td class="entry" valign="top" width="165pt" headers="d256705e910 ">java.sql.ResultSet</td>
+                <td class="entry" valign="top" width="165pt" headers="d257439e589 ">java.sql.ResultSet</td>
+
+              </tr>
+
+              <tr class="row">
+                <td class="entry" valign="top" width="110pt" headers="d257439e586 ">setof complex</td>
+
+                <td class="entry" valign="top" width="165pt" headers="d257439e589 ">java.sql.ResultSet</td>
 
               </tr>
 
@@ -6753,9 +6591,9 @@ Date(System.currentTimeMillis()));</pre>
           
           <thead class="thead" align="left">
             <tr class="row">
-              <th class="entry" valign="top" width="131.25pt" id="d256705e1524">java.util.logging.Level</th>
+              <th class="entry" valign="top" width="131.25pt" id="d257439e1202">java.util.logging.Level</th>
 
-              <th class="entry" valign="top" width="165pt" id="d256705e1527">Greenplum Database Level</th>
+              <th class="entry" valign="top" width="165pt" id="d257439e1205">Greenplum Database Level</th>
 
             </tr>
 
@@ -6763,51 +6601,51 @@ Date(System.currentTimeMillis()));</pre>
 
           <tbody class="tbody">
             <tr class="row">
-              <td class="entry" valign="top" width="131.25pt" headers="d256705e1524 ">SEVERE ERROR</td>
+              <td class="entry" valign="top" width="131.25pt" headers="d257439e1202 ">SEVERE ERROR</td>
 
-              <td class="entry" valign="top" width="165pt" headers="d256705e1527 ">ERROR</td>
-
-            </tr>
-
-            <tr class="row">
-              <td class="entry" valign="top" width="131.25pt" headers="d256705e1524 ">WARNING</td>
-
-              <td class="entry" valign="top" width="165pt" headers="d256705e1527 ">WARNING</td>
+              <td class="entry" valign="top" width="165pt" headers="d257439e1205 ">ERROR</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="131.25pt" headers="d256705e1524 ">CONFIG</td>
+              <td class="entry" valign="top" width="131.25pt" headers="d257439e1202 ">WARNING</td>
 
-              <td class="entry" valign="top" width="165pt" headers="d256705e1527 ">LOG</td>
-
-            </tr>
-
-            <tr class="row">
-              <td class="entry" valign="top" width="131.25pt" headers="d256705e1524 ">INFO</td>
-
-              <td class="entry" valign="top" width="165pt" headers="d256705e1527 ">INFO</td>
+              <td class="entry" valign="top" width="165pt" headers="d257439e1205 ">WARNING</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="131.25pt" headers="d256705e1524 ">FINE</td>
+              <td class="entry" valign="top" width="131.25pt" headers="d257439e1202 ">CONFIG</td>
 
-              <td class="entry" valign="top" width="165pt" headers="d256705e1527 ">DEBUG1</td>
-
-            </tr>
-
-            <tr class="row">
-              <td class="entry" valign="top" width="131.25pt" headers="d256705e1524 ">FINER</td>
-
-              <td class="entry" valign="top" width="165pt" headers="d256705e1527 ">DEBUG2</td>
+              <td class="entry" valign="top" width="165pt" headers="d257439e1205 ">LOG</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="131.25pt" headers="d256705e1524 ">FINEST</td>
+              <td class="entry" valign="top" width="131.25pt" headers="d257439e1202 ">INFO</td>
 
-              <td class="entry" valign="top" width="165pt" headers="d256705e1527 ">DEBUG3</td>
+              <td class="entry" valign="top" width="165pt" headers="d257439e1205 ">INFO</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="131.25pt" headers="d257439e1202 ">FINE</td>
+
+              <td class="entry" valign="top" width="165pt" headers="d257439e1205 ">DEBUG1</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="131.25pt" headers="d257439e1202 ">FINER</td>
+
+              <td class="entry" valign="top" width="165pt" headers="d257439e1205 ">DEBUG2</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="131.25pt" headers="d257439e1202 ">FINEST</td>
+
+              <td class="entry" valign="top" width="165pt" headers="d257439e1205 ">DEBUG3</td>
 
             </tr>
 

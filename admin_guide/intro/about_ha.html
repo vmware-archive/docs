@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5635,9 +5653,11 @@
         segment becomes unavailable. Mirroring is strongly recommended for production systems. </p>
 
       <p class="p">The secondary (mirror) segment must always reside on a different host than its primary
-        segment to protect against a single host failure. Mirror segments can be arranged over the
-        remaining hosts in the cluster in configurations designed to maximize availability or
-        minimize the performance degradation when hosts or multiple primary segments fail. </p>
+        segment to protect against a single host failure. In virtualized environments, the
+        secondary (mirror) must always reside on a different storage system than the master.
+        Mirror segments can be arranged over the remaining hosts in the cluster in configurations
+        designed to maximize availability, or minimize the performance degradation when hosts or
+        multiple primary segments fail. </p>
 
       <p class="p">Two standard mirroring configurations are available when you initialize or expand a
         Greenplum system. The default configuration, called <em class="ph i">group mirroring</em>, places all the
@@ -5669,9 +5689,10 @@
       <p class="p">If the master cannot connect to a segment instance, it marks that segment instance as down
         in the Greenplum Database system catalog and brings up the mirror segment in its place. A
         failed segment instance will remain out of operation until an administrator takes steps to
-        bring that segment back online. An administrator can recover a failed segment while the
-        system is up and running. The recovery process copies over only the changes that were missed
-        while the segment was out of operation.</p>
+        bring that segment back online. The <samp class="ph codeph"><a class="xref" href="../../utility_guide/admin_utilities/gpstate.html#topic1">gpstate</a></samp> utility can be used to identify failed segments.
+        An administrator can recover a failed segment while the system is up and running. The
+        recovery process copies over only the changes that were missed while the segment was out
+        of operation.</p>
 
       <p class="p">If you do not have mirroring enabled, the system will automatically shut down if a segment
         instance becomes invalid. You must recover all failed segments before operations can
@@ -5689,7 +5710,8 @@
         synchronizes the data between the primary and standby master hosts.</p>
 
       <p class="p">If the primary master fails, the log replication process stops, and the standby master can
-        be activated in its place. Upon activation of the standby master, the replicated logs are
+        be activated in its place. The switchover does not happen automatically, but must be triggered
+        externally. Upon activation of the standby master, the replicated logs are
         used to reconstruct the state of the master host at the time of the last successfully
         committed transaction. The activated standby master effectively becomes the Greenplum
         Database master, accepting client connections on the master port (which must be set to the
@@ -5713,9 +5735,9 @@
       
       <p class="p">The <em class="ph i">interconnect</em> refers to the inter-process communication between the segments and
         the network infrastructure on which this communication relies. You can achieve a highly
-        available interconnect using by deploying dual 10-Gigabit Ethernet switches on your network
-        and redundant 10-Gigabit connections to the Greenplum Database host (master and segment)
-        servers. </p>
+        available interconnect using by deploying dual Gigabit Ethernet switches on your network
+        and redundant Gigabit connections to the Greenplum Database host (master and segment)
+        servers. For performance reasons, 10-Gb Ethernet, or faster, is recommended. </p>
 
     </div>
 

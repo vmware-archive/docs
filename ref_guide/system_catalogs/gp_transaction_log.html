@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5628,13 +5646,13 @@
         
         <thead class="thead" align="left">
           <tr class="row">
-            <th class="entry" valign="top" width="131pt" id="d385756e36">column</th>
+            <th class="entry" valign="top" width="131pt" id="d384543e36">column</th>
 
-            <th class="entry" valign="top" width="73pt" id="d385756e39">type</th>
+            <th class="entry" valign="top" width="73pt" id="d384543e39">type</th>
 
-            <th class="entry" valign="top" width="101pt" id="d385756e42">references</th>
+            <th class="entry" valign="top" width="101pt" id="d384543e42">references</th>
 
-            <th class="entry" valign="top" width="145pt" id="d385756e45">description</th>
+            <th class="entry" valign="top" width="145pt" id="d384543e45">description</th>
 
           </tr>
 
@@ -5642,55 +5660,55 @@
 
         <tbody class="tbody">
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d385756e36 ">
+            <td class="entry" valign="top" width="131pt" headers="d384543e36 ">
               <samp class="ph codeph">segment_id</samp>
             </td>
 
-            <td class="entry" valign="top" width="73pt" headers="d385756e39 ">smallint</td>
+            <td class="entry" valign="top" width="73pt" headers="d384543e39 ">smallint</td>
 
-            <td class="entry" valign="top" width="101pt" headers="d385756e42 ">gp_segment_ configuration.content</td>
+            <td class="entry" valign="top" width="101pt" headers="d384543e42 ">gp_segment_ configuration.content</td>
 
-            <td class="entry" valign="top" width="145pt" headers="d385756e45 ">The content id if the segment. The master is always -1 (no
+            <td class="entry" valign="top" width="145pt" headers="d384543e45 ">The content id if the segment. The master is always -1 (no
               content).</td>
 
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d385756e36 ">
+            <td class="entry" valign="top" width="131pt" headers="d384543e36 ">
               <samp class="ph codeph">dbid</samp>
             </td>
 
-            <td class="entry" valign="top" width="73pt" headers="d385756e39 ">smallint</td>
+            <td class="entry" valign="top" width="73pt" headers="d384543e39 ">smallint</td>
 
-            <td class="entry" valign="top" width="101pt" headers="d385756e42 ">gp_segment_ configuration.dbid</td>
+            <td class="entry" valign="top" width="101pt" headers="d384543e42 ">gp_segment_ configuration.dbid</td>
 
-            <td class="entry" valign="top" width="145pt" headers="d385756e45 ">The unique id of the segment instance. </td>
+            <td class="entry" valign="top" width="145pt" headers="d384543e45 ">The unique id of the segment instance. </td>
 
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d385756e36 ">
+            <td class="entry" valign="top" width="131pt" headers="d384543e36 ">
               <samp class="ph codeph">transaction</samp>
             </td>
 
-            <td class="entry" valign="top" width="73pt" headers="d385756e39 ">xid</td>
+            <td class="entry" valign="top" width="73pt" headers="d384543e39 ">xid</td>
 
-            <td class="entry" valign="top" width="101pt" headers="d385756e42 "> </td>
+            <td class="entry" valign="top" width="101pt" headers="d384543e42 "> </td>
 
-            <td class="entry" valign="top" width="145pt" headers="d385756e45 ">The local transaction ID.</td>
+            <td class="entry" valign="top" width="145pt" headers="d384543e45 ">The local transaction ID.</td>
 
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d385756e36 ">
+            <td class="entry" valign="top" width="131pt" headers="d384543e36 ">
               <samp class="ph codeph">status</samp>
             </td>
 
-            <td class="entry" valign="top" width="73pt" headers="d385756e39 ">text</td>
+            <td class="entry" valign="top" width="73pt" headers="d384543e39 ">text</td>
 
-            <td class="entry" valign="top" width="101pt" headers="d385756e42 "> </td>
+            <td class="entry" valign="top" width="101pt" headers="d384543e42 "> </td>
 
-            <td class="entry" valign="top" width="145pt" headers="d385756e45 ">The status of the local transaction (Committed or
+            <td class="entry" valign="top" width="145pt" headers="d384543e45 ">The status of the local transaction (Committed or
               Aborted).</td>
 
           </tr>

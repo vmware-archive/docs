@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5616,7 +5634,7 @@
   <div class="body">
     <p class="p">Serves data files to or writes data files out from Greenplum Database segments.</p>
 
-    <div class="section" id="gpfdist-ux__d3142e14">
+    <div class="section" id="gpfdist-ux__d3265e14">
 <h2 class="title sectiontitle">Synopsis</h2>
       
       <pre class="pre codeblock"><strong class="ph b">gpfdist</strong> [<strong class="ph b">-d</strong> <var class="keyword varname">directory</var>] [<strong class="ph b">-p</strong> <var class="keyword varname">http_port</var>] [<strong class="ph b">-l</strong> <var class="keyword varname">log_file</var>] [<strong class="ph b">-t</strong> <var class="keyword varname">timeout</var>] 
@@ -5630,7 +5648,7 @@
 
     </div>
 
-    <div class="section" id="gpfdist-ux__d3142e103">
+    <div class="section" id="gpfdist-ux__d3265e103">
 <h2 class="title sectiontitle">Description</h2>
       
       <p class="p"><samp class="ph codeph">gpfdist</samp> is Greenplum Database parallel file distribution program. It is
@@ -5675,11 +5693,11 @@
       <div class="note note">
 <span class="notetitle">Note:</span> When using IPv6, always enclose the numeric IP address in brackets.</div>
 
-      <p class="p">You can also run <samp class="ph codeph">gpfdist</samp> as a Windows Service. See <a class="xref" href="#gpfdist-ux__d3142e527">Running gpfdist as a Windows Service</a> for more details.</p>
+      <p class="p">You can also run <samp class="ph codeph">gpfdist</samp> as a Windows Service. See <a class="xref" href="#gpfdist-ux__d3265e527">Running gpfdist as a Windows Service</a> for more details.</p>
 
     </div>
 
-    <div class="section" id="gpfdist-ux__d3142e217">
+    <div class="section" id="gpfdist-ux__d3265e217">
 <h2 class="title sectiontitle">Options</h2>
       
       <dl class="dl parml">
@@ -5788,14 +5806,14 @@
 </dd>
 
           <dd class="dd pd">The location specified in <var class="keyword varname">certificate_path</var> must contain the
-            following files:<ul class="ul" id="gpfdist-ux__d3142e400">
-              <li class="li" id="gpfdist-ux__d3142e402">The server certificate file, <samp class="ph codeph">server.crt</samp>
+            following files:<ul class="ul" id="gpfdist-ux__d3265e400">
+              <li class="li" id="gpfdist-ux__d3265e402">The server certificate file, <samp class="ph codeph">server.crt</samp>
 </li>
 
-              <li class="li" id="gpfdist-ux__d3142e407">The server private key file, <samp class="ph codeph">server.key</samp>
+              <li class="li" id="gpfdist-ux__d3265e407">The server private key file, <samp class="ph codeph">server.key</samp>
 </li>
 
-              <li class="li" id="gpfdist-ux__d3142e412">The trusted certificate authorities, <samp class="ph codeph">root.crt</samp>
+              <li class="li" id="gpfdist-ux__d3265e412">The trusted certificate authorities, <samp class="ph codeph">root.crt</samp>
 </li>
 
             </ul>
@@ -5863,7 +5881,7 @@
 
     </div>
 
-    <div class="section" id="gpfdist-ux__d3142e527">
+    <div class="section" id="gpfdist-ux__d3265e527">
 <h2 class="title sectiontitle">Running gpfdist as a Windows Service</h2>
       
       <p class="p">Greenplum Database Loaders allow <samp class="ph codeph">gpfdist</samp> to run as a Windows Service. </p>
@@ -5872,13 +5890,11 @@
         as a service: </p>
 
       <ol class="ol">
-        <li class="li" id="gpfdist-ux__d3142e546">Update your Greenplum Database Loader package to the latest version. This
-          package is available from <a class="xref" href="https://network.pivotal.io" target="_blank">Pivotal Network</a>. </li>
+        
+        <li class="li" id="gpfdist-ux__d3265e546">Register <samp class="ph codeph">gpfdist</samp> as a Windows service:<ol class="ol" type="a">
+            <li class="li" id="gpfdist-ux__d3265e553">Open a Windows command window</li>
 
-        <li class="li" id="gpfdist-ux__d3142e552">Register <samp class="ph codeph">gpfdist</samp> as a Windows service:<ol class="ol" type="a">
-            <li class="li" id="gpfdist-ux__d3142e559">Open a Windows command window</li>
-
-            <li class="li" id="gpfdist-ux__d3142e562">Run the following
+            <li class="li" id="gpfdist-ux__d3265e556">Run the following
                 command:<pre class="pre codeblock">sc create gpfdist binpath= "<var class="keyword varname">path_to_gpfdist.exe</var> -p 8081 -d External\load\files\path -l Log\file\path"</pre>
 <p class="p">You
                 can create multiple instances of <samp class="ph codeph">gpfdist</samp> by running the same
@@ -5890,23 +5906,23 @@
           </ol>
 </li>
 
-        <li class="li" id="gpfdist-ux__d3142e584">Activate the <samp class="ph codeph">gpfdist</samp> service:<ol class="ol" type="a">
-            <li class="li" id="gpfdist-ux__d3142e591">Open the Windows Control Panel and select <strong class="ph b">Administrative Tools &gt;
+        <li class="li" id="gpfdist-ux__d3265e578">Activate the <samp class="ph codeph">gpfdist</samp> service:<ol class="ol" type="a">
+            <li class="li" id="gpfdist-ux__d3265e585">Open the Windows Control Panel and select <strong class="ph b">Administrative Tools &gt;
                 Services</strong>.</li>
 
-            <li class="li" id="gpfdist-ux__d3142e597">Highlight then right-click on the <samp class="ph codeph">gpfdist</samp> service in
+            <li class="li" id="gpfdist-ux__d3265e591">Highlight then right-click on the <samp class="ph codeph">gpfdist</samp> service in
               the list of services.</li>
 
-            <li class="li" id="gpfdist-ux__d3142e603">Select <strong class="ph b">Properties</strong> from the right-click menu, the Service
+            <li class="li" id="gpfdist-ux__d3265e597">Select <strong class="ph b">Properties</strong> from the right-click menu, the Service
               Properties window opens.<p class="p">Note that you can also stop this service from the Service
                 Properties window.</p>
 </li>
 
-            <li class="li" id="gpfdist-ux__d3142e611">Optional: Change the <strong class="ph b">Startup Type</strong> to <strong class="ph b">Automatic</strong> (after a
+            <li class="li" id="gpfdist-ux__d3265e605">Optional: Change the <strong class="ph b">Startup Type</strong> to <strong class="ph b">Automatic</strong> (after a
               system restart, this service will be running), then under <strong class="ph b">Service</strong> status, click
                 <strong class="ph b">Start</strong>.</li>
 
-            <li class="li" id="gpfdist-ux__d3142e626">Click <strong class="ph b">OK</strong>.</li>
+            <li class="li" id="gpfdist-ux__d3265e620">Click <strong class="ph b">OK</strong>.</li>
 
           </ol>
 </li>
@@ -5917,7 +5933,7 @@
 
     </div>
 
-    <div class="section" id="gpfdist-ux__d3142e642">
+    <div class="section" id="gpfdist-ux__d3265e636">
 <h2 class="title sectiontitle">Examples</h2>
       
       <p class="p">To serve files from a specified directory using port 8081 (and start
@@ -5942,7 +5958,7 @@
 
     </div>
 
-    <div class="section" id="gpfdist-ux__d3142e685">
+    <div class="section" id="gpfdist-ux__d3265e679">
 <h2 class="title sectiontitle">See Also</h2>
       
       <p class="p"><samp class="ph codeph"><a class="xref" href="../../../utility_guide/admin_utilities/gpload.html#topic1">gpload</a></samp>,

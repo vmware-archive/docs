@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5977,20 +5995,20 @@ The
 
           <dd class="dd pd">This is an example read-only external table definition with the <samp class="ph codeph">s3</samp>
             protocol.<pre class="pre codeblock">CREATE READABLE EXTERNAL TABLE S3TBL (date text, time text, amt int)
-   LOCATION('s3://s3-us-west-2.amazonaws.com/s3test.pivotal.io/dataset1/normal/
+   LOCATION('s3://s3-us-west-2.amazonaws.com/s3test.example.com/dataset1/normal/
       config=/home/gpadmin/aws_s3/s3.conf')
    FORMAT 'csv';</pre>
 </dd>
 
           <dd class="dd pd">The S3 bucket is at the S3 endpoint <samp class="ph codeph">s3-us-west-2.amazonaws.com</samp> and
-            the S3 bucket name is <samp class="ph codeph">s3test.pivotal.io</samp>. The S3 prefix for the files in
-            the bucket is <samp class="ph codeph">/dataset1/normal/</samp>. The configuration file is in
+            the S3 bucket name is <samp class="ph codeph">s3test.example.com</samp>. The S3 prefix for the files
+            in the bucket is <samp class="ph codeph">/dataset1/normal/</samp>. The configuration file is in
               <samp class="ph codeph">/home/gpadmin/s3/s3.conf</samp> on all Greenplum Database segments.</dd>
 
           <dd class="dd pd">This example read-only external table specifies the same location and specifies Amazon
             S3 region <samp class="ph codeph">us-west-2</samp> with the <samp class="ph codeph">region</samp>
             parameter.<pre class="pre codeblock">CREATE READABLE EXTERNAL TABLE S3TBL (date text, time text, amt int)
-   LOCATION('s3://amazonaws.com/s3test.pivotal.io/dataset1/normal/
+   LOCATION('s3://amazonaws.com/s3test.example.com/dataset1/normal/
       region=s3-us-west-2 config=/home/gpadmin/aws_s3/s3.conf')
    FORMAT 'csv';</pre>
 </dd>
@@ -6021,7 +6039,7 @@ The
 
           <dd class="dd pd">When the <samp class="ph codeph">version</samp> parameter is <samp class="ph codeph">2</samp>, you can also
             specify an Amazon S3 endpoint. This example specifies an Amazon S3
-            endpoint.<pre class="pre codeblock">LOCATION ('s3://s3-us-west-2.amazonaws.com/s3test.pivotal.io/dataset1/normal/ <strong class="ph b">region=us-west-2</strong>
+            endpoint.<pre class="pre codeblock">LOCATION ('s3://s3-us-west-2.amazonaws.com/s3test.example.com/dataset1/normal/ <strong class="ph b">region=us-west-2</strong>
       config=/home/gpadmin/aws_s3/s3.conf')</pre>
 </dd>
 
@@ -6459,13 +6477,13 @@ The
           
           <thead class="thead" align="left">
             <tr class="row">
-              <th class="entry" valign="top" width="20%" id="d327761e1852">Parameter</th>
+              <th class="entry" valign="top" width="20%" id="d326255e1852">Parameter</th>
 
-              <th class="entry" valign="top" width="20%" id="d327761e1855">Value</th>
+              <th class="entry" valign="top" width="20%" id="d326255e1855">Value</th>
 
-              <th class="entry" valign="top" width="20%" id="d327761e1858">Readable/Writable</th>
+              <th class="entry" valign="top" width="20%" id="d326255e1858">Readable/Writable</th>
 
-              <th class="entry" valign="top" width="40%" id="d327761e1861">Default Value</th>
+              <th class="entry" valign="top" width="40%" id="d326255e1861">Default Value</th>
 
             </tr>
 
@@ -6473,15 +6491,15 @@ The
 
           <tbody class="tbody">
             <tr class="row">
-              <td class="entry" valign="top" width="20%" headers="d327761e1852 ">schema</td>
+              <td class="entry" valign="top" width="20%" headers="d326255e1852 ">schema</td>
 
-              <td class="entry" valign="top" width="20%" headers="d327761e1855 ">
+              <td class="entry" valign="top" width="20%" headers="d326255e1855 ">
                 <var class="keyword varname">URL_to_schema_file</var>
               </td>
 
-              <td class="entry" valign="top" width="20%" headers="d327761e1858 ">Read and Write</td>
+              <td class="entry" valign="top" width="20%" headers="d326255e1858 ">Read and Write</td>
 
-              <td class="entry" valign="top" width="40%" headers="d327761e1861 ">None.<div class="p">For a readable external table<ul class="ul" id="topic1__ul_el5_2yv_vs">
+              <td class="entry" valign="top" width="40%" headers="d326255e1861 ">None.<div class="p">For a readable external table<ul class="ul" id="topic1__ul_el5_2yv_vs">
                     <li class="li">The specified schema overrides the schema in the Avro file. See "Avro Schema
                       Overrides"</li>
 
@@ -6502,15 +6520,15 @@ The
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="20%" headers="d327761e1852 ">namespace</td>
+              <td class="entry" valign="top" width="20%" headers="d326255e1852 ">namespace</td>
 
-              <td class="entry" valign="top" width="20%" headers="d327761e1855 ">
+              <td class="entry" valign="top" width="20%" headers="d326255e1855 ">
                 <var class="keyword varname">avro_namespace</var>
               </td>
 
-              <td class="entry" valign="top" width="20%" headers="d327761e1858 ">Write only</td>
+              <td class="entry" valign="top" width="20%" headers="d326255e1858 ">Write only</td>
 
-              <td class="entry" valign="top" width="40%" headers="d327761e1861 ">
+              <td class="entry" valign="top" width="40%" headers="d326255e1861 ">
                 <samp class="ph codeph">public.avro</samp>
                 <p class="p">If specified, a valid Avro <var class="keyword varname">namespace</var>. </p>
 
@@ -6519,30 +6537,30 @@ The
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="20%" headers="d327761e1852 ">compress</td>
+              <td class="entry" valign="top" width="20%" headers="d326255e1852 ">compress</td>
 
-              <td class="entry" valign="top" width="20%" headers="d327761e1855 ">
+              <td class="entry" valign="top" width="20%" headers="d326255e1855 ">
 <samp class="ph codeph">true</samp> or <samp class="ph codeph">false</samp>
 </td>
 
-              <td class="entry" valign="top" width="20%" headers="d327761e1858 ">Write only</td>
+              <td class="entry" valign="top" width="20%" headers="d326255e1858 ">Write only</td>
 
-              <td class="entry" valign="top" width="40%" headers="d327761e1861 ">
+              <td class="entry" valign="top" width="40%" headers="d326255e1861 ">
                 <samp class="ph codeph">false</samp>
               </td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="20%" headers="d327761e1852 ">compression_type</td>
+              <td class="entry" valign="top" width="20%" headers="d326255e1852 ">compression_type</td>
 
-              <td class="entry" valign="top" width="20%" headers="d327761e1855 ">
+              <td class="entry" valign="top" width="20%" headers="d326255e1855 ">
                 <samp class="ph codeph">block</samp>
               </td>
 
-              <td class="entry" valign="top" width="20%" headers="d327761e1858 ">Write only</td>
+              <td class="entry" valign="top" width="20%" headers="d326255e1858 ">Write only</td>
 
-              <td class="entry" valign="top" width="40%" headers="d327761e1861 ">Optional. <p class="p">For <samp class="ph codeph">avro</samp> format,
+              <td class="entry" valign="top" width="40%" headers="d326255e1861 ">Optional. <p class="p">For <samp class="ph codeph">avro</samp> format,
                     <samp class="ph codeph">compression_type</samp> must be <samp class="ph codeph">block</samp> if
                     <samp class="ph codeph">compress</samp> is <samp class="ph codeph">true</samp>.</p>
 </td>
@@ -6550,28 +6568,28 @@ The
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="20%" headers="d327761e1852 ">codec</td>
+              <td class="entry" valign="top" width="20%" headers="d326255e1852 ">codec</td>
 
-              <td class="entry" valign="top" width="20%" headers="d327761e1855 ">
+              <td class="entry" valign="top" width="20%" headers="d326255e1855 ">
 <samp class="ph codeph">deflate</samp> or <samp class="ph codeph">snappy</samp>
 </td>
 
-              <td class="entry" valign="top" width="20%" headers="d327761e1858 ">Write only</td>
+              <td class="entry" valign="top" width="20%" headers="d326255e1858 ">Write only</td>
 
-              <td class="entry" valign="top" width="40%" headers="d327761e1861 ">
+              <td class="entry" valign="top" width="40%" headers="d326255e1861 ">
                 <samp class="ph codeph">deflate</samp>
               </td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="20%" headers="d327761e1852 ">codec_level (<samp class="ph codeph">deflate</samp> codec only)</td>
+              <td class="entry" valign="top" width="20%" headers="d326255e1852 ">codec_level (<samp class="ph codeph">deflate</samp> codec only)</td>
 
-              <td class="entry" valign="top" width="20%" headers="d327761e1855 ">integer between 1 and 9</td>
+              <td class="entry" valign="top" width="20%" headers="d326255e1855 ">integer between 1 and 9</td>
 
-              <td class="entry" valign="top" width="20%" headers="d327761e1858 ">Write only</td>
+              <td class="entry" valign="top" width="20%" headers="d326255e1858 ">Write only</td>
 
-              <td class="entry" valign="top" width="40%" headers="d327761e1861 ">
+              <td class="entry" valign="top" width="40%" headers="d326255e1861 ">
                 <samp class="ph codeph">6</samp>
                 <p class="p">The level controls the trade-off between speed and compression. Valid values are
                   1 to 9, where 1 is the fastest and 9 is the most compressed. </p>
@@ -6623,13 +6641,13 @@ The
           
           <thead class="thead" align="left">
             <tr class="row">
-              <th class="entry" valign="top" width="20%" id="d327761e2113">Option</th>
+              <th class="entry" valign="top" width="20%" id="d326255e2113">Option</th>
 
-              <th class="entry" valign="top" width="20%" id="d327761e2116">Values</th>
+              <th class="entry" valign="top" width="20%" id="d326255e2116">Values</th>
 
-              <th class="entry" valign="top" width="20%" id="d327761e2119">Readable/Writable</th>
+              <th class="entry" valign="top" width="20%" id="d326255e2119">Readable/Writable</th>
 
-              <th class="entry" valign="top" width="40%" id="d327761e2122">Default Value</th>
+              <th class="entry" valign="top" width="40%" id="d326255e2122">Default Value</th>
 
             </tr>
 
@@ -6637,96 +6655,96 @@ The
 
           <tbody class="tbody">
             <tr class="row">
-              <td class="entry" valign="top" width="20%" headers="d327761e2113 ">schema</td>
+              <td class="entry" valign="top" width="20%" headers="d326255e2113 ">schema</td>
 
-              <td class="entry" valign="top" width="20%" headers="d327761e2116 ">
+              <td class="entry" valign="top" width="20%" headers="d326255e2116 ">
                 <var class="keyword varname">URL_to_schema</var>
               </td>
 
-              <td class="entry" valign="top" width="20%" headers="d327761e2119 ">Write only</td>
+              <td class="entry" valign="top" width="20%" headers="d326255e2119 ">Write only</td>
 
-              <td class="entry" valign="top" width="40%" headers="d327761e2122 ">None.<p class="p">If not specified, Greenplum Database creates a schema
+              <td class="entry" valign="top" width="40%" headers="d326255e2122 ">None.<p class="p">If not specified, Greenplum Database creates a schema
                   according to the external table definition. </p>
 </td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="20%" headers="d327761e2113 ">pagesize</td>
+              <td class="entry" valign="top" width="20%" headers="d326255e2113 ">pagesize</td>
 
-              <td class="entry" valign="top" width="20%" headers="d327761e2116 "> &gt; 1024 Bytes</td>
+              <td class="entry" valign="top" width="20%" headers="d326255e2116 "> &gt; 1024 Bytes</td>
 
-              <td class="entry" valign="top" width="20%" headers="d327761e2119 ">Write only</td>
+              <td class="entry" valign="top" width="20%" headers="d326255e2119 ">Write only</td>
 
-              <td class="entry" valign="top" width="40%" headers="d327761e2122 "> 1 MB</td>
-
-            </tr>
-
-            <tr class="row">
-              <td class="entry" valign="top" width="20%" headers="d327761e2113 ">rowgroupsize</td>
-
-              <td class="entry" valign="top" width="20%" headers="d327761e2116 "> &gt; 1024 Bytes</td>
-
-              <td class="entry" valign="top" width="20%" headers="d327761e2119 ">Write only</td>
-
-              <td class="entry" valign="top" width="40%" headers="d327761e2122 "> 8 MB</td>
+              <td class="entry" valign="top" width="40%" headers="d326255e2122 "> 1 MB</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="20%" headers="d327761e2113 ">version</td>
+              <td class="entry" valign="top" width="20%" headers="d326255e2113 ">rowgroupsize</td>
 
-              <td class="entry" valign="top" width="20%" headers="d327761e2116 ">
+              <td class="entry" valign="top" width="20%" headers="d326255e2116 "> &gt; 1024 Bytes</td>
+
+              <td class="entry" valign="top" width="20%" headers="d326255e2119 ">Write only</td>
+
+              <td class="entry" valign="top" width="40%" headers="d326255e2122 "> 8 MB</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="20%" headers="d326255e2113 ">version</td>
+
+              <td class="entry" valign="top" width="20%" headers="d326255e2116 ">
                 <samp class="ph codeph">v1</samp>, <samp class="ph codeph">v2</samp>
 </td>
 
-              <td class="entry" valign="top" width="20%" headers="d327761e2119 ">Write only</td>
+              <td class="entry" valign="top" width="20%" headers="d326255e2119 ">Write only</td>
 
-              <td class="entry" valign="top" width="40%" headers="d327761e2122 ">
+              <td class="entry" valign="top" width="40%" headers="d326255e2122 ">
                 <samp class="ph codeph">v1</samp>
 </td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="20%" headers="d327761e2113 ">codec</td>
+              <td class="entry" valign="top" width="20%" headers="d326255e2113 ">codec</td>
 
-              <td class="entry" valign="top" width="20%" headers="d327761e2116 ">
+              <td class="entry" valign="top" width="20%" headers="d326255e2116 ">
 <samp class="ph codeph">UNCOMPRESSED</samp>, <samp class="ph codeph">GZIP</samp>,
                   <samp class="ph codeph">LZO</samp>, <samp class="ph codeph">snappy</samp>
 </td>
 
-              <td class="entry" valign="top" width="20%" headers="d327761e2119 ">Write only</td>
+              <td class="entry" valign="top" width="20%" headers="d326255e2119 ">Write only</td>
 
-              <td class="entry" valign="top" width="40%" headers="d327761e2122 ">
+              <td class="entry" valign="top" width="40%" headers="d326255e2122 ">
                 <samp class="ph codeph">UNCOMPRESSED</samp>
 </td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="20%" headers="d327761e2113 ">dictionaryenable<sup class="ph sup">1</sup>
+              <td class="entry" valign="top" width="20%" headers="d326255e2113 ">dictionaryenable<sup class="ph sup">1</sup>
 </td>
 
-              <td class="entry" valign="top" width="20%" headers="d327761e2116 ">
+              <td class="entry" valign="top" width="20%" headers="d326255e2116 ">
 <samp class="ph codeph">true</samp>, <samp class="ph codeph">false</samp>
 </td>
 
-              <td class="entry" valign="top" width="20%" headers="d327761e2119 ">Write only</td>
+              <td class="entry" valign="top" width="20%" headers="d326255e2119 ">Write only</td>
 
-              <td class="entry" valign="top" width="40%" headers="d327761e2122 "> false</td>
+              <td class="entry" valign="top" width="40%" headers="d326255e2122 "> false</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="20%" headers="d327761e2113 ">dictionarypagesize<sup class="ph sup">1</sup>
+              <td class="entry" valign="top" width="20%" headers="d326255e2113 ">dictionarypagesize<sup class="ph sup">1</sup>
 </td>
 
-              <td class="entry" valign="top" width="20%" headers="d327761e2116 "> &gt; 1024 Bytes</td>
+              <td class="entry" valign="top" width="20%" headers="d326255e2116 "> &gt; 1024 Bytes</td>
 
-              <td class="entry" valign="top" width="20%" headers="d327761e2119 ">Write only</td>
+              <td class="entry" valign="top" width="20%" headers="d326255e2119 ">Write only</td>
 
-              <td class="entry" valign="top" width="40%" headers="d327761e2122 ">512 KB</td>
+              <td class="entry" valign="top" width="40%" headers="d326255e2122 ">512 KB</td>
 
             </tr>
 
@@ -6762,8 +6780,8 @@ The
          
          <div class="p">Follow these basic steps to configure the S3 protocol and use S3 external tables, using
             the available links for more information. See also <a class="xref" href="../../admin_guide/load/topics/g-s3-protocol.html#amazon-emr__section_tsq_n3t_3x">s3 Protocol Limitations</a> to better understand the
-            capabilities and limitations of S3 external tables:<ol class="ol" id="topic1__d13211e76">
-               <li class="li">Configure each database to support the <samp class="ph codeph">s3</samp> protocol:<ol class="ol" type="a" id="topic1__d13211e83">
+            capabilities and limitations of S3 external tables:<ol class="ol" id="topic1__d13457e76">
+               <li class="li">Configure each database to support the <samp class="ph codeph">s3</samp> protocol:<ol class="ol" type="a" id="topic1__d13457e83">
                      <li class="li">In each database that will access an S3 bucket with the <samp class="ph codeph">s3</samp>
                         protocol, create the read and write functions for the <samp class="ph codeph">s3</samp>
                         protocol
@@ -6791,7 +6809,7 @@ The
 </li>
 
                <li class="li">On each Greenplum Database segment, create and install the <samp class="ph codeph">s3</samp>
-                  protocol configuration file:<ol class="ol" type="a" id="topic1__d13211e119">
+                  protocol configuration file:<ol class="ol" type="a" id="topic1__d13457e119">
                      <li class="li">Create a template s3 protocol configuration file using the
                            <samp class="ph codeph">gpcheckcloud</samp>
                         utility:<pre class="pre codeblock">gpcheckcloud -t &gt; ./mytest_s3.config</pre>
@@ -6837,7 +6855,7 @@ You can
                   location and prefix used to select existing data files that comprise the S3 table.
                   For example:
                      <pre class="pre codeblock">CREATE READABLE EXTERNAL TABLE S3TBL (date text, time text, amt int)
-   LOCATION('s3://s3-us-west-2.amazonaws.com/s3test.pivotal.io/dataset1/normal/
+   LOCATION('s3://s3-us-west-2.amazonaws.com/s3test.example.com/dataset1/normal/
       config=/home/gpadmin/aws_s3/s3.conf')
    FORMAT 'csv';</pre>
 <div class="p">For
@@ -6845,7 +6863,7 @@ You can
                      database stores data files for the table, as well as a prefix to use when
                      creating files for table <samp class="ph codeph">INSERT</samp> operations. For
                      example:<pre class="pre codeblock">CREATE WRITABLE EXTERNAL TABLE S3WRIT (LIKE S3TBL)
-   LOCATION('s3://s3-us-west-2.amazonaws.com/s3test.pivotal.io/dataset1/normal/
+   LOCATION('s3://s3-us-west-2.amazonaws.com/s3test.example.com/dataset1/normal/
       config=/home/gpadmin/aws_s3/s3.conf')
    FORMAT 'csv';</pre>
 </div>
@@ -6863,7 +6881,7 @@ You can
 <h2 class="title sectiontitle">s3 Protocol Limitations</h2>
          
          
-         <div class="p">These are <samp class="ph codeph">s3</samp> protocol limitations: <ul class="ul" id="topic1__d13211e1148">
+         <div class="p">These are <samp class="ph codeph">s3</samp> protocol limitations: <ul class="ul" id="topic1__d13457e1148">
                <li class="li">Only the S3 path-style URL is
                   supported.<pre class="pre codeblock">s3://<var class="keyword varname">S3_endpoint</var>/<var class="keyword varname">bucketname</var>/[<var class="keyword varname">S3_prefix</var>]</pre>
 </li>
@@ -6932,7 +6950,7 @@ You can
                <samp class="ph codeph">version</samp> parameter, see <a class="xref" href="../../admin_guide/load/topics/g-s3-protocol.html#amazon-emr__s3_config_file">s3 Protocol Configuration File</a>.</p>
 
          
-         <div class="note note" id="topic1__d13211e297">
+         <div class="note note" id="topic1__d13457e297">
 <span class="notetitle">Note:</span> Although the <var class="keyword varname">S3_prefix</var> is an optional part of
             the syntax, you should always include an S3 prefix for both writable and read-only S3
             tables to separate datasets as part of the <samp class="ph codeph"><a class="xref" href="CREATE_EXTERNAL_TABLE.html#topic1">CREATE
@@ -6961,7 +6979,7 @@ s3://domain/test1/abc/xx
 s3://domain/test1/abcdef
 s3://domain/test1/abcdefff</pre>
 
-         <ul class="ul" id="topic1__d13211e351">
+         <ul class="ul" id="topic1__d13457e351">
             <li class="li">If the S3 URL is provided as <samp class="ph codeph">s3://domain/test1/abc</samp>, then the
                   <samp class="ph codeph">abc</samp> prefix selects all 5 files.</li>
 
@@ -7149,7 +7167,7 @@ chunksize = 67108864</pre>
                   <dd class="dd pd">Controls how the <samp class="ph codeph">s3</samp> protocol handles authentication when
                      establishing encrypted communication between a client and an S3 data source
                      over HTTPS. The value is either <samp class="ph codeph">true</samp> or
-                     <samp class="ph codeph">false</samp>. The default value is <samp class="ph codeph">true</samp>.<ul class="ul" id="topic1__d13211e994">
+                     <samp class="ph codeph">false</samp>. The default value is <samp class="ph codeph">true</samp>.<ul class="ul" id="topic1__d13457e994">
                         <li class="li">
 <samp class="ph codeph">verifycert=false</samp> - Ignores authentication errors and
                            allows encrypted communication over HTTPS.</li>
@@ -7185,13 +7203,13 @@ chunksize = 67108864</pre>
                      clause supports S3 compatible services and must include the
                         <samp class="ph codeph">region</samp> parameter. The <samp class="ph codeph">region</samp> parameter
                      specifies the S3 data source region. For this S3 URL
-                        <samp class="ph codeph">s3://s3-us-west-2.amazonaws.com/s3test.pivotal.io/dataset1/normal/</samp>,
+                        <samp class="ph codeph">s3://s3-us-west-2.amazonaws.com/s3test.example.com/dataset1/normal/</samp>,
                      the AWS S3 region is <samp class="ph codeph">us-west-2</samp>. </dd>
 
                   <dd class="dd pd">If <samp class="ph codeph">version</samp> is 1 or is not specified, this is an example of
                      the <samp class="ph codeph">LOCATION</samp> clause of the <samp class="ph codeph">CREATE EXTERNAL
                         TABLE</samp> command that specifies an Amazon S3
-                     endpoint.<pre class="pre codeblock">LOCATION ('s3://s3-us-west-2.amazonaws.com/s3test.pivotal.io/dataset1/normal/
+                     endpoint.<pre class="pre codeblock">LOCATION ('s3://s3-us-west-2.amazonaws.com/s3test.example.com/dataset1/normal/
       config=/home/gpadmin/aws_s3/s3.conf')</pre>
 </dd>
 
@@ -7205,7 +7223,7 @@ chunksize = 67108864</pre>
                   <dd class="dd pd">If <samp class="ph codeph">version</samp> is 2, the <samp class="ph codeph">LOCATION</samp> clause can
                      also specify an Amazon S3 endpoint. This example specifies an Amazon S3
                      endpoint that uses the <samp class="ph codeph">region</samp>
-                     parameter.<pre class="pre codeblock">LOCATION ('s3://s3-us-west-2.amazonaws.com/s3test.pivotal.io/dataset1/normal/ region=us-west-2
+                     parameter.<pre class="pre codeblock">LOCATION ('s3://s3-us-west-2.amazonaws.com/s3test.example.com/dataset1/normal/ region=us-west-2
       config=/home/gpadmin/aws_s3/s3.conf') </pre>
 </dd>
 
@@ -7214,7 +7232,7 @@ chunksize = 67108864</pre>
 
             
             <div class="note note">
-<span class="notetitle">Note:</span> <span class="ph" id="topic1__d13211e1121">Greenplum Database can require up to <samp class="ph codeph">threadnum *
+<span class="notetitle">Note:</span> <span class="ph" id="topic1__d13457e1121">Greenplum Database can require up to <samp class="ph codeph">threadnum *
                      chunksize</samp> memory on each segment host when uploading or downloading S3
                   files. Consider this <samp class="ph codeph">s3</samp> protocol memory requirement when you
                   configure overall Greenplum Database memory, and increase the value of <a class="xref" href="../config_params/guc-list.html#gp_vmem_protect_limit">gp_vmem_protect_limit</a> as necessary.</span>

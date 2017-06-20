@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5622,36 +5640,36 @@
 <caption><span class="tablecap">Table 1. pg_catalog.pg_attribute</span></caption>
 <thead class="thead" align="left">
 <tr class="row">
-<th class="entry" valign="top" width="131pt" id="d391891e29">column</th>
-<th class="entry" valign="top" width="86pt" id="d391891e31">type</th>
-<th class="entry" valign="top" width="85pt" id="d391891e33">references</th>
-<th class="entry" valign="top" width="147pt" id="d391891e35">description</th>
+<th class="entry" valign="top" width="131pt" id="d390649e29">column</th>
+<th class="entry" valign="top" width="86pt" id="d390649e31">type</th>
+<th class="entry" valign="top" width="85pt" id="d390649e33">references</th>
+<th class="entry" valign="top" width="147pt" id="d390649e35">description</th>
 </tr>
 </thead>
 <tbody class="tbody">
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d391891e29 "><samp class="ph codeph">attrelid</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d391891e31 ">oid</td>
-<td class="entry" valign="top" width="85pt" headers="d391891e33 ">pg_class.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d391891e35 ">The table this column belongs to</td>
+<td class="entry" valign="top" width="131pt" headers="d390649e29 "><samp class="ph codeph">attrelid</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d390649e31 ">oid</td>
+<td class="entry" valign="top" width="85pt" headers="d390649e33 ">pg_class.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d390649e35 ">The table this column belongs to</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d391891e29 "><samp class="ph codeph">attname</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d391891e31 ">name</td>
-<td class="entry" valign="top" width="85pt" headers="d391891e33 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d391891e35 ">The column name</td>
+<td class="entry" valign="top" width="131pt" headers="d390649e29 "><samp class="ph codeph">attname</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d390649e31 ">name</td>
+<td class="entry" valign="top" width="85pt" headers="d390649e33 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d390649e35 ">The column name</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d391891e29 "><samp class="ph codeph">atttypid</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d391891e31 ">oid</td>
-<td class="entry" valign="top" width="85pt" headers="d391891e33 ">pg_type.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d391891e35 ">The data type of this column</td>
+<td class="entry" valign="top" width="131pt" headers="d390649e29 "><samp class="ph codeph">atttypid</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d390649e31 ">oid</td>
+<td class="entry" valign="top" width="85pt" headers="d390649e33 ">pg_type.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d390649e35 ">The data type of this column</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d391891e29 "><samp class="ph codeph">attstattarget</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d391891e31 ">int4</td>
-<td class="entry" valign="top" width="85pt" headers="d391891e33 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d391891e35 ">Controls the level of detail of statistics accumulated
+<td class="entry" valign="top" width="131pt" headers="d390649e29 "><samp class="ph codeph">attstattarget</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d390649e31 ">int4</td>
+<td class="entry" valign="top" width="85pt" headers="d390649e33 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d390649e35 ">Controls the level of detail of statistics accumulated
 for this column by <samp class="ph codeph">ANALYZE</samp>. A zero value indicates that
 no statistics should be collected. A negative value says to use the system
 default statistics target. The exact meaning of positive values is data
@@ -5660,104 +5678,104 @@ type-dependent. For scalar data types, it is both the target number of
 bins to create.</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d391891e29 "><samp class="ph codeph">attlen</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d391891e31 ">int2</td>
-<td class="entry" valign="top" width="85pt" headers="d391891e33 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d391891e35 ">A copy of pg_type.typlen of this column's
+<td class="entry" valign="top" width="131pt" headers="d390649e29 "><samp class="ph codeph">attlen</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d390649e31 ">int2</td>
+<td class="entry" valign="top" width="85pt" headers="d390649e33 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d390649e35 ">A copy of pg_type.typlen of this column's
 type.</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d391891e29 "><samp class="ph codeph">attnum</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d391891e31 ">int2</td>
-<td class="entry" valign="top" width="85pt" headers="d391891e33 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d391891e35 ">The number of the column. Ordinary columns are
+<td class="entry" valign="top" width="131pt" headers="d390649e29 "><samp class="ph codeph">attnum</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d390649e31 ">int2</td>
+<td class="entry" valign="top" width="85pt" headers="d390649e33 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d390649e35 ">The number of the column. Ordinary columns are
 numbered from 1 up. System columns, such as oid, have (arbitrary) negative
 numbers.</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d391891e29 "><samp class="ph codeph">attndims</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d391891e31 ">int4</td>
-<td class="entry" valign="top" width="85pt" headers="d391891e33 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d391891e35 ">Number of dimensions, if the column is an array
+<td class="entry" valign="top" width="131pt" headers="d390649e29 "><samp class="ph codeph">attndims</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d390649e31 ">int4</td>
+<td class="entry" valign="top" width="85pt" headers="d390649e33 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d390649e35 ">Number of dimensions, if the column is an array
 type; otherwise <samp class="ph codeph">0</samp>. (Presently, the number of dimensions
 of an array is not enforced, so any nonzero value effectively means it
 is an array)</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d391891e29 "><samp class="ph codeph">attcacheoff</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d391891e31 ">int4</td>
-<td class="entry" valign="top" width="85pt" headers="d391891e33 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d391891e35 ">Always <samp class="ph codeph">-1</samp> in storage, but when
+<td class="entry" valign="top" width="131pt" headers="d390649e29 "><samp class="ph codeph">attcacheoff</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d390649e31 ">int4</td>
+<td class="entry" valign="top" width="85pt" headers="d390649e33 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d390649e35 ">Always <samp class="ph codeph">-1</samp> in storage, but when
 loaded into a row descriptor in memory this may be updated to cache the
 offset of the attribute within the row</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d391891e29 "><samp class="ph codeph">atttypmod</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d391891e31 ">int4</td>
-<td class="entry" valign="top" width="85pt" headers="d391891e33 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d391891e35 ">Records type-specific data supplied at table
+<td class="entry" valign="top" width="131pt" headers="d390649e29 "><samp class="ph codeph">atttypmod</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d390649e31 ">int4</td>
+<td class="entry" valign="top" width="85pt" headers="d390649e33 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d390649e35 ">Records type-specific data supplied at table
 creation time (for example, the maximum length of a varchar column).
 It is passed to type-specific input functions and length coercion functions.
 The value will generally be <samp class="ph codeph">-1</samp> for types that do not
 need it.</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d391891e29 "><samp class="ph codeph">attbyval</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d391891e31 ">boolean</td>
-<td class="entry" valign="top" width="85pt" headers="d391891e33 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d391891e35 ">A copy of pg_type.typbyval of this
+<td class="entry" valign="top" width="131pt" headers="d390649e29 "><samp class="ph codeph">attbyval</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d390649e31 ">boolean</td>
+<td class="entry" valign="top" width="85pt" headers="d390649e33 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d390649e35 ">A copy of pg_type.typbyval of this
 column's type</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d391891e29 "><samp class="ph codeph">attstorage</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d391891e31 ">char</td>
-<td class="entry" valign="top" width="85pt" headers="d391891e33 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d391891e35 ">Normally a copy of pg_type.typstorage
+<td class="entry" valign="top" width="131pt" headers="d390649e29 "><samp class="ph codeph">attstorage</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d390649e31 ">char</td>
+<td class="entry" valign="top" width="85pt" headers="d390649e33 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d390649e35 ">Normally a copy of pg_type.typstorage
 of this column's type. For TOAST-able data types, this can be altered
 after column creation to control storage policy.</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d391891e29 "><samp class="ph codeph">attalign</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d391891e31 ">char</td>
-<td class="entry" valign="top" width="85pt" headers="d391891e33 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d391891e35 ">A copy of pg_type.typalign of this
+<td class="entry" valign="top" width="131pt" headers="d390649e29 "><samp class="ph codeph">attalign</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d390649e31 ">char</td>
+<td class="entry" valign="top" width="85pt" headers="d390649e33 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d390649e35 ">A copy of pg_type.typalign of this
 column's type</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d391891e29 "><samp class="ph codeph">attnotnull</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d391891e31 ">boolean</td>
-<td class="entry" valign="top" width="85pt" headers="d391891e33 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d391891e35 ">This represents a not-null constraint. It is
+<td class="entry" valign="top" width="131pt" headers="d390649e29 "><samp class="ph codeph">attnotnull</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d390649e31 ">boolean</td>
+<td class="entry" valign="top" width="85pt" headers="d390649e33 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d390649e35 ">This represents a not-null constraint. It is
 possible to change this column to enable or disable the constraint.</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d391891e29 "><samp class="ph codeph">atthasdef</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d391891e31 ">boolean</td>
-<td class="entry" valign="top" width="85pt" headers="d391891e33 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d391891e35 ">This column has a default value, in which case
+<td class="entry" valign="top" width="131pt" headers="d390649e29 "><samp class="ph codeph">atthasdef</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d390649e31 ">boolean</td>
+<td class="entry" valign="top" width="85pt" headers="d390649e33 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d390649e35 ">This column has a default value, in which case
 there will be a corresponding entry in the pg_attrdef catalog
 that actually defines the value</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d391891e29 "><samp class="ph codeph">attisdropped</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d391891e31 ">boolean</td>
-<td class="entry" valign="top" width="85pt" headers="d391891e33 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d391891e35 ">This column has been dropped and is no longer
+<td class="entry" valign="top" width="131pt" headers="d390649e29 "><samp class="ph codeph">attisdropped</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d390649e31 ">boolean</td>
+<td class="entry" valign="top" width="85pt" headers="d390649e33 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d390649e35 ">This column has been dropped and is no longer
 valid. A dropped column is still physically present in the table, but
 is ignored by the parser and so cannot be accessed via SQL</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d391891e29 "><samp class="ph codeph">attislocal</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d391891e31 ">boolean</td>
-<td class="entry" valign="top" width="85pt" headers="d391891e33 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d391891e35 ">This column is defined locally in the relation.
+<td class="entry" valign="top" width="131pt" headers="d390649e29 "><samp class="ph codeph">attislocal</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d390649e31 ">boolean</td>
+<td class="entry" valign="top" width="85pt" headers="d390649e33 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d390649e35 ">This column is defined locally in the relation.
 Note that a column may be locally defined and inherited simultaneously</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d391891e29 "><samp class="ph codeph">attinhcount</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d391891e31 ">int4</td>
-<td class="entry" valign="top" width="85pt" headers="d391891e33 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d391891e35 ">The number of direct ancestors this column has.
+<td class="entry" valign="top" width="131pt" headers="d390649e29 "><samp class="ph codeph">attinhcount</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d390649e31 ">int4</td>
+<td class="entry" valign="top" width="85pt" headers="d390649e33 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d390649e35 ">The number of direct ancestors this column has.
 A column with a nonzero number of ancestors cannot be dropped nor renamed</td>
 </tr>
 </tbody>

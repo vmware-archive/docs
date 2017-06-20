@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5777,13 +5795,13 @@ done</pre>
               
               <thead class="thead" align="left">
                 <tr class="row">
-                  <th class="entry" valign="top" width="20%" id="d39828e285">Parameter</th>
+                  <th class="entry" valign="top" width="20%" id="d39736e285">Parameter</th>
 
-                  <th class="entry" valign="top" width="20%" id="d39828e288">Value</th>
+                  <th class="entry" valign="top" width="20%" id="d39736e288">Value</th>
 
-                  <th class="entry" valign="top" width="20%" id="d39828e291">Readable/Writable</th>
+                  <th class="entry" valign="top" width="20%" id="d39736e291">Readable/Writable</th>
 
-                  <th class="entry" valign="top" width="40%" id="d39828e294">Default Value</th>
+                  <th class="entry" valign="top" width="40%" id="d39736e294">Default Value</th>
 
                 </tr>
 
@@ -5791,15 +5809,15 @@ done</pre>
 
               <tbody class="tbody">
                 <tr class="row">
-                  <td class="entry" valign="top" width="20%" headers="d39828e285 ">schema</td>
+                  <td class="entry" valign="top" width="20%" headers="d39736e285 ">schema</td>
 
-                  <td class="entry" valign="top" width="20%" headers="d39828e288 ">
+                  <td class="entry" valign="top" width="20%" headers="d39736e288 ">
                     <var class="keyword varname">URL_to_schema_file</var>
                   </td>
 
-                  <td class="entry" valign="top" width="20%" headers="d39828e291 ">Read and Write</td>
+                  <td class="entry" valign="top" width="20%" headers="d39736e291 ">Read and Write</td>
 
-                  <td class="entry" valign="top" width="40%" headers="d39828e294 ">None.<div class="p">For a readable external table<ul class="ul" id="topic_skt_2yv_vs__ul_el5_2yv_vs">
+                  <td class="entry" valign="top" width="40%" headers="d39736e294 ">None.<div class="p">For a readable external table<ul class="ul" id="topic_skt_2yv_vs__ul_el5_2yv_vs">
                         <li class="li">The specified schema overrides the schema in the Avro file. See <a class="xref" href="#topic_zrv_2yv_vs">Avro Schema Overrides</a>
 </li>
 
@@ -5820,15 +5838,15 @@ done</pre>
                 </tr>
 
                 <tr class="row">
-                  <td class="entry" valign="top" width="20%" headers="d39828e285 ">namespace</td>
+                  <td class="entry" valign="top" width="20%" headers="d39736e285 ">namespace</td>
 
-                  <td class="entry" valign="top" width="20%" headers="d39828e288 ">
+                  <td class="entry" valign="top" width="20%" headers="d39736e288 ">
                     <var class="keyword varname">avro_namespace</var>
                   </td>
 
-                  <td class="entry" valign="top" width="20%" headers="d39828e291 ">Write only</td>
+                  <td class="entry" valign="top" width="20%" headers="d39736e291 ">Write only</td>
 
-                  <td class="entry" valign="top" width="40%" headers="d39828e294 ">
+                  <td class="entry" valign="top" width="40%" headers="d39736e294 ">
                     <samp class="ph codeph">public.avro</samp>
                     <p class="p">If specified, a valid Avro <var class="keyword varname">namespace</var>. </p>
 
@@ -5837,30 +5855,30 @@ done</pre>
                 </tr>
 
                 <tr class="row">
-                  <td class="entry" valign="top" width="20%" headers="d39828e285 ">compress</td>
+                  <td class="entry" valign="top" width="20%" headers="d39736e285 ">compress</td>
 
-                  <td class="entry" valign="top" width="20%" headers="d39828e288 ">
+                  <td class="entry" valign="top" width="20%" headers="d39736e288 ">
 <samp class="ph codeph">true</samp> or <samp class="ph codeph">false</samp>
 </td>
 
-                  <td class="entry" valign="top" width="20%" headers="d39828e291 ">Write only</td>
+                  <td class="entry" valign="top" width="20%" headers="d39736e291 ">Write only</td>
 
-                  <td class="entry" valign="top" width="40%" headers="d39828e294 ">
+                  <td class="entry" valign="top" width="40%" headers="d39736e294 ">
                     <samp class="ph codeph">false</samp>
                   </td>
 
                 </tr>
 
                 <tr class="row">
-                  <td class="entry" valign="top" width="20%" headers="d39828e285 ">compression_type</td>
+                  <td class="entry" valign="top" width="20%" headers="d39736e285 ">compression_type</td>
 
-                  <td class="entry" valign="top" width="20%" headers="d39828e288 ">
+                  <td class="entry" valign="top" width="20%" headers="d39736e288 ">
                     <samp class="ph codeph">block</samp>
                   </td>
 
-                  <td class="entry" valign="top" width="20%" headers="d39828e291 ">Write only</td>
+                  <td class="entry" valign="top" width="20%" headers="d39736e291 ">Write only</td>
 
-                  <td class="entry" valign="top" width="40%" headers="d39828e294 ">Optional. <p class="p">For <samp class="ph codeph">avro</samp> format,
+                  <td class="entry" valign="top" width="40%" headers="d39736e294 ">Optional. <p class="p">For <samp class="ph codeph">avro</samp> format,
                         <samp class="ph codeph">compression_type</samp> must be <samp class="ph codeph">block</samp> if
                         <samp class="ph codeph">compress</samp> is <samp class="ph codeph">true</samp>.</p>
 </td>
@@ -5868,28 +5886,28 @@ done</pre>
                 </tr>
 
                 <tr class="row">
-                  <td class="entry" valign="top" width="20%" headers="d39828e285 ">codec</td>
+                  <td class="entry" valign="top" width="20%" headers="d39736e285 ">codec</td>
 
-                  <td class="entry" valign="top" width="20%" headers="d39828e288 ">
+                  <td class="entry" valign="top" width="20%" headers="d39736e288 ">
 <samp class="ph codeph">deflate</samp> or <samp class="ph codeph">snappy</samp>
 </td>
 
-                  <td class="entry" valign="top" width="20%" headers="d39828e291 ">Write only</td>
+                  <td class="entry" valign="top" width="20%" headers="d39736e291 ">Write only</td>
 
-                  <td class="entry" valign="top" width="40%" headers="d39828e294 ">
+                  <td class="entry" valign="top" width="40%" headers="d39736e294 ">
                     <samp class="ph codeph">deflate</samp>
                   </td>
 
                 </tr>
 
                 <tr class="row">
-                  <td class="entry" valign="top" width="20%" headers="d39828e285 ">codec_level (<samp class="ph codeph">deflate</samp> codec only)</td>
+                  <td class="entry" valign="top" width="20%" headers="d39736e285 ">codec_level (<samp class="ph codeph">deflate</samp> codec only)</td>
 
-                  <td class="entry" valign="top" width="20%" headers="d39828e288 ">integer between 1 and 9</td>
+                  <td class="entry" valign="top" width="20%" headers="d39736e288 ">integer between 1 and 9</td>
 
-                  <td class="entry" valign="top" width="20%" headers="d39828e291 ">Write only</td>
+                  <td class="entry" valign="top" width="20%" headers="d39736e291 ">Write only</td>
 
-                  <td class="entry" valign="top" width="40%" headers="d39828e294 ">
+                  <td class="entry" valign="top" width="40%" headers="d39736e294 ">
                     <samp class="ph codeph">6</samp>
                     <p class="p">The level controls the trade-off between speed and compression. Valid values
                       are 1 to 9, where 1 is the fastest and 9 is the most compressed. </p>
@@ -5952,9 +5970,9 @@ done</pre>
               
               <thead class="thead" align="left">
                 <tr class="row">
-                  <th class="entry" valign="top" width="25.773195876288664%" id="d39828e549">Avro Data Type</th>
+                  <th class="entry" valign="top" width="25.773195876288664%" id="d39736e549">Avro Data Type</th>
 
-                  <th class="entry" valign="top" width="74.22680412371135%" id="d39828e552">Greenplum Database Data Type</th>
+                  <th class="entry" valign="top" width="74.22680412371135%" id="d39736e552">Greenplum Database Data Type</th>
 
                 </tr>
 
@@ -5962,58 +5980,58 @@ done</pre>
 
               <tbody class="tbody">
                 <tr class="row">
-                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39828e549 ">null</td>
+                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39736e549 ">null</td>
 
-                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39828e552 ">Supported only in a Avro union data type. See <a class="xref" href="#topic_skw_2yv_vs">Data Conversion when Writing Avro Files</a>.</td>
-
-                </tr>
-
-                <tr class="row">
-                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39828e549 ">boolean </td>
-
-                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39828e552 ">boolean</td>
+                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39736e552 ">Supported only in a Avro union data type. See <a class="xref" href="#topic_skw_2yv_vs">Data Conversion when Writing Avro Files</a>.</td>
 
                 </tr>
 
                 <tr class="row">
-                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39828e549 ">int </td>
+                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39736e549 ">boolean </td>
 
-                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39828e552 ">int or smallint</td>
-
-                </tr>
-
-                <tr class="row">
-                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39828e549 ">long </td>
-
-                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39828e552 ">bigint</td>
+                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39736e552 ">boolean</td>
 
                 </tr>
 
                 <tr class="row">
-                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39828e549 ">float </td>
+                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39736e549 ">int </td>
 
-                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39828e552 ">real</td>
-
-                </tr>
-
-                <tr class="row">
-                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39828e549 ">double </td>
-
-                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39828e552 ">double</td>
+                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39736e552 ">int or smallint</td>
 
                 </tr>
 
                 <tr class="row">
-                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39828e549 ">bytes </td>
+                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39736e549 ">long </td>
 
-                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39828e552 ">bytea</td>
+                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39736e552 ">bigint</td>
 
                 </tr>
 
                 <tr class="row">
-                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39828e549 ">string </td>
+                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39736e549 ">float </td>
 
-                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39828e552 ">text</td>
+                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39736e552 ">real</td>
+
+                </tr>
+
+                <tr class="row">
+                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39736e549 ">double </td>
+
+                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39736e552 ">double</td>
+
+                </tr>
+
+                <tr class="row">
+                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39736e549 ">bytes </td>
+
+                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39736e552 ">bytea</td>
+
+                </tr>
+
+                <tr class="row">
+                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39736e549 ">string </td>
+
+                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39736e552 ">text</td>
 
                 </tr>
 
@@ -6043,9 +6061,9 @@ done</pre>
               
               <thead class="thead" align="left">
                 <tr class="row">
-                  <th class="entry" valign="top" width="25.773195876288664%" id="d39828e684">Avro Data Type</th>
+                  <th class="entry" valign="top" width="25.773195876288664%" id="d39736e684">Avro Data Type</th>
 
-                  <th class="entry" valign="top" width="74.22680412371135%" id="d39828e687">Greenplum Database Data Type</th>
+                  <th class="entry" valign="top" width="74.22680412371135%" id="d39736e687">Greenplum Database Data Type</th>
 
                 </tr>
 
@@ -6053,18 +6071,18 @@ done</pre>
 
               <tbody class="tbody">
                 <tr class="row">
-                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39828e684 ">enum</td>
+                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39736e684 ">enum</td>
 
-                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39828e687 ">int<p class="p">The integer represents the zero-based position of the symbol in the
+                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39736e687 ">int<p class="p">The integer represents the zero-based position of the symbol in the
                       schema.</p>
 </td>
 
                 </tr>
 
                 <tr class="row">
-                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39828e684 ">array</td>
+                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39736e684 ">array</td>
 
-                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39828e687 ">array<p class="p">The Greenplum Database array dimensions match the Avro array
+                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39736e687 ">array<p class="p">The Greenplum Database array dimensions match the Avro array
                       dimensions. The element type is converted from the Avro data type to the
                       Greenplum Database data type.</p>
 </td>
@@ -6072,30 +6090,30 @@ done</pre>
                 </tr>
 
                 <tr class="row">
-                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39828e684 ">maps </td>
+                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39736e684 ">maps </td>
 
-                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39828e687 ">Not supported</td>
-
-                </tr>
-
-                <tr class="row">
-                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39828e684 ">union </td>
-
-                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39828e687 ">The first non-null data type.</td>
+                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39736e687 ">Not supported</td>
 
                 </tr>
 
                 <tr class="row">
-                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39828e684 ">fixed </td>
+                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39736e684 ">union </td>
 
-                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39828e687 ">bytea</td>
+                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39736e687 ">The first non-null data type.</td>
 
                 </tr>
 
                 <tr class="row">
-                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39828e684 ">record</td>
+                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39736e684 ">fixed </td>
 
-                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39828e687 ">XML data</td>
+                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39736e687 ">bytea</td>
+
+                </tr>
+
+                <tr class="row">
+                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39736e684 ">record</td>
+
+                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39736e687 ">XML data</td>
 
                 </tr>
 
@@ -6305,9 +6323,9 @@ done</pre>
               
               <thead class="thead" align="left">
                 <tr class="row">
-                  <th class="entry" valign="top" width="25.773195876288664%" id="d39828e944">Greenplum Database Data Type</th>
+                  <th class="entry" valign="top" width="25.773195876288664%" id="d39736e944">Greenplum Database Data Type</th>
 
-                  <th class="entry" valign="top" width="74.22680412371135%" id="d39828e947">Avro Union Data Type Definition </th>
+                  <th class="entry" valign="top" width="74.22680412371135%" id="d39736e947">Avro Union Data Type Definition </th>
 
                 </tr>
 
@@ -6315,81 +6333,81 @@ done</pre>
 
               <tbody class="tbody">
                 <tr class="row">
-                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39828e944 ">boolean </td>
+                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39736e944 ">boolean </td>
 
-                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39828e947 ">
+                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39736e947 ">
                     <samp class="ph codeph">["boolean", "null"]</samp>
                   </td>
 
                 </tr>
 
                 <tr class="row">
-                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39828e944 ">int </td>
+                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39736e944 ">int </td>
 
-                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39828e947 ">
+                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39736e947 ">
                     <samp class="ph codeph">["int", "null"]</samp>
                   </td>
 
                 </tr>
 
                 <tr class="row">
-                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39828e944 ">bigint </td>
+                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39736e944 ">bigint </td>
 
-                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39828e947 ">
+                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39736e947 ">
                     <samp class="ph codeph">["long", "null"]</samp>
                   </td>
 
                 </tr>
 
                 <tr class="row">
-                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39828e944 ">smallint</td>
+                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39736e944 ">smallint</td>
 
-                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39828e947 ">
+                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39736e947 ">
                     <samp class="ph codeph">["int", "null"]</samp>
                   </td>
 
                 </tr>
 
                 <tr class="row">
-                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39828e944 ">real </td>
+                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39736e944 ">real </td>
 
-                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39828e947 ">
+                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39736e947 ">
                     <samp class="ph codeph">["float", "null"]</samp>
                   </td>
 
                 </tr>
 
                 <tr class="row">
-                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39828e944 ">double </td>
+                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39736e944 ">double </td>
 
-                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39828e947 ">
+                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39736e947 ">
                     <samp class="ph codeph">["double", "null"]</samp>
                   </td>
 
                 </tr>
 
                 <tr class="row">
-                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39828e944 ">bytea </td>
+                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39736e944 ">bytea </td>
 
-                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39828e947 ">
+                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39736e947 ">
                     <samp class="ph codeph">["bytes", "null"]</samp>
                   </td>
 
                 </tr>
 
                 <tr class="row">
-                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39828e944 ">text</td>
+                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39736e944 ">text</td>
 
-                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39828e947 ">
+                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39736e947 ">
                     <samp class="ph codeph">["string", "null"]</samp>
                   </td>
 
                 </tr>
 
                 <tr class="row">
-                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39828e944 ">array</td>
+                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39736e944 ">array</td>
 
-                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39828e947 ">
+                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39736e947 ">
                     <samp class="ph codeph">[{<var class="keyword varname">array</var>}, "null"]</samp>
                     <p class="p">The Greenplum Database array is converted to an Avro array with same
                       dimensions and same element type as the Greenplum Database array.</p>
@@ -6399,9 +6417,9 @@ done</pre>
                 </tr>
 
                 <tr class="row">
-                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39828e944 ">other data types</td>
+                  <td class="entry" valign="top" width="25.773195876288664%" headers="d39736e944 ">other data types</td>
 
-                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39828e947 ">
+                  <td class="entry" valign="top" width="74.22680412371135%" headers="d39736e947 ">
                     <samp class="ph codeph">["string", "null"]</samp>
                     <p class="p">Data are formatted strings. The <samp class="ph codeph">gphdfs</samp> protocol casts the
                       data to Greenplum Database text and writes the text to the Avro file as an
@@ -6484,7 +6502,7 @@ done</pre>
 
           <pre class="pre codeblock">CREATE WRITABLE EXTERNAL TABLE atudt1 (id int, info myt, birth date, salary numeric ) 
    LOCATION ('gphdfs://my_hdfs:8020/tmp/emp01.avro
-      ?namespace=public.pivotal.avro') 
+      ?namespace=public.example.avro') 
    FORMAT 'avro';</pre>
 
         </div>

@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -6984,9 +7002,9 @@ DETAIL:
                 
                 <thead class="thead" align="left">
                   <tr class="row">
-                    <th class="entry" valign="top" width="27.027027027027025%" id="d474307e1967">Column</th>
+                    <th class="entry" valign="top" width="27.027027027027025%" id="d474741e1967">Column</th>
 
-                    <th class="entry" valign="top" width="72.97297297297297%" id="d474307e1970">Description</th>
+                    <th class="entry" valign="top" width="72.97297297297297%" id="d474741e1970">Description</th>
 
                   </tr>
 
@@ -6994,137 +7012,137 @@ DETAIL:
 
                 <tbody class="tbody">
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e1967 ">type</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e1967 ">type</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e1970 ">S, for server, C for client.</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e1967 ">user</td>
-
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e1970 ">Username <samp class="ph codeph">pgbouncer</samp> uses to connect to server.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e1970 ">S, for server, C for client.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e1967 ">database</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e1967 ">user</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e1970 ">Database name.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e1970 ">Username <samp class="ph codeph">pgbouncer</samp> uses to connect to server.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e1967 ">state</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e1967 ">database</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e1970 ">State of the server connection, one of <samp class="ph codeph">active</samp>,
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e1970 ">Database name.</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e1967 ">state</td>
+
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e1970 ">State of the server connection, one of <samp class="ph codeph">active</samp>,
                         <samp class="ph codeph">used</samp> or <samp class="ph codeph">idle</samp>.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e1967 ">addr</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e1967 ">addr</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e1970 ">IP address of PostgreSQL server.</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e1967 ">port</td>
-
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e1970 ">Port of PostgreSQL server.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e1970 ">IP address of PostgreSQL server.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e1967 ">local_addr</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e1967 ">port</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e1970 ">Connection start address on local machine.</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e1967 ">local_port</td>
-
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e1970 ">Connection start port on local machine.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e1970 ">Port of PostgreSQL server.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e1967 ">connect_time</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e1967 ">local_addr</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e1970 ">When the connection was made.</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e1967 ">request_time</td>
-
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e1970 ">When last request was issued.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e1970 ">Connection start address on local machine.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e1967 ">ptr</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e1967 ">local_port</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e1970 ">Address of internal object for this connection. Used as unique
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e1970 ">Connection start port on local machine.</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e1967 ">connect_time</td>
+
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e1970 ">When the connection was made.</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e1967 ">request_time</td>
+
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e1970 ">When last request was issued.</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e1967 ">ptr</td>
+
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e1970 ">Address of internal object for this connection. Used as unique
                       ID.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e1967 ">link</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e1967 ">link</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e1970 ">Address of client connection the server is paired with.</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e1967 ">recv_pos</td>
-
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e1970 ">Receive position in the I/O buffer.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e1970 ">Address of client connection the server is paired with.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e1967 ">pkt_pos</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e1967 ">recv_pos</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e1970 ">Parse position in the I/O buffer.</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e1967 ">pkt_remain</td>
-
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e1970 ">Number of packets remaining on the socket.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e1970 ">Receive position in the I/O buffer.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e1967 ">send_pos</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e1967 ">pkt_pos</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e1970 ">Send position in the packet.</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e1967 ">send_remain</td>
-
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e1970 ">Total packet length remaining to send.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e1970 ">Parse position in the I/O buffer.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e1967 ">pkt_avail</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e1967 ">pkt_remain</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e1970 ">Amount of I/O buffer left to parse.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e1970 ">Number of packets remaining on the socket.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e1967 ">send_avail</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e1967 ">send_pos</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e1970 ">Amount of I/O buffer left to send.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e1970 ">Send position in the packet.</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e1967 ">send_remain</td>
+
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e1970 ">Total packet length remaining to send.</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e1967 ">pkt_avail</td>
+
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e1970 ">Amount of I/O buffer left to parse.</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e1967 ">send_avail</td>
+
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e1970 ">Amount of I/O buffer left to send.</td>
 
                   </tr>
 
@@ -7149,9 +7167,9 @@ DETAIL:
                 
                 <thead class="thead" align="left">
                   <tr class="row">
-                    <th class="entry" valign="top" width="27.027027027027025%" id="d474307e2190">Column</th>
+                    <th class="entry" valign="top" width="27.027027027027025%" id="d474741e2190">Column</th>
 
-                    <th class="entry" valign="top" width="72.97297297297297%" id="d474307e2193">Description</th>
+                    <th class="entry" valign="top" width="72.97297297297297%" id="d474741e2193">Description</th>
 
                   </tr>
 
@@ -7159,97 +7177,97 @@ DETAIL:
 
                 <tbody class="tbody">
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2190 ">type</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2190 ">type</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2193 ">C, for client.</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2190 ">user</td>
-
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2193 ">Client connected user.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2193 ">C, for client.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2190 ">database</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2190 ">user</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2193 ">Database name.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2193 ">Client connected user.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2190 ">state</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2190 ">database</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2193 ">State of the client connection, one of <samp class="ph codeph">active</samp>,
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2193 ">Database name.</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2190 ">state</td>
+
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2193 ">State of the client connection, one of <samp class="ph codeph">active</samp>,
                         <samp class="ph codeph">used</samp>, <samp class="ph codeph">waiting</samp> or
                       <samp class="ph codeph">idle</samp>.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2190 ">addr</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2190 ">addr</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2193 ">IP address of client, or <samp class="ph codeph">unix</samp> for a socket
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2193 ">IP address of client, or <samp class="ph codeph">unix</samp> for a socket
                       connection.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2190 ">port</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2190 ">port</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2193 ">Port client is connected to.</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2190 ">local_addr</td>
-
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2193 ">Connection end address on local machine.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2193 ">Port client is connected to.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2190 ">local_port</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2190 ">local_addr</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2193 ">Connection end port on local machine.</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2190 ">connect_time</td>
-
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2193 ">Timestamp of connect time.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2193 ">Connection end address on local machine.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2190 ">request_time</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2190 ">local_port</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2193 ">Timestamp of latest client request.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2193 ">Connection end port on local machine.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2190 ">ptr</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2190 ">connect_time</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2193 ">Address of internal object for this connection. Used as unique
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2193 ">Timestamp of connect time.</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2190 ">request_time</td>
+
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2193 ">Timestamp of latest client request.</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2190 ">ptr</td>
+
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2193 ">Address of internal object for this connection. Used as unique
                       ID.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2190 ">link</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2190 ">link</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2193 ">Address of server connection the client is paired with.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2193 ">Address of server connection the client is paired with.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2190 ">remote_pid</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2190 ">remote_pid</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2193 ">Process ID, if client connects with Unix socket and the OS supports
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2193 ">Process ID, if client connects with Unix socket and the OS supports
                       getting it.</td>
 
                   </tr>
@@ -7277,9 +7295,9 @@ DETAIL:
                 
                 <thead class="thead" align="left">
                   <tr class="row">
-                    <th class="entry" valign="top" width="27.027027027027025%" id="d474307e2364">Column</th>
+                    <th class="entry" valign="top" width="27.027027027027025%" id="d474741e2364">Column</th>
 
-                    <th class="entry" valign="top" width="72.97297297297297%" id="d474307e2367">Description</th>
+                    <th class="entry" valign="top" width="72.97297297297297%" id="d474741e2367">Description</th>
 
                   </tr>
 
@@ -7287,23 +7305,23 @@ DETAIL:
 
                 <tbody class="tbody">
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2364 ">key</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2364 ">key</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2367 "> Configuration variable name</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2364 ">value</td>
-
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2367 "> Configuration value</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2367 "> Configuration variable name</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2364 ">changeable</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2364 ">value</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2367 ">Either <samp class="ph codeph">yes</samp> or <samp class="ph codeph">no</samp>. Shows whether the
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2367 "> Configuration value</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2364 ">changeable</td>
+
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2367 ">Either <samp class="ph codeph">yes</samp> or <samp class="ph codeph">no</samp>. Shows whether the
                       variable can be changed while running. If <samp class="ph codeph">no</samp>, the variable
                       can be changed only at boot time.</td>
 
@@ -7330,9 +7348,9 @@ DETAIL:
                 
                 <thead class="thead" align="left">
                   <tr class="row">
-                    <th class="entry" valign="top" width="27.027027027027025%" id="d474307e2438">Column</th>
+                    <th class="entry" valign="top" width="27.027027027027025%" id="d474741e2438">Column</th>
 
-                    <th class="entry" valign="top" width="72.97297297297297%" id="d474307e2441">Description</th>
+                    <th class="entry" valign="top" width="72.97297297297297%" id="d474741e2441">Description</th>
 
                   </tr>
 
@@ -7340,76 +7358,76 @@ DETAIL:
 
                 <tbody class="tbody">
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2438 ">name</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2438 ">name</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2441 ">Name of configured database entry.</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2438 ">host</td>
-
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2441 ">Host pgbouncer connects to.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2441 ">Name of configured database entry.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2438 ">port</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2438 ">host</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2441 ">Port pgbouncer connects to.</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2438 ">database</td>
-
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2441 ">Actual database name pgbouncer connects to.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2441 ">Host pgbouncer connects to.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2438 ">force_user </td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2438 ">port</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2441 ">When user is part of the connection string, the connection between
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2441 ">Port pgbouncer connects to.</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2438 ">database</td>
+
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2441 ">Actual database name pgbouncer connects to.</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2438 ">force_user </td>
+
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2441 ">When user is part of the connection string, the connection between
                       pgbouncer and the database server is forced to the given user, whatever the
                       client user.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2438 ">pool_size</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2438 ">pool_size</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2441 ">Maximum number of server connections.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2441 ">Maximum number of server connections.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2438 ">reserve_pool</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2438 ">reserve_pool</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2441 ">The number of additional connections that can be created if the pool
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2441 ">The number of additional connections that can be created if the pool
                       reaches <samp class="ph codeph">pool_size</samp>.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2438 ">pool_mode</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2438 ">pool_mode</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2441 ">The database's override <samp class="ph codeph">pool_mode</samp> or NULL if the default
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2441 ">The database's override <samp class="ph codeph">pool_mode</samp> or NULL if the default
                       will be used instead.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2438 ">max_connections</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2438 ">max_connections</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2441 ">Maximum number of connections for all pools for this database.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2441 ">Maximum number of connections for all pools for this database.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2438 ">current_connections</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2438 ">current_connections</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2441 ">The total count of connections for all pools for this database.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2441 ">The total count of connections for all pools for this database.</td>
 
                   </tr>
 
@@ -7436,9 +7454,9 @@ DETAIL:
                 
                 <thead class="thead" align="left">
                   <tr class="row">
-                    <th class="entry" valign="top" width="27.027027027027025%" id="d474307e2574">Column</th>
+                    <th class="entry" valign="top" width="27.027027027027025%" id="d474741e2574">Column</th>
 
-                    <th class="entry" valign="top" width="72.97297297297297%" id="d474307e2577">Description</th>
+                    <th class="entry" valign="top" width="72.97297297297297%" id="d474741e2577">Description</th>
 
                   </tr>
 
@@ -7446,23 +7464,23 @@ DETAIL:
 
                 <tbody class="tbody">
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2574 ">zonename</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2574 ">zonename</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2577 ">Zone name</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2574 ">serial</td>
-
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2577 ">Current DNS serial number</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2577 ">Zone name</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2574 ">count</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2574 ">serial</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2577 ">Hostnames belonging to this zone</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2577 ">Current DNS serial number</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2574 ">count</td>
+
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2577 ">Hostnames belonging to this zone</td>
 
                   </tr>
 
@@ -7496,9 +7514,9 @@ DETAIL:
                 
                 <thead class="thead" align="left">
                   <tr class="row">
-                    <th class="entry" valign="top" width="27.027027027027025%" id="d474307e2646">Column</th>
+                    <th class="entry" valign="top" width="27.027027027027025%" id="d474741e2646">Column</th>
 
-                    <th class="entry" valign="top" width="72.97297297297297%" id="d474307e2649">Description</th>
+                    <th class="entry" valign="top" width="72.97297297297297%" id="d474741e2649">Description</th>
 
                   </tr>
 
@@ -7506,89 +7524,89 @@ DETAIL:
 
                 <tbody class="tbody">
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2646 ">fd</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2646 ">fd</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2649 ">File descriptor numeric value.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2649 ">File descriptor numeric value.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2646 ">task</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2646 ">task</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2649 ">One of <samp class="ph codeph">pooler</samp>, <samp class="ph codeph">client</samp>, or
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2649 ">One of <samp class="ph codeph">pooler</samp>, <samp class="ph codeph">client</samp>, or
                         <samp class="ph codeph">server</samp>.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2646 ">user</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2646 ">user</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2649 ">User of the connection using the file descriptor.</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2646 ">database</td>
-
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2649 ">Database of the connection using the file descriptor.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2649 ">User of the connection using the file descriptor.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2646 ">addr</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2646 ">database</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2649 ">IP address of the connection using the file descriptor, "unix" if a Unix
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2649 ">Database of the connection using the file descriptor.</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2646 ">addr</td>
+
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2649 ">IP address of the connection using the file descriptor, "unix" if a Unix
                       socket is used.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2646 ">port</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2646 ">port</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2649 ">Port used by the connection using the file descriptor.</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2646 ">cancel</td>
-
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2649 ">Cancel key for this connection.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2649 ">Port used by the connection using the file descriptor.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2646 ">link</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2646 ">cancel</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2649 ">File descriptor for corresponding server/client. NULL if idle.</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2646 ">client_encoding</td>
-
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2649 ">Character set used for the database.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2649 ">Cancel key for this connection.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2646 ">std_strings</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2646 ">link</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2649 ">This controls whether ordinary string literals ('...') treat backslashes
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2649 ">File descriptor for corresponding server/client. NULL if idle.</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2646 ">client_encoding</td>
+
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2649 ">Character set used for the database.</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2646 ">std_strings</td>
+
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2649 ">This controls whether ordinary string literals ('...') treat backslashes
                       literally, as specified in the SQL standard. </td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2646 ">datestyle</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2646 ">datestyle</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2649 ">Display format for date and time values. </td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2649 ">Display format for date and time values. </td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2646 ">timezone</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2646 ">timezone</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2649 ">The timezone for interpreting and displaying time stamps. </td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2649 ">The timezone for interpreting and displaying time stamps. </td>
 
                   </tr>
 
@@ -7615,9 +7633,9 @@ DETAIL:
                 
                 <thead class="thead" align="left">
                   <tr class="row">
-                    <th class="entry" valign="top" width="27.027027027027025%" id="d474307e2805">Item</th>
+                    <th class="entry" valign="top" width="27.027027027027025%" id="d474741e2805">Item</th>
 
-                    <th class="entry" valign="top" width="72.97297297297297%" id="d474307e2808">Description</th>
+                    <th class="entry" valign="top" width="72.97297297297297%" id="d474741e2808">Description</th>
 
                   </tr>
 
@@ -7625,86 +7643,86 @@ DETAIL:
 
                 <tbody class="tbody">
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2805 ">databases</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2805 ">databases</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2808 ">Count of databases.</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2805 ">users</td>
-
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2808 ">Count of users.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2808 ">Count of databases.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2805 ">pools</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2805 ">users</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2808 ">Count of pools.</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2805 ">free_clients</td>
-
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2808 ">Count of free clients.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2808 ">Count of users.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2805 ">used_clients</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2805 ">pools</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2808 ">Count of used clients.</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2805 ">login_clients</td>
-
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2808 ">Count of clients in <samp class="ph codeph">login</samp> state.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2808 ">Count of pools.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2805 ">free_servers</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2805 ">free_clients</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2808 ">Count of free servers.</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2805 ">used_servers</td>
-
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2808 ">Count of used servers.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2808 ">Count of free clients.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2805 ">dns_names</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2805 ">used_clients</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2808 ">Count of DNS names.</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2805 ">dns_zones </td>
-
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2808 ">Count of DNS zones.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2808 ">Count of used clients.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2805 ">dns_queries</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2805 ">login_clients</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2808 ">Count of DNS queries.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2808 ">Count of clients in <samp class="ph codeph">login</samp> state.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2805 ">dns_pending</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2805 ">free_servers</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2808 ">Count of in-flight DNS queries.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2808 ">Count of free servers.</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2805 ">used_servers</td>
+
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2808 ">Count of used servers.</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2805 ">dns_names</td>
+
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2808 ">Count of DNS names.</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2805 ">dns_zones </td>
+
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2808 ">Count of DNS zones.</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2805 ">dns_queries</td>
+
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2808 ">Count of DNS queries.</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2805 ">dns_pending</td>
+
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2808 ">Count of in-flight DNS queries.</td>
 
                   </tr>
 
@@ -7745,9 +7763,9 @@ DETAIL:
                 
                 <thead class="thead" align="left">
                   <tr class="row">
-                    <th class="entry" valign="top" width="27.027027027027025%" id="d474307e2979">Column</th>
+                    <th class="entry" valign="top" width="27.027027027027025%" id="d474741e2979">Column</th>
 
-                    <th class="entry" valign="top" width="72.97297297297297%" id="d474307e2982">Description</th>
+                    <th class="entry" valign="top" width="72.97297297297297%" id="d474741e2982">Description</th>
 
                   </tr>
 
@@ -7755,37 +7773,37 @@ DETAIL:
 
                 <tbody class="tbody">
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2979 ">name</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2979 ">name</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2982 ">Name of cache.</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2979 ">size</td>
-
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2982 ">The size of a single slot in the cache. </td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2982 ">Name of cache.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2979 ">used</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2979 ">size</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2982 ">Number of used slots in the cache. </td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2979 ">free</td>
-
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2982 ">The number of available slots in the cache.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2982 ">The size of a single slot in the cache. </td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e2979 ">memtotal</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2979 ">used</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e2982 ">Total bytes used by the cache.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2982 ">Number of used slots in the cache. </td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2979 ">free</td>
+
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2982 ">The number of available slots in the cache.</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e2979 ">memtotal</td>
+
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e2982 ">Total bytes used by the cache.</td>
 
                   </tr>
 
@@ -7812,9 +7830,9 @@ DETAIL:
                 
                 <thead class="thead" align="left">
                   <tr class="row">
-                    <th class="entry" valign="top" width="27.027027027027025%" id="d474307e3064">Column</th>
+                    <th class="entry" valign="top" width="27.027027027027025%" id="d474741e3064">Column</th>
 
-                    <th class="entry" valign="top" width="72.97297297297297%" id="d474307e3067">Description</th>
+                    <th class="entry" valign="top" width="72.97297297297297%" id="d474741e3067">Description</th>
 
                   </tr>
 
@@ -7822,79 +7840,79 @@ DETAIL:
 
                 <tbody class="tbody">
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e3064 ">database</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e3064 ">database</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e3067 ">Database name.</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e3064 ">user</td>
-
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e3067 ">User name.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e3067 ">Database name.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e3064 ">cl_active</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e3064 ">user</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e3067 ">Client connections that are linked to server connection and can process
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e3067 ">User name.</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e3064 ">cl_active</td>
+
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e3067 ">Client connections that are linked to server connection and can process
                       queries.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e3064 ">cl_waiting</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e3064 ">cl_waiting</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e3067 ">Client connections have sent queries but have not yet got a server
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e3067 ">Client connections have sent queries but have not yet got a server
                       connection.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e3064 ">sv_active</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e3064 ">sv_active</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e3067 ">Server connections that linked to client.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e3067 ">Server connections that linked to client.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e3064 ">sv_idle</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e3064 ">sv_idle</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e3067 ">Server connections that are unused and immediately usable for client
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e3067 ">Server connections that are unused and immediately usable for client
                       queries.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e3064 ">sv_used</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e3064 ">sv_used</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e3067 ">Server connections that have been idle more than
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e3067 ">Server connections that have been idle more than
                         <samp class="ph codeph">server_check_delay</samp>. The <samp class="ph codeph">server_check_query</samp>
                       query must be run on them before they can be used.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e3064 ">sv_tested</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e3064 ">sv_tested</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e3067 ">Server connections that are currently running either
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e3067 ">Server connections that are currently running either
                         <samp class="ph codeph">server_reset_query</samp> or
                       <samp class="ph codeph">server_check_query</samp>.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e3064 ">sv_login</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e3064 ">sv_login</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e3067 ">Server connections currently in process of logging in.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e3067 ">Server connections currently in process of logging in.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e3064 ">maxwait</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e3064 ">maxwait</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e3067 ">How long the first (oldest) client in the queue has waited, in seconds.
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e3067 ">How long the first (oldest) client in the queue has waited, in seconds.
                       If this begins to increase, the current pool of servers does not handle
                       requests fast enough. The cause may be either an overloaded server or the
                         <samp class="ph codeph">pool_size</samp> setting is too small.</td>
@@ -7902,9 +7920,9 @@ DETAIL:
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e3064 ">pool_mode</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e3064 ">pool_mode</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e3067 ">The pooling mode in use.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e3067 ">The pooling mode in use.</td>
 
                   </tr>
 
@@ -7929,9 +7947,9 @@ DETAIL:
                 
                 <thead class="thead" align="left">
                   <tr class="row">
-                    <th class="entry" valign="top" width="26.45502645502646%" id="d474307e3217">Column</th>
+                    <th class="entry" valign="top" width="26.45502645502646%" id="d474741e3217">Column</th>
 
-                    <th class="entry" valign="top" width="73.54497354497354%" id="d474307e3220">Description</th>
+                    <th class="entry" valign="top" width="73.54497354497354%" id="d474741e3220">Description</th>
 
                   </tr>
 
@@ -7939,96 +7957,96 @@ DETAIL:
 
                 <tbody class="tbody">
                   <tr class="row">
-                    <td class="entry" valign="top" width="26.45502645502646%" headers="d474307e3217 ">type</td>
+                    <td class="entry" valign="top" width="26.45502645502646%" headers="d474741e3217 ">type</td>
 
-                    <td class="entry" valign="top" width="73.54497354497354%" headers="d474307e3220 ">S, for server.</td>
+                    <td class="entry" valign="top" width="73.54497354497354%" headers="d474741e3220 ">S, for server.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="26.45502645502646%" headers="d474307e3217 ">user</td>
+                    <td class="entry" valign="top" width="26.45502645502646%" headers="d474741e3217 ">user</td>
 
-                    <td class="entry" valign="top" width="73.54497354497354%" headers="d474307e3220 ">User ID that <samp class="ph codeph">pgbouncer</samp> uses to connect to
+                    <td class="entry" valign="top" width="73.54497354497354%" headers="d474741e3220 ">User ID that <samp class="ph codeph">pgbouncer</samp> uses to connect to
                       server.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="26.45502645502646%" headers="d474307e3217 ">database</td>
+                    <td class="entry" valign="top" width="26.45502645502646%" headers="d474741e3217 ">database</td>
 
-                    <td class="entry" valign="top" width="73.54497354497354%" headers="d474307e3220 ">Database name.</td>
+                    <td class="entry" valign="top" width="73.54497354497354%" headers="d474741e3220 ">Database name.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="26.45502645502646%" headers="d474307e3217 ">state</td>
+                    <td class="entry" valign="top" width="26.45502645502646%" headers="d474741e3217 ">state</td>
 
-                    <td class="entry" valign="top" width="73.54497354497354%" headers="d474307e3220 ">State of the pgbouncer server connection, one of <samp class="ph codeph">active</samp>,
+                    <td class="entry" valign="top" width="73.54497354497354%" headers="d474741e3220 ">State of the pgbouncer server connection, one of <samp class="ph codeph">active</samp>,
                         <samp class="ph codeph">used</samp>, or <samp class="ph codeph">idle</samp>.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="26.45502645502646%" headers="d474307e3217 ">addr</td>
+                    <td class="entry" valign="top" width="26.45502645502646%" headers="d474741e3217 ">addr</td>
 
-                    <td class="entry" valign="top" width="73.54497354497354%" headers="d474307e3220 ">IP address of the Greenplum or PostgreSQL server.</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="26.45502645502646%" headers="d474307e3217 ">port</td>
-
-                    <td class="entry" valign="top" width="73.54497354497354%" headers="d474307e3220 ">Port of the Greenplum or PostgreSQL server.</td>
+                    <td class="entry" valign="top" width="73.54497354497354%" headers="d474741e3220 ">IP address of the Greenplum or PostgreSQL server.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="26.45502645502646%" headers="d474307e3217 ">local_addr</td>
+                    <td class="entry" valign="top" width="26.45502645502646%" headers="d474741e3217 ">port</td>
 
-                    <td class="entry" valign="top" width="73.54497354497354%" headers="d474307e3220 ">Connection start address on local machine.</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="26.45502645502646%" headers="d474307e3217 ">local_port</td>
-
-                    <td class="entry" valign="top" width="73.54497354497354%" headers="d474307e3220 ">Connection start port on local machine.</td>
+                    <td class="entry" valign="top" width="73.54497354497354%" headers="d474741e3220 ">Port of the Greenplum or PostgreSQL server.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="26.45502645502646%" headers="d474307e3217 ">connect_time</td>
+                    <td class="entry" valign="top" width="26.45502645502646%" headers="d474741e3217 ">local_addr</td>
 
-                    <td class="entry" valign="top" width="73.54497354497354%" headers="d474307e3220 ">When the connection was made.</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="26.45502645502646%" headers="d474307e3217 ">request_time</td>
-
-                    <td class="entry" valign="top" width="73.54497354497354%" headers="d474307e3220 ">When the last request was issued.</td>
+                    <td class="entry" valign="top" width="73.54497354497354%" headers="d474741e3220 ">Connection start address on local machine.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="26.45502645502646%" headers="d474307e3217 ">ptr</td>
+                    <td class="entry" valign="top" width="26.45502645502646%" headers="d474741e3217 ">local_port</td>
 
-                    <td class="entry" valign="top" width="73.54497354497354%" headers="d474307e3220 ">Address of the internal object for this connection. Used as unique
+                    <td class="entry" valign="top" width="73.54497354497354%" headers="d474741e3220 ">Connection start port on local machine.</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="26.45502645502646%" headers="d474741e3217 ">connect_time</td>
+
+                    <td class="entry" valign="top" width="73.54497354497354%" headers="d474741e3220 ">When the connection was made.</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="26.45502645502646%" headers="d474741e3217 ">request_time</td>
+
+                    <td class="entry" valign="top" width="73.54497354497354%" headers="d474741e3220 ">When the last request was issued.</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="26.45502645502646%" headers="d474741e3217 ">ptr</td>
+
+                    <td class="entry" valign="top" width="73.54497354497354%" headers="d474741e3220 ">Address of the internal object for this connection. Used as unique
                       ID.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="26.45502645502646%" headers="d474307e3217 ">link</td>
+                    <td class="entry" valign="top" width="26.45502645502646%" headers="d474741e3217 ">link</td>
 
-                    <td class="entry" valign="top" width="73.54497354497354%" headers="d474307e3220 ">Address of gthe client connection the server is paired with.</td>
+                    <td class="entry" valign="top" width="73.54497354497354%" headers="d474741e3220 ">Address of gthe client connection the server is paired with.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="26.45502645502646%" headers="d474307e3217 ">remote_pid</td>
+                    <td class="entry" valign="top" width="26.45502645502646%" headers="d474741e3217 ">remote_pid</td>
 
-                    <td class="entry" valign="top" width="73.54497354497354%" headers="d474307e3220 ">Pid of backend server process. If the connection is made over Unix socket
+                    <td class="entry" valign="top" width="73.54497354497354%" headers="d474741e3220 ">Pid of backend server process. If the connection is made over Unix socket
                       and the OS supports getting process ID info, it is the OS pid. Otherwise it is
                       extracted from the cancel packet the server sent, which should be PID in case
                       server is PostgreSQL, but it is a random number in case server is another
@@ -8059,9 +8077,9 @@ DETAIL:
                 
                 <thead class="thead" align="left">
                   <tr class="row">
-                    <th class="entry" valign="top" width="27.027027027027025%" id="d474307e3388">Column</th>
+                    <th class="entry" valign="top" width="27.027027027027025%" id="d474741e3388">Column</th>
 
-                    <th class="entry" valign="top" width="72.97297297297297%" id="d474307e3391">Description</th>
+                    <th class="entry" valign="top" width="72.97297297297297%" id="d474741e3391">Description</th>
 
                   </tr>
 
@@ -8069,69 +8087,69 @@ DETAIL:
 
                 <tbody class="tbody">
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e3388 ">database</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e3388 ">database</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e3391 ">Statistics are presented per database.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e3391 ">Statistics are presented per database.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e3388 ">total_requests</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e3388 ">total_requests</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e3391 ">Total number of <samp class="ph codeph">SQL</samp> requests pooled by
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e3391 ">Total number of <samp class="ph codeph">SQL</samp> requests pooled by
                         <samp class="ph codeph">pgbouncer</samp>.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e3388 ">total_received</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e3388 ">total_received</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e3391 ">Total volume in bytes of network traffic received by
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e3391 ">Total volume in bytes of network traffic received by
                         <samp class="ph codeph">pgbouncer</samp>.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e3388 ">total_sent</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e3388 ">total_sent</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e3391 ">Total volume in bytes of network traffic sent by
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e3391 ">Total volume in bytes of network traffic sent by
                         <samp class="ph codeph">pgbouncer</samp>.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e3388 ">total_query_time</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e3388 ">total_query_time</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e3391 ">Total number of microseconds spent by <samp class="ph codeph">pgbouncer</samp> when
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e3391 ">Total number of microseconds spent by <samp class="ph codeph">pgbouncer</samp> when
                       actively connected to the database server.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e3388 ">avg_req</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e3388 ">avg_req</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e3391 ">Average requests per second in last stat period.</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e3388 ">avg_recv</td>
-
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e3391 ">Average received (from clients) bytes per second.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e3391 ">Average requests per second in last stat period.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e3388 ">avg_sent</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e3388 ">avg_recv</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e3391 ">Average sent (to clients) bytes per second.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e3391 ">Average received (from clients) bytes per second.</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e3388 ">avg_query</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e3388 ">avg_sent</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e3391 ">Average query duration in microseconds.</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e3391 ">Average sent (to clients) bytes per second.</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e3388 ">avg_query</td>
+
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e3391 ">Average query duration in microseconds.</td>
 
                   </tr>
 
@@ -8156,9 +8174,9 @@ DETAIL:
                 
                 <thead class="thead" align="left">
                   <tr class="row">
-                    <th class="entry" valign="top" width="27.027027027027025%" id="d474307e3522">Column</th>
+                    <th class="entry" valign="top" width="27.027027027027025%" id="d474741e3522">Column</th>
 
-                    <th class="entry" valign="top" width="72.97297297297297%" id="d474307e3525">Description</th>
+                    <th class="entry" valign="top" width="72.97297297297297%" id="d474741e3525">Description</th>
 
                   </tr>
 
@@ -8166,16 +8184,16 @@ DETAIL:
 
                 <tbody class="tbody">
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e3522 ">name</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e3522 ">name</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e3525 ">The user name</td>
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e3525 ">The user name</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474307e3522 ">pool_mode</td>
+                    <td class="entry" valign="top" width="27.027027027027025%" headers="d474741e3522 ">pool_mode</td>
 
-                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474307e3525 ">The user's override pool_mode, or NULL if the default will be used
+                    <td class="entry" valign="top" width="72.97297297297297%" headers="d474741e3525 ">The user's override pool_mode, or NULL if the default will be used
                       instead.</td>
 
                   </tr>

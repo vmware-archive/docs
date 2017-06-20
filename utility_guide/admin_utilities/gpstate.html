@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5780,9 +5798,9 @@
           
           <thead class="thead" align="left">
             <tr class="row">
-              <th class="entry" valign="top" width="166pt" id="d467993e305">Output Data</th>
+              <th class="entry" valign="top" width="166pt" id="d468427e305">Output Data</th>
 
-              <th class="entry" valign="top" width="208pt" id="d467993e308">Description</th>
+              <th class="entry" valign="top" width="208pt" id="d468427e308">Description</th>
 
             </tr>
 
@@ -5790,95 +5808,95 @@
 
           <tbody class="tbody">
             <tr class="row">
-              <td class="entry" valign="top" width="166pt" headers="d467993e305 ">Master host</td>
+              <td class="entry" valign="top" width="166pt" headers="d468427e305 ">Master host</td>
 
-              <td class="entry" valign="top" width="208pt" headers="d467993e308 ">host name of the master</td>
-
-            </tr>
-
-            <tr class="row">
-              <td class="entry" valign="top" width="166pt" headers="d467993e305 ">Master postgres process ID</td>
-
-              <td class="entry" valign="top" width="208pt" headers="d467993e308 ">PID of the master database listener process</td>
+              <td class="entry" valign="top" width="208pt" headers="d468427e308 ">host name of the master</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="166pt" headers="d467993e305 ">Master data directory</td>
+              <td class="entry" valign="top" width="166pt" headers="d468427e305 ">Master postgres process ID</td>
 
-              <td class="entry" valign="top" width="208pt" headers="d467993e308 ">file system location of the master data directory</td>
+              <td class="entry" valign="top" width="208pt" headers="d468427e308 ">PID of the master database listener process</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="166pt" headers="d467993e305 ">Master port</td>
+              <td class="entry" valign="top" width="166pt" headers="d468427e305 ">Master data directory</td>
 
-              <td class="entry" valign="top" width="208pt" headers="d467993e308 ">port of the master <samp class="ph codeph">postgres</samp> database listener
+              <td class="entry" valign="top" width="208pt" headers="d468427e308 ">file system location of the master data directory</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="166pt" headers="d468427e305 ">Master port</td>
+
+              <td class="entry" valign="top" width="208pt" headers="d468427e308 ">port of the master <samp class="ph codeph">postgres</samp> database listener
                 process</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="166pt" headers="d467993e305 ">Master current role</td>
+              <td class="entry" valign="top" width="166pt" headers="d468427e305 ">Master current role</td>
 
-              <td class="entry" valign="top" width="208pt" headers="d467993e308 ">dispatch = regular operating mode<p class="p">utility = maintenance mode
+              <td class="entry" valign="top" width="208pt" headers="d468427e308 ">dispatch = regular operating mode<p class="p">utility = maintenance mode
                 </p>
 </td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="166pt" headers="d467993e305 ">Greenplum array configuration
+              <td class="entry" valign="top" width="166pt" headers="d468427e305 ">Greenplum array configuration
                 type</td>
 
-              <td class="entry" valign="top" width="208pt" headers="d467993e308 ">Standard = one NIC per host <p class="p">Multi-Home = multiple NICs per
+              <td class="entry" valign="top" width="208pt" headers="d468427e308 ">Standard = one NIC per host <p class="p">Multi-Home = multiple NICs per
                   host</p>
 </td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="166pt" headers="d467993e305 ">Greenplum initsystem
+              <td class="entry" valign="top" width="166pt" headers="d468427e305 ">Greenplum initsystem
                 version</td>
 
-              <td class="entry" valign="top" width="208pt" headers="d467993e308 ">version of Greenplum Database when system was
+              <td class="entry" valign="top" width="208pt" headers="d468427e308 ">version of Greenplum Database when system was
                 first initialized</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="166pt" headers="d467993e305 ">Greenplum current version</td>
+              <td class="entry" valign="top" width="166pt" headers="d468427e305 ">Greenplum current version</td>
 
-              <td class="entry" valign="top" width="208pt" headers="d467993e308 ">current version of Greenplum Database</td>
+              <td class="entry" valign="top" width="208pt" headers="d468427e308 ">current version of Greenplum Database</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="166pt" headers="d467993e305 ">Postgres version</td>
+              <td class="entry" valign="top" width="166pt" headers="d468427e305 ">Postgres version</td>
 
-              <td class="entry" valign="top" width="208pt" headers="d467993e308 ">version of PostgreSQL that Greenplum Database is
+              <td class="entry" valign="top" width="208pt" headers="d468427e308 ">version of PostgreSQL that Greenplum Database is
                 based on</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="166pt" headers="d467993e305 ">Greenplum mirroring status</td>
+              <td class="entry" valign="top" width="166pt" headers="d468427e305 ">Greenplum mirroring status</td>
 
-              <td class="entry" valign="top" width="208pt" headers="d467993e308 ">physical mirroring or none</td>
-
-            </tr>
-
-            <tr class="row">
-              <td class="entry" valign="top" width="166pt" headers="d467993e305 ">Master standby</td>
-
-              <td class="entry" valign="top" width="208pt" headers="d467993e308 ">host name of the standby master</td>
+              <td class="entry" valign="top" width="208pt" headers="d468427e308 ">physical mirroring or none</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="166pt" headers="d467993e305 ">Standby master state</td>
+              <td class="entry" valign="top" width="166pt" headers="d468427e305 ">Master standby</td>
 
-              <td class="entry" valign="top" width="208pt" headers="d467993e308 ">status of the standby master: active or passive</td>
+              <td class="entry" valign="top" width="208pt" headers="d468427e308 ">host name of the standby master</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="166pt" headers="d468427e305 ">Standby master state</td>
+
+              <td class="entry" valign="top" width="208pt" headers="d468427e308 ">status of the standby master: active or passive</td>
 
             </tr>
 
@@ -5898,9 +5916,9 @@
           
           <thead class="thead" align="left">
             <tr class="row">
-              <th class="entry" valign="top" width="165pt" id="d467993e456">Output Data</th>
+              <th class="entry" valign="top" width="165pt" id="d468427e456">Output Data</th>
 
-              <th class="entry" valign="top" width="209.25pt" id="d467993e459">Description</th>
+              <th class="entry" valign="top" width="209.25pt" id="d468427e459">Description</th>
 
             </tr>
 
@@ -5908,56 +5926,56 @@
 
           <tbody class="tbody">
             <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e456 ">Hostname</td>
+              <td class="entry" valign="top" width="165pt" headers="d468427e456 ">Hostname</td>
 
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e459 ">system-configured host name</td>
-
-            </tr>
-
-            <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e456 ">Address</td>
-
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e459 ">network address host name (NIC name)</td>
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e459 ">system-configured host name</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e456 ">Datadir</td>
+              <td class="entry" valign="top" width="165pt" headers="d468427e456 ">Address</td>
 
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e459 ">file system location of segment data directory</td>
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e459 ">network address host name (NIC name)</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e456 ">Port</td>
+              <td class="entry" valign="top" width="165pt" headers="d468427e456 ">Datadir</td>
 
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e459 ">port number of segment <samp class="ph codeph">postgres</samp> database
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e459 ">file system location of segment data directory</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="165pt" headers="d468427e456 ">Port</td>
+
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e459 ">port number of segment <samp class="ph codeph">postgres</samp> database
                 listener process</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e456 ">Current Role</td>
+              <td class="entry" valign="top" width="165pt" headers="d468427e456 ">Current Role</td>
 
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e459 ">current role of a segment: <var class="keyword varname">Mirror</var> or
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e459 ">current role of a segment: <var class="keyword varname">Mirror</var> or
                   <var class="keyword varname">Primary</var>
 </td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e456 ">Preferred Role</td>
+              <td class="entry" valign="top" width="165pt" headers="d468427e456 ">Preferred Role</td>
 
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e459 ">role at system initialization time: <var class="keyword varname">Mirror</var> or
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e459 ">role at system initialization time: <var class="keyword varname">Mirror</var> or
                   <var class="keyword varname">Primary</var>
 </td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e456 ">Mirror Status</td>
+              <td class="entry" valign="top" width="165pt" headers="d468427e456 ">Mirror Status</td>
 
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e459 ">status of a primary/mirror segment
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e459 ">status of a primary/mirror segment
                     pair:<p class="p"><var class="keyword varname">Synchronized</var> = data is up to date on both
                     </p>
 <p class="p"><var class="keyword varname">Resynchronization</var> = data is currently being copied
@@ -5969,92 +5987,92 @@
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e456 ">Change tracking data size</td>
+              <td class="entry" valign="top" width="165pt" headers="d468427e456 ">Change tracking data size</td>
 
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e459 ">when in <var class="keyword varname">Change Tracking</var> mode, the size of the
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e459 ">when in <var class="keyword varname">Change Tracking</var> mode, the size of the
                 change log file (may grow and shrink as compression is applied)</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e456 ">Estimated total data to synchronize</td>
+              <td class="entry" valign="top" width="165pt" headers="d468427e456 ">Estimated total data to synchronize</td>
 
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e459 ">when in <var class="keyword varname">Resynchronization</var> mode, the estimated
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e459 ">when in <var class="keyword varname">Resynchronization</var> mode, the estimated
                 size of data left to syncronize</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e456 ">Data synchronized</td>
+              <td class="entry" valign="top" width="165pt" headers="d468427e456 ">Data synchronized</td>
 
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e459 ">when in <var class="keyword varname">Resynchronization</var> mode, the estimated
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e459 ">when in <var class="keyword varname">Resynchronization</var> mode, the estimated
                 size of data that has already been syncronized</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e456 ">Estimated resync progress with mirror</td>
+              <td class="entry" valign="top" width="165pt" headers="d468427e456 ">Estimated resync progress with mirror</td>
 
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e459 ">When in <var class="keyword varname">Resynchronization</var> mode, the estimated
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e459 ">When in <var class="keyword varname">Resynchronization</var> mode, the estimated
                 percentage of completion</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e456 ">Estimated resync end time</td>
+              <td class="entry" valign="top" width="165pt" headers="d468427e456 ">Estimated resync end time</td>
 
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e459 ">when in <var class="keyword varname">Resynchronization</var> mode, the estimated
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e459 ">when in <var class="keyword varname">Resynchronization</var> mode, the estimated
                 time to complete</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e456 ">File <samp class="ph codeph">postmaster.pid</samp>
+              <td class="entry" valign="top" width="165pt" headers="d468427e456 ">File <samp class="ph codeph">postmaster.pid</samp>
 </td>
 
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e459 ">status of <samp class="ph codeph">postmaster.pid</samp> lock file:
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e459 ">status of <samp class="ph codeph">postmaster.pid</samp> lock file:
                   <var class="keyword varname">Found</var> or <var class="keyword varname">Missing</var>
 </td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e456 ">PID from <samp class="ph codeph">postmaster.pid</samp> file</td>
+              <td class="entry" valign="top" width="165pt" headers="d468427e456 ">PID from <samp class="ph codeph">postmaster.pid</samp> file</td>
 
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e459 ">PID found in the <samp class="ph codeph">postmaster.pid</samp> file</td>
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e459 ">PID found in the <samp class="ph codeph">postmaster.pid</samp> file</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e456 ">Lock files in <samp class="ph codeph">/tmp</samp>
+              <td class="entry" valign="top" width="165pt" headers="d468427e456 ">Lock files in <samp class="ph codeph">/tmp</samp>
 </td>
 
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e459 ">a segment port lock file for its <samp class="ph codeph">postgres</samp>
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e459 ">a segment port lock file for its <samp class="ph codeph">postgres</samp>
                 process is created in <samp class="ph codeph">/tmp</samp> (file is removed when a segment shuts
                 down)</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e456 ">Active PID</td>
+              <td class="entry" valign="top" width="165pt" headers="d468427e456 ">Active PID</td>
 
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e459 ">active process ID of a segment</td>
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e459 ">active process ID of a segment</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e456 ">Master reports status as</td>
+              <td class="entry" valign="top" width="165pt" headers="d468427e456 ">Master reports status as</td>
 
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e459 ">segment status as reported in the system catalog:
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e459 ">segment status as reported in the system catalog:
                   <var class="keyword varname">Up</var> or <var class="keyword varname">Down</var>
 </td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e456 ">Database status</td>
+              <td class="entry" valign="top" width="165pt" headers="d468427e456 ">Database status</td>
 
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e459 ">status of Greenplum Database to incoming requests:
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e459 ">status of Greenplum Database to incoming requests:
                   <var class="keyword varname">Up</var>, <var class="keyword varname">Down</var>, or <var class="keyword varname">Suspended</var>. A
                   <var class="keyword varname">Suspended</var> state means database activity is temporarily paused
                 while a segment transitions from one state to another.</td>
@@ -6077,9 +6095,9 @@
           
           <thead class="thead" align="left">
             <tr class="row">
-              <th class="entry" valign="top" width="165pt" id="d467993e737">Output Data</th>
+              <th class="entry" valign="top" width="165pt" id="d468427e737">Output Data</th>
 
-              <th class="entry" valign="top" width="209.25pt" id="d467993e740">Description</th>
+              <th class="entry" valign="top" width="209.25pt" id="d468427e740">Description</th>
 
             </tr>
 
@@ -6087,39 +6105,39 @@
 
           <tbody class="tbody">
             <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e737 ">Standby address</td>
+              <td class="entry" valign="top" width="165pt" headers="d468427e737 ">Standby address</td>
 
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e740 ">hostname of the standby master</td>
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e740 ">hostname of the standby master</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e737 ">Standby data dir</td>
+              <td class="entry" valign="top" width="165pt" headers="d468427e737 ">Standby data dir</td>
 
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e740 ">file system location of the standby master data
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e740 ">file system location of the standby master data
                 directory</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e737 ">Standby port</td>
+              <td class="entry" valign="top" width="165pt" headers="d468427e737 ">Standby port</td>
 
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e740 ">port of the standby master <samp class="ph codeph">postgres</samp> database
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e740 ">port of the standby master <samp class="ph codeph">postgres</samp> database
                 listener process</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e737 ">Standby PID</td>
+              <td class="entry" valign="top" width="165pt" headers="d468427e737 ">Standby PID</td>
 
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e740 ">process ID of the standby master </td>
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e740 ">process ID of the standby master </td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e737 ">Standby status</td>
+              <td class="entry" valign="top" width="165pt" headers="d468427e737 ">Standby status</td>
 
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e740 ">status of the standby master: <var class="keyword varname">Standby host
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e740 ">status of the standby master: <var class="keyword varname">Standby host
                   passive</var>
               </td>
 
@@ -6127,9 +6145,9 @@
 
 
             <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e737 ">WAL Sender State</td>
+              <td class="entry" valign="top" width="165pt" headers="d468427e737 ">WAL Sender State</td>
 
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e740 ">write-ahead log (WAL) streaming state:
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e740 ">write-ahead log (WAL) streaming state:
                   <var class="keyword varname">streaming</var>,
                 <var class="keyword varname">startup</var>,<var class="keyword varname">backup</var>, <var class="keyword varname">catchup</var>
               </td>
@@ -6137,31 +6155,31 @@
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e737 ">Sync state</td>
+              <td class="entry" valign="top" width="165pt" headers="d468427e737 ">Sync state</td>
 
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e740 ">WAL sender syncronization state: <var class="keyword varname">sync</var>
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e740 ">WAL sender syncronization state: <var class="keyword varname">sync</var>
 </td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e737 ">Sent Location</td>
+              <td class="entry" valign="top" width="165pt" headers="d468427e737 ">Sent Location</td>
 
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e740 ">WAL sender transaction log (xlog) record sent location</td>
-
-            </tr>
-
-            <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e737 ">Flush Location</td>
-
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e740 ">WAL receiver xlog record flush location</td>
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e740 ">WAL sender transaction log (xlog) record sent location</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="165pt" headers="d467993e737 ">Replay Location</td>
+              <td class="entry" valign="top" width="165pt" headers="d468427e737 ">Flush Location</td>
 
-              <td class="entry" valign="top" width="209.25pt" headers="d467993e740 ">standby xlog record replay location</td>
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e740 ">WAL receiver xlog record flush location</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="165pt" headers="d468427e737 ">Replay Location</td>
+
+              <td class="entry" valign="top" width="209.25pt" headers="d468427e740 ">standby xlog record replay location</td>
 
             </tr>
 

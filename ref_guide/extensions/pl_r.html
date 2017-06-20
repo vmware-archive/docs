@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5621,17 +5639,11 @@
         <a class="xref" href="#topic2">About Greenplum Database PL/R</a>
       </li>
 
-      <li class="li" id="topic1__py219391">
-        <a class="xref" href="#topic3">Installing PL/R</a>
-      </li>
-
-      <li class="li" id="topic1__py214876">
-        <a class="xref" href="#topic6">Uninstalling PL/R</a>
-      </li>
-
+      
+      
       <li class="li">
-        <a class="xref" href="#topic_om3_kbr_lp">Migrating the PL/R Extension to use R Language Version 3.3.1</a>
-      </li>
+        <a class="xref" href="#topic5">Enabling PL/R Language Support</a>
+</li>
 
       <li class="li" id="topic1__py217384">
         <a class="xref" href="#topic9">Examples</a>
@@ -5673,174 +5685,21 @@
 
     </div>
 
-    <div class="topic nested2" xml:lang="en" lang="en" id="topic3">
-      <h3 class="title topictitle3">Installing PL/R</h3>
+    
+    
+    <div class="topic nested2" xml:lang="en" lang="en" id="topic5">
+      <h3 class="title topictitle3">Enabling PL/R Language Support</h3>
 
       <div class="body">
-        <p class="p">The PL/R extension is available as a package. Download the package from <a class="xref" href="https://network.pivotal.io/products/pivotal-gpdb" target="_blank">Pivotal Network</a> and install it with the Greenplum Package Manager
-            (<samp class="ph codeph">gppkg</samp>). </p>
+        <p class="p">For each database that requires its use, register the PL/R language with the SQL command
+            <samp class="ph codeph">CREATE LANGUAGE</samp> or the utility <samp class="ph codeph">createlang</samp>. Because
+          PL/R is an untrusted language, only superusers can register PL/R with a database. For
+          example, running this command as the <samp class="ph codeph">gpadmin</samp> system user registers the
+          language with the database named <em class="ph i">testdb</em>:</p>
 
-        <p class="p">The <samp class="ph codeph">gppkg</samp> utility installs Greenplum Database extensions, along with any
-          dependencies, on all hosts across a cluster. It also automatically installs extensions on
-          new hosts in the case of system expansion and segment recovery.</p>
+        <pre class="pre codeblock">$ createlang plr -d testdb</pre>
 
-        <p class="p">For information about <samp class="ph codeph">gppkg</samp>, see the <cite class="cite">Greenplum Database Utility
-            Guide</cite>.</p>
-
-      </div>
-
-      <div class="topic nested3" xml:lang="en" lang="en" id="topic4">
-        <h4 class="title topictitle4">Installing the Extension Package</h4>
-
-        <div class="body">
-          <p class="p">Before you install the PL/R extension, make sure that your Greenplum Database is
-            running, you have sourced <samp class="ph codeph">greenplum_path.sh</samp>, and that the
-              <samp class="ph codeph">$MASTER_DATA_DIRECTORY</samp> and <samp class="ph codeph">$GPHOME</samp> variables are
-            set.</p>
-
-          <ol class="ol" id="topic4__ol_nxv_ql2_4p">
-            <li class="li" id="topic4__py213681">Download the PL/R extension package from <a class="xref" href="https://network.pivotal.io/products/pivotal-gpdb" target="_blank">Pivotal Network</a>, then copy it to the master host. </li>
-
-            <li class="li" id="topic4__py214844">Install the software extension package by running the
-                <samp class="ph codeph">gppkg</samp> command. This example installs the PL/R extension on a Linux
-              system:<pre class="pre codeblock">$ gppkg -i plr-ossv8.3.0.12_pv2.0_gpdb&lt;version&gt;-rhel6-x86_64.gppkg
-</pre>
-</li>
-
-            <li class="li" id="topic4__py215420">Restart the database.<pre class="pre codeblock">$ gpstop -r
-</pre>
-</li>
-
-            <li class="li" id="topic4__py215434">Source the file <samp class="ph codeph">$GPHOME/greenplum_path.sh</samp>.</li>
-
-          </ol>
-
-          <p class="p">The extension and the R environment is installed in this directory:</p>
-
-          <pre class="pre codeblock">$GPHOME/ext/R-2.12.0/
-</pre>
-
-          <div class="note note">
-<span class="notetitle">Note:</span> The version of some shared libraries installed with the operating system
-            might not be compatible with the Greenplum Database PL/R extension. <p class="p">If a shared
-              library is not compatible, edit the file <samp class="ph codeph">$GPHOME/greenplum_path.sh</samp> in
-              all Greenplum Database master and segment hosts and set environment variable
-                <samp class="ph codeph">LD_LIBRARY_PATH </samp>to specify the location that is installed with the
-              PL/R extension.
-            </p>
-<pre class="pre codeblock">export <em class="ph i">LD_LIBRARY_PATH= 
-   $GPHOME/ext/R-2.12.0/lib64/R/lib:$LD_LIBRARY_PATH</em></pre>
-</div>
-
-        </div>
-
-      </div>
-
-      <div class="topic nested3" xml:lang="en" lang="en" id="topic5">
-        <h4 class="title topictitle4">Enabling PL/R Language Support</h4>
-
-        <div class="body">
-          <p class="p">For each database that requires its use, register the PL/R language with the SQL
-            command <samp class="ph codeph">CREATE LANGUAGE</samp> or the utility <samp class="ph codeph">createlang</samp>.
-            Because PL/R is an untrusted language, only superusers can register PL/R with a
-            database. For example, running this command as the <samp class="ph codeph">gpadmin</samp> system user
-            registers the language with the database named <em class="ph i">testdb</em>:</p>
-
-          <pre class="pre codeblock">$ createlang plr -d testdb</pre>
-
-          <p class="p">PL/R is registered as an untrusted language.</p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="topic nested2" xml:lang="en" lang="en" id="topic6">
-      <h3 class="title topictitle3">Uninstalling PL/R</h3>
-
-      <div class="body">
-        <ul class="ul" id="topic6__ul_mhq_rl2_4p">
-          <li class="li" id="topic6__py216937">
-            <a class="xref" href="#topic7">Remove PL/R Support for a Database</a>
-          </li>
-
-          <li class="li" id="topic6__py216956">
-            <a class="xref" href="#topic8">Uninstall the Extension Package</a>
-          </li>
-
-        </ul>
-
-        <p class="p">When you remove PL/R language support from a database, the PL/R routines that you created
-          in the database will no longer work. </p>
-
-      </div>
-
-      <div class="topic nested3" xml:lang="en" lang="en" id="topic7">
-        <h4 class="title topictitle4">Remove PL/R Support for a Database</h4>
-
-        <div class="body">
-          <p class="p">For a database that no longer requires the PL/R language, remove support for PL/R with
-            the SQL command <samp class="ph codeph">DROP LANGUAGE</samp> or the Greenplum Database
-              <samp class="ph codeph">droplang</samp> utility. Because PL/R is an untrusted language, only
-            superusers can remove support for the PL/R language from a database. For example,
-            running this command as the gpadmin user removes support for PL/R from the database
-            named <em class="ph i">testdb</em>:</p>
-
-          <pre class="pre codeblock">$ droplang plr -d testdb</pre>
-
-        </div>
-
-      </div>
-
-      <div class="topic nested3" xml:lang="en" lang="en" id="topic8">
-        <h4 class="title topictitle4">Uninstall the Extension Package</h4>
-
-        <div class="body">
-          <p class="p">If no databases have PL/R as a registered language, uninstall the Greenplum PL/R
-            extension with the <samp class="ph codeph">gppkg</samp> utility. This example uninstalls PL/R package
-            version 1.0</p>
-
-          <pre class="pre codeblock">$ gppkg -r plr-1.0</pre>
-
-          <p class="p">You can run the <samp class="ph codeph">gppkg</samp> utility with the options <samp class="ph codeph">-q
-              --all</samp> to list the installed extensions and their versions.</p>
-
-          <p class="p">Restart the database.</p>
-
-          <pre class="pre codeblock">$ gpstop -r</pre>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="topic nested2" id="topic_om3_kbr_lp">
-      <h3 class="title topictitle3">Migrating the PL/R Extension to use R Language Version 3.3.1</h3>
-
-      <div class="body">
-        <p class="p">The PL/R extension package for Greenplum Database supports R language version 3.3.1. </p>
-
-        <p class="p">To migrate the Greenplum Database PL/R extension to the PL/R extension that supports R
-          3.3.1, uninstall the old PL/R extension package and install the extension package that
-          supports R 3.3.1. </p>
-
-        <p class="p">See <a class="xref" href="#topic8">Uninstall the Extension Package</a> and <a class="xref" href="#topic4">Installing the Extension Package</a> for
-          information about uninstalling and installing the PL/R extension package.</p>
-
-        <p class="p">After installing PL/R extension package that supports R 3.3.1, you must re-install R
-          packages. </p>
-
-        <p class="p">This page on the R web site (or the <samp class="ph codeph">NEWS</samp> file in the R 3.3.1 release
-          download), describes the changes to R: </p>
-
-        <p class="p">
-          <a class="xref" href="https://cran.r-project.org/doc/manuals/r-release/NEWS.html" target="_blank">https://cran.r-project.org/doc/manuals/r-release/NEWS.html</a>
-        </p>
-
-        <p class="p">See the information in section <cite class="cite">CHANGES IN R 3.3.1</cite> and earlier sections for
-          information about changes in R3.3.1 and earlier.</p>
+        <p class="p">PL/R is registered as an untrusted language.</p>
 
       </div>
 
@@ -6107,7 +5966,7 @@ LANGUAGE 'plr';</pre>
         <p class="p">R documentation is installed with the Greenplum R package:</p>
 
         <p class="p">
-          <samp class="ph codeph">$GPHOME/ext/R-2.12.0/lib64/R/doc</samp>
+          <samp class="ph codeph">$GPHOME/ext/R-3.3.1/doc</samp>
         </p>
 
       </div>

@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5630,13 +5648,13 @@
         
         <thead class="thead" align="left">
           <tr class="row">
-            <th class="entry" valign="top" width="131pt" id="d401154e45">column</th>
+            <th class="entry" valign="top" width="131pt" id="d400806e45">column</th>
 
-            <th class="entry" valign="top" width="86pt" id="d401154e48">type</th>
+            <th class="entry" valign="top" width="86pt" id="d400806e48">type</th>
 
-            <th class="entry" valign="top" width="85pt" id="d401154e51">references</th>
+            <th class="entry" valign="top" width="85pt" id="d400806e51">references</th>
 
-            <th class="entry" valign="top" width="147pt" id="d401154e54">description</th>
+            <th class="entry" valign="top" width="147pt" id="d400806e54">description</th>
 
           </tr>
 
@@ -5644,112 +5662,112 @@
 
         <tbody class="tbody">
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d401154e45 ">
+            <td class="entry" valign="top" width="131pt" headers="d400806e45 ">
               <samp class="ph codeph">datname</samp>
             </td>
 
-            <td class="entry" valign="top" width="86pt" headers="d401154e48 ">name</td>
+            <td class="entry" valign="top" width="86pt" headers="d400806e48 ">name</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d401154e51 "> </td>
+            <td class="entry" valign="top" width="85pt" headers="d400806e51 "> </td>
 
-            <td class="entry" valign="top" width="147pt" headers="d401154e54 ">Database name.</td>
+            <td class="entry" valign="top" width="147pt" headers="d400806e54 ">Database name.</td>
 
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d401154e45 ">
+            <td class="entry" valign="top" width="131pt" headers="d400806e45 ">
               <samp class="ph codeph">datdba</samp>
             </td>
 
-            <td class="entry" valign="top" width="86pt" headers="d401154e48 ">oid</td>
+            <td class="entry" valign="top" width="86pt" headers="d400806e48 ">oid</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d401154e51 ">pg_authid.oid</td>
+            <td class="entry" valign="top" width="85pt" headers="d400806e51 ">pg_authid.oid</td>
 
-            <td class="entry" valign="top" width="147pt" headers="d401154e54 ">Owner of the database, usually the user who created it.</td>
+            <td class="entry" valign="top" width="147pt" headers="d400806e54 ">Owner of the database, usually the user who created it.</td>
 
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d401154e45 ">
+            <td class="entry" valign="top" width="131pt" headers="d400806e45 ">
               <samp class="ph codeph">encoding</samp>
             </td>
 
-            <td class="entry" valign="top" width="86pt" headers="d401154e48 ">int4</td>
+            <td class="entry" valign="top" width="86pt" headers="d400806e48 ">int4</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d401154e51 "> </td>
+            <td class="entry" valign="top" width="85pt" headers="d400806e51 "> </td>
 
-            <td class="entry" valign="top" width="147pt" headers="d401154e54 ">Character encoding for this database.
+            <td class="entry" valign="top" width="147pt" headers="d400806e54 ">Character encoding for this database.
                 <samp class="ph codeph">pg_encoding_to_char()</samp> can translate this number to the encoding
               name.</td>
 
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d401154e45 ">
+            <td class="entry" valign="top" width="131pt" headers="d400806e45 ">
               <samp class="ph codeph">datistemplate</samp>
             </td>
 
-            <td class="entry" valign="top" width="86pt" headers="d401154e48 ">boolean</td>
+            <td class="entry" valign="top" width="86pt" headers="d400806e48 ">boolean</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d401154e51 "> </td>
+            <td class="entry" valign="top" width="85pt" headers="d400806e51 "> </td>
 
-            <td class="entry" valign="top" width="147pt" headers="d401154e54 ">If true then this database can be used in the
+            <td class="entry" valign="top" width="147pt" headers="d400806e54 ">If true then this database can be used in the
                 <samp class="ph codeph">TEMPLATE</samp> clause of <samp class="ph codeph">CREATE DATABASE</samp> to create a new
               database as a clone of this one.</td>
 
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d401154e45 ">
+            <td class="entry" valign="top" width="131pt" headers="d400806e45 ">
               <samp class="ph codeph">datallowconn</samp>
             </td>
 
-            <td class="entry" valign="top" width="86pt" headers="d401154e48 ">boolean</td>
+            <td class="entry" valign="top" width="86pt" headers="d400806e48 ">boolean</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d401154e51 "> </td>
+            <td class="entry" valign="top" width="85pt" headers="d400806e51 "> </td>
 
-            <td class="entry" valign="top" width="147pt" headers="d401154e54 ">If false then no one can connect to this database. This is used to
+            <td class="entry" valign="top" width="147pt" headers="d400806e54 ">If false then no one can connect to this database. This is used to
               protect the <samp class="ph codeph">template0</samp> database from being altered.</td>
 
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d401154e45 ">
+            <td class="entry" valign="top" width="131pt" headers="d400806e45 ">
               <samp class="ph codeph">datconnlimit</samp>
             </td>
 
-            <td class="entry" valign="top" width="86pt" headers="d401154e48 ">int4</td>
+            <td class="entry" valign="top" width="86pt" headers="d400806e48 ">int4</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d401154e51 "> </td>
+            <td class="entry" valign="top" width="85pt" headers="d400806e51 "> </td>
 
-            <td class="entry" valign="top" width="147pt" headers="d401154e54 ">Sets the maximum number of concurrent connections that can be made
+            <td class="entry" valign="top" width="147pt" headers="d400806e54 ">Sets the maximum number of concurrent connections that can be made
               to this database. <samp class="ph codeph">-1</samp> means no limit.</td>
 
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d401154e45 ">
+            <td class="entry" valign="top" width="131pt" headers="d400806e45 ">
               <samp class="ph codeph">datlastsysoid</samp>
             </td>
 
-            <td class="entry" valign="top" width="86pt" headers="d401154e48 ">oid</td>
+            <td class="entry" valign="top" width="86pt" headers="d400806e48 ">oid</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d401154e51 "> </td>
+            <td class="entry" valign="top" width="85pt" headers="d400806e51 "> </td>
 
-            <td class="entry" valign="top" width="147pt" headers="d401154e54 ">Last system OID in the database.</td>
+            <td class="entry" valign="top" width="147pt" headers="d400806e54 ">Last system OID in the database.</td>
 
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d401154e45 ">
+            <td class="entry" valign="top" width="131pt" headers="d400806e45 ">
               <samp class="ph codeph">datfrozenxid </samp>
             </td>
 
-            <td class="entry" valign="top" width="86pt" headers="d401154e48 ">xid</td>
+            <td class="entry" valign="top" width="86pt" headers="d400806e48 ">xid</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d401154e51 "> </td>
+            <td class="entry" valign="top" width="85pt" headers="d400806e51 "> </td>
 
-            <td class="entry" valign="top" width="147pt" headers="d401154e54 ">All transaction IDs before this one have been replaced with a
+            <td class="entry" valign="top" width="147pt" headers="d400806e54 ">All transaction IDs before this one have been replaced with a
               permanent (frozen) transaction ID in this database. This is used to track whether the
               database needs to be vacuumed in order to prevent transaction ID wraparound or to
               allow pg_clog to be shrunk. It is the minimum of the per-table
@@ -5758,44 +5776,44 @@
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d401154e45 ">
+            <td class="entry" valign="top" width="131pt" headers="d400806e45 ">
               <samp class="ph codeph">dattablespace</samp>
             </td>
 
-            <td class="entry" valign="top" width="86pt" headers="d401154e48 ">oid</td>
+            <td class="entry" valign="top" width="86pt" headers="d400806e48 ">oid</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d401154e51 ">pg_tablespace.oid</td>
+            <td class="entry" valign="top" width="85pt" headers="d400806e51 ">pg_tablespace.oid</td>
 
-            <td class="entry" valign="top" width="147pt" headers="d401154e54 ">The default tablespace for the database. Within this database, all
+            <td class="entry" valign="top" width="147pt" headers="d400806e54 ">The default tablespace for the database. Within this database, all
               tables for which <em class="ph i">pg_class.reltablespace</em> is zero will be stored in this
               tablespace. All non-shared system catalogs will also be there.</td>
 
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d401154e45 ">
+            <td class="entry" valign="top" width="131pt" headers="d400806e45 ">
               <samp class="ph codeph">datconfig</samp>
             </td>
 
-            <td class="entry" valign="top" width="86pt" headers="d401154e48 ">text[]</td>
+            <td class="entry" valign="top" width="86pt" headers="d400806e48 ">text[]</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d401154e51 "> </td>
+            <td class="entry" valign="top" width="85pt" headers="d400806e51 "> </td>
 
-            <td class="entry" valign="top" width="147pt" headers="d401154e54 ">Session defaults for user-settable server configuration
+            <td class="entry" valign="top" width="147pt" headers="d400806e54 ">Session defaults for user-settable server configuration
               parameters.</td>
 
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d401154e45 ">
+            <td class="entry" valign="top" width="131pt" headers="d400806e45 ">
               <samp class="ph codeph">datacl</samp>
             </td>
 
-            <td class="entry" valign="top" width="86pt" headers="d401154e48 ">aclitem[]</td>
+            <td class="entry" valign="top" width="86pt" headers="d400806e48 ">aclitem[]</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d401154e51 "> </td>
+            <td class="entry" valign="top" width="85pt" headers="d400806e51 "> </td>
 
-            <td class="entry" valign="top" width="147pt" headers="d401154e54 ">Database access privileges as given by <samp class="ph codeph">GRANT</samp> and
+            <td class="entry" valign="top" width="147pt" headers="d400806e54 ">Database access privileges as given by <samp class="ph codeph">GRANT</samp> and
                 <samp class="ph codeph">REVOKE</samp>.</td>
 
           </tr>

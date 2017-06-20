@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5627,78 +5645,78 @@ that is similar to ordinary functions.</p>
 <caption><span class="tablecap">Table 1. pg_catalog.pg_aggregate</span></caption>
 <thead class="thead" align="left">
 <tr class="row">
-<th class="entry" valign="top" width="131pt" id="d386670e42">column</th>
-<th class="entry" valign="top" width="86pt" id="d386670e44">type</th>
-<th class="entry" valign="top" width="85pt" id="d386670e46">references</th>
-<th class="entry" valign="top" width="147pt" id="d386670e48">description</th>
+<th class="entry" valign="top" width="131pt" id="d385457e42">column</th>
+<th class="entry" valign="top" width="86pt" id="d385457e44">type</th>
+<th class="entry" valign="top" width="85pt" id="d385457e46">references</th>
+<th class="entry" valign="top" width="147pt" id="d385457e48">description</th>
 </tr>
 </thead>
 <tbody class="tbody">
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d386670e42 "><samp class="ph codeph">aggfnoid</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d386670e44 ">regproc</td>
-<td class="entry" valign="top" width="85pt" headers="d386670e46 ">pg_proc.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d386670e48 ">Aggregate function OID</td>
+<td class="entry" valign="top" width="131pt" headers="d385457e42 "><samp class="ph codeph">aggfnoid</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d385457e44 ">regproc</td>
+<td class="entry" valign="top" width="85pt" headers="d385457e46 ">pg_proc.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d385457e48 ">Aggregate function OID</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d386670e42 "><samp class="ph codeph">aggtransfn</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d386670e44 ">regproc</td>
-<td class="entry" valign="top" width="85pt" headers="d386670e46 ">pg_proc.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d386670e48 ">Transition function OID</td>
+<td class="entry" valign="top" width="131pt" headers="d385457e42 "><samp class="ph codeph">aggtransfn</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d385457e44 ">regproc</td>
+<td class="entry" valign="top" width="85pt" headers="d385457e46 ">pg_proc.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d385457e48 ">Transition function OID</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d386670e42 "><samp class="ph codeph">aggprelimfn</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d386670e44 ">regproc</td>
-<td class="entry" valign="top" width="85pt" headers="d386670e46 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d386670e48 ">Preliminary function OID (zero if none)</td>
+<td class="entry" valign="top" width="131pt" headers="d385457e42 "><samp class="ph codeph">aggprelimfn</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d385457e44 ">regproc</td>
+<td class="entry" valign="top" width="85pt" headers="d385457e46 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d385457e48 ">Preliminary function OID (zero if none)</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d386670e42 "><samp class="ph codeph">aggfinalfn</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d386670e44 ">regproc</td>
-<td class="entry" valign="top" width="85pt" headers="d386670e46 ">pg_proc.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d386670e48 ">Final function OID (zero if none)</td>
+<td class="entry" valign="top" width="131pt" headers="d385457e42 "><samp class="ph codeph">aggfinalfn</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d385457e44 ">regproc</td>
+<td class="entry" valign="top" width="85pt" headers="d385457e46 ">pg_proc.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d385457e48 ">Final function OID (zero if none)</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d386670e42 "><samp class="ph codeph">agginitval</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d386670e44 ">text</td>
-<td class="entry" valign="top" width="85pt" headers="d386670e46 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d386670e48 ">The initial value of the transition state. This
+<td class="entry" valign="top" width="131pt" headers="d385457e42 "><samp class="ph codeph">agginitval</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d385457e44 ">text</td>
+<td class="entry" valign="top" width="85pt" headers="d385457e46 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d385457e48 ">The initial value of the transition state. This
 is a text field containing the initial value in its external string representation.
 If this field is NULL, the transition state value starts out NULL</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d386670e42 "><samp class="ph codeph">agginvtransfn </samp></td>
-<td class="entry" valign="top" width="86pt" headers="d386670e44 ">regproc</td>
-<td class="entry" valign="top" width="85pt" headers="d386670e46 ">pg_proc.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d386670e48 ">The OID in pg_proc of the inverse function
+<td class="entry" valign="top" width="131pt" headers="d385457e42 "><samp class="ph codeph">agginvtransfn </samp></td>
+<td class="entry" valign="top" width="86pt" headers="d385457e44 ">regproc</td>
+<td class="entry" valign="top" width="85pt" headers="d385457e46 ">pg_proc.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d385457e48 ">The OID in pg_proc of the inverse function
 of <em class="ph i">aggtransfn</em>
 </td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d386670e42 "><samp class="ph codeph">agginvprelimfn</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d386670e44 ">regproc</td>
-<td class="entry" valign="top" width="85pt" headers="d386670e46 ">pg_proc.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d386670e48 ">The OID in pg_proc of the inverse function
+<td class="entry" valign="top" width="131pt" headers="d385457e42 "><samp class="ph codeph">agginvprelimfn</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d385457e44 ">regproc</td>
+<td class="entry" valign="top" width="85pt" headers="d385457e46 ">pg_proc.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d385457e48 ">The OID in pg_proc of the inverse function
 of aggprelimfn</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d386670e42 "><samp class="ph codeph">aggordered</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d386670e44 ">Boolean</td>
-<td class="entry" valign="top" width="85pt" headers="d386670e46 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d386670e48 ">If <samp class="ph codeph">true</samp>, the aggregate is defined
+<td class="entry" valign="top" width="131pt" headers="d385457e42 "><samp class="ph codeph">aggordered</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d385457e44 ">Boolean</td>
+<td class="entry" valign="top" width="85pt" headers="d385457e46 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d385457e48 ">If <samp class="ph codeph">true</samp>, the aggregate is defined
 as <samp class="ph codeph">ORDERED</samp>.</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d386670e42 "><samp class="ph codeph">aggsortop</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d386670e44 ">oid</td>
-<td class="entry" valign="top" width="85pt" headers="d386670e46 ">pg_operator.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d386670e48 ">Associated sort operator OID (zero if none)</td>
+<td class="entry" valign="top" width="131pt" headers="d385457e42 "><samp class="ph codeph">aggsortop</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d385457e44 ">oid</td>
+<td class="entry" valign="top" width="85pt" headers="d385457e46 ">pg_operator.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d385457e48 ">Associated sort operator OID (zero if none)</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d386670e42 "><samp class="ph codeph">aggtranstype</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d386670e44 ">oid</td>
-<td class="entry" valign="top" width="85pt" headers="d386670e46 ">pg_type.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d386670e48 ">Data type of the aggregate function's internal
+<td class="entry" valign="top" width="131pt" headers="d385457e42 "><samp class="ph codeph">aggtranstype</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d385457e44 ">oid</td>
+<td class="entry" valign="top" width="85pt" headers="d385457e46 ">pg_type.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d385457e48 ">Data type of the aggregate function's internal
 transition (state) data</td>
 </tr>
 </tbody>

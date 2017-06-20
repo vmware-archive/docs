@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5672,10 +5690,13 @@ You can configure Microsoft Windows client applications to connect to a Greenplu
         documentation for more information. </p>
 
       <p class="p">The general format of the <span class="ph filepath">pg_hba.conf</span> file is a set of records, one
-        per line. Greenplum Database ignores blank lines and any text after the <samp class="ph codeph">#</samp>
-        comment character. A record consists of a number of fields that are separated by spaces
-        and/or tabs. Fields can contain white space if the field value is quoted. Records cannot be
-        continued across lines. Each remote client access record has the following format:</p>
+        per line. Blank lines and any text after the <samp class="ph codeph">#</samp> comment character are ignored.
+        The first matching record is used for authentication. After the first match, the following
+        records are not evaluated. If the client cannot be authenticated using the method specified
+        in the first matching record, the connection is rejected. A record consists of a number of
+        fields that are separated by spaces and/or tabs. Fields can contain white space if the field
+        value is quoted. Records cannot be continued across multiple lines.
+        Each remote client access record has the following format:</p>
 
       <pre class="pre codeblock"><em class="ph i">host</em>   <em class="ph i">database</em>   <em class="ph i">role</em>   <em class="ph i">CIDR-address</em>   <em class="ph i">authentication-method</em></pre>
 
@@ -5693,9 +5714,9 @@ You can configure Microsoft Windows client applications to connect to a Greenplu
           
           <thead class="thead" align="left">
             <tr class="row">
-              <th class="entry" valign="top" width="25%" id="d3657e174">Field</th>
+              <th class="entry" valign="top" width="25%" id="d3569e174">Field</th>
 
-              <th class="entry" valign="top" width="75%" id="d3657e177">Description</th>
+              <th class="entry" valign="top" width="75%" id="d3569e177">Description</th>
 
             </tr>
 
@@ -5703,43 +5724,43 @@ You can configure Microsoft Windows client applications to connect to a Greenplu
 
           <tbody class="tbody">
             <tr class="row">
-              <td class="entry" valign="top" width="25%" headers="d3657e174 ">local</td>
+              <td class="entry" valign="top" width="25%" headers="d3569e174 ">local</td>
 
-              <td class="entry" valign="top" width="75%" headers="d3657e177 ">Matches connection attempts using UNIX-domain sockets. Without a
+              <td class="entry" valign="top" width="75%" headers="d3569e177 ">Matches connection attempts using UNIX-domain sockets. Without a
                 record of this type, UNIX-domain socket connections are disallowed.</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="25%" headers="d3657e174 ">host</td>
+              <td class="entry" valign="top" width="25%" headers="d3569e174 ">host</td>
 
-              <td class="entry" valign="top" width="75%" headers="d3657e177 ">Matches connection attempts made using TCP/IP. Remote TCP/IP
+              <td class="entry" valign="top" width="75%" headers="d3569e177 ">Matches connection attempts made using TCP/IP. Remote TCP/IP
                 connections will not be possible unless the server is started with an appropriate
                 value for the <span class="ph">listen_addresses</span> server configuration parameter.</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="25%" headers="d3657e174 ">hostssl</td>
+              <td class="entry" valign="top" width="25%" headers="d3569e174 ">hostssl</td>
 
-              <td class="entry" valign="top" width="75%" headers="d3657e177 ">Matches connection attempts made using TCP/IP, but only when the
+              <td class="entry" valign="top" width="75%" headers="d3569e177 ">Matches connection attempts made using TCP/IP, but only when the
                 connection is made with SSL encryption. SSL must be enabled at server start time by
                 setting the <span class="ph">ssl</span> configuration parameter</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="25%" headers="d3657e174 ">hostnossl</td>
+              <td class="entry" valign="top" width="25%" headers="d3569e174 ">hostnossl</td>
 
-              <td class="entry" valign="top" width="75%" headers="d3657e177 ">Matches connection attempts made over TCP/IP that do not use
+              <td class="entry" valign="top" width="75%" headers="d3569e177 ">Matches connection attempts made over TCP/IP that do not use
                 SSL.</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="25%" headers="d3657e174 ">database</td>
+              <td class="entry" valign="top" width="25%" headers="d3569e174 ">database</td>
 
-              <td class="entry" valign="top" width="75%" headers="d3657e177 ">Specifies which database names this record matches. The value
+              <td class="entry" valign="top" width="75%" headers="d3569e177 ">Specifies which database names this record matches. The value
                   <samp class="ph codeph">all</samp> specifies that it matches all databases. Multiple database
                 names can be supplied by separating them with commas. A separate file containing
                 database names can be specified by preceding the file name with @.</td>
@@ -5747,9 +5768,9 @@ You can configure Microsoft Windows client applications to connect to a Greenplu
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="25%" headers="d3657e174 ">role</td>
+              <td class="entry" valign="top" width="25%" headers="d3569e174 ">role</td>
 
-              <td class="entry" valign="top" width="75%" headers="d3657e177 ">Specifies which database role names this record matches. The
+              <td class="entry" valign="top" width="75%" headers="d3569e177 ">Specifies which database role names this record matches. The
                 value <samp class="ph codeph">all</samp> specifies that it matches all roles. If the specified
                 role is a group and you want all members of that group to be included, precede the
                 role name with a +. Multiple role names can be supplied by separating them with
@@ -5759,9 +5780,9 @@ You can configure Microsoft Windows client applications to connect to a Greenplu
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="25%" headers="d3657e174 ">CIDR-address</td>
+              <td class="entry" valign="top" width="25%" headers="d3569e174 ">CIDR-address</td>
 
-              <td class="entry" valign="top" width="75%" headers="d3657e177 ">Specifies the client machine IP address range that this record
+              <td class="entry" valign="top" width="75%" headers="d3569e177 ">Specifies the client machine IP address range that this record
                 matches. It contains an IP address in standard dotted decimal notation and a CIDR
                 mask length. IP addresses can only be specified numerically, not as domain or host
                 names. The mask length indicates the number of high-order bits of the client IP
@@ -5776,10 +5797,10 @@ You can configure Microsoft Windows client applications to connect to a Greenplu
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="25%" headers="d3657e174 ">IP-address<p class="p">IP-mask</p>
+              <td class="entry" valign="top" width="25%" headers="d3569e174 ">IP-address<p class="p">IP-mask</p>
 </td>
 
-              <td class="entry" valign="top" width="75%" headers="d3657e177 ">These fields can be used as an alternative to the CIDR-address
+              <td class="entry" valign="top" width="75%" headers="d3569e177 ">These fields can be used as an alternative to the CIDR-address
                 notation. Instead of specifying the mask length, the actual mask is specified in a
                 separate column. For example, 255.255.255.255 represents a CIDR mask length of 32.
                 These fields only apply to host, hostssl, and hostnossl records. </td>
@@ -5787,9 +5808,9 @@ You can configure Microsoft Windows client applications to connect to a Greenplu
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="25%" headers="d3657e174 ">authentication-method</td>
+              <td class="entry" valign="top" width="25%" headers="d3569e174 ">authentication-method</td>
 
-              <td class="entry" valign="top" width="75%" headers="d3657e177 ">Specifies the authentication method to use when connecting.
+              <td class="entry" valign="top" width="75%" headers="d3569e177 ">Specifies the authentication method to use when connecting.
                 Greenplum supports the <a class="xref" href="https://www.postgresql.org/docs/9.0/static/auth-methods.html" target="_blank"><span class="ph">authentication methods</span></a> supported by
                 PostgreSQL 9.0.</td>
 

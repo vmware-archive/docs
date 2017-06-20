@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5621,155 +5639,155 @@ system.</p>
 <caption><span class="tablecap">Table 1. pg_catalog.pg_am</span></caption>
 <thead class="thead" align="left">
 <tr class="row">
-<th class="entry" valign="top" width="131pt" id="d387554e23">column</th>
-<th class="entry" valign="top" width="86pt" id="d387554e25">type</th>
-<th class="entry" valign="top" width="85pt" id="d387554e27">references</th>
-<th class="entry" valign="top" width="147pt" id="d387554e29">description</th>
+<th class="entry" valign="top" width="131pt" id="d386341e23">column</th>
+<th class="entry" valign="top" width="86pt" id="d386341e25">type</th>
+<th class="entry" valign="top" width="85pt" id="d386341e27">references</th>
+<th class="entry" valign="top" width="147pt" id="d386341e29">description</th>
 </tr>
 </thead>
 <tbody class="tbody">
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d387554e23 "><samp class="ph codeph">amname</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d387554e25 ">name</td>
-<td class="entry" valign="top" width="85pt" headers="d387554e27 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d387554e29 ">Name of the access method</td>
+<td class="entry" valign="top" width="131pt" headers="d386341e23 "><samp class="ph codeph">amname</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d386341e25 ">name</td>
+<td class="entry" valign="top" width="85pt" headers="d386341e27 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d386341e29 ">Name of the access method</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d387554e23 "><samp class="ph codeph">amstrategies</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d387554e25 ">int2</td>
-<td class="entry" valign="top" width="85pt" headers="d387554e27 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d387554e29 ">Number of operator strategies for this access
+<td class="entry" valign="top" width="131pt" headers="d386341e23 "><samp class="ph codeph">amstrategies</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d386341e25 ">int2</td>
+<td class="entry" valign="top" width="85pt" headers="d386341e27 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d386341e29 ">Number of operator strategies for this access
 method</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d387554e23 "><samp class="ph codeph">amsupport</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d387554e25 ">int2</td>
-<td class="entry" valign="top" width="85pt" headers="d387554e27 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d387554e29 ">Number of support routines for this access method</td>
+<td class="entry" valign="top" width="131pt" headers="d386341e23 "><samp class="ph codeph">amsupport</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d386341e25 ">int2</td>
+<td class="entry" valign="top" width="85pt" headers="d386341e27 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d386341e29 ">Number of support routines for this access method</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d387554e23 "><samp class="ph codeph">amorderstrategy</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d387554e25 ">int2</td>
-<td class="entry" valign="top" width="85pt" headers="d387554e27 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d387554e29 ">Zero if the index offers no sort order, otherwise
+<td class="entry" valign="top" width="131pt" headers="d386341e23 "><samp class="ph codeph">amorderstrategy</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d386341e25 ">int2</td>
+<td class="entry" valign="top" width="85pt" headers="d386341e27 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d386341e29 ">Zero if the index offers no sort order, otherwise
 the strategy number of the strategy operator that describes the sort
 order</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d387554e23 "><samp class="ph codeph">amcanunique</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d387554e25 ">boolean</td>
-<td class="entry" valign="top" width="85pt" headers="d387554e27 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d387554e29 ">Does the access method support unique indexes?</td>
+<td class="entry" valign="top" width="131pt" headers="d386341e23 "><samp class="ph codeph">amcanunique</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d386341e25 ">boolean</td>
+<td class="entry" valign="top" width="85pt" headers="d386341e27 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d386341e29 ">Does the access method support unique indexes?</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d387554e23 "><samp class="ph codeph">amcanmulticol</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d387554e25 ">boolean</td>
-<td class="entry" valign="top" width="85pt" headers="d387554e27 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d387554e29 ">Does the access method support multicolumn indexes?</td>
+<td class="entry" valign="top" width="131pt" headers="d386341e23 "><samp class="ph codeph">amcanmulticol</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d386341e25 ">boolean</td>
+<td class="entry" valign="top" width="85pt" headers="d386341e27 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d386341e29 ">Does the access method support multicolumn indexes?</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d387554e23 "><samp class="ph codeph">amoptionalkey</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d387554e25 ">boolean</td>
-<td class="entry" valign="top" width="85pt" headers="d387554e27 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d387554e29 ">Does the access method support a scan without
+<td class="entry" valign="top" width="131pt" headers="d386341e23 "><samp class="ph codeph">amoptionalkey</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d386341e25 ">boolean</td>
+<td class="entry" valign="top" width="85pt" headers="d386341e27 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d386341e29 ">Does the access method support a scan without
 any constraint for the first index column?</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d387554e23 "><samp class="ph codeph">amindexnulls</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d387554e25 ">boolean</td>
-<td class="entry" valign="top" width="85pt" headers="d387554e27 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d387554e29 ">Does the access method support null index entries?</td>
+<td class="entry" valign="top" width="131pt" headers="d386341e23 "><samp class="ph codeph">amindexnulls</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d386341e25 ">boolean</td>
+<td class="entry" valign="top" width="85pt" headers="d386341e27 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d386341e29 ">Does the access method support null index entries?</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d387554e23 "><samp class="ph codeph">amstorage</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d387554e25 ">boolean</td>
-<td class="entry" valign="top" width="85pt" headers="d387554e27 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d387554e29 ">Can index storage data type differ from column
+<td class="entry" valign="top" width="131pt" headers="d386341e23 "><samp class="ph codeph">amstorage</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d386341e25 ">boolean</td>
+<td class="entry" valign="top" width="85pt" headers="d386341e27 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d386341e29 ">Can index storage data type differ from column
 data type?</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d387554e23 "><samp class="ph codeph">amclusterable</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d387554e25 ">boolean</td>
-<td class="entry" valign="top" width="85pt" headers="d387554e27 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d387554e29 ">Can an index of this type be clustered on?</td>
+<td class="entry" valign="top" width="131pt" headers="d386341e23 "><samp class="ph codeph">amclusterable</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d386341e25 ">boolean</td>
+<td class="entry" valign="top" width="85pt" headers="d386341e27 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d386341e29 ">Can an index of this type be clustered on?</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d387554e23 "><samp class="ph codeph">aminsert</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d387554e25 ">regproc</td>
-<td class="entry" valign="top" width="85pt" headers="d387554e27 ">pg_proc.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d387554e29 ">"Insert this tuple" function</td>
+<td class="entry" valign="top" width="131pt" headers="d386341e23 "><samp class="ph codeph">aminsert</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d386341e25 ">regproc</td>
+<td class="entry" valign="top" width="85pt" headers="d386341e27 ">pg_proc.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d386341e29 ">"Insert this tuple" function</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d387554e23 "><samp class="ph codeph">ambeginscan</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d387554e25 ">regproc</td>
-<td class="entry" valign="top" width="85pt" headers="d387554e27 ">pg_proc.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d387554e29 ">"Start new scan" function</td>
+<td class="entry" valign="top" width="131pt" headers="d386341e23 "><samp class="ph codeph">ambeginscan</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d386341e25 ">regproc</td>
+<td class="entry" valign="top" width="85pt" headers="d386341e27 ">pg_proc.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d386341e29 ">"Start new scan" function</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d387554e23 "><samp class="ph codeph">amgettuple</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d387554e25 ">regproc</td>
-<td class="entry" valign="top" width="85pt" headers="d387554e27 ">pg_proc.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d387554e29 ">"Next valid tuple" function</td>
+<td class="entry" valign="top" width="131pt" headers="d386341e23 "><samp class="ph codeph">amgettuple</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d386341e25 ">regproc</td>
+<td class="entry" valign="top" width="85pt" headers="d386341e27 ">pg_proc.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d386341e29 ">"Next valid tuple" function</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d387554e23 "><samp class="ph codeph">amgetmulti</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d387554e25 ">regproc</td>
-<td class="entry" valign="top" width="85pt" headers="d387554e27 ">pg_proc.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d387554e29 ">"Fetch multiple tuples" function</td>
+<td class="entry" valign="top" width="131pt" headers="d386341e23 "><samp class="ph codeph">amgetmulti</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d386341e25 ">regproc</td>
+<td class="entry" valign="top" width="85pt" headers="d386341e27 ">pg_proc.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d386341e29 ">"Fetch multiple tuples" function</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d387554e23 "><samp class="ph codeph">amrescan</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d387554e25 ">regproc</td>
-<td class="entry" valign="top" width="85pt" headers="d387554e27 ">pg_proc.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d387554e29 ">"Restart this scan" function</td>
+<td class="entry" valign="top" width="131pt" headers="d386341e23 "><samp class="ph codeph">amrescan</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d386341e25 ">regproc</td>
+<td class="entry" valign="top" width="85pt" headers="d386341e27 ">pg_proc.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d386341e29 ">"Restart this scan" function</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d387554e23 "><samp class="ph codeph">amendscan</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d387554e25 ">regproc</td>
-<td class="entry" valign="top" width="85pt" headers="d387554e27 ">pg_proc.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d387554e29 ">"End this scan" function</td>
+<td class="entry" valign="top" width="131pt" headers="d386341e23 "><samp class="ph codeph">amendscan</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d386341e25 ">regproc</td>
+<td class="entry" valign="top" width="85pt" headers="d386341e27 ">pg_proc.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d386341e29 ">"End this scan" function</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d387554e23 "><samp class="ph codeph">ammarkpos</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d387554e25 ">regproc</td>
-<td class="entry" valign="top" width="85pt" headers="d387554e27 ">pg_proc.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d387554e29 ">"Mark current scan position" function</td>
+<td class="entry" valign="top" width="131pt" headers="d386341e23 "><samp class="ph codeph">ammarkpos</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d386341e25 ">regproc</td>
+<td class="entry" valign="top" width="85pt" headers="d386341e27 ">pg_proc.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d386341e29 ">"Mark current scan position" function</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d387554e23 "><samp class="ph codeph">amrestrpos</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d387554e25 ">regproc</td>
-<td class="entry" valign="top" width="85pt" headers="d387554e27 ">pg_proc.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d387554e29 ">"Restore marked scan position" function</td>
+<td class="entry" valign="top" width="131pt" headers="d386341e23 "><samp class="ph codeph">amrestrpos</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d386341e25 ">regproc</td>
+<td class="entry" valign="top" width="85pt" headers="d386341e27 ">pg_proc.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d386341e29 ">"Restore marked scan position" function</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d387554e23 "><samp class="ph codeph">ambuild</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d387554e25 ">regproc</td>
-<td class="entry" valign="top" width="85pt" headers="d387554e27 ">pg_proc.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d387554e29 ">"Build new index" function</td>
+<td class="entry" valign="top" width="131pt" headers="d386341e23 "><samp class="ph codeph">ambuild</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d386341e25 ">regproc</td>
+<td class="entry" valign="top" width="85pt" headers="d386341e27 ">pg_proc.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d386341e29 ">"Build new index" function</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d387554e23 "><samp class="ph codeph">ambulkdelete</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d387554e25 ">regproc</td>
-<td class="entry" valign="top" width="85pt" headers="d387554e27 ">pg_proc.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d387554e29 ">Bulk-delete function</td>
+<td class="entry" valign="top" width="131pt" headers="d386341e23 "><samp class="ph codeph">ambulkdelete</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d386341e25 ">regproc</td>
+<td class="entry" valign="top" width="85pt" headers="d386341e27 ">pg_proc.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d386341e29 ">Bulk-delete function</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d387554e23 "><samp class="ph codeph">amvacuumcleanup</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d387554e25 ">regproc</td>
-<td class="entry" valign="top" width="85pt" headers="d387554e27 ">pg_proc.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d387554e29 ">Post-<samp class="ph codeph">VACUUM</samp> cleanup function</td>
+<td class="entry" valign="top" width="131pt" headers="d386341e23 "><samp class="ph codeph">amvacuumcleanup</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d386341e25 ">regproc</td>
+<td class="entry" valign="top" width="85pt" headers="d386341e27 ">pg_proc.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d386341e29 ">Post-<samp class="ph codeph">VACUUM</samp> cleanup function</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d387554e23 "><samp class="ph codeph">amcostestimate</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d387554e25 ">regproc</td>
-<td class="entry" valign="top" width="85pt" headers="d387554e27 ">pg_proc.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d387554e29 ">Function to estimate cost of an index scan</td>
+<td class="entry" valign="top" width="131pt" headers="d386341e23 "><samp class="ph codeph">amcostestimate</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d386341e25 ">regproc</td>
+<td class="entry" valign="top" width="85pt" headers="d386341e27 ">pg_proc.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d386341e29 ">Function to estimate cost of an index scan</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d387554e23 "><samp class="ph codeph">amoptions</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d387554e25 ">regproc</td>
-<td class="entry" valign="top" width="85pt" headers="d387554e27 ">pg_proc.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d387554e29 ">Function to parse and validate reloptions for
+<td class="entry" valign="top" width="131pt" headers="d386341e23 "><samp class="ph codeph">amoptions</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d386341e25 ">regproc</td>
+<td class="entry" valign="top" width="85pt" headers="d386341e27 ">pg_proc.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d386341e29 ">Function to parse and validate reloptions for
 an index</td>
 </tr>
 </tbody>

@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5736,9 +5754,9 @@
             
             <thead class="thead" align="left">
               <tr class="row">
-                <th class="entry" valign="top" width="33.33333333333333%" id="d99520e181">Attributes</th>
+                <th class="entry" valign="top" width="33.33333333333333%" id="d99548e181">Attributes</th>
 
-                <th class="entry" valign="top" width="66.66666666666666%" id="d99520e184">Description</th>
+                <th class="entry" valign="top" width="66.66666666666666%" id="d99548e184">Description</th>
 
               </tr>
 
@@ -5746,42 +5764,42 @@
 
             <tbody class="tbody">
               <tr class="row">
-                <td class="entry" valign="top" width="33.33333333333333%" headers="d99520e181 ">
+                <td class="entry" valign="top" width="33.33333333333333%" headers="d99548e181 ">
                   <samp class="ph codeph">SUPERUSER | NOSUPERUSER</samp>
                 </td>
 
-                <td class="entry" valign="top" width="66.66666666666666%" headers="d99520e184 ">Determines if the role is a superuser. You must yourself be a
+                <td class="entry" valign="top" width="66.66666666666666%" headers="d99548e184 ">Determines if the role is a superuser. You must yourself be a
                   superuser to create a new superuser. <samp class="ph codeph">NOSUPERUSER</samp> is the default.
                 </td>
 
               </tr>
 
               <tr class="row">
-                <td class="entry" valign="top" width="33.33333333333333%" headers="d99520e181 ">
+                <td class="entry" valign="top" width="33.33333333333333%" headers="d99548e181 ">
                   <samp class="ph codeph">CREATEDB | NOCREATEDB</samp>
                 </td>
 
-                <td class="entry" valign="top" width="66.66666666666666%" headers="d99520e184 ">Determines if the role is allowed to create databases.
+                <td class="entry" valign="top" width="66.66666666666666%" headers="d99548e184 ">Determines if the role is allowed to create databases.
                     <samp class="ph codeph">NOCREATEDB</samp> is the default. </td>
 
               </tr>
 
               <tr class="row">
-                <td class="entry" valign="top" width="33.33333333333333%" headers="d99520e181 ">
+                <td class="entry" valign="top" width="33.33333333333333%" headers="d99548e181 ">
                   <samp class="ph codeph">CREATEROLE | NOCREATEROLE</samp>
                 </td>
 
-                <td class="entry" valign="top" width="66.66666666666666%" headers="d99520e184 ">Determines if the role is allowed to create and manage other
+                <td class="entry" valign="top" width="66.66666666666666%" headers="d99548e184 ">Determines if the role is allowed to create and manage other
                   roles. <samp class="ph codeph">NOCREATEROLE</samp> is the default. </td>
 
               </tr>
 
               <tr class="row">
-                <td class="entry" valign="top" width="33.33333333333333%" headers="d99520e181 ">
+                <td class="entry" valign="top" width="33.33333333333333%" headers="d99548e181 ">
                   <samp class="ph codeph">INHERIT | NOINHERIT</samp>
                 </td>
 
-                <td class="entry" valign="top" width="66.66666666666666%" headers="d99520e184 ">Determines whether a role inherits the privileges of roles it
+                <td class="entry" valign="top" width="66.66666666666666%" headers="d99548e184 ">Determines whether a role inherits the privileges of roles it
                   is a member of. A role with the <samp class="ph codeph">INHERIT</samp> attribute can
                   automatically use whatever database privileges have been granted to all roles it
                   is directly or indirectly a member of. <samp class="ph codeph">INHERIT</samp> is the
@@ -5790,11 +5808,11 @@
               </tr>
 
               <tr class="row">
-                <td class="entry" valign="top" width="33.33333333333333%" headers="d99520e181 ">
+                <td class="entry" valign="top" width="33.33333333333333%" headers="d99548e181 ">
                   <samp class="ph codeph">LOGIN | NOLOGIN</samp>
                 </td>
 
-                <td class="entry" valign="top" width="66.66666666666666%" headers="d99520e184 ">Determines whether a role is allowed to log in. A role having
+                <td class="entry" valign="top" width="66.66666666666666%" headers="d99548e184 ">Determines whether a role is allowed to log in. A role having
                   the <samp class="ph codeph">LOGIN</samp> attribute can be thought of as a user. Roles without
                   this attribute are useful for managing database privileges (groups).
                     <samp class="ph codeph">NOLOGIN</samp> is the default. </td>
@@ -5802,21 +5820,21 @@
               </tr>
 
               <tr class="row">
-                <td class="entry" valign="top" width="33.33333333333333%" headers="d99520e181 ">
+                <td class="entry" valign="top" width="33.33333333333333%" headers="d99548e181 ">
                   <samp class="ph codeph">CONNECTION LIMIT <em class="ph i">connlimit</em></samp>
                 </td>
 
-                <td class="entry" valign="top" width="66.66666666666666%" headers="d99520e184 ">If role can log in, this specifies how many concurrent
+                <td class="entry" valign="top" width="66.66666666666666%" headers="d99548e184 ">If role can log in, this specifies how many concurrent
                   connections the role can make. -1 (the default) means no limit. </td>
 
               </tr>
 
               <tr class="row">
-                <td class="entry" valign="top" width="33.33333333333333%" headers="d99520e181 ">
+                <td class="entry" valign="top" width="33.33333333333333%" headers="d99548e181 ">
                   <samp class="ph codeph">CREATEEXTTABLE | NOCREATEEXTTABLE</samp>
                 </td>
 
-                <td class="entry" valign="top" width="66.66666666666666%" headers="d99520e184 ">Determines whether a role is allowed to create external
+                <td class="entry" valign="top" width="66.66666666666666%" headers="d99548e184 ">Determines whether a role is allowed to create external
                   tables. <samp class="ph codeph">NOCREATEEXTTABLE</samp> is the default. For a role with the
                     <samp class="ph codeph">CREATEEXTTABLE</samp> attribute, the default external table
                     <samp class="ph codeph">type</samp> is <samp class="ph codeph">readable</samp> and the default
@@ -5827,11 +5845,11 @@
               </tr>
 
               <tr class="row">
-                <td class="entry" valign="top" width="33.33333333333333%" headers="d99520e181 ">
+                <td class="entry" valign="top" width="33.33333333333333%" headers="d99548e181 ">
                   <samp class="ph codeph">PASSWORD '<em class="ph i">password</em>'</samp>
                 </td>
 
-                <td class="entry" valign="top" width="66.66666666666666%" headers="d99520e184 ">Sets the role's password. If you do not plan to use password
+                <td class="entry" valign="top" width="66.66666666666666%" headers="d99548e184 ">Sets the role's password. If you do not plan to use password
                   authentication you can omit this option. If no password is specified, the password
                   will be set to null and password authentication will always fail for that user. A
                   null password can optionally be written explicitly as <samp class="ph codeph">PASSWORD
@@ -5841,11 +5859,11 @@
 
               <tr class="row">
 
-                <td class="entry" valign="top" width="33.33333333333333%" headers="d99520e181 ">
+                <td class="entry" valign="top" width="33.33333333333333%" headers="d99548e181 ">
                   <samp class="ph codeph">ENCRYPTED | UNENCRYPTED</samp>
                 </td>
 
-                <td class="entry" valign="top" width="66.66666666666666%" headers="d99520e184 ">Controls whether a new password is stored as a hash string in
+                <td class="entry" valign="top" width="66.66666666666666%" headers="d99548e184 ">Controls whether a new password is stored as a hash string in
                   the <samp class="ph codeph">pg_authid</samp> system catalog. If neither
                     <samp class="ph codeph">ENCRYPTED</samp> nor <samp class="ph codeph">UNENCRYPTED</samp> is specified, the
                   default behavior is determined by the <samp class="ph codeph">password_encryption</samp>
@@ -5860,23 +5878,23 @@
               </tr>
 
               <tr class="row">
-                <td class="entry" valign="top" width="33.33333333333333%" headers="d99520e181 ">
+                <td class="entry" valign="top" width="33.33333333333333%" headers="d99548e181 ">
                   <samp class="ph codeph">VALID UNTIL '<em class="ph i">timestamp</em>'</samp>
                 </td>
 
-                <td class="entry" valign="top" width="66.66666666666666%" headers="d99520e184 ">Sets a date and time after which the role's password is no
+                <td class="entry" valign="top" width="66.66666666666666%" headers="d99548e184 ">Sets a date and time after which the role's password is no
                   longer valid. If omitted the password will be valid for all time.</td>
 
               </tr>
 
               <tr class="row">
 
-                <td class="entry" valign="top" width="33.33333333333333%" headers="d99520e181 ">
+                <td class="entry" valign="top" width="33.33333333333333%" headers="d99548e181 ">
                   <samp class="ph codeph">RESOURCE QUEUE <em class="ph i">queue_name</em></samp>
                 </td>
 
 
-                <td class="entry" valign="top" width="66.66666666666666%" headers="d99520e184 ">Assigns the role to the named resource queue for workload
+                <td class="entry" valign="top" width="66.66666666666666%" headers="d99548e184 ">Assigns the role to the named resource queue for workload
                   management. Any statement that role issues is then subject to the resource queue's
                   limits. Note that the <samp class="ph codeph">RESOURCE QUEUE</samp> attribute is not inherited;
                   it must be set on each user-level (<samp class="ph codeph">LOGIN</samp>) role.</td>
@@ -5885,12 +5903,12 @@
 
               <tr class="row">
 
-                <td class="entry" valign="top" width="33.33333333333333%" headers="d99520e181 ">
+                <td class="entry" valign="top" width="33.33333333333333%" headers="d99548e181 ">
                   <samp class="ph codeph">DENY {deny_interval | deny_point}</samp>
                 </td>
 
 
-                <td class="entry" valign="top" width="66.66666666666666%" headers="d99520e184 ">Restricts access during an interval, specified by day or day
+                <td class="entry" valign="top" width="66.66666666666666%" headers="d99548e184 ">Restricts access during an interval, specified by day or day
                   and time. For more information see <a class="xref" href="#topic13">Time-based Authentication</a>.</td>
 
               </tr>
@@ -6004,9 +6022,9 @@
           
           <thead class="thead" align="left">
             <tr class="row">
-              <th class="entry" valign="top" width="66.66666666666666%" id="d99520e593">Object Type</th>
+              <th class="entry" valign="top" width="66.66666666666666%" id="d99548e593">Object Type</th>
 
-              <th class="entry" valign="top" width="33.33333333333333%" id="d99520e596">Privileges</th>
+              <th class="entry" valign="top" width="33.33333333333333%" id="d99548e596">Privileges</th>
 
             </tr>
 
@@ -6014,9 +6032,9 @@
 
           <tbody class="tbody">
             <tr class="row">
-              <td class="entry" valign="top" width="66.66666666666666%" headers="d99520e593 ">Tables, Views, Sequences</td>
+              <td class="entry" valign="top" width="66.66666666666666%" headers="d99548e593 ">Tables, Views, Sequences</td>
 
-              <td class="entry" valign="top" width="33.33333333333333%" headers="d99520e596 ">
+              <td class="entry" valign="top" width="33.33333333333333%" headers="d99548e596 ">
                 <samp class="ph codeph">SELECT</samp>
                 <p class="p">
                   <samp class="ph codeph">INSERT</samp>
@@ -6043,9 +6061,9 @@
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="66.66666666666666%" headers="d99520e593 ">External Tables</td>
+              <td class="entry" valign="top" width="66.66666666666666%" headers="d99548e593 ">External Tables</td>
 
-              <td class="entry" valign="top" width="33.33333333333333%" headers="d99520e596 ">
+              <td class="entry" valign="top" width="33.33333333333333%" headers="d99548e596 ">
                 <samp class="ph codeph">SELECT</samp>
                 <p class="p">
                   <samp class="ph codeph">RULE</samp>
@@ -6060,9 +6078,9 @@
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="66.66666666666666%" headers="d99520e593 ">Databases</td>
+              <td class="entry" valign="top" width="66.66666666666666%" headers="d99548e593 ">Databases</td>
 
-              <td class="entry" valign="top" width="33.33333333333333%" headers="d99520e596 ">
+              <td class="entry" valign="top" width="33.33333333333333%" headers="d99548e596 ">
                 <samp class="ph codeph">CONNECT</samp>
                 <p class="p">
                   <samp class="ph codeph">CREATE</samp>
@@ -6081,27 +6099,27 @@
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="66.66666666666666%" headers="d99520e593 ">Functions</td>
+              <td class="entry" valign="top" width="66.66666666666666%" headers="d99548e593 ">Functions</td>
 
-              <td class="entry" valign="top" width="33.33333333333333%" headers="d99520e596 ">
+              <td class="entry" valign="top" width="33.33333333333333%" headers="d99548e596 ">
                 <samp class="ph codeph">EXECUTE</samp>
               </td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="66.66666666666666%" headers="d99520e593 ">Procedural Languages</td>
+              <td class="entry" valign="top" width="66.66666666666666%" headers="d99548e593 ">Procedural Languages</td>
 
-              <td class="entry" valign="top" width="33.33333333333333%" headers="d99520e596 ">
+              <td class="entry" valign="top" width="33.33333333333333%" headers="d99548e596 ">
                 <samp class="ph codeph">USAGE</samp>
               </td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="66.66666666666666%" headers="d99520e593 ">Schemas</td>
+              <td class="entry" valign="top" width="66.66666666666666%" headers="d99548e593 ">Schemas</td>
 
-              <td class="entry" valign="top" width="33.33333333333333%" headers="d99520e596 ">
+              <td class="entry" valign="top" width="33.33333333333333%" headers="d99548e596 ">
                 <samp class="ph codeph">CREATE</samp>
                 <p class="p">
                   <samp class="ph codeph">USAGE</samp>
@@ -6116,9 +6134,9 @@
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="66.66666666666666%" headers="d99520e593 ">Custom Protocol</td>
+              <td class="entry" valign="top" width="66.66666666666666%" headers="d99548e593 ">Custom Protocol</td>
 
-              <td class="entry" valign="top" width="33.33333333333333%" headers="d99520e596 ">
+              <td class="entry" valign="top" width="33.33333333333333%" headers="d99548e596 ">
                 <samp class="ph codeph">SELECT</samp>
                 <p class="p">
                   <samp class="ph codeph">INSERT</samp>
@@ -6292,13 +6310,9 @@ $ gpstop -u</pre>
         command:<pre class="pre codeblock">=# SET password_encryption = 'on';</pre>
 </div>
 
-      <p class="p">Passwords may be hashed using the SHA-256 (or SHA-256-FIPS) hash algorithm instead of the
+      <p class="p">Passwords may be hashed using the SHA-256 hash algorithm instead of the
         default MD5 hash algorithm. The algorithm produces a 64-byte hexadecimal string prefixed
-        with the characters <samp class="ph codeph">sha256</samp>. The SHA-256-FIPS hash algorithm supports
-          <cite class="cite">Federal Information Processing Standard</cite> (FIPS) 140-2, which is generally the
-        reason to use SHA-256 instead of MD5. If SHA-256-FIPS is specified and Greenplum Database is not linked with the RSA BSAFE library, an error is raised. When
-        SHA-256 is specified, no error is raised; the hash is produced by the RSA BSAFE library or
-        the OpenSSL library linked with Greenplum Database.</p>
+        with the characters <samp class="ph codeph">sha256</samp>.</p>
 
       <div class="note note">
 <span class="notetitle">Note:</span> 
@@ -6317,7 +6331,7 @@ $ gpstop -u</pre>
 
       <div class="p">To enable SHA-256 hashing, change the <samp class="ph codeph">password_hash_algorithm</samp>
         configuration parameter from its default value, <samp class="ph codeph">md5</samp>, to
-          <samp class="ph codeph">sha-256</samp> or <samp class="ph codeph">sha-256-fips</samp>. The parameter can be set either
+          <samp class="ph codeph">sha-256</samp>. The parameter can be set either
         globally or at the session level. To set <samp class="ph codeph">password_hash_algorithm</samp> globally,
         execute these commands in a shell as the <samp class="ph codeph">gpadmin</samp>
         user:<pre class="pre codeblock">$ gpconfig -c password_hash_algorithm -v 'sha-256'

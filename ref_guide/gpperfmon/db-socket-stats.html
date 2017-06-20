@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5646,11 +5664,11 @@
 <table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
             <thead class="thead" align="left">
                <tr class="row">
-                  <th class="entry" valign="top" id="d305272e61">Column</th>
+                  <th class="entry" valign="top" id="d303441e61">Column</th>
 
-                  <th class="entry" valign="top" id="d305272e64">Type</th>
+                  <th class="entry" valign="top" id="d303441e64">Type</th>
 
-                  <th class="entry" valign="top" id="d305272e67">Description</th>
+                  <th class="entry" valign="top" id="d303441e67">Description</th>
 
                </tr>
 
@@ -5658,123 +5676,123 @@
 
             <tbody class="tbody">
                <tr class="row">
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">
                      <samp class="ph codeph">total_sockets_used</samp>
                   </td>
 
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">int</td>
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">int</td>
 
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">Total sockets used in the system.</td>
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">Total sockets used in the system.</td>
 
                </tr>
 
                <tr class="row">
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">
                      <samp class="ph codeph">tcp_sockets_inuse</samp>
                   </td>
 
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">int</td>
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">int</td>
 
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">Number of TCP sockets in use.</td>
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">Number of TCP sockets in use.</td>
 
                </tr>
 
                <tr class="row">
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">
                      <samp class="ph codeph">tcp_sockets_orphan</samp>
                   </td>
 
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">int</td>
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">int</td>
 
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">Number of TCP sockets orphaned.</td>
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">Number of TCP sockets orphaned.</td>
 
                </tr>
 
                <tr class="row">
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">
                      <samp class="ph codeph">tcp_sockets_timewait</samp>
                   </td>
 
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">int</td>
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">int</td>
 
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">Number of TCP sockets in Time-Wait.</td>
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">Number of TCP sockets in Time-Wait.</td>
 
                </tr>
 
                <tr class="row">
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">
                      <samp class="ph codeph">tcp_sockets_alloc</samp>
                   </td>
 
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">int</td>
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">int</td>
 
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">Number of TCP sockets allocated.</td>
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">Number of TCP sockets allocated.</td>
 
                </tr>
 
                <tr class="row">
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">
                      <samp class="ph codeph">tcp_sockets_memusage_inbytes</samp>
                   </td>
 
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">int</td>
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">int</td>
 
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">Amount of memory consumed by TCP sockets.</td>
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">Amount of memory consumed by TCP sockets.</td>
 
                </tr>
 
                <tr class="row">
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">
                      <samp class="ph codeph">udp_sockets_inuse</samp>
                   </td>
 
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">int</td>
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">int</td>
 
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">Number of UDP sockets in use.</td>
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">Number of UDP sockets in use.</td>
 
                </tr>
 
                <tr class="row">
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">
                      <samp class="ph codeph">udp_sockets_memusage_inbytes</samp>
                   </td>
 
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">int</td>
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">int</td>
 
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">Amount of memory consumed by UDP sockets.</td>
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">Amount of memory consumed by UDP sockets.</td>
 
                </tr>
 
                <tr class="row">
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">
                      <samp class="ph codeph">raw_sockets_inuse</samp>
                   </td>
 
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">int</td>
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">int</td>
 
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">Number of RAW sockets in use.</td>
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">Number of RAW sockets in use.</td>
 
                </tr>
 
                <tr class="row">
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">
                      <samp class="ph codeph">frag_sockets_inuse</samp>
                   </td>
 
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">int</td>
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">int</td>
 
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">Number of FRAG sockets in use.</td>
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">Number of FRAG sockets in use.</td>
 
                </tr>
 
                <tr class="row">
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">
                      <samp class="ph codeph">frag_sockets_memusage_inbytes</samp>
                   </td>
 
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">int</td>
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">int</td>
 
-                  <td class="entry" valign="top" headers="d305272e61 d305272e64 d305272e67 ">Amount of memory consumed by FRAG sockets.</td>
+                  <td class="entry" valign="top" headers="d303441e61 d303441e64 d303441e67 ">Amount of memory consumed by FRAG sockets.</td>
 
                </tr>
 

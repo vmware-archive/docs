@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5629,127 +5647,127 @@ to extend a relation is represented as a separate lockable object.</p>
 <caption><span class="tablecap">Table 1. pg_catalog.pg_locks</span></caption>
 <thead class="thead" align="left">
 <tr class="row">
-<th class="entry" valign="top" width="131pt" id="d407782e29">column</th>
-<th class="entry" valign="top" width="86pt" id="d407782e31">type</th>
-<th class="entry" valign="top" width="85pt" id="d407782e33">references</th>
-<th class="entry" valign="top" width="147pt" id="d407782e35">description</th>
+<th class="entry" valign="top" width="131pt" id="d408092e29">column</th>
+<th class="entry" valign="top" width="86pt" id="d408092e31">type</th>
+<th class="entry" valign="top" width="85pt" id="d408092e33">references</th>
+<th class="entry" valign="top" width="147pt" id="d408092e35">description</th>
 </tr>
 </thead>
 <tbody class="tbody">
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d407782e29 "><samp class="ph codeph">locktype</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d407782e31 ">text</td>
-<td class="entry" valign="top" width="85pt" headers="d407782e33 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d407782e35 ">Type of the lockable object: <samp class="ph codeph">relation</samp>,
+<td class="entry" valign="top" width="131pt" headers="d408092e29 "><samp class="ph codeph">locktype</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d408092e31 ">text</td>
+<td class="entry" valign="top" width="85pt" headers="d408092e33 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d408092e35 ">Type of the lockable object: <samp class="ph codeph">relation</samp>,
 <samp class="ph codeph">extend</samp>, <samp class="ph codeph">page</samp>, <samp class="ph codeph">tuple</samp>,
 <samp class="ph codeph">transactionid</samp>, <samp class="ph codeph">object</samp>, <samp class="ph codeph">userlock</samp>,
 <samp class="ph codeph">resource queue</samp>, or <samp class="ph codeph">advisory</samp>
 </td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d407782e29 "><samp class="ph codeph">database</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d407782e31 ">oid</td>
-<td class="entry" valign="top" width="85pt" headers="d407782e33 ">pg_database.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d407782e35 ">OID of the database in which the object exists,
+<td class="entry" valign="top" width="131pt" headers="d408092e29 "><samp class="ph codeph">database</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d408092e31 ">oid</td>
+<td class="entry" valign="top" width="85pt" headers="d408092e33 ">pg_database.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d408092e35 ">OID of the database in which the object exists,
 zero if the object is a shared object, or NULL if the object is a transaction
 ID</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d407782e29 "><samp class="ph codeph">relation</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d407782e31 ">oid</td>
-<td class="entry" valign="top" width="85pt" headers="d407782e33 ">pg_class.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d407782e35 ">OID of the relation, or NULL if the object is
+<td class="entry" valign="top" width="131pt" headers="d408092e29 "><samp class="ph codeph">relation</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d408092e31 ">oid</td>
+<td class="entry" valign="top" width="85pt" headers="d408092e33 ">pg_class.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d408092e35 ">OID of the relation, or NULL if the object is
 not a relation or part of a relation</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d407782e29 "><samp class="ph codeph">page </samp></td>
-<td class="entry" valign="top" width="86pt" headers="d407782e31 ">integer</td>
-<td class="entry" valign="top" width="85pt" headers="d407782e33 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d407782e35 ">Page number within the relation, or NULL if
+<td class="entry" valign="top" width="131pt" headers="d408092e29 "><samp class="ph codeph">page </samp></td>
+<td class="entry" valign="top" width="86pt" headers="d408092e31 ">integer</td>
+<td class="entry" valign="top" width="85pt" headers="d408092e33 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d408092e35 ">Page number within the relation, or NULL if
 the object is not a tuple or relation page</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d407782e29 "><samp class="ph codeph">tuple </samp></td>
-<td class="entry" valign="top" width="86pt" headers="d407782e31 ">smallint</td>
-<td class="entry" valign="top" width="85pt" headers="d407782e33 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d407782e35 ">Tuple number within the page, or NULL if the
+<td class="entry" valign="top" width="131pt" headers="d408092e29 "><samp class="ph codeph">tuple </samp></td>
+<td class="entry" valign="top" width="86pt" headers="d408092e31 ">smallint</td>
+<td class="entry" valign="top" width="85pt" headers="d408092e33 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d408092e35 ">Tuple number within the page, or NULL if the
 object is not a tuple</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d407782e29 "><samp class="ph codeph">transactionid </samp></td>
-<td class="entry" valign="top" width="86pt" headers="d407782e31 ">xid</td>
-<td class="entry" valign="top" width="85pt" headers="d407782e33 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d407782e35 ">ID of a transaction, or NULL if the object is
+<td class="entry" valign="top" width="131pt" headers="d408092e29 "><samp class="ph codeph">transactionid </samp></td>
+<td class="entry" valign="top" width="86pt" headers="d408092e31 ">xid</td>
+<td class="entry" valign="top" width="85pt" headers="d408092e33 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d408092e35 ">ID of a transaction, or NULL if the object is
 not a transaction ID</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d407782e29 "><samp class="ph codeph">classid</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d407782e31 ">oid</td>
-<td class="entry" valign="top" width="85pt" headers="d407782e33 ">pg_class.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d407782e35 ">OID of the system catalog containing the object,
+<td class="entry" valign="top" width="131pt" headers="d408092e29 "><samp class="ph codeph">classid</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d408092e31 ">oid</td>
+<td class="entry" valign="top" width="85pt" headers="d408092e33 ">pg_class.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d408092e35 ">OID of the system catalog containing the object,
 or NULL if the object is not a general database object</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d407782e29 "><samp class="ph codeph">objid </samp></td>
-<td class="entry" valign="top" width="86pt" headers="d407782e31 ">oid</td>
-<td class="entry" valign="top" width="85pt" headers="d407782e33 ">any OID column</td>
-<td class="entry" valign="top" width="147pt" headers="d407782e35 ">OID of the object within its system catalog,
+<td class="entry" valign="top" width="131pt" headers="d408092e29 "><samp class="ph codeph">objid </samp></td>
+<td class="entry" valign="top" width="86pt" headers="d408092e31 ">oid</td>
+<td class="entry" valign="top" width="85pt" headers="d408092e33 ">any OID column</td>
+<td class="entry" valign="top" width="147pt" headers="d408092e35 ">OID of the object within its system catalog,
 or NULL if the object is not a general database object</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d407782e29 "><samp class="ph codeph">objsubid </samp></td>
-<td class="entry" valign="top" width="86pt" headers="d407782e31 ">smallint</td>
-<td class="entry" valign="top" width="85pt" headers="d407782e33 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d407782e35 ">For a table column, this is the column number
+<td class="entry" valign="top" width="131pt" headers="d408092e29 "><samp class="ph codeph">objsubid </samp></td>
+<td class="entry" valign="top" width="86pt" headers="d408092e31 ">smallint</td>
+<td class="entry" valign="top" width="85pt" headers="d408092e33 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d408092e35 ">For a table column, this is the column number
 (the classid and objid refer to the table itself).
 For all other object types, this column is zero. NULL if the object is
 not a general database object</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d407782e29 "><samp class="ph codeph">transaction</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d407782e31 ">xid</td>
-<td class="entry" valign="top" width="85pt" headers="d407782e33 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d407782e35 ">ID of the transaction that is holding or awaiting
+<td class="entry" valign="top" width="131pt" headers="d408092e29 "><samp class="ph codeph">transaction</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d408092e31 ">xid</td>
+<td class="entry" valign="top" width="85pt" headers="d408092e33 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d408092e35 ">ID of the transaction that is holding or awaiting
 this lock</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d407782e29 "><samp class="ph codeph">pid</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d407782e31 ">integer</td>
-<td class="entry" valign="top" width="85pt" headers="d407782e33 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d407782e35 ">Process ID of the server process holding or
+<td class="entry" valign="top" width="131pt" headers="d408092e29 "><samp class="ph codeph">pid</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d408092e31 ">integer</td>
+<td class="entry" valign="top" width="85pt" headers="d408092e33 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d408092e35 ">Process ID of the server process holding or
 awaiting this lock. NULL if the lock is held by a prepared transaction</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d407782e29 "><samp class="ph codeph">mode</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d407782e31 ">text</td>
-<td class="entry" valign="top" width="85pt" headers="d407782e33 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d407782e35 ">Name of the lock mode held or desired by this
+<td class="entry" valign="top" width="131pt" headers="d408092e29 "><samp class="ph codeph">mode</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d408092e31 ">text</td>
+<td class="entry" valign="top" width="85pt" headers="d408092e33 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d408092e35 ">Name of the lock mode held or desired by this
 process</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d407782e29 "><samp class="ph codeph">granted</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d407782e31 ">boolean</td>
-<td class="entry" valign="top" width="85pt" headers="d407782e33 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d407782e35 ">True if lock is held, false if lock is awaited.</td>
+<td class="entry" valign="top" width="131pt" headers="d408092e29 "><samp class="ph codeph">granted</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d408092e31 ">boolean</td>
+<td class="entry" valign="top" width="85pt" headers="d408092e33 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d408092e35 ">True if lock is held, false if lock is awaited.</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d407782e29 "><samp class="ph codeph">mppsessionid</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d407782e31 ">integer</td>
-<td class="entry" valign="top" width="85pt" headers="d407782e33 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d407782e35 ">The id of the client session associated with
+<td class="entry" valign="top" width="131pt" headers="d408092e29 "><samp class="ph codeph">mppsessionid</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d408092e31 ">integer</td>
+<td class="entry" valign="top" width="85pt" headers="d408092e33 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d408092e35 ">The id of the client session associated with
 this lock.</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d407782e29 "><samp class="ph codeph">mppiswriter</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d407782e31 ">boolean</td>
-<td class="entry" valign="top" width="85pt" headers="d407782e33 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d407782e35 ">Specifies whether the lock is held by a writer process.</td>
+<td class="entry" valign="top" width="131pt" headers="d408092e29 "><samp class="ph codeph">mppiswriter</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d408092e31 ">boolean</td>
+<td class="entry" valign="top" width="85pt" headers="d408092e33 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d408092e35 ">Specifies whether the lock is held by a writer process.</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d407782e29 "><samp class="ph codeph">gp_segment_id</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d407782e31 ">integer</td>
-<td class="entry" valign="top" width="85pt" headers="d407782e33 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d407782e35 ">The Greenplum segment id (<samp class="ph codeph">dbid</samp>)
+<td class="entry" valign="top" width="131pt" headers="d408092e29 "><samp class="ph codeph">gp_segment_id</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d408092e31 ">integer</td>
+<td class="entry" valign="top" width="85pt" headers="d408092e33 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d408092e35 ">The Greenplum segment id (<samp class="ph codeph">dbid</samp>)
               where the lock is held.</td>
 </tr>
 </tbody>

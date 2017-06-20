@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5901,7 +5919,7 @@
         </li>
 
         <li class="li" id="topic20__kk171548">
-          <a class="xref" href="#topic23">Export the Data Domain Path to the DCA Network</a>
+          <a class="xref" href="#topic23">Export the Data Domain Path to Greenplum Database Hosts</a>
         </li>
 
       </ul>
@@ -5915,9 +5933,9 @@
 
     <div class="body">
       <p class="p">Configure the distributed segment processing option on the Data Domain system. The
-        configuration applies to all the DCA servers and the Data Domain Boost plug-in installed on
-        them. This option is enabled by default, but verify that it is enabled before using Data
-        Domain Boost backups: </p>
+        configuration applies to all the Greenplum Database servers with the Data Domain Boost
+        plug-in installed on them. This option is enabled by default, but verify that it is enabled
+        before using Data Domain Boost backups: </p>
 
       <pre class="pre codeblock"># ddboost option show</pre>
 
@@ -6001,29 +6019,29 @@
   </div>
 
   <div class="topic nested1" xml:lang="en" lang="en" id="topic23">
-    <h2 class="title topictitle2">Export the Data Domain Path to the DCA Network</h2>
+    <h2 class="title topictitle2">Export the Data Domain Path to Greenplum Database Hosts</h2>
 
     <div class="body">
       <p class="p">The commands and options in this topic apply to DDOS 5.0.x and 5.1.x. See the Data Domain
         documentation for details.</p>
 
       <div class="p"> Use the following Data Domain commands to export the <samp class="ph codeph">/backup/ost</samp>
-        directory to the DCA for Data Domain Boost backups.
+        directory to a Greenplum Database host for Data Domain Boost backups.
           <pre class="pre codeblock"># nfs add /backup/ost 192.0.2.0/24, 198.51.100.0/24 (insecure)</pre>
 <div class="note note">
-<span class="notetitle">Note:</span> The IP addresses refer to the Greenplum system working with the Data Domain
-          Boost system.</div>
+<span class="notetitle">Note:</span> The IP addresses refer to the Greenplum Database system working with the Data
+          Domain Boost system.</div>
 </div>
 
     </div>
 
     <div class="topic nested2" xml:lang="en" lang="en" id="topic24">
       <h3 class="title topictitle3">
-        <span class="ph">Create the Data Domain Login Credentials for the DCA</span>
+        <span class="ph">Create the Data Domain Login Credentials for the Greenplum Database Host</span>
       </h3>
 
       <div class="body">
-        <p class="p"> Create a username and password for the DCA to access the DD Boost Storage Unit (SU) at
+        <p class="p"> Create a username and password for the host to access the DD Boost Storage Unit (SU) at
           the time of backup and restore: </p>
 
         <pre class="pre codeblock"># user add <var class="keyword varname">user</var> [password <var class="keyword varname">password</var>] [priv {admin | security | user}]</pre>

@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5627,13 +5645,13 @@
         
         <thead class="thead" align="left">
           <tr class="row">
-            <th class="entry" valign="top" width="131pt" id="d406382e39">column</th>
+            <th class="entry" valign="top" width="131pt" id="d406692e39">column</th>
 
-            <th class="entry" valign="top" width="86pt" id="d406382e42">type</th>
+            <th class="entry" valign="top" width="86pt" id="d406692e42">type</th>
 
-            <th class="entry" valign="top" width="85pt" id="d406382e45">references</th>
+            <th class="entry" valign="top" width="85pt" id="d406692e45">references</th>
 
-            <th class="entry" valign="top" width="147pt" id="d406382e48">description</th>
+            <th class="entry" valign="top" width="147pt" id="d406692e48">description</th>
 
           </tr>
 
@@ -5641,37 +5659,37 @@
 
         <tbody class="tbody">
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d406382e39 "><samp class="ph codeph">lanname</samp></td>
+            <td class="entry" valign="top" width="131pt" headers="d406692e39 "><samp class="ph codeph">lanname</samp></td>
 
-            <td class="entry" valign="top" width="86pt" headers="d406382e42 ">name</td>
+            <td class="entry" valign="top" width="86pt" headers="d406692e42 ">name</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d406382e45 "> </td>
+            <td class="entry" valign="top" width="85pt" headers="d406692e45 "> </td>
 
-            <td class="entry" valign="top" width="147pt" headers="d406382e48 ">Name of the language.</td>
+            <td class="entry" valign="top" width="147pt" headers="d406692e48 ">Name of the language.</td>
 
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d406382e39 ">
+            <td class="entry" valign="top" width="131pt" headers="d406692e39 ">
 <samp class="ph codeph">lanowner</samp>
             </td>
 
-            <td class="entry" valign="top" width="86pt" headers="d406382e42 ">oid</td>
+            <td class="entry" valign="top" width="86pt" headers="d406692e42 ">oid</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d406382e45 ">pg_authid.oid</td>
+            <td class="entry" valign="top" width="85pt" headers="d406692e45 ">pg_authid.oid</td>
 
-            <td class="entry" valign="top" width="147pt" headers="d406382e48 ">Owner of the language.</td>
+            <td class="entry" valign="top" width="147pt" headers="d406692e48 ">Owner of the language.</td>
 
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d406382e39 "><samp class="ph codeph">lanispl </samp></td>
+            <td class="entry" valign="top" width="131pt" headers="d406692e39 "><samp class="ph codeph">lanispl </samp></td>
 
-            <td class="entry" valign="top" width="86pt" headers="d406382e42 ">boolean</td>
+            <td class="entry" valign="top" width="86pt" headers="d406692e42 ">boolean</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d406382e45 "> </td>
+            <td class="entry" valign="top" width="85pt" headers="d406692e45 "> </td>
 
-            <td class="entry" valign="top" width="147pt" headers="d406382e48 ">This is false for internal languages (such as SQL) and true for
+            <td class="entry" valign="top" width="147pt" headers="d406692e48 ">This is false for internal languages (such as SQL) and true for
               user-defined languages. Currently, <samp class="ph codeph">pg_dump</samp> still uses this to
               determine which languages need to be dumped, but this may be replaced by a different
               mechanism in the future.</td>
@@ -5679,65 +5697,65 @@
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d406382e39 "><samp class="ph codeph">lanpltrusted </samp></td>
+            <td class="entry" valign="top" width="131pt" headers="d406692e39 "><samp class="ph codeph">lanpltrusted </samp></td>
 
-            <td class="entry" valign="top" width="86pt" headers="d406382e42 ">boolean</td>
+            <td class="entry" valign="top" width="86pt" headers="d406692e42 ">boolean</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d406382e45 "> </td>
+            <td class="entry" valign="top" width="85pt" headers="d406692e45 "> </td>
 
-            <td class="entry" valign="top" width="147pt" headers="d406382e48 ">True if this is a trusted language, which means that it is
+            <td class="entry" valign="top" width="147pt" headers="d406692e48 ">True if this is a trusted language, which means that it is
               believed not to grant access to anything outside the normal SQL execution environment.
               Only superusers may create functions in untrusted languages.</td>
 
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d406382e39 "><samp class="ph codeph">lanplcallfoid</samp></td>
+            <td class="entry" valign="top" width="131pt" headers="d406692e39 "><samp class="ph codeph">lanplcallfoid</samp></td>
 
-            <td class="entry" valign="top" width="86pt" headers="d406382e42 ">oid</td>
+            <td class="entry" valign="top" width="86pt" headers="d406692e42 ">oid</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d406382e45 ">pg_proc.oid</td>
+            <td class="entry" valign="top" width="85pt" headers="d406692e45 ">pg_proc.oid</td>
 
-            <td class="entry" valign="top" width="147pt" headers="d406382e48 ">For noninternal languages this references the language handler,
+            <td class="entry" valign="top" width="147pt" headers="d406692e48 ">For noninternal languages this references the language handler,
               which is a special function that is responsible for executing all functions that are
               written in the particular language.</td>
 
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d406382e39 "><samp class="ph codeph">laninline</samp></td>
+            <td class="entry" valign="top" width="131pt" headers="d406692e39 "><samp class="ph codeph">laninline</samp></td>
 
-            <td class="entry" valign="top" width="86pt" headers="d406382e42 ">oid</td>
+            <td class="entry" valign="top" width="86pt" headers="d406692e42 ">oid</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d406382e45 ">pg_proc.oid</td>
+            <td class="entry" valign="top" width="85pt" headers="d406692e45 ">pg_proc.oid</td>
 
-            <td class="entry" valign="top" width="147pt" headers="d406382e48 ">This references a function that is responsible for executing
+            <td class="entry" valign="top" width="147pt" headers="d406692e48 ">This references a function that is responsible for executing
               inline anonymous code blocks (see the <samp class="ph codeph"><a class="xref" href="../sql_commands/DO.html#topic1">DO</a></samp> command). Zero if anonymous blocks
               are not supported.</td>
 
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d406382e39 "><samp class="ph codeph">lanvalidator</samp></td>
+            <td class="entry" valign="top" width="131pt" headers="d406692e39 "><samp class="ph codeph">lanvalidator</samp></td>
 
-            <td class="entry" valign="top" width="86pt" headers="d406382e42 ">oid</td>
+            <td class="entry" valign="top" width="86pt" headers="d406692e42 ">oid</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d406382e45 ">pg_proc.oid</td>
+            <td class="entry" valign="top" width="85pt" headers="d406692e45 ">pg_proc.oid</td>
 
-            <td class="entry" valign="top" width="147pt" headers="d406382e48 ">This references a language validator function that is responsible
+            <td class="entry" valign="top" width="147pt" headers="d406692e48 ">This references a language validator function that is responsible
               for checking the syntax and validity of new functions when they are created. Zero if
               no validator is provided.</td>
 
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d406382e39 "><samp class="ph codeph">lanacl </samp></td>
+            <td class="entry" valign="top" width="131pt" headers="d406692e39 "><samp class="ph codeph">lanacl </samp></td>
 
-            <td class="entry" valign="top" width="86pt" headers="d406382e42 ">aclitem[]</td>
+            <td class="entry" valign="top" width="86pt" headers="d406692e42 ">aclitem[]</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d406382e45 "> </td>
+            <td class="entry" valign="top" width="85pt" headers="d406692e45 "> </td>
 
-            <td class="entry" valign="top" width="147pt" headers="d406382e48 ">Access privileges for the language.</td>
+            <td class="entry" valign="top" width="147pt" headers="d406692e48 ">Access privileges for the language.</td>
 
           </tr>
 

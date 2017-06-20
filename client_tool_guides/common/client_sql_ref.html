@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5682,6 +5700,54 @@ ALTER DOMAIN <var class="keyword varname">name</var> DROP CONSTRAINT <var class=
 ALTER DOMAIN <var class="keyword varname">name</var> OWNER TO <var class="keyword varname">new_owner</var>
 
 ALTER DOMAIN <var class="keyword varname">name</var> SET SCHEMA <var class="keyword varname">new_schema</var></pre>
+
+        <div class="section">
+<h2 class="title sectiontitle">ALTER EXTENSION</h2>
+            
+        </div>
+
+        <p class="p">Change the definition of an extension that is registered in a Greenplum
+      database.</p>
+
+        <pre class="pre codeblock">ALTER EXTENSION <var class="keyword varname">name</var> UPDATE [ TO <var class="keyword varname">new_version</var> ]
+ALTER EXTENSION <var class="keyword varname">name</var> SET SCHEMA <var class="keyword varname">new_schema</var>
+ALTER EXTENSION <var class="keyword varname">name</var> ADD <var class="keyword varname">member_object</var>
+ALTER EXTENSION <var class="keyword varname">name</var> DROP <var class="keyword varname">member_object</var>
+
+where <var class="keyword varname">member_object</var> is:
+
+  ACCESS METHOD <var class="keyword varname">object_name</var> |
+  AGGREGATE <var class="keyword varname">aggregate_name</var> ( <var class="keyword varname">aggregate_signature</var> ) |
+  CAST (<var class="keyword varname">source_type</var> AS <var class="keyword varname">target_type</var>) |
+  COLLATION <var class="keyword varname">object_name</var> |
+  CONVERSION <var class="keyword varname">object_name</var> |
+  DOMAIN <var class="keyword varname">object_name</var> |
+  EVENT TRIGGER <var class="keyword varname">object_name</var> |
+  FOREIGN DATA WRAPPER <var class="keyword varname">object_name</var> |
+  FOREIGN TABLE <var class="keyword varname">object_name</var> |
+  FUNCTION <var class="keyword varname">function_name</var> ( [ [ <var class="keyword varname">argmode</var> ] [ <var class="keyword varname">argname</var> ] <var class="keyword varname">argtype</var> [, ...] ] ) |
+  MATERIALIZED VIEW <var class="keyword varname">object_name</var> |
+  OPERATOR <var class="keyword varname">operator_name</var> (<var class="keyword varname">left_type</var>, <var class="keyword varname">right_type</var>) |
+  OPERATOR CLASS <var class="keyword varname">object_name</var> USING <var class="keyword varname">index_method</var> |
+  OPERATOR FAMILY <var class="keyword varname">object_name</var> USING <var class="keyword varname">index_method</var> |
+  [ PROCEDURAL ] LANGUAGE <var class="keyword varname">object_name</var> |
+  SCHEMA <var class="keyword varname">object_name</var> |
+  SEQUENCE <var class="keyword varname">object_name</var> |
+  SERVER <var class="keyword varname">object_name</var> |
+  TABLE <var class="keyword varname">object_name</var> |
+  TEXT SEARCH CONFIGURATION <var class="keyword varname">object_name</var> |
+  TEXT SEARCH DICTIONARY <var class="keyword varname">object_name</var> |
+  TEXT SEARCH PARSER <var class="keyword varname">object_name</var> |
+  TEXT SEARCH TEMPLATE <var class="keyword varname">object_name</var> |
+  TRANSFORM FOR <var class="keyword varname">type_name</var> LANGUAGE <var class="keyword varname">lang_name</var> |
+  TYPE <var class="keyword varname">object_name</var> |
+  VIEW <var class="keyword varname">object_name</var>
+
+and <var class="keyword varname">aggregate_signature</var> is:
+
+* | [ <var class="keyword varname">argmode</var> ] [ <var class="keyword varname">argname</var> ] <var class="keyword varname">argtype</var> [ , ... ] |
+  [ [ <var class="keyword varname">argmode</var> ] [ <var class="keyword varname">argname</var> ] <var class="keyword varname">argtype</var> [ , ... ] ] 
+    ORDER BY [ <var class="keyword varname">argmode</var> ] [ <var class="keyword varname">argname</var> ] <var class="keyword varname">argtype</var> [ , ... ]</pre>
 
         <div class="section" id="topic1__ae1903351">
 <h2 class="title sectiontitle">ALTER EXTERNAL TABLE</h2>
@@ -6106,6 +6172,19 @@ CREATE CAST (<var class="keyword varname">sourcetype</var> AS <var class="keywor
        [CONSTRAINT <var class="keyword varname">constraint_name</var>
        | NOT NULL | NULL 
        | CHECK (<var class="keyword varname">expression</var>) [...]]</pre>
+
+        <div class="section">
+<h2 class="title sectiontitle">CREATE EXTENSION</h2>
+            
+        </div>
+
+        <p class="p">Registers an extension in a Greenplum database.</p>
+
+        <pre class="pre codeblock">CREATE EXTENSION [ IF NOT EXISTS ] <var class="keyword varname">extension_name</var>
+  [ WITH ] [ SCHEMA <var class="keyword varname">schema_name</var> ]
+           [ VERSION <var class="keyword varname">version</var> ]
+           [ FROM <var class="keyword varname">old_version</var> ]
+           [ CASCADE ]</pre>
 
         <div class="section" id="topic1__ae1904025">
 <h2 class="title sectiontitle">CREATE EXTERNAL TABLE</h2>
@@ -6580,6 +6659,15 @@ by default.</p>
         <p class="p">Removes a domain.</p>
 
         <pre class="pre codeblock">DROP DOMAIN [IF EXISTS] <var class="keyword varname">name</var> [, ...]  [CASCADE | RESTRICT]</pre>
+
+        <div class="section">
+<h2 class="title sectiontitle">DROP EXTENSION</h2>
+            
+        </div>
+
+        <p class="p">Removes an extension from a Greenplum database.</p>
+
+        <pre class="pre codeblock">DROP EXTENSION [ IF EXISTS ] <var class="keyword varname">name</var> [, ...] [ CASCADE | RESTRICT ]</pre>
 
         <div class="section" id="topic1__ae1904845">
 <h2 class="title sectiontitle">DROP EXTERNAL TABLE</h2>

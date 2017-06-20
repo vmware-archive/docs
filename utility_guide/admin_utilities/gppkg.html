@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5615,7 +5633,8 @@
     <h1 class="title topictitle1">gppkg</h1>
 
     <div class="body">
-        <p class="p">Installs Greenplum Database extensions such as PostGIS and MADlib, along with their
+        <p class="p">Installs Greenplum Database extensions in <samp class="ph codeph">.gppkg</samp> format, such as
+            PL/Java, PL/R, and MADlib, along with their
             dependencies, across an entire cluster.</p>
 
         <div class="section" id="topic1__section2">
@@ -5642,28 +5661,11 @@
                 will also automatically install extensions on new hosts in the case of system
                 expansion and segment recovery.</p>
 
-            <p class="p">First, download one or more of the available packages from <a class="xref" href="https://network.pivotal.io" target="_blank">Pivotal Network</a> then copy it to the master host. Use the Greenplum
-                Package Manager to install each package using the options described below.</p>
-
             <div class="note note">
 <span class="notetitle">Note:</span> After a major upgrade to Greenplum Database, you must download and
-                install all extensions again.</div>
+                install all <samp class="ph codeph">gppkg</samp> extensions again.</div>
 
-            <p class="p">Examples of database extensions and packages software that are delivered using the
-                Greenplum Package Manager are:</p>
-
-            <ul class="ul">
-                <li class="li" id="topic1__jt141959">PostGIS</li>
-
-                <li class="li" id="topic1__jt142629">MADlib</li>
-
-            </ul>
-
-            <p class="p">Note that Greenplum Package Manager installation files for extension packages might
-                release outside of standard product release cycles. Current packages are available
-                from <a class="xref" href="https://network.pivotal.io" target="_blank">Pivotal Network</a>. Information about package compatibility is
-                the <cite class="cite">Greenplum Database Release Notes</cite>.</p>
-
+            
         </div>
 
         <div class="section" id="topic1__section4">
@@ -5709,8 +5711,9 @@
                     <dd class="dd pd">Migrates packages from a separate <samp class="ph codeph">$GPHOME</samp>. Carries over
                         packages from one version of Greenplum Database to another.</dd>
 
-                    <dd class="dd pd">For example: <samp class="ph codeph">gppkg --migrate /usr/local/greenplum-db-4.2.0.1
-                            /usr/local/greenplum-db-4.2.1.0</samp>
+                    <dd class="dd pd">For example: <samp class="ph codeph">gppkg --migrate
+                            /usr/local/greenplum-db-&lt;old-version&gt;
+                            /usr/local/greenplum-db-&lt;new-version&gt;</samp>
 </dd>
 
                     <dd class="dd pd">This option is automatically invoked by the installer during minor upgrades.
@@ -5738,9 +5741,9 @@
                                 
                                 <thead class="thead" align="left">
                                     <tr class="row">
-                                        <th class="entry" valign="top" width="144pt" id="d462845e281">query_option</th>
+                                        <th class="entry" valign="top" width="144pt" id="d463305e257">query_option</th>
 
-                                        <th class="entry" valign="top" width="165pt" id="d462845e284">Returns</th>
+                                        <th class="entry" valign="top" width="165pt" id="d463305e260">Returns</th>
 
                                     </tr>
 
@@ -5748,35 +5751,35 @@
 
                                 <tbody class="tbody">
                                     <tr class="row">
-                                        <td class="entry" valign="top" width="144pt" headers="d462845e281 "><samp class="ph codeph">&lt;package_file&gt;</samp></td>
+                                        <td class="entry" valign="top" width="144pt" headers="d463305e257 "><samp class="ph codeph">&lt;package_file&gt;</samp></td>
 
-                                        <td class="entry" valign="top" width="165pt" headers="d462845e284 ">Whether the specified package is
+                                        <td class="entry" valign="top" width="165pt" headers="d463305e260 ">Whether the specified package is
                                             installed.</td>
 
                                     </tr>
 
                                     <tr class="row">
-                                        <td class="entry" valign="top" width="144pt" headers="d462845e281 "><samp class="ph codeph">--info
+                                        <td class="entry" valign="top" width="144pt" headers="d463305e257 "><samp class="ph codeph">--info
                                                 &lt;package_file&gt;</samp></td>
 
-                                        <td class="entry" valign="top" width="165pt" headers="d462845e284 ">The name, version, and other
+                                        <td class="entry" valign="top" width="165pt" headers="d463305e260 ">The name, version, and other
                                             information about the specified package.</td>
 
                                     </tr>
 
                                     <tr class="row">
-                                        <td class="entry" valign="top" width="144pt" headers="d462845e281 "><samp class="ph codeph">--list
+                                        <td class="entry" valign="top" width="144pt" headers="d463305e257 "><samp class="ph codeph">--list
                                                 &lt;package_file&gt;</samp></td>
 
-                                        <td class="entry" valign="top" width="165pt" headers="d462845e284 ">The file contents of the specified
+                                        <td class="entry" valign="top" width="165pt" headers="d463305e260 ">The file contents of the specified
                                             package.</td>
 
                                     </tr>
 
                                     <tr class="row">
-                                        <td class="entry" valign="top" width="144pt" headers="d462845e281 "><samp class="ph codeph">--all</samp></td>
+                                        <td class="entry" valign="top" width="144pt" headers="d463305e257 "><samp class="ph codeph">--all</samp></td>
 
-                                        <td class="entry" valign="top" width="165pt" headers="d462845e284 ">List of all installed
+                                        <td class="entry" valign="top" width="165pt" headers="d463305e260 ">List of all installed
                                             packages.</td>
 
                                     </tr>

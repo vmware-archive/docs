@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5629,13 +5647,13 @@
         
         <thead class="thead" align="left">
           <tr class="row">
-            <th class="entry" valign="top" width="131pt" id="d431828e39">column</th>
+            <th class="entry" valign="top" width="131pt" id="d432382e39">column</th>
 
-            <th class="entry" valign="top" width="86pt" id="d431828e42">type</th>
+            <th class="entry" valign="top" width="86pt" id="d432382e42">type</th>
 
-            <th class="entry" valign="top" width="85pt" id="d431828e45">references</th>
+            <th class="entry" valign="top" width="85pt" id="d432382e45">references</th>
 
-            <th class="entry" valign="top" width="147pt" id="d431828e48">description</th>
+            <th class="entry" valign="top" width="147pt" id="d432382e48">description</th>
 
           </tr>
 
@@ -5643,157 +5661,157 @@
 
         <tbody class="tbody">
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d431828e39 "><samp class="ph codeph">tgrelid</samp></td>
+            <td class="entry" valign="top" width="131pt" headers="d432382e39 "><samp class="ph codeph">tgrelid</samp></td>
 
-            <td class="entry" valign="top" width="86pt" headers="d431828e42 ">oid </td>
+            <td class="entry" valign="top" width="86pt" headers="d432382e42 ">oid </td>
 
-            <td class="entry" valign="top" width="85pt" headers="d431828e45 ">
+            <td class="entry" valign="top" width="85pt" headers="d432382e45 ">
 <em class="ph i">pg_class.oid</em><p class="p">Note that Greenplum Database
                 does not enforce referential integrity.</p>
 </td>
 
-            <td class="entry" valign="top" width="147pt" headers="d431828e48 ">The table this trigger is on.</td>
+            <td class="entry" valign="top" width="147pt" headers="d432382e48 ">The table this trigger is on.</td>
 
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d431828e39 "><samp class="ph codeph">tgname</samp></td>
+            <td class="entry" valign="top" width="131pt" headers="d432382e39 "><samp class="ph codeph">tgname</samp></td>
 
-            <td class="entry" valign="top" width="86pt" headers="d431828e42 ">name</td>
+            <td class="entry" valign="top" width="86pt" headers="d432382e42 ">name</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d431828e45 "> </td>
+            <td class="entry" valign="top" width="85pt" headers="d432382e45 "> </td>
 
-            <td class="entry" valign="top" width="147pt" headers="d431828e48 ">Trigger name (must be unique among triggers of same
+            <td class="entry" valign="top" width="147pt" headers="d432382e48 ">Trigger name (must be unique among triggers of same
               table).</td>
 
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d431828e39 "><samp class="ph codeph">tgfoid</samp></td>
+            <td class="entry" valign="top" width="131pt" headers="d432382e39 "><samp class="ph codeph">tgfoid</samp></td>
 
-            <td class="entry" valign="top" width="86pt" headers="d431828e42 ">oid</td>
+            <td class="entry" valign="top" width="86pt" headers="d432382e42 ">oid</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d431828e45 ">
+            <td class="entry" valign="top" width="85pt" headers="d432382e45 ">
 <em class="ph i">pg_proc.oid</em><p class="p">Note that Greenplum Database
                 does not enforce referential integrity.</p>
 </td>
 
-            <td class="entry" valign="top" width="147pt" headers="d431828e48 ">The function to be called.</td>
+            <td class="entry" valign="top" width="147pt" headers="d432382e48 ">The function to be called.</td>
 
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d431828e39 "><samp class="ph codeph">tgtype</samp></td>
+            <td class="entry" valign="top" width="131pt" headers="d432382e39 "><samp class="ph codeph">tgtype</samp></td>
 
-            <td class="entry" valign="top" width="86pt" headers="d431828e42 ">int2</td>
+            <td class="entry" valign="top" width="86pt" headers="d432382e42 ">int2</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d431828e45 "> </td>
+            <td class="entry" valign="top" width="85pt" headers="d432382e45 "> </td>
 
-            <td class="entry" valign="top" width="147pt" headers="d431828e48 ">Bit mask identifying trigger conditions.</td>
-
-          </tr>
-
-          <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d431828e39 "><samp class="ph codeph">tgenabled</samp></td>
-
-            <td class="entry" valign="top" width="86pt" headers="d431828e42 ">boolean</td>
-
-            <td class="entry" valign="top" width="85pt" headers="d431828e45 "> </td>
-
-            <td class="entry" valign="top" width="147pt" headers="d431828e48 ">True if trigger is enabled.</td>
+            <td class="entry" valign="top" width="147pt" headers="d432382e48 ">Bit mask identifying trigger conditions.</td>
 
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d431828e39 "><samp class="ph codeph">tgisconstraint</samp></td>
+            <td class="entry" valign="top" width="131pt" headers="d432382e39 "><samp class="ph codeph">tgenabled</samp></td>
 
-            <td class="entry" valign="top" width="86pt" headers="d431828e42 ">boolean</td>
+            <td class="entry" valign="top" width="86pt" headers="d432382e42 ">boolean</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d431828e45 "> </td>
+            <td class="entry" valign="top" width="85pt" headers="d432382e45 "> </td>
 
-            <td class="entry" valign="top" width="147pt" headers="d431828e48 ">True if trigger implements a referential integrity
+            <td class="entry" valign="top" width="147pt" headers="d432382e48 ">True if trigger is enabled.</td>
+
+          </tr>
+
+          <tr class="row">
+            <td class="entry" valign="top" width="131pt" headers="d432382e39 "><samp class="ph codeph">tgisconstraint</samp></td>
+
+            <td class="entry" valign="top" width="86pt" headers="d432382e42 ">boolean</td>
+
+            <td class="entry" valign="top" width="85pt" headers="d432382e45 "> </td>
+
+            <td class="entry" valign="top" width="147pt" headers="d432382e48 ">True if trigger implements a referential integrity
               constraint.</td>
 
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d431828e39 "><samp class="ph codeph">tgconstrname</samp></td>
+            <td class="entry" valign="top" width="131pt" headers="d432382e39 "><samp class="ph codeph">tgconstrname</samp></td>
 
-            <td class="entry" valign="top" width="86pt" headers="d431828e42 ">name</td>
+            <td class="entry" valign="top" width="86pt" headers="d432382e42 ">name</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d431828e45 "> </td>
+            <td class="entry" valign="top" width="85pt" headers="d432382e45 "> </td>
 
-            <td class="entry" valign="top" width="147pt" headers="d431828e48 ">Referential integrity constraint name.</td>
+            <td class="entry" valign="top" width="147pt" headers="d432382e48 ">Referential integrity constraint name.</td>
 
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d431828e39 "><samp class="ph codeph">tgconstrrelid</samp></td>
+            <td class="entry" valign="top" width="131pt" headers="d432382e39 "><samp class="ph codeph">tgconstrrelid</samp></td>
 
-            <td class="entry" valign="top" width="86pt" headers="d431828e42 ">oid</td>
+            <td class="entry" valign="top" width="86pt" headers="d432382e42 ">oid</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d431828e45 ">
+            <td class="entry" valign="top" width="85pt" headers="d432382e45 ">
 <em class="ph i">pg_class.oid</em><p class="p">Note that Greenplum Database
                 does not enforce referential integrity.</p>
 </td>
 
-            <td class="entry" valign="top" width="147pt" headers="d431828e48 ">The table referenced by an referential integrity
+            <td class="entry" valign="top" width="147pt" headers="d432382e48 ">The table referenced by an referential integrity
               constraint.</td>
 
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d431828e39 "><samp class="ph codeph">tgdeferrable</samp></td>
+            <td class="entry" valign="top" width="131pt" headers="d432382e39 "><samp class="ph codeph">tgdeferrable</samp></td>
 
-            <td class="entry" valign="top" width="86pt" headers="d431828e42 ">boolean</td>
+            <td class="entry" valign="top" width="86pt" headers="d432382e42 ">boolean</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d431828e45 "> </td>
+            <td class="entry" valign="top" width="85pt" headers="d432382e45 "> </td>
 
-            <td class="entry" valign="top" width="147pt" headers="d431828e48 ">True if deferrable.</td>
-
-          </tr>
-
-          <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d431828e39 "><samp class="ph codeph">tginitdeferred</samp></td>
-
-            <td class="entry" valign="top" width="86pt" headers="d431828e42 ">boolean</td>
-
-            <td class="entry" valign="top" width="85pt" headers="d431828e45 "> </td>
-
-            <td class="entry" valign="top" width="147pt" headers="d431828e48 ">True if initially deferred.</td>
+            <td class="entry" valign="top" width="147pt" headers="d432382e48 ">True if deferrable.</td>
 
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d431828e39 "><samp class="ph codeph">tgnargs</samp></td>
+            <td class="entry" valign="top" width="131pt" headers="d432382e39 "><samp class="ph codeph">tginitdeferred</samp></td>
 
-            <td class="entry" valign="top" width="86pt" headers="d431828e42 ">int2</td>
+            <td class="entry" valign="top" width="86pt" headers="d432382e42 ">boolean</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d431828e45 "> </td>
+            <td class="entry" valign="top" width="85pt" headers="d432382e45 "> </td>
 
-            <td class="entry" valign="top" width="147pt" headers="d431828e48 ">Number of argument strings passed to trigger function.</td>
-
-          </tr>
-
-          <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d431828e39 "><samp class="ph codeph">tgattr</samp></td>
-
-            <td class="entry" valign="top" width="86pt" headers="d431828e42 ">int2vector</td>
-
-            <td class="entry" valign="top" width="85pt" headers="d431828e45 "> </td>
-
-            <td class="entry" valign="top" width="147pt" headers="d431828e48 ">Currently not used.</td>
+            <td class="entry" valign="top" width="147pt" headers="d432382e48 ">True if initially deferred.</td>
 
           </tr>
 
           <tr class="row">
-            <td class="entry" valign="top" width="131pt" headers="d431828e39 "><samp class="ph codeph">tgargs</samp></td>
+            <td class="entry" valign="top" width="131pt" headers="d432382e39 "><samp class="ph codeph">tgnargs</samp></td>
 
-            <td class="entry" valign="top" width="86pt" headers="d431828e42 ">bytea</td>
+            <td class="entry" valign="top" width="86pt" headers="d432382e42 ">int2</td>
 
-            <td class="entry" valign="top" width="85pt" headers="d431828e45 "> </td>
+            <td class="entry" valign="top" width="85pt" headers="d432382e45 "> </td>
 
-            <td class="entry" valign="top" width="147pt" headers="d431828e48 ">Argument strings to pass to trigger, each NULL-terminated.</td>
+            <td class="entry" valign="top" width="147pt" headers="d432382e48 ">Number of argument strings passed to trigger function.</td>
+
+          </tr>
+
+          <tr class="row">
+            <td class="entry" valign="top" width="131pt" headers="d432382e39 "><samp class="ph codeph">tgattr</samp></td>
+
+            <td class="entry" valign="top" width="86pt" headers="d432382e42 ">int2vector</td>
+
+            <td class="entry" valign="top" width="85pt" headers="d432382e45 "> </td>
+
+            <td class="entry" valign="top" width="147pt" headers="d432382e48 ">Currently not used.</td>
+
+          </tr>
+
+          <tr class="row">
+            <td class="entry" valign="top" width="131pt" headers="d432382e39 "><samp class="ph codeph">tgargs</samp></td>
+
+            <td class="entry" valign="top" width="86pt" headers="d432382e42 ">bytea</td>
+
+            <td class="entry" valign="top" width="85pt" headers="d432382e45 "> </td>
+
+            <td class="entry" valign="top" width="147pt" headers="d432382e48 ">Argument strings to pass to trigger, each NULL-terminated.</td>
 
           </tr>
 

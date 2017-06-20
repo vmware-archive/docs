@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5627,102 +5645,102 @@ can be controlled with the server configuration parameter <samp class="ph codeph
 <caption><span class="tablecap">Table 1. pg_catalog.pg_stat_activity</span></caption>
 <thead class="thead" align="left">
 <tr class="row">
-<th class="entry" valign="top" width="131pt" id="d424243e34">column</th>
-<th class="entry" valign="top" width="86pt" id="d424243e36">type</th>
-<th class="entry" valign="top" width="85pt" id="d424243e38">references</th>
-<th class="entry" valign="top" width="147pt" id="d424243e40">description</th>
+<th class="entry" valign="top" width="131pt" id="d424797e34">column</th>
+<th class="entry" valign="top" width="86pt" id="d424797e36">type</th>
+<th class="entry" valign="top" width="85pt" id="d424797e38">references</th>
+<th class="entry" valign="top" width="147pt" id="d424797e40">description</th>
 </tr>
 </thead>
 <tbody class="tbody">
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d424243e34 "><samp class="ph codeph">datid</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d424243e36 ">oid</td>
-<td class="entry" valign="top" width="85pt" headers="d424243e38 ">pg_database.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d424243e40 ">Database OID</td>
+<td class="entry" valign="top" width="131pt" headers="d424797e34 "><samp class="ph codeph">datid</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d424797e36 ">oid</td>
+<td class="entry" valign="top" width="85pt" headers="d424797e38 ">pg_database.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d424797e40 ">Database OID</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d424243e34 "><samp class="ph codeph">datname</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d424243e36 ">name</td>
-<td class="entry" valign="top" width="85pt" headers="d424243e38 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d424243e40 ">Database name</td>
+<td class="entry" valign="top" width="131pt" headers="d424797e34 "><samp class="ph codeph">datname</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d424797e36 ">name</td>
+<td class="entry" valign="top" width="85pt" headers="d424797e38 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d424797e40 ">Database name</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d424243e34 "><samp class="ph codeph">procpid</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d424243e36 ">integer</td>
-<td class="entry" valign="top" width="85pt" headers="d424243e38 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d424243e40 ">Process ID of the server process</td>
+<td class="entry" valign="top" width="131pt" headers="d424797e34 "><samp class="ph codeph">procpid</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d424797e36 ">integer</td>
+<td class="entry" valign="top" width="85pt" headers="d424797e38 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d424797e40 ">Process ID of the server process</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d424243e34 "><samp class="ph codeph">sess_id</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d424243e36 ">integer</td>
-<td class="entry" valign="top" width="85pt" headers="d424243e38 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d424243e40 ">Session ID</td>
+<td class="entry" valign="top" width="131pt" headers="d424797e34 "><samp class="ph codeph">sess_id</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d424797e36 ">integer</td>
+<td class="entry" valign="top" width="85pt" headers="d424797e38 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d424797e40 ">Session ID</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d424243e34 "><samp class="ph codeph">usesysid</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d424243e36 ">oid</td>
-<td class="entry" valign="top" width="85pt" headers="d424243e38 ">pg_authid.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d424243e40 ">Role OID</td>
+<td class="entry" valign="top" width="131pt" headers="d424797e34 "><samp class="ph codeph">usesysid</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d424797e36 ">oid</td>
+<td class="entry" valign="top" width="85pt" headers="d424797e38 ">pg_authid.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d424797e40 ">Role OID</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d424243e34 "><samp class="ph codeph">usename</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d424243e36 ">name</td>
-<td class="entry" valign="top" width="85pt" headers="d424243e38 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d424243e40 ">Role name</td>
+<td class="entry" valign="top" width="131pt" headers="d424797e34 "><samp class="ph codeph">usename</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d424797e36 ">name</td>
+<td class="entry" valign="top" width="85pt" headers="d424797e38 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d424797e40 ">Role name</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d424243e34 "><samp class="ph codeph">current_query</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d424243e36 ">text</td>
-<td class="entry" valign="top" width="85pt" headers="d424243e38 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d424243e40 ">Current query that process is running</td>
+<td class="entry" valign="top" width="131pt" headers="d424797e34 "><samp class="ph codeph">current_query</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d424797e36 ">text</td>
+<td class="entry" valign="top" width="85pt" headers="d424797e38 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d424797e40 ">Current query that process is running</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d424243e34 "><samp class="ph codeph">waiting</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d424243e36 ">boolean</td>
-<td class="entry" valign="top" width="85pt" headers="d424243e38 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d424243e40 ">True if waiting on a lock, false if not waiting</td>
+<td class="entry" valign="top" width="131pt" headers="d424797e34 "><samp class="ph codeph">waiting</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d424797e36 ">boolean</td>
+<td class="entry" valign="top" width="85pt" headers="d424797e38 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d424797e40 ">True if waiting on a lock, false if not waiting</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d424243e34 "><samp class="ph codeph">query_start</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d424243e36 ">timestampz</td>
-<td class="entry" valign="top" width="85pt" headers="d424243e38 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d424243e40 ">Time query began execution</td>
+<td class="entry" valign="top" width="131pt" headers="d424797e34 "><samp class="ph codeph">query_start</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d424797e36 ">timestamptz</td>
+<td class="entry" valign="top" width="85pt" headers="d424797e38 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d424797e40 ">Time query began execution</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d424243e34 "><samp class="ph codeph">backend_start</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d424243e36 ">timestampz</td>
-<td class="entry" valign="top" width="85pt" headers="d424243e38 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d424243e40 ">Time backend process was started</td>
+<td class="entry" valign="top" width="131pt" headers="d424797e34 "><samp class="ph codeph">backend_start</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d424797e36 ">timestamptz</td>
+<td class="entry" valign="top" width="85pt" headers="d424797e38 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d424797e40 ">Time backend process was started</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d424243e34 "><samp class="ph codeph">client_addr</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d424243e36 ">inet</td>
-<td class="entry" valign="top" width="85pt" headers="d424243e38 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d424243e40 ">Client address</td>
+<td class="entry" valign="top" width="131pt" headers="d424797e34 "><samp class="ph codeph">client_addr</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d424797e36 ">inet</td>
+<td class="entry" valign="top" width="85pt" headers="d424797e38 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d424797e40 ">Client address</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d424243e34 "><samp class="ph codeph">client_port</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d424243e36 ">integer</td>
-<td class="entry" valign="top" width="85pt" headers="d424243e38 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d424243e40 ">Client port</td>
+<td class="entry" valign="top" width="131pt" headers="d424797e34 "><samp class="ph codeph">client_port</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d424797e36 ">integer</td>
+<td class="entry" valign="top" width="85pt" headers="d424797e38 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d424797e40 ">Client port</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d424243e34 "><samp class="ph codeph">application_name</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d424243e36 ">text</td>
-<td class="entry" valign="top" width="85pt" headers="d424243e38 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d424243e40 ">Client application name</td>
+<td class="entry" valign="top" width="131pt" headers="d424797e34 "><samp class="ph codeph">application_name</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d424797e36 ">text</td>
+<td class="entry" valign="top" width="85pt" headers="d424797e38 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d424797e40 ">Client application name</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d424243e34 "><samp class="ph codeph">xact_start</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d424243e36 ">timestampz</td>
-<td class="entry" valign="top" width="85pt" headers="d424243e38 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d424243e40 ">Transaction start time</td>
+<td class="entry" valign="top" width="131pt" headers="d424797e34 "><samp class="ph codeph">xact_start</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d424797e36 ">timestamptz</td>
+<td class="entry" valign="top" width="85pt" headers="d424797e38 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d424797e40 ">Transaction start time</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d424243e34 "><samp class="ph codeph">waiting_reason</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d424243e36 ">text</td>
-<td class="entry" valign="top" width="85pt" headers="d424243e38 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d424243e40 ">Reason the server process is waiting. The value
+<td class="entry" valign="top" width="131pt" headers="d424797e34 "><samp class="ph codeph">waiting_reason</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d424797e36 ">text</td>
+<td class="entry" valign="top" width="85pt" headers="d424797e38 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d424797e40 ">Reason the server process is waiting. The value
 can be:<p class="p">lock replication</p>
 </td>
 </tr>

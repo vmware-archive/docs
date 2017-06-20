@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5621,57 +5639,57 @@ be true if a table has any rules in this catalog.</p>
 <caption><span class="tablecap">Table 1. pg_catalog.pg_rewrite</span></caption>
 <thead class="thead" align="left">
 <tr class="row">
-<th class="entry" valign="top" width="131pt" id="d421227e26">column</th>
-<th class="entry" valign="top" width="86pt" id="d421227e28">type</th>
-<th class="entry" valign="top" width="85pt" id="d421227e30">references</th>
-<th class="entry" valign="top" width="147pt" id="d421227e32">description</th>
+<th class="entry" valign="top" width="131pt" id="d421781e26">column</th>
+<th class="entry" valign="top" width="86pt" id="d421781e28">type</th>
+<th class="entry" valign="top" width="85pt" id="d421781e30">references</th>
+<th class="entry" valign="top" width="147pt" id="d421781e32">description</th>
 </tr>
 </thead>
 <tbody class="tbody">
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d421227e26 "><samp class="ph codeph">rulename</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d421227e28 ">name</td>
-<td class="entry" valign="top" width="85pt" headers="d421227e30 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d421227e32 ">Rule name.</td>
+<td class="entry" valign="top" width="131pt" headers="d421781e26 "><samp class="ph codeph">rulename</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d421781e28 ">name</td>
+<td class="entry" valign="top" width="85pt" headers="d421781e30 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d421781e32 ">Rule name.</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d421227e26 "><samp class="ph codeph">ev_class</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d421227e28 ">oid</td>
-<td class="entry" valign="top" width="85pt" headers="d421227e30 ">pg_class.oid</td>
-<td class="entry" valign="top" width="147pt" headers="d421227e32 ">The table this rule is for.</td>
+<td class="entry" valign="top" width="131pt" headers="d421781e26 "><samp class="ph codeph">ev_class</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d421781e28 ">oid</td>
+<td class="entry" valign="top" width="85pt" headers="d421781e30 ">pg_class.oid</td>
+<td class="entry" valign="top" width="147pt" headers="d421781e32 ">The table this rule is for.</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d421227e26 "><samp class="ph codeph">ev_attr</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d421227e28 ">int2</td>
-<td class="entry" valign="top" width="85pt" headers="d421227e30 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d421227e32 ">The column this rule is for (currently, always
+<td class="entry" valign="top" width="131pt" headers="d421781e26 "><samp class="ph codeph">ev_attr</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d421781e28 ">int2</td>
+<td class="entry" valign="top" width="85pt" headers="d421781e30 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d421781e32 ">The column this rule is for (currently, always
 zero to indicate the whole table).</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d421227e26 "><samp class="ph codeph">ev_type </samp></td>
-<td class="entry" valign="top" width="86pt" headers="d421227e28 ">char</td>
-<td class="entry" valign="top" width="85pt" headers="d421227e30 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d421227e32 ">Event type that the rule is for: 1 = SELECT,
+<td class="entry" valign="top" width="131pt" headers="d421781e26 "><samp class="ph codeph">ev_type </samp></td>
+<td class="entry" valign="top" width="86pt" headers="d421781e28 ">char</td>
+<td class="entry" valign="top" width="85pt" headers="d421781e30 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d421781e32 ">Event type that the rule is for: 1 = SELECT,
 2 = UPDATE, 3 = INSERT, 4 = DELETE.</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d421227e26 "><samp class="ph codeph">is_instead</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d421227e28 ">boolean</td>
-<td class="entry" valign="top" width="85pt" headers="d421227e30 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d421227e32 ">True if the rule is an INSTEAD rule.</td>
+<td class="entry" valign="top" width="131pt" headers="d421781e26 "><samp class="ph codeph">is_instead</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d421781e28 ">boolean</td>
+<td class="entry" valign="top" width="85pt" headers="d421781e30 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d421781e32 ">True if the rule is an INSTEAD rule.</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d421227e26 "><samp class="ph codeph">ev_qual</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d421227e28 ">text</td>
-<td class="entry" valign="top" width="85pt" headers="d421227e30 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d421227e32 ">Expression tree (in the form of a <samp class="ph codeph">nodeToString()</samp>
+<td class="entry" valign="top" width="131pt" headers="d421781e26 "><samp class="ph codeph">ev_qual</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d421781e28 ">text</td>
+<td class="entry" valign="top" width="85pt" headers="d421781e30 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d421781e32 ">Expression tree (in the form of a <samp class="ph codeph">nodeToString()</samp>
 representation) for the rule's qualifying condition.</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d421227e26 "><samp class="ph codeph">ev_action</samp></td>
-<td class="entry" valign="top" width="86pt" headers="d421227e28 ">text</td>
-<td class="entry" valign="top" width="85pt" headers="d421227e30 "> </td>
-<td class="entry" valign="top" width="147pt" headers="d421227e32 ">Query tree (in the form of a <samp class="ph codeph">nodeToString()</samp>
+<td class="entry" valign="top" width="131pt" headers="d421781e26 "><samp class="ph codeph">ev_action</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d421781e28 ">text</td>
+<td class="entry" valign="top" width="85pt" headers="d421781e30 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d421781e32 ">Query tree (in the form of a <samp class="ph codeph">nodeToString()</samp>
 representation) for the rule's action.</td>
 </tr>
 </tbody>

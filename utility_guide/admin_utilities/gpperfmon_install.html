@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5620,9 +5638,8 @@
     <div class="section" id="topic1__section2">
 <h2 class="title sectiontitle">Synopsis</h2>
       
-      <pre class="pre codeblock"><strong class="ph b">gpperfmon_install</strong>
-      [<strong class="ph b">--enable</strong> <strong class="ph b">--password</strong> <var class="keyword varname">gpmon_password</var> <strong class="ph b">--port</strong> <var class="keyword varname">gpdb_port</var>]
-      [<strong class="ph b">--pgpass</strong> <var class="keyword varname">path_to_file</var>]
+      <pre class="pre codeblock"><strong class="ph b">gpperfmon_install --port <var class="keyword varname">gpdb_port</var> </strong>
+      [<strong class="ph b">--enable</strong> <strong class="ph b">--password</strong> <var class="keyword varname">gpmon_password</var> [<strong class="ph b">--pgpass</strong> <var class="keyword varname">path_to_file</var>]]
       [<strong class="ph b">--verbose</strong>]
 
 <strong class="ph b">gpperfmon_install</strong> <strong class="ph b">--help</strong> | <strong class="ph b">-h</strong> | <strong class="ph b">-?</strong></pre>
@@ -5634,22 +5651,25 @@
       
       <p class="p">The <samp class="ph codeph">gpperfmon_install</samp> utility automates the steps required to enable the
         data collection agents. You must be the Greenplum Database system user
-          (<samp class="ph codeph">gpadmin</samp>) in order to run this utility. If using the
-          <samp class="ph codeph">--enable</samp> option, Greenplum Database must be restarted after the utility
-        completes.</p>
+          (<samp class="ph codeph">gpadmin</samp>) to run this utility. The <samp class="ph codeph">--port</samp> option is
+        required. When using the <samp class="ph codeph">--enable</samp> option, the <samp class="ph codeph">--password</samp>
+        option is also required. Use the <samp class="ph codeph">--port</samp> option to
+        supply the port of the Greenplum Database master instance. If using the
+        <samp class="ph codeph">--enable</samp> option, Greenplum Database
+        must be restarted after the utility completes.</p>
 
-      <p class="p">When run without any options, the utility will just create the <samp class="ph codeph">gpperfmon</samp>
-        database (the database used to store system metrics collected by the data collection
-        agents). When run with the <samp class="ph codeph">--enable</samp> option, the utility will also run the
-        following additional tasks necessary to enable the data collection agents:</p>
+      <p class="p">When run without the <samp class="ph codeph">--enable</samp> option, the utility just creates the
+          <samp class="ph codeph">gpperfmon</samp> database (the database used to store system metrics collected
+        by the data collection agents). When run with the <samp class="ph codeph">--enable</samp>
+          option, the utility also runs the following additional tasks
+        necessary to enable the performance monitor data collection agents:</p>
 
       <ol class="ol">
         <li class="li" id="topic1__ou143278">Creates the <samp class="ph codeph">gpmon</samp> superuser role in Greenplum Database.
           The data collection agents require this role to connect to the database and write their
           data. The <samp class="ph codeph">gpmon</samp> superuser role uses MD5-encrypted password authentication
           by default. Use the <samp class="ph codeph">--password</samp> option to set the <samp class="ph codeph">gpmon</samp>
-          superuser's password. Use the <samp class="ph codeph">--port</samp> option to supply the port of the
-          Greenplum Database master instance.</li>
+          superuser's password.</li>
 
         <li class="li" id="topic1__ou143437">Updates the <samp class="ph codeph">$MASTER_DATA_DIRECTORY/pg_hba.conf</samp> file. The
           utility adds these lines to the host-based authentication file
@@ -5657,18 +5677,18 @@
 host       all           gpmon  127.0.0.1/28   md5
 host       all           gpmon  ::1/128        md5</pre>
 <p class="p">The
-            second and third lines, the <samp class="ph codeph">host</samp> entries, give access to all Greenplum
-            Database system databases to <samp class="ph codeph">gpmon</samp>.</p>
+            second and third lines, the <samp class="ph codeph">host</samp> entries, give <samp class="ph codeph">gpmon</samp>
+            access to all Greenplum Database databases.</p>
 <div class="note note">
-<span class="notetitle">Note:</span> It might be necessary to
-            edit the lines in the <samp class="ph codeph">pg_hba.conf</samp> file after running the
+<span class="notetitle">Note:</span> It might be necessary to edit the
+            lines in the <samp class="ph codeph">pg_hba.conf</samp> file after running the
               <samp class="ph codeph">gpperfmon_install</samp> utility to limit the <samp class="ph codeph">gpmon</samp> role's
             access to databases or to change the authentication method. After you edit the file, run
               <samp class="ph codeph">gpstop -u</samp> to reload the file in Greenplum Database.<ul class="ul" id="topic1__ul_ffm_ysw_k5">
               <li class="li">To limit <samp class="ph codeph">gpmon</samp> access to just the <samp class="ph codeph">gpperfmon</samp>
-                database, edit the in the <samp class="ph codeph">host</samp> entries in
-                  the<samp class="ph codeph">pg_hba.conf</samp> file. For the <samp class="ph codeph">gpmon</samp> user change
-                the second field from <samp class="ph codeph">all</samp> to
+                database, edit the <samp class="ph codeph">host</samp> entries in the<samp class="ph codeph">pg_hba.conf</samp>
+                file. For the <samp class="ph codeph">gpmon</samp> user change the second field from
+                  <samp class="ph codeph">all</samp> to
                 <samp class="ph codeph">gpperfmon</samp>:<pre class="pre codeblock">local      gpperfmon     gpmon                  md5
 host       <strong class="ph b">gpperfmon</strong>     gpmon    127.0.0.1/28  md5
 host       <strong class="ph b">gpperfmon</strong>     gpmon    ::1/128       md5</pre>
@@ -5677,11 +5697,11 @@ host       <strong class="ph b">gpperfmon</strong>     gpmon    ::1/128       md
               <li class="li">
                 <div class="p">The <samp class="ph codeph">gpperfmon_install</samp> utility assumes the default MD5
                   authentication method. Greenplum Database can optionally be configured to use the
-                  SHA-256 or SHA-256-FIPS hash algorithm to compute the password hashes saved in the
-                  system catalog. This is incompatible with the MD5 authentication method, which
-                  expects an MD5 hash or clear text password in the system catalog. Because of this,
-                  if you have enabled the SHA-256 or SHA-256-FIPS hash algorithm in the database,
-                  you must edit the <samp class="ph codeph">pg_hba.conf</samp> file after running the
+                  SHA-256 hash algorithm to compute the password hashes saved in the system catalog.
+                  This is incompatible with the MD5 authentication method, which expects an MD5 hash
+                  or clear text password in the system catalog. Because of this, if you have enabled
+                  the SHA-256 hash algorithm in the database, you must edit the
+                    <samp class="ph codeph">pg_hba.conf</samp> file after running the
                     <samp class="ph codeph">gpperfmon_install</samp> utility. For the <samp class="ph codeph">host</samp>
                   entries, change the authentication method for the <samp class="ph codeph">gpmon</samp> role from
                     <samp class="ph codeph">md5</samp> to
@@ -5730,8 +5750,6 @@ host       all           gpmon  ::1/128        <strong class="ph b">password</st
           </ul>
 <p class="p">Data collection agents can be configured by setting parameters in the
               <samp class="ph codeph">gpperfmon.conf</samp> configuration file. See <a class="xref" href="#topic1__section_p51_bxc_wz">Data Collection Agent Configuration</a> for details.</p>
-<p class="p">For information
-            about Greenplum Command Center, see the <a class="xref" href="https://gpcc.docs.pivotal.io" target="_blank">Greenplum Command Center Documentation</a>.</p>
 </li>
 
       </ol>
@@ -5757,15 +5775,15 @@ host       all           gpmon  ::1/128        <strong class="ph b">password</st
 </dt>
 
           <dd class="dd pd">Required if <samp class="ph codeph">--enable</samp> is specified. Sets the password of the
-              <samp class="ph codeph">gpmon</samp> superuser.</dd>
+              <samp class="ph codeph">gpmon</samp> superuser. Disallowed if <samp class="ph codeph">--enable</samp> is not
+              specified.</dd>
 
         
         
           <dt class="dt pt dlterm">--port <var class="keyword varname">gpdb_port</var>
 </dt>
 
-          <dd class="dd pd">Required if <samp class="ph codeph">--enable</samp> is specified. Specifies the connection port of
-            the Greenplum Database master.</dd>
+          <dd class="dd pd">Required. Specifies the connection port of the Greenplum Database master.</dd>
 
         
         
@@ -5806,22 +5824,22 @@ host       all           gpmon  ::1/128        <strong class="ph b">password</st
 
       <table cellpadding="4" cellspacing="0" summary="" id="topic1__simpletable_xhc_qtc_wz" border="1" class="simpletable">
 <tr class="sthead">
-          <th valign="bottom" align="left" id="d461697e420" class="stentry">Parameter</th>
+          <th valign="bottom" align="left" id="d462201e423" class="stentry">Parameter</th>
 
-          <th valign="bottom" align="left" id="d461697e423" class="stentry">Description</th>
+          <th valign="bottom" align="left" id="d462201e426" class="stentry">Description</th>
 
         </tr>
 <tr class="strow">
-          <td valign="top" headers="d461697e420" class="stentry">log_location</td>
+          <td valign="top" headers="d462201e423" class="stentry">log_location</td>
 
-          <td valign="top" headers="d461697e423" class="stentry">Specifies a directory location for gpperfmon log files. Default is
+          <td valign="top" headers="d462201e426" class="stentry">Specifies a directory location for gpperfmon log files. Default is
               <samp class="ph codeph">$MASTER_DATA_DIRECTORY/gpperfmon/logs</samp>.</td>
 
         </tr>
 <tr class="strow">
-          <td valign="top" headers="d461697e420" class="stentry">min_query_time</td>
+          <td valign="top" headers="d462201e423" class="stentry">min_query_time</td>
 
-          <td valign="top" headers="d461697e423" class="stentry">
+          <td valign="top" headers="d462201e426" class="stentry">
             <p class="p">Specifies the minimum query run time in seconds for statistics collection. All
               queries that run longer than this value are logged in the
                 <samp class="ph codeph">queries_history</samp> table. For queries with shorter run times, no
@@ -5836,32 +5854,9 @@ host       all           gpmon  ::1/128        <strong class="ph b">password</st
 
         </tr>
 <tr class="strow">
-          <td valign="top" headers="d461697e420" class="stentry">min_detailed_query_time</td>
+          <td valign="top" headers="d462201e423" class="stentry">max_log_size</td>
 
-          <td valign="top" headers="d461697e423" class="stentry">
-            <p class="p">Specifies the minimum iterator run time in seconds for statistics collection.
-              Iterators that run longer than this value are logged in the
-                <samp class="ph codeph">iterators_history</samp> table. For iterators with shorter run times, no
-              data is collected. Minimum value is 10 seconds.</p>
-
-            <p class="p">This parameter’s value must always be equal to, or greater than, the value of
-                <samp class="ph codeph">min_query_time</samp>. Setting <samp class="ph codeph">min_detailed_query_time</samp>
-              higher than <samp class="ph codeph">min_query_time</samp> allows you to log detailed query plan
-              iterator data only for especially complex, long-running queries, while still logging
-              basic query data for shorter queries.</p>
-
-            <p class="p">Given the complexity and size of iterator data, you may want to adjust this parameter
-              according to the size of data collected. If the <samp class="ph codeph">iterators_*</samp> tables
-              are growing to excessive size without providing useful information, you can raise the
-              value of this parameter to log iterator detail for fewer queries.</p>
-
-          </td>
-
-        </tr>
-<tr class="strow">
-          <td valign="top" headers="d461697e420" class="stentry">max_log_size</td>
-
-          <td valign="top" headers="d461697e423" class="stentry">
+          <td valign="top" headers="d462201e426" class="stentry">
             <p class="p">This parameter is not included in <samp class="ph codeph">gpperfmon.conf</samp>, but it may be
               added to this file.</p>
 
@@ -5878,16 +5873,16 @@ host       all           gpmon  ::1/128        <strong class="ph b">password</st
 
         </tr>
 <tr class="strow">
-          <td valign="top" headers="d461697e420" class="stentry">partition_age</td>
+          <td valign="top" headers="d462201e423" class="stentry">partition_age</td>
 
-          <td valign="top" headers="d461697e423" class="stentry">The number of months that gperfmon statistics data will be retained. The default
+          <td valign="top" headers="d462201e426" class="stentry">The number of months that gperfmon statistics data will be retained. The default
             it is 0, which means we won’t drop any data.</td>
 
         </tr>
 <tr class="strow">
-          <td valign="top" headers="d461697e420" class="stentry">quantum</td>
+          <td valign="top" headers="d462201e423" class="stentry">quantum</td>
 
-          <td valign="top" headers="d461697e423" class="stentry">Specifies the time in seconds between updates from data collection agents on all
+          <td valign="top" headers="d462201e426" class="stentry">Specifies the time in seconds between updates from data collection agents on all
             segments. Valid values are 10, 15, 20, 30, and 60. Defaults to 15 seconds.<p class="p">If you
               prefer a less granular view of performance, or want to collect and analyze minimal
               amounts of data for system metrics, choose a higher quantum. To collect data more
@@ -5896,9 +5891,9 @@ host       all           gpmon  ::1/128        <strong class="ph b">password</st
 
         </tr>
 <tr class="strow">
-          <td valign="top" headers="d461697e420" class="stentry">ignore_qexec_packet</td>
+          <td valign="top" headers="d462201e423" class="stentry">ignore_qexec_packet</td>
 
-          <td valign="top" headers="d461697e423" class="stentry">(Deprecated) When set to true, data collection agents do not collect performance
+          <td valign="top" headers="d462201e426" class="stentry">(Deprecated) When set to true, data collection agents do not collect performance
             data in the <samp class="ph codeph">gpperfmon</samp> database <samp class="ph codeph">queries_*</samp> tables:
               <samp class="ph codeph">rows_out</samp>, <samp class="ph codeph">cpu_elapsed</samp>, <samp class="ph codeph">cpu_currpct</samp>,
               <samp class="ph codeph">skew_cpu</samp>, and <samp class="ph codeph">skew_rows</samp>. The default setting, true,
@@ -5907,9 +5902,9 @@ host       all           gpmon  ::1/128        <strong class="ph b">password</st
 
         </tr>
 <tr class="strow">
-          <td valign="top" headers="d461697e420" class="stentry">smdw_aliases</td>
+          <td valign="top" headers="d462201e423" class="stentry">smdw_aliases</td>
 
-          <td valign="top" headers="d461697e423" class="stentry">This parameter allows you to specify additional host names for the standby
+          <td valign="top" headers="d462201e426" class="stentry">This parameter allows you to specify additional host names for the standby
             master. For example, if the standby master has two NICs, you can
               enter:<pre class="pre codeblock">smdw_aliases=smdw-1,smdw-2</pre>
 <p class="p">This optional fault
@@ -5948,12 +5943,12 @@ host       all           gpmon  ::1/128        <strong class="ph b">password</st
 </li>
 
         <li class="li">Restart the Greenplum Command Center with the Command Center <samp class="ph codeph">gpcmdr</samp>
-          utility. <pre class="pre codeblock"> $ gpcmdr --restart</pre>
+          utility. <pre class="pre codeblock">$ gpcmdr --restart</pre>
 </li>
 
       </ol>
 
-      <p class="p">The gpperfmon monitoring system requires some initialization after startup, monitoring
+      <p class="p">The gpperfmon monitoring system requires some initialization after startup. Monitoring
         information appears after a few minutes have passed, and not immediately after installation
         and startup of the gpperfmon system.</p>
 
@@ -5965,9 +5960,9 @@ host       all           gpmon  ::1/128        <strong class="ph b">password</st
       <p class="p">Create the <samp class="ph codeph">gpperfmon</samp> database only:</p>
 
       <pre class="pre codeblock">$ su - gpadmin
-$ gpperfmon_install</pre>
+$ gpperfmon_install --port 5432</pre>
 
-      <p class="p">Create the <samp class="ph codeph">gpperfmon</samp> database, create the<samp class="ph codeph"> gpmon</samp>
+      <p class="p">Create the <samp class="ph codeph">gpperfmon</samp> database, create the <samp class="ph codeph">gpmon</samp>
         superuser, and enable the data collection agents:</p>
 
       <pre class="pre codeblock">$ su - gpadmin

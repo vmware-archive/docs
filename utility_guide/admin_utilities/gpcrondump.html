@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5796,20 +5814,7 @@ The
           Guide</cite>.</p>
 </div>
 
-    <div class="section">
-<strong class="ph b">Using NetBackup</strong>
-      <p class="p">Veritas NetBackup integration is included with Pivotal Greenplum Database. Greenplum
-        Database must be configured to communicate with the Veritas NetBackup master server that is
-        used to backup the database. </p>
-<p class="p">When backing up a large amount of data, set the
-        NetBackup <samp class="ph codeph">CLIENT_READ_TIMEOUT</samp> option to a value that is at least twice the
-        expected duration of the operation (in seconds). The <samp class="ph codeph">CLIENT_READ_TIMEOUT</samp>
-        default value is <samp class="ph codeph">300</samp> seconds (5 minutes).</p>
-<p class="p">See the <cite class="cite">Greenplum
-          Database Administrator Guide</cite> for information on configuring Greenplum Database and
-        NetBackup and backing up and restoring with NetBackup. </p>
-</div>
-
+    
     <div class="section">
 <strong class="ph b">About Return Codes</strong>
       <div class="p">The following is a list of the codes that <samp class="ph codeph">gpcrondump</samp> returns.<ul class="ul" id="topic1__ul_hhb_sqp_n4">
@@ -5849,20 +5854,13 @@ The
 </div>
 
     <div class="section">
-<strong class="ph b">Limitations</strong><p class="p">Dell EMC DD Boost is integrated with Pivotal Greenplum Database
-        and requires a DD Boost license. Open source Greenplum Database cannot use the DD Boost
-        software, but can back up to a Dell EMC Data Domain system mounted as an NFS share on the
-        Greenplum master and segment hosts.</p>
-<p class="p">NetBackup is not compatible with DD Boost. Both
-        NetBackup and DD Boost cannot be used in a single back up operation.</p>
-<p class="p">For incremental
-        back up sets, a full backup and associated incremental backups, the backup set must be on a
-        single device. For example, a backup set must all be on a file system. The backup set cannot
-        have some backups on the local file system and others on a Data Domain system or a NetBackup
-        system.</p>
-<p class="p">For external tables, the table definition is backed up, however the data is
-        not backed up. For leaf child partition of a partitioned table that is a readable external
-        table, the leaf child partition data is not backed up. </p>
+<strong class="ph b">Limitations</strong><p class="p">For incremental back up sets, a full backup and associated incremental
+        backups, the backup set must be on a single device. For example, a backup set must all be on
+        a file system. </p>
+<p class="p">For
+        external tables, the table definition is backed up, however the data is not backed up. For
+        leaf child partition of a partitioned table that is a readable external table, the leaf
+        child partition data is not backed up. </p>
 </div>
 
     <div class="section" id="topic1__section7">
@@ -6772,7 +6770,7 @@ EMAIL_DETAILS:
 EMAIL_DETAILS:
     -
         DBNAME: testdb100
-        FROM: RRP_MPE2_DCA_1
+        FROM: RRP_MPE2_1
         SUBJECT: backup completed for Database 'testdb100'
     -
         DBNAME: testdb200

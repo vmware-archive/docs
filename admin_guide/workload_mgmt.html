@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5631,11 +5649,7 @@
       resource most likely to limit the processing capacity of the system. Therefore, we begin with
       an overview of Greenplum Database memory usage. </p>
 
-    <p class="p">Pivotal Greenplum Workload Manager contains additional, flexible workload management features
-      that can be used to monitor and manage queries and to manage resource queues. Pivotal
-      Greenplum Workload Manager is included with Pivotal Greenplum Command Center. See <a class="xref" href="http://gpcc.docs.pivotal.io/" target="_blank">http://gpcc.docs.pivotal.io/</a> for information about Pivotal Greenplum Command Center
-      and Pivotal Greenplum Workload Manager.</p>
-
+    
   </div>
 
   <div class="related-links">
@@ -6009,13 +6023,13 @@ where
               
               <thead class="thead" align="left">
                 <tr class="row">
-                  <th class="entry" valign="top" width="25%" id="d107703e590">Resource Queue Name</th>
+                  <th class="entry" valign="top" width="25%" id="d107722e583">Resource Queue Name</th>
 
-                  <th class="entry" valign="top" width="25%" id="d107703e593">Active Statements</th>
+                  <th class="entry" valign="top" width="25%" id="d107722e586">Active Statements</th>
 
-                  <th class="entry" valign="top" width="25%" id="d107703e596">Memory Limit</th>
+                  <th class="entry" valign="top" width="25%" id="d107722e589">Memory Limit</th>
 
-                  <th class="entry" valign="top" width="25%" id="d107703e599">Memory per Query</th>
+                  <th class="entry" valign="top" width="25%" id="d107722e592">Memory per Query</th>
 
                 </tr>
 
@@ -6023,35 +6037,35 @@ where
 
               <tbody class="tbody">
                 <tr class="row">
-                  <td class="entry" valign="top" width="25%" headers="d107703e590 ">ETL</td>
+                  <td class="entry" valign="top" width="25%" headers="d107722e583 ">ETL</td>
 
-                  <td class="entry" valign="top" width="25%" headers="d107703e593 ">3</td>
+                  <td class="entry" valign="top" width="25%" headers="d107722e586 ">3</td>
 
-                  <td class="entry" valign="top" width="25%" headers="d107703e596 ">2GB</td>
+                  <td class="entry" valign="top" width="25%" headers="d107722e589 ">2GB</td>
 
-                  <td class="entry" valign="top" width="25%" headers="d107703e599 ">667MB</td>
-
-                </tr>
-
-                <tr class="row">
-                  <td class="entry" valign="top" width="25%" headers="d107703e590 ">Reporting</td>
-
-                  <td class="entry" valign="top" width="25%" headers="d107703e593 ">7</td>
-
-                  <td class="entry" valign="top" width="25%" headers="d107703e596 ">3GB</td>
-
-                  <td class="entry" valign="top" width="25%" headers="d107703e599 ">429MB</td>
+                  <td class="entry" valign="top" width="25%" headers="d107722e592 ">667MB</td>
 
                 </tr>
 
                 <tr class="row">
-                  <td class="entry" valign="top" width="25%" headers="d107703e590 ">Executive</td>
+                  <td class="entry" valign="top" width="25%" headers="d107722e583 ">Reporting</td>
 
-                  <td class="entry" valign="top" width="25%" headers="d107703e593 ">1</td>
+                  <td class="entry" valign="top" width="25%" headers="d107722e586 ">7</td>
 
-                  <td class="entry" valign="top" width="25%" headers="d107703e596 ">1.4GB</td>
+                  <td class="entry" valign="top" width="25%" headers="d107722e589 ">3GB</td>
 
-                  <td class="entry" valign="top" width="25%" headers="d107703e599 ">1.4GB</td>
+                  <td class="entry" valign="top" width="25%" headers="d107722e592 ">429MB</td>
+
+                </tr>
+
+                <tr class="row">
+                  <td class="entry" valign="top" width="25%" headers="d107722e583 ">Executive</td>
+
+                  <td class="entry" valign="top" width="25%" headers="d107722e586 ">1</td>
+
+                  <td class="entry" valign="top" width="25%" headers="d107722e589 ">1.4GB</td>
+
+                  <td class="entry" valign="top" width="25%" headers="d107722e592 ">1.4GB</td>
 
                 </tr>
 

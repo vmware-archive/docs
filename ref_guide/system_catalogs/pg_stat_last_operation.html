@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5620,57 +5638,57 @@ about database objects (tables, views, etc.).</p>
 <caption><span class="tablecap">Table 1. pg_catalog.pg_stat_last_operation</span></caption>
 <thead class="thead" align="left">
 <tr class="row">
-<th class="entry" valign="top" width="131pt" id="d425480e20">column</th>
-<th class="entry" valign="top" width="100pt" id="d425480e22">type</th>
-<th class="entry" valign="top" width="82pt" id="d425480e24">references</th>
-<th class="entry" valign="top" width="136pt" id="d425480e26">description</th>
+<th class="entry" valign="top" width="131pt" id="d426034e20">column</th>
+<th class="entry" valign="top" width="100pt" id="d426034e22">type</th>
+<th class="entry" valign="top" width="82pt" id="d426034e24">references</th>
+<th class="entry" valign="top" width="136pt" id="d426034e26">description</th>
 </tr>
 </thead>
 <tbody class="tbody">
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d425480e20 "><samp class="ph codeph" id="topic1__hr138551">classid</samp></td>
-<td class="entry" valign="top" width="100pt" headers="d425480e22 ">oid</td>
-<td class="entry" valign="top" width="82pt" headers="d425480e24 ">pg_class.oid</td>
-<td class="entry" valign="top" width="136pt" headers="d425480e26 ">OID of the system catalog containing the object.
+<td class="entry" valign="top" width="131pt" headers="d426034e20 "><samp class="ph codeph" id="topic1__hr138551">classid</samp></td>
+<td class="entry" valign="top" width="100pt" headers="d426034e22 ">oid</td>
+<td class="entry" valign="top" width="82pt" headers="d426034e24 ">pg_class.oid</td>
+<td class="entry" valign="top" width="136pt" headers="d426034e26 ">OID of the system catalog containing the object.
 </td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d425480e20 "><samp class="ph codeph" id="topic1__hr138559">objid</samp></td>
-<td class="entry" valign="top" width="100pt" headers="d425480e22 ">oid</td>
-<td class="entry" valign="top" width="82pt" headers="d425480e24 ">any OID column</td>
-<td class="entry" valign="top" width="136pt" headers="d425480e26 ">OID of the object within its system catalog.</td>
+<td class="entry" valign="top" width="131pt" headers="d426034e20 "><samp class="ph codeph" id="topic1__hr138559">objid</samp></td>
+<td class="entry" valign="top" width="100pt" headers="d426034e22 ">oid</td>
+<td class="entry" valign="top" width="82pt" headers="d426034e24 ">any OID column</td>
+<td class="entry" valign="top" width="136pt" headers="d426034e26 ">OID of the object within its system catalog.</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d425480e20 "><samp class="ph codeph" id="topic1__hr138567">staactionname</samp></td>
-<td class="entry" valign="top" width="100pt" headers="d425480e22 ">name</td>
-<td class="entry" valign="top" width="82pt" headers="d425480e24 "> </td>
-<td class="entry" valign="top" width="136pt" headers="d425480e26 ">The action that was taken on the object.</td>
+<td class="entry" valign="top" width="131pt" headers="d426034e20 "><samp class="ph codeph" id="topic1__hr138567">staactionname</samp></td>
+<td class="entry" valign="top" width="100pt" headers="d426034e22 ">name</td>
+<td class="entry" valign="top" width="82pt" headers="d426034e24 "> </td>
+<td class="entry" valign="top" width="136pt" headers="d426034e26 ">The action that was taken on the object.</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d425480e20 "><samp class="ph codeph" id="topic1__hr138575">stasysid</samp></td>
-<td class="entry" valign="top" width="100pt" headers="d425480e22 ">oid</td>
-<td class="entry" valign="top" width="82pt" headers="d425480e24 ">pg_authid.oid</td>
-<td class="entry" valign="top" width="136pt" headers="d425480e26 ">A foreign key to pg_authid.oid.</td>
+<td class="entry" valign="top" width="131pt" headers="d426034e20 "><samp class="ph codeph" id="topic1__hr138575">stasysid</samp></td>
+<td class="entry" valign="top" width="100pt" headers="d426034e22 ">oid</td>
+<td class="entry" valign="top" width="82pt" headers="d426034e24 ">pg_authid.oid</td>
+<td class="entry" valign="top" width="136pt" headers="d426034e26 ">A foreign key to pg_authid.oid.</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d425480e20 "><samp class="ph codeph" id="topic1__hr138583">stausename</samp></td>
-<td class="entry" valign="top" width="100pt" headers="d425480e22 ">name</td>
-<td class="entry" valign="top" width="82pt" headers="d425480e24 "> </td>
-<td class="entry" valign="top" width="136pt" headers="d425480e26 ">The name of the role that performed the operation
+<td class="entry" valign="top" width="131pt" headers="d426034e20 "><samp class="ph codeph" id="topic1__hr138583">stausename</samp></td>
+<td class="entry" valign="top" width="100pt" headers="d426034e22 ">name</td>
+<td class="entry" valign="top" width="82pt" headers="d426034e24 "> </td>
+<td class="entry" valign="top" width="136pt" headers="d426034e26 ">The name of the role that performed the operation
 on this object.</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d425480e20 "><samp class="ph codeph" id="topic1__hr138447">stasubtype</samp></td>
-<td class="entry" valign="top" width="100pt" headers="d425480e22 ">text</td>
-<td class="entry" valign="top" width="82pt" headers="d425480e24 "> </td>
-<td class="entry" valign="top" width="136pt" headers="d425480e26 ">The type of object operated on or the subclass
+<td class="entry" valign="top" width="131pt" headers="d426034e20 "><samp class="ph codeph" id="topic1__hr138447">stasubtype</samp></td>
+<td class="entry" valign="top" width="100pt" headers="d426034e22 ">text</td>
+<td class="entry" valign="top" width="82pt" headers="d426034e24 "> </td>
+<td class="entry" valign="top" width="136pt" headers="d426034e26 ">The type of object operated on or the subclass
 of operation performed.</td>
 </tr>
 <tr class="row">
-<td class="entry" valign="top" width="131pt" headers="d425480e20 "><samp class="ph codeph" id="topic1__hr138456">statime</samp></td>
-<td class="entry" valign="top" width="100pt" headers="d425480e22 ">timestamp with timezone</td>
-<td class="entry" valign="top" width="82pt" headers="d425480e24 "> </td>
-<td class="entry" valign="top" width="136pt" headers="d425480e26 ">The timestamp of the operation. This is the same timestamp that is written to
+<td class="entry" valign="top" width="131pt" headers="d426034e20 "><samp class="ph codeph" id="topic1__hr138456">statime</samp></td>
+<td class="entry" valign="top" width="100pt" headers="d426034e22 ">timestamp with timezone</td>
+<td class="entry" valign="top" width="82pt" headers="d426034e24 "> </td>
+<td class="entry" valign="top" width="136pt" headers="d426034e26 ">The timestamp of the operation. This is the same timestamp that is written to
               the Greenplum Database server log files in case you need to look up more
               detailed information about the operation in the logs.</td>
 </tr>

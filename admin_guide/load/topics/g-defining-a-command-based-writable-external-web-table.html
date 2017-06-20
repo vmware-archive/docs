@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5651,9 +5669,9 @@
             
             <thead class="thead" align="left">
                <tr class="row">
-                  <th class="entry" valign="top" width="33.33333333333333%" id="d34758e58">Variable</th>
+                  <th class="entry" valign="top" width="33.33333333333333%" id="d34666e58">Variable</th>
 
-                  <th class="entry" valign="top" width="66.66666666666666%" id="d34758e61">Description</th>
+                  <th class="entry" valign="top" width="66.66666666666666%" id="d34666e61">Description</th>
 
                </tr>
 
@@ -5661,120 +5679,120 @@
 
             <tbody class="tbody">
                <tr class="row">
-                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34758e58 ">$GP_CID</td>
+                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34666e58 ">$GP_CID</td>
 
-                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34758e61 ">Command count of the transaction executing the external
+                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34666e61 ">Command count of the transaction executing the external
                      table statement.</td>
 
                </tr>
 
                <tr class="row">
-                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34758e58 ">$GP_DATABASE</td>
+                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34666e58 ">$GP_DATABASE</td>
 
-                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34758e61 ">The database in which the external table definition
+                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34666e61 ">The database in which the external table definition
                      resides.</td>
 
                </tr>
 
                <tr class="row">
-                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34758e58 ">$GP_DATE</td>
+                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34666e58 ">$GP_DATE</td>
 
-                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34758e61 ">The date on which the external table command ran.</td>
+                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34666e61 ">The date on which the external table command ran.</td>
 
                </tr>
 
                <tr class="row">
-                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34758e58 ">$GP_MASTER_HOST</td>
+                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34666e58 ">$GP_MASTER_HOST</td>
 
-                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34758e61 ">The host name of the Greenplum
+                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34666e61 ">The host name of the Greenplum
                      master host from which the external table statement was dispatched.</td>
 
                </tr>
 
                <tr class="row">
-                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34758e58 ">$GP_MASTER_PORT</td>
+                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34666e58 ">$GP_MASTER_PORT</td>
 
-                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34758e61 ">The port number of the Greenplum master instance from which the external table statement was
+                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34666e61 ">The port number of the Greenplum master instance from which the external table statement was
                      dispatched.</td>
 
                </tr>
 
                <tr class="row">
-                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34758e58 ">$GP_SEG_DATADIR</td>
+                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34666e58 ">$GP_SEG_DATADIR</td>
 
-                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34758e61 ">The location of the data directory of the segment instance
+                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34666e61 ">The location of the data directory of the segment instance
                      executing the external table command.</td>
 
                </tr>
 
                <tr class="row">
-                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34758e58 ">$GP_SEG_PG_CONF</td>
+                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34666e58 ">$GP_SEG_PG_CONF</td>
 
-                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34758e61 ">The location of the <samp class="ph codeph">postgresql.conf</samp> file of
+                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34666e61 ">The location of the <samp class="ph codeph">postgresql.conf</samp> file of
                      the segment instance executing the external table command.</td>
 
                </tr>
 
                <tr class="row">
-                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34758e58 ">$GP_SEG_PORT</td>
+                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34666e58 ">$GP_SEG_PORT</td>
 
-                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34758e61 ">The port number of the segment instance executing the
+                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34666e61 ">The port number of the segment instance executing the
                      external table command.</td>
 
                </tr>
 
                <tr class="row">
-                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34758e58 ">$GP_SEGMENT_COUNT</td>
+                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34666e58 ">$GP_SEGMENT_COUNT</td>
 
-                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34758e61 ">The total number of primary segment instances in the
+                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34666e61 ">The total number of primary segment instances in the
                         Greenplum Database system.</td>
 
                </tr>
 
                <tr class="row">
-                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34758e58 ">$GP_SEGMENT_ID</td>
+                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34666e58 ">$GP_SEGMENT_ID</td>
 
-                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34758e61 ">The ID number of the segment instance executing the external
+                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34666e61 ">The ID number of the segment instance executing the external
                      table command (same as <samp class="ph codeph">dbid</samp> in
                         <samp class="ph codeph">gp_segment_configuration</samp>).</td>
 
                </tr>
 
                <tr class="row">
-                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34758e58 ">$GP_SESSION_ID</td>
+                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34666e58 ">$GP_SESSION_ID</td>
 
-                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34758e61 ">The database session identifier number associated with the
+                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34666e61 ">The database session identifier number associated with the
                      external table statement.</td>
 
                </tr>
 
                <tr class="row">
-                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34758e58 ">$GP_SN</td>
+                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34666e58 ">$GP_SN</td>
 
-                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34758e61 ">Serial number of the external table scan node in the query
+                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34666e61 ">Serial number of the external table scan node in the query
                      plan of the external table statement.</td>
 
                </tr>
 
                <tr class="row">
-                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34758e58 ">$GP_TIME</td>
+                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34666e58 ">$GP_TIME</td>
 
-                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34758e61 ">The time the external table command was executed.</td>
+                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34666e61 ">The time the external table command was executed.</td>
 
                </tr>
 
                <tr class="row">
-                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34758e58 ">$GP_USER </td>
+                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34666e58 ">$GP_USER </td>
 
-                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34758e61 ">The database user executing the external table
+                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34666e61 ">The database user executing the external table
                      statement.</td>
 
                </tr>
 
                <tr class="row">
-                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34758e58 ">$GP_XID</td>
+                  <td class="entry" valign="top" width="33.33333333333333%" headers="d34666e58 ">$GP_XID</td>
 
-                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34758e61 ">The transaction ID of the external table statement.</td>
+                  <td class="entry" valign="top" width="66.66666666666666%" headers="d34666e61 ">The transaction ID of the external table statement.</td>
 
                </tr>
 

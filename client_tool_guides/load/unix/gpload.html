@@ -57,7 +57,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/common/pivotal-gpdb-features.html">About this Documentation</a>
+        <a href="/docs/common/gpdb-features.html">About this Documentation</a>
         
 
       </li>
@@ -214,12 +214,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-third-party-client-tools.html">Third-Party Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-troubleshooting-connection-problems.html">Troubleshooting Connection Problems</a>
         
 
@@ -370,7 +364,7 @@
   <ul>
     
       <li class="">
-        <a href="/docs/admin_guide/topics/g-pivotal-query-optimizer-parameters.html">GPORCA Configuration Parameters</a>
+        <a href="/docs/admin_guide/topics/gporca-parameters.html">GPORCA Configuration Parameters</a>
         
 
       </li>
@@ -2227,6 +2221,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_EXTENSION.html">ALTER EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_EXTERNAL_TABLE.html">ALTER EXTERNAL TABLE</a>
         
 
@@ -2419,6 +2419,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_EXTENSION.html">CREATE EXTENSION</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_EXTERNAL_TABLE.html">CREATE EXTERNAL TABLE</a>
         
 
@@ -2594,6 +2600,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_DOMAIN.html">DROP DOMAIN</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_EXTENSION.html">DROP EXTENSION</a>
         
 
       </li>
@@ -3148,6 +3160,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extension_versions.html">pg_available_extension_versions</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_available_extensions.html">pg_available_extensions</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_cast.html">pg_cast</a>
         
 
@@ -3202,6 +3226,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_extension.html">pg_extension</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_exttable.html">pg_exttable</a>
         
 
@@ -3251,6 +3281,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_locks.html">pg_locks</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_max_external_files.html">pg_max_external_files</a>
         
 
       </li>
@@ -3563,12 +3599,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-health.html"> health_* </a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-interface-stats.html"> interface_stats_* </a>
         
 
@@ -3600,18 +3630,6 @@
     
       <li class="">
         <a href="/docs/ref_guide/gpperfmon/db-system.html">system_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-tcp-stats.html">tcp_stats_*</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/ref_guide/gpperfmon/db-udp-stats.html">udp_stats_*</a>
         
 
       </li>
@@ -5340,12 +5358,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/extensions/postGIS.html">Greenplum PostGIS Extension</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/extensions/pl_r.html">Greenplum PL&#x2F;R Language Extension</a>
         
 
@@ -5359,6 +5371,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/extensions/pl_java.html">Greenplum PL&#x2F;Java Language Extension</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/extensions/pl_perl.html">Greenplum PL&#x2F;Perl Language Extension</a>
         
 
       </li>
@@ -5616,7 +5634,7 @@
     <div class="body">
         <p class="p">Runs a load job as defined in a YAML formatted control file.</p>
 
-        <div class="section" id="gpload-ux__d3333e14">
+        <div class="section" id="gpload-ux__d3456e14">
 <h2 class="title sectiontitle">Synopsis</h2>
             
             <pre class="pre codeblock"><strong class="ph b">gpload</strong> <strong class="ph b">-f</strong> <var class="keyword varname">control_file</var> [<strong class="ph b">-l</strong> <var class="keyword varname">log_file</var>] [<strong class="ph b">-h</strong> <var class="keyword varname">hostname</var>] [<strong class="ph b">-p</strong> <var class="keyword varname">port</var>] 
@@ -5629,14 +5647,14 @@
 
         </div>
 
-        <div class="section" id="gpload-ux__d3333e100">
+        <div class="section" id="gpload-ux__d3456e100">
 <h2 class="title sectiontitle">Prerequisites</h2>
             
             <p class="p">The client machine where <samp class="ph codeph">gpload</samp> is executed must have the
                 following:</p>
 
             <ul class="ul">
-                <li class="li" id="gpload-ux__d3333e113">Python 2.6.2 or later, <samp class="ph codeph">pygresql</samp> (the Python
+                <li class="li" id="gpload-ux__d3456e113">Python 2.6.2 or later, <samp class="ph codeph">pygresql</samp> (the Python
                     interface to PostgreSQL), and <samp class="ph codeph">pyyaml</samp>. Note that Python and the
                     required Python libraries are included with the Greenplum Database server
                     installation, so if you have Greenplum Database installed on the machine where
@@ -5646,22 +5664,22 @@
                         Python 2.5 (available from <a class="xref" href="https://www.python.org" target="_blank">https://www.python.org</a>).</div>
 </li>
 
-                <li class="li" id="gpload-ux__d3333e130">The <samp class="ph codeph"><a class="xref" href="../../../utility_guide/admin_utilities/gpfdist.html#topic1">gpfdist</a></samp> parallel file distribution program installed
+                <li class="li" id="gpload-ux__d3456e130">The <samp class="ph codeph"><a class="xref" href="../../../utility_guide/admin_utilities/gpfdist.html#topic1">gpfdist</a></samp> parallel file distribution program installed
                     and in your <samp class="ph codeph">$PATH</samp>. This program is located in
                         <samp class="ph codeph">$GPHOME/bin</samp> of your Greenplum Database server
                     installation.</li>
 
-                <li class="li" id="gpload-ux__d3333e142">Network access to and from all hosts in your Greenplum Database
+                <li class="li" id="gpload-ux__d3456e142">Network access to and from all hosts in your Greenplum Database
                     array (master and segments).</li>
 
-                <li class="li" id="gpload-ux__d3333e145">Network access to and from the hosts where the data to be loaded
+                <li class="li" id="gpload-ux__d3456e145">Network access to and from the hosts where the data to be loaded
                     resides (ETL servers).</li>
 
             </ul>
 
         </div>
 
-        <div class="section" id="gpload-ux__d3333e150">
+        <div class="section" id="gpload-ux__d3456e150">
 <h2 class="title sectiontitle">Description</h2>
             
             <p class="p"><samp class="ph codeph">gpload</samp> is a data loading utility that acts as an interface to the
@@ -5675,13 +5693,13 @@
                 in the database.</p>
 
             <p class="p">The operation, including any SQL commands specified in the <samp class="ph codeph">SQL</samp>
-                collection of the YAML control file (see <a class="xref" href="#gpload-ux__d3333e415">Control File Format</a>), are performed as a single transaction to
+                collection of the YAML control file (see <a class="xref" href="#gpload-ux__d3456e415">Control File Format</a>), are performed as a single transaction to
                 prevent inconsistent data when performing multiple, simultaneous load operations on
                 a target table. </p>
 
         </div>
 
-        <div class="section" id="gpload-ux__d3333e184">
+        <div class="section" id="gpload-ux__d3456e184">
 <h2 class="title sectiontitle">Options</h2>
             
             <dl class="dl parml">
@@ -5691,7 +5709,7 @@
 
                     <dd class="dd pd">
 <strong class="ph b">Required. </strong>A YAML file that contains the load specification details.
-                        See <a class="xref" href="#gpload-ux__d3333e415">Control File Format</a>.</dd>
+                        See <a class="xref" href="#gpload-ux__d3456e415">Control File Format</a>.</dd>
 
                 
                 
@@ -5711,7 +5729,7 @@
 
                     <dd class="dd pd">Specifies where to write the log file. Defaults to
                                 <samp class="ph codeph">~/gpAdminLogs/gpload_<var class="keyword varname">YYYYMMDD</var></samp>.
-                        For more information about the log file, see <a class="xref" href="#gpload-ux__d3333e1697">Log File Format</a>.</dd>
+                        For more information about the log file, see <a class="xref" href="#gpload-ux__d3456e1697">Log File Format</a>.</dd>
 
                 
                 
@@ -5822,7 +5840,7 @@
             </div>
         </div>
 
-        <div class="section" id="gpload-ux__d3333e415">
+        <div class="section" id="gpload-ux__d3456e415">
 <h2 class="title sectiontitle">Control File Format</h2>
             
             <p class="p">The <samp class="ph codeph">gpload</samp> control file uses the <a class="xref" href="http://yaml.org/spec/1.1/" target="_blank">YAML 1.1</a>
@@ -5839,67 +5857,67 @@
             <p class="p">The basic structure of a load control file is:</p>
 
             <pre class="pre codeblock">---
-<a class="xref" href="#gpload-ux__d3333e683">VERSION</a>: 1.0.0.1
-<a class="xref" href="#gpload-ux__d3333e695">DATABASE</a>: <var class="keyword varname">db_name</var>
-<a class="xref" href="#gpload-ux__d3333e710">USER</a>: <var class="keyword varname">db_username</var>
-<a class="xref" href="#gpload-ux__d3333e734">HOST</a>: <var class="keyword varname">master_hostname</var>
-<a class="xref" href="#gpload-ux__d3333e749">PORT</a>: <var class="keyword varname">master_port</var>
-<a class="xref" href="#gpload-ux__d3333e765">GPLOAD</a>:
-   <a class="xref" href="#gpload-ux__d3333e783">INPUT</a>:
-    - <a class="xref" href="#gpload-ux__d3333e801">SOURCE</a>:
-         <a class="xref" href="#gpload-ux__d3333e846">LOCAL_HOSTNAME</a>:
+<a class="xref" href="#gpload-ux__d3456e683">VERSION</a>: 1.0.0.1
+<a class="xref" href="#gpload-ux__d3456e695">DATABASE</a>: <var class="keyword varname">db_name</var>
+<a class="xref" href="#gpload-ux__d3456e710">USER</a>: <var class="keyword varname">db_username</var>
+<a class="xref" href="#gpload-ux__d3456e734">HOST</a>: <var class="keyword varname">master_hostname</var>
+<a class="xref" href="#gpload-ux__d3456e749">PORT</a>: <var class="keyword varname">master_port</var>
+<a class="xref" href="#gpload-ux__d3456e765">GPLOAD</a>:
+   <a class="xref" href="#gpload-ux__d3456e783">INPUT</a>:
+    - <a class="xref" href="#gpload-ux__d3456e801">SOURCE</a>:
+         <a class="xref" href="#gpload-ux__d3456e846">LOCAL_HOSTNAME</a>:
            - <var class="keyword varname">hostname_or_ip</var>
-         <a class="xref" href="#gpload-ux__d3333e858">PORT</a>: <var class="keyword varname">http_port</var>
-       | <a class="xref" href="#gpload-ux__d3333e683">PORT_RANGE</a>: [<var class="keyword varname">start_port_range</var>, <var class="keyword varname">end_port_range</var>]
-         <a class="xref" href="#gpload-ux__d3333e912">FILE</a>: 
+         <a class="xref" href="#gpload-ux__d3456e858">PORT</a>: <var class="keyword varname">http_port</var>
+       | <a class="xref" href="#gpload-ux__d3456e683">PORT_RANGE</a>: [<var class="keyword varname">start_port_range</var>, <var class="keyword varname">end_port_range</var>]
+         <a class="xref" href="#gpload-ux__d3456e912">FILE</a>: 
            - <var class="keyword varname">/path/to/input_file</var>
-         <a class="xref" href="#gpload-ux__d3333e950">SSL</a>: true | false
-         <a class="xref" href="#gpload-ux__d3333e975">CERTIFICATES_PATH</a>: <var class="keyword varname">/path/to/certificates</var>
-    - <a class="xref" href="#gpload-ux__d3333e1020">FULLY_QUALIFIED_DOMAIN_NAME</a>: true | false
-    - <a class="xref" href="#gpload-ux__d3333e1046">COLUMNS</a>:
+         <a class="xref" href="#gpload-ux__d3456e950">SSL</a>: true | false
+         <a class="xref" href="#gpload-ux__d3456e975">CERTIFICATES_PATH</a>: <var class="keyword varname">/path/to/certificates</var>
+    - <a class="xref" href="#gpload-ux__d3456e1020">FULLY_QUALIFIED_DOMAIN_NAME</a>: true | false
+    - <a class="xref" href="#gpload-ux__d3456e1046">COLUMNS</a>:
            - <var class="keyword varname">field_name</var>: <var class="keyword varname">data_type</var>
-    - <a class="xref" href="#gpload-ux__d3333e1084">TRANSFORM</a>: '<var class="keyword varname">transformation</var>'
-    - <a class="xref" href="#gpload-ux__d3333e1099">TRANSFORM_CONFIG</a>: '<var class="keyword varname">configuration-file-path</var>' 
-    - <a class="xref" href="#gpload-ux__d3333e1115">MAX_LINE_LENGTH</a>: <var class="keyword varname">integer</var> 
-    - <a class="xref" href="#gpload-ux__d3333e1127">FORMAT</a>: text | csv
-    - <a class="xref" href="#gpload-ux__d3333e1148">DELIMITER</a>: '<var class="keyword varname">delimiter_character</var>'
-    - <a class="xref" href="#gpload-ux__d3333e1175">ESCAPE</a>: '<var class="keyword varname">escape_character</var>' | 'OFF'
-    - <a class="xref" href="#gpload-ux__d3333e1199">NULL_AS</a>: '<var class="keyword varname">null_string</var>'
-    - <a class="xref" href="#gpload-ux__d3333e1220">FORCE_NOT_NULL</a>: true | false
-    - <a class="xref" href="#gpload-ux__d3333e1230">QUOTE</a>: '<var class="keyword varname">csv_quote_character</var>'
-    - <a class="xref" href="#gpload-ux__d3333e1251">HEADER</a>: true | false
-    - <a class="xref" href="#gpload-ux__d3333e1260">ENCODING</a>: <var class="keyword varname">database_encoding</var>
-    - <a class="xref" href="#gpload-ux__d3333e1278">ERROR_LIMIT</a>: <var class="keyword varname">integer</var>
-    - <a class="xref" href="#gpload-ux__d3333e1289">LOG_ERRORS</a>: true | false
-   <a class="xref" href="#gpload-ux__d3333e1362">EXTERNAL</a>:
-      - <a class="xref" href="#gpload-ux__d3333e1383">SCHEMA</a>: <var class="keyword varname">schema</var> | '%'
-   <a class="xref" href="#gpload-ux__d3333e1412">OUTPUT</a>:
-    - <a class="xref" href="#gpload-ux__d3333e1421">TABLE</a>: <var class="keyword varname">schema.table_name</var>
-    - <a class="xref" href="#gpload-ux__d3333e1430">MODE</a>: insert | update | merge
-    - <a class="xref" href="#gpload-ux__d3333e1502">MATCH_COLUMNS</a>:
+    - <a class="xref" href="#gpload-ux__d3456e1084">TRANSFORM</a>: '<var class="keyword varname">transformation</var>'
+    - <a class="xref" href="#gpload-ux__d3456e1099">TRANSFORM_CONFIG</a>: '<var class="keyword varname">configuration-file-path</var>' 
+    - <a class="xref" href="#gpload-ux__d3456e1115">MAX_LINE_LENGTH</a>: <var class="keyword varname">integer</var> 
+    - <a class="xref" href="#gpload-ux__d3456e1127">FORMAT</a>: text | csv
+    - <a class="xref" href="#gpload-ux__d3456e1148">DELIMITER</a>: '<var class="keyword varname">delimiter_character</var>'
+    - <a class="xref" href="#gpload-ux__d3456e1175">ESCAPE</a>: '<var class="keyword varname">escape_character</var>' | 'OFF'
+    - <a class="xref" href="#gpload-ux__d3456e1199">NULL_AS</a>: '<var class="keyword varname">null_string</var>'
+    - <a class="xref" href="#gpload-ux__d3456e1220">FORCE_NOT_NULL</a>: true | false
+    - <a class="xref" href="#gpload-ux__d3456e1230">QUOTE</a>: '<var class="keyword varname">csv_quote_character</var>'
+    - <a class="xref" href="#gpload-ux__d3456e1251">HEADER</a>: true | false
+    - <a class="xref" href="#gpload-ux__d3456e1260">ENCODING</a>: <var class="keyword varname">database_encoding</var>
+    - <a class="xref" href="#gpload-ux__d3456e1278">ERROR_LIMIT</a>: <var class="keyword varname">integer</var>
+    - <a class="xref" href="#gpload-ux__d3456e1289">LOG_ERRORS</a>: true | false
+   <a class="xref" href="#gpload-ux__d3456e1362">EXTERNAL</a>:
+      - <a class="xref" href="#gpload-ux__d3456e1383">SCHEMA</a>: <var class="keyword varname">schema</var> | '%'
+   <a class="xref" href="#gpload-ux__d3456e1412">OUTPUT</a>:
+    - <a class="xref" href="#gpload-ux__d3456e1421">TABLE</a>: <var class="keyword varname">schema.table_name</var>
+    - <a class="xref" href="#gpload-ux__d3456e1430">MODE</a>: insert | update | merge
+    - <a class="xref" href="#gpload-ux__d3456e1502">MATCH_COLUMNS</a>:
            - <var class="keyword varname">target_column_name</var>
-    - <a class="xref" href="#gpload-ux__d3333e1520">UPDATE_COLUMNS</a>:
+    - <a class="xref" href="#gpload-ux__d3456e1520">UPDATE_COLUMNS</a>:
            - <var class="keyword varname">target_column_name</var>
-    - <a class="xref" href="#gpload-ux__d3333e1544">UPDATE_CONDITION</a>: '<var class="keyword varname">boolean_condition</var>'
-    - <a class="xref" href="#gpload-ux__d3333e1560">MAPPING</a>:
+    - <a class="xref" href="#gpload-ux__d3456e1544">UPDATE_CONDITION</a>: '<var class="keyword varname">boolean_condition</var>'
+    - <a class="xref" href="#gpload-ux__d3456e1560">MAPPING</a>:
               <var class="keyword varname">target_column_name</var>: <var class="keyword varname">source_column_name</var> | '<var class="keyword varname">expression</var>'
-   <a class="xref" href="#gpload-ux__d3333e1609">PRELOAD</a>:
-    - <a class="xref" href="#gpload-ux__d3333e1621">TRUNCATE</a>: true | false
-    - <a class="xref" href="#gpload-ux__d3333e1633">REUSE_TABLES</a>: true | false
-   <a class="xref" href="#gpload-ux__d3333e1662">SQL</a>:
-    - <a class="xref" href="#gpload-ux__d3333e1677">BEFORE</a>: "<var class="keyword varname">sql_command</var>"
-    - <a class="xref" href="#gpload-ux__d3333e1686">AFTER</a>: "<var class="keyword varname">sql_command</var>"</pre>
+   <a class="xref" href="#gpload-ux__d3456e1609">PRELOAD</a>:
+    - <a class="xref" href="#gpload-ux__d3456e1621">TRUNCATE</a>: true | false
+    - <a class="xref" href="#gpload-ux__d3456e1633">REUSE_TABLES</a>: true | false
+   <a class="xref" href="#gpload-ux__d3456e1662">SQL</a>:
+    - <a class="xref" href="#gpload-ux__d3456e1677">BEFORE</a>: "<var class="keyword varname">sql_command</var>"
+    - <a class="xref" href="#gpload-ux__d3456e1686">AFTER</a>: "<var class="keyword varname">sql_command</var>"</pre>
 
             <dl class="dl parml">
                 
-                    <dt class="dt pt dlterm" id="gpload-ux__d3333e683">VERSION</dt>
+                    <dt class="dt pt dlterm" id="gpload-ux__d3456e683">VERSION</dt>
 
                     <dd class="dd pd">Optional. The version of the <samp class="ph codeph">gpload</samp> control file schema.
                         The current version is 1.0.0.1. </dd>
 
                 
                 
-                    <dt class="dt pt dlterm" id="gpload-ux__d3333e695">DATABASE</dt>
+                    <dt class="dt pt dlterm" id="gpload-ux__d3456e695">DATABASE</dt>
 
                     <dd class="dd pd">Optional. Specifies which database in the Greenplum Database system to
                         connect to. If not specified, defaults to <samp class="ph codeph">$PGDATABASE</samp> if
@@ -5908,7 +5926,7 @@
 
                 
                 
-                    <dt class="dt pt dlterm" id="gpload-ux__d3333e710">USER</dt>
+                    <dt class="dt pt dlterm" id="gpload-ux__d3456e710">USER</dt>
 
                     <dd class="dd pd">Optional. Specifies which database role to use to connect. If not specified,
                         defaults to the current user or <samp class="ph codeph">$PGUSER</samp> if set. You can
@@ -5922,7 +5940,7 @@
 
                 
                 
-                    <dt class="dt pt dlterm" id="gpload-ux__d3333e734">HOST</dt>
+                    <dt class="dt pt dlterm" id="gpload-ux__d3456e734">HOST</dt>
 
                     <dd class="dd pd">Optional. Specifies Greenplum Database master host name. If not specified,
                         defaults to localhost or <samp class="ph codeph">$PGHOST</samp> if set. You can also
@@ -5931,7 +5949,7 @@
 
                 
                 
-                    <dt class="dt pt dlterm" id="gpload-ux__d3333e749">PORT</dt>
+                    <dt class="dt pt dlterm" id="gpload-ux__d3456e749">PORT</dt>
 
                     <dd class="dd pd">Optional. Specifies Greenplum Database master port. If not specified,
                         defaults to 5432 or <samp class="ph codeph">$PGPORT</samp> if set. You can also specify
@@ -5940,13 +5958,13 @@
 
                 
                 
-                    <dt class="dt pt dlterm" id="gpload-ux__d3333e765">GPLOAD</dt>
+                    <dt class="dt pt dlterm" id="gpload-ux__d3456e765">GPLOAD</dt>
 
                     <dd class="dd pd">Required. Begins the load specification section. A <samp class="ph codeph">GPLOAD</samp>
                         specification must have an <samp class="ph codeph">INPUT</samp> and an
                             <samp class="ph codeph">OUTPUT</samp> section defined. <dl class="dl parml">
                             
-                                <dt class="dt pt dlterm" id="gpload-ux__d3333e783">INPUT</dt>
+                                <dt class="dt pt dlterm" id="gpload-ux__d3456e783">INPUT</dt>
 
                                 <dd class="dd pd">Required. Defines the location and the format of the input data
                                     to be loaded. <samp class="ph codeph">gpload</samp> will start one or more
@@ -5957,7 +5975,7 @@
                                         <samp class="ph codeph">gpload</samp> must be accessible over the network
                                     by all Greenplum Database hosts (master and segments).<dl class="dl parml">
                                         
-                                            <dt class="dt pt dlterm" id="gpload-ux__d3333e801">SOURCE</dt>
+                                            <dt class="dt pt dlterm" id="gpload-ux__d3456e801">SOURCE</dt>
 
                                             <dd class="dd pd">Required. The <samp class="ph codeph">SOURCE</samp> block of an
                                                   <samp class="ph codeph">INPUT</samp> specification defines the
@@ -5977,7 +5995,7 @@
                                                   Guide</cite>.</p>
 <dl class="dl parml">
                                                   
-                                                  <dt class="dt pt dlterm" id="gpload-ux__d3333e846">LOCAL_HOSTNAME</dt>
+                                                  <dt class="dt pt dlterm" id="gpload-ux__d3456e846">LOCAL_HOSTNAME</dt>
 
                                                   <dd class="dd pd">Optional. Specifies the host name or IP
                                                   address of the local machine on which
@@ -5991,7 +6009,7 @@
 
                                                   
                                                   
-                                                  <dt class="dt pt dlterm" id="gpload-ux__d3333e858">PORT</dt>
+                                                  <dt class="dt pt dlterm" id="gpload-ux__d3456e858">PORT</dt>
 
                                                   <dd class="dd pd">Optional. Specifies the specific port number
                                                   that the <samp class="ph codeph"><a class="xref" href="../../../utility_guide/admin_utilities/gpfdist.html#topic1">gpfdist</a></samp> file
@@ -6014,7 +6032,7 @@
 
                                                   
                                                   
-                                                  <dt class="dt pt dlterm" id="gpload-ux__d3333e894">PORT_RANGE</dt>
+                                                  <dt class="dt pt dlterm" id="gpload-ux__d3456e894">PORT_RANGE</dt>
 
                                                   <dd class="dd pd">Optional. Can be used instead of
                                                   <samp class="ph codeph">PORT</samp> to supply a range of port
@@ -6025,7 +6043,7 @@
 
                                                   
                                                   
-                                                  <dt class="dt pt dlterm" id="gpload-ux__d3333e912">FILE</dt>
+                                                  <dt class="dt pt dlterm" id="gpload-ux__d3456e912">FILE</dt>
 
                                                   <dd class="dd pd">Required. Specifies the location of a file,
                                                   named pipe, or directory location on the local
@@ -6052,7 +6070,7 @@
 
                                                   
                                                   
-                                                  <dt class="dt pt dlterm" id="gpload-ux__d3333e950">SSL</dt>
+                                                  <dt class="dt pt dlterm" id="gpload-ux__d3456e950">SSL</dt>
 
                                                   <dd class="dd pd">Optional. Specifies usage of SSL encryption.
                                                   If <samp class="ph codeph">SSL</samp> is set to true,
@@ -6063,23 +6081,23 @@
 
                                                   
                                                   
-                                                  <dt class="dt pt dlterm" id="gpload-ux__d3333e975">CERTIFICATES_PATH</dt>
+                                                  <dt class="dt pt dlterm" id="gpload-ux__d3456e975">CERTIFICATES_PATH</dt>
 
                                                   <dd class="dd pd">Required when SSL is <samp class="ph codeph">true</samp>;
                                                   cannot be specified when SSL is
                                                   <samp class="ph codeph">false</samp> or unspecified. The
                                                   location specified in
                                                   <samp class="ph codeph">CERTIFICATES_PATH</samp> must contain
-                                                  the following files: <ul class="ul" id="gpload-ux__d3333e989">
-                                                  <li class="li" id="gpload-ux__d3333e991">The server certificate file,
+                                                  the following files: <ul class="ul" id="gpload-ux__d3456e989">
+                                                  <li class="li" id="gpload-ux__d3456e991">The server certificate file,
                                                   <samp class="ph codeph">server.crt</samp>
 </li>
 
-                                                  <li class="li" id="gpload-ux__d3333e996">The server private key file,
+                                                  <li class="li" id="gpload-ux__d3456e996">The server private key file,
                                                   <samp class="ph codeph">server.key</samp>
 </li>
 
-                                                  <li class="li" id="gpload-ux__d3333e1001">The trusted certificate
+                                                  <li class="li" id="gpload-ux__d3456e1001">The trusted certificate
                                                   authorities, <samp class="ph codeph">root.crt</samp>
 </li>
 
@@ -6095,7 +6113,7 @@
 
                                         
                                         
-                                            <dt class="dt pt dlterm" id="gpload-ux__d3333e1020">FULLY_QUALIFIED_DOMAIN_NAME</dt>
+                                            <dt class="dt pt dlterm" id="gpload-ux__d3456e1020">FULLY_QUALIFIED_DOMAIN_NAME</dt>
 
                                             <dd class="dd pd">Optional. Specifies whether <samp class="ph codeph">gpload</samp>
                                                 resolve hostnames to the fully qualified domain name
@@ -6113,7 +6131,7 @@
 
                                         
                                         
-                                            <dt class="dt pt dlterm" id="gpload-ux__d3333e1046">COLUMNS</dt>
+                                            <dt class="dt pt dlterm" id="gpload-ux__d3456e1046">COLUMNS</dt>
 
                                             <dd class="dd pd">Optional. Specifies the schema of the source data
                                                 file(s) in the format of
@@ -6137,7 +6155,7 @@
 
                                         
                                         
-                                            <dt class="dt pt dlterm" id="gpload-ux__d3333e1084">TRANSFORM</dt>
+                                            <dt class="dt pt dlterm" id="gpload-ux__d3456e1084">TRANSFORM</dt>
 
                                             <dd class="dd pd">Optional. Specifies the name of the input
                                                 transformation passed to <samp class="ph codeph">gpload</samp>.
@@ -6147,7 +6165,7 @@
 
                                         
                                         
-                                            <dt class="dt pt dlterm" id="gpload-ux__d3333e1099">TRANSFORM_CONFIG</dt>
+                                            <dt class="dt pt dlterm" id="gpload-ux__d3456e1099">TRANSFORM_CONFIG</dt>
 
                                             <dd class="dd pd">Required when <samp class="ph codeph">TRANSFORM</samp> is
                                                 specified. Specifies the location of the
@@ -6157,7 +6175,7 @@
 
                                         
                                         
-                                            <dt class="dt pt dlterm" id="gpload-ux__d3333e1115">MAX_LINE_LENGTH</dt>
+                                            <dt class="dt pt dlterm" id="gpload-ux__d3456e1115">MAX_LINE_LENGTH</dt>
 
                                             <dd class="dd pd">Optional. An integer that specifies the maximum
                                                 length of a line in the XML transformation data
@@ -6165,7 +6183,7 @@
 
                                         
                                         
-                                            <dt class="dt pt dlterm" id="gpload-ux__d3333e1127">FORMAT</dt>
+                                            <dt class="dt pt dlterm" id="gpload-ux__d3456e1127">FORMAT</dt>
 
                                             <dd class="dd pd">Optional. Specifies the format of the source data
                                                 file(s) - either plain text (<samp class="ph codeph">TEXT</samp>)
@@ -6178,7 +6196,7 @@
 
                                         
                                         
-                                            <dt class="dt pt dlterm" id="gpload-ux__d3333e1148">DELIMITER</dt>
+                                            <dt class="dt pt dlterm" id="gpload-ux__d3456e1148">DELIMITER</dt>
 
                                             <dd class="dd pd">Optional. Specifies a single ASCII character that
                                                 separates columns within each row (line) of data.
@@ -6196,7 +6214,7 @@
 
                                         
                                         
-                                            <dt class="dt pt dlterm" id="gpload-ux__d3333e1175">ESCAPE</dt>
+                                            <dt class="dt pt dlterm" id="gpload-ux__d3456e1175">ESCAPE</dt>
 
                                             <dd class="dd pd">Specifies the single character that is used for C
                                                 escape sequences (such as <samp class="ph codeph">\n</samp>,
@@ -6218,7 +6236,7 @@
 
                                         
                                         
-                                            <dt class="dt pt dlterm" id="gpload-ux__d3333e1199">NULL_AS</dt>
+                                            <dt class="dt pt dlterm" id="gpload-ux__d3456e1199">NULL_AS</dt>
 
                                             <dd class="dd pd">Optional. Specifies the string that represents a
                                                 null value. The default is <samp class="ph codeph">\N</samp>
@@ -6233,7 +6251,7 @@
 
                                         
                                         
-                                            <dt class="dt pt dlterm" id="gpload-ux__d3333e1220">FORCE_NOT_NULL</dt>
+                                            <dt class="dt pt dlterm" id="gpload-ux__d3456e1220">FORCE_NOT_NULL</dt>
 
                                             <dd class="dd pd">Optional. In CSV mode, processes each specified
                                                 column as though it were quoted and hence not a NULL
@@ -6244,7 +6262,7 @@
 
                                         
                                         
-                                            <dt class="dt pt dlterm" id="gpload-ux__d3333e1230">QUOTE</dt>
+                                            <dt class="dt pt dlterm" id="gpload-ux__d3456e1230">QUOTE</dt>
 
                                             <dd class="dd pd">Required when <samp class="ph codeph">FORMAT</samp> is
                                                   <samp class="ph codeph">CSV</samp>. Specifies the quotation
@@ -6253,7 +6271,7 @@
 
                                         
                                         
-                                            <dt class="dt pt dlterm" id="gpload-ux__d3333e1251">HEADER</dt>
+                                            <dt class="dt pt dlterm" id="gpload-ux__d3456e1251">HEADER</dt>
 
                                             <dd class="dd pd">Optional. Specifies that the first line in the data
                                                 file(s) is a header row (contains the names of the
@@ -6265,7 +6283,7 @@
 
                                         
                                         
-                                            <dt class="dt pt dlterm" id="gpload-ux__d3333e1260">ENCODING</dt>
+                                            <dt class="dt pt dlterm" id="gpload-ux__d3456e1260">ENCODING</dt>
 
                                             <dd class="dd pd">Optional. Character set encoding of the source data.
                                                 Specify a string constant (such as
@@ -6279,7 +6297,7 @@
 
                                         
                                         
-                                            <dt class="dt pt dlterm" id="gpload-ux__d3333e1278">ERROR_LIMIT</dt>
+                                            <dt class="dt pt dlterm" id="gpload-ux__d3456e1278">ERROR_LIMIT</dt>
 
                                             <dd class="dd pd">Optional. Enables single row error isolation mode
                                                 for this load operation. When enabled, input rows
@@ -6304,7 +6322,7 @@
 
                                         
                                         
-                                            <dt class="dt pt dlterm" id="gpload-ux__d3333e1289">LOG_ERRORS</dt>
+                                            <dt class="dt pt dlterm" id="gpload-ux__d3456e1289">LOG_ERRORS</dt>
 
                                             <dd class="dd pd">Optional when <samp class="ph codeph">ERROR_LIMIT</samp> is
                                                 declared. Value is either <samp class="ph codeph">true</samp> or
@@ -6348,7 +6366,7 @@
 
                                         
                                         
-                                            <dt class="dt pt dlterm" id="gpload-ux__d3333e1362">EXTERNAL</dt>
+                                            <dt class="dt pt dlterm" id="gpload-ux__d3456e1362">EXTERNAL</dt>
 
                                             <dd class="dd pd">Optional. Defines the schema of the external table
                                                 database objects created by <samp class="ph codeph">gpload</samp>. </dd>
@@ -6359,7 +6377,7 @@
                                             <dd class="dd pd">
                                                 <dl class="dl parml">
                                                   
-                                                  <dt class="dt pt dlterm" id="gpload-ux__d3333e1383">SCHEMA</dt>
+                                                  <dt class="dt pt dlterm" id="gpload-ux__d3456e1383">SCHEMA</dt>
 
                                                   <dd class="dd pd">Required when <samp class="ph codeph">EXTERNAL</samp> is
                                                   declared. The name of the schema of the external
@@ -6384,19 +6402,19 @@
 
                             
                             
-                                <dt class="dt pt dlterm" id="gpload-ux__d3333e1412">OUTPUT</dt>
+                                <dt class="dt pt dlterm" id="gpload-ux__d3456e1412">OUTPUT</dt>
 
                                 <dd class="dd pd">Required. Defines the target table and final data column values
                                     that are to be loaded into the database.<dl class="dl parml">
                                         
-                                            <dt class="dt pt dlterm" id="gpload-ux__d3333e1421">TABLE</dt>
+                                            <dt class="dt pt dlterm" id="gpload-ux__d3456e1421">TABLE</dt>
 
                                             <dd class="dd pd">Required. The name of the target table to load
                                                 into.</dd>
 
                                         
                                         
-                                            <dt class="dt pt dlterm" id="gpload-ux__d3333e1430">MODE</dt>
+                                            <dt class="dt pt dlterm" id="gpload-ux__d3456e1430">MODE</dt>
 
                                             <dd class="dd pd">Optional. Defaults to <samp class="ph codeph">INSERT</samp> if not
                                                 specified. There are three available load
@@ -6438,7 +6456,7 @@
 
                                         
                                         
-                                            <dt class="dt pt dlterm" id="gpload-ux__d3333e1502">MATCH_COLUMNS</dt>
+                                            <dt class="dt pt dlterm" id="gpload-ux__d3456e1502">MATCH_COLUMNS</dt>
 
                                             <dd class="dd pd">Required if <samp class="ph codeph">MODE</samp> is
                                                   <samp class="ph codeph">UPDATE</samp> or <samp class="ph codeph">MERGE</samp>.
@@ -6450,7 +6468,7 @@
 
                                         
                                         
-                                            <dt class="dt pt dlterm" id="gpload-ux__d3333e1520">UPDATE_COLUMNS</dt>
+                                            <dt class="dt pt dlterm" id="gpload-ux__d3456e1520">UPDATE_COLUMNS</dt>
 
                                             <dd class="dd pd">Required if <samp class="ph codeph">MODE</samp> is
                                                   <samp class="ph codeph">UPDATE</samp> or <samp class="ph codeph">MERGE</samp>.
@@ -6461,7 +6479,7 @@
 
                                         
                                         
-                                            <dt class="dt pt dlterm" id="gpload-ux__d3333e1544">UPDATE_CONDITION</dt>
+                                            <dt class="dt pt dlterm" id="gpload-ux__d3456e1544">UPDATE_CONDITION</dt>
 
                                             <dd class="dd pd">Optional. Specifies a Boolean condition (similar to
                                                 what you would declare in a <samp class="ph codeph">WHERE</samp>
@@ -6471,7 +6489,7 @@
 
                                         
                                         
-                                            <dt class="dt pt dlterm" id="gpload-ux__d3333e1560">MAPPING</dt>
+                                            <dt class="dt pt dlterm" id="gpload-ux__d3456e1560">MAPPING</dt>
 
                                             <dd class="dd pd">Optional. If a mapping is specified, it overrides
                                                 the default source-to-target column mapping. The
@@ -6505,19 +6523,19 @@
 
                 
                 
-                    <dt class="dt pt dlterm" id="gpload-ux__d3333e1609">PRELOAD</dt>
+                    <dt class="dt pt dlterm" id="gpload-ux__d3456e1609">PRELOAD</dt>
 
                     <dd class="dd pd">Optional. Specifies operations to run prior to the load operation. Right now
                         the only preload operation is <samp class="ph codeph">TRUNCATE</samp>.<dl class="dl parml">
                             
-                                <dt class="dt pt dlterm" id="gpload-ux__d3333e1621">TRUNCATE</dt>
+                                <dt class="dt pt dlterm" id="gpload-ux__d3456e1621">TRUNCATE</dt>
 
                                 <dd class="dd pd">Optional. If set to true, <samp class="ph codeph">gpload</samp> will remove
                                     all rows in the target table prior to loading it.</dd>
 
                             
                             
-                                <dt class="dt pt dlterm" id="gpload-ux__d3333e1633">REUSE_TABLES</dt>
+                                <dt class="dt pt dlterm" id="gpload-ux__d3456e1633">REUSE_TABLES</dt>
 
                                 <dd class="dd pd">Optional. If set to true, <samp class="ph codeph">gpload</samp> will not drop
                                     the external table objects and staging table objects it creates.
@@ -6539,20 +6557,20 @@
 
                 
                 
-                    <dt class="dt pt dlterm" id="gpload-ux__d3333e1662">SQL</dt>
+                    <dt class="dt pt dlterm" id="gpload-ux__d3456e1662">SQL</dt>
 
                     <dd class="dd pd">Optional. Defines SQL commands to run before and/or after the load
                         operation. You can specify multiple <samp class="ph codeph">BEFORE</samp> and/or
                             <samp class="ph codeph">AFTER</samp> commands. List commands in the order of desired execution.<dl class="dl parml">
                             
-                                <dt class="dt pt dlterm" id="gpload-ux__d3333e1677">BEFORE</dt>
+                                <dt class="dt pt dlterm" id="gpload-ux__d3456e1677">BEFORE</dt>
 
                                 <dd class="dd pd">Optional. An SQL command to run before the load operation
                                     starts. Enclose commands in quotes.</dd>
 
                             
                             
-                                <dt class="dt pt dlterm" id="gpload-ux__d3333e1686">AFTER</dt>
+                                <dt class="dt pt dlterm" id="gpload-ux__d3456e1686">AFTER</dt>
 
                                 <dd class="dd pd">Optional. An SQL command to run after the load operation
                                     completes. Enclose commands in quotes.</dd>
@@ -6566,7 +6584,7 @@
 
         </div>
 
-        <div class="section" id="gpload-ux__d3333e1697">
+        <div class="section" id="gpload-ux__d3456e1697">
 <h2 class="title sectiontitle">Log File Format</h2>
             
             <p class="p">Log files output by <samp class="ph codeph">gpload</samp> have the following format:</p>
@@ -6592,7 +6610,7 @@ INFO|<var class="keyword varname">#</var> bad rows</pre>
 
         </div>
 
-        <div class="section" id="gpload-ux__d3333e1772">
+        <div class="section" id="gpload-ux__d3456e1772">
 <h2 class="title sectiontitle">Notes</h2>
             
             <p class="p">If your database object names were created using a double-quoted identifier
@@ -6612,7 +6630,7 @@ OUTPUT:
 
         </div>
 
-        <div class="section" id="gpload-ux__d3333e1796">
+        <div class="section" id="gpload-ux__d3456e1796">
 <h2 class="title sectiontitle">Examples</h2>
             
             <p class="p">Run a load job as defined in <samp class="ph codeph">my_load.yml</samp>:</p>
@@ -6659,7 +6677,7 @@ GPLOAD:
 
         </div>
 
-        <div class="section" id="gpload-ux__d3333e1817">
+        <div class="section" id="gpload-ux__d3456e1817">
 <h2 class="title sectiontitle">See Also</h2>
             
             <p class="p"><samp class="ph codeph"><a class="xref" href="../../../utility_guide/admin_utilities/gpfdist.html#topic1">gpfdist</a></samp>,
