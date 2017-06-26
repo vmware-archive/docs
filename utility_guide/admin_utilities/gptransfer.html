@@ -794,12 +794,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/managing/backup-ddboost.html">Backing Up Databases with Data Domain Boost</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/managing/backup-veritas.html">Backing Up Databases with Veritas NetBackup</a>
         
 
@@ -5404,208 +5398,6 @@
 
       </li>
     
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/client-docs-unix.html">UNIX Client Documentation</a>
-        
-  <ul>
-    
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/client_tools_unix.html">Client Tools for UNIX</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/client/unix/unix_client_install.html">Installing the Greenplum Client Tools</a>
-        
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/client/unix/unix_client_tool_ref.html">Client Tools Reference</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/client/unix/gpmapreduce.html">gpmapreduce</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/client/unix/psql.html">psql</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/common/client_sql_ref.html">SQL Syntax Summary</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/load_tools_unix.html">Load Tools for UNIX</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/load/unix/unix_load_install.html">Installing the Greenplum Load Tools</a>
-        
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/load/unix/unix_load_tool_ref.html">Load Tools Reference</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/load/unix/gpfdist.html">gpfdist</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/load/unix/gpload.html">gpload</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/load/unix/load_sql_ref.html">SQL Syntax Summary</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/client-docs-win.html">Windows Client Documentation</a>
-        
-  <ul>
-    
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/client_tools_windows.html">Client Tools for Windows</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/client/windows/win_client_install.html">Installing the Greenplum Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/client/windows/win_client_run.html">Running the Greenplum Client Tools</a>
-        
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/client/windows/win_client_tool_ref.html">Client Tools Reference</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/client/windows/psqlexe.html">psql.exe</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/common/client_sql_ref.html">SQL Syntax Summary</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/load_tools_windows.html">Load Tools for Windows</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/load/windows/win_load_install.html">Installing Greenplum Loader</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/load/windows/win_load_run.html">Running Greenplum Loader</a>
-        
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/load/windows/win_load_tool_ref.html">Loader Program Reference</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/load/windows/gploadpy.html">gpload.py</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/load/windows/gpfdistexe.html">gpfdist.exe</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/load/windows/load_sql_ref.html">SQL Syntax Summary</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
   </ul>
 
 
@@ -5666,6 +5458,8 @@
 
    [<strong class="ph b">-v</strong> | <strong class="ph b">--verbose</strong>]
    [<strong class="ph b">-q</strong> | <strong class="ph b">--quiet</strong>]
+   [<strong class="ph b">--gpfdist-verbose</strong>]
+   [<strong class="ph b">--gpfdist-very-verbose</strong>]
    [<strong class="ph b">-a</strong>]
 
 <strong class="ph b">gptransfer --version</strong>
@@ -5781,6 +5575,21 @@
                 work directory. The default directory is the user's home directory. You can specify
                 a different directory with the <samp class="ph codeph">--work-base-dir</samp> option. </p>
 
+            <p class="p">The <samp class="ph codeph">gptransfer</samp> utility logs messages in the
+                    <samp class="ph codeph">~/gpAdminLogs</samp> directory on the master host.
+                    <samp class="ph codeph">gptransfer</samp> creates a log file with the name
+                        <samp class="ph codeph">gptransfer_<var class="keyword varname">date</var>.log</samp> and appends messages
+                to it each time it runs on that day. You can specify a different directory for the
+                log file using the <samp class="ph codeph">-l <var class="keyword varname">log_directory</var></samp> option. </p>
+
+            <p class="p">Work directories named <samp class="ph codeph">~/gptransfer_<var class="keyword varname">process_id</var></samp>
+                are created on segment hosts in the source cluster. Log files for the
+                    <samp class="ph codeph">gpfdist</samp> instances that <samp class="ph codeph">gptransfer</samp> creates are
+                in these directories. Adding the <samp class="ph codeph">--gpfdist-verbose</samp> or
+                    <samp class="ph codeph">--gpfdist-very-verbose</samp> options to the
+                    <samp class="ph codeph">gptransfer</samp> command line increases the <samp class="ph codeph">gpfdist</samp>
+                logging level.</p>
+
             <p class="p">The <samp class="ph codeph">gptransfer</samp> utility does not move configuration files such as
                     <samp class="ph codeph">postgres.conf</samp> and <samp class="ph codeph">pg_hba.conf</samp>. You must set up
                 the destination system configuration separately. </p>
@@ -5837,12 +5646,12 @@
             <div class="sectiondiv">
                 <strong class="ph b">Limitation for the Source and Destination Systems</strong>
                 <p class="p">If you are copying data from a system with a larger number of segments to a
-                    system with a fewer number of segment hosts, then the total number of primary segments on
-                    the destination system must be greater than or equal to the total number of
-                    segment hosts on the source system. </p>
+                    system with a fewer number of segment hosts, then the total number of primary
+                    segments on the destination system must be greater than or equal to the total
+                    number of segment hosts on the source system. </p>
 
-                <p class="p">For example, assume a destination system has a total of 24 primary
-                    segments. This means that the source system cannot have more than 24 segment hosts.</p>
+                <p class="p">For example, assume a destination system has a total of 24 primary segments. This
+                    means that the source system cannot have more than 24 segment hosts.</p>
 
                 <p class="p">When you copy data from a source Greenplum Database system with a larger number
                     of primary segment instances than on the destination system, the data transfer
@@ -6289,11 +6098,36 @@
 
                 
                 
+                    <dt class="dt pt dlterm">--gpfdist-verbose</dt>
+
+                    <dd class="dd pd">Set the logging level for <samp class="ph codeph">gpfdist</samp> processes to verbose
+                            (<samp class="ph codeph">-v</samp>). Cannot be specified with
+                            <samp class="ph codeph">--gpfdist-very-verbose</samp>.</dd>
+
+                    <dd class="dd pd">The output is recorded in <samp class="ph codeph">gpfdist</samp> log files in the
+                                <samp class="ph codeph">~/gptransfer_<var class="keyword varname">process_id</var></samp>
+                        directory on segment hosts in the source Greenplum Database cluster.</dd>
+
+                
+                
+                    <dt class="dt pt dlterm">--gpfdist-very-verbose</dt>
+
+                    <dd class="dd pd">Set the logging level for <samp class="ph codeph">gpfdist</samp> processes to very verbose
+                            (<samp class="ph codeph">-V</samp>). Cannot be specified with
+                            <samp class="ph codeph">--gpfdist-verbose</samp>.</dd>
+
+                    <dd class="dd pd">The output is recorded in <samp class="ph codeph">gpfdist</samp> log files in the
+                                <samp class="ph codeph">~/gptransfer_<var class="keyword varname">process_id</var></samp>
+                        directory on segment hosts in the source Greenplum Database cluster.</dd>
+
+                
+                
                     <dt class="dt pt dlterm">-l <var class="keyword varname">log_dir</var>
 </dt>
 
                     <dd class="dd pd">Specify the <samp class="ph codeph">gptransfer</samp> log file directory. If not
-                        specified, the default is <samp class="ph codeph">~/gpAdminLogs</samp>.</dd>
+                        specified, the default is <samp class="ph codeph">~/gpAdminLogs</samp>. This directory is
+                        created on the master host in the source Greenplum cluster.</dd>
 
                 
                 

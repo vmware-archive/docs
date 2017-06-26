@@ -794,12 +794,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/managing/backup-ddboost.html">Backing Up Databases with Data Domain Boost</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/managing/backup-veritas.html">Backing Up Databases with Veritas NetBackup</a>
         
 
@@ -5404,208 +5398,6 @@
 
       </li>
     
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/client-docs-unix.html">UNIX Client Documentation</a>
-        
-  <ul>
-    
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/client_tools_unix.html">Client Tools for UNIX</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/client/unix/unix_client_install.html">Installing the Greenplum Client Tools</a>
-        
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/client/unix/unix_client_tool_ref.html">Client Tools Reference</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/client/unix/gpmapreduce.html">gpmapreduce</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/client/unix/psql.html">psql</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/common/client_sql_ref.html">SQL Syntax Summary</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/load_tools_unix.html">Load Tools for UNIX</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/load/unix/unix_load_install.html">Installing the Greenplum Load Tools</a>
-        
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/load/unix/unix_load_tool_ref.html">Load Tools Reference</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/load/unix/gpfdist.html">gpfdist</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/load/unix/gpload.html">gpload</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/load/unix/load_sql_ref.html">SQL Syntax Summary</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/client-docs-win.html">Windows Client Documentation</a>
-        
-  <ul>
-    
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/client_tools_windows.html">Client Tools for Windows</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/client/windows/win_client_install.html">Installing the Greenplum Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/client/windows/win_client_run.html">Running the Greenplum Client Tools</a>
-        
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/client/windows/win_client_tool_ref.html">Client Tools Reference</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/client/windows/psqlexe.html">psql.exe</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/common/client_sql_ref.html">SQL Syntax Summary</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/load_tools_windows.html">Load Tools for Windows</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/load/windows/win_load_install.html">Installing Greenplum Loader</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/load/windows/win_load_run.html">Running Greenplum Loader</a>
-        
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/load/windows/win_load_tool_ref.html">Loader Program Reference</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/load/windows/gploadpy.html">gpload.py</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/load/windows/gpfdistexe.html">gpfdist.exe</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/load/windows/load_sql_ref.html">SQL Syntax Summary</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
   </ul>
 
 
@@ -5875,8 +5667,8 @@
           <pre class="pre codeblock">CREATE TABLE sales (id int, date date, amt decimal(10,2))
 DISTRIBUTED BY (id)
 PARTITION BY RANGE (date)
-( START (date '2008-01-01') INCLUSIVE
-   END (date '2009-01-01') EXCLUSIVE
+( START (date '2016-01-01') INCLUSIVE
+   END (date '2017-01-01') EXCLUSIVE
    EVERY (INTERVAL '1 day') );
 </pre>
 
@@ -5888,25 +5680,25 @@ PARTITION BY RANGE (date)
           <pre class="pre codeblock">CREATE TABLE sales (id int, date date, amt decimal(10,2))
 DISTRIBUTED BY (id)
 PARTITION BY RANGE (date)
-( PARTITION Jan08 START (date '2008-01-01') INCLUSIVE , 
-  PARTITION Feb08 START (date '2008-02-01') INCLUSIVE ,
-  PARTITION Mar08 START (date '2008-03-01') INCLUSIVE ,
-  PARTITION Apr08 START (date '2008-04-01') INCLUSIVE ,
-  PARTITION May08 START (date '2008-05-01') INCLUSIVE ,
-  PARTITION Jun08 START (date '2008-06-01') INCLUSIVE ,
-  PARTITION Jul08 START (date '2008-07-01') INCLUSIVE ,
-  PARTITION Aug08 START (date '2008-08-01') INCLUSIVE ,
-  PARTITION Sep08 START (date '2008-09-01') INCLUSIVE ,
-  PARTITION Oct08 START (date '2008-10-01') INCLUSIVE ,
-  PARTITION Nov08 START (date '2008-11-01') INCLUSIVE ,
-  PARTITION Dec08 START (date '2008-12-01') INCLUSIVE 
-                  END (date '2009-01-01') EXCLUSIVE );
+( PARTITION Jan16 START (date '2016-01-01') INCLUSIVE , 
+  PARTITION Feb16 START (date '2016-02-01') INCLUSIVE ,
+  PARTITION Mar16 START (date '2016-03-01') INCLUSIVE ,
+  PARTITION Apr16 START (date '2016-04-01') INCLUSIVE ,
+  PARTITION May16 START (date '2016-05-01') INCLUSIVE ,
+  PARTITION Jun16 START (date '2016-06-01') INCLUSIVE ,
+  PARTITION Jul16 START (date '2016-07-01') INCLUSIVE ,
+  PARTITION Aug16 START (date '2016-08-01') INCLUSIVE ,
+  PARTITION Sep16 START (date '2016-09-01') INCLUSIVE ,
+  PARTITION Oct16 START (date '2016-10-01') INCLUSIVE ,
+  PARTITION Nov16 START (date '2016-11-01') INCLUSIVE ,
+  PARTITION Dec16 START (date '2016-12-01') INCLUSIVE 
+                  END (date '2017-01-01') EXCLUSIVE );
 </pre>
 
         </div>
 
         <p class="p">You do not have to declare an <samp class="ph codeph">END</samp> value for each partition, only the
-          last one. In this example, <samp class="ph codeph">Jan08</samp> ends where <samp class="ph codeph">Feb08</samp>
+          last one. In this example, <samp class="ph codeph">Jan16</samp> ends where <samp class="ph codeph">Feb16</samp>
           starts.</p>
 
       </div>
@@ -5925,7 +5717,7 @@ PARTITION BY RANGE (date)
 char(1), count int)
 DISTRIBUTED BY (id)
 PARTITION BY RANGE (year)
-( START (2001) END (2008) EVERY (1), 
+( START (2006) END (2016) EVERY (1), 
   DEFAULT PARTITION extra ); 
 </pre>
 
@@ -6050,8 +5842,8 @@ PARTITION BY RANGE (year)
         <div class="p">
           <pre class="pre codeblock">CREATE TABLE sales2 (LIKE sales) 
 PARTITION BY RANGE (date)
-( START (date '2008-01-01') INCLUSIVE
-   END (date '2009-01-01') EXCLUSIVE
+( START (date 2016-01-01') INCLUSIVE
+   END (date '2017-01-01') EXCLUSIVE
    EVERY (INTERVAL '1 month') );
 INSERT INTO sales2 SELECT * FROM sales;
 DROP TABLE sales;
@@ -6242,7 +6034,7 @@ region='usa';
       <div class="p">
         <pre class="pre codeblock">-&gt;  <samp class="ph codeph">Seq Scan on</samp><samp class="ph codeph">sales_1_prt_1</samp> sales (cost=0.00..0.00 <samp class="ph codeph">rows=0</samp> 
      width=0)
-Filter: "date"=01-07-08::date AND region='USA'::text
+Filter: "date"=01-07-12::date AND region='USA'::text
 -&gt;  <samp class="ph codeph">Seq Scan on</samp><samp class="ph codeph">sales_1_2_prt_usa</samp> sales (cost=0.00..9.87 
 <samp class="ph codeph">rows=20</samp> 
       width=40)
@@ -6396,8 +6188,8 @@ WHERE tablename='sales';
 
         <div class="p">
           <pre class="pre codeblock">ALTER TABLE sales ADD PARTITION 
-            START (date '2009-02-01') INCLUSIVE 
-            END (date '2009-03-01') EXCLUSIVE;
+            START (date '2017-02-01') INCLUSIVE 
+            END (date '2017-03-01') EXCLUSIVE;
 </pre>
 
         </div>
@@ -6407,8 +6199,8 @@ WHERE tablename='sales';
 
         <div class="p">
           <pre class="pre codeblock">ALTER TABLE sales ADD PARTITION 
-            START (date '2009-02-01') INCLUSIVE 
-            END (date '2009-03-01') EXCLUSIVE
+            START (date '2017-02-01') INCLUSIVE 
+            END (date '2017-03-01') EXCLUSIVE
       ( SUBPARTITION usa VALUES ('usa'), 
         SUBPARTITION asia VALUES ('asia'), 
         SUBPARTITION europe VALUES ('europe') );
@@ -6449,7 +6241,7 @@ WHERE tablename='sales';
         <p class="p">For example:</p>
 
         <div class="p">
-          <pre class="pre codeblock"><em class="ph i">sales_1_prt_jan08</em></pre>
+          <pre class="pre codeblock"><em class="ph i">sales_1_prt_jan16</em></pre>
 
         </div>
 
@@ -6481,7 +6273,7 @@ WHERE tablename='sales';
         <p class="p">You can change the name of a partition to make it easier to identify. For example:</p>
 
         <div class="p">
-          <pre class="pre codeblock">ALTER TABLE sales RENAME PARTITION FOR ('2008-01-01') TO jan08;
+          <pre class="pre codeblock">ALTER TABLE sales RENAME PARTITION FOR ('2016-01-01') TO jan16;
 </pre>
 
         </div>
@@ -6489,18 +6281,18 @@ WHERE tablename='sales';
         <p class="p">Changes the associated table name as follows:</p>
 
         <div class="p">
-          <pre class="pre codeblock"><em class="ph i">sales_1_prt_jan08</em></pre>
+          <pre class="pre codeblock"><em class="ph i">sales_1_prt_jan16</em></pre>
 
         </div>
 
         <p class="p">When altering partitioned tables with the <samp class="ph codeph">ALTER TABLE</samp> command, always
-          refer to the tables by their partition name (<em class="ph i">jan08</em>) and not their full table name
-            (<em class="ph i">sales_1_prt_jan08</em>).</p>
+          refer to the tables by their partition name (<em class="ph i">jan16</em>) and not their full table name
+            (<em class="ph i">sales_1_prt_jan16</em>).</p>
 
         <div class="note note">
 <span class="notetitle">Note:</span> The table name cannot be a partition name in an <samp class="ph codeph">ALTER
             TABLE</samp> statement. For example, <samp class="ph codeph">ALTER TABLE sales...</samp> is correct,
-            <samp class="ph codeph">ALTER TABLE sales_1_part_jan08...</samp> is not allowed.</div>
+            <samp class="ph codeph">ALTER TABLE sales_1_part_jan16...</samp> is not allowed.</div>
 
       </div>
 
@@ -6648,9 +6440,9 @@ WITH TABLE jan12;
           dates January 1-15 and the second partition containing dates January 16-31:</p>
 
         <div class="p">
-          <pre class="pre codeblock">ALTER TABLE sales SPLIT PARTITION FOR ('2008-01-01')
-AT ('2008-01-16')
-INTO (PARTITION jan081to15, PARTITION jan0816to31);
+          <pre class="pre codeblock">ALTER TABLE sales SPLIT PARTITION FOR ('2017-01-01')
+AT ('2017-01-16')
+INTO (PARTITION jan171to15, PARTITION jan1716to31);
 </pre>
 
         </div>
@@ -6660,13 +6452,13 @@ INTO (PARTITION jan081to15, PARTITION jan0816to31);
 
         <p class="p">When using the <samp class="ph codeph">INTO</samp> clause, specify the current default partition as the
           second partition name. For example, to split a default range partition to add a new
-          monthly partition for January 2009:</p>
+          monthly partition for January 2017:</p>
 
         <div class="p">
           <pre class="pre codeblock">ALTER TABLE sales SPLIT DEFAULT PARTITION 
-START ('2009-01-01') INCLUSIVE 
-END ('2009-02-01') EXCLUSIVE 
-INTO (PARTITION jan09, default partition);
+START ('2017-01-01') INCLUSIVE 
+END ('2017-02-01') EXCLUSIVE 
+INTO (PARTITION jan17, default partition);
 </pre>
 
         </div>
@@ -6777,17 +6569,17 @@ INTO (PARTITION jan09, default partition);
 
         <div class="body">
           <p class="p">This is a simple example that exchanges a leaf child partition of this partitioned
-            table for an external table. The partitioned table contains data for the years 2000
-            through 2003.</p>
+            table for an external table. The partitioned table contains data for the years 2010
+            through 2013.</p>
 
           <pre class="pre codeblock">CREATE TABLE sales (id int, year int, qtr int, day int, region text)
   DISTRIBUTED BY (id) 
   PARTITION BY RANGE (year) 
-  ( PARTITION yr START (2000) END (2004) EVERY (1) ) ;</pre>
+  ( PARTITION yr START (2010) END (2014) EVERY (1) ) ;</pre>
 
           <p class="p">There are four leaf child partitions for the partitioned table. Each leaf child
             partition contains the data for a single year. The leaf child partition table
-              <samp class="ph codeph">sales_1_prt_yr_1</samp> contains the data for the year 2000. These steps
+              <samp class="ph codeph">sales_1_prt_yr_1</samp> contains the data for the year 2010. These steps
             exchange the table <samp class="ph codeph">sales_1_prt_yr_1</samp> with an external table the uses the
               <samp class="ph codeph">gpfdist</samp> protocol:</p>
 
@@ -6804,7 +6596,7 @@ INTO (PARTITION jan09, default partition);
                 the partitioned
               table.</p>
 <pre class="pre codeblock">CREATE WRITABLE EXTERNAL TABLE my_sales_ext ( LIKE sales_1_prt_yr_1 )
-  LOCATION ( 'gpfdist://gpdb_test/sales_2000' )
+  LOCATION ( 'gpfdist://gpdb_test/sales_2010' )
   FORMAT 'csv' 
   DISTRIBUTED BY (id) ;</pre>
 </li>
@@ -6814,8 +6606,8 @@ INTO (PARTITION jan09, default partition);
                   TABLE</samp> create a readable external that uses the same external data as the
                 writable external
               data.</p>
-<pre class="pre codeblock">CREATE EXTERNAL TABLE sales_2000_ext ( LIKE sales_1_prt_yr_1) 
-  LOCATION ( 'gpfdist://gpdb_test/sales_2000' )
+<pre class="pre codeblock">CREATE EXTERNAL TABLE sales_2010_ext ( LIKE sales_1_prt_yr_1) 
+  LOCATION ( 'gpfdist://gpdb_test/sales_2010' )
   FORMAT 'csv' ;</pre>
 </li>
 
@@ -6833,11 +6625,11 @@ INTO (PARTITION jan09, default partition);
                 </p>
 <pre class="pre codeblock">ALTER TABLE sales ALTER PARTITION yr_1 
    EXCHANGE PARTITION yr_1 
-   WITH TABLE sales_2000_ext WITHOUT VALIDATION;</pre>
+   WITH TABLE sales_2010_ext WITHOUT VALIDATION;</pre>
 <p class="p">The
                 external table becomes the leaf child partition with the table name
                   <samp class="ph codeph">sales_1_prt_yr_1</samp> and the old leaf child partition becomes the
-                table <samp class="ph codeph">sales_2000_ext</samp>. </p>
+                table <samp class="ph codeph">sales_2010_ext</samp>. </p>
 <div class="note warning">
 <span class="warningtitle">Warning:</span> In order to ensure
                 queries against the partitioned table return the correct results, the external table
@@ -6847,7 +6639,7 @@ INTO (PARTITION jan09, default partition);
 </li>
 
             <li class="li">Drop the table that was rolled out of the partitioned
-              table.<pre class="pre codeblock">DROP TABLE sales_2000_ext ;</pre>
+              table.<pre class="pre codeblock">DROP TABLE sales_2010_ext ;</pre>
 </li>
 
           </ol>

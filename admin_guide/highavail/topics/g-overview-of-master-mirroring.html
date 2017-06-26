@@ -794,12 +794,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/managing/backup-ddboost.html">Backing Up Databases with Data Domain Boost</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/admin_guide/managing/backup-veritas.html">Backing Up Databases with Veritas NetBackup</a>
         
 
@@ -5404,208 +5398,6 @@
 
       </li>
     
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/client-docs-unix.html">UNIX Client Documentation</a>
-        
-  <ul>
-    
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/client_tools_unix.html">Client Tools for UNIX</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/client/unix/unix_client_install.html">Installing the Greenplum Client Tools</a>
-        
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/client/unix/unix_client_tool_ref.html">Client Tools Reference</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/client/unix/gpmapreduce.html">gpmapreduce</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/client/unix/psql.html">psql</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/common/client_sql_ref.html">SQL Syntax Summary</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/load_tools_unix.html">Load Tools for UNIX</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/load/unix/unix_load_install.html">Installing the Greenplum Load Tools</a>
-        
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/load/unix/unix_load_tool_ref.html">Load Tools Reference</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/load/unix/gpfdist.html">gpfdist</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/load/unix/gpload.html">gpload</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/load/unix/load_sql_ref.html">SQL Syntax Summary</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/client-docs-win.html">Windows Client Documentation</a>
-        
-  <ul>
-    
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/client_tools_windows.html">Client Tools for Windows</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/client/windows/win_client_install.html">Installing the Greenplum Client Tools</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/client/windows/win_client_run.html">Running the Greenplum Client Tools</a>
-        
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/client/windows/win_client_tool_ref.html">Client Tools Reference</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/client/windows/psqlexe.html">psql.exe</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/common/client_sql_ref.html">SQL Syntax Summary</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/load_tools_windows.html">Load Tools for Windows</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/load/windows/win_load_install.html">Installing Greenplum Loader</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/load/windows/win_load_run.html">Running Greenplum Loader</a>
-        
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/client_tool_guides/load/windows/win_load_tool_ref.html">Loader Program Reference</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/load/windows/gploadpy.html">gpload.py</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/load/windows/gpfdistexe.html">gpfdist.exe</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/client_tool_guides/load/windows/load_sql_ref.html">SQL Syntax Summary</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
   </ul>
 
 
@@ -5643,12 +5435,16 @@
             the snapshot is deployed on the standby master, the updates are deployed to synchronize
             the standby master with the primary master.</p>
 
-        <p class="p">Once the primary master and standby master are synchronized, the standby master is kept
+        <div class="p">Once the primary master and standby master are synchronized, the standby master is kept
             up to date by the <samp class="ph codeph">walsender</samp> and <samp class="ph codeph">walreceiver</samp>
             replication processes. The <samp class="ph codeph">walreceiver</samp> is a standby master process. The
                 <samp class="ph codeph">walsender</samp> process is a primary master process. The two processes
-            use WAL-based streaming replication to keep the primary and standby masters
-            synchronized.</p>
+            use Write-Ahead Logging (WAL)-based streaming replication to keep the primary and
+            standby masters synchronized. In WAL logging, all modifications are written to the log
+            before being applied, to ensure data integrity for any in-process operations.<div class="note note">
+<span class="notetitle">Note:</span> WAL
+                logging is not yet available for segment mirroring.</div>
+</div>
 
         <p class="p">Since the master does not house user data, only system catalog tables are synchronized
             between the primary and standby masters. When these tables are updated, changes are
