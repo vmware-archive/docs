@@ -63,6 +63,168 @@
       </li>
     
       <li class="has_submenu">
+        <a href="/docs/best_practices/intro.html">Best Practices</a>
+        
+  <ul>
+    
+      <li class="">
+        <a href="/docs/best_practices/summary.html">Best Practices Summary</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/sysconfig.html">System Configuration</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/schema.html">Schema Design</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/workloads.html">Memory and Workload Management</a>
+        
+
+      </li>
+    
+      <li class="has_submenu">
+        <a href="/docs/best_practices/maintenance.html">System Monitoring and Maintenance</a>
+        
+  <ul>
+    
+      <li class="">
+        <a href="/docs/best_practices/analyze.html">Updating Statistics with ANALYZE</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/bloat.html">Managing Bloat in the Database</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/logfiles.html">Monitoring Greenplum Database Log Files</a>
+        
+
+      </li>
+    
+  </ul>
+
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/data_loading.html">Loading Data</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/gptransfer.html">Migrating Data with Gptransfer</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/security.html">Security</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/encryption.html">Encrypting Data and Database Connections</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/kerberos-hdfs.html">Accessing a Kerberized Hadoop Cluster</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/tuning_queries.html">Tuning SQL Queries</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/ha.html">High Availability</a>
+        
+
+      </li>
+    
+  </ul>
+
+
+      </li>
+    
+      <li class="has_submenu">
+        <a href="/docs/security-guide/topics/preface.html">Security Configuration Guide</a>
+        
+  <ul>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/SecuringGPDB.html">Securing the Database</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/ports_and_protocols.html">Greenplum Database Ports and Protocols</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/Authenticate.html">Configuring Client Authentication</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/Authorization.html">Configuring Database Authorization</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/Auditing.html">Auditing</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/Encryption.html">Encrypting Data and Database Connections</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/kerberos-hdfs.html">Enabling gphdfs Authentication with a Kerberos-secured Hadoop Cluster</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/BestPractices.html">Security Best Practices</a>
+        
+
+      </li>
+    
+  </ul>
+
+
+      </li>
+    
+      <li class="has_submenu">
         <a href="/docs/admin_guide/admin_guide.html">Administrator Guide</a>
         
   <ul>
@@ -160,44 +322,6 @@
       <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-connecting-with-psql.html">Connecting with psql</a>
         
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/admin_guide/access_db/topics/g-pgadmin-iii-for-greenplum-database.html">pgAdmin III for Greenplum Database</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-installing-pgadmin-iii-for-greenplum-database.html">Installing pgAdmin III for Greenplum Database</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-documentation-for-pgadmin-iii-for-greenplum-database.html">Documentation for pgAdmin III for Greenplum Database</a>
-        
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/admin_guide/access_db/topics/g-performing-administrative-tasks-with-pgadmin-iii.html">Performing Administrative Tasks with pgAdmin III</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-viewing-a-graphical-query-plan.html">Viewing a Graphical Query Plan</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-  </ul>
-
 
       </li>
     
@@ -3070,12 +3194,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/system_catalogs/gp_san_configuration.html">gp_san_configuration</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/system_catalogs/gp_segment_configuration.html">gp_segment_configuration</a>
         
 
@@ -5842,9 +5960,17 @@ The
         
           <dt class="dt pt dlterm">ON MASTER</dt>
 
-          <dd class="dd pd">Permitted only on readable and writable external tables created with the 
-            <samp class="ph codeph">s3</samp> protocol. Restricts all table-related
-	    operations to the Greenplum master segment.</dd>
+          <dd class="dd pd">Restricts all table-related operations to the Greenplum master segment. Permitted 
+            only on readable and writable external tables created with the 
+            <samp class="ph codeph">s3</samp> or custom protocols. The <samp class="ph codeph">gpfdist</samp>,
+            <samp class="ph codeph">gpfdists</samp>, <samp class="ph codeph">gphdfs</samp>, and <samp class="ph codeph">file</samp>
+            protocols do not support <samp class="ph codeph">ON MASTER</samp>.
+            <div class="note note">
+<span class="notetitle">Note:</span> Be aware of potential resource impacts when reading from or writing to
+            external tables you create with the <samp class="ph codeph">ON MASTER</samp> clause. You may
+            encounter performance issues when you restrict table operations solely to the
+            Greenplum master segment.</div>
+</dd>
 
         
         
@@ -6269,13 +6395,13 @@ The
           
           <thead class="thead" align="left">
             <tr class="row">
-              <th class="entry" valign="top" width="20%" id="d286844e1852">Parameter</th>
+              <th class="entry" valign="top" width="20%" id="d300648e1873">Parameter</th>
 
-              <th class="entry" valign="top" width="20%" id="d286844e1855">Value</th>
+              <th class="entry" valign="top" width="20%" id="d300648e1876">Value</th>
 
-              <th class="entry" valign="top" width="20%" id="d286844e1858">Readable/Writable</th>
+              <th class="entry" valign="top" width="20%" id="d300648e1879">Readable/Writable</th>
 
-              <th class="entry" valign="top" width="40%" id="d286844e1861">Default Value</th>
+              <th class="entry" valign="top" width="40%" id="d300648e1882">Default Value</th>
 
             </tr>
 
@@ -6283,15 +6409,15 @@ The
 
           <tbody class="tbody">
             <tr class="row">
-              <td class="entry" valign="top" width="20%" headers="d286844e1852 ">schema</td>
+              <td class="entry" valign="top" width="20%" headers="d300648e1873 ">schema</td>
 
-              <td class="entry" valign="top" width="20%" headers="d286844e1855 ">
+              <td class="entry" valign="top" width="20%" headers="d300648e1876 ">
                 <var class="keyword varname">URL_to_schema_file</var>
               </td>
 
-              <td class="entry" valign="top" width="20%" headers="d286844e1858 ">Read and Write</td>
+              <td class="entry" valign="top" width="20%" headers="d300648e1879 ">Read and Write</td>
 
-              <td class="entry" valign="top" width="40%" headers="d286844e1861 ">None.<div class="p">For a readable external table<ul class="ul" id="topic1__ul_el5_2yv_vs">
+              <td class="entry" valign="top" width="40%" headers="d300648e1882 ">None.<div class="p">For a readable external table<ul class="ul" id="topic1__ul_el5_2yv_vs">
                     <li class="li">The specified schema overrides the schema in the Avro file. See "Avro Schema
                       Overrides"</li>
 
@@ -6312,15 +6438,15 @@ The
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="20%" headers="d286844e1852 ">namespace</td>
+              <td class="entry" valign="top" width="20%" headers="d300648e1873 ">namespace</td>
 
-              <td class="entry" valign="top" width="20%" headers="d286844e1855 ">
+              <td class="entry" valign="top" width="20%" headers="d300648e1876 ">
                 <var class="keyword varname">avro_namespace</var>
               </td>
 
-              <td class="entry" valign="top" width="20%" headers="d286844e1858 ">Write only</td>
+              <td class="entry" valign="top" width="20%" headers="d300648e1879 ">Write only</td>
 
-              <td class="entry" valign="top" width="40%" headers="d286844e1861 ">
+              <td class="entry" valign="top" width="40%" headers="d300648e1882 ">
                 <samp class="ph codeph">public.avro</samp>
                 <p class="p">If specified, a valid Avro <var class="keyword varname">namespace</var>. </p>
 
@@ -6329,30 +6455,30 @@ The
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="20%" headers="d286844e1852 ">compress</td>
+              <td class="entry" valign="top" width="20%" headers="d300648e1873 ">compress</td>
 
-              <td class="entry" valign="top" width="20%" headers="d286844e1855 ">
+              <td class="entry" valign="top" width="20%" headers="d300648e1876 ">
 <samp class="ph codeph">true</samp> or <samp class="ph codeph">false</samp>
 </td>
 
-              <td class="entry" valign="top" width="20%" headers="d286844e1858 ">Write only</td>
+              <td class="entry" valign="top" width="20%" headers="d300648e1879 ">Write only</td>
 
-              <td class="entry" valign="top" width="40%" headers="d286844e1861 ">
+              <td class="entry" valign="top" width="40%" headers="d300648e1882 ">
                 <samp class="ph codeph">false</samp>
               </td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="20%" headers="d286844e1852 ">compression_type</td>
+              <td class="entry" valign="top" width="20%" headers="d300648e1873 ">compression_type</td>
 
-              <td class="entry" valign="top" width="20%" headers="d286844e1855 ">
+              <td class="entry" valign="top" width="20%" headers="d300648e1876 ">
                 <samp class="ph codeph">block</samp>
               </td>
 
-              <td class="entry" valign="top" width="20%" headers="d286844e1858 ">Write only</td>
+              <td class="entry" valign="top" width="20%" headers="d300648e1879 ">Write only</td>
 
-              <td class="entry" valign="top" width="40%" headers="d286844e1861 ">Optional. <p class="p">For <samp class="ph codeph">avro</samp> format,
+              <td class="entry" valign="top" width="40%" headers="d300648e1882 ">Optional. <p class="p">For <samp class="ph codeph">avro</samp> format,
                     <samp class="ph codeph">compression_type</samp> must be <samp class="ph codeph">block</samp> if
                     <samp class="ph codeph">compress</samp> is <samp class="ph codeph">true</samp>.</p>
 </td>
@@ -6360,28 +6486,28 @@ The
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="20%" headers="d286844e1852 ">codec</td>
+              <td class="entry" valign="top" width="20%" headers="d300648e1873 ">codec</td>
 
-              <td class="entry" valign="top" width="20%" headers="d286844e1855 ">
+              <td class="entry" valign="top" width="20%" headers="d300648e1876 ">
 <samp class="ph codeph">deflate</samp> or <samp class="ph codeph">snappy</samp>
 </td>
 
-              <td class="entry" valign="top" width="20%" headers="d286844e1858 ">Write only</td>
+              <td class="entry" valign="top" width="20%" headers="d300648e1879 ">Write only</td>
 
-              <td class="entry" valign="top" width="40%" headers="d286844e1861 ">
+              <td class="entry" valign="top" width="40%" headers="d300648e1882 ">
                 <samp class="ph codeph">deflate</samp>
               </td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="20%" headers="d286844e1852 ">codec_level (<samp class="ph codeph">deflate</samp> codec only)</td>
+              <td class="entry" valign="top" width="20%" headers="d300648e1873 ">codec_level (<samp class="ph codeph">deflate</samp> codec only)</td>
 
-              <td class="entry" valign="top" width="20%" headers="d286844e1855 ">integer between 1 and 9</td>
+              <td class="entry" valign="top" width="20%" headers="d300648e1876 ">integer between 1 and 9</td>
 
-              <td class="entry" valign="top" width="20%" headers="d286844e1858 ">Write only</td>
+              <td class="entry" valign="top" width="20%" headers="d300648e1879 ">Write only</td>
 
-              <td class="entry" valign="top" width="40%" headers="d286844e1861 ">
+              <td class="entry" valign="top" width="40%" headers="d300648e1882 ">
                 <samp class="ph codeph">6</samp>
                 <p class="p">The level controls the trade-off between speed and compression. Valid values are
                   1 to 9, where 1 is the fastest and 9 is the most compressed. </p>
@@ -6433,13 +6559,13 @@ The
           
           <thead class="thead" align="left">
             <tr class="row">
-              <th class="entry" valign="top" width="20%" id="d286844e2113">Option</th>
+              <th class="entry" valign="top" width="20%" id="d300648e2134">Option</th>
 
-              <th class="entry" valign="top" width="20%" id="d286844e2116">Values</th>
+              <th class="entry" valign="top" width="20%" id="d300648e2137">Values</th>
 
-              <th class="entry" valign="top" width="20%" id="d286844e2119">Readable/Writable</th>
+              <th class="entry" valign="top" width="20%" id="d300648e2140">Readable/Writable</th>
 
-              <th class="entry" valign="top" width="40%" id="d286844e2122">Default Value</th>
+              <th class="entry" valign="top" width="40%" id="d300648e2143">Default Value</th>
 
             </tr>
 
@@ -6447,96 +6573,96 @@ The
 
           <tbody class="tbody">
             <tr class="row">
-              <td class="entry" valign="top" width="20%" headers="d286844e2113 ">schema</td>
+              <td class="entry" valign="top" width="20%" headers="d300648e2134 ">schema</td>
 
-              <td class="entry" valign="top" width="20%" headers="d286844e2116 ">
+              <td class="entry" valign="top" width="20%" headers="d300648e2137 ">
                 <var class="keyword varname">URL_to_schema</var>
               </td>
 
-              <td class="entry" valign="top" width="20%" headers="d286844e2119 ">Write only</td>
+              <td class="entry" valign="top" width="20%" headers="d300648e2140 ">Write only</td>
 
-              <td class="entry" valign="top" width="40%" headers="d286844e2122 ">None.<p class="p">If not specified, Greenplum Database creates a schema
+              <td class="entry" valign="top" width="40%" headers="d300648e2143 ">None.<p class="p">If not specified, Greenplum Database creates a schema
                   according to the external table definition. </p>
 </td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="20%" headers="d286844e2113 ">pagesize</td>
+              <td class="entry" valign="top" width="20%" headers="d300648e2134 ">pagesize</td>
 
-              <td class="entry" valign="top" width="20%" headers="d286844e2116 "> &gt; 1024 Bytes</td>
+              <td class="entry" valign="top" width="20%" headers="d300648e2137 "> &gt; 1024 Bytes</td>
 
-              <td class="entry" valign="top" width="20%" headers="d286844e2119 ">Write only</td>
+              <td class="entry" valign="top" width="20%" headers="d300648e2140 ">Write only</td>
 
-              <td class="entry" valign="top" width="40%" headers="d286844e2122 "> 1 MB</td>
-
-            </tr>
-
-            <tr class="row">
-              <td class="entry" valign="top" width="20%" headers="d286844e2113 ">rowgroupsize</td>
-
-              <td class="entry" valign="top" width="20%" headers="d286844e2116 "> &gt; 1024 Bytes</td>
-
-              <td class="entry" valign="top" width="20%" headers="d286844e2119 ">Write only</td>
-
-              <td class="entry" valign="top" width="40%" headers="d286844e2122 "> 8 MB</td>
+              <td class="entry" valign="top" width="40%" headers="d300648e2143 "> 1 MB</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="20%" headers="d286844e2113 ">version</td>
+              <td class="entry" valign="top" width="20%" headers="d300648e2134 ">rowgroupsize</td>
 
-              <td class="entry" valign="top" width="20%" headers="d286844e2116 ">
+              <td class="entry" valign="top" width="20%" headers="d300648e2137 "> &gt; 1024 Bytes</td>
+
+              <td class="entry" valign="top" width="20%" headers="d300648e2140 ">Write only</td>
+
+              <td class="entry" valign="top" width="40%" headers="d300648e2143 "> 8 MB</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="20%" headers="d300648e2134 ">version</td>
+
+              <td class="entry" valign="top" width="20%" headers="d300648e2137 ">
                 <samp class="ph codeph">v1</samp>, <samp class="ph codeph">v2</samp>
 </td>
 
-              <td class="entry" valign="top" width="20%" headers="d286844e2119 ">Write only</td>
+              <td class="entry" valign="top" width="20%" headers="d300648e2140 ">Write only</td>
 
-              <td class="entry" valign="top" width="40%" headers="d286844e2122 ">
+              <td class="entry" valign="top" width="40%" headers="d300648e2143 ">
                 <samp class="ph codeph">v1</samp>
 </td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="20%" headers="d286844e2113 ">codec</td>
+              <td class="entry" valign="top" width="20%" headers="d300648e2134 ">codec</td>
 
-              <td class="entry" valign="top" width="20%" headers="d286844e2116 ">
+              <td class="entry" valign="top" width="20%" headers="d300648e2137 ">
 <samp class="ph codeph">UNCOMPRESSED</samp>, <samp class="ph codeph">GZIP</samp>,
                   <samp class="ph codeph">LZO</samp>, <samp class="ph codeph">snappy</samp>
 </td>
 
-              <td class="entry" valign="top" width="20%" headers="d286844e2119 ">Write only</td>
+              <td class="entry" valign="top" width="20%" headers="d300648e2140 ">Write only</td>
 
-              <td class="entry" valign="top" width="40%" headers="d286844e2122 ">
+              <td class="entry" valign="top" width="40%" headers="d300648e2143 ">
                 <samp class="ph codeph">UNCOMPRESSED</samp>
 </td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="20%" headers="d286844e2113 ">dictionaryenable<sup class="ph sup">1</sup>
+              <td class="entry" valign="top" width="20%" headers="d300648e2134 ">dictionaryenable<sup class="ph sup">1</sup>
 </td>
 
-              <td class="entry" valign="top" width="20%" headers="d286844e2116 ">
+              <td class="entry" valign="top" width="20%" headers="d300648e2137 ">
 <samp class="ph codeph">true</samp>, <samp class="ph codeph">false</samp>
 </td>
 
-              <td class="entry" valign="top" width="20%" headers="d286844e2119 ">Write only</td>
+              <td class="entry" valign="top" width="20%" headers="d300648e2140 ">Write only</td>
 
-              <td class="entry" valign="top" width="40%" headers="d286844e2122 "> false</td>
+              <td class="entry" valign="top" width="40%" headers="d300648e2143 "> false</td>
 
             </tr>
 
             <tr class="row">
-              <td class="entry" valign="top" width="20%" headers="d286844e2113 ">dictionarypagesize<sup class="ph sup">1</sup>
+              <td class="entry" valign="top" width="20%" headers="d300648e2134 ">dictionarypagesize<sup class="ph sup">1</sup>
 </td>
 
-              <td class="entry" valign="top" width="20%" headers="d286844e2116 "> &gt; 1024 Bytes</td>
+              <td class="entry" valign="top" width="20%" headers="d300648e2137 "> &gt; 1024 Bytes</td>
 
-              <td class="entry" valign="top" width="20%" headers="d286844e2119 ">Write only</td>
+              <td class="entry" valign="top" width="20%" headers="d300648e2140 ">Write only</td>
 
-              <td class="entry" valign="top" width="40%" headers="d286844e2122 ">512 KB</td>
+              <td class="entry" valign="top" width="40%" headers="d300648e2143 ">512 KB</td>
 
             </tr>
 
@@ -6673,7 +6799,7 @@ You can
 <h2 class="title sectiontitle">s3 Protocol Limitations</h2>
          
          
-         <div class="p">These are <samp class="ph codeph">s3</samp> protocol limitations: <ul class="ul" id="topic1__d3560e1148">
+         <div class="p">These are <samp class="ph codeph">s3</samp> protocol limitations: <ul class="ul" id="topic1__d3560e1154">
                <li class="li">Only the S3 path-style URL is
                   supported.<pre class="pre codeblock">s3://<var class="keyword varname">S3_endpoint</var>/<var class="keyword varname">bucketname</var>/[<var class="keyword varname">S3_prefix</var>]</pre>
 </li>
@@ -6728,10 +6854,13 @@ You can
 
          <pre class="pre codeblock">'s3://<var class="keyword varname">S3_endpoint</var>[:<var class="keyword varname">port</var>]/<var class="keyword varname">bucket_name</var>/[<var class="keyword varname">S3_prefix</var>] [region=<var class="keyword varname">S3_region</var>] [config=<var class="keyword varname">config_file_location</var>]'</pre>
 
-         <p class="p">For the <samp class="ph codeph">s3</samp> protocol you must specify the S3 endpoint and S3 bucket
+         <p class="p">The <samp class="ph codeph">s3</samp> protocol requires that you specify the S3 endpoint and S3 bucket
             name. Each Greenplum Database segment instance must have access to the S3 location. The
             optional <var class="keyword varname">S3_prefix</var> value is used to select files for read-only S3
             tables, or as a filename prefix to use when uploading files for S3 writable tables.</p>
+
+         <div class="note note">
+<span class="notetitle">Note:</span> The Greenplum Database <samp class="ph codeph">s3</samp> protocol URL must include the S3 endpoint hostname.</div>
 
          <p class="p">To specify an ECS endpoint (an Amazon S3 compatible service) in the
                <samp class="ph codeph">LOCATION</samp> clause, you must set the <samp class="ph codeph">s3</samp> configuration
@@ -6742,7 +6871,7 @@ You can
                <samp class="ph codeph">version</samp> parameter, see <a class="xref" href="../../admin_guide/load/topics/g-s3-protocol.html#amazon-emr__s3_config_file">s3 Protocol Configuration File</a>.</p>
 
          
-         <div class="note note" id="topic1__d3560e297">
+         <div class="note note" id="topic1__d3560e303">
 <span class="notetitle">Note:</span> Although the <var class="keyword varname">S3_prefix</var> is an optional part of
             the syntax, you should always include an S3 prefix for both writable and read-only S3
             tables to separate datasets as part of the <samp class="ph codeph"><a class="xref" href="CREATE_EXTERNAL_TABLE.html#topic1">CREATE
@@ -6755,40 +6884,40 @@ You can
             result of inserting data to the table. See <a class="xref" href="../../admin_guide/load/topics/g-s3-protocol.html#amazon-emr__section_c2f_zvs_3x">About S3 Data Files</a>.</p>
 
          <p class="p">For read-only S3 tables, the S3 file prefix is optional. If you specify an
-               <var class="keyword varname">S3_prefix</var>, then <samp class="ph codeph">s3</samp> protocol selects all files
+               <var class="keyword varname">S3_prefix</var>, then the <samp class="ph codeph">s3</samp> protocol selects all files
             that start with the specified prefix as data files for the external table. The
-               <samp class="ph codeph">s3</samp> protocol does not use the slash character (<samp class="ph codeph">/</samp>) as
-            delimiter, so a slash character follows a prefix is treated as part of the prefix
-            itself. </p>
+               <samp class="ph codeph">s3</samp> protocol does not use the slash character (<samp class="ph codeph">/</samp>)
+            as a delimiter, so a slash character following a prefix is treated as part of the
+            prefix itself. </p>
 
-         <p class="p">For example, consider the following 5 files that each have <samp class="ph codeph">domain</samp> as
-            the <var class="keyword varname">S3_endpoint</var>, and <samp class="ph codeph">test1</samp> as the
-               <var class="keyword varname">bucket_name</var>:</p>
+         <p class="p">For example, consider the following 5 files that each have the <var class="keyword varname">S3_endpoint</var>
+            named <samp class="ph codeph">s3-us-west-2.amazonaws.com</samp>
+            and the <var class="keyword varname">bucket_name</var> <samp class="ph codeph">test1</samp>:</p>
 
-         <pre class="pre codeblock">s3://domain/test1/abc
-s3://domain/test1/abc/
-s3://domain/test1/abc/xx
-s3://domain/test1/abcdef
-s3://domain/test1/abcdefff</pre>
+         <pre class="pre codeblock">s3://s3-us-west-2.amazonaws.com/test1/abc
+s3://s3-us-west-2.amazonaws.com/test1/abc/
+s3://s3-us-west-2.amazonaws.com/test1/abc/xx
+s3://s3-us-west-2.amazonaws.com/test1/abcdef
+s3://s3-us-west-2.amazonaws.com/test1/abcdefff</pre>
 
-         <ul class="ul" id="topic1__d3560e351">
-            <li class="li">If the S3 URL is provided as <samp class="ph codeph">s3://domain/test1/abc</samp>, then the
+         <ul class="ul" id="topic1__d3560e358">
+            <li class="li">If the S3 URL is provided as <samp class="ph codeph">s3://s3-us-west-2.amazonaws.com/test1/abc</samp>, then the
                   <samp class="ph codeph">abc</samp> prefix selects all 5 files.</li>
 
-            <li class="li">If the S3 URL is provided as <samp class="ph codeph">s3://domain/test1/abc/</samp>, then the
+            <li class="li">If the S3 URL is provided as <samp class="ph codeph">s3://s3-us-west-2.amazonaws.com/test1/abc/</samp>, then the
                   <samp class="ph codeph">abc/</samp> prefix selects the files
-                  <samp class="ph codeph">s3://domain/test1/abc/</samp> and
-                  <samp class="ph codeph">s3://domain/test1/abc/xx</samp>.</li>
+                  <samp class="ph codeph">s3://s3-us-west-2.amazonaws.com/test1/abc/</samp> and
+                  <samp class="ph codeph">s3://s3-us-west-2.amazonaws.com/test1/abc/xx</samp>.</li>
 
-            <li class="li">If the S3 URL is provided as <samp class="ph codeph">s3://domain/test1/abcd</samp>, then the
+            <li class="li">If the S3 URL is provided as <samp class="ph codeph">s3://s3-us-west-2.amazonaws.com/test1/abcd</samp>, then the
                   <samp class="ph codeph">abcd</samp> prefix selects the files
-                  <samp class="ph codeph">s3://domain/test1/abcdef</samp> and
-                  <samp class="ph codeph">s3://domain/test1/abcdefff</samp>
+                  <samp class="ph codeph">s3://s3-us-west-2.amazonaws.com/test1/abcdef</samp> and
+                  <samp class="ph codeph">s3://s3-us-west-2.amazonaws.com/test1/abcdefff</samp>
 </li>
 
          </ul>
 
-         <p class="p">Wildcard characters are not supported in a <var class="keyword varname">S3_prefix</var>; however, the S3
+         <p class="p">Wildcard characters are not supported in an <var class="keyword varname">S3_prefix</var>; however, the S3
             prefix functions as if a wildcard character immediately followed the prefix itself.</p>
 
          <p class="p">All of the files selected by the S3 URL
@@ -6959,7 +7088,7 @@ chunksize = 67108864</pre>
                   <dd class="dd pd">Controls how the <samp class="ph codeph">s3</samp> protocol handles authentication when
                      establishing encrypted communication between a client and an S3 data source
                      over HTTPS. The value is either <samp class="ph codeph">true</samp> or
-                     <samp class="ph codeph">false</samp>. The default value is <samp class="ph codeph">true</samp>.<ul class="ul" id="topic1__d3560e994">
+                     <samp class="ph codeph">false</samp>. The default value is <samp class="ph codeph">true</samp>.<ul class="ul" id="topic1__d3560e1000">
                         <li class="li">
 <samp class="ph codeph">verifycert=false</samp> - Ignores authentication errors and
                            allows encrypted communication over HTTPS.</li>
@@ -7024,7 +7153,7 @@ chunksize = 67108864</pre>
 
             
             <div class="note note">
-<span class="notetitle">Note:</span> <span class="ph" id="topic1__d3560e1121">Greenplum Database can require up to <samp class="ph codeph">threadnum *
+<span class="notetitle">Note:</span> <span class="ph" id="topic1__d3560e1127">Greenplum Database can require up to <samp class="ph codeph">threadnum *
                      chunksize</samp> memory on each segment host when uploading or downloading S3
                   files. Consider this <samp class="ph codeph">s3</samp> protocol memory requirement when you
                   configure overall Greenplum Database memory, and increase the value of <a class="xref" href="../config_params/guc-list.html#gp_vmem_protect_limit">gp_vmem_protect_limit</a> as necessary.</span>

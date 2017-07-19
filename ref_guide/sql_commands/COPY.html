@@ -63,6 +63,168 @@
       </li>
     
       <li class="has_submenu">
+        <a href="/docs/best_practices/intro.html">Best Practices</a>
+        
+  <ul>
+    
+      <li class="">
+        <a href="/docs/best_practices/summary.html">Best Practices Summary</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/sysconfig.html">System Configuration</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/schema.html">Schema Design</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/workloads.html">Memory and Workload Management</a>
+        
+
+      </li>
+    
+      <li class="has_submenu">
+        <a href="/docs/best_practices/maintenance.html">System Monitoring and Maintenance</a>
+        
+  <ul>
+    
+      <li class="">
+        <a href="/docs/best_practices/analyze.html">Updating Statistics with ANALYZE</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/bloat.html">Managing Bloat in the Database</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/logfiles.html">Monitoring Greenplum Database Log Files</a>
+        
+
+      </li>
+    
+  </ul>
+
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/data_loading.html">Loading Data</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/gptransfer.html">Migrating Data with Gptransfer</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/security.html">Security</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/encryption.html">Encrypting Data and Database Connections</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/kerberos-hdfs.html">Accessing a Kerberized Hadoop Cluster</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/tuning_queries.html">Tuning SQL Queries</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/ha.html">High Availability</a>
+        
+
+      </li>
+    
+  </ul>
+
+
+      </li>
+    
+      <li class="has_submenu">
+        <a href="/docs/security-guide/topics/preface.html">Security Configuration Guide</a>
+        
+  <ul>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/SecuringGPDB.html">Securing the Database</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/ports_and_protocols.html">Greenplum Database Ports and Protocols</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/Authenticate.html">Configuring Client Authentication</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/Authorization.html">Configuring Database Authorization</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/Auditing.html">Auditing</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/Encryption.html">Encrypting Data and Database Connections</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/kerberos-hdfs.html">Enabling gphdfs Authentication with a Kerberos-secured Hadoop Cluster</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/BestPractices.html">Security Best Practices</a>
+        
+
+      </li>
+    
+  </ul>
+
+
+      </li>
+    
+      <li class="has_submenu">
         <a href="/docs/admin_guide/admin_guide.html">Administrator Guide</a>
         
   <ul>
@@ -160,44 +322,6 @@
       <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-connecting-with-psql.html">Connecting with psql</a>
         
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/admin_guide/access_db/topics/g-pgadmin-iii-for-greenplum-database.html">pgAdmin III for Greenplum Database</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-installing-pgadmin-iii-for-greenplum-database.html">Installing pgAdmin III for Greenplum Database</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-documentation-for-pgadmin-iii-for-greenplum-database.html">Documentation for pgAdmin III for Greenplum Database</a>
-        
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/admin_guide/access_db/topics/g-performing-administrative-tasks-with-pgadmin-iii.html">Performing Administrative Tasks with pgAdmin III</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-viewing-a-graphical-query-plan.html">Viewing a Graphical Query Plan</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-  </ul>
-
 
       </li>
     
@@ -3070,12 +3194,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/system_catalogs/gp_san_configuration.html">gp_san_configuration</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/system_catalogs/gp_segment_configuration.html">gp_segment_configuration</a>
         
 
@@ -5446,6 +5564,7 @@
 
 COPY {table [(<var class="keyword varname">column</var> [, ...])] | (<var class="keyword varname">query</var>)} TO {'<var class="keyword varname">file</var>' | STDOUT}
       [ [WITH] 
+        [ON SEGMENT]
         [BINARY]
         [OIDS]
         [HEADER]
@@ -5461,11 +5580,18 @@ COPY {table [(<var class="keyword varname">column</var> [, ...])] | (<var class=
     <div class="section" id="topic1__section3">
 <h2 class="title sectiontitle">Description</h2>
       
-      <p class="p"><samp class="ph codeph">COPY</samp> moves data between Greenplum Database tables and standard file-system
-        files. <samp class="ph codeph">COPY TO</samp> copies the contents of a table to a file, while <samp class="ph codeph">COPY
+      <div class="p">
+<samp class="ph codeph">COPY</samp> moves data between Greenplum Database tables and standard file-system
+        files. <samp class="ph codeph">COPY TO</samp> copies the contents of a table to a file (or multiple files
+        based on the segment ID if copying <samp class="ph codeph">ON SEGMENT</samp>), while <samp class="ph codeph">COPY
           FROM</samp> copies data from a file to a table (appending the data to whatever is in the
         table already). <samp class="ph codeph">COPY TO</samp> can also copy the results of a
-          <samp class="ph codeph">SELECT</samp> query. </p>
+          <samp class="ph codeph">SELECT</samp> query. <div class="note note">
+<span class="notetitle">Note:</span> <samp class="ph codeph">COPY
+            FROM</samp> currently does not support copying data <samp class="ph codeph">FROM</samp> the segment
+          files generated by <samp class="ph codeph">COPY TO</samp> with the <samp class="ph codeph">ON SEGMENT</samp> option,
+          but other tools can be used to restore data.</div>
+</div>
 
       <p class="p">If a list of columns is specified, <samp class="ph codeph">COPY</samp> will only copy the data in the
         specified columns to or from the file. If there are any columns in the table that are not in
@@ -5474,9 +5600,29 @@ COPY {table [(<var class="keyword varname">column</var> [, ...])] | (<var class=
 
       <p class="p"><samp class="ph codeph">COPY</samp> with a file name instructs the Greenplum Database master host to
         directly read from or write to a file. The file must be accessible to the master host and
-        the name must be specified from the viewpoint of the master host. When
-          <samp class="ph codeph">STDIN</samp> or <samp class="ph codeph">STDOUT</samp> is specified, data is transmitted via
-        the connection between the client and the master.</p>
+        the name must be specified from the viewpoint of the master host. </p>
+
+      <p class="p">When <samp class="ph codeph">COPY</samp> is used with the <samp class="ph codeph">ON SEGMENT</samp> option, the
+          <samp class="ph codeph">COPY TO</samp> causes segments to create individual segment-oriented files,
+        which remain on the segment hosts. The <var class="keyword varname">file</var> argument for <samp class="ph codeph">ON
+          SEGMENT</samp> takes the string literal <samp class="ph codeph">&lt;SEGID&gt;</samp> (required) and uses
+        either the absolute path or the <samp class="ph codeph">&lt;SEG_DATA_DIR&gt;</samp> string literal. When the
+          <samp class="ph codeph">COPY</samp> operation is run, the segment IDs and the paths of the segment data
+        directories are substituted for the string literal values. </p>
+
+      <div class="p">The <samp class="ph codeph">ON SEGMENT</samp> option allows you to copy table data to files on segments
+        for use in operations such as migrating data between clusters or performing a backup.
+        Segment data created by the <samp class="ph codeph">ON SEGMENT</samp> option can be restored by tools such
+        as <samp class="ph codeph">gpfdist</samp>, which is useful for high speed data loading. <div class="note note">
+<span class="notetitle">Note:</span> <samp class="ph codeph">COPY
+            FROM</samp> currently does not support copying data <samp class="ph codeph">FROM</samp> the segment
+          files generated by <samp class="ph codeph">COPY TO</samp> with the <samp class="ph codeph">ON SEGMENT</samp> option,
+          but other tools can be used to restore data.</div>
+</div>
+
+      <p class="p">When <samp class="ph codeph">STDIN</samp> or <samp class="ph codeph">STDOUT</samp> is specified, data is transmitted
+        via the connection between the client and the master. <samp class="ph codeph">STDOUT</samp> cannot be used
+        with the <samp class="ph codeph">ON SEGMENT</samp> option.</p>
 
       <p class="p">If <samp class="ph codeph">SEGMENT REJECT LIMIT</samp> is used, then a <samp class="ph codeph">COPY FROM</samp>
         operation will operate in single row error isolation mode. In this release, single row error
@@ -5560,6 +5706,44 @@ COPY {table [(<var class="keyword varname">column</var> [, ...])] | (<var class=
           <dt class="dt pt dlterm">STDOUT</dt>
 
           <dd class="dd pd">Specifies that output goes to the client application. </dd>
+
+        
+        
+          <dt class="dt pt dlterm">ON SEGMENT</dt>
+
+          <dd class="dd pd">Copy table data to create individual segment-oriented files, which remain on the
+            segment hosts. <samp class="ph codeph">COPY FROM</samp> the <samp class="ph codeph">ON SEGMENT</samp> output is
+            currently not supported. <samp class="ph codeph">COPY TO STDOUT</samp> cannot be used with <samp class="ph codeph">ON
+              SEGMENT</samp>. The <samp class="ph codeph">&lt;SEG_DATA_DIR&gt;</samp> and
+              <samp class="ph codeph">&lt;SEGID&gt;</samp> string literals are used with <samp class="ph codeph">ON SEGMENT</samp>,
+            with the following
+            syntax:<pre class="pre codeblock">COPY <var class="keyword varname">table</var> TO '&lt;SEG_DATA_DIR&gt;/<var class="keyword varname">gpdumpname</var>&lt;SEGID&gt;_<var class="keyword varname">suffix</var>' ON SEGMENT; </pre>
+Mirror
+            segments do not copy their data into the segment files.<dl class="dl parml">
+              
+                <dt class="dt pt dlterm">&lt;SEG_DATA_DIR&gt;</dt>
+
+                <dd class="dd pd">The string literal representing the full path of the segment data directory for
+                    <samp class="ph codeph">ON SEGMENT</samp> copying. Brackets are part of the string literal
+                  used to specify the path. COPY replaces the string literal with the segment
+                  path(s) when <samp class="ph codeph">COPY</samp> is run. (Optional. An absolute path can be used
+                  in place of using the <samp class="ph codeph">&lt;SEG_DATA_DIR&gt;</samp> string literal.)</dd>
+
+              
+            </dl>
+<dl class="dl parml">
+              
+                <dt class="dt pt dlterm">&lt;SEGID&gt;</dt>
+
+                <dd class="dd pd">The string literal representing the content ID number of the segment to be
+                  copied when copying <samp class="ph codeph">ON SEGMENT</samp>. <samp class="ph codeph">&lt;SEGID&gt;</samp> is a
+                  required part of the <samp class="ph codeph">ON SEGMENT</samp> option. Brackets are part of the
+                  string literal used to specify the path. <samp class="ph codeph">COPY</samp> replaces the string
+                  literal with the content ID when <samp class="ph codeph">COPY</samp> is run.</dd>
+
+              
+            </dl>
+</dd>
 
         
         
@@ -5844,7 +6028,7 @@ COPY {table [(<var class="keyword varname">column</var> [, ...])] | (<var class=
         queues with only cost or memory limits do not affect the running of <samp class="ph codeph">COPY</samp>
         commands.</p>
 
-      <div class="p">A non-superuser can runs can run these types of <samp class="ph codeph">COPY</samp> commands:<ul class="ul" id="topic1__ul_bf3_2pk_zs">
+      <div class="p">A non-superuser can run only these types of <samp class="ph codeph">COPY</samp> commands:<ul class="ul" id="topic1__ul_bf3_2pk_zs">
           <li class="li">
 <samp class="ph codeph">COPY FROM</samp> command where the source is <samp class="ph codeph">stdin</samp>
 </li>
@@ -6072,6 +6256,59 @@ COPY {table [(<var class="keyword varname">column</var> [, ...])] | (<var class=
 
       <pre class="pre codeblock">COPY sales FROM '/home/usr1/sql/sales_data' LOG ERRORS 
    SEGMENT REJECT LIMIT 10 ROWS;</pre>
+
+      <p class="p">To copy segment data for later use, use the <samp class="ph codeph">ON SEGMENT</samp> argument. Use of
+        the <samp class="ph codeph">ON SEGMENT</samp> argument takes the form:</p>
+
+      <p class="p">COPY <var class="keyword varname">table</var> TO
+          '&lt;SEG_DATA_DIR&gt;/<var class="keyword varname">gpdumpname</var>&lt;SEGID&gt;_<var class="keyword varname">suffix</var>' ON
+        SEGMENT; </p>
+
+      <p class="p">The <samp class="ph codeph">&lt;SEGID&gt;</samp> is required. However, you can substitute an absolute path
+        for the <samp class="ph codeph">&lt;SEG_DATA_DIR&gt;</samp> string literal in the path. </p>
+
+      <p class="p">When you pass in the string literal &lt;SEG_DATA_DIR&gt; and &lt;SEGID&gt; to
+          <samp class="ph codeph">COPY</samp>, <samp class="ph codeph">COPY</samp> will fill in the appropriate values when the
+        operation is run.</p>
+
+      <div class="p">For example, if you have <samp class="ph codeph">mytable</samp> with the segments and mirror segments
+        like
+        this:<pre class="pre codeblock">contentid | dbid | file segment location 
+    0     |  1   |/home/usr1/data1/gpsegdir0
+
+    0     |  3   | /home/usr1/data_mirror1/gpsegdir0 
+
+    1     |  4   | /home/usr1/data2/gpsegdir1
+
+    1     |  2   | /home/usr1/data_mirror2/gpsegdir1 
+</pre>
+running
+        the
+        command:<pre class="pre codeblock">COPY mytable TO '&lt;SEG_DATA_DIR&gt;/gpbackup&lt;SEGID&gt;.txt' ON SEGMENT;</pre>
+
+        would result in the following
+        files:<pre class="pre codeblock">/home/usr1/data1/gpsegdir0/gpbackup0.txt
+/home/usr1/data2/gpsegdir1/gpbackup1.txt</pre>
+</div>
+
+      <p class="p">The content ID in the first column is the identifier inserted into the file path (for
+        example, <samp class="ph codeph">gpsegdir0/gpbackup0.txt</samp> above) Files are created on the segment
+        hosts, rather than on the master, as they would be in a standard <samp class="ph codeph">COPY</samp>
+        operation. No data files are created for the mirror segments when using <samp class="ph codeph">ON
+          SEGMENT</samp> copying.</p>
+
+      <div class="p">If an absolute path is specified, instead of <samp class="ph codeph">&lt;SEG_DATA_DIR&gt;</samp>, such as in
+        the statement
+        <pre class="pre codeblock">COPY mytable TO '/tmp/gpdir/gpbackup_&lt;SEGID&gt;.txt' ON SEGMENT;</pre>
+</div>
+
+      <div class="p">files would be placed in <samp class="ph codeph">/tmp/gpdir</samp> on every segment.<div class="note note">
+<span class="notetitle">Note:</span> The
+            <samp class="ph codeph">COPY FROM</samp> operation does not currently support the <samp class="ph codeph">ON
+            SEGMENT</samp> argument. Tools such as <samp class="ph codeph">gpfdist</samp> can be used to restore
+          data.</div>
+
+      </div>
 
     </div>
 

@@ -63,6 +63,168 @@
       </li>
     
       <li class="has_submenu">
+        <a href="/docs/best_practices/intro.html">Best Practices</a>
+        
+  <ul>
+    
+      <li class="">
+        <a href="/docs/best_practices/summary.html">Best Practices Summary</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/sysconfig.html">System Configuration</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/schema.html">Schema Design</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/workloads.html">Memory and Workload Management</a>
+        
+
+      </li>
+    
+      <li class="has_submenu">
+        <a href="/docs/best_practices/maintenance.html">System Monitoring and Maintenance</a>
+        
+  <ul>
+    
+      <li class="">
+        <a href="/docs/best_practices/analyze.html">Updating Statistics with ANALYZE</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/bloat.html">Managing Bloat in the Database</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/logfiles.html">Monitoring Greenplum Database Log Files</a>
+        
+
+      </li>
+    
+  </ul>
+
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/data_loading.html">Loading Data</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/gptransfer.html">Migrating Data with Gptransfer</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/security.html">Security</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/encryption.html">Encrypting Data and Database Connections</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/kerberos-hdfs.html">Accessing a Kerberized Hadoop Cluster</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/tuning_queries.html">Tuning SQL Queries</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/ha.html">High Availability</a>
+        
+
+      </li>
+    
+  </ul>
+
+
+      </li>
+    
+      <li class="has_submenu">
+        <a href="/docs/security-guide/topics/preface.html">Security Configuration Guide</a>
+        
+  <ul>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/SecuringGPDB.html">Securing the Database</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/ports_and_protocols.html">Greenplum Database Ports and Protocols</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/Authenticate.html">Configuring Client Authentication</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/Authorization.html">Configuring Database Authorization</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/Auditing.html">Auditing</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/Encryption.html">Encrypting Data and Database Connections</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/kerberos-hdfs.html">Enabling gphdfs Authentication with a Kerberos-secured Hadoop Cluster</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/BestPractices.html">Security Best Practices</a>
+        
+
+      </li>
+    
+  </ul>
+
+
+      </li>
+    
+      <li class="has_submenu">
         <a href="/docs/admin_guide/admin_guide.html">Administrator Guide</a>
         
   <ul>
@@ -160,44 +322,6 @@
       <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-connecting-with-psql.html">Connecting with psql</a>
         
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/admin_guide/access_db/topics/g-pgadmin-iii-for-greenplum-database.html">pgAdmin III for Greenplum Database</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-installing-pgadmin-iii-for-greenplum-database.html">Installing pgAdmin III for Greenplum Database</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-documentation-for-pgadmin-iii-for-greenplum-database.html">Documentation for pgAdmin III for Greenplum Database</a>
-        
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/admin_guide/access_db/topics/g-performing-administrative-tasks-with-pgadmin-iii.html">Performing Administrative Tasks with pgAdmin III</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-viewing-a-graphical-query-plan.html">Viewing a Graphical Query Plan</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-  </ul>
-
 
       </li>
     
@@ -3070,12 +3194,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/system_catalogs/gp_san_configuration.html">gp_san_configuration</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/system_catalogs/gp_segment_configuration.html">gp_segment_configuration</a>
         
 
@@ -5570,10 +5688,13 @@ You can
 
          <pre class="pre codeblock">'s3://<var class="keyword varname">S3_endpoint</var>[:<var class="keyword varname">port</var>]/<var class="keyword varname">bucket_name</var>/[<var class="keyword varname">S3_prefix</var>] [region=<var class="keyword varname">S3_region</var>] [config=<var class="keyword varname">config_file_location</var>]'</pre>
 
-         <p class="p">For the <samp class="ph codeph">s3</samp> protocol you must specify the S3 endpoint and S3 bucket
+         <p class="p">The <samp class="ph codeph">s3</samp> protocol requires that you specify the S3 endpoint and S3 bucket
             name. Each Greenplum Database segment instance must have access to the S3 location. The
             optional <var class="keyword varname">S3_prefix</var> value is used to select files for read-only S3
             tables, or as a filename prefix to use when uploading files for S3 writable tables.</p>
+
+         <div class="note note">
+<span class="notetitle">Note:</span> The Greenplum Database <samp class="ph codeph">s3</samp> protocol URL must include the S3 endpoint hostname.</div>
 
          <p class="p">To specify an ECS endpoint (an Amazon S3 compatible service) in the
                <samp class="ph codeph">LOCATION</samp> clause, you must set the <samp class="ph codeph">s3</samp> configuration
@@ -5597,40 +5718,40 @@ You can
             result of inserting data to the table. See <a class="xref" href="#amazon-emr__section_c2f_zvs_3x">About S3 Data Files</a>.</p>
 
          <p class="p">For read-only S3 tables, the S3 file prefix is optional. If you specify an
-               <var class="keyword varname">S3_prefix</var>, then <samp class="ph codeph">s3</samp> protocol selects all files
+               <var class="keyword varname">S3_prefix</var>, then the <samp class="ph codeph">s3</samp> protocol selects all files
             that start with the specified prefix as data files for the external table. The
-               <samp class="ph codeph">s3</samp> protocol does not use the slash character (<samp class="ph codeph">/</samp>) as
-            delimiter, so a slash character follows a prefix is treated as part of the prefix
-            itself. </p>
+               <samp class="ph codeph">s3</samp> protocol does not use the slash character (<samp class="ph codeph">/</samp>)
+            as a delimiter, so a slash character following a prefix is treated as part of the
+            prefix itself. </p>
 
-         <p class="p">For example, consider the following 5 files that each have <samp class="ph codeph">domain</samp> as
-            the <var class="keyword varname">S3_endpoint</var>, and <samp class="ph codeph">test1</samp> as the
-               <var class="keyword varname">bucket_name</var>:</p>
+         <p class="p">For example, consider the following 5 files that each have the <var class="keyword varname">S3_endpoint</var>
+            named <samp class="ph codeph">s3-us-west-2.amazonaws.com</samp>
+            and the <var class="keyword varname">bucket_name</var> <samp class="ph codeph">test1</samp>:</p>
 
-         <pre class="pre codeblock">s3://domain/test1/abc
-s3://domain/test1/abc/
-s3://domain/test1/abc/xx
-s3://domain/test1/abcdef
-s3://domain/test1/abcdefff</pre>
+         <pre class="pre codeblock">s3://s3-us-west-2.amazonaws.com/test1/abc
+s3://s3-us-west-2.amazonaws.com/test1/abc/
+s3://s3-us-west-2.amazonaws.com/test1/abc/xx
+s3://s3-us-west-2.amazonaws.com/test1/abcdef
+s3://s3-us-west-2.amazonaws.com/test1/abcdefff</pre>
 
          <ul class="ul" id="amazon-emr__ul_yll_xjm_qv">
-            <li class="li">If the S3 URL is provided as <samp class="ph codeph">s3://domain/test1/abc</samp>, then the
+            <li class="li">If the S3 URL is provided as <samp class="ph codeph">s3://s3-us-west-2.amazonaws.com/test1/abc</samp>, then the
                   <samp class="ph codeph">abc</samp> prefix selects all 5 files.</li>
 
-            <li class="li">If the S3 URL is provided as <samp class="ph codeph">s3://domain/test1/abc/</samp>, then the
+            <li class="li">If the S3 URL is provided as <samp class="ph codeph">s3://s3-us-west-2.amazonaws.com/test1/abc/</samp>, then the
                   <samp class="ph codeph">abc/</samp> prefix selects the files
-                  <samp class="ph codeph">s3://domain/test1/abc/</samp> and
-                  <samp class="ph codeph">s3://domain/test1/abc/xx</samp>.</li>
+                  <samp class="ph codeph">s3://s3-us-west-2.amazonaws.com/test1/abc/</samp> and
+                  <samp class="ph codeph">s3://s3-us-west-2.amazonaws.com/test1/abc/xx</samp>.</li>
 
-            <li class="li">If the S3 URL is provided as <samp class="ph codeph">s3://domain/test1/abcd</samp>, then the
+            <li class="li">If the S3 URL is provided as <samp class="ph codeph">s3://s3-us-west-2.amazonaws.com/test1/abcd</samp>, then the
                   <samp class="ph codeph">abcd</samp> prefix selects the files
-                  <samp class="ph codeph">s3://domain/test1/abcdef</samp> and
-                  <samp class="ph codeph">s3://domain/test1/abcdefff</samp>
+                  <samp class="ph codeph">s3://s3-us-west-2.amazonaws.com/test1/abcdef</samp> and
+                  <samp class="ph codeph">s3://s3-us-west-2.amazonaws.com/test1/abcdefff</samp>
 </li>
 
          </ul>
 
-         <p class="p">Wildcard characters are not supported in a <var class="keyword varname">S3_prefix</var>; however, the S3
+         <p class="p">Wildcard characters are not supported in an <var class="keyword varname">S3_prefix</var>; however, the S3
             prefix functions as if a wildcard character immediately followed the prefix itself.</p>
 
          <p class="p">All of the files selected by the S3 URL
@@ -5789,7 +5910,7 @@ server_side_encryption = sse-s3
                <samp class="ph codeph">s3</samp> protocol <samp class="ph codeph">LOCATION</samp> clause. This example specifies
             a location in the <samp class="ph codeph">gpadmin</samp> home directory. </p>
 
-         <pre class="pre codeblock">LOCATION ('s3://s3.amazonaws.com/test/my_data config=/home/gpadmin/s3.conf')</pre>
+         <pre class="pre codeblock">LOCATION ('s3://s3-us-west-2.amazonaws.com/test/my_data config=/home/gpadmin/s3.conf')</pre>
 
          <p class="p">All segment instances on the hosts use the file
             <samp class="ph codeph">/home/gpadmin/s3.conf</samp>.</p>
@@ -6084,9 +6205,9 @@ chunksize = 67108864</pre>
 <p class="p">The utility is installed in the Greenplum Database
                <samp class="ph codeph">$GPHOME/bin</samp> directory.</p>
 <strong class="ph b">Syntax</strong>
-         <pre class="pre codeblock">gpcheckcloud {<strong class="ph b">-c</strong> | <strong class="ph b">-d</strong>} "<strong class="ph b">s3://</strong><var class="keyword varname">S3_endpoint</var>/<var class="keyword varname">bucketname</var>/[<var class="keyword varname">S3_prefix</var>] [config==<var class="keyword varname">path_to_config_file</var>]"
+         <pre class="pre codeblock">gpcheckcloud {<strong class="ph b">-c</strong> | <strong class="ph b">-d</strong>} "<strong class="ph b">s3://</strong><var class="keyword varname">S3_endpoint</var>/<var class="keyword varname">bucketname</var>/[<var class="keyword varname">S3_prefix</var>] [config=<var class="keyword varname">path_to_config_file</var>]"
 
-gpcheckcloud <strong class="ph b">-u</strong> &lt;file_to_upload&gt; "<strong class="ph b">s3://</strong><var class="keyword varname">S3_endpoint</var>/<var class="keyword varname">bucketname</var>/[<var class="keyword varname">S3_prefix</var>] [config==<var class="keyword varname">path_to_config_file</var>]"
+gpcheckcloud <strong class="ph b">-u</strong> &lt;file_to_upload&gt; "<strong class="ph b">s3://</strong><var class="keyword varname">S3_endpoint</var>/<var class="keyword varname">bucketname</var>/[<var class="keyword varname">S3_prefix</var>] [config=<var class="keyword varname">path_to_config_file</var>]"
 gpcheckcloud <strong class="ph b">-t</strong>
 
 gpcheckcloud <strong class="ph b">-h</strong></pre>
@@ -6149,18 +6270,18 @@ gpcheckcloud <strong class="ph b">-h</strong></pre>
 <div class="p">This
             example attempts to upload a local file, <span class="ph filepath">test-data.csv</span> to an S3
             bucket location using the <samp class="ph codeph">s3</samp> configuration file
-               <samp class="ph codeph">s3.mytestconf</samp>:<pre class="pre codeblock">gpcheckcloud -u ./test-data.csv "s3://domain/test1/abc config=s3.mytestconf"</pre>
+               <samp class="ph codeph">s3.mytestconf</samp>:<pre class="pre codeblock">gpcheckcloud -u ./test-data.csv "s3://s3-us-west-2.amazonaws.com/test1/abc config=s3.mytestconf"</pre>
 </div>
 <p class="p">A
             successful upload results in one or more files placed in the S3 bucket using the
             filename format <samp class="ph codeph"> abc&lt;segment_id&gt;&lt;random&gt;.data[.gz]</samp>. See <a class="xref" href="#amazon-emr__section_c2f_zvs_3x">About S3 Data Files</a>.</p>
 <div class="p">This example attempts to
             connect to an S3 bucket location with the <samp class="ph codeph">s3</samp> configuration file
-               <samp class="ph codeph">s3.mytestconf</samp>.<pre class="pre codeblock">gpcheckcloud -c "s3://domain/test1/abc config=s3.mytestconf"</pre>
+               <samp class="ph codeph">s3.mytestconf</samp>.<pre class="pre codeblock">gpcheckcloud -c "s3://s3-us-west-2.amazonaws.com/test1/abc config=s3.mytestconf"</pre>
 </div>
 <div class="p">Download
             all files from the S3 bucket location and send the output to <samp class="ph codeph">STDOUT</samp>.
-            <pre class="pre codeblock">gpcheckcloud -d "s3://domain/test1/abc config=s3.mytestconf"</pre>
+            <pre class="pre codeblock">gpcheckcloud -d "s3://s3-us-west-2.amazonaws.com/test1/abc config=s3.mytestconf"</pre>
 </div>
 </div>
 

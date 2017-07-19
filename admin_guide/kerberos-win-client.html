@@ -63,6 +63,168 @@
       </li>
     
       <li class="has_submenu">
+        <a href="/docs/best_practices/intro.html">Best Practices</a>
+        
+  <ul>
+    
+      <li class="">
+        <a href="/docs/best_practices/summary.html">Best Practices Summary</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/sysconfig.html">System Configuration</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/schema.html">Schema Design</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/workloads.html">Memory and Workload Management</a>
+        
+
+      </li>
+    
+      <li class="has_submenu">
+        <a href="/docs/best_practices/maintenance.html">System Monitoring and Maintenance</a>
+        
+  <ul>
+    
+      <li class="">
+        <a href="/docs/best_practices/analyze.html">Updating Statistics with ANALYZE</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/bloat.html">Managing Bloat in the Database</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/logfiles.html">Monitoring Greenplum Database Log Files</a>
+        
+
+      </li>
+    
+  </ul>
+
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/data_loading.html">Loading Data</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/gptransfer.html">Migrating Data with Gptransfer</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/security.html">Security</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/encryption.html">Encrypting Data and Database Connections</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/kerberos-hdfs.html">Accessing a Kerberized Hadoop Cluster</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/tuning_queries.html">Tuning SQL Queries</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/ha.html">High Availability</a>
+        
+
+      </li>
+    
+  </ul>
+
+
+      </li>
+    
+      <li class="has_submenu">
+        <a href="/docs/security-guide/topics/preface.html">Security Configuration Guide</a>
+        
+  <ul>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/SecuringGPDB.html">Securing the Database</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/ports_and_protocols.html">Greenplum Database Ports and Protocols</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/Authenticate.html">Configuring Client Authentication</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/Authorization.html">Configuring Database Authorization</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/Auditing.html">Auditing</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/Encryption.html">Encrypting Data and Database Connections</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/kerberos-hdfs.html">Enabling gphdfs Authentication with a Kerberos-secured Hadoop Cluster</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/BestPractices.html">Security Best Practices</a>
+        
+
+      </li>
+    
+  </ul>
+
+
+      </li>
+    
+      <li class="has_submenu">
         <a href="/docs/admin_guide/admin_guide.html">Administrator Guide</a>
         
   <ul>
@@ -160,44 +322,6 @@
       <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-connecting-with-psql.html">Connecting with psql</a>
         
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/admin_guide/access_db/topics/g-pgadmin-iii-for-greenplum-database.html">pgAdmin III for Greenplum Database</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-installing-pgadmin-iii-for-greenplum-database.html">Installing pgAdmin III for Greenplum Database</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-documentation-for-pgadmin-iii-for-greenplum-database.html">Documentation for pgAdmin III for Greenplum Database</a>
-        
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/admin_guide/access_db/topics/g-performing-administrative-tasks-with-pgadmin-iii.html">Performing Administrative Tasks with pgAdmin III</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-viewing-a-graphical-query-plan.html">Viewing a Graphical Query Plan</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-  </ul>
-
 
       </li>
     
@@ -3070,12 +3194,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/system_catalogs/gp_san_configuration.html">gp_san_configuration</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/system_catalogs/gp_segment_configuration.html">gp_segment_configuration</a>
         
 
@@ -5719,9 +5837,8 @@ kinit</pre>
       <p class="p">You configure an AD user account to support logging in with Kerberos authentication. </p>
 
       <p class="p">With AD single sign-on, a Windows user can use Active Directory credentials with a Windows
-        client application to log into a Greenplum Database system. For example, a Windows user can
-        use Active Directory credentials with PGadmin III to access a Greenplum Database system.
-        Also, for Windows applications that use ODBC, the ODBC driver can use Active Directory
+        client application to log into a Greenplum Database system. 
+        For Windows applications that use ODBC, the ODBC driver can use Active Directory
         credentials to connect to a Greenplum Database system.</p>
 
       <div class="note note">
@@ -5978,17 +6095,6 @@ psql -h prod1.example.local -U dev1</pre>
         
         <p class="p">These single sign-on examples that use AD and Kerberos assume that the AD user
             <samp class="ph codeph">dev1</samp> configured for single sign-on is logged into the Windows desktop. </p>
-
-        <p class="p">This example connects to Greenplum Database from pgAdmin III with single sign-on. You
-          must specify the fully qualified hostname as the Host and the Windows user ID
-            (<samp class="ph codeph">dev1</samp>) as the Username when completing the New Server Registration.</p>
-
-        <p class="p">
-          <br><img class="image" id="topic_uzb_t5m_sv__image_rb2_jfx_tv" src="graphics/kerb-pgadmin-config.png" width="319" height="327"><br>
-        </p>
-
-        <p class="p">Also, when you reconnect to the database, pgAdmin III prompts for a password. When
-          prompted, leave the field blank and click OK. </p>
 
         <p class="p">This example configures Aginity Workbench for Greenplum Database. When using single
           sign-on, you enable Use Integrated Security.</p>

@@ -63,6 +63,168 @@
       </li>
     
       <li class="has_submenu">
+        <a href="/docs/best_practices/intro.html">Best Practices</a>
+        
+  <ul>
+    
+      <li class="">
+        <a href="/docs/best_practices/summary.html">Best Practices Summary</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/sysconfig.html">System Configuration</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/schema.html">Schema Design</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/workloads.html">Memory and Workload Management</a>
+        
+
+      </li>
+    
+      <li class="has_submenu">
+        <a href="/docs/best_practices/maintenance.html">System Monitoring and Maintenance</a>
+        
+  <ul>
+    
+      <li class="">
+        <a href="/docs/best_practices/analyze.html">Updating Statistics with ANALYZE</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/bloat.html">Managing Bloat in the Database</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/logfiles.html">Monitoring Greenplum Database Log Files</a>
+        
+
+      </li>
+    
+  </ul>
+
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/data_loading.html">Loading Data</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/gptransfer.html">Migrating Data with Gptransfer</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/security.html">Security</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/encryption.html">Encrypting Data and Database Connections</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/kerberos-hdfs.html">Accessing a Kerberized Hadoop Cluster</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/tuning_queries.html">Tuning SQL Queries</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/ha.html">High Availability</a>
+        
+
+      </li>
+    
+  </ul>
+
+
+      </li>
+    
+      <li class="has_submenu">
+        <a href="/docs/security-guide/topics/preface.html">Security Configuration Guide</a>
+        
+  <ul>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/SecuringGPDB.html">Securing the Database</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/ports_and_protocols.html">Greenplum Database Ports and Protocols</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/Authenticate.html">Configuring Client Authentication</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/Authorization.html">Configuring Database Authorization</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/Auditing.html">Auditing</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/Encryption.html">Encrypting Data and Database Connections</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/kerberos-hdfs.html">Enabling gphdfs Authentication with a Kerberos-secured Hadoop Cluster</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/BestPractices.html">Security Best Practices</a>
+        
+
+      </li>
+    
+  </ul>
+
+
+      </li>
+    
+      <li class="has_submenu">
         <a href="/docs/admin_guide/admin_guide.html">Administrator Guide</a>
         
   <ul>
@@ -160,44 +322,6 @@
       <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-connecting-with-psql.html">Connecting with psql</a>
         
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/admin_guide/access_db/topics/g-pgadmin-iii-for-greenplum-database.html">pgAdmin III for Greenplum Database</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-installing-pgadmin-iii-for-greenplum-database.html">Installing pgAdmin III for Greenplum Database</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-documentation-for-pgadmin-iii-for-greenplum-database.html">Documentation for pgAdmin III for Greenplum Database</a>
-        
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/admin_guide/access_db/topics/g-performing-administrative-tasks-with-pgadmin-iii.html">Performing Administrative Tasks with pgAdmin III</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-viewing-a-graphical-query-plan.html">Viewing a Graphical Query Plan</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-  </ul>
-
 
       </li>
     
@@ -3070,12 +3194,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/system_catalogs/gp_san_configuration.html">gp_san_configuration</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/system_catalogs/gp_segment_configuration.html">gp_segment_configuration</a>
         
 
@@ -5500,8 +5618,8 @@
 <h2 class="title sectiontitle">Incremental Backup Example</h2>
       
       <p class="p">Each backup set has a key, which is a timestamp taken when the backup is created. For
-        example, if you create a backup on May 14, 2012, the backup set file names contain
-            <samp class="ph codeph">20120514<var class="keyword varname">hhmmss</var></samp>. The <var class="keyword varname">hhmmss</var>
+        example, if you create a backup on May 14, 2016, the backup set file names contain
+            <samp class="ph codeph">20160514<var class="keyword varname">hhmmss</var></samp>. The <var class="keyword varname">hhmmss</var>
         represents the time: hour, minute, and second.</p>
 
       <p class="p">For this example, assume you have created both full and incremental backups of the database
@@ -5517,27 +5635,27 @@
       <p class="p">When you specify the <samp class="ph codeph">-u</samp> option, the backups are created in the
           <samp class="ph codeph">/backupdir</samp> directory on each Greenplum Database host. The file names
         include the following timestamp keys. The full backups have the timestamp key
-          <samp class="ph codeph">20120514054532</samp> and <samp class="ph codeph">20121114064330</samp>. The other backups are
+          <samp class="ph codeph">20160514054532</samp> and <samp class="ph codeph">20161114064330</samp>. The other backups are
         incremental backups.</p>
 
       <div class="p" id="backup-incremental__p_ryy_33p_34">
         <ul class="ul" id="backup-incremental__ul_cwq_j3p_34">
           <li class="li">
-<samp class="ph codeph">20120514054532</samp> (full backup)</li>
+<samp class="ph codeph">20160514054532</samp> (full backup)</li>
 
           <li class="li">
-            <samp class="ph codeph">20120714095512</samp>
+            <samp class="ph codeph">20160714095512</samp>
           </li>
 
           <li class="li">
-            <samp class="ph codeph">20120914081205</samp>
+            <samp class="ph codeph">20160914081205</samp>
           </li>
 
           <li class="li">
-<samp class="ph codeph">20121114064330</samp> (full backup) </li>
+<samp class="ph codeph">20161114064330</samp> (full backup) </li>
 
           <li class="li">
-            <samp class="ph codeph">20130114051246</samp>
+            <samp class="ph codeph">20170114051246</samp>
           </li>
 
         </ul>
@@ -5545,19 +5663,19 @@
       </div>
 
       <p class="p">To create a new incremental backup, you need both the most recent incremental backup
-          <samp class="ph codeph">20130114051246</samp> and the preceding full backup
-          <samp class="ph codeph">20121114064330</samp>. Also, you must specify the same <samp class="ph codeph">-u</samp>
+          <samp class="ph codeph">20170114051246</samp> and the preceding full backup
+          <samp class="ph codeph">20161114064330</samp>. Also, you must specify the same <samp class="ph codeph">-u</samp>
         option for any incremental backups that are part of the backup set. </p>
 
-      <p class="p">To restore a database with the incremental backup <samp class="ph codeph">20120914081205</samp>, you need
-        the incremental backups <samp class="ph codeph">20120914081205</samp> and <samp class="ph codeph">20120714095512</samp>,
-        and the full backup <samp class="ph codeph">20120514054532</samp>.</p>
+      <p class="p">To restore a database with the incremental backup <samp class="ph codeph">20160914081205</samp>, you need
+        the incremental backups <samp class="ph codeph">20160914081205</samp> and <samp class="ph codeph">20160714095512</samp>,
+        and the full backup <samp class="ph codeph">20160514054532</samp>.</p>
 
       <p class="p">To restore the <em class="ph i">mytest</em> database with the incremental backup
-          <samp class="ph codeph">20130114051246</samp>, you need only the incremental backup and the full backup
-          <samp class="ph codeph">20121114064330</samp>. The restore command would be similar to this command.</p>
+          <samp class="ph codeph">20170114051246</samp>, you need only the incremental backup and the full backup
+          <samp class="ph codeph">20161114064330</samp>. The restore command would be similar to this command.</p>
 
-      <pre class="pre codeblock">gpdbrestore -t 20130114051246 -u /backupdir</pre>
+      <pre class="pre codeblock">gpdbrestore -t 20170114051246 -u /backupdir</pre>
 
     </div>
 

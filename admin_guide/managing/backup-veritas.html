@@ -63,6 +63,168 @@
       </li>
     
       <li class="has_submenu">
+        <a href="/docs/best_practices/intro.html">Best Practices</a>
+        
+  <ul>
+    
+      <li class="">
+        <a href="/docs/best_practices/summary.html">Best Practices Summary</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/sysconfig.html">System Configuration</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/schema.html">Schema Design</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/workloads.html">Memory and Workload Management</a>
+        
+
+      </li>
+    
+      <li class="has_submenu">
+        <a href="/docs/best_practices/maintenance.html">System Monitoring and Maintenance</a>
+        
+  <ul>
+    
+      <li class="">
+        <a href="/docs/best_practices/analyze.html">Updating Statistics with ANALYZE</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/bloat.html">Managing Bloat in the Database</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/logfiles.html">Monitoring Greenplum Database Log Files</a>
+        
+
+      </li>
+    
+  </ul>
+
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/data_loading.html">Loading Data</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/gptransfer.html">Migrating Data with Gptransfer</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/security.html">Security</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/encryption.html">Encrypting Data and Database Connections</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/kerberos-hdfs.html">Accessing a Kerberized Hadoop Cluster</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/tuning_queries.html">Tuning SQL Queries</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/best_practices/ha.html">High Availability</a>
+        
+
+      </li>
+    
+  </ul>
+
+
+      </li>
+    
+      <li class="has_submenu">
+        <a href="/docs/security-guide/topics/preface.html">Security Configuration Guide</a>
+        
+  <ul>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/SecuringGPDB.html">Securing the Database</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/ports_and_protocols.html">Greenplum Database Ports and Protocols</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/Authenticate.html">Configuring Client Authentication</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/Authorization.html">Configuring Database Authorization</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/Auditing.html">Auditing</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/Encryption.html">Encrypting Data and Database Connections</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/kerberos-hdfs.html">Enabling gphdfs Authentication with a Kerberos-secured Hadoop Cluster</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/security-guide/topics/BestPractices.html">Security Best Practices</a>
+        
+
+      </li>
+    
+  </ul>
+
+
+      </li>
+    
+      <li class="has_submenu">
         <a href="/docs/admin_guide/admin_guide.html">Administrator Guide</a>
         
   <ul>
@@ -160,44 +322,6 @@
       <li class="">
         <a href="/docs/admin_guide/access_db/topics/g-connecting-with-psql.html">Connecting with psql</a>
         
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/admin_guide/access_db/topics/g-pgadmin-iii-for-greenplum-database.html">pgAdmin III for Greenplum Database</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-installing-pgadmin-iii-for-greenplum-database.html">Installing pgAdmin III for Greenplum Database</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-documentation-for-pgadmin-iii-for-greenplum-database.html">Documentation for pgAdmin III for Greenplum Database</a>
-        
-
-      </li>
-    
-      <li class="has_submenu">
-        <a href="/docs/admin_guide/access_db/topics/g-performing-administrative-tasks-with-pgadmin-iii.html">Performing Administrative Tasks with pgAdmin III</a>
-        
-  <ul>
-    
-      <li class="">
-        <a href="/docs/admin_guide/access_db/topics/g-viewing-a-graphical-query-plan.html">Viewing a Graphical Query Plan</a>
-        
-
-      </li>
-    
-  </ul>
-
-
-      </li>
-    
-  </ul>
-
 
       </li>
     
@@ -3070,12 +3194,6 @@
       </li>
     
       <li class="">
-        <a href="/docs/ref_guide/system_catalogs/gp_san_configuration.html">gp_san_configuration</a>
-        
-
-      </li>
-    
-      <li class="">
         <a href="/docs/ref_guide/system_catalogs/gp_segment_configuration.html">gp_segment_configuration</a>
         
 
@@ -5517,7 +5635,8 @@
     <div class="body">
       <div class="section">
         <p class="p">You install and configure NetBackup client software on the Greenplum Database master host
-          and all segment hosts. </p>
+          and all segment hosts. The NetBackup client software must be able to communicate with the
+          NetBackup server software.</p>
 
         <ol class="ol" id="topic_mlb_1bz_3p__ol_ojl_gbz_3p">
           <li class="li">Install the NetBackup client software on Greenplum Database hosts. See the NetBackup
@@ -5534,9 +5653,9 @@
                 
                 <thead class="thead" align="left">
                   <tr class="row">
-                    <th class="entry" valign="top" width="31.746031746031743%" id="d58876e164">Parameter</th>
+                    <th class="entry" valign="top" width="31.746031746031743%" id="d58595e164">Parameter</th>
 
-                    <th class="entry" valign="top" width="68.25396825396825%" id="d58876e167">Description</th>
+                    <th class="entry" valign="top" width="68.25396825396825%" id="d58595e167">Description</th>
 
                   </tr>
 
@@ -5544,23 +5663,23 @@
 
                 <tbody class="tbody">
                   <tr class="row">
-                    <td class="entry" valign="top" width="31.746031746031743%" headers="d58876e164 "><samp class="ph codeph">SERVER</samp></td>
+                    <td class="entry" valign="top" width="31.746031746031743%" headers="d58595e164 "><samp class="ph codeph">SERVER</samp></td>
 
-                    <td class="entry" valign="top" width="68.25396825396825%" headers="d58876e167 ">Host name of the NetBackup Master Server</td>
-
-                  </tr>
-
-                  <tr class="row">
-                    <td class="entry" valign="top" width="31.746031746031743%" headers="d58876e164 "><samp class="ph codeph">MEDIA_SERVER</samp></td>
-
-                    <td class="entry" valign="top" width="68.25396825396825%" headers="d58876e167 ">Host name of the NetBackup Media Server</td>
+                    <td class="entry" valign="top" width="68.25396825396825%" headers="d58595e167 ">Host name of the NetBackup Master Server</td>
 
                   </tr>
 
                   <tr class="row">
-                    <td class="entry" valign="top" width="31.746031746031743%" headers="d58876e164 "><samp class="ph codeph">CLIENT_NAME</samp></td>
+                    <td class="entry" valign="top" width="31.746031746031743%" headers="d58595e164 "><samp class="ph codeph">MEDIA_SERVER</samp></td>
 
-                    <td class="entry" valign="top" width="68.25396825396825%" headers="d58876e167 ">Host name of the Greenplum Database Host</td>
+                    <td class="entry" valign="top" width="68.25396825396825%" headers="d58595e167 ">Host name of the NetBackup Media Server</td>
+
+                  </tr>
+
+                  <tr class="row">
+                    <td class="entry" valign="top" width="31.746031746031743%" headers="d58595e164 "><samp class="ph codeph">CLIENT_NAME</samp></td>
+
+                    <td class="entry" valign="top" width="68.25396825396825%" headers="d58595e167 ">Host name of the Greenplum Database Host</td>
 
                   </tr>
 
@@ -5574,16 +5693,16 @@
 
           <li class="li">Set the <samp class="ph codeph">LD_LIBRARY_PATH</samp> environment variable for Greenplum Database
             hosts to use NetBackup client. Greenplum Database installs NetBackup SDK library files
-            that are used with the NetBackup 7.7.3 client. To configure Greenplum Database to use
-            the library files that correspond to the version of the NetBackup client that is
-            installed on the hosts, add the following line to the file
+            that are used with the NetBackup client. To configure Greenplum Database to use the
+            library files that correspond to the version of the NetBackup client that is installed
+            on the hosts, add the following line to the file
               <samp class="ph codeph">$GPHOME/greenplum_path.sh</samp>:<pre class="pre codeblock">LD_LIBRARY_PATH=$GPHOME/lib/nbu<var class="keyword varname">NN</var>/lib:$LD_LIBRARY_PATH </pre>
 <p class="p">Replace
               the <var class="keyword varname">NN</var> with the NetBackup client version that is installed on the
-              host (for example, 77). </p>
-<p class="p">The <samp class="ph codeph">LD_LIBRARY_PATH</samp> line should be
-              added before this line in
-            <samp class="ph codeph">$GPHOME/greenplum_path.sh</samp>:</p>
+              host (for example, use 77 for NetBackup 7.7.x). </p>
+<p class="p">The
+                <samp class="ph codeph">LD_LIBRARY_PATH</samp> line should be added before this line in
+                <samp class="ph codeph">$GPHOME/greenplum_path.sh</samp>:</p>
 <pre class="pre codeblock">export LD_LIBRARY_PATH</pre>
 </li>
 
@@ -5786,11 +5905,11 @@
 
       <p class="p">This <samp class="ph codeph">gpdbrestore</samp> command restores Greenplum Database data from the data
         managed by NetBackup master server <samp class="ph codeph">nbu_server1</samp>. The option <samp class="ph codeph">-t
-          20130530090000</samp> specifies the timestamp generated by <samp class="ph codeph">gpcrondump</samp>
+          20170530090000</samp> specifies the timestamp generated by <samp class="ph codeph">gpcrondump</samp>
         when the backup was created. The <samp class="ph codeph">-e</samp> option specifies that the target
         database is dropped before it is restored.</p>
 
-      <pre class="pre codeblock">gpdbrestore -t 20130530090000 -e --netbackup-service-host=nbu_server1</pre>
+      <pre class="pre codeblock">gpdbrestore -t 20170530090000 -e --netbackup-service-host=nbu_server1</pre>
 
     </div>
 
