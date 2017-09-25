@@ -8,7 +8,7 @@
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400italic,400,600' rel='stylesheet' type='text/css'>
   <!-- Use title if it's in the page YAML frontmatter -->
   <title>
-      Installing gpfdist |
+      pg_resgroup |
     Greenplum Database Docs
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
   
 </head>
 
-<body class="docs docs_admin_guide docs_admin_guide_load docs_admin_guide_load_topics docs_admin_guide_load_topics_g-installing-gpfdist has-subnav">
+<body class="docs docs_ref_guide docs_ref_guide_system_catalogs docs_ref_guide_system_catalogs_pg_resgroup has-subnav">
 
 <div class="viewport">
   <div class='wrap'>
@@ -63,7 +63,7 @@
       </li>
     
       <li class="has_submenu">
-        <a href="/docs/best_practices/intro.html">Best Practices</a>
+        <a href="/docs/best_practices/intro.html">Greenplum Database Best Practices</a>
         
   <ul>
     
@@ -167,7 +167,7 @@
       </li>
     
       <li class="has_submenu">
-        <a href="/docs/security-guide/topics/preface.html">Security Configuration Guide</a>
+        <a href="/docs/security-guide/topics/preface.html">Greenplum Database Security Configuration Guide</a>
         
   <ul>
     
@@ -735,7 +735,7 @@
       </li>
     
       <li class="has_submenu">
-        <a href="/docs/admin_guide/highavail/topics/g-enabling-high-availability-features.html">Enabling High Availability Features</a>
+        <a href="/docs/admin_guide/highavail/topics/g-enabling-high-availability-features.html">Enabling High Availability and Data Consistency Features</a>
         
   <ul>
     
@@ -1209,43 +1209,9 @@
 
       </li>
     
-      <li class="has_submenu">
+      <li class="">
         <a href="/docs/admin_guide/load/topics/g-using-the-greenplum-parallel-file-server--gpfdist-.html">Using the Greenplum Parallel File Server (gpfdist)</a>
         
-  <ul>
-    
-      <li class="">
-        <a href="/docs/admin_guide/load/topics/g-about-gpfdist-setup-and-performance.html">About gpfdist Setup and Performance</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/admin_guide/load/topics/g-controlling-segment-parallelism.html">Controlling Segment Parallelism</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/admin_guide/load/topics/g-installing-gpfdist.html">Installing gpfdist</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/admin_guide/load/topics/g-starting-and-stopping-gpfdist.html">Starting and Stopping gpfdist</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/admin_guide/load/topics/g-troubleshooting-gpfdist.html">Troubleshooting gpfdist</a>
-        
-
-      </li>
-    
-  </ul>
-
 
       </li>
     
@@ -1874,6 +1840,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/admin_guide/query/topics/CTE-query.html">WITH Queries (Common Table Expressions)</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/admin_guide/query/topics/functions-operators.html">Using Functions and Operators</a>
         
 
@@ -1937,8 +1909,30 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/workload_mgmt.html">Workload Management with Resource Queues</a>
+        <a href="/docs/admin_guide/wlmgmt_intro.html">Greenplum Database Memory Overview</a>
         
+
+      </li>
+    
+      <li class="has_submenu">
+        <a href="/docs/admin_guide/wlmgmt.html">Managing Workload and Resources</a>
+        
+  <ul>
+    
+      <li class="">
+        <a href="/docs/admin_guide/workload_mgmt.html">Using Resource Queues</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/admin_guide/workload_mgmt_resgroups.html">Using Resource Groups</a>
+        
+
+      </li>
+    
+  </ul>
+
 
       </li>
     
@@ -2287,6 +2281,12 @@
 
       </li>
     
+      <li class="">
+        <a href="/docs/utility_guide/hstore.html">hstore Functions</a>
+        
+
+      </li>
+    
   </ul>
 
 
@@ -2400,6 +2400,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_PROTOCOL.html">ALTER PROTOCOL</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_RESOURCE_GROUP.html">ALTER RESOURCE GROUP</a>
         
 
       </li>
@@ -2592,6 +2598,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_PROTOCOL.html">CREATE PROTOCOL</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_RESOURCE_GROUP.html">CREATE RESOURCE GROUP</a>
         
 
       </li>
@@ -2790,6 +2802,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_PROTOCOL.html">DROP PROTOCOL</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_RESOURCE_GROUP.html">DROP RESOURCE GROUP</a>
         
 
       </li>
@@ -3188,6 +3206,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/gp_resgroup_config.html">gp_resgroup_config</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/gp_resgroup_status.html">gp_resgroup_status</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/gp_resqueue_status.html">gp_resqueue_status</a>
         
 
@@ -3465,6 +3495,18 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_proc.html">pg_proc</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_resgroup.html">pg_resgroup</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_resgroupcapability.html">pg_resgroupcapability</a>
         
 
       </li>
@@ -3894,6 +3936,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/config_params/guc-list.html#data_checksums">data_checksums</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/config_params/guc-list.html#DateStyle">DateStyle</a>
         
 
@@ -4308,6 +4356,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/config_params/guc-list.html#gp_enable_segment_copy_checking">gp_enable_segment_copy_checking</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/config_params/guc-list.html#gp_enable_sequential_window_plans">gp_enable_sequential_window_plans</a>
         
 
@@ -4422,6 +4476,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/config_params/guc-list.html#gp_interconnect_debug_retry_interval">gp_interconnect_debug_retry_interval</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/config_params/guc-list.html#gp_interconnect_fc_method">gp_interconnect_fc_method</a>
         
 
@@ -4476,6 +4536,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/config_params/guc-list.html#gp_log_interconnect">gp_log_interconnect</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/config_params/guc-list.html#gp_max_csv_line_length">gp_max_csv_line_length</a>
         
 
@@ -4525,6 +4591,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/config_params/guc-list.html#gp_num_contents_in_cluster">gp_num_contents_in_cluster</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/config_params/guc-list.html#gp_recursive_cte_prototype">gp_recursive_cte_prototype</a>
         
 
       </li>
@@ -4699,6 +4771,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/config_params/guc-list.html#gpperfmon_port">gpperfmon_port</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/config_params/guc-list.html#ignore_checksum_failure">ignore_checksum_failure</a>
         
 
       </li>
@@ -4891,6 +4969,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/config_params/guc-list.html#log_statement_stats">log_statement_stats</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/config_params/guc-list.html#log_temp_files">log_temp_files</a>
         
 
       </li>
@@ -5528,7 +5612,7 @@
         <a id="top"></a>
         
           <h1 class="title-container" style="display: none;">
-    Installing gpfdist
+    pg_resgroup
   </h1>
 
           <div id="js-quick-links" >
@@ -5538,25 +5622,46 @@
           <a href="#top" title="back to top"></a>
         </div>
         
+<h1 class="title topictitle1">pg_resgroup</h1>
+<div class="body">
+<p class="p">The <samp class="ph codeph">pg_resgroup</samp> system catalog table contains information about Greenplum Database resource groups, which are used for managing concurrent statements, CPU, and memory resources.
+      This table, defined in the
+        <samp class="ph codeph">pg_global</samp> tablespace, is globally shared across all databases in
+      the system.</p>
 
-   <h1 class="title topictitle1">Installing gpfdist</h1>
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" summary="" id="topic1__hi141982" class="table" frame="border" border="1" rules="all">
+<caption><span class="tablecap">Table 1. pg_catalog.pg_resgroup</span></caption>
+<thead class="thead" align="left">
+<tr class="row">
+<th class="entry" valign="top" width="131pt" id="d404205e26">column</th>
+<th class="entry" valign="top" width="86pt" id="d404205e28">type</th>
+<th class="entry" valign="top" width="85pt" id="d404205e30">references</th>
+<th class="entry" valign="top" width="147pt" id="d404205e32">description</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="row">
+<td class="entry" valign="top" width="131pt" headers="d404205e26 "><samp class="ph codeph">rsgname</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d404205e28 ">name</td>
+<td class="entry" valign="top" width="85pt" headers="d404205e30 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d404205e32 ">The name of the resource group.</td>
+</tr>
+<tr class="row">
+<td class="entry" valign="top" width="131pt" headers="d404205e26 "><samp class="ph codeph">parent</samp></td>
+<td class="entry" valign="top" width="86pt" headers="d404205e28 ">oid</td>
+<td class="entry" valign="top" width="85pt" headers="d404205e30 "> </td>
+<td class="entry" valign="top" width="147pt" headers="d404205e32 ">Unused; reserved for future use.</td>
+</tr>
 
-   <div class="body">
-      <p class="p">
-            <span class="keyword cmdname">gpfdist</span> is installed in <samp class="ph codeph">$GPHOME/bin</samp> of your
-            Greenplum Database master host installation. Run <span class="keyword cmdname">gpfdist</span>
-            on a machine other than the Greenplum Database master or standby master, such as on a
-            machine devoted to ETL processing. Running <span class="keyword cmdname">gpfdist</span> on the
-            master or standby master can have a performance impact on query execution.
-            To install <span class="keyword cmdname">gpfdist</span> on your ETL server, get it from the
-            <em class="ph i">Greenplum Load Tools</em> package and follow its installation instructions.</p>
-
-   </div>
-
+</tbody>
+</table>
+</div>
+</div>
 <div class="related-links">
 <div class="familylinks">
 <div class="parentlink">
-<strong>Parent topic:</strong> <a class="link" href="../../../admin_guide/load/topics/g-using-the-greenplum-parallel-file-server--gpfdist-.html">Using the Greenplum Parallel File Server (gpfdist)</a>
+<strong>Parent topic:</strong> <a class="link" href="../../ref_guide/system_catalogs/catalog_ref-html.html#topic1">System Catalogs Definitions</a>
 </div>
 </div>
 </div>

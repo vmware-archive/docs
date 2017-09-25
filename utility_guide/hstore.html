@@ -8,7 +8,7 @@
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400italic,400,600' rel='stylesheet' type='text/css'>
   <!-- Use title if it's in the page YAML frontmatter -->
   <title>
-      About gpfdist Setup and Performance |
+      hstore Functions |
     Greenplum Database Docs
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
   
 </head>
 
-<body class="docs docs_admin_guide docs_admin_guide_load docs_admin_guide_load_topics docs_admin_guide_load_topics_g-about-gpfdist-setup-and-performance has-subnav">
+<body class="docs docs_utility_guide docs_utility_guide_hstore has-subnav">
 
 <div class="viewport">
   <div class='wrap'>
@@ -63,7 +63,7 @@
       </li>
     
       <li class="has_submenu">
-        <a href="/docs/best_practices/intro.html">Best Practices</a>
+        <a href="/docs/best_practices/intro.html">Greenplum Database Best Practices</a>
         
   <ul>
     
@@ -167,7 +167,7 @@
       </li>
     
       <li class="has_submenu">
-        <a href="/docs/security-guide/topics/preface.html">Security Configuration Guide</a>
+        <a href="/docs/security-guide/topics/preface.html">Greenplum Database Security Configuration Guide</a>
         
   <ul>
     
@@ -735,7 +735,7 @@
       </li>
     
       <li class="has_submenu">
-        <a href="/docs/admin_guide/highavail/topics/g-enabling-high-availability-features.html">Enabling High Availability Features</a>
+        <a href="/docs/admin_guide/highavail/topics/g-enabling-high-availability-features.html">Enabling High Availability and Data Consistency Features</a>
         
   <ul>
     
@@ -1209,43 +1209,9 @@
 
       </li>
     
-      <li class="has_submenu">
+      <li class="">
         <a href="/docs/admin_guide/load/topics/g-using-the-greenplum-parallel-file-server--gpfdist-.html">Using the Greenplum Parallel File Server (gpfdist)</a>
         
-  <ul>
-    
-      <li class="">
-        <a href="/docs/admin_guide/load/topics/g-about-gpfdist-setup-and-performance.html">About gpfdist Setup and Performance</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/admin_guide/load/topics/g-controlling-segment-parallelism.html">Controlling Segment Parallelism</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/admin_guide/load/topics/g-installing-gpfdist.html">Installing gpfdist</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/admin_guide/load/topics/g-starting-and-stopping-gpfdist.html">Starting and Stopping gpfdist</a>
-        
-
-      </li>
-    
-      <li class="">
-        <a href="/docs/admin_guide/load/topics/g-troubleshooting-gpfdist.html">Troubleshooting gpfdist</a>
-        
-
-      </li>
-    
-  </ul>
-
 
       </li>
     
@@ -1874,6 +1840,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/admin_guide/query/topics/CTE-query.html">WITH Queries (Common Table Expressions)</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/admin_guide/query/topics/functions-operators.html">Using Functions and Operators</a>
         
 
@@ -1937,8 +1909,30 @@
       </li>
     
       <li class="">
-        <a href="/docs/admin_guide/workload_mgmt.html">Workload Management with Resource Queues</a>
+        <a href="/docs/admin_guide/wlmgmt_intro.html">Greenplum Database Memory Overview</a>
         
+
+      </li>
+    
+      <li class="has_submenu">
+        <a href="/docs/admin_guide/wlmgmt.html">Managing Workload and Resources</a>
+        
+  <ul>
+    
+      <li class="">
+        <a href="/docs/admin_guide/workload_mgmt.html">Using Resource Queues</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/admin_guide/workload_mgmt_resgroups.html">Using Resource Groups</a>
+        
+
+      </li>
+    
+  </ul>
+
 
       </li>
     
@@ -2287,6 +2281,12 @@
 
       </li>
     
+      <li class="">
+        <a href="/docs/utility_guide/hstore.html">hstore Functions</a>
+        
+
+      </li>
+    
   </ul>
 
 
@@ -2400,6 +2400,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/ALTER_PROTOCOL.html">ALTER PROTOCOL</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/ALTER_RESOURCE_GROUP.html">ALTER RESOURCE GROUP</a>
         
 
       </li>
@@ -2592,6 +2598,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/CREATE_PROTOCOL.html">CREATE PROTOCOL</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/CREATE_RESOURCE_GROUP.html">CREATE RESOURCE GROUP</a>
         
 
       </li>
@@ -2790,6 +2802,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/sql_commands/DROP_PROTOCOL.html">DROP PROTOCOL</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/sql_commands/DROP_RESOURCE_GROUP.html">DROP RESOURCE GROUP</a>
         
 
       </li>
@@ -3188,6 +3206,18 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/system_catalogs/gp_resgroup_config.html">gp_resgroup_config</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/gp_resgroup_status.html">gp_resgroup_status</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/system_catalogs/gp_resqueue_status.html">gp_resqueue_status</a>
         
 
@@ -3465,6 +3495,18 @@
     
       <li class="">
         <a href="/docs/ref_guide/system_catalogs/pg_proc.html">pg_proc</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_resgroup.html">pg_resgroup</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/system_catalogs/pg_resgroupcapability.html">pg_resgroupcapability</a>
         
 
       </li>
@@ -3894,6 +3936,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/config_params/guc-list.html#data_checksums">data_checksums</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/config_params/guc-list.html#DateStyle">DateStyle</a>
         
 
@@ -4308,6 +4356,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/config_params/guc-list.html#gp_enable_segment_copy_checking">gp_enable_segment_copy_checking</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/config_params/guc-list.html#gp_enable_sequential_window_plans">gp_enable_sequential_window_plans</a>
         
 
@@ -4422,6 +4476,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/config_params/guc-list.html#gp_interconnect_debug_retry_interval">gp_interconnect_debug_retry_interval</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/config_params/guc-list.html#gp_interconnect_fc_method">gp_interconnect_fc_method</a>
         
 
@@ -4476,6 +4536,12 @@
       </li>
     
       <li class="">
+        <a href="/docs/ref_guide/config_params/guc-list.html#gp_log_interconnect">gp_log_interconnect</a>
+        
+
+      </li>
+    
+      <li class="">
         <a href="/docs/ref_guide/config_params/guc-list.html#gp_max_csv_line_length">gp_max_csv_line_length</a>
         
 
@@ -4525,6 +4591,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/config_params/guc-list.html#gp_num_contents_in_cluster">gp_num_contents_in_cluster</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/config_params/guc-list.html#gp_recursive_cte_prototype">gp_recursive_cte_prototype</a>
         
 
       </li>
@@ -4699,6 +4771,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/config_params/guc-list.html#gpperfmon_port">gpperfmon_port</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/config_params/guc-list.html#ignore_checksum_failure">ignore_checksum_failure</a>
         
 
       </li>
@@ -4891,6 +4969,12 @@
     
       <li class="">
         <a href="/docs/ref_guide/config_params/guc-list.html#log_statement_stats">log_statement_stats</a>
+        
+
+      </li>
+    
+      <li class="">
+        <a href="/docs/ref_guide/config_params/guc-list.html#log_temp_files">log_temp_files</a>
         
 
       </li>
@@ -5528,7 +5612,7 @@
         <a id="top"></a>
         
           <h1 class="title-container" style="display: none;">
-    About gpfdist Setup and Performance
+    hstore Functions
   </h1>
 
           <div id="js-quick-links" >
@@ -5539,53 +5623,404 @@
         </div>
         
 
-   <h1 class="title topictitle1">About gpfdist Setup and Performance</h1>
+ <h1 class="title topictitle1">hstore Functions</h1>
 
-   <div class="body">
-      <p class="p">Consider the following scenarios for optimizing your ETL network performance.</p>
+ <div class="body">
+  <p class="p">The <samp class="ph codeph">hstore</samp> module implements a data type for storing sets of (key,value) pairs
+   within a single Greenplum Database data field. This can be useful in various scenarios, such as
+   rows with many attributes that are rarely examined, or semi-structured data.</p>
 
-      <ul class="ul">
-         <li class="li" id="topic14__du165860">Allow network traffic to use all ETL host Network Interface Cards (NICs)
-            simultaneously. Run one instance of <span class="keyword cmdname">gpfdist</span> on the ETL host, then
-            declare the host name of each NIC in the <samp class="ph codeph">LOCATION</samp> clause of your
-            external table definition (see <a class="xref" href="g-creating-external-tables---examples.html#topic44">Creating External Tables - Examples</a>).</li>
+  <p class="p">In the current implementation, neither the key nor the value string can exceed 65535 bytes in
+   length; an error will be thrown if this limit is exceeded. These maximum lengths may change in
+   future releases.</p>
 
-      </ul>
+  <div class="section">
+<h2 class="title sectiontitle">Installing hstore</h2>
+   
+   <div class="p">Before you can use <samp class="ph codeph">hstore</samp> data type and functions, run the installation
+    script <samp class="ph codeph">$GPHOME/share/postgresql/contrib/hstore.sql</samp> in each database where you
+    want the ability to query other
+    databases:<pre class="pre codeblock">$ psql -d testdb -f $GPHOME/share/postgresql/contrib/hstore.sql</pre>
+</div>
 
-      <div class="fig fignone" id="topic14__du165872">
-<span class="figcap">Figure 1. External Table Using Single gpfdist Instance with Multiple NICs</span>
-         
-         <br><img class="image" src="../../graphics/ext_tables_multinic.jpg" width="472" height="271"><br>
-      </div>
+  </div>
 
-      <ul class="ul">
-         <li class="li" id="topic14__du212280">Divide external table data equally among multiple
-               <span class="keyword cmdname">gpfdist</span> instances on the ETL host. For example, on an ETL system
-            with two NICs, run two <span class="keyword cmdname">gpfdist</span> instances (one on each NIC) to
-            optimize data load performance and divide the external table data files evenly between
-            the two <span class="keyword cmdname">gpfdist</span>s.</li>
+  <div class="section">
+<h2 class="title sectiontitle">hstore External Representation</h2>
+   
+   <div class="p">The text representation of an <samp class="ph codeph">hstore</samp> value includes zero or more
+     <var class="keyword varname">key</var>
+    <samp class="ph codeph">=&gt;</samp>
+    <var class="keyword varname">value</var> items, separated by commas. For example:
+    <pre class="pre codeblock">k =&gt; v
+foo =&gt; bar, baz =&gt; whatever
+"1-a" =&gt; "anything at all"</pre>
+ The order
+    of the items is not considered significant (and may not be reproduced on output). Whitespace
+    between items or around the <samp class="ph codeph">=&gt;</samp> sign is ignored. Use double quotes if a key
+    or value includes whitespace, comma, <samp class="ph codeph">=</samp> or <samp class="ph codeph">&gt;</samp>. To include a
+    double quote or a backslash in a key or value, precede it with another backslash. (Keep in mind
+    that depending on the setting of <var class="keyword varname">standard_conforming_strings</var>, you may need to
+    double backslashes in SQL literal strings.)</div>
 
-      </ul>
+   <div class="p">A value (but not a key) can be a SQL NULL. This is represented as
+    <pre class="pre codeblock">key =&gt; NULL</pre>
+ The <samp class="ph codeph">NULL</samp> keyword is not case-sensitive.
+    Again, use double quotes if you want the string <samp class="ph codeph">null</samp> to be treated as an
+    ordinary data value.</div>
 
-      <div class="fig fignone" id="topic14__du165882">
-<span class="figcap">Figure 2. External Tables Using Multiple gpfdist Instances with Multiple NICs</span>
-         
-         <br><img class="image" src="../../graphics/ext_tables.jpg" width="467" height="282"><br>
-      </div>
+   <p class="p">Currently, double quotes are always used to surround key and value strings on output, even
+    when this is not strictly necessary.</p>
 
-      <div class="note note">
-<span class="notetitle">Note:</span> Use pipes (|) to separate formatted text when you submit files to
-            <span class="keyword cmdname">gpfdist</span>. Greenplum Database encloses comma-separated
-         text strings in single or double quotes. <span class="keyword cmdname">gpfdist</span> has to remove the
-         quotes to parse the strings. Using pipes to separate formatted text avoids the extra step
-         and improves performance.</div>
+  </div>
 
-   </div>
+  <div class="section">
+<h2 class="title sectiontitle">hstore Operators and Functions</h2>
+   
+   
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" summary="" id="topic_vcn_jkq_1bb__hstore-op-table" class="table" frame="border" border="1" rules="all">
+<caption><span class="tablecap">Table 1. hstore Operators</span></caption>
+     <thead class="thead" align="left">
+      <tr class="row">
+       <th class="entry" valign="top" id="d495865e105">Operator</th>
+
+       <th class="entry" valign="top" id="d495865e108">Description</th>
+
+       <th class="entry" valign="top" id="d495865e111">Example</th>
+
+       <th class="entry" valign="top" id="d495865e114">Result</th>
+
+      </tr>
+
+     </thead>
+
+     <tbody class="tbody">
+      <tr class="row">
+       <td class="entry" valign="top" headers="d495865e105 d495865e108 d495865e111 d495865e114 ">
+<samp class="ph codeph">hstore</samp>
+        <samp class="ph codeph">-&gt;</samp>
+        <samp class="ph codeph">text</samp>
+</td>
+
+       <td class="entry" valign="top" headers="d495865e105 d495865e108 d495865e111 d495865e114 ">get value for key (null if not present)</td>
+
+       <td class="entry" valign="top" headers="d495865e105 d495865e108 d495865e111 d495865e114 "><samp class="ph codeph">'a=&gt;x, b=&gt;y'::hstore -&gt; 'a'</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e105 d495865e108 d495865e111 d495865e114 "><samp class="ph codeph">x</samp></td>
+
+      </tr>
+
+      <tr class="row">
+       <td class="entry" valign="top" headers="d495865e105 d495865e108 d495865e111 d495865e114 ">
+<samp class="ph codeph">text</samp>
+        <samp class="ph codeph">=&gt;</samp>
+        <samp class="ph codeph">text</samp>
+</td>
+
+       <td class="entry" valign="top" headers="d495865e105 d495865e108 d495865e111 d495865e114 ">make single-item <samp class="ph codeph">hstore</samp>
+</td>
+
+       <td class="entry" valign="top" headers="d495865e105 d495865e108 d495865e111 d495865e114 "><samp class="ph codeph">'a' =&gt; 'b'</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e105 d495865e108 d495865e111 d495865e114 "><samp class="ph codeph">"a"=&gt;"b"</samp></td>
+
+      </tr>
+
+      <tr class="row">
+       <td class="entry" valign="top" headers="d495865e105 d495865e108 d495865e111 d495865e114 ">
+<samp class="ph codeph">hstore</samp>
+        <samp class="ph codeph">||</samp>
+        <samp class="ph codeph">hstore</samp>
+</td>
+
+       <td class="entry" valign="top" headers="d495865e105 d495865e108 d495865e111 d495865e114 ">concatenation</td>
+
+       <td class="entry" valign="top" headers="d495865e105 d495865e108 d495865e111 d495865e114 "><samp class="ph codeph">'a=&gt;b, c=&gt;d'::hstore || 'c=&gt;x, d=&gt;q'::hstore</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e105 d495865e108 d495865e111 d495865e114 "><samp class="ph codeph">"a"=&gt;"b", "c"=&gt;"x", "d"=&gt;"q"</samp></td>
+
+      </tr>
+
+      <tr class="row">
+       <td class="entry" valign="top" headers="d495865e105 d495865e108 d495865e111 d495865e114 ">
+<samp class="ph codeph">hstore</samp>
+        <samp class="ph codeph">?</samp>
+        <samp class="ph codeph">text</samp>
+</td>
+
+       <td class="entry" valign="top" headers="d495865e105 d495865e108 d495865e111 d495865e114 ">does <samp class="ph codeph">hstore</samp> contain key?</td>
+
+       <td class="entry" valign="top" headers="d495865e105 d495865e108 d495865e111 d495865e114 "><samp class="ph codeph">'a=&gt;1'::hstore ? 'a'</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e105 d495865e108 d495865e111 d495865e114 "><samp class="ph codeph">t</samp></td>
+
+      </tr>
+
+      <tr class="row">
+       <td class="entry" valign="top" headers="d495865e105 d495865e108 d495865e111 d495865e114 ">
+<samp class="ph codeph">hstore</samp>
+        <samp class="ph codeph">@&gt;</samp>
+        <samp class="ph codeph">hstore</samp>
+</td>
+
+       <td class="entry" valign="top" headers="d495865e105 d495865e108 d495865e111 d495865e114 ">does left operand contain right?</td>
+
+       <td class="entry" valign="top" headers="d495865e105 d495865e108 d495865e111 d495865e114 "><samp class="ph codeph">'a=&gt;b, b=&gt;1, c=&gt;NULL'::hstore @&gt; 'b=&gt;1'</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e105 d495865e108 d495865e111 d495865e114 "><samp class="ph codeph">t</samp></td>
+
+      </tr>
+
+      <tr class="row">
+       <td class="entry" valign="top" headers="d495865e105 d495865e108 d495865e111 d495865e114 ">
+<samp class="ph codeph">hstore</samp>
+        <samp class="ph codeph">&lt;@</samp>
+        <samp class="ph codeph">hstore</samp>
+</td>
+
+       <td class="entry" valign="top" headers="d495865e105 d495865e108 d495865e111 d495865e114 ">is left operand contained in right?</td>
+
+       <td class="entry" valign="top" headers="d495865e105 d495865e108 d495865e111 d495865e114 "><samp class="ph codeph">'a=&gt;c'::hstore &lt;@ 'a=&gt;b, b=&gt;1, c=&gt;NULL'</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e105 d495865e108 d495865e111 d495865e114 "><samp class="ph codeph">f</samp></td>
+
+      </tr>
+
+     </tbody>
+
+    </table>
+</div>
+
+   <div class="note note">
+<span class="notetitle">Note:</span> The <samp class="ph codeph">=&gt;</samp> operator is deprecated and may be removed in a future release.
+    Use the <samp class="ph codeph">hstore(text, text)</samp> function instead.</div>
+
+   
+<div class="tablenoborder">
+<table cellpadding="4" cellspacing="0" summary="" id="topic_vcn_jkq_1bb__hstore-func-table" class="table" frame="border" border="1" rules="all">
+<caption><span class="tablecap">Table 2. hstore Functions</span></caption>
+     <thead class="thead" align="left">
+      <tr class="row">
+       <th class="entry" valign="top" id="d495865e294">Function</th>
+
+       <th class="entry" valign="top" id="d495865e297">Return Type</th>
+
+       <th class="entry" valign="top" id="d495865e300">Description</th>
+
+       <th class="entry" valign="top" id="d495865e303">Example</th>
+
+       <th class="entry" valign="top" id="d495865e306">Result</th>
+
+      </tr>
+
+     </thead>
+
+     <tbody class="tbody">
+      <tr class="row">
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">hstore(text, text)</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">hstore</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 ">make single-item <samp class="ph codeph">hstore</samp>
+</td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">hstore('a', 'b')</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">"a"=&gt;"b"</samp></td>
+
+      </tr>
+
+      <tr class="row">
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">akeys(hstore)</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">text[]</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 ">get <samp class="ph codeph">hstore</samp>'s keys as array</td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">akeys('a=&gt;1,b=&gt;2')</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">{a,b}</samp></td>
+
+      </tr>
+
+      <tr class="row">
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">skeys(hstore)</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">setof text</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 ">get <samp class="ph codeph">hstore</samp>'s keys as set</td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">skeys('a=&gt;1,b=&gt;2')</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 ">
+        <pre class="pre codeblock">a
+b</pre>
+
+       </td>
+
+      </tr>
+
+      <tr class="row">
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">avals(hstore)</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">text[]</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 ">get <samp class="ph codeph">hstore</samp>'s values as array</td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">avals('a=&gt;1,b=&gt;2')</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">{1,2}</samp></td>
+
+      </tr>
+
+      <tr class="row">
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">svals(hstore)</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">setof text</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 ">get <samp class="ph codeph">hstore</samp>'s values as set</td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">svals('a=&gt;1,b=&gt;2')</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 ">
+        <pre class="pre codeblock">1
+2</pre>
+
+       </td>
+
+      </tr>
+
+      <tr class="row">
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">each(hstore)</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">setof (key text, value text)</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 ">get <samp class="ph codeph">hstore</samp>'s keys and values as set</td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">select * from each('a=&gt;1,b=&gt;2')</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 ">
+        <pre class="pre codeblock"> key | value
+-----+-------
+ a   | 1
+ b   | 2</pre>
+
+       </td>
+
+      </tr>
+
+      <tr class="row">
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">exist(hstore,text)</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">boolean</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 ">does <samp class="ph codeph">hstore</samp> contain key?</td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">exist('a=&gt;1','a')</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">t</samp></td>
+
+      </tr>
+
+      <tr class="row">
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">defined(hstore,text)</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">boolean</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 ">does <samp class="ph codeph">hstore</samp> contain non-null value for key?</td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">defined('a=&gt;NULL','a')</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">f</samp></td>
+
+      </tr>
+
+      <tr class="row">
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">delete(hstore,text)</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">hstore</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 ">delete any item matching key</td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">delete('a=&gt;1,b=&gt;2','b')</samp></td>
+
+       <td class="entry" valign="top" headers="d495865e294 d495865e297 d495865e300 d495865e303 d495865e306 "><samp class="ph codeph">"a"=&gt;"1"</samp></td>
+
+      </tr>
+
+     </tbody>
+
+    </table>
+</div>
+
+  </div>
+
+  <div class="section">
+<h2 class="title sectiontitle">Indexes</h2>
+   
+   <p class="p"><samp class="ph codeph">hstore</samp> has index support for <samp class="ph codeph">@&gt;</samp> and <samp class="ph codeph">?</samp>
+    operators. You can use the GiST index type. For example:</p>
+
+   <pre class="pre codeblock">CREATE INDEX hidx ON testhstore USING GIST(h);</pre>
+
+  </div>
+
+  <div class="section">
+<h2 class="title sectiontitle">Examples</h2>
+   
+   <p class="p">Add a key, or update an existing key with a new value:</p>
+
+   <pre class="pre codeblock">UPDATE tab SET h = h || ('c' =&gt; '3');</pre>
+
+   <p class="p">Delete a key:</p>
+
+   <pre class="pre codeblock">UPDATE tab SET h = delete(h, 'k1');</pre>
+
+  </div>
+
+  <div class="section">
+<h2 class="title sectiontitle">Statistics</h2>
+   
+   <p class="p">The <samp class="ph codeph">hstore</samp> type, because of its intrinsic liberality, could contain a lot of
+    different keys. Checking for valid keys is the task of the application. Examples below
+    demonstrate several techniques for checking keys and obtaining statistics.</p>
+
+   <p class="p">Simple example:</p>
+
+   <pre class="pre codeblock">SELECT * FROM each('aaa=&gt;bq, b=&gt;NULL, ""=&gt;1');</pre>
+
+   <p class="p">Using a table:</p>
+
+   <pre class="pre codeblock">SELECT (each(h)).key, (each(h)).value INTO stat FROM testhstore;</pre>
+
+   <p class="p">Online statistics:</p>
+
+   <pre class="pre codeblock">SELECT key, count(*) FROM
+  (SELECT (each(h)).key FROM testhstore) AS stat
+  GROUP BY key
+  ORDER BY count DESC, key;
+    key    | count
+-----------+-------
+ line      |   883
+ query     |   207
+ pos       |   203
+ node      |   202
+ space     |   197
+ status    |   195
+ public    |   194
+ title     |   190
+ org       |   189
+...................</pre>
+
+  </div>
+
+ </div>
 
 <div class="related-links">
 <div class="familylinks">
 <div class="parentlink">
-<strong>Parent topic:</strong> <a class="link" href="../../../admin_guide/load/topics/g-using-the-greenplum-parallel-file-server--gpfdist-.html">Using the Greenplum Parallel File Server (gpfdist)</a>
+<strong>Parent topic:</strong> <a class="link" href="../utility_guide/utility_guide.html" title="Reference information for command-line utilities, client programs, and Oracle compatibility functions.">Greenplum Database Utility Guide</a>
 </div>
 </div>
 </div>
